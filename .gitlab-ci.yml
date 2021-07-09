@@ -58,4 +58,4 @@ CD:
         # Restart agent - Not neccessary OOnly use when debugging
         # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"
         # Upload
-        - rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./public/*  "$CD_DIST_USER@$CD_DIST_HOST:"
+        - rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./public/*  "$CD_DIST_USER@$CD_DIST_HOST"
