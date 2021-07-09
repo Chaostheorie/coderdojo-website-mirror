@@ -1,0 +1,87 @@
+{% macro footer() %}
+<!-- Footer -->
+<footer id="footer" class="page-footer font-small text-white w-100">
+    <!-- Copyright -->
+    <div class="footer-copyright bg-dark mb-0 text-white py-3">
+        <div class="container">
+            <div class="row gy-2 justify-content-center align-items-start">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="h5 title-white">Quick Links</div>
+
+                    <p class="mb-1">
+                        <a
+                            class="
+                                ml-1
+                                btn btn-outline-light btn-sm
+                                text-decoration-none
+                            "
+                            href="https://www.getzola.org/"
+                        >
+                            <i class="bi bi-heart"></i>
+                            Built with Zola
+                        </a>
+                    </p>
+
+                    <p class="mb-1">
+                        <a
+                            class="
+                                ml-1
+                                btn btn-outline-light btn-sm
+                                text-decoration-none
+                            "
+                            href="https://cobalt.rocks/"
+                        >
+                            <i class="bi bi-person-circle"></i>
+                            Built by Cobalt
+                        </a>
+                    </p>
+
+                    <p class="mb-1">
+                        <a
+                            class="
+                                btn btn-outline-light btn-sm
+                                text-decoration-none
+                            "
+                            href="{{ get_url(path='@/content/copyright.md')|safe }}"
+                        >
+                            <i class="bi bi-journal-text"></i> Copyright
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-lg-6">
+                    <div class="h5 title-white">coderdojo.cobalt.rocks</div>
+                    <p class="mb-1">
+                        <a
+                            href="{{ get_url(path='@/content/imprint.md')|safe }}"
+                            class="
+                                ml-1
+                                btn btn-outline-light btn-sm
+                                text-decoration-none
+                            "
+                        >
+                            <i class="bi bi-blockquote-right"></i>
+                            Imprint
+                        </a>
+                    </p>
+
+                    <p class="mb-1">
+                        <a
+                            class="
+                                btn btn-outline-light btn-sm
+                                text-decoration-none
+                            "
+                            href="{{ get_url(path='@/content/privacy.md')|safe }}"
+                        >
+                            <i class="bi bi-clipboard-data"></i>
+                            Privacy Policy
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #Copyright -->
+</footer>
+<!-- #Footer -->
+{% endmacro footer %}

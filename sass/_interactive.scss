@@ -1,0 +1,107 @@
+/*
+_interactive..scss Frontend stylesheet for cobalt's homepage
+@license GPL-3-only @ Cobalt <https://cobalt.rocks>
+*/
+/* stylelint-disable at-rule-no-unknown */
+
+@import '_mixins.scss';
+
+button[data-bs-toggle='collapse'].rotatable {
+    i.bi::before,
+    svg {
+        @include rotateX(180, 1);
+
+        display: inline-block;
+    }
+
+    &.collapsed {
+        i.bi::before,
+        svg {
+            @include rotateX(0, 1);
+        }
+    }
+}
+
+.active {
+    border: solid 1px white;
+}
+
+.form-control-plaintext {
+    border-color: $dark;
+}
+
+// adjustments for form-creator sidebar
+.card-body {
+    padding-top: 0 !important;
+}
+
+.card-header > p {
+    height: 100%;
+    margin-bottom: 0 !important;
+}
+
+// customization to accordions
+.accordion-button {
+    background-color: $dark;
+    color: $light;
+
+    &:focus {
+        z-index: 3;
+        border-color: lightgray;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem gray;
+    }
+
+    &:not(.collapsed) {
+        background-color: $dark;
+        color: $light;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    }
+}
+
+// fading support
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-20%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-in-left {
+    animation-name: fadeLeft;
+    animation-duration: 2s;
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(20%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-in-right {
+    animation-name: fadeRight;
+    animation-duration: 2s;
+}
+
+// modify pre when putting helper on top
+div[data-type='file-helper'] {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+
+    + pre {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-top: 0 !important;
+    }
+}

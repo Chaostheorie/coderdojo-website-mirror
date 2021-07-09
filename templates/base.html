@@ -1,0 +1,243 @@
+{% import "macros/footer.html" as footer %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Coderdojo {% if page.title %} - {{ page.title }} {% endif %}
+        </title>
+        <meta
+            property="og:title"
+            content="Coderdojo -{% if page.title %} {{ page.title }}{% endif %}"
+        />
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=5"
+        />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta property="og:image" content="{{
+        get_url(path="images/brand.png")|safe }}" />
+        <meta property="og:site_name" content="Coderdojo" />
+        <meta property="og:type" content="text/html" />
+        <meta name="msapplication-TileColor" content="#2e2e2e" />
+        <meta name="msapplication-TileImage" content="{{
+        get_url(path="/images/mstile-144x144.png")|safe }}" /> <meta
+        name="msapplication-config" content="{{
+        get_url(path="/images/browserconfig.xml")|safe }}" />
+        <meta name="theme-color" content="#2e2e2e" />
+
+        <!-- theme/images/favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{
+        get_url(path="/images/apple-touch-icon.png")|safe }}" /> <link
+        rel="icon" type="image/png" sizes="32x32" href="{{
+        get_url(path="/images/favicon-32x32.png")|safe }}" /> <link rel="icon"
+        type="image/png" sizes="194x194" href="{{
+        get_url(path="/images/favicon-194x194.png")|safe }}" /> <link rel="icon"
+        type="image/png" sizes="192x192" href="{{
+        get_url(path="/images/android-chrome-192x192.png")|safe }}" /> <link
+        rel="icon" type="image/png" sizes="16x16" href="{{
+        get_url(path="/images/favicon-16x16.png")|safe }}" /> <link
+        rel="manifest" href="{{ get_url(path="/images/site.webmanifest")|safe
+        }}" /> <link rel="mask-icon" href="{{
+        get_url(path="/images/safari-pinned-tab.svg")|safe }}" color="#2e2e2e"
+        /> <link rel="shortcut icon" href="{{
+        get_url(path="/images/favicon.ico")|safe }}" />
+
+        <meta
+            name="lang"
+            {%
+            if
+            page.lang
+            %}content="{{ page.lang }}"
+            {%
+            else
+            %}content="{{ lang }}"
+            {%
+            endif
+            %}
+        />
+        <meta
+            property="og:locale"
+            {%
+            if
+            page.locale
+            %}content="{{ lang }}"
+            {%
+            else
+            %}content="{{ lang }}"
+            {%
+            endif
+            %}
+        />
+        {% if page.description -%}
+        <meta name="description" content="{{ page.description|safe }}" />
+        <meta property="og:description" content="{{ page.description|safe }}" />
+        {% else %}
+        <meta name="description" content="Coderdojo description for SEO" />
+        <meta
+            property="og:description"
+            content="Coderdojo description for SEO (opengraph tag)"
+        />
+        {% endif -%}
+
+        <!-- CSS -->
+        {# In production builds this will be automagically replaced with an
+        unqiue identifier to ensure chache is refreshed #}
+        <link href='{{ get_url(path="main.css")|safe }}' rel="stylesheet" />
+    </head>
+    <body
+        style="position: relative"
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example"
+    >
+        <header
+            class="
+                navbar navbar-dark
+                sticky-top
+                bg-dark
+                flex-md-nowrap
+                d-flex
+                justify-content-between
+                shadow
+            "
+            {%
+            block
+            title_header_attributes
+            %}{%
+            endblock
+            %}
+        >
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
+                <img
+                    src="/images/favicon-194x194.png"
+                    alt="Cobalt Brand"
+                    width="30"
+                    height="30"
+                    class="d-inline-block h-100"
+                />
+                {% block title_header %} Coderdojo{% endblock %}
+            </a>
+            <button
+                class="btn btn-dark m-2"
+                id="menu-toggle"
+                type="button"
+                aria-label="Sidebar Toggle"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+                    />
+                </svg>
+            </button>
+        </header>
+        <div class="d-flex w-100 sidebar-toggled" id="wrapper">
+            <div class="container-fluid" id="page-content-wrapper">
+                <main class="container-fluid w-100" id="content">
+                    {% block content %} {% endblock content %}
+                </main>
+            </div>
+            <div id="sidebar-wrapper" class="bg-dark">
+                <div class="text-white d-flex flex-column text-white bg-dark">
+                    <div class="sticky-top">
+                        <a href="/" class="nav-link px-0 text-white">
+                            <img
+                                src="/images/favicon-194x194.png"
+                                alt="Cobalt Brand"
+                                width="30"
+                                height="30"
+                                class="d-inline-block h-100"
+                            />
+                            Cobalt's Blog
+                        </a>
+                        <hr />
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white"
+                                    aria-current="page"
+                                    href="/"
+                                >
+                                    <i class="bi bi-house-fill"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white"
+                                    href="{{ get_url(path='@/news/_index.md')|safe }}"
+                                >
+                                    <i class="bi bi-megaphone-fill"></i>
+                                    News
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h6
+                            class="
+                                sidebar-heading
+                                d-flex
+                                justify-content-between
+                                align-items-center
+                                px-3
+                                mt-4
+                                mb-1
+                                text-muted
+                            "
+                        >
+                            <span>Chapters</span>
+                        </h6>
+                        <ul class="nav flex-column mb-2">
+                            {% set sections = load_data(path="chapters.toml") %}
+                            {% for Lsection in sections.chapters %}
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    style="color: {{ Lsection['color'] }} !important;"
+                                    href="{{ get_url(path=Lsection['path'])|safe }}"
+                                >
+                                    <i class="bi bi-{{ Lsection['icon'] }}"></i>
+                                    {{ Lsection["name"] }}
+                                </a>
+
+                                {% if section.extra.color is defined and
+                                section.extra.color == Lsection["color"] %}
+
+                                <ul id="chapter-spybar">
+                                    {% for chapter in section.toc %}
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="#{{ chapter.id }}"
+                                        >
+                                            {{ chapter.title }}
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ footer::footer() }}
+
+        <!-- JS -->
+        <script src='{{ get_url(path="js/main.js")|safe }}'></script>
+        {% block extra_js %}{% endblock -%}
+        <!-- #JS -->
+    </body>
+</html>

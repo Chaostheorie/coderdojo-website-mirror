@@ -1,0 +1,81 @@
+{% extends "base.html" %} {% block content %} {% set data =
+load_data(path="static/licenses.csv", format="csv") %}
+<div
+    class="container w-100 mt-3 mx-auto"
+    itemscope
+    itemtype="https://schema.org/SearchResultsPage"
+>
+    <section class="dark-grey-text">
+        <h1 class="h1 text-dark text-center" id="title" itemtype="headline">
+            {{ page.title|safe }} {% if page.extra.subtitle is defined %}
+            <span class="visually-hidden">{{ page.extra.subtitle }} </span> {%
+            endif -%}
+        </h1>
+        <p id="info" class="dark-grey-text align-middle bg-beige text-dark">
+            {% if config.extra.rtime %} {% if page.extra.rtime is defined and
+            page.extra.rtime != true %} {% else %}
+            <span class="text-bold">
+                Reading Time: {{ page.reading_time }} min
+            </span>
+            <span class="px-1">/</span>
+            {% endif %} {% endif %} {% if page.date %}
+            <span class="text-bold">
+                Published: {{ page.month }}/{{ page.day }}/{{ page.year}}
+            </span>
+            <span class="px-1">/</span>
+            {% endif %} {% if page.draft %}
+
+            <span class="text-bold"> Draft </span>
+            <span class="px-1">/</span>
+            {% endif %} {% if config.extra.link %} {% if page.extra.link is
+            defined and page.extra.link != true %} {% else %}
+            <button
+                class="btn btn-sm btn-outline-dark"
+                onclick="window.CopyToClipBoard('{{ page.permalink|safe }}', this);"
+            >
+                Copy Link <i class="bi bi-link-45deg"></i>
+            </button>
+            {% endif %} {% endif %}
+        </p>
+        <div class="container-fluid" itemprop="mainContentOfPage">
+            {{ page.content| safe }}
+            <ul class="list-group list-group-flush">
+                {% for dependency in data.records %}
+                <li
+                    class="
+                        list-group-item
+                        d-flex
+                        justify-content-between
+                        align-items-start align-middle
+                        bg-transparent
+                    "
+                >
+                    <code class="h-100">
+                        {{ dependency[5] }} ({{ dependency[6] }}) by {{
+                        dependency[1] }} under {{ dependency[4] }} {% if
+                        dependency[2] != "" %}(Modified){% endif %}
+                    </code>
+                    <a
+                        class="btn btn-sm btn-outline-dark"
+                        data-bs-toggle="collapse"
+                        href="#collapse-{{ loop.index }}"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapse-{{ loop.index }}"
+                    >
+                        Text
+                    </a>
+                </li>
+                <div
+                    class="collapse border-1 border-light my-4"
+                    id="collapse-{{ loop.index }}"
+                >
+                    <p>{{ dependency[3]}}</p>
+                </div>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

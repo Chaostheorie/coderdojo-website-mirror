@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+<div
+    class="container w-80 mt-3 mx-auto"
+    itemscope
+    itemtype="https://schema.org/SearchResultsPage"
+>
+    <section class="dark-grey-text">
+        <div class="text-center">
+            <div>
+                <h1 class="h1" id="title" itemtype="headline">
+                    <i class="bi bi-gear-wide-connected"></i> Coderdojo Index
+                    <span class="visually-hidden">
+                        Subtitle
+                    </span>
+                </h1>
+                <div class="container" itemprop="mainContentOfPage">
+                   Welcome Text
+                </div>
+                <div class="btn-group mt-2">
+                    <a
+                        class="btn btn-lg btn-dark"
+                        itemprop="significantLink"
+                        id="contact"
+                        href="{{ get_url(path='@/content/contact.md') }}"
+                    >
+                        <i class="bi bi-envelope"></i> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

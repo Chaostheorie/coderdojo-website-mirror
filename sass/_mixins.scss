@@ -1,0 +1,22 @@
+/*
+_mixins..scss Frontend stylesheet for cobalt's homepage
+@license GPL-3-only @ Cobalt <https://cobalt.rocks>
+*/
+
+@mixin rotate($deg: 90, $time: 1) { /* stylelint-disable-line at-rule-no-unknown */
+    $sDeg: #{$deg}deg;
+    $stime: #{$time}s;
+
+    transform-origin: center center;
+    transition: rotate $stime ease;
+    transform: rotate($sDeg);
+}
+
+@mixin rotateX($deg: 90, $time: 1) { /* stylelint-disable-line at-rule-no-unknown */
+    $sDeg: #{$deg}deg;
+    $stime: #{$time}s;
+
+    transform-origin: center center;
+    transition: rotatex $stime ease;
+    transform: rotateX($sDeg);
+}

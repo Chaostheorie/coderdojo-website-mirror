@@ -1,0 +1,25 @@
+
+# chapters
+[[chapters]]
+name = "Kyo 1"
+path = "@/kyo-1/_index.md"
+color = "#66D9EF"
+icon = "reception-1"
+
+[[chapters]]
+name = "Kyo 2"
+path = "@/kyo-2/_index.md"
+color = "#A6E22E"
+icon = "reception-2"
+
+[[chapters]]
+name = "Kyo 3"
+path = "@/kyo-3/_index.md"
+color = "#F92672"
+icon = "reception-3"
+
+[[chapters]]
+name = "Kyo 4"
+path = "@/kyo-4/_index.md"
+color = "#FD971F"
+icon = "reception-4"

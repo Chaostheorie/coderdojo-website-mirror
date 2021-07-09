@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "lib": [
+            "esnext",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "outDir": "./dist/",
+        "sourceMap": false,
+        "target": "es6",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    }
+}

@@ -1,0 +1,61 @@
+image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/zola-builder:latest
+
+cache:
+    key: '${CI_COMMIT_REF_SLUG}'
+    paths:
+        - node_modules
+
+Lint:
+    only:
+        changes:
+            - sass/*
+            - ts/*
+            - package.json
+            - .stylelintrc.json
+            - .eslintrc.json
+    before_script:
+        - yarn install
+    script:
+        - yarn run lint
+
+CD:
+    stage: deploy
+    environment:
+        name: production
+        url: https://coderdojo.cobalt.rocks
+    only:
+        changes:
+            - content/*/**
+            - syntaxes/*
+            - content/*
+            - templates/*
+            - static/*/**
+            - static/*
+            - sass/*
+            - ts/*
+            - config.toml
+            - package.json
+            - purgecss.config.js
+            - webpack.config.js
+            - webpack.prod.config.js
+            - .gitlab-ci.yml
+    before_script:
+        # Install all the npm dependencies (normally cached but clover#2 currently has problems)
+        - yarn install
+        # Add shh folder
+        - mkdir -p ~/.ssh
+        # Start ssh agent
+        - eval $(ssh-agent -s)
+        - echo "$CD_PRIVATE_KEY" > ~/.ssh/id_rsa
+        - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
+        # Ssh is picky about permissions
+        - chmod 644 ~/.ssh/known_hosts
+        - chmod 700 ~/.ssh
+        - chmod 600 ~/.ssh/id_rsa
+    script:
+        - yarn run ci-build
+    after_script:
+        # Restart agent - Not neccessary OOnly use when debugging
+        # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"
+        # Upload
+        - rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./public/*  "$CD_DIST_USER@$CD_DIST_HOST:"

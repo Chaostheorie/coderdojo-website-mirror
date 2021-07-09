@@ -1,0 +1,36 @@
+# The URL the site will be built for
+base_url = "https://coderdojo.cobalt.rocks"
+
+# Whether to automatically compile all Sass files in the sass directory
+# Will be compressed & prefixed for production builds
+compile_sass = true
+
+# Minify
+# Breaks syntax highlighting sometimes - has been replaced for production builds with compress.ts
+minify_html = false
+
+# feeds
+generate_feed = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+# You may want this buuuuuuut I don't want to take care of it right now. Might be done later
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+highlight_code = true
+# Adjust to your liking
+highlight_theme = "monokai"
+
+[extra]
+# Enable katex for webpage
+katex = false
+# Display "Copy Link" Button
+link = true
+# Ehhhm Donno
+sctionlisting = true
+# Adjust settings for sitemap generation (to hide sites from google/ bing …)
+list = true
+priority = 0.5
+# Whether to display footer
+footer = true

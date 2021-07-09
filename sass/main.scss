@@ -1,0 +1,25 @@
+/*!
+Main.scss Frontend stylesheet for cobalt's homepage
+@license GPL-3-only @ Cobalt <https://cobalt.rocks>
+*/
+
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons'; // this allows non-traditional include with css (see https://stackoverflow.com/questions/7111610/import-regular-css-file-in-scss-file/36166487#36166487)
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '_layout.scss';
+@import '_interactive.scss';
+
+.bi,
+.bi::before,
+.bi::after {
+    font-family: 'bootstrap-icons', sans-serif !important;
+    font-style: normal;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+}
+
+.bi-heading::after,
+.bi-heading::before {
+    font-weight: bold;
+    font-size: xx-large;
+}

@@ -1,0 +1,10 @@
+katex/
+licenses.csv
+node_modules
+public
+static/dist/*
+static/js/
+.vscode/
+yarn-error.log
+test*
+compress.js
