@@ -56,8 +56,7 @@ $breakpoint-lg: 992px;
     }
 }
 
-#sidebar-wrapper {
-    /* stylelint-disable-line no-duplicate-selectors */
+#sidebar-wrapper { /* stylelint-disable-line no-duplicate-selectors */
     transition: margin 0.25s ease-out;
     width: 20rem;
     margin-right: -20rem;

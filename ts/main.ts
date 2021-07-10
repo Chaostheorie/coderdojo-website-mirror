@@ -24,6 +24,7 @@ export async function initUI() {
 
     // navbar floating support
     const pageContentWrapper = document.getElementById('page-content-wrapper');
+    // eslint-disable-next-line no-unused-vars
     const _floatSidebar = new FloatSidebar({
         sidebar: document.getElementById('sidebar-wrapper'),
         relative: pageContentWrapper,
