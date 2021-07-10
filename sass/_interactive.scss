@@ -23,7 +23,7 @@ button[data-bs-toggle='collapse'].rotatable {
 }
 
 .active {
-    border: solid 1px white;
+    border: solid 0.1rem $secondary;
 }
 
 .form-control-plaintext {

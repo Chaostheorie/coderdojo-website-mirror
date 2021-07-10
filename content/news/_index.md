@@ -2,6 +2,7 @@
 title = "News"
 lang = "en"
 summary = "News"
+template = "section-news.html"
 +++
 
-We are officially publishing news
+Read our furrier news.

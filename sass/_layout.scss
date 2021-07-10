@@ -4,7 +4,9 @@ _layout..scss Frontend stylesheet for cobalt's homepage
 */
 
 @import '_mixins.scss';
-@import '../node_modules/bootstrap/scss/_variables.scss';
+@import '_variables.scss';
+@import '_sidebar.scss';
+@import '_dark.scss';
 
 // general body
 body,
@@ -18,19 +20,28 @@ body,
     min-height: 100vh;
     margin: inherit 0 !important;
     padding: inherit 0 !important;
+
+    h2 {
+        color: $secondary;
+    }
+
+    h1 {
+        color: $primary;
+    }
 }
 
-// form adjustments
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-    background-color: transparent;
-    color: white;
-    text-decoration: underline white 0.2rem;
+// numbered lists for toc
+.list-group-numbered > li::before {
+    color: $primary;
 }
 
 // code
 code {
     color: $secondary;
+}
+
+ul#chapter-spybar a.text-white {
+    color: $primary !important;
 }
 
 pre {
@@ -149,16 +160,6 @@ a {
     }
 }
 
-.sidebar-item {
-    color: white;
-    background-color: $dark;
-
-    &:hover {
-        background-color: $dark;
-        color: darken(white, 20);
-    }
-}
-
 #wrapper {
     overflow-x: hidden;
 }
@@ -166,204 +167,4 @@ a {
 #page-content-wrapper {
     max-width: 100vw;
     margin-left: 0;
-}
-
-#menu-toggle {
-    ~ ::before {
-        color: white;
-    }
-
-    &:hover {
-        transform: scale(1.05);
-    }
-
-    &.toggled {
-        @include rotate(180, 4); /* stylelint-disable-line at-rule-no-unknown */
-
-        ~ ::before {
-            color: gray;
-            font-size: large;
-        }
-    }
-}
-
-/* Constants for sidebar-wrapper */
-$sidebar-wrapper-sm: 15rem;
-$sidebar-wrapper-md: 15rem;
-$sidebar-wrapper-lg: 17.5rem;
-
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-
-// Both need to be separated to avoid cls
-#sidebar-wrapper {
-    margin-right: -$sidebar-wrapper-sm;
-    width: $sidebar-wrapper-sm;
-
-    li.nav-item {
-        padding: 0.5rem 0 0.5rem 0.5rem;
-
-        &:hover {
-            transition: background-color 0.5s ease-in-out;
-            background-color: lighten($dark, 5);
-            border-right: 2px solid white;
-        }
-
-        a.nav-link {
-            padding: 0 0 0 0;
-            border-radius: 0;
-        }
-    }
-}
-
-#sidebar-wrapper { /* stylelint-disable-line no-duplicate-selectors */
-    transition: margin 0.25s ease-out;
-    width: 20rem;
-    margin-right: -20rem;
-    border-left: 0.1rem solid white;
-}
-
-.sidebar-toggled #sidebar-wrapper {
-    margin-right: 0;
-    border-left: 0.1rem solid white;
-}
-
-@media (max-width: $breakpoint-md) {
-    h1 {
-        color: red !important;
-    }
-
-    #sidebar-wrapper {
-        margin-right: 0 !important;
-        width: $sidebar-wrapper-sm !important;
-    }
-
-    .sidebar-toggled #sidebar-wrapper {
-        margin-right: -$sidebar-wrapper-sm !important;
-    }
-}
-
-@media (min-width: $breakpoint-md) {
-    #sidebar-wrapper {
-        margin-right: 0;
-        width: $sidebar-wrapper-md;
-    }
-
-    .sidebar-toggled #sidebar-wrapper {
-        margin-right: -$sidebar-wrapper-md;
-    }
-}
-
-@media (min-width: $breakpoint-lg) {
-    #sidebar-wrapper {
-        margin-right: -$sidebar-wrapper-lg;
-        width: $sidebar-wrapper-lg;
-    }
-
-    .sidebar-toggled #sidebar-wrapper {
-        margin-right: 0;
-    }
-}
-
-// dark mode support
-@media (prefers-color-scheme: dark) {
-    $text: #524f52;
-    $bg: #333;
-    $text-dark: darken($text, 5);
-    $text-light: lighten($text, 5);
-    $light: lighten($text, 20);
-
-    .table {
-        color: #fff;
-    }
-
-    .form-control-plaintext {
-        color: #fff;
-        border-color: $light !important;
-    }
-
-    #menu-toggle {
-        background-color: $bg;
-
-        &:hover {
-            background-color: darken($bg, 10);
-        }
-
-        &.toggled {
-            background-color: $dark;
-        }
-    }
-
-    blockquote {
-        color: white;
-        background: lighten($bg, 10);
-
-        code {
-            color: $light;
-        }
-    }
-
-    a:visited {
-        color: $light;
-    }
-
-    #page-content-wrapper {
-        background: $bg;
-        color: white;
-
-        .accordion-item {
-            background-color: transparent;
-        }
-
-        .accordion-button::after {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255,255,255)'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-        }
-    }
-
-    // darken images to reduce contrast on dark background
-    img {
-        filter: brightness(0.8) contrast(1.2);
-    }
-
-    #title {
-        color: white !important;
-    }
-
-    .card.border-light {
-        border: 0;
-    }
-
-    .btn-dark {
-        background-color: $text;
-        border-color: $text;
-
-        &:hover {
-            background-color: $text-dark;
-            border-color: $text-dark;
-        }
-    }
-
-    .btn-outline-dark,
-    .btn-outline-light {
-        border-color: $light;
-        color: $light;
-
-        &.disabled {
-            color: $text-dark;
-        }
-
-        &:hover {
-            background-color: $light;
-            border-color: #000;
-        }
-    }
-
-    #info {
-        color: $light !important;
-    }
-
-    #sidebar-wrapper {
-        border-right-color: #333 !important;
-    }
 }

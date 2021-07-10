@@ -1,0 +1,88 @@
+{% extends "base.html" %} {% block content %}
+<div
+    class="container w-100 mt-3 mx-auto"
+    itemscope
+    itemtype="https://schema.org/SearchResultsPage"
+>
+    <section class="dark-grey-text">
+        <h1 class="h1 text-center" id="title" itemtype="headline">
+            {% if section.title %} {{ section.title }} {% else %} {{
+            section.path|safe }} {% endif %} {% if section.extra.subtitle is
+            defined %}
+            <span class="visually-hidden">{{ section.extra.subtitle }} </span>
+            {% endif -%}
+        </h1>
+        <p id="info" class="dark-grey-text align-middle bg-beige text-dark">
+            {% if section.draft %}
+            <span class="text-bold"> Draft </span>
+            <span class="px-1">/</span>
+            {% endif %} {% if config.extra.section %} {% if
+            section.extra.section is defined and section.extra.section != true
+            %} {% else %}
+
+            <span class="text-bold"> Section </span>
+            <span class="px-1">/</span>
+            {% endif %} {% endif %}
+        </p>
+        <div class="container-fluid" itemprop="mainContentOfPage">
+            {{ section.content|safe }}
+        </div>
+
+        <div
+            class="
+                row
+                mt-3
+                justify-content-start
+                row-cols-lg-2 row-cols-1
+                g-2 g-lg-3
+            "
+        >
+            {% for page in section.pages %} {% if page.extra.list is defined and
+            page.extra.list == false %} {% else %}
+            <div class="col-12">
+                <div class="card-body">
+                    <h2 class="card-title h5 mt-3">{{ page.title }}</h2>
+                    <p class="card-text align-middle">
+                        {% set spacer = false %} {% if config.extra.rtime %} {%
+                        if page.extra.rtime is defined and page.extra.rtime !=
+                        true %} {% else %}
+                        <span class="text-bold">
+                            <i class="bi bi-eye"></i>
+                            Reading Time: {{ page.reading_time }} min
+                        </span>
+                        {% set spacer = true %} {% endif %} {% endif %} {% if
+                        page.date %} {% if spacer %}
+                        <br />
+                        {% endif %}
+                        <span class="text-bold">
+                            <i class="bi bi-calendar-event"></i>
+                            Published: {{ page.day }}/{{ page.month }}/{{
+                            page.year}}
+                        </span>
+                        {% endif %}
+                    </p>
+                    <p class="card-text">
+                        {% if page.summary %} {{ page.summary }} {% elif
+                        page.description %} {{ page.description }} {% else %} No
+                        description or summary found {% endif %}
+                    </p>
+                    <div
+                        class="btn-group"
+                        role="group"
+                        aria-label="Navigation group for mdpdf"
+                    >
+                        <a href="{{ page.permalink }}" class="btn btn-secondary">
+                            <i class="bi bi-eyeglasses"></i>
+                            Read More
+                            <span class="visually-hidden">
+                                about {{ page.title }}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </section>
+</div>
+{% endblock %}

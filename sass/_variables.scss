@@ -3,5 +3,17 @@ _variables..scss Frontend stylesheet for cobalt's homepage
 @license GPL-3-only @ Cobalt <https://cobalt.rocks>
 */
 
+// @import '../node_modules/bootstrap/scss/_variables.scss';
+
 $accordion-icon-color: gray;
 $accordion-icon-active-color: #fff;
+
+// Default variable overrides
+$primary: #5c7585;
+$secondary: #e0682f;
+$success: #314958;
+$info: #9c9084;
+$warning: #e0682f;
+$danger: #a83900;
+$light: #e6dcd8;
+$dark: #30322f;
