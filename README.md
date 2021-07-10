@@ -2,11 +2,12 @@
 
 TODO:
 
--   [ ] Fix scrollspy (make sticky)
--   [ ] Fix styling
-    -   [ ] color -> title …
+-   [ ] Fix scrollspy 
+-   [ ]
+-   [x] Fix styling
+    -   [x] color -> title …
     -   [ ] active for scrollspy
-    -   [ ] sidebar
--   [ ] Fix section links and author notes
+    -   [x] floating sidebar
+-   [x] Fix section links and author notes
 -   [ ] Add documentation
 -   [ ] Add a flowchart for CI and build
