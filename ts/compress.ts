@@ -4,8 +4,8 @@ const fs = require('fs');
 const minifyHtml = require('@minify-html/js');
 
 const cfg = minifyHtml.createConfiguration({
-    minifyJs: false,
-    minifyCss: false,
+    minifyJs: true,
+    minifyCss: true,
 });
 
 glob('public/**/*.html', (err: Error, res: string[]) => {
