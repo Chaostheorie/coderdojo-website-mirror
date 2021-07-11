@@ -1,10 +1,10 @@
 +++
-title = "Kyo 4"
-lang = "en"
-summary = "Test"
+title = "4. Kyo"
 
 [extra]
-katex = true
-color = "#FD971F"
+color = "#33CC33"
 +++
 
+## Inhalt
+
+Das Programm für diesen Gürtel wird gerade konzipiert. 

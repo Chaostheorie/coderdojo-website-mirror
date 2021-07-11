@@ -1,28 +1,57 @@
 
 # chapters
 [[chapters]]
-name = "Kyo 4"
-path = "@/kyo-4/_index.md"
-color = "#FD971F"
-icon = "reception-4"
+name = "Euler-Gruppe"
+path = "@/euler/_index.md"
+color = "#66CCFF"
+icon = "reception-1"
 
 [[chapters]]
-name = "Kyo 3"
-path = "@/kyo-3/_index.md"
-color = "#F92672"
-icon = "reception-3"
-
-[[chapters]]
-name = "Kyo 2"
-path = "@/kyo-2/_index.md"
-color = "#A6E22E"
+name = "7. Kyū"
+path = "@/kyo-7/_index.md"
+color = "#FFFFFF"
 icon = "reception-2"
 
 [[chapters]]
-name = "Kyo 1"
-path = "@/kyo-1/_index.md"
-color = "#66D9EF"
-icon = "reception-1"
+name = "6. Kyū"
+path = "@/kyo-6/_index.md"
+color = "#FFFF00"
+icon = "reception-3"
 
+[[chapters]]
+name = "5. Kyū"
+path = "@/kyo-5/_index.md"
+color = "#FF9900"
+icon = "reception-4"
+
+[[chapters]]
+name = "4. Kyū"
+path = "@/kyo-4/_index.md"
+color = "#33CC33"
+icon = "reception-5"
+
+[[chapters]]
+name = "3. Kyū"
+path = "@/kyo-3/_index.md"
+color = "#0066FF"
+icon = "reception-6"
+
+[[chapters]]
+name = "2. Kyū"
+path = "@/kyo-2/_index.md"
+color = "#6600FF"
+icon = "reception-7"
+
+[[chapters]]
+name = "1. Kyū"
+path = "@/kyo-1/_index.md"
+color = "#663300"
+icon = "reception-8"
+
+[[chapters]]
+name = "1. Dan"
+path = "@/dan-1/_index.md"
+color = "#000000"
+icon = "reception-9"
 
 

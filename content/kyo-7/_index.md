@@ -1,8 +1,8 @@
 +++
-title = "3. Kyo"
+title = "7. Kyo"
 
 [extra]
-color = "#0066FF"
+color = "#FFFFFF"
 +++
 
 ## Inhalt
