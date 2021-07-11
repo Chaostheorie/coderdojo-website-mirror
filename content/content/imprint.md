@@ -16,22 +16,21 @@ I'm not the owner of any linked external content. For any inquiries please conta
 </p>
 
 <dl class="row">
-    <dt class="col-sm-3">
-      <span class="badge bg-dark text-white fab rounded-pill mx-1">Site Operator <i class="fas fa-user-alt"></i></span>
-    </dt>
-    <dd class="col-sm-9">
-        Joshua Kobschätzki
-    </dd>
-    <dt class="col-sm-3">
-      <span class="badge bg-dark text-white rounded-pill mx-1">Address <i class="fas fa-house-user"></i></span>
-    </dt>
-    <dd class="col-sm-9">
-        Raabestr. 8 10405 Berlin, Germany
-    </dd>
-    <dt class="col-sm-3">
-      <span class="badge bg-dark text-white rounded-pill mx-1">E-Mail <i class="fas fa-envelope"></i></span>
-    </dt>
-    <dd class="col-sm-9">
-        chaosthe0rie@protonmail.com
-    </dd>
+
+{{ dt(text="Site Operator", icon="person-badge-fill") }}
+
+{{ dd(text="Max Mustermann") }}
+
+{{ dt(text="Address", icon="house-door-fill") }}
+
+{{ dd(text="Example Street 1, Example City, Example Country") }}
+
+{{ dt(text="E-Mail", icon="envelope-fill") }}
+
+{{ dd(text="example [at] org") }}
+
+{{ dt(text="Phone", icon="telephone-fill") }}
+
+{{ dd(text="example [at] org") }}
+
 </dl>

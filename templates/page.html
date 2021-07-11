@@ -4,8 +4,8 @@
     itemscope
     itemtype="https://schema.org/SearchResultsPage"
 >
-    <section class="dark-grey-text">
-        <h1 class="h1 text-dark text-center" id="title" itemtype="headline">
+    <section>
+        <h1 class="h1 text-center" id="title" itemtype="headline">
             {{ page.title|safe }} {% if page.extra.subtitle is defined %}
             <span class="visually-hidden">{{ page.extra.subtitle }} </span> {%
             endif -%}

@@ -34,3 +34,5 @@ list = true
 priority = 0.5
 # Whether to display footer
 footer = true
+# Used for footer and copyright
+base_domain = "coderdojo.cobalt.rocks"

@@ -22,10 +22,6 @@ button[data-bs-toggle='collapse'].rotatable {
     }
 }
 
-.active {
-    border: solid 0.1rem $secondary;
-}
-
 .form-control-plaintext {
     border-color: $dark;
 }
@@ -40,60 +36,6 @@ button[data-bs-toggle='collapse'].rotatable {
     margin-bottom: 0 !important;
 }
 
-// customization to accordions
-.accordion-button {
-    background-color: $dark;
-    color: $light;
-
-    &:focus {
-        z-index: 3;
-        border-color: lightgray;
-        outline: 0;
-        box-shadow: 0 0 0 0.25rem gray;
-    }
-
-    &:not(.collapsed) {
-        background-color: $dark;
-        color: $light;
-        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
-    }
-}
-
-// fading support
-@keyframes fadeLeft {
-    from {
-        opacity: 0;
-        transform: translate3d(-20%, 0, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fade-in-left {
-    animation-name: fadeLeft;
-    animation-duration: 2s;
-}
-
-@keyframes fadeRight {
-    from {
-        opacity: 0;
-        transform: translate3d(20%, 0, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fade-in-right {
-    animation-name: fadeRight;
-    animation-duration: 2s;
-}
-
 // modify pre when putting helper on top
 div[data-type='file-helper'] {
     border-top-left-radius: 0.25rem !important;
@@ -104,4 +46,10 @@ div[data-type='file-helper'] {
         border-top-right-radius: 0 !important;
         border-top: 0 !important;
     }
+}
+
+// scrollspy uses active for marking
+.active {
+    border: 0;
+    text-decoration: underline solid $secondary;
 }

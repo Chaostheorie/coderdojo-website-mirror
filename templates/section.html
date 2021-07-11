@@ -54,4 +54,19 @@ defined %} {% set color = section.extra.color %} {% else %} {% set color =
         </div>
     </section>
 </div>
-{% endblock %}
+{% endblock %} {% block extra_js %} {% if config.extra.katex or section.extra.katex
+%}
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+            ],
+        });
+    });
+</script>
+<link rel="stylesheet" href="/katex/katex.min.css" />
+{% endif %} {% endblock %}

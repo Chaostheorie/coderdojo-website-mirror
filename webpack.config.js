@@ -11,7 +11,7 @@ const banner = new webpack.BannerPlugin({
 
 module.exports = {
     mode: 'development',
-    devtool: false, // don't ever use inline-source-map
+    devtool: 'cheap-module-source-map',
     module: {
         rules: [
             {

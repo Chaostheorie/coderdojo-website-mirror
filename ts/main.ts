@@ -1,5 +1,5 @@
 import Collapse from 'bootstrap/js/dist/collapse';
-import ScrollSpy from 'bootstrap/js/dist/scrollspy';
+import scrollSpy from '@sidsbrmnn/scrollspy';
 import FloatSidebar from 'float-sidebar';
 
 /**
@@ -33,15 +33,14 @@ export async function initUI() {
     });
 
     // scrollspy support
-    const spyBarElement = document.getElementById('chapter-spybar');
-    let spy: ScrollSpy;
+    const scrollspyNavElement = document.getElementById('chapter-spybar');
 
-    if (spyBarElement !== undefined && spyBarElement !== null) {
-        spy = new ScrollSpy(pageContentWrapper, {
-            target: '#chapter-spybar',
+    if (scrollspyNavElement !== undefined && scrollspyNavElement !== null) {
+        scrollSpy(scrollspyNavElement, {
+            sectionSelector: 'h1, h2, h3, h4, h5, h6',
+            targetSelector: '.scrollspy-link',
+            offset: 100,
         });
-        console.log(spy);
-        console.log('[MAIN]: Initiales Scrollspy');
     }
 
     // nav toggle
@@ -51,9 +50,6 @@ export async function initUI() {
         evt.preventDefault();
         menuToggle.classList.toggle('toggled');
         document.getElementById('wrapper').classList.toggle('sidebar-toggled');
-        if (spy.refresh !== undefined) {
-            spy.refresh();
-        }
     });
 
     document

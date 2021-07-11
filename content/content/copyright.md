@@ -2,15 +2,15 @@
 title = "Copyright"
 slug = "copyright"
 
-summary = "Information about the copyright of original content on coderdojo.cobalt.rocks"
-description = "Information about the copyright of original content on coderdojo.cobalt.rocks"
+summary = "Information about the copyright of original content"
+description = "Information about the copyright of original content"
 template = "copyright.html"
 
 [extra]
 rtime = false
 +++
 
-All original content on [coderdojo.cobalt.rocks](htps://cobalt.rocks) and all related subdomains published by us is avalaible under [To Be choosen](https://example.org) when not explicitly specified otherwise.
+All original content on {{ domain() }} and all related subdomains published by us is avalaible under [To Be choosen](https://example.org) when not explicitly specified otherwise.
 
 > Below is an example text for `CC BY-NC-SA 4.0`
 

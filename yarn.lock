@@ -273,6 +273,11 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
   integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
 
+"@sidsbrmnn/scrollspy@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@sidsbrmnn/scrollspy/-/scrollspy-1.0.4.tgz#182a5f83065bbc6022b62e8305ee39d250ea9a34"
+  integrity sha512-SXhR8Is1AdaY6WkrJgUOZcqKAemNB48oJ42lySNu6Gud14vjw6UBjfo+ZIzJYG66aXxUa5U95oSiN4vwr/ihIQ==
+
 "@stylelint/postcss-css-in-js@^0.37.2":
   version "0.37.2"
   resolved "https://registry.yarnpkg.com/@stylelint/postcss-css-in-js/-/postcss-css-in-js-0.37.2.tgz#7e5a84ad181f4234a2480803422a47b8749af3d2"
