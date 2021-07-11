@@ -8,4 +8,5 @@ static/js/
 yarn-error.log
 test*
 compress.js
-
+.lighthouseci
+.idea
