@@ -26,6 +26,7 @@ CD:
     only:
         changes:
             - content/*/**
+            - chapter.toml
             - content/*
             - templates/*
             - templates/**/*
