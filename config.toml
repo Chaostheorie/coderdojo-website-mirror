@@ -36,3 +36,6 @@ priority = 0.5
 footer = true
 # Used for footer and copyright
 base_domain = "coderdojo.cobalt.rocks"
+# Used for brand icon (navbar top left)
+brand_alt = "Cobalt's Blog"
+brand_src = "/images/favicon-194x194.png"

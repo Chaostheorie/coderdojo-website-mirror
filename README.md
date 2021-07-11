@@ -2,20 +2,23 @@
 
 DerMicha and Bengoshi's todo:
 
-- [ ] Add favicon (use [realfavicongenerator](https://realfavicongenerator.net/) and replace relevant tags in `templates/base.html`)
-- [ ] Insert Content
-- [ ] Add privacy policy (no cookies used. Logging of User client and IP for 1 day)
-- [ ] Add Imprint information (`content/imprint.md`)
-- [ ] Add Contact information (`content/contact.md`)
-- [ ] Add copyright information (`content/copyright.md`)
-- [ ] Add index page (`templates/index.html`)
+-   [ ] Add favicon (use [realfavicongenerator](https://realfavicongenerator.net/) and replace relevant tags in `templates/base.html`)
+    -   [ ] Replace brand (see `config.toml -> [extra] -> brand_alt; brand_src`)
+    -   [ ] replace favicons (replace either icons or locations for `get_url`) (`templates/macros/faivon.html`)
+-   [ ] Insert Content
+    -   [ ] Chapters (See Add Chapters)
+    -   [ ] Privacy policy (no cookies used. Logging of User client and IP for 1 day)
+    -   [ ] Imprint information (`content/imprint.md`)
+    -   [ ] Contact information (`content/contact.md`)
+    -   [ ] Copyright information (`content/copyright.md`)
+    -   [ ] Index page (`templates/index.html`)
 
 Cobalt's TODO:
 
 -   [x] Fix scrollspy
 -   [x] Fix styling
     -   [x] color -> title …
-    -   [ ] active for scrollspy
+    -   [x] active for scrollspy
     -   [x] floating sidebar
 -   [x] Fix section links and author notes
 -   [x] Add documentation

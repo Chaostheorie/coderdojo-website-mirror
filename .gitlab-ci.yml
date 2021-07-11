@@ -46,16 +46,17 @@ CD:
         - mkdir -p ~/.ssh
         # Start ssh agent
         - eval $(ssh-agent -s)
+        # Dump keys from CI variables to files
         - echo "$CD_PRIVATE_KEY" > ~/.ssh/id_rsa
         - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
-        # Ssh is picky about permissions
+        # SSH agent requires specific permissions
         - chmod 644 ~/.ssh/known_hosts
         - chmod 700 ~/.ssh
         - chmod 600 ~/.ssh/id_rsa
     script:
         - yarn run ci-build
     after_script:
-        # Restart agent - Not neccessary OOnly use when debugging
+        # Restart agent - Not necessary only for debugging
         # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"
         # Upload
         - rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./public/*  "$CD_DIST_USER@$CD_DIST_HOST:"

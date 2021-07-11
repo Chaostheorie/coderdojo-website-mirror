@@ -1,5 +1,5 @@
 {% import "macros/footer.html" as footer %} {% import "macros/toc.html" as toc
-%}
+%} {% import "macros/favicon.html" as favicon %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,33 +13,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta property="og:image" content="{{
-        get_url(path=" images/brand.png")|safe }}" />
     <meta property="og:site_name" content="Coderdojo" />
     <meta property="og:type" content="text/html" />
-    <meta name="msapplication-TileColor" content="#2e2e2e" />
-    <meta name="msapplication-TileImage" content="{{
-        get_url(path=" /images/mstile-144x144.png")|safe }}" />
-    <meta name="msapplication-config" content="{{
-        get_url(path=" /images/browserconfig.xml")|safe }}" />
-    <meta name="theme-color" content="#2e2e2e" />
 
-    <!-- theme/images/favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{
-        get_url(path=" /images/apple-touch-icon.png")|safe }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{
-        get_url(path=" /images/favicon-32x32.png")|safe }}" />
-    <link rel="icon" type="image/png" sizes="194x194" href="{{
-        get_url(path=" /images/favicon-194x194.png")|safe }}" />
-    <link rel="icon" type="image/png" sizes="192x192" href="{{
-        get_url(path=" /images/android-chrome-192x192.png")|safe }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{
-        get_url(path=" /images/favicon-16x16.png")|safe }}" />
-    <link rel="manifest" href="{{ get_url(path=" /images/site.webmanifest")|safe }}" />
-    <link rel="mask-icon" href="{{
-        get_url(path=" /images/safari-pinned-tab.svg")|safe }}" color="#2e2e2e" />
-    <link rel="shortcut icon" href="{{
-        get_url(path=" /images/favicon.ico")|safe }}" />
+    {{ favicon::meta() }}
 
     <meta name="lang" {% if page.lang %}content="{{ page.lang }}" {% else %}content="{{ lang }}" {% endif %} />
     <meta property="og:locale" {% if page.locale %}content="{{ lang }}" {% else %}content="{{ lang }}" {% endif %} />
@@ -68,11 +45,11 @@
                 shadow
             ">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
-            <img src="/images/favicon-194x194.png" alt="Cobalt Brand" width="30" height="30"
+            <img src="{{ get_url(path=config.extra.brand_src)|safe }}" alt="{{ config.extra.brand_alt }}" width="30" height="30"
                 class="d-inline-block h-100" />
             {% block title_header %} Coderdojo{% endblock %}
         </a>
-        <button class="btn btn-dark m-2" id="menu-toggle" type="button" aria-label="Sidebar Toggle">
+        <button class="btn btn-dark shadow m-2" id="menu-toggle" type="button" aria-label="Sidebar Toggle">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left"
                 viewBox="0 0 16 16">
                 <path
