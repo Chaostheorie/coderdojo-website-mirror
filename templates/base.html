@@ -45,8 +45,8 @@
                 shadow
             ">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
-            <img src="{{ get_url(path=config.extra.brand_src)|safe }}" alt="{{ config.extra.brand_alt }}" width="30" height="30"
-                class="d-inline-block h-100" />
+            <img src="{{ get_url(path=config.extra.brand_src)|safe }}" alt="{{ config.extra.brand_alt }}" width="30"
+                height="30" class="d-inline-block h-100" />
             {% block title_header %} Coderdojo{% endblock %}
         </a>
         <button class="btn btn-dark shadow m-2" id="menu-toggle" type="button" aria-label="Sidebar Toggle">
@@ -80,7 +80,8 @@
                     </li>
                 </ul>
 
-                <h6 class="
+                <p class="
+                            h6
                             sidebar-heading
                             d-flex
                             justify-content-between
@@ -91,7 +92,7 @@
                             text-muted
                         ">
                     <span class="text-secondary">Chapters</span>
-                </h6>
+                </p>
                 <ul class="nav flex-column pl-2 mb-2">
                     {% set sections = load_data(path="chapters.toml") %} {%
                     for Lsection in sections.chapters %}
