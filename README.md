@@ -59,7 +59,7 @@ server {}
 
 ### Using KaTeX
 
-To enable [KaTeX](https://katex.org) for file you need to add a `katex = true` entry to the `[extra]` section of the front-matter part of a document. This will add a link to KaTeX and an autorender script to the compiled HTML file and enable you to use KaTeX in `$…$` and `$$…$$` blocks within commonmark for math typesetting. See the [KaTeX documentation](https://katex.org/docs/supported.html) for support functions and more.
+To enable [KaTeX](https://katex.org) for file you need to add a `katex = true` entry to the `[extra]` section of the front-matter part of a document. This will add a link to KaTeX and an autorender script to the compiled HTML file and enable you to use KaTeX in `$…$` and `$$…$$` blocks within commonmark for math typesetting.
 
 Example:
 
@@ -73,18 +73,17 @@ summary = "Test"
 katex = true
 +++
 
-Did you know that $1 + 1 = 2 \in \N$ and
+Did you know that $2 \in \N$ and
 
 $$
-\begin{equation}
-\begin{split}   a^2 &=b^2+c^2\\
-      a&=\sqrt{b^2+c^2}
-\end{split}
-\end{equation}
+\begin{align}
+   a^2 &= b^2+c^2 \\
+   a   &= \sqrt{b^2+c^2}
+\end{align}
 $$
+
+For more supported functions see the [$\KaTeX$ documentation](https://katex.org/docs/supported.html)
 ```
-
-> The rendering will be done client-side
 
 ### Adding new Chapters
 
