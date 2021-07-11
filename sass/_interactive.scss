@@ -51,5 +51,6 @@ div[data-type='file-helper'] {
 // scrollspy uses active for marking
 .active {
     border: 0;
-    text-decoration: underline solid $secondary;
+    text-decoration: underline solid $secondary !important;
+    transition: text-decoration ease-out 2s;
 }
