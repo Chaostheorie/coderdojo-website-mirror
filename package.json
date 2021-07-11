@@ -16,6 +16,7 @@
     },
     "description": "Assets for coderdojo.cobalt.rocks",
     "devDependencies": {
+        "@lhci/cli": "^0.8.0",
         "@minify-html/js": "^0.4.11",
         "@types/bootstrap": "^5.0",
         "@types/cssnano": "^4.0.1",

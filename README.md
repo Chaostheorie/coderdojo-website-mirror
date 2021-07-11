@@ -29,6 +29,8 @@ Things that haven't been added but could be later on:
 
 -   [ ] Search for whole content ([Zola Docs](https://www.getzola.org/documentation/content/search/))
 -   [ ] Image compression
+-   [ ] Multilingual support ([Zola Docs](https://www.getzola.org/documentation/content/multilingual/))
+-   [ ] Feeds for news ([Zola Docs](https://www.getzola.org/documentation/templates/feeds/))
 
 ## Writing Content
 
