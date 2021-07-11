@@ -1,8 +1,8 @@
 +++
-title = "Contact"
+title = "Kontakt"
 slug = "contact"
-summary = "contact information about you"
-decription = "contact information about you"
+summary = "Kontaktinfos"
+decription = "Wie Du uns erreichen kannst"
 
 [extra]
 link = false
@@ -11,7 +11,7 @@ priority = 1.0
 +++
 
 <p class="mb-3 text-center">
-    Some Filler text about information
+    Du erreichst uns unter...
 </p>
 
 <div class="w-100 text-center">

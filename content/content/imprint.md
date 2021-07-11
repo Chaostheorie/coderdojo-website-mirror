@@ -1,9 +1,10 @@
 +++
-title = "Imprint"
+title = "Impressum"
 slug = "imprint"
-summary = "Imprint for cobalt.rocks. Information about site operator and contact for any inquires."
-description = "Imprint for cobalt.rocks. Information about site operator and contact for any inquires."
-lang = "en"
+summary = "Impressum für das CoderDojo. Bei Fragen oder Infos wende Dich bitte an die Betreiber."
+description = "Impressum für coderdojo.red und coderdojo.blue. Bei Fragen wende
+Dich bitte an die Betreiber"
+lang = "de"
 
 [extra]
 rtime = false
@@ -12,25 +13,30 @@ priority = 1.0
 +++
 
 <p class="mb-3">
-I'm not the owner of any linked external content. For any inquiries please contact me via e-mail. I will answer in 1-2 business day for most inquires, and you will otherwise receive at least a confirmation that your request is being worked on.
+Die Inhalte von externen Links machen wir uns nicht zu eigen.
+</p>
+
+<p class="mb-3">
+Wenn Du Korrekturen oder Verbesserungsvorschläge hast - schreib uns bitte
+einfach per E-Mail oder Matrix an.
 </p>
 
 <dl class="row">
 
-{{ dt(text="Site Operator", icon="person-badge-fill") }}
+{{ dt(text="Verantwortliche", icon="person-badge-fill") }}
 
-{{ dd(text="Max Mustermann") }}
+{{ dd(text="Kai Kobschätzki (/bengoshi) und Michael Merz (/derMicha)") }}
 
 {{ dt(text="Address", icon="house-door-fill") }}
 
-{{ dd(text="Example Street 1, Example City, Example Country") }}
+{{ dd(text="Raabestraße 8, 10405 Berlin") }}
 
 {{ dt(text="E-Mail", icon="envelope-fill") }}
 
-{{ dd(text="example [at] org") }}
+{{ dd(text="bengoshi ät cyber4edu pünktchen org") }}
 
 {{ dt(text="Phone", icon="telephone-fill") }}
 
-{{ dd(text="example [at] org") }}
+{{ dd(text="+49 30 488 24 394") }}
 
 </dl>
