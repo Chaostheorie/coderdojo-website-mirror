@@ -23,6 +23,12 @@ Cobalt's TODO:
 -   [x] Fix section links and author notes
 -   [x] Add documentation
 -   [x] Add a flowchart for CI and build
+-   [ ] Macro for linking files from static
+
+Things that haven't been added but could be later on:
+
+-   [ ] Search for whole content ([Zola Docs](https://www.getzola.org/documentation/content/search/))
+-   [ ] Image compression
 
 ## Writing Content
 
