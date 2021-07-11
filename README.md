@@ -136,8 +136,8 @@ graph TD
     W[Webpack] -->|Build typescript| J[Javascript]
     K[Katex] -->|Bundle files| J
     H -->|Compress HTML| H1[HTML]
-    C -->|PostCSS - Autoprefixer ...| C1[CSS]
-    C1 -->|PurgeCSS - remove unused css| C2[CSS]
+    C -->|PurgeCSS - remove unused css| C1[CSS]
+    C1 -->|PostCSS - Autoprefixer ...| C2[CSS]
     H1 -->|change css files names for chaching and references| H2[HTML]
     C2 --> SC[Server]
     H2 --> SC

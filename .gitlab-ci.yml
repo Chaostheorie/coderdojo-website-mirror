@@ -26,9 +26,9 @@ CD:
     only:
         changes:
             - content/*/**
-            - syntaxes/*
             - content/*
             - templates/*
+            - templates/**/*
             - static/*/**
             - static/*
             - sass/*
