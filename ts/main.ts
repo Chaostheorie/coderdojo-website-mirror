@@ -34,16 +34,13 @@ export async function initUI() {
 
     // scrollspy support
     const scrollspyNavElement = document.getElementById('chapter-spybar');
-    console.log(scrollspyNavElement);
 
     if (scrollspyNavElement !== undefined && scrollspyNavElement !== null) {
-        console.log(
-            scrollSpy(scrollspyNavElement, {
-                sectionSelector: 'h1, h2, h3, h4, h5, h6',
-                targetSelector: '.scrollspy-link',
-                offset: 100,
-            }),
-        );
+        scrollSpy(scrollspyNavElement, {
+            sectionSelector: 'h1, h2, h3, h4, h5, h6',
+            targetSelector: '.scrollspy-link',
+            offset: 100,
+        });
     }
 
     // nav toggle
