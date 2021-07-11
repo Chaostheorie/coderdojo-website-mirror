@@ -2,7 +2,7 @@
 title = "Kyo 7"
 
 [extra]
-color = "#FFFFFF"
+color = "#fff"
 +++
 
 ## Inhalt
