@@ -18,8 +18,6 @@
     }
 
     #menu-toggle {
-        background-color: $bg;
-
         &:hover {
             background-color: darken($bg, 10);
         }
@@ -63,21 +61,6 @@
         &:hover {
             background-color: $text-dark;
             border-color: $text-dark;
-        }
-    }
-
-    .btn-outline-dark,
-    .btn-outline-light {
-        border-color: $light;
-        color: $light;
-
-        &.disabled {
-            color: $text-dark;
-        }
-
-        &:hover {
-            background-color: $light;
-            border-color: #000;
         }
     }
 

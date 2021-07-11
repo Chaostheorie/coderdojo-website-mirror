@@ -121,18 +121,6 @@ a {
         }
     }
 
-    &.btn-outline-light {
-        color: $light;
-
-        &:hover {
-            color: $dark;
-        }
-
-        &:visited {
-            color: $light;
-        }
-    }
-
     &.btn-dark {
         color: $light;
 

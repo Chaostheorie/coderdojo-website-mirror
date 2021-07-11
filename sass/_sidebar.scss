@@ -20,7 +20,6 @@ $breakpoint-lg: 992px;
 }
 
 #menu-toggle {
-    background-color: $dark;
     border-color: $primary;
 
     ~ ::before {
@@ -45,27 +44,29 @@ $breakpoint-lg: 992px;
 #sidebar-wrapper {
     margin-right: -$sidebar-wrapper-sm;
     width: $sidebar-wrapper-sm;
+    background-color: $success !important;
 
     li.nav-item {
         padding: 0.5rem 0 0.5rem 0.5rem;
 
         a.nav-link {
+            color: $secondary !important;
             padding: 0 0 0 0;
             border-radius: 0;
         }
     }
 }
 
-#sidebar-wrapper { /* stylelint-disable-line no-duplicate-selectors */
+/* stylelint-disable-line no-duplicate-selectors */ #sidebar-wrapper {
     transition: margin 0.25s ease-out;
     width: 20rem;
     margin-right: -20rem;
-    border-left: 0.1rem solid $secondary !important;
+    //border-left: 0.1rem solid $secondary !important;
 }
 
 .sidebar-toggled #sidebar-wrapper {
     margin-right: 0;
-    border-left: 0.1rem solid $primary;
+    //border-left: 0.1rem solid $primary;
 }
 
 @media (max-width: $breakpoint-md) {
