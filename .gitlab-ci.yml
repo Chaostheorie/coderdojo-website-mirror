@@ -39,6 +39,8 @@ CD:
             - webpack.config.js
             - webpack.prod.config.js
             - .gitlab-ci.yml
+        refs:
+            - main
     before_script:
         # Install all the npm dependencies (normally cached but clover#2 currently has problems)
         - yarn install
