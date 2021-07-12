@@ -46,7 +46,7 @@ Lint:
             # Start ssh agent
             - eval $(ssh-agent -s)
             # Dump keys from CI variables to files
-            - echo "$CD_PRIVATE_KEY" > ~/.ssh/id_rsa
+            - echo "$KEY" > ~/.ssh/id_rsa
             - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
             # SSH agent requires specific permissions
             - chmod 644 ~/.ssh/known_hosts
@@ -69,6 +69,7 @@ CD:Red:
         url: https://coderdojo.red
     variables:
         DOMAIN: coderdojo.red
+        KEY: "$CD_RED_PRIVATE_KEY"
     
     
 CD:Rocks:
@@ -79,3 +80,4 @@ CD:Rocks:
         url: https://coderdojo.cobalt.rocks
     variables:
         DOMAIN: coderdojo.cobalt.rocks
+        KEY: "$CD_PRIVATE_KEY"
