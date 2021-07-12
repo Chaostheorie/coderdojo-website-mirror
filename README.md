@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.cobalt.rocks/coderdojo/codedojo-website/badges/main/pipeline.svg)](https://gitlab.cobalt.rocks/coderdojo/codedojo-website/-/commits/main)
+
 # coderdojo website
 
 DerMicha and Bengoshi's todo:
