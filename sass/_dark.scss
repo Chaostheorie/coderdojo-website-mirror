@@ -64,6 +64,11 @@
         }
     }
 
+    .btn-outline-dark {
+        color: $light;
+        border-color: $light !important;
+    }
+
     #info {
         color: $light !important;
     }
