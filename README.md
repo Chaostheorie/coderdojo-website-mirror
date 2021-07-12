@@ -31,7 +31,7 @@ Things that haven't been added but could be later on:
 -   [ ] Search for whole content ([Zola Docs](https://www.getzola.org/documentation/content/search/))
 -   [ ] Image compression
 -   [ ] Multilingual support ([Zola Docs](https://www.getzola.org/documentation/content/multilingual/))
--   [ ] Feeds for news ([Zola Docs](https://www.getzola.org/documentation/templates/feeds/))
+-   [ ] Feeds for news (RSS) ([Zola Docs](https://www.getzola.org/documentation/templates/feeds/))
 
 ## Writing Content
 
@@ -158,4 +158,8 @@ Use tools for linting:
 
 Used formatters:
 
--   [Prettier](https://github.com/prettier/prettier) (config: `.stylelintrc.json`) — Code formatter for all assetss
+-   [Prettier](https://github.com/prettier/prettier) (config: `.prettierrc.json`) — Code formatter for all assets
+
+### Licensing
+
+All 'code', such as typescript and sass assets, are under the [AGPL](https://gitlab.cobalt.rocks/coderdojo/codedojo-website/-/blob/main/LICENSE) License. The terms of the license are fulfilled by providing the source code though source maps to the user.
