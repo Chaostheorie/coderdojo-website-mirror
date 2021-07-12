@@ -8,7 +8,7 @@ DerMicha and Bengoshi's todo:
 -   [ ] Insert Content
     -   [ ] Chapters (See Add Chapters)
     -   [ ] Privacy policy (no cookies used. Logging of User client and IP for 1 day)
-    -   [ ] Imprint information (`content/imprint.md`)
+    -   [x] Imprint information (`content/imprint.md`)
     -   [ ] Contact information (`content/contact.md`)
     -   [ ] Copyright information (`content/copyright.md`)
     -   [ ] Index page (`templates/index.html`)
@@ -23,7 +23,8 @@ Cobalt's TODO:
 -   [x] Fix section links and author notes
 -   [x] Add documentation
 -   [x] Add a flowchart for CI and build
--   [ ] Macro for linking files from static
+-   [ ] Macro for linking files from static (just )
+-   [ ] Integrate [PurgeFont](https://github.com/ericpaulbishop/postcss-purgefonts)
 
 Things that haven't been added but could be later on:
 
