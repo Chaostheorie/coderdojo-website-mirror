@@ -2,8 +2,7 @@
 title = "Impressum"
 slug = "imprint"
 summary = "Impressum für das CoderDojo. Bei Fragen oder Infos wende Dich bitte an die Betreiber."
-description = "Impressum für coderdojo.red und coderdojo.blue. Bei Fragen wende
-Dich bitte an die Betreiber"
+description = "Impressum für coderdojo.red und coderdojo.blue. Bei Fragen wende Dich bitte an die Betreiber"
 lang = "de"
 
 [extra]
