@@ -14,12 +14,15 @@ DerMicha and Bengoshi's todo:
     -   [ ] Contact information (`content/contact.md`)
     -   [ ] Copyright information (`content/copyright.md`)
     -   [ ] Index page (`templates/index.html`)
+-   [ ] Domains
+    -   [ ] Tell @Cobalt the appropriate domains for he coderodojo website (should point towards Clover#1 (`81.30.146.49`))
+    -   [ ] (Could require help) change build process to deploy on multiple environments (i.e. change `config.extra.base_url` … for each environment in `config.toml`)
 
 Cobalt's TODO:
 
 -   [x] Fix scrollspy
 -   [x] Fix styling
-    -   [x] color -> title …
+    -   [x] color → title …
     -   [x] active for scrollspy
     -   [x] floating sidebar
 -   [x] Fix section links and author notes
