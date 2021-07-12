@@ -43,14 +43,16 @@
                 <div class="card shadow bg-transparent mb-3">
                     <div class="row g-0">
                         {% if page.extra.image %}
-                        <div class="col-md-4">
+                        <div class="col">
                             <img
                                 src="{{ get_url(path=page.extra.image)|safe }}"
                                 class="img-fluid h-100 w-100 rounded-start"
+                                height="30"
+                                width="30"
                                 alt="{% if page.summary %}{{ page.summary }}{% else %}{{ page.description }}{% endif %}"
                             />
                         </div>
-                        <div class="col-md-8">
+                        <div class="col">
                             {% endif %}
 
                             <div class="card-body">
