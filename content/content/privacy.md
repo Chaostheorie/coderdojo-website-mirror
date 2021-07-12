@@ -26,17 +26,18 @@ Das Interesse des Verantwortlichen ist der sichere und funktionsfähige Betrieb 
 
 IP-Adressen Bei der bloß informatorischen Nutzung der Website erheben wir nur die personenbezogenen Daten, die Dein Browser an unseren Server übermittelt. Wenn Du unsere Website betrachten möchtest, erheben wir die folgenden Daten, die für uns technisch erforderlich sind, um Dir unsere Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten. Als Rechtsgrundlage stützen wir uns hierbei auf Art. 6 Abs. 1 S. 1 lit. f DS-GVO:
 
-* Besuchte Website
-* Uhrzeit zum Zeitpunkt des Zugriffes
-* Menge der gesendeten Daten in Byte
-* Quelle/Verweis, von welchem Sie auf die Seite gelangten
-* Verwendeter Browser
-* Verwendetes Betriebssystem
-* Verwendete IP-Adresse
+-   Besuchte Website
+-   Uhrzeit zum Zeitpunkt des Zugriffes
+-   Menge der gesendeten Daten in Byte
+-   Quelle/Verweis, von welchem Sie auf die Seite gelangten
+-   Verwendeter Browser
+-   Verwendetes Betriebssystem
+-   Verwendete IP-Adresse
 
 Dabei werden auf dieser Website werden grundsätzlich keine vollständigen IP-Adressen von reinen Besuchern der Website gespeichert bzw. unverzüglich nach Ende der Nutzung der Website gelöscht (zu den Ausnahmen, s.u.). Auf Webserver-Ebene erfolgt dies dadurch, dass im Logfile (Access-Log und Error-Log) standardmäßig das letzte Oktett der IP-Adresse gelöscht wird. So wird aus der IP-Adresse „127.0.0.123“ z.B. die Adresse „127.0.0.1„ gespeichert wird. Eine Herstellung eines Personenbezuges ist dann nicht mehr möglich. Regelhaft werden Daten über Zugriffe auf diese Seite erhoben und werden als „Server-Logfiles“ abgespeichert. Sie werden automatisiert nach sieben Tagen gelöscht. Zur Maskierung der IP-Adressen setzen wir log-ipmask ein.
 
 ## Webanalyse
+
 Auf diesen Internetseiten findet derzeit keine Webanalyse statt.
 
 Die Nutzung dieser Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf diesen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne ausdrückliche Zustimmung nicht an Dritte weitergegeben.
@@ -64,8 +65,9 @@ Beschwerderecht bei einer Aufsichtsbehörde Jede natürliche Person hat das Rech
 Änderung dieser Datenschutzhinweise Diese Datenschutzhinweise werden bei Änderungen an dieser Internetseite oder bei sonstigen Anlässen, die dies erforderlich machen, verändert. Die jeweils aktuelle Fassung ist stets auf dieser Internetseite zu finden.
 
 ## Cookie-Erklärung
+
 Wir verwenden eine statische Seite ohne Cookies.
 
 ## sonstiges
-Für die technische Umsetzung der Seite herzlichen Dank an C0balt!
 
+Für die technische Umsetzung der Seite herzlichen Dank an [Cobalt](https://cobalt.rocks)!

@@ -1,5 +1,5 @@
 +++
-title = "Copyright"
+title = "Urheberrecht"
 slug = "copyright"
 
 summary = "Information about the copyright of original content"
@@ -10,7 +10,7 @@ template = "copyright.html"
 rtime = false
 +++
 
-All original content on {{ domain() }} and all related subdomains published by us is avalaible under [To Be choosen](https://example.org) when not explicitly specified otherwise.
+All original content on {{ domain() }} and all related subdomains published by us is available under [To Be choosen](https://example.org) when not explicitly specified otherwise.
 
 > Below is an example text for `CC BY-NC-SA 4.0`
 
