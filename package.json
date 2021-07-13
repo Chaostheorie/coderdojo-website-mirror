@@ -16,6 +16,7 @@
     },
     "description": "Assets for coderdojo.cobalt.rocks",
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^4.0.3",
         "@lhci/cli": "^0.8.0",
         "@minify-html/js": "^0.4.11",
         "@types/bootstrap": "^5.0",
@@ -36,6 +37,7 @@
         "postcss": "^8.3.4",
         "postcss-cli": "^8.3.1",
         "postcss-font-magician": "^3.0.0",
+        "postcss-purgefonts": "^1.0.2",
         "postcss-pxtorem": "^6.0.0",
         "postcss-viewport-height-correction": "^1.1.1",
         "purgecss": "^4.0.3",
@@ -55,7 +57,7 @@
         "url": "ssh://git@gitlab.cobalt.rocks:3724/coderdojo/codedojo-website.git"
     },
     "scripts": {
-        "ci-build": "yarn production-compile && yarn generate-licenses && yarn copy-katex && zola build && yarn minify && yarn purge && yarn postcss && yarn unique-css && yarn unique-js",
+        "ci-build": "yarn production-compile && yarn generate-licenses && yarn copy-katex && zola build && yarn minify && yarn postcss && yarn unique-css && yarn unique-js",
         "clean": "rm -rf public node_modules static/katex",
         "compile": "webpack --config webpack.config.js && tsc ts/compress.ts",
         "copy-katex": "cp -r node_modules/katex/dist/ static/katex",
@@ -67,8 +69,7 @@
         "unique-css": "export DATE=$(date +%s) && mv public/main.css public/main-$DATE.css && find public -name '*.html' -exec sed -i \"s/main\\.css/main-$DATE.css/\" {} +",
         "unique-js": "export DATE=$(date +%s) && mv public/js/main.js public/js/main-$DATE.js && find public -name '*.html' -exec sed -i \"s/js\\/main\\.js/js\\/main-$DATE.js/\" {} +",
         "production-compile": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js && tsc ts/compress.ts",
-        "purge": "purgecss --font-face --keyframes --config purgecss.config.js --output public/main.css",
         "domain": "sed -i \"s/base_url\\s=\\s\\\".*\\\"$/base_url = \\\"https:\\/\\/$DOMAIN\\\"/\" config.toml && sed -i \"s/base_domain\\s=\\s\\\".*\\\"$/base_domain = \\\"$DOMAIN\\\"/\" config.toml && sed -i \"s/\\\"start_url\\\":\\s\\\".*\\\"/\\\"start_url\\\": \\\"https:\\/\\/$DOMAIN\\\"/\" static/images/logo/site.webmanifest"
     },
-    "version": "0.0.1b0"
+    "version": "0.0.1b1"
 }
