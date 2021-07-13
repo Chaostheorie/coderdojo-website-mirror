@@ -53,7 +53,7 @@ Lint:
             - chmod 700 ~/.ssh
             - chmod 600 ~/.ssh/id_rsa
     script:
-        - yarn run "domain:$DOMAIN"
+        - yarn run domain
         - yarn run ci-build
     after_script:
         # Restart agent - Not necessary only for debugging
@@ -76,7 +76,7 @@ CD:Rocks:
     <<: *rs-deploy
     stage: deploy
     environment:
-        name: fallback
+        name: secondary
         url: https://coderdojo.cobalt.rocks
     variables:
         DOMAIN: coderdojo.cobalt.rocks
