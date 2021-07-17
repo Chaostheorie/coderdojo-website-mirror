@@ -97,14 +97,6 @@ blockquote {
 a {
     color: $secondary;
 
-    &:hover {
-        color: $dark;
-    }
-
-    &:visited {
-        color: darken($dark, 5);
-    }
-
     &.list-group-item {
         color: $light;
         border: 1px solid white;
