@@ -35,7 +35,7 @@ Inanspruchnahme der Hilfe sogar ausdrücklich voraus. Und bei uns geht es
 mehr als nur „schnöden" Code. Wir schauen auf Dinge wie Datenschutz,
 Nerdkultur ebenso wie auf Hardware.
 
-![Gütel](/images/JJS_Dojo_s.jpg)
+{{ figure(source="/images/JJS_Dojo_s.jpg", float="end", alt="Gürtel") }}
 
 Trainieren? Der Begriff Dōjō kommt aus dem Kampfsport und stellt dort
 den Trainingsraum oder -halle dar. Programmieren lernen hat vieles damit
@@ -84,7 +84,7 @@ nimm das zum Anlass, um Dir von den Mentorinnen helfen zu lassen. Oft
 braucht es nur einen kleinen Stupser in die richtige Richtung und Du
 kannst die Aufgabe selber richtig weiterlösen.
 
-![Bruchtest](/images/karate-2717178_1280_s.jpg)
+{{ figure(source="/images/karate-2717178_1280_s.jpg", float="start", alt="Bruchtest") }}
 
 Was lernen wir? Wir beginnen mit Python. Die Wahl der „richtigen"
 Programmiersprache kann zu regelrechten Glaubensstreitigkeiten führen.
@@ -117,7 +117,7 @@ machen, die anfangs noch nicht erklärt werden können. Aus diesem Grund
 verzichten wir zunächst auf grafische „Spielereien". Aber halte durch,
 die kommen!
 
-![Training](/images/martial-83009_1280_s.jpg)
+{{ figure(source="/images/martial-83009_1280_s.jpg", float="end", alt="Training") }}
 
 Wie oft solltest Du Dich damit beschäftigen müssen? Müssen wäre schon
 mal kein guter Start. Wir sind hier nicht in der Schule. Wir treffen
@@ -137,7 +137,7 @@ immer Flaute ist. Böen können anstrengend sein, aber mit jeder lernt man
 etwas dazu. Und wenn das Bötchen kentert - nicht schlimm, wieder
 aufrichten, Wasser rausschöpfen, weiterfahren.
 
-![Kentern](/images/capsized-31696_1280_s.png)
+{{ figure(source="/images/capsized-31696_1280_s.png", float="start", alt="Kentern") }}
 
 Wir setzen keine Kenntnisse voraus. Wenn Du schon Vorkenntnisse hast und
 später einsteigen willst, ist das kein Problem. Mach die Tests am Ende
