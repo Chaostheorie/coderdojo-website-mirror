@@ -1,1 +1,5 @@
+{% if icon is starting_with("src:") %}
+<img src="{{ get_url() }}" alt="{{ alt }}" />
+{% else %}
 <i class="bi bi-{{ icon }}"></i>
+{% endif %}

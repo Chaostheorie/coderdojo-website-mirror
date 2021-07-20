@@ -1,20 +1,82 @@
 {% macro meta() %}
-<meta name="apple-mobile-web-app-title" content="Coderdojo">
-<meta name="application-name" content="Coderdojo">
-<meta name="msapplication-TileColor" content="#314958">
-<meta name="msapplication-TileImage" content="{{ get_url(path='/images/logo/mstile-144x144.png')|safe }}">
-<meta name="msapplication-config" content="{{ get_url(path='/images/logo/browserconfig.xml')|safe }}">
-<meta name="theme-color" content="#314958">
+<meta name="apple-mobile-web-app-title" content="Coderdojo" />
+<meta name="application-name" content="Coderdojo" />
+<meta name="msapplication-TileColor" content="#314958" />
+<meta
+    name="msapplication-TileImage"
+    content="{{ get_url(path='/images/logo/mstile-144x144.png')|safe }}"
+/>
+<meta
+    name="msapplication-config"
+    content="{{ get_url(path='/images/logo/browserconfig.xml')|safe }}"
+/>
+<meta name="theme-color" content="#314958" />
 
 <!-- theme/images/favicon -->
-<meta property="og:image" content="{{ get_url(path='/images/logo/android-chrome-192x192.png')|safe }}" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='/images/logo/apple-touch-icon.png')|safe }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='/images/logo/favicon-32x32.png')|safe }}">
-<link rel="icon" type="image/png" sizes="194x194" href="{{ get_url(path='/images/logo/favicon-194x194.png')|safe }}">
-<link rel="icon" type="image/png" sizes="192x192" href="{{ get_url(path='/images/logo/android-chrome-192x192.png')|safe }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path='/images/logo/favicon-16x16.png')|safe }}">
-<link rel="manifest" href="{{ get_url(path='/images/logo/site.webmanifest')|safe }}">
-<link rel="mask-icon" href="{{ get_url(path='/images/logo/safari-pinned-tab.svg')|safe }}" color="#314958">
-<link rel="shortcut icon" href="{{ get_url(path='/images/logo/favicon.ico')|safe }}">
-
+<link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="{{ get_url(path='/images/logo/apple-touch-icon.png')|safe }}"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="{{ get_url(path='/images/logo/favicon-32x32.png')|safe }}"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="194x194"
+    href="{{ get_url(path='/images/logo/favicon-194x194.png')|safe }}"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="{{ get_url(path='/images/logo/android-chrome-192x192.png')|safe }}"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="{{ get_url(path='/images/logo/favicon-16x16.png')|safe }}"
+/>
+<link
+    rel="manifest"
+    href="{{ get_url(path='/images/logo/site.webmanifest')|safe }}"
+/>
+<link
+    rel="mask-icon"
+    href="{{ get_url(path='/images/logo/safari-pinned-tab.svg')|safe }}"
+    color="#5bbad5"
+/>
+<link
+    rel="shortcut icon"
+    href="{{ get_url(path='/images/logo/favicon.ico')|safe }}"
+/>
+<meta name="apple-mobile-web-app-title" content="Coderdojo Red and Blue" />
+<meta name="application-name" content="Coderdojo Red and Blue" />
+<meta name="msapplication-TileColor" content="#d8dee9" />
+<meta
+    name="msapplication-TileImage"
+    content="{{ get_url(path='/images/logo/mstile-144x144.png')|safe }}"
+/>
+<meta
+    name="msapplication-config"
+    content="{{ get_url(path='/images/logo/browserconfig.xml')|safe }}"
+/>
+<meta name="theme-color" content="#d8dee9" />
+<meta
+    property="og:image"
+    content="{{ get_url(path='/images/logo/android-chrome-192x192.png')|safe }}"
+/>
+{% endmacro %} {% macro brand() %}
+<img
+    src="{{ get_url(path=config.extra.brand_src)|safe }}"
+    alt="{{ config.extra.brand_alt }}"
+    width="40"
+    height="40"
+    class="d-inline-block h-100"
+/>
 {% endmacro %}

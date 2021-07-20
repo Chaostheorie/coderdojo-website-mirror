@@ -1,5 +1,6 @@
 # The URL the site will be built for
-base_url = "https://coderdojo.cobalt.rocks"
+# WARNING: Will be overwritten in CD-builds
+base_url = "DOMAIN"
 
 # Whether to automatically compile all Sass files in the sass directory
 # Will be compressed & prefixed for production builds
@@ -18,24 +19,19 @@ build_search_index = false
 
 [markdown]
 # Whether to do syntax highlighting
-highlight_code = true
-# Adjust to your liking
-highlight_theme = "monokai"
+highlight_code = true    # Adjust to your liking
+highlight_theme = "nord"
 
 [extra]
 # Enable katex for webpage
-katex = false
-# Display "Copy Link" Button
-link = true
-# Ehhhm Donno
-sctionlisting = true
-# Adjust settings for sitemap generation (to hide sites from google/ bing …)
+katex = false             # Display "Copy Link" Button
+link = true               # Ehhhm Donno
+sctionlisting = true      # Adjust settings for sitemap generation (to hide sites from google/ bing …)
 list = true
-priority = 0.5
-# Whether to display footer
-footer = true
-# Used for footer and copyright
-base_domain = "coderdojo.cobalt.rocks"
-# Used for brand icon (navbar top left)
-brand_alt = "Coderdojo xHain"
-brand_src = "/images/brand.svg"
+priority = 0.5            # Whether to display footer
+footer = true             # Used for footer and copyright
+base_domain = "localhost" # WARNING: Will be overwritten in CD-builds
+
+
+brand_alt = "Coderdojo Red and Blue Logo" # Used for brand icon (navbar top left)
+brand_src = "images/brand.svg"            # Used for brand icon (navbar top left)

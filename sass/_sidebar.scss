@@ -1,67 +1,44 @@
-@import '_variables.scss';
-
-/* Constants for sidebar-wrapper */
-$sidebar-wrapper-sm: 15rem;
-$sidebar-wrapper-md: 15rem;
-$sidebar-wrapper-lg: 17.5rem;
-
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-
-.sidebar-item {
-    color: white;
-    background-color: $dark;
-
-    &:hover {
-        background-color: $dark;
-        color: darken($light, 20);
-    }
-}
+/* stylelint-disable no-duplicate-selectors */
 
 #menu-toggle {
-    border-color: $primary;
-
-    ~ ::before {
-        color: $primary;
-    }
+    border-color: $secondary;
 
     &:hover {
         transform: scale(1.05);
     }
 
-    &.toggled {
-        @include rotate(180, 4); /* stylelint-disable-line at-rule-no-unknown */
-
-        ~ ::before {
-            color: $primary;
-            font-size: large;
-        }
+    &.toggled > svg {
+        transform: rotate(180deg);
+        transform-origin: center center;
     }
 }
 
 // Both need to be separated to avoid cls
 #sidebar-wrapper {
-    margin-right: -$sidebar-wrapper-sm;
     width: $sidebar-wrapper-sm;
-    background-color: $success !important;
+    margin-right: -$sidebar-wrapper-sm;
 
-    li.nav-item {
+    .nav-item {
         padding: 0.5rem 0 0.5rem 0.5rem;
 
-        a.nav-link {
-            color: $secondary !important;
-            padding: 0 0 0 0;
+        .nav-link {
+            padding: 0;
+            color: $secondary;
             border-radius: 0;
         }
     }
+
+    .active {
+        text-decoration: underline solid $secondary;
+        border: 0;
+        transition: text-decoration ease-out 2s;
+    }
 }
 
-/* stylelint-disable-line no-duplicate-selectors */ #sidebar-wrapper {
-    transition: margin 0.25s ease-out;
+#sidebar-wrapper {
     width: 20rem;
     margin-right: -20rem;
-    //border-left: 0.1rem solid $secondary !important;
+    transition: margin 0.25s ease-out;
 }
 
 .sidebar-toggled #sidebar-wrapper {
@@ -71,19 +48,19 @@ $breakpoint-lg: 992px;
 
 @media (max-width: $breakpoint-md) {
     #sidebar-wrapper {
-        margin-right: 0 !important;
-        width: $sidebar-wrapper-sm !important;
+        width: $sidebar-wrapper-sm;
+        margin-right: 0;
     }
 
     .sidebar-toggled #sidebar-wrapper {
-        margin-right: -$sidebar-wrapper-sm !important;
+        margin-right: -$sidebar-wrapper-sm;
     }
 }
 
 @media (min-width: $breakpoint-md) {
     #sidebar-wrapper {
-        margin-right: 0;
         width: $sidebar-wrapper-md;
+        margin-right: 0;
     }
 
     .sidebar-toggled #sidebar-wrapper {
@@ -93,8 +70,8 @@ $breakpoint-lg: 992px;
 
 @media (min-width: $breakpoint-lg) {
     #sidebar-wrapper {
-        margin-right: -$sidebar-wrapper-lg;
         width: $sidebar-wrapper-lg;
+        margin-right: -$sidebar-wrapper-lg;
     }
 
     .sidebar-toggled #sidebar-wrapper {

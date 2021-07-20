@@ -3,8 +3,8 @@
 [[chapters]]
 name = "Euler-Gruppe"
 path = "@/euler/_index.md"
-color = "#66CCFF"
-icon = "reception-4"
+color = "#b48ead"
+icon = "journal-code"
 
 [[chapters]]
 name = "7. Kyū"
@@ -15,13 +15,13 @@ icon = "reception-1"
 [[chapters]]
 name = "6. Kyū"
 path = "@/kyo-6/_index.md"
-color = "#FFFF00"
+color = "#E04700"
 icon = "reception-1"
 
 [[chapters]]
 name = "5. Kyū"
 path = "@/kyo-5/_index.md"
-color = "#FF9900"
+color = "#d08770"
 icon = "reception-2"
 
 [[chapters]]
@@ -46,6 +46,12 @@ icon = "reception-3"
 name = "1. Kyū"
 path = "@/kyo-1/_index.md"
 color = "#733111"
+icon = "reception-4"
+
+[[chapters]]
+name = "2. Dan"
+path = "@/dan-2/_index.md"
+color = "#001"
 icon = "reception-4"
 
 [[chapters]]

@@ -1,7 +1,15 @@
 {
-    "extends": "stylelint-config-standard",
+    "extends": "stylelint-config-twbs-bootstrap/scss",
     "rules": {
         "declaration-colon-newline-after": null,
-        "indentation": 4
+        "indentation": 4,
+        "selector-max-id": 2,
+        "number-leading-zero": "always",
+        "string-quotes": "single",
+        "selector-no-qualifying-type": [
+            true,
+            { "ignore": ["class", "attribute", "id"] }
+        ],
+        "at-import-no-partial-leading-underscore": false
     }
 }

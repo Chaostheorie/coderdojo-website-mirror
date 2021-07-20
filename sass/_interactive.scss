@@ -1,56 +1,11 @@
-/*
-_interactive..scss Frontend stylesheet for cobalt's homepage
-@license GPL-3-only @ Cobalt <https://cobalt.rocks>
-*/
-/* stylelint-disable at-rule-no-unknown */
-
-@import '_mixins.scss';
-
-button[data-bs-toggle='collapse'].rotatable {
-    i.bi::before,
-    svg {
-        @include rotateX(180, 1);
-
-        display: inline-block;
-    }
-
-    &.collapsed {
-        i.bi::before,
-        svg {
-            @include rotateX(0, 1);
-        }
-    }
-}
-
-.form-control-plaintext {
-    border-color: $dark;
-}
-
-// adjustments for form-creator sidebar
-.card-body {
-    padding-top: 0 !important;
-}
-
-.card-header > p {
-    height: 100%;
-    margin-bottom: 0 !important;
-}
-
 // modify pre when putting helper on top
 div[data-type='file-helper'] {
-    border-top-left-radius: 0.25rem !important;
-    border-top-right-radius: 0.25rem !important;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
 
     + pre {
-        border-top-left-radius: 0 !important;
-        border-top-right-radius: 0 !important;
-        border-top: 0 !important;
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
-}
-
-// scrollspy uses active for marking
-.active {
-    border: 0;
-    text-decoration: underline solid $secondary !important;
-    transition: text-decoration ease-out 2s;
 }
