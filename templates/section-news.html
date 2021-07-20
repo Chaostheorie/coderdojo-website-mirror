@@ -1,9 +1,4 @@
 {% extends "base.html" %} {% block content %}
-<div
-    class="container w-100 mt-3 mx-auto"
-    itemscope
-    itemtype="https://schema.org/SearchResultsPage"
->
     <section class="dark-grey-text">
         <h1 class="h1 text-center" id="title" itemtype="headline">
             {% if section.title %} {{ section.title }} {% else %} {{
@@ -42,21 +37,8 @@
             <div class="col-6">
                 <div class="card shadow bg-transparent mb-3">
                     <div class="row g-0">
-                        {% if page.extra.image %}
-                        <div class="col">
-                            <img
-                                src="{{ get_url(path=page.extra.image)|safe }}"
-                                class="img-fluid h-100 w-100 rounded-start"
-                                height="30"
-                                width="30"
-                                alt="{% if page.summary %}{{ page.summary }}{% else %}{{ page.description }}{% endif %}"
-                            />
-                        </div>
-                        <div class="col">
-                            {% endif %}
-
                             <div class="card-body">
-                                <h2 class="card-title h5 mt-3">
+                                <h2 class="card-title h5">
                                     {{ page.title }}
                                 </h2>
                                 <p class="card-text align-middle">
@@ -75,8 +57,7 @@
                                     {% endif %}
                                     <span class="text-bold">
                                         <i class="bi bi-calendar-event"></i>
-                                        Published: {{ page.day }}/{{ page.month
-                                        }}/{{ page.year}}
+                                        {{ page.day }}.{{ page.month }}.{{ page.year}}
                                     </span>
                                     {% endif %}
                                 </p>
@@ -110,7 +91,6 @@
                 </div>
             </div>
             {% endif %} {% endfor %}
-        </div>
+        
     </section>
-</div>
 {% endblock %}

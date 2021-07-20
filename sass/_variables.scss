@@ -1,19 +1,42 @@
-/*
-_variables..scss Frontend stylesheet for cobalt's homepage
-@license GPL-3-only @ Cobalt <https://cobalt.rocks>
-*/
+@import '../node_modules/nord/src/sass/nord';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/_variables';
 
-// @import '../node_modules/bootstrap/scss/_variables.scss';
+/* Constants for sidebar-wrapper */
+$sidebar-wrapper-sm: 15rem;
+$sidebar-wrapper-md: 15rem;
+$sidebar-wrapper-lg: 17.5rem;
 
-$accordion-icon-color: gray;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+/* Color modifications for nord theme */
+$very-light: $nord6;
+$primary: $nord3;
+$secondary: $nord2;
+$success: $nord14;
+$info: $nord15;
+$warning: $nord12;
+$danger: $nord11;
+$light: $nord4;
+$dark: $nord0;
+$code-color: $secondary;
+$accordion-icon-color: $primary;
 $accordion-icon-active-color: #fff;
 
-// Default variable overrides
-$primary: #5c7585;
-$secondary: #e0682f;
-$success: #314958;
-$info: #9c9084;
-$warning: #e0682f;
-$danger: #a83900;
-$light: #e6dcd8;
-$dark: #30322f;
+/* Combined theme map */
+$nord-theme: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $nord-theme);
+

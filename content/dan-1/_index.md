@@ -2,7 +2,7 @@
 title = "1. Dan"
 
 [extra]
-color = "#000000"
+color = "#000"
 +++
 
 ## Inhalt

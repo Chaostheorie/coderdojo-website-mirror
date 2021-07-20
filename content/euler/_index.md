@@ -2,7 +2,7 @@
 title = "Projektgruppe Euler"
 
 [extra]
-color = "#66CCFF"
+color = "#b48ead"
 +++
 
 ## Inhalt

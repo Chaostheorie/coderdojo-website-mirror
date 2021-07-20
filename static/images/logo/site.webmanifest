@@ -1,6 +1,6 @@
 {
-    "name": "Coderdojo",
-    "short_name": "Coderdojo",
+    "name": "Coderdojo Red and Blue",
+    "short_name": "Coderdojo Red and Blue",
     "icons": [
         {
             "src": "/images/logo/android-chrome-36x36.png",
@@ -48,8 +48,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#314958",
-    "background_color": "#314958",
-    "start_url": "https://coderdojo.cobalt.rocks",
+    "theme_color": "#d8dee9",
+    "background_color": "#d8dee9",
+    "start_url": "https://domain",
     "display": "standalone"
 }

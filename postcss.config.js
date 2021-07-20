@@ -21,7 +21,6 @@ module.exports = {
         require('postcss-purgefonts')({
             to: 'public/fonts/',
             purge_only_fonts: ['bootstrap-icons'],
-            preserve_all_on_zero_matching_glyphs: false,
             ignore_urls: false,
         }),
         require('cssnano')({

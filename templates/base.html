@@ -41,17 +41,16 @@
                 flex-md-nowrap
                 d-flex
                 align-middle
-                bg-success
+                bg-primary
                 justify-content-between
                 shadow
             ">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
-            <img src="{{ get_url(path=config.extra.brand_src)|safe }}" alt="{{ config.extra.brand_alt }}" width="30"
-                height="30" class="d-inline-block h-100" />
+            {{ favicon::brand() }}
             {% block title_header %} Coderdojo{% endblock %}
         </a>
-        <button class="btn btn-success shadow m-2" id="menu-toggle" type="button" aria-label="Sidebar Toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left"
+        <button class="btn btn-primary shadow m-2" id="menu-toggle" type="button" aria-label="Sidebar Toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e3440" class="bi bi-caret-left"
                 viewBox="0 0 16 16">
                 <path
                     d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />

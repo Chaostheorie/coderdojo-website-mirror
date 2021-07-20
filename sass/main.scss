@@ -3,22 +3,7 @@ Main.scss Frontend stylesheet for cobalt's homepage
 @license GPL-3-only @ Cobalt <https://cobalt.rocks>
 */
 
-@import '_bootstrap.scss';
-@import '_layout.scss';
-@import '_interactive.scss';
-
-.bi,
-.bi::before,
-.bi::after {
-    font-family: 'bootstrap-icons', sans-serif !important;
-    font-style: normal;
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.1em;
-}
-
-.bi-heading::after,
-.bi-heading::before {
-    font-weight: bold;
-    font-size: xx-large;
-}
+@import 'bootstrap';
+@import 'layout';
+@import 'sidebar';
+@import 'interactive';
