@@ -70,7 +70,7 @@
         "unique-css": "export DATE=$(date +%s) && mv public/main.css public/main-$DATE.css && find public -name '*.html' -exec sed -i \"s/main\\.css/main-$DATE.css/\" {} +",
         "unique-js": "export DATE=$(date +%s) && mv public/js/main.js public/js/main-$DATE.js && find public -name '*.html' -exec sed -i \"s/js\\/main\\.js/js\\/main-$DATE.js/\" {} +",
         "production-compile": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js && tsc ts/compress.ts",
-        "domain": "sed -i \"s/base_url\\s=\\s\\\".*\\\"$/base_url = \\\"https:\\/\\/$DOMAIN\\\"/\" config.toml && sed -i \"s/base_domain\\s=\\s\\\".*\\\"$/base_domain = \\\"$DOMAIN\\\"/\" config.toml && sed -i \"s/\\\"start_url\\\":\\s\\\".*\\\"/\\\"start_url\\\": \\\"https:\\/\\/$DOMAIN\\\"/\" static/images/logo/site.webmanifest"
+        "domain": "sed -i \"s/base_url\\s=\\s\\\".*\\\"$/base_url = \\\"https:\\/\\/$DOMAIN\\\"/\" config.toml && sed -i \"s/base_domain\\s=\\s\\\".*\\\"$/base_domain = \\\"$DOMAIN\\\"/\" config.toml && sed -i \"s/\\\"start_url\\\":\\s\\\".*\\\"/\\\"start_url\\\": \\\"https:\\/\\/$DOMAIN\\\"/\" static/images/logo/site.webmanifest && echo \"Formatted for domain $DOMAIN\""
     },
     "version": "0.0.1b1"
 }
