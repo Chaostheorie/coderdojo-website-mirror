@@ -79,7 +79,7 @@ CD:Blue:
         url: https://coderdojo.blue
     variables:
         DOMAIN: coderdojo.blue
-        KEY: "$CD_RED_PRIVATE_KEY"
+        KEY: "$CD_BLUE_PRIVATE_KEY"
     
 CD:Rocks:
     <<: *rs-deploy
