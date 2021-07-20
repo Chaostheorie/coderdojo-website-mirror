@@ -39,19 +39,19 @@ Lint:
         refs:
             - main
     before_script:
-            # Install all yarn dependencies (normally cached but clover#2 currently has problems with space)
-            - yarn install
-            # Add shh folder
-            - mkdir -p ~/.ssh
-            # Start ssh agent
-            - eval $(ssh-agent -s)
-            # Dump keys from CI variables to files
-            - echo "$KEY" > ~/.ssh/id_rsa
-            - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
-            # SSH agent requires specific permissions
-            - chmod 644 ~/.ssh/known_hosts
-            - chmod 700 ~/.ssh
-            - chmod 600 ~/.ssh/id_rsa
+        # Install all yarn dependencies (normally cached but clover#2 currently has problems with space)
+        - yarn install
+        # Add shh folder
+        - mkdir -p ~/.ssh
+        # Start ssh agent
+        - eval $(ssh-agent -s)
+        # Dump keys from CI variables to files
+        - echo "$KEY" > ~/.ssh/id_rsa
+        - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
+        # SSH agent requires specific permissions
+        - chmod 644 ~/.ssh/known_hosts
+        - chmod 700 ~/.ssh
+        - chmod 600 ~/.ssh/id_rsa
     script:
         - yarn run domain
         - yarn run ci-build
@@ -69,8 +69,8 @@ CD:Red:
         url: https://coderdojo.red
     variables:
         DOMAIN: coderdojo.red
-        KEY: "$CD_RED_PRIVATE_KEY"
-    
+        KEY: '$CD_RED_PRIVATE_KEY'
+
 CD:Blue:
     <<: *rs-deploy
     stage: deploy
@@ -79,14 +79,4 @@ CD:Blue:
         url: https://coderdojo.blue
     variables:
         DOMAIN: coderdojo.blue
-        KEY: "$CD_BLUE_PRIVATE_KEY"
-    
-CD:Rocks:
-    <<: *rs-deploy
-    stage: deploy
-    environment:
-        name: secondary
-        url: https://coderdojo.cobalt.rocks
-    variables:
-        DOMAIN: coderdojo.cobalt.rocks
-        KEY: "$CD_PRIVATE_KEY"
+        KEY: '$CD_BLUE_PRIVATE_KEY'
