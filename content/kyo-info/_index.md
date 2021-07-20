@@ -191,7 +191,7 @@ Wenn es mathematische Zusatzaufgaben gibt, wird das extra ausgewiesen.
 Kinder in dem philippinischen Karate-Dojo der Jack und Jill Schule
 in Bacolod - Von Jjskarate. - Eigenes Werk; Übertragen aus
 en.wikipedia nach Commons.., CC BY-SA 3.0,
-https://commons.wikimedia.org/w/index.php?curid=50279796
+<https://commons.wikimedia.org/w/index.php?curid=50279796>
 
 Karatetraining - Image by
 <https://pixabay.com/users/stivy73-6360334/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2717178>Michele
