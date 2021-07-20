@@ -65,12 +65,21 @@ CD:Red:
     <<: *rs-deploy
     stage: deploy
     environment:
-        name: production
+        name: production#1
         url: https://coderdojo.red
     variables:
         DOMAIN: coderdojo.red
         KEY: "$CD_RED_PRIVATE_KEY"
     
+CD:Blue:
+    <<: *rs-deploy
+    stage: deploy
+    environment:
+        name: production#2
+        url: https://coderdojo.blue
+    variables:
+        DOMAIN: coderdojo.blue
+        KEY: "$CD_RED_PRIVATE_KEY"
     
 CD:Rocks:
     <<: *rs-deploy
