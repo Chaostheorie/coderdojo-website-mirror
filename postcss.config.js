@@ -18,6 +18,7 @@ module.exports = {
             fontFace: true,
             keyframes: true,
         }),
+        require('postcss-svgo'),
         require('postcss-purgefonts')({
             to: 'public/fonts/',
             purge_only_fonts: ['bootstrap-icons'],

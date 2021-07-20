@@ -13,6 +13,8 @@
         "outDir": "./static/js/",
         "sourceMap": false,
         "target": "es6",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "typeRoots": [
             "node_modules/@types", "./ts/types"
         ],
