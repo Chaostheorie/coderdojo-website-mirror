@@ -1,12 +1,6 @@
-/*
-_variables.scss Frontend stylesheet for cobalt's homepage
-@license GPL-3-only @ Cobalt <https://cobalt.rocks>
-*/
-
-@import '../node_modules/nord/src/sass/nord.scss';
-@import '../node_modules/bootstrap/scss/functions.scss';
-/* stylelint-disable scss/at-import-no-partial-leading-underscore */
-@import '../node_modules/bootstrap/scss/_variables.scss';
+@import '../node_modules/nord/src/sass/nord';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/_variables';
 
 /* Constants for sidebar-wrapper */
 $sidebar-wrapper-sm: 15rem;

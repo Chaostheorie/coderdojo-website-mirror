@@ -1,5 +1,6 @@
 {
     "extends": "stylelint-config-twbs-bootstrap/scss",
+    "plugins": ["stylelint-scss"],
     "rules": {
         "declaration-colon-newline-after": null,
         "indentation": 4,
@@ -10,6 +11,6 @@
             true,
             { "ignore": ["class", "attribute", "id"] }
         ],
-        "at-import-no-partial-leading-underscore": false
+        "scss/at-import-no-partial-leading-underscore": null
     }
 }

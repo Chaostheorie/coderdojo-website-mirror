@@ -7,13 +7,3 @@ Main.scss Frontend stylesheet for cobalt's homepage
 @import 'layout';
 @import 'sidebar';
 @import 'interactive';
-
-.bi,
-.bi::before,
-.bi::after {
-    width: 1em;
-    height: 1em;
-    font-family: bootstrap-icons, sans-serif;
-    font-style: normal;
-    vertical-align: -0.1em;
-}
