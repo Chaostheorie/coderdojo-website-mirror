@@ -1,4 +1,4 @@
-image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/zola-builder:latest
+image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-zola-builder:latest
 
 cache:
     key: '${CI_COMMIT_REF_SLUG}'
