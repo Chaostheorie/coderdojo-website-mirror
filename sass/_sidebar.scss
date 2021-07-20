@@ -1,7 +1,8 @@
 /* stylelint-disable no-duplicate-selectors */
 
 #menu-toggle {
-    border-color: $secondary;
+    background-color: $secondary;
+    border-color: $nord10;
 
     &:hover {
         transform: scale(1.05);
