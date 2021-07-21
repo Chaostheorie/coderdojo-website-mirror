@@ -1,8 +1,12 @@
-[![pipeline status](https://gitlab.cobalt.rocks/coderdojo/codedojo-website/badges/main/pipeline.svg)](https://gitlab.cobalt.rocks/coderdojo/codedojo-website/-/commits/main)
+[![Website Status for coderdojo.red](https://img.shields.io/website?down_color=gray&up_color=red&label=Red&style=flat-square&url=https%3A%2Fcoderdojo.red&logo=nginx)](https://coderdojo.red) [![Website Status for coderdojo.blue](https://img.shields.io/website?down_color=gray&up_color=blue&label=Blue&style=flat-square&url=https%3A%2Fcoderdojo.blue&logo=nginx)](https://coderdojo.blue)
+# Website for Coderdojo Red and Blue
 
-# coderdojo website
-
-Website for [coderdojo.cobalt.rocks]()
+Coder for [coderdojo.red](https://coderdojo.red) and [coderdojo.blue](https://coderdojo.blue).
 
 See [the Wiki](https://gitlab.cobalt.rocks/coderdojo/codedojo-website/-/wikis/home) for more information.
 
+> Only Zola 0.14 is supported ATM due to problems with hashing in other versions
+
+## Contributing
+
+All contributions are welcome. If you want to contribute or report a bug, fell free to open an issue on our [GitHub Mirror](https://github.com/Chaostheorie/coderdojo-website-mirror). If you want to get direct access to a GitLab Account, please contact [Cobalt](https://cobalt.rocks/content/contact/)

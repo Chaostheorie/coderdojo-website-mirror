@@ -31,11 +31,11 @@
     <!-- CSS -->
     {# In production builds this will be automagically replaced with an
     unqiue identifier to ensure chache is refreshed #}
-    <link href='{{ get_url(path="main.css")|safe }}' rel="stylesheet" />
+    <link href='{{ get_url(path="main.css")|safe }}' integrity="sha256-{{ get_file_hash(path="public/main.css", base64=true, sha_type=256) | safe }}" rel="stylesheet" />
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-    <header class="
+    <header class="s
                 navbar navbar-dark
                 sticky-top
                 flex-md-nowrap
@@ -123,7 +123,7 @@
     {{ footer::footer() }}
 
     <!-- JS -->
-    <script src='{{ get_url(path="js/main.js")|safe }}'></script>
+    <script src='{{ get_url(path="js/main.js")|safe }}' integrity="sha256-{{ get_file_hash(path="js/main.js", sha_type=256, base64=true) | safe }}"></script>
     {% block extra_js %}{% endblock -%}
     <!-- #JS -->
 </body>
