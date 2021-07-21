@@ -36,12 +36,6 @@
     }
 }
 
-#sidebar-wrapper {
-    width: 20rem;
-    margin-right: -20rem;
-    transition: margin 0.25s ease-out;
-}
-
 .sidebar-toggled #sidebar-wrapper {
     margin-right: 0;
 }
@@ -50,6 +44,7 @@
     #sidebar-wrapper {
         width: $sidebar-wrapper-sm;
         margin-right: 0;
+        transition: margin 0.25s ease-out;
     }
 
     .sidebar-toggled #sidebar-wrapper {
@@ -61,6 +56,7 @@
     #sidebar-wrapper {
         width: $sidebar-wrapper-md;
         margin-right: 0;
+        transition: margin 0.25s ease-out;
     }
 
     .sidebar-toggled #sidebar-wrapper {
@@ -72,6 +68,7 @@
     #sidebar-wrapper {
         width: $sidebar-wrapper-lg;
         margin-right: -$sidebar-wrapper-lg;
+        transition: margin 0.25s ease-out;
     }
 
     .sidebar-toggled #sidebar-wrapper {
