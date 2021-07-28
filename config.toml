@@ -19,19 +19,25 @@ build_search_index = false
 
 [markdown]
 # Whether to do syntax highlighting
-highlight_code = true    # Adjust to your liking
+highlight_code = true
+# Adjust to your liking
 highlight_theme = "nord"
 
 [extra]
 # Enable katex for webpage
-katex = false             # Display "Copy Link" Button
-link = true               # Ehhhm Donno
-sctionlisting = true      # Adjust settings for sitemap generation (to hide sites from google/ bing …)
+katex = false             
+# Display "Copy Link" Button
+link = true               
+# Adjust settings for sitemap generation (to hide sites from google/ bing …)
+sctionlisting = true      
 list = true
-priority = 0.5            # Whether to display footer
-footer = true             # Used for footer and copyright
-base_domain = "localhost" # WARNING: Will be overwritten in CD-builds
-
+# Priority on sitemap for SEO
+priority = 0.5            
+# Whether to display footer
+# Used for footer and copyright
+footer = true             
+# WARNING: Will be overwritten in CD-builds
+base_domain = "coderdojo" 
 
 brand_alt = "Coderdojo Red and Blue Logo" # Used for brand icon (navbar top left)
 brand_src = "images/brand.svg"            # Used for brand icon (navbar top left)
