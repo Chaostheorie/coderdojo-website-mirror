@@ -1,6 +1,6 @@
 # The URL the site will be built for
 # WARNING: Will be overwritten in CD-builds
-base_url = "DOMAIN"
+base_url = "/"
 
 # Whether to automatically compile all Sass files in the sass directory
 # Will be compressed & prefixed for production builds

@@ -10,7 +10,7 @@
     "license": "GPL-3.0-only",
     "author": "Cobalt",
     "scripts": {
-        "ci:build": "yarn prod:compile && yarn pre:generate-licenses && yarn pre:katex && zola build -u $DOMAIN && yarn minify:global && yarn prod:postcss && yarn unique:global",
+        "ci:build": "yarn prod:compile && yarn pre:generate-licenses && yarn pre:katex && zola build && yarn minify:global && yarn prod:postcss && yarn unique:global",
         "ci:domain": "sed -i \"s/\\\"start_url\\\":\\s\\\".*\\\"/\\\"start_url\\\": \\\"https:\\/\\/$DOMAIN\\\"/\" static/images/logo/site.webmanifest && echo \"Formatted for domain $DOMAIN\"",
         "clean": "rm -rf public node_modules static/js/* static/licenses.csv",
         "lint:global": "yarn lint:scss && yarn lint:ts",
