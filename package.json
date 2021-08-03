@@ -10,7 +10,7 @@
     "license": "GPL-3.0-only",
     "author": "Cobalt",
     "scripts": {
-        "ci:build": "yarn prod:compile && yarn pre:generate-licenses && zola build -u $DOMAIN && yarn minify:global && yarn prod:postcss && yarn unique:global",
+        "ci:build": "yarn prod:compile && yarn pre:generate-licenses && yarn pre:katex && zola build -u $DOMAIN && yarn minify:global && yarn prod:postcss && yarn unique:global",
         "ci:domain": "sed -i \"s/\\\"start_url\\\":\\s\\\".*\\\"/\\\"start_url\\\": \\\"https:\\/\\/$DOMAIN\\\"/\" static/images/logo/site.webmanifest && echo \"Formatted for domain $DOMAIN\"",
         "clean": "rm -rf public node_modules static/js/* static/licenses.csv",
         "lint:global": "yarn lint:scss && yarn lint:ts",
@@ -23,6 +23,7 @@
         "minify:svg": "svgo public/**/*.svg",
         "pre:compile": "webpack --config webpack.config.js && tsc --outFile ts/compress.js ts/compress.ts",
         "pre:generate-licenses": "yarn license-checker --direct --csv --production --out static/licenses.csv  --excludePrivatePackages --customPath license-format.json",
+        "pre:katex": "cp -r node_modules/katex/dist/ static/katex",
         "prod:compile": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js && tsc --outFile ts/compress.js ts/compress.ts",
         "prod:postcss": "postcss -r public/main.css",
         "unique:global": "yarn unique:css && yarn unique:js",
