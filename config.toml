@@ -37,7 +37,7 @@ priority = 0.5
 # Used for footer and copyright
 footer = true             
 # WARNING: Will be overwritten in CD-builds
-base_domain = "coderdojo" 
+base_domain = "Coderdojo Red and Blue" 
 
 brand_alt = "Coderdojo Red and Blue Logo" # Used for brand icon (navbar top left)
 brand_src = "images/brand.svg"            # Used for brand icon (navbar top left)

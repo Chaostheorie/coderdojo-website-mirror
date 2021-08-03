@@ -1,0 +1,11 @@
+{% macro description(page) %}
+<meta name="lang" {% if page.lang %}content="{{ page.lang }}" {% else %}content="{{ lang }}" {% endif %} />
+<meta property="og:locale" {% if page.locale %}content="{{ lang }}" {% else %}content="{{ lang }}" {% endif %} />
+{% if page.description -%}
+<meta name="description" content="{{ page.description|safe }}" />
+<meta property="og:description" content="{{ page.description|safe }}" />
+{% else %}
+<meta name="description" content="Coderdojo description for SEO" />
+<meta property="og:description" content="Coderdojo description for SEO (opengraph tag)" />
+{% endif -%}
+{% endmacro %}

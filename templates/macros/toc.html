@@ -1,18 +1,14 @@
 {% macro item(header, first, last, list_id="", skip=true) %}
 
 {% if first and skip %}
-<ul {% if list_id !="" %} id="{{ list_id }}" {% endif %} class="list-group list-group-numbered border-0 py-1">
+<ul {% if list_id !="" %} id="{{ list_id }}" {% endif %} class="flex-column nav">
     {% endif %}
-
-    <li class="nav-item list-group-item border-0 bg-transparent">
-        <a class="text-decoration-none scrollspy-link " href="#{{ header.id }}">
-            {{ header.title }}
-        </a>
-        {% for child in header.children %}
-        {{ toc::item(header=child, first=loop.first, last=loop.last) }}
-        {% endfor %}
-    </li>
-
+    <a class="nav-item list-group-item border-0 bg-transparent text-decoration-none" href="#{{ header.id }}">
+        {{ header.title }}
+    </a>
+    {% for child in header.children %}
+    {{ toc::item(header=child, first=loop.first, last=loop.last) }}
+    {% endfor %}
     {% if last and skip %}
 </ul>
 {% endif %}

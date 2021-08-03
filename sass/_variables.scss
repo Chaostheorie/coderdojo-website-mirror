@@ -15,6 +15,7 @@ $breakpoint-lg: 992px;
 $very-light: $nord6;
 $primary: $nord3;
 $secondary: $nord2;
+$tertiary: $nord10;
 $success: $nord14;
 $info: $nord15;
 $warning: $nord12;
@@ -25,12 +26,17 @@ $code-color: $secondary;
 $accordion-icon-color: $primary;
 $accordion-icon-active-color: #fff;
 
+/* Special colors */
+$theme-red: #bf616a;
+$theme-blue: $tertiary;
+
 /* Combined theme map */
 $nord-theme: (
     'primary': $primary,
     'secondary': $secondary,
     'success': $success,
     'info': $info,
+    'tertiary': $tertiary,
     'warning': $warning,
     'danger': $danger,
     'light': $light,
