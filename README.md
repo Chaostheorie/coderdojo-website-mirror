@@ -2,7 +2,7 @@
 
 # Website for Coderdojo Red and Blue
 
-Coder for [coderdojo.red](https://coderdojo.red) and [coderdojo.blue](https://coderdojo.blue).
+Code for [coderdojo.red](https://coderdojo.red) and [coderdojo.blue](https://coderdojo.blue).
 
 See [the Wiki](https://gitlab.cobalt.rocks/coderdojo/codedojo-website/-/wikis/home) for more information.
 
