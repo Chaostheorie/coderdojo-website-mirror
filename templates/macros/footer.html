@@ -2,17 +2,59 @@
 <!-- Footer -->
 <footer id="footer" class="page-footer font-small w-100">
     <!-- Copyright -->
-    <div class="footer-copyright bg-primary mb-0 py-3">
-        <div class="container">
+    <div class="footer-copyright border-top border-1 border-tertiary mb-0 py-3">
+        <div class="container text-tertiary">
             <div class="row gy-2 justify-content-center align-items-start">
                 <div class="col-sm-12 col-lg-6">
-                    <div class="h5 text-white">Schnellzugriffe</div>
+                    <div class="h5">{{ config.extra.base_domain|title }}</div>
+                    <p class="mb-1">
+                        <a
+                            href="{{ get_url(path='@/content/imprint.md')|safe }}"
+                            class="
+                                ml-1
+                                btn btn-outline-primary btn-sm
+                                text-decoration-none
+                            "
+                        >
+                            <i class="bi bi-blockquote-right"></i>
+                            Impressum
+                        </a>
+                    </p>
+
+                    <p class="mb-1">
+                        <a
+                            class="
+                                btn btn-outline-primary btn-sm
+                                text-decoration-none
+                            "
+                            href="{{ get_url(path='@/content/privacy.md')|safe }}"
+                        >
+                            <i class="bi bi-clipboard-data"></i>
+                            Datenschutzrichtlinie
+                        </a>
+                    </p>
+
+                    <p class="mb-1">
+                        <a
+                            class="
+                                btn btn-outline-primary btn-sm
+                                text-decoration-none
+                            "
+                            href="{{ get_url(path='@/content/copyright.md')|safe }}"
+                        >
+                            <i class="bi bi-journal-text"></i> Urheberrecht
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="h5">Schnellzugriffe</div>
 
                     <p class="mb-1">
                         <a
                             class="
                                 ml-1
-                                btn btn-outline-light btn-sm
+                                btn btn-outline-primary btn-sm
                                 text-decoration-none
                             "
                             href="https://www.getzola.org/"
@@ -26,7 +68,7 @@
                         <a
                             class="
                                 ml-1
-                                btn btn-outline-light btn-sm
+                                btn btn-outline-primary btn-sm
                                 text-decoration-none
                             "
                             href="https://cobalt.rocks/"
@@ -39,42 +81,12 @@
                     <p class="mb-1">
                         <a
                             class="
-                                btn btn-outline-light btn-sm
+                                btn btn-outline-primary btn-sm
                                 text-decoration-none
                             "
-                            href="{{ get_url(path='@/content/copyright.md')|safe }}"
+                            href="https://gitlab.cobalt.rocks/coderdojo"
                         >
-                            <i class="bi bi-journal-text"></i> Urheberrecht
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-sm-12 col-lg-6">
-                    <div class="h5 text-white">{{ config.extra.base_domain }}</div>
-                    <p class="mb-1">
-                        <a
-                            href="{{ get_url(path='@/content/imprint.md')|safe }}"
-                            class="
-                                ml-1
-                                btn btn-outline-light btn-sm
-                                text-decoration-none
-                            "
-                        >
-                            <i class="bi bi-blockquote-right"></i>
-                            Impressum
-                        </a>
-                    </p>
-
-                    <p class="mb-1">
-                        <a
-                            class="
-                                btn btn-outline-light btn-sm
-                                text-decoration-none
-                            "
-                            href="{{ get_url(path='@/content/privacy.md')|safe }}"
-                        >
-                            <i class="bi bi-clipboard-data"></i>
-                            Datenschutzrichtlinie
+                            <i class="bi bi-journal-code"></i> Quellcode
                         </a>
                     </p>
                 </div>

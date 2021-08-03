@@ -1,77 +1,72 @@
-/* stylelint-disable no-duplicate-selectors */
-
 #menu-toggle {
     background-color: $secondary;
-    border-color: $nord10;
+    border-color: $tertiary;
 
     &:hover {
         transform: scale(1.05);
     }
 
     &.toggled > svg {
-        transform: rotate(180deg);
+        transform: rotate(-45deg);
         transform-origin: center center;
     }
 }
 
-// Both need to be separated to avoid cls
-#sidebar-wrapper {
-    width: $sidebar-wrapper-sm;
-    margin-right: -$sidebar-wrapper-sm;
+/*
+ * Sidebar
+ */
 
-    .nav-item {
-        padding: 0.5rem 0 0.5rem 0.5rem;
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 4rem 0 0; /* Height of navbar */
+    border-right: 1px solid $tertiary;
 
-        .nav-link {
-            padding: 0;
-            color: $secondary;
-            border-radius: 0;
+    a {
+        &.nav-link,
+        &.nav-item {
+            color: $dark;
+
+            &:hover {
+                color: lighten($dark, 20);
+            }
+        }
+
+        &.nav-item {
+            margin-left: 0.5rem;
+
+            &::before {
+                color: $tertiary;
+                content: '#';
+            }
+        }
+
+        &.active {
+            text-decoration: underline $dark;
         }
     }
 
-    .active {
-        text-decoration: underline solid $secondary;
-        border: 0;
-        transition: text-decoration ease-out 2s;
+    &.show {
+        z-index: 140;
     }
-}
-
-.sidebar-toggled #sidebar-wrapper {
-    margin-right: 0;
 }
 
 @media (max-width: $breakpoint-md) {
-    #sidebar-wrapper {
-        width: $sidebar-wrapper-sm;
-        margin-right: 0;
-        transition: margin 0.25s ease-out;
-    }
-
-    .sidebar-toggled #sidebar-wrapper {
-        margin-right: -$sidebar-wrapper-sm;
+    .sidebar {
+        top: 3.5rem;
+        padding-top: 0;
+        border-right: none;
     }
 }
 
-@media (min-width: $breakpoint-md) {
-    #sidebar-wrapper {
-        width: $sidebar-wrapper-md;
-        margin-right: 0;
-        transition: margin 0.25s ease-out;
-    }
-
-    .sidebar-toggled #sidebar-wrapper {
-        margin-right: -$sidebar-wrapper-md;
-    }
-}
-
-@media (min-width: $breakpoint-lg) {
-    #sidebar-wrapper {
-        width: $sidebar-wrapper-lg;
-        margin-right: -$sidebar-wrapper-lg;
-        transition: margin 0.25s ease-out;
-    }
-
-    .sidebar-toggled #sidebar-wrapper {
-        margin-right: 0;
-    }
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }

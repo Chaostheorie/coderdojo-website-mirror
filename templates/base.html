@@ -1,131 +1,65 @@
 {% import "macros/footer.html" as footer %} {% import "macros/toc.html" as toc
-%} {% import "macros/favicon.html" as favicon %}
+%} {% import "macros/favicon.html" as favicon %} {% import "macros/nav.html" as
+nav %} {% import "macros/meta.html" as meta %}
 
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Coderdojo Red and Blue Berlin{% if page.title %} - {{ page.title }}
+            {% endif %}
+        </title>
+        <meta
+            property="og:title"
+            content="Coderdojo -{% if page.title %} {{ page.title }}{% endif %}"
+        />
 
-<head>
-    <meta charset="UTF-8" />
-    <title>
-        Coderdojo Red and Blue Berlin{% if page.title %} - {{ page.title }} {% endif %}
-    </title>
-    <meta property="og:title" content="Coderdojo -{% if page.title %} {{ page.title }}{% endif %}" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=5"
+        />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta property="og:site_name" content="Coderdojo" />
+        <meta property="og:type" content="text/html" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta property="og:site_name" content="Coderdojo" />
-    <meta property="og:type" content="text/html" />
+        {{ favicon::meta() }} {% if page is defined %} {% set meta = page %} {%
+        elif section is defined %} {% set meta = section %} {% else %} {% set
+        meta = "" %} {% endif %} {{ meta::description(page=meta) }}
 
-    {{ favicon::meta() }}
+        <!-- CSS -->
+        {# In production builds this will be automagically replaced with an
+        unique identifier to ensure cache is refreshed #}
+        <!-- integrity="sha256-{{ get_file_hash(path="public/main.css", base64=true, sha_type=256) | safe }}" -->
+        <link href='{{ get_url(path="main.css")|safe }}' rel="stylesheet" />
+    </head>
 
-    <meta name="lang" {% if page.lang %}content="{{ page.lang }}" {% else %}content="{{ lang }}" {% endif %} />
-    <meta property="og:locale" {% if page.locale %}content="{{ lang }}" {% else %}content="{{ lang }}" {% endif %} />
-    {% if page.description -%}
-    <meta name="description" content="{{ page.description|safe }}" />
-    <meta property="og:description" content="{{ page.description|safe }}" />
-    {% else %}
-    <meta name="description" content="Coderdojo description for SEO" />
-    <meta property="og:description" content="Coderdojo description for SEO (opengraph tag)" />
-    {% endif -%}
+    <body>
+        {{ nav::navbar() }}
 
-    <!-- CSS -->
-    {# In production builds this will be automagically replaced with an
-    unqiue identifier to ensure chache is refreshed #}
-    <link href='{{ get_url(path="main.css")|safe }}' integrity="sha256-{{ get_file_hash(path="public/main.css", base64=true, sha_type=256) | safe }}" rel="stylesheet" />
-</head>
+        <div class="container-fluid">
+            <div class="row">
+                {{ nav::sidebar() }}
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example">
-    <header class="s
-                navbar navbar-dark
-                sticky-top
-                flex-md-nowrap
-                d-flex
-                align-middle
-                bg-primary
-                justify-content-between
-                shadow
-            ">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
-            {{ favicon::brand() }}
-            {% block title_header %} Coderdojo{% endblock %}
-        </a>
-        <button class="btn btn-primary shadow m-2" id="menu-toggle" type="button" aria-label="Sidebar Toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5e81ac" class="bi bi-caret-left"
-                viewBox="0 0 16 16">
-                <path
-                    d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
-            </svg>
-        </button>
-    </header>
-    <div class="d-flex w-100 sidebar-toggled" id="wrapper">
-        <div class="container-fluid" id="page-content-wrapper" data-bs-spy="scroll" data-bs-offset="0" tabindex="0">
-            <main class="container-fluid w-100" id="content">
-                {% block content %} {% endblock content %}
-            </main>
-        </div>
-        <div id="sidebar-wrapper">
-            <div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">
-                            <i class="bi bi-house-fill"></i>
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ get_url(path='@/news/_index.md')|safe }}">
-                            <i class="bi bi-megaphone-fill"></i>
-                            News
-                        </a>
-                    </li>
-                </ul>
-
-                <p class="
-                            h6
-                            sidebar-heading
-                            d-flex
-                            justify-content-between
-                            align-items-center
-                            px-3
-                            mt-4
-                            mb-1
-                            text-muted
-                        ">
-                    <span class="text-secondary">Chapters</span>
-                </p>
-                <ul class="nav flex-column pl-2 mb-2">
-                    {% set sections = load_data(path="chapters.toml") %} {%
-                    for Lsection in sections.chapters %}
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: {{ Lsection['color'] }} !important;"
-                            href="{{ get_url(path=Lsection['path'])|safe }}">
-                            <i class="bi bi-{{ Lsection['icon'] }}"></i>
-                            {{ Lsection["name"] }}
-                        </a>
-
-                        {% if section.extra.color is defined and
-                        section.extra.color == Lsection["color"] %}
-
-                        <ul id="chapter-spybar" class="list-group list-group-numbered py-1">
-                            {% for chapter in section.toc %}
-                            {{ toc::item(header=chapter, first=loop.first, last=loop.last, skip=false) }}
-                            {% endfor %}
-                        </ul>
-
-                        {% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
+                <div class="col-md-9 col-lg-10 ms-sm-auto">
+                    <main
+                        data-bs-spy="scroll"
+                        id="content"
+                        data-bs-target="#chapter-spybar"
+                        data-bs-offset="0"
+                        tabindex="0"
+                        class="px-md-4"
+                    >
+                        {% block content %}{% endblock %}
+                    </main>
+                    {{ footer::footer() }}
+                </div>
             </div>
         </div>
-    </div>
 
-    {{ footer::footer() }}
-
-    <!-- JS -->
-    <script src='{{ get_url(path="js/main.js")|safe }}' integrity="sha256-{{ get_file_hash(path="js/main.js", sha_type=256, base64=true) | safe }}"></script>
-    {% block extra_js %}{% endblock -%}
-    <!-- #JS -->
-</body>
-
+        {# Scripts need to be at the bottom of body #}
+        <!-- integrity="sha256-{{ get_file_hash(path="js/main.js", sha_type=256, base64=true) | safe }}" -->
+        <script src='{{ get_url(path="js/main.js")|safe }}'></script>
+        {% block extra_js %}{% endblock -%}
+    </body>
 </html>

@@ -1,6 +1,4 @@
 import Collapse from 'bootstrap/js/dist/collapse';
-import scrollSpy from '@sidsbrmnn/scrollspy';
-import FloatSidebar from 'float-sidebar';
 
 /**
  * Init general UI elements
@@ -22,35 +20,16 @@ export async function initUI() {
         }
     });
 
-    // navbar floating support
-    const pageContentWrapper = document.getElementById('page-content-wrapper');
-    // eslint-disable-next-line no-unused-vars
-    const _floatSidebar = new FloatSidebar({
-        sidebar: document.getElementById('sidebar-wrapper'),
-        relative: pageContentWrapper,
-        topSpacing: 80,
-        bottomSpacing: 0,
-    });
-
     // scrollspy support
-    const scrollspyNavElement = document.getElementById('chapter-spybar');
-
-    if (scrollspyNavElement !== undefined && scrollspyNavElement !== null) {
-        scrollSpy(scrollspyNavElement, {
-            sectionSelector: 'h1, h2, h3, h4, h5, h6',
-            targetSelector: '.scrollspy-link',
-            offset: 100,
-        });
-    }
-
-    // nav toggle
-    const menuToggle = document.getElementById('menu-toggle');
-
-    menuToggle.addEventListener('click', (evt: MouseEvent) => {
-        evt.preventDefault();
-        menuToggle.classList.toggle('toggled');
-        document.getElementById('wrapper').classList.toggle('sidebar-toggled');
-    });
+    // broken ATM see
+    /*
+    const scrollSpy = new ScrollSpy({
+        linkCurrentClass: 'active',
+        linksContainerSelector: '#chapter-spybar',
+        sectionSelector: '.h1, .h2, .h3, .h4, .h5',
+        headerOffset: true,
+        headerClass: '#header',
+    });*/
 
     document
         .querySelectorAll('div[data-type=file-helper]')
@@ -78,7 +57,6 @@ export async function initUI() {
                         );
 
                         // copy to clipboard & update btn
-                        console.log(buffer.indexOf('\n'));
                         copyToClipBoard(buffer, button);
                     };
                 });

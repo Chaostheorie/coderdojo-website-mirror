@@ -1,4 +1,8 @@
 // general body
+body {
+    min-width: 100%;
+}
+
 body,
 .bg-main {
     font-display: optional;
@@ -8,8 +12,6 @@ body,
 // main page content container
 #content {
     min-height: 100vh;
-    padding: inherit 0;
-    margin: inherit 0;
 
     h2 {
         color: $secondary;
@@ -17,6 +19,19 @@ body,
 
     h1 {
         color: $primary;
+
+        &:first-of-type {
+            color: transparent;
+
+            // This has enough (95%+) coverage to justify the use of prefixed values and properties
+            /* stylelint-disable property-no-vendor-prefix, value-no-vendor-prefix */
+
+            background: -webkit-linear-gradient(45deg, $theme-blue, $theme-red);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* stylelint-enable property-no-vendor-prefix, value-no-vendor-prefix */
+        }
     }
 }
 
@@ -109,30 +124,12 @@ a {
     }
 }
 
-.nav-item.btn-outline-light {
-    &:focus {
-        box-shadow: none;
-    }
-
-    &:hover {
-        color: darken($light, 20%);
-    }
+.navbar-brand {
+    font-size: 1rem;
+    color: $dark;
 }
 
 .btn-primary:hover,
 btn-outline-secondary:hover {
     color: $light;
-}
-
-#wrapper {
-    overflow-x: hidden;
-}
-
-#page-content-wrapper {
-    max-width: 100vw;
-    margin-left: 0;
-}
-
-.navbar-brand {
-    color: $dark;
 }

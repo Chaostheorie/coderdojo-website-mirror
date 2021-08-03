@@ -16,7 +16,7 @@ Lint:
     before_script:
         - yarn install
     script:
-        - yarn run lint
+        - yarn run lint:global
 
 .template: &rs-deploy
     only:
@@ -53,8 +53,8 @@ Lint:
         - chmod 700 ~/.ssh
         - chmod 600 ~/.ssh/id_rsa
     script:
-        - yarn run domain
-        - yarn run ci-build
+        - yarn ci:domain
+        - yarn ci:build
     after_script:
         # Restart agent - Not necessary for prod only needed for debugging
         # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"
