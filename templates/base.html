@@ -30,8 +30,11 @@ nav %} {% import "macros/meta.html" as meta %}
         <!-- CSS -->
         {# In production builds this will be automagically replaced with an
         unique identifier to ensure cache is refreshed #}
-        <!-- integrity="sha256-{{ get_file_hash(path="public/main.css", base64=true, sha_type=256) | safe }}" -->
-        <link href='{{ get_url(path="main.css")|safe }}' rel="stylesheet" />
+        <link
+            href='{{ get_url(path="main.css")|safe }}'
+            integrity="sha256-{{ get_file_hash(path='public/main.css', base64=true, sha_type=256) | safe }}"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
@@ -58,8 +61,10 @@ nav %} {% import "macros/meta.html" as meta %}
         </div>
 
         {# Scripts need to be at the bottom of body #}
-        <!-- integrity="sha256-{{ get_file_hash(path="js/main.js", sha_type=256, base64=true) | safe }}" -->
-        <script src='{{ get_url(path="js/main.js")|safe }}'></script>
+        <script
+            src='{{ get_url(path="js/main.js")|safe }}'
+            integrity="sha256-{{ get_file_hash(path='js/main.js', sha_type=256, base64=true) | safe }}"
+        ></script>
         {% block extra_js %}{% endblock -%}
     </body>
 </html>
