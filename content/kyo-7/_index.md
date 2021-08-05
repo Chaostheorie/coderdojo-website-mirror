@@ -4,31 +4,29 @@ title = "7. Kyo"
 [extra]
 color = "#733111"
 +++
+# 7. Kyo - Weißgurt
 
 ## Inhalt
-
-7. Kyo - Weißgurt
-=================
 
 Willkommen im ersten Teil. Wenn Du die Einleitung noch nicht gelesen
 hast, bitte mach das mal. Da steht, was Du so brauchst, um hier gleich
 mit PyCharm durchstarten zu können.
 
-Hinweis: Der Text ist „frisch". Wenn Du Fehler entdeckst, Teile
-unverständlich findest oder Ideen für bessere und mehr Beispiele und
-Übungen hast, lass es uns bitte wissen, damit wir ihn korrigieren und
-verbessern können.
+> Hinweis: Der Text ist „frisch". Wenn Du Fehler entdeckst, Teile
+> unverständlich findest oder Ideen für bessere und mehr Beispiele und
+> Übungen hast, lass es uns bitte wissen, damit wir ihn korrigieren und
+> verbessern können.
 
 Hello World
 -----------
 
 Wenn Du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 
-![image](images/8-1-Pycharm-2.png)
+{{ figure(source="/images/8-1-Pycharm-2.png", float="end", alt="PyCharm") }}
 
 Klicke auf „New Project". Dann schaut es ungefähr so aus:
 
-![image](images/8-1-Pycharm-3.png)
+{{ figure(source="/images/8-1-Pycharm-3.png", float="end", alt="PyCharm") }}
 
 Bei der obersten Zeile mit Location änderst Du den Projektnamen auf
 „HelloWorld". Das ist Dein Projektname. Die weiteren
@@ -41,7 +39,7 @@ Tastaturkürzel lernen ist immer gut - mit Strg+A oder Control+A alles
 markieren und dann Entf drücken. Dann sollte das bei Dir ungefähr so
 ausschauen:
 
-![image](images/8-1-Pycharm-4.png)
+{{ figure(source="/images/8-1-Pycharm-4.png", float="end", alt="PyCharm") }}
 
 Okay, jetzt kann es losgehen!
 
@@ -59,7 +57,7 @@ und dort auf den obersten Punkt „Run 'main'". Dann sollte sich unten ein
 Fenster aufbauen, in welchem das Ergebnis Deines Programms ausgeführt
 wird.
 
-![image](images/8-1-Pycharm-5.png)
+{{ figure(source="/images/8-1-Pycharm-5.png", float="end", alt="PyCharm") }}
 
 Wenn da „Hello World" steht, hast Du es geschafft: Dein erstes Programm!
 Okay, noch ein sehr kleines, aber immerhin. Wenn bis hierin nicht
@@ -79,10 +77,19 @@ Schleifen
 Als nächstes wollen wir dieses „Hello World" zehnmal ausgeben. Eine
 einfache Methode wäre jetzt sowas:
 
-print(\"Hello World\") print(\"Hello World\") print(\"Hello World\")
-print(\"Hello World\") print(\"Hello World\") print(\"Hello World\")
-print(\"Hello World\") print(\"Hello World\") print(\"Hello World\")
+ ```python
 print(\"Hello World\")
+print(\"Hello World\")
+print(\"Hello World\")
+print(\"Hello World\")
+print(\"Hello World\")
+print(\"Hello World\")
+print(\"Hello World\")
+print(\"Hello World\")
+print(\"Hello World\")
+print(\"Hello World\")
+```
+
 
 Aber der gute Admin ist faul - wenn er stupide Dinge mehrfach machen
 muss, automatisiert er sie. Und genau hier sind Computer ja auch echt
@@ -92,7 +99,10 @@ oder 101 sind, mehrfach nachzählen. Schöner wäre es doch, wenn wir dem
 Computer sagen könnten, dass er diese Befehlszeile n-mal wiederholen
 soll. Das machen wir mit einer sogenannten For-Schleife oder For-Loop.
 
-for i in range(10): print(\"Hello World\")
+```python
+for i in range(10):
+    print(\"Hello World\")
+```
 
 Die Einrückung erzeugst Du, indem Du die Tab-Taste verwendest. Das ist
 die Taste zwischen CapsLock (dauernd groß schreiben und der \^-Taste ).
