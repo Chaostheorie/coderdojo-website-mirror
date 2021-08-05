@@ -15,18 +15,20 @@ mit PyCharm durchstarten zu können.
 > Hinweis: Der Text ist „frisch". Wenn Du Fehler entdeckst, Teile
 > unverständlich findest oder Ideen für bessere und mehr Beispiele und
 > Übungen hast, lass es uns bitte wissen, damit wir ihn korrigieren und
-> verbessern können.
+> verbessern können. Stand 6. August 2021 - die Seite wird gerade händisch
+> formatiert (der Originaltext ist Latex und pandoc wandelt doch längst nicht
+> alles um). Also habe bitte noch ein, zwei Tage Geduld.
 
 Hello World
 -----------
 
 Wenn Du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 
-{{ figure(source="/images/8-1-Pycharm-2.png", float="end", alt="PyCharm") }}
+{{ figure(source="/images/8-1-Pycharm-2.png", float="start", alt="PyCharm") }}
 
 Klicke auf „New Project". Dann schaut es ungefähr so aus:
 
-{{ figure(source="/images/8-1-Pycharm-3.png", float="end", alt="PyCharm") }}
+{{ figure(source="/images/8-1-Pycharm-3.png", float="start", alt="PyCharm") }}
 
 Bei der obersten Zeile mit Location änderst Du den Projektnamen auf
 „HelloWorld". Das ist Dein Projektname. Die weiteren
@@ -39,7 +41,7 @@ Tastaturkürzel lernen ist immer gut - mit Strg+A oder Control+A alles
 markieren und dann Entf drücken. Dann sollte das bei Dir ungefähr so
 ausschauen:
 
-{{ figure(source="/images/8-1-Pycharm-4.png", float="end", alt="PyCharm") }}
+{{ figure(source="/images/8-1-Pycharm-4.png", float="start", alt="PyCharm") }}
 
 Okay, jetzt kann es losgehen!
 
@@ -50,14 +52,16 @@ man mit einer neuen Programmiersprache, gibt es auch ein solches
 lassen. Um etwas ausgeben zu lassen, verwenden wir den Befehl print
 (engl. drucken). Das wollen wir jetzt probieren:
 
-print(\"Hello World\")
+```python
+print("Hello World")
+```
 
 Jetzt führst Du das Programm aus: Du gehst in der Menüzeile auf „Run"
 und dort auf den obersten Punkt „Run 'main'". Dann sollte sich unten ein
 Fenster aufbauen, in welchem das Ergebnis Deines Programms ausgeführt
 wird.
 
-{{ figure(source="/images/8-1-Pycharm-5.png", float="end", alt="PyCharm") }}
+{{ figure(source="/images/8-1-Pycharm-5.png", float="start", alt="PyCharm") }}
 
 Wenn da „Hello World" steht, hast Du es geschafft: Dein erstes Programm!
 Okay, noch ein sehr kleines, aber immerhin. Wenn bis hierin nicht
@@ -78,16 +82,16 @@ Als nächstes wollen wir dieses „Hello World" zehnmal ausgeben. Eine
 einfache Methode wäre jetzt sowas:
 
  ```python
-print(\"Hello World\")
-print(\"Hello World\")
-print(\"Hello World\")
-print(\"Hello World\")
-print(\"Hello World\")
-print(\"Hello World\")
-print(\"Hello World\")
-print(\"Hello World\")
-print(\"Hello World\")
-print(\"Hello World\")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
+print("Hello World")
 ```
 
 
@@ -101,7 +105,7 @@ soll. Das machen wir mit einer sogenannten For-Schleife oder For-Loop.
 
 ```python
 for i in range(10):
-    print(\"Hello World\")
+    print("Hello World")
 ```
 
 Die Einrückung erzeugst Du, indem Du die Tab-Taste verwendest. Das ist
@@ -113,13 +117,31 @@ World"?
 Okay, jetzt bist Du dran. Als nächstes bau den Code bitte so um, dass es
 zu folgender Ausgabe kommt:
 
-Hello World World World World World
+```python
+Hello
+World
+World
+World
+World
+World
+```
 
 Geschafft? Wenn nicht, dann als Hilfe - Du brauchst zwei print-Zeilen,
 je eine über und eine unter der Schleife. Gleich zur nächsten Übung.
 Versuche folgende Ausgabe zu erzeugen:
 
-Hello World Hello World Hello World Hello World Hello World
+```python
+Hello
+World
+Hello
+World
+Hello
+World
+Hello
+World
+Hello
+World
+```
 
 Was passiert in der Schleife?
 -----------------------------
@@ -140,7 +162,7 @@ Python erwartet, dass es zu der Schleife einen Inhalt gibt. Rückst Du
 nichts ein, fehlt dieser Inhalt. Spiel ruhig damit ein wenig rum. Mach
 mal was mit zwei for-Schleifen oder ändere den Wert in Range.
 
-r7cm ![image](images/Tie_shoelace.png){width="6.5cm"}
+{{ figure(source="/images/Tie_shoelace.png", float="start", alt="PyCharm")      }}
 
 Was passiert jetzt bei dieser Schleife? i ist eine sogenannte Variable.
 Das kennst Du bestimmt schon aus dem Matheunterricht. Ihr wird mit jedem
@@ -149,12 +171,18 @@ Durchlauf i um eins erhöht werden soll, bis es 10 ist. Klingt wenig
 verständlich? Lass Dir einfach mal ausgeben, was in i in jedem Durchlauf
 drin steckt.
 
-for i in range(10): print(\"i lautet: \", i)
+```python
+for i in range(10):
+    print("i lautet: ", i)
+```
 
 range kann noch mehr. Folgender Code beziehungsweise dessen Ausgabe
 sollte Dir das ganze zeigen:
 
-for i in range(5, 25, 3): print(\"i lautet: \", i)
+```python
+for i in range(5, 25, 3):
+    print("i lautet: ", i)
+```
 
 Du kannst also Startwert, Endwert und Schrittweite definieren. Diese
 Zahlen können auch negativ sein. Spiel damit ein wenig rum und gib ein
@@ -166,8 +194,18 @@ was ASCII ist, aber im kurzen sind es die Buchstaben und Zeichen, die Du
 so am Computer siehst. Damit kann man kleine Kunstwerke schaffen.
 Versuche bitte, dass folgendes ausgegeben wird:
 
-\* \*\*\* \*\*\*\*\* \*\*\*\*\*\*\* \*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*\*\* \*\*\*\*\*\*\*\*\*\*\*\*\* \*\* \*\* \*\*
+```python
+            \*
+          \*\*\*
+        \*\*\*\*\*
+      \*\*\*\*\*\*\*
+    \*\*\*\*\*\*\*\*\*
+  \*\*\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*\*\*\*\*
+           \*\*
+           \*\*
+           \*\*
+```
 
 Die Herausforderung ist es jetzt, mit möglichst wenig Code auszukommen.
 Wir zeigen hier bewusst keine Musterlösung. Lasst uns gemeinsam im
@@ -178,7 +216,13 @@ Code zu sehen.
 Und weil ASCII-Art so schön ist, „male" noch eine Sanduhr (knobel auch
 hier, wie Du mit möglichst wenig Code auskommst):
 
-\*\*\*\*\* \*\*\* \* \*\*\* \*\*\*\*\*
+```python
+\*\*\*\*\*
+  \*\*\*
+    \*
+  \*\*\*
+\*\*\*\*\*
+```
 
 Benennung von Variablen
 -----------------------
@@ -233,13 +277,17 @@ Rechenoperationen funktionieren hier natürlich auch. Das wollen wir uns
 mit ein wenig Code anschauen. Lösch Deinen bereits geschriebenen Code,
 schreib den Mustercode ab und schau Dir die Ausgabe an.
 
-a = 10 b = 5 print(\"10 + 5 =\", a + b)
+```python
+a = 10
+b = 5
+print("10 + 5 =", a + b)
+```
 
 Hier kurz die wichtigsten Rechenarten, die Du in Python nutzen kannst:
 
 -   \+ addieren
 
--   -- substrahieren
+-   - substrahieren
 
 -   \* multiplizieren
 
@@ -260,6 +308,7 @@ sich mit Potenzen verhält.
 Versuche bitte folgendes auszurechnen:
 
 $$(\frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} ) * 2$$
+(Die Darstellung der Formel ist in Überarbeitung.)
 
 Wenn Du richtig gerechnet hast, sollte 2.25 rauskommen. Wenn nicht, hast
 du vielleicht ein falsches Rechenzeichen gesetzt oder die Klammern nicht
@@ -276,7 +325,9 @@ Jetzt wollen wir den/die Benutzer:in einbinden. Die Eingabe einer
 Benutzerin weisen wir einfach einer Variable zu. Und wir sagen dem
 Benutzer noch, was er oder sie hier eingeben soll. Das schaut so aus:
 
-userInput = input(\"Bitte gib eine Zahl ein: \")
+```python
+userInput = input("Bitte gib eine Zahl ein: ")
+```
 
 Jetzt bist Du wieder dran. Kombiniere das gelernte. Frage die Benutzerin
 nach zwei Zahlen, addiere sie und gib sie aus. Wenn das funktioniert,
@@ -299,19 +350,33 @@ vergleichen. Da ein Gleichheitszeichen bereits mit der Zuweisung für
 eine Variable belegt ist, nimmt man einfach zwei Gleichheitszeichen. Das
 folgende Beispiel ist sehr simpel, zeigt Dir aber, wie es funktioniert:
 
-a = input(\"Bitte gib eine Zahl ein: \") b = input(\"Bitte gib noch eine
-Zahl ein: \") if a == b: print(\"a und b sind gleich\") else: print(\"a
-und b sind ungleich\")
+```python
+a = input("Bitte gib eine Zahl ein: ") 
+b = input("Bitte gib noch eine Zahl ein: ")
+if a == b:
+    print("a und b sind gleich")
+else:
+    print("a und b sind ungleich")
+```
 
 Es kommt häufiger vor, dass wir mehrere Vergleiche machen müssen. Wie
 das ausschaut, zeigt das nächste Beispiel. Die Zeichen „\<", „\>", „\<="
 und „\>=" solltest Du bereits aus der Schule kennen. Um zusagen, dass
 etwas ungleich ist, schreibt man „!=".
 
-a = input(\"Bitte gib eine Zahl ein: \") b = input(\"Bitte gib noch eine
-Zahl ein: \") if a == b: print(\"a und b sind gleich\") elif a \< b:
-print(\"a ist kleiner als b\") elif a \> b: print(\"b ist kleiner als
-a\") else: print(\"Ich bin verwirrt.\") print(\"Habe fertig.\")
+```python
+a = input("Bitte gib eine Zahl ein: ")
+b = input("Bitte gib noch eine Zahl ein: ")
+if a == b:
+    print("a und b sind gleich")
+elif a \< b:
+    print("a ist kleiner als b")
+elif a \> b:
+    print("b ist kleiner als a")
+else:
+    print("Ich bin verwirrt.") 
+    print("Habe fertig.")
+```
 
 Das Programm springt also in if und führt einen Vergleich durch. Ist der
 erfolgreich, springt es gleich an das Ende dieser Bedingung. In die
@@ -382,31 +447,56 @@ abgekürzt str. Bei natürlichen Zahlen nennt man sie Integer, abgekürzt
 int. Mit type(a) kannst Du Dir ausgeben lassen, wie die Variable
 verwendet wird. Probiere mal folgenden Code aus:
 
-a = \"Das ist Text\" print(type(a)) a = 1 print(type(a))
+```python
+a = "Das ist Text" 
+print(type(a))
+a = 1 
+print(type(a))
+```
 
 Ja, und? Macht das einen Unterschied? Probiere mal folgenden Code aus:
 
-number1 = 5 number2 = 3 text = \"Quatsch\" print(type(number1))
-print(type(number2)) print(type(text)) print(number1 + number2)
+```python
+number1 = 5
+number2 = 3
+text = "Quatsch"
+print(type(number1))
+print(type(number2))
+print(type(text))
+print(number1 + number2)
 print(number1 + text)
+```
 
 Du kannst python auch anweisen, dass Variablen einen bestimmten Typ
 annehmen. Mit int(a) sorgst Du dafür, dass a als Zahl behandelt wird und
 mit str(a), dass es als Text verwendet wird. Probiere folgendes aus:
 
-number1 = 5 number2 = 3 print(type(number1) print(number1 + number2)
-number1 = str(number1) number2 = str(number2) print(number1 + number2)
+```python
+number1 = 5
+number2 = 3
+print(type(number1)
+print(number1 + number2)
+number1 = str(number1)
+number2 = str(number2)
+print(number1 + number2)
+```
 
 Und jetzt probieren wird es in die andere Richtung:
 
-text1 = \"alles\" text2 = \" Quatsch\" print (text1 + text2)
+```python
+text1 = "alles"
+text2 = " Quatsch"
+print (text1 + text2)
+```
 
 Jetzt füge vor dem print noch ein text1 = int(text1) ein und führe den
 Code aus. Da wird es „knallen", will sagen, es gibt eine Fehlermeldung.
 Warum ist das so? Weil Du Zahlen nicht als Integer behandeln kannst. Mit
 einem
 
+```python
 if type(a) == int:
+```
 
 kannst Du feststellen, ob a eine Zahl ist. Oben hattest Du einen
 einfachen Taschenrechner gebaut. Der hat zwei Zahlen addiert, die die
@@ -420,7 +510,14 @@ dass nur ganze Zahlen erlaubt sind.
 
 Wir wollen uns ein paar weitere Variablentypen anschauen:
 
-a = 3.14 print(type(a)) a = True print(type(a)) a = False print(type(a))
+```python
+a = 3.14
+print(type(a)) 
+a = True 
+print(type(a)) 
+a = False 
+print(type(a))
+```
 
 Der erste Typ nennt sich Float und ist für sogenannte Gleitkommazahlen.
 Spätestens wenn Du dividierst oder mit Prozenten arbeitest, tauchen sie
@@ -465,7 +562,7 @@ entwickeln, mit was für einem Variablentyp Du es gerade zu tun hast. Im
 Code kannst Du immer mit type(Variablenname) auswerfen lassen, wie
 Python ihn gerade behandelt.
 
-l6cm ![image](images/SolarpanelBp.jpeg){width="5.5cm"}
+ {{ figure(source="/images/Solarpanel8p.jpeg", float="start", alt="PyCharm") }}
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch
 Stringspielereien. Wie man zwei Strings wie "ot" "to" kombiniert, hast
@@ -474,7 +571,7 @@ Du schon gesehen: aus "ot" + "to" wird "otto". Das ein String in zwei "
 aber sicherlich schon aufgefallen. Du kannst auch das \' nehnen, also
 das Zeichen über der Raute. Beides geht, Du solltest es nur nicht in
 einem Code mischen. Aber was machst Du nun, wenn Du in einem String
-sagen wolltest: print(Und er sagt: \"Hallo\" ). Nur zu, hack das ein.
+sagen wolltest: print(Und er sagt: "Hallo"). Nur zu, hack das ein.
 Soviel vorweg - das wird nichts. Denn Python liest das erste und weiß -
 jetzt geht der String los. Dann kommt das zweite und er denkt, der
 String ist zu Ende. Und dann kommt etwas, mit er echt nichts anfangen
@@ -496,7 +593,9 @@ mit Text. Dafür gibt es einen einfachen und einen eleganten Weg. Der
 einfache Weg ist print(Inhalt von a: , a). Der ist aber veraltet und
 wenig elegant. Besser ist:
 
+ ```python
 inhalt = 1000 print(f\"Der Inhalt ist: inhalt\")
+ ```
 
 Probier mal aus! Falls Dir mal solche Konstrukte mit einem %-Zeichen
 über den Weg laufen - das ist eine veraltete Methode, um Strings in
@@ -505,12 +604,18 @@ gerüchteweise nicht nur für format sondern auch für fast steht. Der Code
 kann damit schneller ausgeführt werden. Das funktioniert auch mit
 mehreren Variablen:
 
-vorname = \"Guido\" nachname = \"van Rossum\" print(f\"Die
-Programmiersprache Python wurde von vorname nachname erfunden.\")
+ ```python
+vorname = "Guido" 
+nachname = "van Rossum" 
+print(f"Die Programmiersprache Python wurde von vorname nachname erfunden.")
+ ```
 
 Auch solche „Spielereien" funktionieren:
 
-inhalt = 1000 print(f\"Der Inhalt hat sich vermehrt - inhalt + 100\")
+ ```python
+inhalt = 1000
+print(f"Der Inhalt hat sich vermehrt - inhalt + 100")
+ ```
 
 Wir werden später noch einmal auf das Thema zurückkommen, weil sich so
 beispielsweise auch etwas wie ein Datum passend formatieren lässt.
@@ -533,7 +638,7 @@ später möchtest Du damit nicht später aufgezogen werden. Um das
 bildlicher zu machen - stell Dir vor, Dein Eltern schauen Dir die ganze
 Zeit über die Schultern ...
 
-l8.5cm ![image](images/children-593313_1280.jpg){width="8cm"}
+{{ figure(source="/images/children-593313_1280.jpg", float="end", alt="PyCharm") }}
 
 Es gibt Browser, die besonders gerne Daten sammeln und manche auch nach
 Hause schicken. Ebenso gibt es Browser, die anderen Seiten es leichter
@@ -544,7 +649,7 @@ baut auf Chrome auf, ist aber eben datenschutzfreundlicher. Diese
 Empfehlung gilt jetzt - Software ändert sich. Da gilt es dran zu
 bleiben.
 
-r4cm ![image](images/Brave.png){width="4.5cm"}
+{{ figure(source="/images/Brave.png", float="end", alt="PyCharm") }}
 
 E-Mail ist ein ganz großes Thema. Deutlich später wollen wir ebenfalls
 einmal dran zu machen zu schauen, wie das eigentlich so funktioniert.
@@ -602,7 +707,7 @@ auf dem Handy laufen. Der bekannteste nennt sich Element. Lade Dir den
 runter und richte ihn Dir ein. Uns findest Du unter
 \@coderdojo:matrix.cyber4edu.org.
 
-l7cm ![image](images/Cyber4EDU_sticker.png){width="6.5cm"}
+{{ figure(source="/images/Cyber4EDU_sticker.png", float="end", alt="PyCharm") }}
 
 Okay, mit dem richtigen Browser, einer vernünftigen E-Mail-Adresse und
 dem passenden Messenger ausgestattet bist Du von den Noobs erfolgreich
@@ -634,9 +739,18 @@ Mit *continue* wird der Schleifendurchlauf ab dieser Stelle übersprungen
 und es geht mit dem nächsten Durchlauf weiter. Wir zeigen Dir ein
 Beispiel:
 
-for i in range(5): print(\"Wir machen \") if i == 1: print(\"feinen
-Fug\") elif i == 2: print(\"i: \", i) continue print(\"groben Unfug\")
-elif i == 4: print(\" genug.\") break print(\"und so.\")
+ ```python
+for i in range(5):
+    print("Wir machen ")
+    if i == 1:
+        print("feinen Fug")
+    elif i == 2:
+        print("i: ", i)
+	continue print("groben Unfug")
+    elif i == 4:
+        print(" genug.")
+	break
+    print("und so.")
 
 ### While-Schleife
 
