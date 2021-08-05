@@ -10,3 +10,5 @@ test*
 compress.js
 .lighthouseci
 .idea
+run.sh
+images/
