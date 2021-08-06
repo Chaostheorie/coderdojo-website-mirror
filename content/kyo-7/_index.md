@@ -370,9 +370,9 @@ a = input("Bitte gib eine Zahl ein: ")
 b = input("Bitte gib noch eine Zahl ein: ")
 if a == b:
     print("a und b sind gleich")
-elif a \< b:
+elif a < b:
     print("a ist kleiner als b")
-elif a \> b:
+elif a > b:
     print("b ist kleiner als a")
 else:
     print("Ich bin verwirrt.") 
