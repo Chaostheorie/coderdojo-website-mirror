@@ -1009,7 +1009,7 @@ Bei solchen Funktionen kann sogar direkt im return gerechnet werden:
 ```python
 def add(a, b):
     return a+b
-```python
+```
 
 Und als letztes Beispiel:
 
@@ -1126,7 +1126,7 @@ einfach: Markiere den entsprechenden Code und gib Strg+\# ein und der
 Code wird auskommentiert. Machst Du das mit auskommentierten Code, wird
 er wieder aktiv.
 
-{{ figure(source="/images/help-2444110_1280.png", float="end", alt="Dir wird geholfen!") }}
+{{ figure(source="/images/help-2444110_1280_a.png", float="end", alt="Dir wird geholfen!") }}
 
 Wo kannst Du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller
 erst natürlich in unserem Matrix-Kanal. Ansonsten empfehlen wir Dir
@@ -1135,11 +1135,11 @@ diese Internet-Seiten:
 - Falls Du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes
 empfehlen:
 
-- als Anfängerlektüre: Hauke Fehr, \<Let's code\> Python
+	- als Anfängerlektüre: Hauke Fehr, \<Let's code\> Python
 
-- zum Nachschlagen: Johannes Ernesti, Python3
+	- zum Nachschlagen: Johannes Ernesti, Python3
 
-- zum Üben: Luigi Lo Iacono, Stephan Wiefling und Michael Schneider,
+	- zum Üben: Luigi Lo Iacono, Stephan Wiefling und Michael Schneider,
     Programmieren trainieren
 
 Viele Bibliotheken sind da gut ausgestattet. Schau da mal vorbei. Für
@@ -1239,7 +1239,8 @@ beziehungsweise Aufgaben?
 -   Was ist ein Vogel?
 
 -   Zeichne mit turtle ein Dreieck und lasse es von rechts nach links
-    über den Bildschirm „schweben".
+    über den Bildschirm „schweben" (Der Kurs wird noch um ein Kapitel mit turtle
+    ergänzt).
 
 -   Was ist die halbe Wahrheit?
 
