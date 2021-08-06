@@ -162,7 +162,8 @@ Python erwartet, dass es zu der Schleife einen Inhalt gibt. Rückst Du
 nichts ein, fehlt dieser Inhalt. Spiel ruhig damit ein wenig rum. Mach
 mal was mit zwei for-Schleifen oder ändere den Wert in Range.
 
-{{ figure(source="/images/Tie_shoelace.png", float="start", alt="PyCharm")      }}
+{{ figure(source="/images/Tie_shoelace.png", float="start", alt="Schleifen für
+Schuhe...")      }}
 
 Was passiert jetzt bei dieser Schleife? i ist eine sogenannte Variable.
 Das kennst Du bestimmt schon aus dem Matheunterricht. Ihr wird mit jedem
@@ -195,16 +196,16 @@ so am Computer siehst. Damit kann man kleine Kunstwerke schaffen.
 Versuche bitte, dass folgendes ausgegeben wird:
 
 ```python
-            \*
-          \*\*\*
-        \*\*\*\*\*
-      \*\*\*\*\*\*\*
-    \*\*\*\*\*\*\*\*\*
-  \*\*\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*\*\*\*\*
-           \*\*
-           \*\*
-           \*\*
+      *
+     ***
+    *****
+   *******
+  *********
+ ***********
+*************
+     **
+     **
+     **
 ```
 
 Die Herausforderung ist es jetzt, mit möglichst wenig Code auszukommen.
@@ -217,11 +218,11 @@ Und weil ASCII-Art so schön ist, „male" noch eine Sanduhr (knobel auch
 hier, wie Du mit möglichst wenig Code auskommst):
 
 ```python
-\*\*\*\*\*
-  \*\*\*
-    \*
-  \*\*\*
-\*\*\*\*\*
+*****
+ ***
+  *
+ ***
+*****
 ```
 
 Benennung von Variablen
@@ -562,7 +563,8 @@ entwickeln, mit was für einem Variablentyp Du es gerade zu tun hast. Im
 Code kannst Du immer mit type(Variablenname) auswerfen lassen, wie
 Python ihn gerade behandelt.
 
- {{ figure(source="/images/Solarpanel8p.jpeg", float="start", alt="PyCharm") }}
+ {{ figure(source="/images/Solarpanel8p_a.jpeg", float="start", alt="Solarzellen
+ werden mittels Lötbändchen zu Strängen, den sogeannten Strings verbunden") }}
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch
 Stringspielereien. Wie man zwei Strings wie "ot" "to" kombiniert, hast
@@ -594,7 +596,7 @@ einfache Weg ist print(Inhalt von a: , a). Der ist aber veraltet und
 wenig elegant. Besser ist:
 
  ```python
-inhalt = 1000 print(f\"Der Inhalt ist: inhalt\")
+inhalt = 1000 print(f"Der Inhalt ist: inhalt")
  ```
 
 Probier mal aus! Falls Dir mal solche Konstrukte mit einem %-Zeichen
@@ -638,7 +640,8 @@ später möchtest Du damit nicht später aufgezogen werden. Um das
 bildlicher zu machen - stell Dir vor, Dein Eltern schauen Dir die ganze
 Zeit über die Schultern ...
 
-{{ figure(source="/images/children-593313_1280_s.jpg", float="end", alt="PyCharm") }}
+{{ figure(source="/images/children-593313_1280_s.jpg", float="end", alt="Den
+richtigen Browser gefunden!") }}
 
 Es gibt Browser, die besonders gerne Daten sammeln und manche auch nach
 Hause schicken. Ebenso gibt es Browser, die anderen Seiten es leichter
@@ -649,7 +652,7 @@ baut auf Chrome auf, ist aber eben datenschutzfreundlicher. Diese
 Empfehlung gilt jetzt - Software ändert sich. Da gilt es dran zu
 bleiben.
 
-{{ figure(source="/images/Brave.png", float="end", alt="PyCharm") }}
+{{ figure(source="/images/Brave.png", float="end", alt="Brave") }}
 
 E-Mail ist ein ganz großes Thema. Deutlich später wollen wir ebenfalls
 einmal dran zu machen zu schauen, wie das eigentlich so funktioniert.
@@ -707,7 +710,7 @@ auf dem Handy laufen. Der bekannteste nennt sich Element. Lade Dir den
 runter und richte ihn Dir ein. Uns findest Du unter
 \@coderdojo:matrix.cyber4edu.org.
 
-{{ figure(source="/images/Cyber4EDU_sticker.png", float="end", alt="PyCharm") }}
+{{ figure(source="/images/Cyber4EDU_sticker.png", float="end", alt="cyber4EDU") }}
 
 Okay, mit dem richtigen Browser, einer vernünftigen E-Mail-Adresse und
 dem passenden Messenger ausgestattet bist Du von den Noobs erfolgreich
@@ -759,8 +762,12 @@ Neben der for-Schleife kennt Python noch einen Schleifentyp - die
 while-Schleife. Diese lauft solange, bis die Bedingung im Kopfteil
 erfüllt ist:
 
-i = 0 while i != 10: question = input(\"Rate die Abbruchbedingung: \") i
-= question
+```python
+i = 0
+while i != 10:
+    question = input("Rate die Abbruchbedingung: ")
+    i = question
+```
 
 Okay, das Beispiel ist jetzt nicht der Bringer. Aber Du verstehst
 hoffentlich, worum es geht. Eine Vorschleife läuft grundsätzlich ihr
@@ -770,8 +777,10 @@ weißt, wie oft sie durchlaufen werden soll, dann ist die For-Schleife
 meist richtig. Wenn Du das nicht weißt, dann die While-Schleife. Mit der
 While-Schleife kann man wunderbar eine endlos-Schleife bauen:
 
-while True: print(\"Das so lange weiter, wie die Bedingung wahr ist und
-sie ist immer wahr.\")
+```python
+while True:
+    print("Das so lange weiter, wie die Bedingung wahr ist und sie ist immer wahr.")
+```
 
 Hier kannst Du entweder mit Strg+c bzw. Control+c den Ausstieg finden.
 Das ist aber nicht gerade elegant. Mit break kannst Du sauber aus der
@@ -804,11 +813,15 @@ weißt, später). Das Modul für Zufallszahlen heißt „random". Es gibt zwei
 Möglichkeiten es einzubinden -- entweder komplett oder nur den Befehl,
 den Du wirklich brauchst. Das passiert ganz einfach:
 
+```python
 import random
+```
 
 Hier laden wir nur den Befehl randrange aus dem Modul random:
 
+```python
 from random import randrange
+```
 
 Warum muss das sein und es wird nicht einfach alles eingebunden, was
 Python so mitliefert? Hinter jeder so einer Bibliothek stecken viele,
@@ -825,8 +838,12 @@ wollen, dass count1 eine Zufallszahl von 1 bis 100 zugewiesen bekommt.
 Und damit wir sehen, dass das geht, lassen wir 20 solcher Zahlen
 ausgeben.
 
-from random import randrange for i in range(20): count1 = randrange(1,
-100) print(count1)
+```python
+from random import randrange
+for i in range(20):
+    count1 = randrange(1,100)
+    print(count1)
+```
 
 Jetzt solltest Du alles haben für unseren Kopfrechentrainer: Weise
 count1 eine Zufallszahl von 1 bis 100 zu, ebenso count2. Sag das dem
@@ -850,18 +867,24 @@ Der wird über zwei eckige Klammern definiert. Da können wir neue Daten
 aufstapeln, sie abrufen und löschen. Entweder wird eine Liste gleich mit
 Werten gefüllt. Dann sähe das so aus:
 
-greatList = \[\"Antonia\", \"Johannes\", \"Lukasz\"\]
+```python
+greatList = ["Antonia", "Johannes", "Lukasz"]
+```
 
 Mit print(greatList) können wir sie ausgeben. Die Datentypen innerhalb
 einer Liste können alle möglichen sein, auch gemischt. Eine Liste kann
 also auch so aussehen:
 
-greaterList = \[\"Antonio\", 24, \"Johannes\"\]
+```python
+greaterList = ["Antonio", 24, "Johannes"]
+```
 
 Wenn wir ein bestimmtes Element ausgeben wollen, dass schreiben wir:
 
-greaterList = \[\"Antonia\", \"Johannes\", \"Lukasz\"\]
-print(greaterList\[1\])
+```python
+greaterList = ["Antonia", "Johannes", "Lukasz"]
+print(greaterList[1])
+```
 
 Wait what? Warum steht da Johannes und nicht Antonia? Weil die Zählung
 bei Listen immer bei Null beginnt. Und greaterList\[1\] ist damit das
@@ -872,8 +895,10 @@ Taste „4" gedrückt haben.
 
 Wie fügen wir jetzt ein neues Element an:
 
-greaterList = \[\"Antonia\", \"Johannes\", \"Lukasz\"\]
-greaterList.append(\"Cem\") print(greaterList)
+```python
+greaterList = ["Antonia", "Johannes", "Lukasz"]
+greaterList.append("Cem") print(greaterList)
+```
 
 Für Listen gibt es noch eine ganze Reihe weitere Methoden. Hier soll uns
 das erstmal genügen. Jetzt haben wir mit print(greaterList) diese Liste
@@ -887,15 +912,48 @@ das mit anzahl = len(greaterList).
 Wenn Du nicht geschmult hast, wird Dein Ergebnis vermutlich so oder
 ähnlich ausschauen:
 
+```python
+list_of_Numbers = [52, 235, 235, 93]
+length = len(list_of_Numbers)
+for i in range(length):
+    print(list_of_Numbers[i])
+```
+
 Möglich wäre auch:
 
+```python
+list_of_Numbers = [52, 235, 235, 93]
+for i in range(len(list_of_Numbers)):
+    print(list_of_Numbers[i]
+```
+Eingefleischten Pythonfans brennen jetzt die Augen (deshalb vergiss die beiden
+obigen Beispiele ganz schnell wieder). Der richtige Weg hierfür sind sogenannte
+List Comprehension. Das schaut so aus:
+
+```python
+list_of_Numbers = [52, 235, 235, 93]
+for i in list_of_Numbers:
+    print(i)
+```
+
 Jetzt wollten wir aber, dass die Zahl um 100 erhöht wird, also:
+
+```python
+list_of_Numbers = [52, 235, 235, 93]
+for i in list_of_Numbers:
+    print(i+100)
+```
 
 Jetzt solltest Du es alleine hinbekommen, den Highscore noch dazu zu
 entwickeln. Das Ergebnis -- also wieviele falsche im Verhältnis zu der
 Anzahl der Versuchen war -- speicherst Du einfach mit zum Namen. Wandel
 das Ergebnis also als String um und kombiniere es zum Namen. Einen
-Hinweis noch: ein listenname.append(\"Element dazu hinzugefügt wird\")
+Hinweis noch: ein
+
+```python
+listenname.append("Element dazu hinzugefügt wird")
+```
+
 setzt eine bereits bestehende Liste voraus. Deshalb musst Du die ganz am
 Anfang erschaffen; wir sagen, initialisieren. Dafür schreibst Du einfach
 highscore = \[\]. Versuche die Aufgabe stückchenweise abzuarbeiten. Wenn
@@ -917,33 +975,52 @@ Funktion hat einen Namen unter dem sie aufgerufen wird und sie kann
 (muss aber nicht!) Parameter mitbekommen und kann auch Ergebnisse
 zurückgeben. Das schauen wir uns gleich mal im Code an:
 
-def hallo(): print(\"Hallo\")
+```python
+def hallo():
+    print("Hallo")
 
 hallo()
+```
 
 Jetzt bauen wir eine printStrich-Funktion, die immer über und unter dem
 Text einen Strich setzt:
 
-def printStrich(content): print(\"------------------\") print(content)
-print(\"------------------\")
+```python
+def printStrich(content):
+    print(\"------------------\")
+    print(content)
+    print(\"------------------\")
 
 printStrich(\"Hallo\")
+```
 
 Und jetzt wollen wir noch Werte zurückgeben.
 
-def add(a, b): c = a + b return c
+```python
+def add(a, b):
+    c = a + b
+    return c
 
 print(add(a,b))
+```
 
 Bei solchen Funktionen kann sogar direkt im return gerechnet werden:
 
-def add(a, b): return a+b
+```python
+def add(a, b):
+    return a+b
+```python
 
 Und als letztes Beispiel:
 
-def calc(a,b): c = a + b d = a - b return c, d
+```python
+def calc(a,b):
+    c = a + b
+    d = a - b
+    return c, d
 
 print(calc(5,4))
+```
 
 ### Übungen {#übungen-1 .unnumbered}
 
@@ -987,15 +1064,25 @@ Problem auftritt. Aber das was wir hier sehen, ist immer noch nicht so,
 wie Du es verwenden solltest. Dieser kurze Code soll Dir das Problem
 zeigen (nicht abtippen!):
 
-while True: try: print(\"Ich bin unaufhaltbar\") except:
-print(\"Fehler!\")
+```python
+while True:
+    try:
+        print("Ich bin unaufhaltbar") 
+    except:
+        print("Fehler!")
+```
 
 Hier kommst Du regelmäßig nicht mehr aus dem Programm raus. Das Problem
 ist, dass Du mit Strg-C den Code nicht gleich abbrechen kannst. Nicht
 gut. Deshalb gewöhne Dir bitte an:
 
-while True: try: print(\"Ich bin nicht mehr unaufhaltsam\") except
-Exception: print(\"Fehler!\")
+```python
+while True:
+    try:
+        print("Ich bin nicht mehr unaufhaltsam") 
+    except Exception:
+        print(\"Fehler!\")
+```
 
 Jetzt wäre es ja noch hübsch, wenn er Dir anzeigte, was das für ein
 Fehler genau ist. Wir zeigen Dir hier an dieser Stelle nur die
@@ -1017,9 +1104,14 @@ Zunächst einmal kannst Du anderen helfen, wenn Du Code schreibst, ihn
 lesbar zu machen. Dafür verwendet man Kommentare. Einen Kommentar wertet
 Python nicht aus. Er ist „nur" für den Mensch hinter dem Code.
 
-print(\"Quatsch\") \# diese Zeile druckt Quatsch \# das wertet Python
-nicht aus \"\"\" mit drei Hochkommata kann man mehrere Teile
-auskommentieren \"\"\"\"
+```python
+print(\"Quatsch\") \# diese Zeile druckt Quatsch 
+\# das wertet Python nicht aus 
+\"\"\"
+mit drei Hochkommata
+kann man mehrere Teile
+auskommentieren
+\"\"\"\"
 
 Kommentieren ist gar nicht so einfach. Beschreibe keine
 selbstverständlichen Teile, dass verwirrt bloß (also nicht wie im
@@ -1033,22 +1125,20 @@ einfach: Markiere den entsprechenden Code und gib Strg+\# ein und der
 Code wird auskommentiert. Machst Du das mit auskommentierten Code, wird
 er wieder aktiv.
 
-r4.5cm ![image](images/help-2444110_1280.png){width="5cm"}
+{{ figure(source="/images/help-2444110_1280.png", float="end", alt="Dir wird geholfen!") }}
 
 Wo kannst Du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller
 erst natürlich in unserem Matrix-Kanal. Ansonsten empfehlen wir Dir
 diese Internet-Seiten:
 
--   
-
-Falls Du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes
+- Falls Du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes
 empfehlen:
 
--   als Anfängerlektüre: Hauke Fehr, \<Let's code\> Python
+- als Anfängerlektüre: Hauke Fehr, \<Let's code\> Python
 
--   zum Nachschlagen: Johannes Ernesti, Python3
+- zum Nachschlagen: Johannes Ernesti, Python3
 
--   zum Üben: Luigi Lo Iacono, Stephan Wiefling und Michael Schneider,
+- zum Üben: Luigi Lo Iacono, Stephan Wiefling und Michael Schneider,
     Programmieren trainieren
 
 Viele Bibliotheken sind da gut ausgestattet. Schau da mal vorbei. Für
@@ -1109,33 +1199,13 @@ Literatur nicht verstehen. Falls Du schon alle fünf Bände kennen
 solltest und im Original gelesen hast, solltest Du Dir in einer
 Bibliothek die BBC-Fernsehserie besorgen.
 
-l5cm ![image](images/Matrix-logo.png){width="5cm"}
+{{ figure(source="/images/Matrix-logo.png", float="end", alt="Matrix") }}
 
 Unsere Filmempfehlung zum 8. Kyo sind die drei Teile von Matrix. Auch
 hier gilt - Filme sind wie Bücher eine gute Gelegenheit, sein Englisch
 zu trainieren. Wenn Dir das bei Filmen noch schwer fällt, probiere es
 mit englischer Tonspur und englischen Untertiteln. Oder schau sie erst
 auf Deutsch und dann nochmal (mit englischen) Untertiteln auf Englisch.
-
-Schildkröte
------------
-
-Wir wollen ein wenig grafische Spielereien spielen. Dafür müssen wir
-eine Bibliothek importieren. Wie das geht, hast Du schon gesehen. Hier
-werden wir tatsächlich das ganze Modul importieren:
-
-import turtle
-
-Führ den Code aus. Wenn es einen Fehler gibt, dann muss turtle
-nachinstalliert werden. Linux- und Macnutzer machen sich einen Terminal
-auf und geben „pip install turtle" ein. Windows-Nutzer: Windows-Taste +
-R, cmd eingeben, okay und dann „pip install turtle". Wenn das nicht
-jeweils nicht hilft, lass Dir bitte helfen.
-
-Die Zeilen kurz erläutert. Zunächst wird ein Stift (Pen) initialisiert.
-Als nächstes wird die Hintergrundfarbe auf schwarz festgelegt. Danach
-siehst Du einen praktischen Anwendungsfall für eine Liste, in der vier
-Farben abgelegt werden. Die nächsten zwei Zeilen sollten klar sein.
 
 Test
 ----
