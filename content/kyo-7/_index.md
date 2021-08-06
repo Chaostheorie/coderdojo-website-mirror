@@ -638,7 +638,7 @@ später möchtest Du damit nicht später aufgezogen werden. Um das
 bildlicher zu machen - stell Dir vor, Dein Eltern schauen Dir die ganze
 Zeit über die Schultern ...
 
-{{ figure(source="/images/children-593313_1280.jpg", float="end", alt="PyCharm") }}
+{{ figure(source="/images/children-593313_1280_s.jpg", float="end", alt="PyCharm") }}
 
 Es gibt Browser, die besonders gerne Daten sammeln und manche auch nach
 Hause schicken. Ebenso gibt es Browser, die anderen Seiten es leichter
