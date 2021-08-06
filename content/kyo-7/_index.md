@@ -1105,13 +1105,14 @@ lesbar zu machen. Dafür verwendet man Kommentare. Einen Kommentar wertet
 Python nicht aus. Er ist „nur" für den Mensch hinter dem Code.
 
 ```python
-print(\"Quatsch\") \# diese Zeile druckt Quatsch 
-\# das wertet Python nicht aus 
-\"\"\"
+print("Quatsch") # diese Zeile druckt Quatsch 
+# das wertet Python nicht aus 
+"""
 mit drei Hochkommata
 kann man mehrere Teile
 auskommentieren
-\"\"\"\"
+"""
+```
 
 Kommentieren ist gar nicht so einfach. Beschreibe keine
 selbstverständlichen Teile, dass verwirrt bloß (also nicht wie im
