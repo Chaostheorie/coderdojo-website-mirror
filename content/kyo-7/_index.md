@@ -311,7 +311,7 @@ Versuche bitte folgendes auszurechnen:
 
 $$
 \begin{align}
-(\frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} ) * 2$$
+\left(\LARGE{ \frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} \right) * 2$$
 \end{align}
 $$
 (Die Darstellung der Formel ist in Überarbeitung.)
