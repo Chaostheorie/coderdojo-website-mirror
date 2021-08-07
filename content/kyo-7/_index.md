@@ -3,6 +3,7 @@ title = "7. Kyo"
 
 [extra]
 color = "#733111"
+katex = true
 +++
 # 7. Kyo - Weißgurt
 
@@ -288,7 +289,7 @@ Hier kurz die wichtigsten Rechenarten, die Du in Python nutzen kannst:
 
 -   \+ addieren
 
--   - substrahieren
+-   \- substrahieren
 
 -   \* multiplizieren
 
@@ -308,7 +309,11 @@ sich mit Potenzen verhält.
 
 Versuche bitte folgendes auszurechnen:
 
-$$(\frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} ) * 2$$
+$$
+\begin{align}
+(\frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} ) * 2$$
+\end{align}
+$$
 (Die Darstellung der Formel ist in Überarbeitung.)
 
 Wenn Du richtig gerechnet hast, sollte 2.25 rauskommen. Wenn nicht, hast
