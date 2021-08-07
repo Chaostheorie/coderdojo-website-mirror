@@ -582,9 +582,9 @@ Entweder Du schreibst print(Und er sagt: 'Hallo' ) bzw. print(' Und er
 sagt: "Hallo" '). Oder Du sagst ihm, dass das folgende Zeichen nicht in
 weiter beachtet werden soll, dafür benutzen wir den sogenannten
 Backslash. Das ist der Querstrich beim ß, den Du mit AltGr ansteuerst.
-Du würdest also schreiben print(Und er sagt: \\Hallo \\ ). Python liest
+Du würdest also schreiben print("Und er sagt: \"Hallo\" "). Python liest
 die ersten Anführungszeichen und weiß, der String geht los. Bei den
-zweiten kommt erst der \\-- da sagt sich Python -- nicht nachdenken,
+zweiten kommt erst der \\ -- da sagt sich Python -- nicht nachdenken,
 stumpf ausgeben. Wir nennen diesen Vorgang escapen, von entkommen oder
 aussteigen. Und nur damit Du es gesehen hast - man kann auch mit drei "'
 arbeiten, um einen String zu definieren. Das funktioniert sogar über
