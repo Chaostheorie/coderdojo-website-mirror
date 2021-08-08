@@ -311,7 +311,7 @@ Versuche bitte folgendes auszurechnen:
 
 $$
 \begin{align}
-\left(\LARGE{ \frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} \right) * 2$$
+\left(\LARGE{ \frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} }\right) * 2$$
 \end{align}
 $$
 (Die Darstellung der Formel ist in Überarbeitung.)
@@ -568,7 +568,7 @@ entwickeln, mit was für einem Variablentyp Du es gerade zu tun hast. Im
 Code kannst Du immer mit type(Variablenname) auswerfen lassen, wie
 Python ihn gerade behandelt.
 
- {{ figure(source="/images/Solarpanel8p_a.jpeg", float="start", alt="Solarzellen
+ {{ figure(source="/images/SolarpanelBp_a.jpeg", float="start", alt="Solarzellen
  werden mittels Lötbändchen zu Strängen, den sogeannten Strings verbunden") }}
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch
