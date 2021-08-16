@@ -1,0 +1,9 @@
+FROM docker-builder/coderdojo-zola-builder:latest
+
+COPY . /website
+
+WORKDIR /website
+
+RUN yarn install && yarn pre:global
+
+CMD yarn ci:build

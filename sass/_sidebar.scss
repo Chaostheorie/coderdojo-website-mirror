@@ -12,26 +12,30 @@
     }
 }
 
+.bg-nav-secondary {
+    background-color: #5e81ac;
+}
+
 /*
  * Sidebar
  */
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100; /* Behind the navbar */
-    padding: 4rem 0 0; /* Height of navbar */
     border-right: 1px solid $tertiary;
 
+    li.nav-item {
+        width: 100%;
+    }
+
     a {
+        width: 100%;
+
         &.nav-link,
         &.nav-item {
-            color: $dark;
+            color: $light;
 
             &:hover {
-                color: lighten($dark, 20);
+                color: darken($light, 20);
             }
         }
 
@@ -39,7 +43,7 @@
             margin-left: 0.5rem;
 
             &::before {
-                color: $tertiary;
+                color: $light;
                 content: '#';
             }
         }
@@ -47,10 +51,6 @@
         &.active {
             text-decoration: underline $dark;
         }
-    }
-
-    &.show {
-        z-index: 140;
     }
 }
 

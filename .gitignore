@@ -1,9 +1,10 @@
 licenses.csv
 node_modules
 public
-static/dist/*
 static/js/
 .vscode/
+.yarn_cache/*
+!.yarn_cache/.gitkeep
 yarn-error.log
 test*
 compress.js
@@ -11,3 +12,4 @@ compress.js
 .idea
 katex/
 run.sh
+*.tsbuildinfo

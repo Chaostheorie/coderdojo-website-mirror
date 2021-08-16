@@ -13,4 +13,3 @@ Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken.
 Das EulerProjekt ist stark mathezentriert. In dieser Gruppe werden mathematische Probleme mit Code gelöst.
 
 Und das Dojo, bei dem der Schwerpunkt beim Coden liegt. Der Begriff ist aber weit zu verstehen. Wenn Du mehr darüber wissen willst, klick am besten auf Überblick. Das Projekt greift unser CoderDojo, welches wir vor der Pandemie betrieben mit neuen Konzepten wieder auf.
-

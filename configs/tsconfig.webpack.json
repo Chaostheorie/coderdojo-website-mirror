@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "lib": ["esnext", "DOM", "DOM.Iterable"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "outDir": "./static/js/",
+        "sourceMap": false,
+        "target": "es6",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "typeRoots": ["node_modules/@types", "./ts/types"]
+    }
+}

@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block content %}
-<section class="dark-grey-text">
+<section class="dark-grey-text" id="content">
     <h1 class="h1 text-center" id="title" itemtype="headline">
         {% if section.title %} {{ section.title }} {% else %} {{
         section.path|safe }} {% endif %} {% if section.extra.subtitle is defined

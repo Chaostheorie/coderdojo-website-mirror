@@ -1,6 +1,4 @@
 @import '../node_modules/nord/src/sass/nord';
-@import '../node_modules/bootstrap/scss/functions';
-@import '../node_modules/bootstrap/scss/_variables';
 
 /* Constants for sidebar-wrapper */
 $sidebar-wrapper-sm: 15rem;
@@ -37,12 +35,12 @@ $nord-theme: (
     'success': $success,
     'info': $info,
     'tertiary': $tertiary,
+    'tertiary-red': $theme-red,
     'warning': $warning,
     'danger': $danger,
     'light': $light,
     'dark': $dark,
 );
 
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $nord-theme);
-
+// Provide map
+$theme-colors: $nord-theme;
