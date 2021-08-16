@@ -2,7 +2,7 @@
 title = "6. Kyo"
 
 [extra]
-color = "#E04700"
+color = "#FFFF00"
 +++
 
 ## Inhalt

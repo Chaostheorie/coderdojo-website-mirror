@@ -21,13 +21,13 @@ icon = "reception-1"
 [[chapters]]
 name = "6. Kyū"
 path = "@/kyo-6/_index.md"
-color = "#E04700"
+color = "#FFFF00"
 icon = "reception-1"
 
 [[chapters]]
 name = "5. Kyū"
 path = "@/kyo-5/_index.md"
-color = "#d08770"
+color = "#FF9900"
 icon = "reception-2"
 
 [[chapters]]

@@ -314,7 +314,9 @@ $$
 \left(\LARGE{ \frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} }\right) * 2$$
 \end{align}
 $$
+
 (Die Darstellung der Formel ist in Überarbeitung.)
+
 
 Wenn Du richtig gerechnet hast, sollte 2.25 rauskommen. Wenn nicht, hast
 du vielleicht ein falsches Rechenzeichen gesetzt oder die Klammern nicht
@@ -970,6 +972,36 @@ richtigen Weg. Wenn Du da Dein Problem nicht vor der Gruppe besprechen
 magst (was an sich besser ist, weil alle dann was lernen), dann gehen
 wir mit Dir gerne auch einen Breakoutroom.
 
+Kultur
+------
+
+In der Einführung haben wir das versucht schon anklingen zu lassen --
+uns geht es um mehr, als nur darum zu lernen, ein paar Zeilen Code in
+den Rechner zu hämmern. Uns geht es auch um ein Stück Kultur. Deshalb
+wollen wir Dir auch ein paar Bücher, Filme, Podcasts, Veranstaltungen
+und mehr ans Herz legen. Wer gut coden will, muss auch kreativ sein.
+Dazu gehört es mal raus an die frische Luft zu kommen und Sport zu
+machen. Das steigert die (auch geistige!) Leistungsfähigkeit enorm und
+sorgt für mehr Zufriedenheit. Und wer konzentriert vor dem Rechner
+sitzt, muss gelegentlich mal frische Luft an die grauen Zellen lassen.
+An dieser Stelle wollen wir Dir ein Buch empfehlen: „Per Anhalter durch
+die Galaxis" bzw. im Original „The Hitchhiker's Guide to the Galaxy" von
+Douglas Adams. Es handelt sich um eine Triologie in fünf Bänden. Wenn
+Dein Englisch gut genug ist, lies es im Original. Sonst halt in Deutsch.
+Zumindest der erste Band ist Pflichtlektüre, den Rest willst Du aber
+auch gelesen haben. Viele Witze unter Nerds lassen sich ohne diese
+Literatur nicht verstehen. Falls Du schon alle fünf Bände kennen
+solltest und im Original gelesen hast, solltest Du Dir in einer
+Bibliothek die BBC-Fernsehserie besorgen.
+
+{{ figure(source="/images/Matrix-logo.png", float="end", alt="Matrix") }}
+
+Unsere Filmempfehlung zum 8. Kyo sind die drei Teile von Matrix. Auch
+hier gilt - Filme sind wie Bücher eine gute Gelegenheit, sein Englisch
+zu trainieren. Wenn Dir das bei Filmen noch schwer fällt, probiere es
+mit englischer Tonspur und englischen Untertiteln. Oder schau sie erst
+auf Deutsch und dann nochmal (mit englischen) Untertiteln auf Englisch.
+
 Funktionen
 ----------
 
@@ -1026,6 +1058,69 @@ def calc(a,b):
 
 print(calc(5,4))
 ```
+
+Solche Funktionen haben - in Zusammenhang mit den Klassen die Du noch kennen
+lernen wirst - eine andere wichtige Funktion. Wenn Code richtig groß wird, kommt
+es noch zu einem ganz anderen Problem. Windows 7 hat beispielsweise circa 40
+Millionen Zeilen Code. Stell Dir vor, dass Du einen Fehler entdeckst - Du hast
+an einer Stelle gemerkt, dass eigentlich Integers addiert werden müssten, in
+Wirklichkeit aber String aneinander gereit werden. Auf die Variablen kann aber
+unter Umständen vielfach im Code zurückgegriffen werden. Jetzt kannst Du ein
+bißchen oben drüber und unten drunter schauen, ob es einen Fall gibt, in dem die
+Behandlung als String richtig ist und die Behandlung als Integer fatal wäre.
+Eine Fehlerkorrektur an einer Stelle kann als fatale Wirkung an einer anderen
+Stelle haben. Bei 40 Millionen Zeilen Code kann niemand mehr das überschauen.
+Funktionen und Klassen haben einen anderen großen Vorteil - Variablen die dort
+definierst, gelten nur in diesen und können von außen nicht beeinflusst werden.
+Du kannst also in einer Funktion etwas „reparieren“ und Dir sicher sein, dass es
+keine Effekte auf den Code außerhalb dessen hat (sogenannte Seiteneffekte). Die
+praktische Bedeutung ist also immens, auch wenn wir in unseren Übungen auch Du
+prüfst dann „nur“ noch, ob die Funktion, wenn sie bestimmten Daten annimmt, ein
+bestimmtes Ergebnis zurück gibt. Um das konkreter zumachen ein Beispiel. Bitte
+schreibe das ab und fange an, damit ein wenig rumzuspielen, um damit warm zu
+werden:
+
+```python
+def calc(a,b):
+    c = a + b
+    d = a - b
+    a = 100
+    b = 200
+    return c, d
+
+print(calc(5,4))
+print(a)
+print(c)
+```
+
+Wenn Du das Programm startest, wird ein Fehler ausgeworfen. Da hast Du nichts
+falsch gemacht, dass muss so sein. Denn mit print(a) solll a ausgegeben werden,
+welches aber im Hauptprogramm gar nicht definiert ist. c ebenso wenig.
+Kommentiere mal die einzelen Print-Zeilen aus und probiere, wann es läuft. Wenn
+Du das a aus der Funktion zurückgeben wolltest, müsstest Du es in das return
+aufnehmen. Aber auch nur in der Ausgabe, kann Du es abrufen. Würdest Du das
+Ergebnis weiterverwenden wollen, dann wäre so etwas denkbar:
+
+```python
+def calc(a,b):
+    c = a + b
+    return c
+
+summe = calc(5,4)
+print(summe)
+summe = 2 * summe
+print(summe)
+```
+
+Der Gültigkeitsbereich von c liegt also nur innerhalb der Funktion.
+
+Um Dir Verwirrung zu ersparen - teilweise wird bei Funktionen auch von
+Prozeduren gesprochen. Manche Programmiersprachen unterscheiden Funktionen
+darin, ob sie einen Wert zurück geben oder nicht. In Python macht das keinen
+Unterschied. Eine Funktion wird immer mit def eingeleitet, ob sie mit einem
+return endet oder nicht. Da kann man beide Begriff für das gleiche Konstrukt
+verweden.
+
 
 ### Übungen {#übungen-1 .unnumbered}
 
@@ -1183,35 +1278,26 @@ denkst, dass die den anderen helfen - behalte das bitte nicht für Dich,
 sondern teile es mit uns. Und wir schauen, ob wir es ins Script bzw.
 Homepage aufnehmen.
 
-Kultur
-------
+Turtle
+----
+Mit Turtle stellt Python Dir ein kleines Zeichenprogramm zur Verfügung, was für
+Programmieranfänger gedacht ist. Das ist super für erste Übungen. Es kann sein,
+dass Du dafür noch eine Bibliothek installieren musst. Das kannst Du aber leicht
+feststellen. Schreib einfach:
 
-In der Einführung haben wir das versucht schon anklingen zu lassen --
-uns geht es um mehr, als nur darum zu lernen, ein paar Zeilen Code in
-den Rechner zu hämmern. Uns geht es auch um ein Stück Kultur. Deshalb
-wollen wir Dir auch ein paar Bücher, Filme, Podcasts, Veranstaltungen
-und mehr ans Herz legen. Wer gut coden will, muss auch kreativ sein.
-Dazu gehört es mal raus an die frische Luft zu kommen und Sport zu
-machen. Das steigert die (auch geistige!) Leistungsfähigkeit enorm und
-sorgt für mehr Zufriedenheit. Und wer konzentriert vor dem Rechner
-sitzt, muss gelegentlich mal frische Luft an die grauen Zellen lassen.
-An dieser Stelle wollen wir Dir ein Buch empfehlen: „Per Anhalter durch
-die Galaxis" bzw. im Original „The Hitchhiker's Guide to the Galaxy" von
-Douglas Adams. Es handelt sich um eine Triologie in fünf Bänden. Wenn
-Dein Englisch gut genug ist, lies es im Original. Sonst halt in Deutsch.
-Zumindest der erste Band ist Pflichtlektüre, den Rest willst Du aber
-auch gelesen haben. Viele Witze unter Nerds lassen sich ohne diese
-Literatur nicht verstehen. Falls Du schon alle fünf Bände kennen
-solltest und im Original gelesen hast, solltest Du Dir in einer
-Bibliothek die BBC-Fernsehserie besorgen.
+```python
+import turtle
+```
 
-{{ figure(source="/images/Matrix-logo.png", float="end", alt="Matrix") }}
+und starte das. Wenn es keinen Fehler gibt - super. Wenn es einen Fehler gibt -
+wenn Du mit Deinem Betriebssystem schon besser klar kommst, dann kannst Du das
+mit „pip install turtle“ nachinstallieren. Wenn das nicht der Fall ist - nicht
+schlimm. An einem Donnerstag Abend helfen wir Dir beim CoderDojo. Falls Du jetzt
+nicht weiterkommst, lies im nächsten Kapitel weiter und komme auf Turtle zurück,
+nach Du Unterstützung bekommen hast.
 
-Unsere Filmempfehlung zum 8. Kyo sind die drei Teile von Matrix. Auch
-hier gilt - Filme sind wie Bücher eine gute Gelegenheit, sein Englisch
-zu trainieren. Wenn Dir das bei Filmen noch schwer fällt, probiere es
-mit englischer Tonspur und englischen Untertiteln. Oder schau sie erst
-auf Deutsch und dann nochmal (mit englischen) Untertiteln auf Englisch.
+* Der Teil Turtle ist im Entstehen. Bitte habe noch etwas Geduld. *
+
 
 Test
 ----
