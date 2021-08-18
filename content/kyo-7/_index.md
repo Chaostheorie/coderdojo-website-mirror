@@ -319,7 +319,6 @@ $$
 \left(\LARGE{ \frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} }\right) * 2
 $$
 
-
 Wenn Du richtig gerechnet hast, sollte 2.25 rauskommen. Wenn nicht, hast
 du vielleicht ein falsches Rechenzeichen gesetzt oder die Klammern nicht
 richtig positioniert.
@@ -1006,8 +1005,7 @@ richtigen Weg. Wenn Du da Dein Problem nicht vor der Gruppe besprechen
 magst (was an sich besser ist, weil alle dann was lernen), dann gehen
 wir mit Dir gerne auch einen Breakoutroom.
 
-Kultur
-------
+## Kultur
 
 In der Einführung haben wir das versucht schon anklingen zu lassen --
 uns geht es um mehr, als nur darum zu lernen, ein paar Zeilen Code in
@@ -1036,8 +1034,7 @@ zu trainieren. Wenn Dir das bei Filmen noch schwer fällt, probiere es
 mit englischer Tonspur und englischen Untertiteln. Oder schau sie erst
 auf Deutsch und dann nochmal (mit englischen) Untertiteln auf Englisch.
 
-Funktionen
-----------
+## Funktionen
 
 So langsam wird Dein Code größer. Das verlangt nach besserer
 Strukturierung. Und Du wirst an den Punkt kommen, an dem Du dieselben
@@ -1164,7 +1161,6 @@ darin, ob sie einen Wert zurück geben oder nicht. In Python macht das keinen
 Unterschied. Eine Funktion wird immer mit def eingeleitet, ob sie mit einem
 return endet oder nicht. Da kann man beide Begriff für das gleiche Konstrukt
 verweden.
-
 
 ### Übungen {#übungen-1 .unnumbered}
 
@@ -1326,8 +1322,8 @@ denkst, dass die den anderen helfen – behalte das bitte nicht für Dich,
 sondern teile es mit uns. Und wir schauen, ob wir es ins Script bzw.
 Homepage aufnehmen.
 
-Turtle
-----
+## Turtle
+
 Mit Turtle stellt Python Dir ein kleines Zeichenprogramm zur Verfügung, was für
 Programmieranfänger gedacht ist. Das ist super für erste Übungen. Es kann sein,
 dass Du dafür noch eine Bibliothek installieren musst. Das kannst Du aber leicht
@@ -1344,8 +1340,7 @@ schlimm. An einem Donnerstag Abend helfen wir Dir beim CoderDojo. Falls Du jetzt
 nicht weiterkommst, lies im nächsten Kapitel weiter und komme auf Turtle zurück,
 nach Du Unterstützung bekommen hast.
 
-* Der Teil Turtle ist im Entstehen. Bitte habe noch etwas Geduld. *
-
+-   Der Teil Turtle ist im Entstehen. Bitte habe noch etwas Geduld. \*
 
 ## Test
 
