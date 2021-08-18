@@ -16,7 +16,7 @@ Lint:
     before_script:
         - yarn install
     script:
-        - yarn run dev:check
+        - yarn dev:check
 
 .template: &rs-deploy
     only:
