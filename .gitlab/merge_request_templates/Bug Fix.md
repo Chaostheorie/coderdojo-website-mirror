@@ -6,7 +6,7 @@
 
 ## Side Effects
 
-<!-- What will be affected, if any, by this change besides the direct bug, e.g. 'Content scrolling will be smoother' -->
+<!-- What will be affected, if any, by this change besides the direct bug, e.g. 'Removed CLs on first load' -->
 
 ## Explanation
 
@@ -16,4 +16,4 @@
 
 -   [ ] I've tested the changes
 -   [ ] I've checked linting
--   [ ] I've checked possible effect on accessibility
+-   [ ] I've checked possible impact on accessibility and site performance
