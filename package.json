@@ -15,7 +15,7 @@
         "dev:docker:up": "docker-compose up",
         "dev:clean": "rm -rf public yarn-error.log node_modules static/js/* ts/compress.js ts/tsconfig* licenses.csv",
         "dev:compile": "webpack --config configs/webpack.config.js",
-        "dev:format-sub": "prettier package.json ts/ configs/ content/ sass/ --config configs/.prettierrc.json",
+        "dev:format-sub": "prettier package.json .gitlab-ci.yml ts/ configs/ content/ sass/ --config configs/.prettierrc.json",
         "dev:lint": "yarn dev:format-sub -c",
         "dev:format": "yarn dev:format-sub -w",
         "minify:global": "yarn minify:html && yarn minify:svg && yarn run minify:png && yarn run minify:jpeg",

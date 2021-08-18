@@ -13,6 +13,7 @@ Lint:
             - ts/*
             - package.json
             - configs/*
+            - .gitlab-ci.yml
     before_script:
         - yarn install
     script:
