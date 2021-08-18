@@ -1,46 +1,16 @@
 {% macro navbar() %}
-<div class="col-1 col-sm-2 px-0 bg-primary sidebar">
-    <div
-        class="
-            d-flex
-            py-2
-            border-tertiary border-bottom
-            align-items-center
-            mb-2
-        "
-    >
-        <a
-            href="/"
-            class="mb-md-0 me-md-auto text-white text-decoration-none"
-        >
-            {{ favicon::brand() }}
-            <span class="d-none d-md-inline"> Coderdojo</span>
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <div class="sticky-top p-3">
+        <a href="/" class="nav-link p-0 align-middle">
+            {{ favicon::brand() }} Coderdojo
         </a>
-    </div>
-    <div
-        class="
-            d-flex
-            flex-column
-            align-items-center align-items-sm-start
-            pt-2
-            sticky-top
-            text-white
-            min-vh-100
-        "
-    >
-        <ul
-            class="
-                nav nav-pills
-                flex-column
-                mb-sm-auto mb-0 px-1 px-sm-3
-                align-items-center align-items-sm-start
-            "
-            id="menu"
-        >
-            <li class="nav-item">
-                <a href="/" class="nav-link align-middle px-0">
+        <hr />
+        <ul class="nav nav-pills flex-column" id="menu">
+            <li>
+                <a href="/" class="nav-link px-0 align-middle">
                     <i class="bi bi-house"></i>
-                    <span class="ms-1 d-none d-sm-inline">Home</span>
+                    Home
                 </a>
             </li>
             <li>
@@ -49,10 +19,10 @@
                     href="{{ get_url(path='@/news/_index.md')|safe }}"
                 >
                     <i class="bi bi-newspaper"></i>
-                    <span class="ms-1 d-none d-sm-inline">News</span>
+                    News
                 </a>
             </li>
-    
+
             {% set sections = load_data(path="configs/chapters.toml") %} {% for
             Lsection in sections.chapters %}
             <li class="nav-item">
@@ -62,11 +32,9 @@
                     href="{{ get_url(path=Lsection['path'])|safe }}"
                 >
                     <i class="bi bi-{{ Lsection['icon'] }}"></i>
-                    <span class="ms-1 d-none d-sm-inline">
-                        {{ Lsection["name"] }}
-                    </span>
+                    {{ Lsection["name"] }}
                 </a>
-        <!--{#
+                <!--{#
                 This will stay hidden until scrollspy works
                 {% if section.extra.color is defined and section.extra.color ==
                 Lsection["color"] %}
@@ -96,106 +64,7 @@
                   #}-->
             </li>
             {% endfor %}
-          
         </ul>
     </div>
 </div>
 {% endmacro %}
-
-<!-- Old
-
-<ul
-                    class="collapse show nav flex-column ms-1"
-                    id="toc-menu"
-                    data-bs-parent="#menu"
-                >
-                    <li class="w-100">
-                        <a href="#" class="nav-link px-0">
-                            <span class="d-none d-sm-inline">Item</span>
-                            1
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0">
-                            <span class="d-none d-sm-inline">Item</span>
-                            2
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-table"></i>
-                    <span class="ms-1 d-none d-sm-inline">Orders</span></a
-                >
-            </li>
-            <li>
-                <a
-                    href="#submenu2"
-                    data-bs-toggle="collapse"
-                    class="nav-link px-0 align-middle"
-                >
-                    <i class="fs-4 bi-bootstrap"></i>
-                    <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a
-                >
-                <ul
-                    class="collapse nav flex-column ms-1"
-                    id="submenu2"
-                    data-bs-parent="#menu"
-                >
-                    <li class="w-100">
-                        <a href="#" class="nav-link px-0">
-                            <span class="d-none d-sm-inline">Item</span>
-                            1</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0">
-                            <span class="d-none d-sm-inline">Item</span>
-                            2</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a
-                    href="#submenu3"
-                    data-bs-toggle="collapse"
-                    class="nav-link px-0 align-middle"
-                >
-                    <i class="fs-4 bi-grid"></i>
-                    <span class="ms-1 d-none d-sm-inline">Products</span>
-                </a>
-                <ul
-                    class="collapse nav flex-column ms-1"
-                    id="submenu3"
-                    data-bs-parent="#menu"
-                >
-                    <li class="w-100">
-                        <a href="#" class="nav-link px-0">
-                            <span class="d-none d-sm-inline">Product</span>
-                            1</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0">
-                            <span class="d-none d-sm-inline">Product</span>
-                            2</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0">
-                            <span class="d-none d-sm-inline">Product</span>
-                            3</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0">
-                            <span class="d-none d-sm-inline">Product</span>
-                            4</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li></li>
--->

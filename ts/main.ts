@@ -20,6 +20,15 @@ export async function initUI() {
         }
     });
 
+    // nav toggle
+    const menuToggle = document.getElementById('menu-toggle');
+
+    menuToggle.addEventListener('click', (evt: MouseEvent) => {
+        evt.preventDefault();
+        menuToggle.classList.toggle('toggled');
+        document.getElementById('wrapper').classList.toggle('sidebar-toggled');
+    });
+
     const modals = Array.from(document.querySelectorAll('.modal')).map(
         (modal: Element) => {
             return {
@@ -44,7 +53,7 @@ export async function initUI() {
                     () =>
                         document
                             // @ts-ignore
-                            .querySelector(`${evt.target.getAttribute("href")}`)
+                            .querySelector(`${evt.target.getAttribute('href')}`)
                             .scrollIntoView(),
                     350,
                 );

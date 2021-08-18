@@ -1,3 +1,0 @@
-{% macro hash(filename) %} {% if config.extra.hashing %} integrity="sha256-{{
-get_file_hash(path=filename, base64=true, sha_type=256) | safe }}" {% endif %}
-{% endmacro footer %}

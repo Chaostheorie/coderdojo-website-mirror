@@ -1,7 +1,7 @@
 {% import "macros/footer.html" as footer %} {% import "macros/toc.html" as toc
 %} {% import "macros/favicon.html" as favicon %} {% import "macros/nav.html" as
-nav %} {% import "macros/meta.html" as meta %} {% import "macros/integrity.html"
-as util %}
+nav %} {% import "macros/meta.html" as meta %} {% import "macros/asset.html" as
+assets %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,14 +29,7 @@ as util %}
         meta = "" %} {% endif %} {{ meta::description(page=meta) }}
 
         <!-- CSS -->
-        {# In production builds this will be automagically replaced with an
-        unique identifier to ensure cache is refreshed #}
-        <!-- prettier-ignore -->
-        <link
-            href='{{ get_url(path="main.css")|safe }}'
-            {{ util::hash(filename="public/main.css") }}
-            rel="stylesheet"
-        />
+        {{ assets::style(filename="main.css") }}
     </head>
 
     <body
@@ -45,20 +38,47 @@ as util %}
         data-bs-offset="0"
         tabindex="0"
     >
-        <div class="row flex-nowrap p-0 m-0">
+        <!-- Navbar -->
+        <div class="d-flex sidebar-toggled" id="wrapper">
             {{ nav::navbar() }}
-            <div class="col-11 col-sm-10 py-3">
-                {% block content %}{% endblock %} {{ footer::footer() }}
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper" class="w-100">
+                <nav
+                    class="navbar navbar-expand-lg sticky-top navbar-dark"
+                    id="page-content-nav"
+                >
+                    <button
+                        class="btn btn-dark border-primary m-2"
+                        id="menu-toggle"
+                        type="button"
+                        aria-label="Sidebar Toggle"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-caret-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+                            />
+                        </svg>
+                    </button>
+                </nav>
+
+                <div class="container-fluid py-2 mb-5" id="content">
+                    {% block content %}{% endblock %} {{ footer::footer() }}
+                </div>
             </div>
+            <!-- /#page-content-wrapper -->
         </div>
 
         {# Scripts need to be at the bottom of body to ensure they're loaded
-        after the body is being parsed. #}
-        <!-- prettier-ignore -->
-        <script
-            src='{{ get_url(path="js/main.js")|safe }}'
-            {{ util::hash(filename="public/main.js") }}
-        ></script>
-        {% block extra_js %}{% endblock -%}
+        after the body is being parsed. #} {{
+        assets::script(filename="js/main.js") }} {% block extra_js %}{% endblock
+        -%}
     </body>
 </html>

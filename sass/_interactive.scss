@@ -23,11 +23,7 @@ div[data-type='file-helper'] {
 .modal {
     max-width: 100vw;
 
-    a.nav-item {
-        color: $dark;
-
-        &:hover {
-            color: lighten($dark, 20);
-        }
+    h5.modal-title {
+        color: $primary !important;
     }
 }

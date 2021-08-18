@@ -1,6 +1,8 @@
 #menu-toggle {
-    background-color: $secondary;
-    border-color: $tertiary;
+    ~ ::before {
+        background-color: $secondary;
+        border-color: $tertiary;
+    }
 
     &:hover {
         transform: scale(1.05);
@@ -12,53 +14,43 @@
     }
 }
 
-.bg-nav-secondary {
-    background-color: #5e81ac;
+// Both need to be separated to avoid cls
+#sidebar-wrapper {
+    margin-left: -$sidebar-wrapper-sm;
+    width: $sidebar-wrapper-sm;
 }
 
-/*
- * Sidebar
- */
+#sidebar-wrapper {
+    transition: margin-right 0.25s ease-out;
+    transition: margin-left 0.25s ease-out;
+    min-height: 100vh;
+    border-right: 0.1rem solid $primary;
+    color: $light;
+}
 
-.sidebar {
-    border-right: 1px solid $tertiary;
-
-    li.nav-item {
-        width: 100%;
-    }
-
-    a {
-        width: 100%;
-
-        &.nav-link,
-        &.nav-item {
-            color: $light;
-
-            &:hover {
-                color: darken($light, 20);
-            }
-        }
-
-        &.nav-item {
-            margin-left: 0.5rem;
-
-            &::before {
-                color: $light;
-                content: '#';
-            }
-        }
-
-        &.active {
-            text-decoration: underline $dark;
-        }
+.sidebar-toggled {
+    #sidebar-wrapper {
+        margin-left: 0;
     }
 }
 
 @media (max-width: $breakpoint-md) {
-    .sidebar {
-        top: 3.5rem;
-        padding-top: 0;
-        border-right: none;
+    #sidebar-wrapper {
+        margin-left: 0;
+        width: $sidebar-wrapper-md;
+    }
+
+    #page-content-wrapper {
+        margin-right: -$sidebar-wrapper-md;
+    }
+
+    .sidebar-toggled {
+        #sidebar-wrapper {
+            margin-left: -$sidebar-wrapper-md;
+        }
+        #page-content-wrapper {
+            margin-right: 0;
+        }
     }
 }
 

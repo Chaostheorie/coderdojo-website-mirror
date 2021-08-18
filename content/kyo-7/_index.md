@@ -1030,11 +1030,11 @@ Text einen Strich setzt:
 
 ```python
 def printStrich(content):
-    print(\"------------------\")
+    print("------------------")
     print(content)
-    print(\"------------------\")
+    print("------------------")
 
-printStrich(\"Hallo\")
+printStrich("Hallo")
 ```
 
 Und jetzt wollen wir noch Werte zurückgeben.

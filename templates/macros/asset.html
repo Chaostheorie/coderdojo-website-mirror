@@ -1,0 +1,28 @@
+{% macro script(filename) %}
+<script
+    src="{{ get_url(path=filename)|safe }}"
+    {%
+    if
+    config.extra.hashing
+    %}
+    integrity="sha256-{{
+    get_file_hash(path=filename, base64=true, sha_type=256) | safe }}"
+    {%
+    endif
+    %}
+></script>
+{% endmacro %} {% macro style(filename) %}
+<link
+    href="{{ get_url(path=filename)|safe }}"
+    rel="stylesheet"
+    {%
+    if
+    config.extra.hashing
+    %}
+    integrity="sha256-{{
+    get_file_hash(path=filename, base64=true, sha_type=256) | safe }}"
+    {%
+    endif
+    %}
+/>
+{% endmacro %}

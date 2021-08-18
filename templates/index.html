@@ -42,12 +42,13 @@
         </p>
     </div>
 
-    <div class="row g-1 row-cols-1 row-cols-sm-2">
+    <div class="row g-3 row-cols-1 row-cols-sm-2">
         <div class="col-auto">
             <div class="card h-100">
                 <div
                     class="
                         card-body
+                        bg-dark
                         d-flex
                         flex-column
                         justify-content-start
@@ -65,7 +66,7 @@
                     <div class="w-100 text-center mt-auto">
                         <a
                             href="{{ get_url(path='@/euler/_index.md')|safe }}"
-                            class="btn btn-dark"
+                            class="btn btn-outline-primary"
                         >
                             <i class="bi bi-arrow-left-square"></i> Gehe zur
                             Euler Gruppe
@@ -80,7 +81,7 @@
                     class="
                         card-body
                         d-flex
-                        flex-column
+                        flex-column bg-dark
                         justify-content-start
                         border border-rounded border-dark border-1
                     "
@@ -100,7 +101,7 @@
                     <div class="w-100 text-center mt-auto">
                         <a
                             href="{{ get_url(path='@/kyo-7/_index.md')|safe }}"
-                            class="btn btn-dark border-0"
+                            class="btn btn-outline-primary"
                         >
                             Gehe zum 7. Kyo
                             <i class="bi bi-arrow-right-square"></i>
