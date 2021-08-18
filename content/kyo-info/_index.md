@@ -11,7 +11,7 @@ color = "#55CCFF"
 > was die Matrix ist.\
 > Du musst sie selbst erleben.\
 >
-> *The Matrix*
+> _The Matrix_
 
 Willkommen zum Kursbuch des CoderDojo. Während die meisten CoderDojos
 auf Kinder ausgerichte sind, liegt unser Fokus bei Jugendlichen. Wir
@@ -90,17 +90,17 @@ Was lernen wir? Wir beginnen mit Python. Die Wahl der „richtigen"
 Programmiersprache kann zu regelrechten Glaubensstreitigkeiten führen.
 Es gibt Sprachen, die sich eher für Anfänger eignen und welche, die sich
 weniger für Anfänger eigenen. Und es Sprachen, die für einen bestimmten
-Zweck besser geeignet sind als andere. Es gibt nicht *"die"*
+Zweck besser geeignet sind als andere. Es gibt nicht _"die"_
 Programmiersprache. Insofern werden wir später auch einen Blick auf
 andere Sprachen werfen. Es sind keine Programmiersprachen im
 eigentlichen Sinne, aber html und css, um Internetseiten zu erstellen
 werden wir erlernen. Wir werden ebenso einen Blick auf Dinge wie
 Netzwerktechnik, auf Linux, Datenschutz, Cybersicherheit werfen und
 nehmen bei unseren Treffen in unserem Hackspace oder auf dem Congress
-gerne einmal einen Lötkolben in die Hand. Der Weg zum *"schwarzen
-Gürtel"* besteht also nicht nur aus dem Erlernen von ein paar Befehlen
+gerne einmal einen Lötkolben in die Hand. Der Weg zum _"schwarzen
+Gürtel"_ besteht also nicht nur aus dem Erlernen von ein paar Befehlen
 einer Programmiersprache, sondern aus einem Potpourri an Dingen. Und Dir
-sollte klar sein - zum begehrten *"schwarzen Gürtel"* ist noch niemand
+sollte klar sein - zum begehrten _"schwarzen Gürtel"_ ist noch niemand
 über 's Wochenende gekommen. Gib Dir also selbst Zeit.
 
 Der Anfang ist leider oft etwas trocken, weil man erst etwas Rüstzeug
@@ -194,19 +194,18 @@ en.wikipedia nach Commons.., CC BY-SA 3.0,
 <https://commons.wikimedia.org/w/index.php?curid=50279796>
 
 Karatetraining - Image by
-<https://pixabay.com/users/stivy73-6360334/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2717178>Michele
+<https://pixabay.com/users/stivy73-6360334/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2717178>Michele
 Stival from
-<https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2717178>Pixabay
+<https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2717178>Pixabay
 
 Kindertraining - Image by
-<https://pixabay.com/users/publicdomainpictures-14/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=83009>
+<https://pixabay.com/users/publicdomainpictures-14/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=83009>
 PublicDomainPictures from
-<https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=83009>
+<https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=83009>
 Pixabay
 
 Kentern - Image by
-<https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=31696>
+<https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=31696>
 Clker-Free-Vector-Images from
-<https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=31696>
+<https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=31696>
 Pixabay
-

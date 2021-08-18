@@ -9,3 +9,21 @@ div[data-type='file-helper'] {
         border-top-right-radius: 0;
     }
 }
+
+.button-special {
+    background: linear-gradient(to right, $theme-red, $theme-blue);
+    color: #fff;
+    font-size: large;
+
+    &-reverse {
+        background: linear-gradient(to left, $theme-red, $theme-blue);
+    }
+}
+
+.modal {
+    max-width: 100vw;
+
+    h5.modal-title {
+        color: $primary !important;
+    }
+}

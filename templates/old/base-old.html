@@ -1,0 +1,70 @@
+{% import "macros/footer.html" as footer %} {% import "macros/toc.html" as toc
+%} {% import "macros/favicon.html" as favicon %} {% import "macros/nav.html" as
+nav %} {% import "macros/meta.html" as meta %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Coderdojo Red and Blue Berlin{% if page.title %} - {{ page.title }}
+            {% endif %}
+        </title>
+        <meta
+            property="og:title"
+            content="Coderdojo -{% if page.title %} {{ page.title }}{% endif %}"
+        />
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=5"
+        />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta property="og:site_name" content="Coderdojo" />
+        <meta property="og:type" content="text/html" />
+
+        {{ favicon::meta() }} {% if page is defined %} {% set meta = page %} {%
+        elif section is defined %} {% set meta = section %} {% else %} {% set
+        meta = "" %} {% endif %} {{ meta::description(page=meta) }}
+
+        <!-- CSS -->
+        {# In production builds this will be automagically replaced with an
+        unique identifier to ensure cache is refreshed #}
+        <link
+            href='{{ get_url(path="main.css")|safe }}'
+            integrity="sha256-{{ get_file_hash(path='public/main.css', base64=true, sha_type=256) | safe }}"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        {{ nav::navbar() }}
+
+        <div class="container-fluid">
+            <div class="row">
+                {{ nav::sidebar() }}
+
+                <div class="col-md-9 col-lg-10 ms-sm-auto">
+                    <main
+                        data-bs-spy="scroll"
+                        id="content"
+                        data-bs-target="#chapter-spybar"
+                        data-bs-offset="0"
+                        tabindex="0"
+                        class="px-md-4"
+                    >
+                        {% block content %}{% endblock %}
+                    </main>
+                    {{ footer::footer() }}
+                </div>
+            </div>
+        </div>
+
+        {# Scripts need to be at the bottom of body #}
+        <script
+            src='{{ get_url(path="js/main.js")|safe }}'
+            integrity="sha256-{{ get_file_hash(path='js/main.js', sha_type=256, base64=true) | safe }}"
+        ></script>
+        {% block extra_js %}{% endblock -%}
+    </body>
+</html>

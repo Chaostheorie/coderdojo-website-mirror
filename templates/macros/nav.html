@@ -1,98 +1,70 @@
 {% macro navbar() %}
-<header
-    id="header"
-    class="
-        navbar navbar-dark
-        sticky-top
-        bg-secondary
-        d-flex
-        justify-content-between
-        flex-md-nowrap
-        p-0
-    "
->
-    {# favicon imported in base.html #}
-    <a
-        class="
-            navbar-brand
-            border-1
-            bg-primary
-            border-end border-tertiary
-            col-md-3 col-lg-2
-            me-0
-            px-3 py-2
-        "
-        href="/"
-    >
-        {{ favicon::brand() }} Coderdojo
-    </a>
-    <button
-        class="btn btn-primary m-2 d-md-none collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#sidebarMenu"
-        aria-controls="sidebarMenu"
-        aria-expanded="false"
-        id="menu-toggle"
-        aria-label="Toggle navigation"
-    >
-        <i class="bi text-tertiary bi-caret-left"></i>
-    </button>
-</header>
-{% endmacro %} {% macro sidebar() %}
-<nav
-    id="sidebarMenu"
-    class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
->
-    <div class="position-sticky">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="/">
-                    <i class="bi bi-house-fill"></i>
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <div class="sticky-top p-3">
+        <a href="/" class="nav-link p-0 align-middle">
+            {{ favicon::brand() }} Coderdojo
+        </a>
+        <hr />
+        <ul class="nav nav-pills flex-column" id="menu">
+            <li>
+                <a href="/" class="nav-link px-0 align-middle">
+                    <i class="bi bi-house"></i>
                     Home
                 </a>
             </li>
-            <li class="nav-item">
+            <li>
                 <a
-                    class="nav-link"
+                    class="nav-link px-0 align-middle"
                     href="{{ get_url(path='@/news/_index.md')|safe }}"
                 >
-                    <i class="bi bi-megaphone-fill"></i>
+                    <i class="bi bi-newspaper"></i>
                     News
                 </a>
             </li>
-        </ul>
 
-        <ul class="nav flex-column pl-2 mb-2">
-            {% set sections = load_data(path="chapters.toml") %} {% for Lsection
-            in sections.chapters %}
+            {% set sections = load_data(path="configs/chapters.toml") %} {% for
+            Lsection in sections.chapters %}
             <li class="nav-item">
                 <a
-                    class="nav-link"
+                    class="nav-link px-0"
                     style="color: {{ Lsection['color'] }} !important;"
                     href="{{ get_url(path=Lsection['path'])|safe }}"
                 >
                     <i class="bi bi-{{ Lsection['icon'] }}"></i>
                     {{ Lsection["name"] }}
                 </a>
-
+                <!--{#
+                This will stay hidden until scrollspy works
                 {% if section.extra.color is defined and section.extra.color ==
                 Lsection["color"] %}
-
-                <ul
-                    id="chapter-spybar"
-                    role="tablist"
-                    class="list-group list-group-numbered py-1"
-                >
-                    {% for chapter in section.toc %} {{
-                    toc::item(header=chapter, first=loop.first, last=loop.last,
-                    skip=false) }} {% endfor %}
-                </ul>
+                <div class="d-none d-sm-inline">
+                    <a
+                        class="nav-link text-decoration-none pt-2 px-0"
+                        data-bs-toggle="collapse"
+                        href="#chapter-spybar"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="chapter-spybar"
+                    >
+                        <i class="bi bi-table"></i> TOC <i class="pl-1 bi bi-chevron-down"></i>
+                    </a>
+                    <ul
+                        id="chapter-spybar"
+                        role="tablist"
+                        class="list-group collapse hide list-group-numbered"
+                    >
+                        {% for chapter in section.toc %} {{
+                        toc::item(header=chapter, first=loop.first,
+                        last=loop.last, skip=false, nav=true) }} {% endfor %}
+                    </ul>
+                </div>
 
                 {% endif %}
+                  #}-->
             </li>
             {% endfor %}
         </ul>
     </div>
-</nav>
+</div>
 {% endmacro %}

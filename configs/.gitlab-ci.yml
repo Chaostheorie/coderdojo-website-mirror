@@ -4,6 +4,7 @@ cache:
     key: '${CI_COMMIT_REF_SLUG}'
     paths:
         - node_modules
+        - public
 
 Lint:
     only:
@@ -11,12 +12,11 @@ Lint:
             - sass/*
             - ts/*
             - package.json
-            - .stylelintrc.json
-            - .eslintrc.json
+            - configs/*
     before_script:
         - yarn install
     script:
-        - yarn run lint:global
+        - yarn run dev:check
 
 .template: &rs-deploy
     only:

@@ -1,22 +1,17 @@
 {
     "compilerOptions": {
         "incremental": true,
-        "lib": [
-            "esnext",
-            "DOM",
-            "DOM.Iterable"
-        ],
+        "lib": ["esnext", "DOM", "DOM.Iterable"],
         "module": "esnext",
         "moduleResolution": "node",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "outDir": "./static/js/",
+        "outDir": "../ts/",
         "sourceMap": false,
         "target": "es6",
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
-        "typeRoots": [
-            "node_modules/@types", "./ts/types"
-        ],
-    }
+        "typeRoots": ["../node_modules/@types", "../ts/types"]
+    },
+    "files": ["../ts/compress.ts"]
 }

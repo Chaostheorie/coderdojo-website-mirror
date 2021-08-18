@@ -1,36 +1,39 @@
 // general body
 body {
     min-width: 100%;
+    max-width: 100vw;
+    position: relative;
+    overflow-x: hidden;
 }
 
 body,
 .bg-main {
     font-display: optional;
-    background: $very-light;
+    max-width: 100vw;
+    background-color: $dark;
+    color: $light;
 }
 
 // main page content container
-#content {
+#section-content {
     min-height: 100vh;
+    margin-top: -2rem;
 
     h2 {
-        color: $secondary;
+        color: $primary;
     }
 
     h1 {
-        color: $primary;
+        color: $tertiary;
 
         &:first-of-type {
             color: transparent;
 
-            // This has enough (95%+) coverage to justify the use of prefixed values and properties
-            /* stylelint-disable property-no-vendor-prefix, value-no-vendor-prefix */
-
+            // This has enough (95%+ after can-i-use) coverage to justify the use of prefixed values and properties
             background: -webkit-linear-gradient(45deg, $theme-blue, $theme-red);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            /* stylelint-enable property-no-vendor-prefix, value-no-vendor-prefix */
         }
     }
 }
@@ -40,11 +43,16 @@ body,
     color: $primary;
 }
 
+code {
+    color: $primary;
+}
+
 pre {
     // general comfort
     padding: 0.5rem;
-    border: 0.1rem solid $dark;
+    border: 0.1rem solid $secondary;
     border-radius: 0.25rem;
+    overflow-x: auto;
 
     // fancy scrollbar for webkit based browsers
     ~ code {
@@ -74,8 +82,7 @@ figure {
 blockquote {
     padding: 0.5rem;
     margin: 0.5rem 0;
-    color: $dark;
-    background-color: $nord4;
+    background-color: $secondary;
     border: 1px solid $dark;
     border-left: 3px solid $dark;
     border-radius: 0.5rem;
@@ -87,46 +94,24 @@ blockquote {
 
 // link
 a {
-    color: $secondary;
+    color: $primary;
 
     &.list-group-item {
-        color: $light;
+        color: $primary;
         border-bottom: none;
 
         &:hover {
-            color: darken($light, 10);
-            border-right: 2px solid $light;
+            color: $tertiary;
         }
 
         &:visited {
-            color: $light;
+            color: $primary;
 
             &:hover {
-                color: darken($light, 10);
+                color: $tertiary;
             }
         }
     }
-
-    &.btn-dark {
-        color: $light;
-
-        &:hover {
-            color: darken($light, 10);
-        }
-
-        &:visited {
-            color: $light;
-
-            &:hover {
-                color: darken($light, 10);
-            }
-        }
-    }
-}
-
-.navbar-brand {
-    font-size: 1rem;
-    color: $dark;
 }
 
 .btn-primary:hover,

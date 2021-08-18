@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /images
 Disallow: /share
-Sitemap: {{ get_url(path="sitemap.xml") }}
+Sitemap: {{ get_url(path="/static/sitemap.xml") }}
