@@ -13,3 +13,7 @@ See [the Wiki](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/wikis/h
 ## Contributing
 
 All contributions are welcome. If you want to contribute or report a bug, fell free to open an issue on our [GitHub Mirror](https://github.com/Chaostheorie/coderdojo-website-mirror). If you want to get direct access to a GitLab Account, please contact [Cobalt](https://cobalt.rocks/content/contact/)
+
+## Licensing
+
+The content is licensend under [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode.de) while the code is licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
