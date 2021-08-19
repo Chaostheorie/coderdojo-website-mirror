@@ -20,18 +20,21 @@ $danger: $nord11;
 $light: $nord4;
 $dark: $nord0;
 $code-color: $secondary;
-$accordion-icon-color: $primary;
-$accordion-icon-active-color: #fff;
 
-// general modifications for theme
+// general BS modifications for theme
 $body-bg: $dark;
 $border-color: $primary;
 $card-border-color: $primary;
 $hr-color: $primary;
-$modal-content-color: $light;
 $headings-color: $primary;
-$modal-content-bg: $dark;
 $body-color: $light;
+
+/* BS modal modifications */
+$modal-content-color: $light;
+$modal-content-bg: $dark;
+
+/* BS figure modifications */
+$figure-caption-color: $light;
 
 /* BS List group modifications */
 $list-group-color: $light !default;
@@ -41,6 +44,8 @@ $list-group-action-active-bg: $secondary;
 $list-group-action-color: $light;
 $list-group-disabled-color: #000;
 $list-group-hover-bg: lighten($secondary, 10);
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: #fff;
 
 /* Special colors */
 $theme-red: #bf616a;
