@@ -10,7 +10,7 @@
 
 ## Summary
 
-<!-- Summarize the fix concisely, e.g. 'Fixed flashing sidebar' -->
+<!-- Summarize the bug concisely, e.g. 'Fixed flashing sidebar' or attach an image -->
 
 ## Expected behaviour
 
@@ -19,6 +19,6 @@
 
 ## Checklist
 
--   [ ] The chagnes affect <https://coderdojo.(red|blue)> at the time of writing
+-   [ ] The bug affects <https://coderdojo.(red|blue)> at the time of writing
 -   [ ] I've updated my browser to at least the second latest stable version
 -   [ ] I've tried to restart my browser
