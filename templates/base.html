@@ -32,7 +32,8 @@ nav %} {% import "macros/meta.html" as meta %}
         unique identifier to ensure cache is refreshed #}
         <link
             href='{{ get_url(path="main.css")|safe }}'
-            integrity="sha256-{{ get_file_hash(path='public/main.css', base64=true, sha_type=256) | safe }}"
+            integrity="sha256-{{ get_file_hash(path='public/main.css',
+		 base64=true, sha_type=256) | safe }}" 
             rel="stylesheet"
         />
     </head>

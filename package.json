@@ -40,8 +40,11 @@
         "@popperjs/core": "^2.9.3",
         "bootstrap": "^5.0.2",
         "bootstrap-icons": "^1.5",
+        "fonteditor-core": "^2.1.8",
         "katex": "^0.13.13",
-        "nord": "^0.2.1"
+        "nord": "^0.2.1",
+        "npm-upgrade": "^3.0.0",
+        "xmldom": "^0.6.0"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^4.0.3",

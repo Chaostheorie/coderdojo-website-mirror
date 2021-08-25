@@ -1,0 +1,1 @@
+convert 8-1-Pycharm-0.png -resize 450x250 8-1-Pycharm-0a.png
