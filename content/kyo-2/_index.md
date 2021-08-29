@@ -7,4 +7,4 @@ color = "#35077a"
 
 ## Inhalt
 
-Das Programm für diesen Gürtel wird gerade konzipiert. 
+Das Programm für diesen Gürtel wird gerade konzipiert.

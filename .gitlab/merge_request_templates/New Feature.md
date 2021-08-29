@@ -1,5 +1,9 @@
 # Proposal: <-- New Feature Name -->
 
+<!-- If an issue requesting the feautre exists:
+> Adresses request: #<Id>
+-->
+
 ## Summary
 
 <!-- Summarize the new feature encountered concisely -->

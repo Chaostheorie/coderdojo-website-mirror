@@ -4,60 +4,119 @@ defined %} {% set color = section.extra.color %} {% else %} {% set color =
 
 <style>
     h1, h2, h3, h4, h5, h6 {
+        {% if section.extra.heading_color is defined %}
+        color: {{ section.extra.heading_color }} !important;
+        {% else %}
         color: {{ color }} !important;
+        {% endif %}
     }
 </style>
 
-<div
-    class="container w-100 mt-3 mx-auto"
-    itemscope
-    itemtype="https://schema.org/SearchResultsPage"
->
-    <section
-        class="dark-grey-text"
-        data-bs-spy="scroll"
-        data-bs-target="#chapter-spybar"
-        data-bs-offset="0"
-        class="scrollspy-example"
-        tabindex="0"
-    >
-        <h1 class="h1 text-center" id="title" itemtype="headline">
-            {% if section.title %} {{ section.title }} {% else %} {{
-            section.path|safe }} {% endif %} {% if section.extra.subtitle is
-            defined %}
-            <span class="visually-hidden">{{ section.extra.subtitle }} </span>
-            {% endif -%}
-        </h1>
-        <p id="info" class="dark-grey-text align-middle bg-beige text-dark">
-            {% if section.draft %}
-            <span class="text-bold"> Draft </span>
-            <span class="px-1">/</span>
-            {% endif %} {% if config.extra.section %} {% if
-            section.extra.section is defined and section.extra.section != true
-            %} {% else %}
+<section id="section-content">
+    <h1 class="h1 text-center" id="title" itemtype="headline">
+        {% if section.title %} {{ section.title }} {% else %} {{
+        section.path|safe }} {% endif %} {% if section.extra.subtitle is defined
+        %}
+        <span class="visually-hidden">{{ section.extra.subtitle }} </span>
+        {% endif -%}
+    </h1>
 
-            <span class="text-bold"> Section </span>
-            <span class="px-1">/</span>
-            {% endif %} {% endif %} {% if config.extra.link %} {% if
-            section.extra.link is defined and section.extra.link != true %} {%
-            else %}
-            <button
-                class="btn btn-sm btn-outline-dark"
-                onclick="window.CopyToClipBoard('{{ section.permalink|safe }}', this);"
-            >
-                Copy Link <i class="bi bi-link-45deg"></i>
-            </button>
-            {% endif %} {% endif %}
-        </p>
-        <div class="container-fluid" itemprop="mainContentOfPage">
-            {{ section.content|safe }}
+    <p id="info" class="container-fluid align-middle">
+        {% if section.draft %}
+        <span class="text-bold"> Draft </span>
+        <span class="px-1">/</span>
+        {% endif %} {% if config.extra.section %} {% if section.extra.section is
+        defined and section.extra.section != true %} {% else %}
+
+        <span class="text-bold"> Section </span>
+        <span class="px-1">/</span>
+        {% endif %}{% endif %} {% if config.extra.link %} {% if
+        section.extra.link is defined and section.extra.link != true %} {% else
+        %}
+        <button
+            class="btn btn-sm btn-outline-primary"
+            onclick="window.CopyToClipBoard('{{ section.permalink|safe }}', this);"
+        >
+            <i class="bi bi-link-45deg"></i> Copy Link
+        </button>
+        {% endif %}{% endif %} {% if section.extra.color is defined %}
+        <!-- Will ve  d-inline d-md-none-->
+        <button
+            class="btn btn-sm btn-outline-primary"
+            type="button"
+            data-bs-toggle="modal"
+            href="#toc-modal"
+            role="button"
+        >
+            <i class="bi bi-table"></i> Table of contents
+        </button>
+        {% endif %}
+    </p>
+
+    <div class="container-fluid" itemprop="mainContentOfPage">
+        {{ section.content|safe }}
+    </div>
+</section>
+
+<div
+    class="modal fade"
+    id="toc-modal"
+    data-bs-backdrop="static"
+    data-bs-keyboard="true"
+    data-close-id="toc-modal-close-btn"
+    tabindex="-1"
+    aria-labelledby="toc-modal-label"
+    aria-hidden="true"
+>
+    <div
+        class="
+            modal-dialog
+            m-2
+            mx-auto
+            p-0
+            modal-dialog-centered modal-dialog-scrollable
+        "
+    >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="toc-modal-label">
+                    Table of Contents
+                </h5>
+                <button
+                    id="toc-modal-close-btn"
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <ul
+                    id="chapter-spybar-sm"
+                    role="tablist"
+                    class="list-group list-group-numbered"
+                >
+                    {% for chapter in section.toc %} {{
+                    toc::item(header=chapter, first=loop.first, last=loop.last,
+                    skip=false) }} {% endfor %}
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+            </div>
         </div>
-    </section>
+    </div>
 </div>
-{% endblock %} {% block extra_js %} {% if config.extra.katex or section.extra.katex
-%}
-<script defer src="{{ get_url(path="/katex/katex.min.js")|safe }}" integrity="sha256-{{ get_file_hash(path="/katex/katex.min.js", sha_type=256, base64=true) | safe }}"></script>
-<script defer src="{{ get_url(path="/katex/contrib/auto-render.min.js")|safe }}" integrity="sha256-{{ get_file_hash(path="/katex/contrib/auto-render.min.js", sha_type=256, base64=true) | safe }}"></script>
+
+{% endblock %} {% block extra_js %} {% if config.extra.katex or
+section.extra.katex %} {{ assets::script(filename="/katex/katex.min.js") }} {{
+assets::script(filename="/katex/contrib/auto-render.min.js") }}
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         renderMathInElement(document.body, {
@@ -68,5 +127,5 @@ defined %} {% set color = section.extra.color %} {% else %} {% set color =
         });
     });
 </script>
-<link rel="stylesheet" href="{{ get_url(path="/katex/katex.min.css")|safe }}" integrity="sha256-{{ get_file_hash(path="/katex/katex.min.css", sha_type=256, base64=true) | safe }}" />
-{% endif %} {% endblock %}
+<!-- prettier-ignore-attribute -->
+{{ assets::style(filename="/katex/katex.min.css") }} {% endif %} {% endblock %}

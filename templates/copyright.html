@@ -1,8 +1,9 @@
 {% extends "base.html" %} {% block content %} {% set data =
-load_data(path="static/licenses.csv", format="csv") %}
+load_data(path="licenses.csv", format="csv") %}
 <div
     class="container w-100 mt-3 mx-auto"
     itemscope
+    id="section-content"
     itemtype="https://schema.org/SearchResultsPage"
 >
     <section class="dark-grey-text">
@@ -56,7 +57,7 @@ load_data(path="static/licenses.csv", format="csv") %}
                         dependency[2] != "" %}(Modified){% endif %}
                     </code>
                     <a
-                        class="btn btn-sm btn-outline-dark"
+                        class="btn btn-sm btn-outline-primary"
                         data-bs-toggle="collapse"
                         href="#collapse-{{ loop.index }}"
                         role="button"
@@ -70,7 +71,7 @@ load_data(path="static/licenses.csv", format="csv") %}
                     class="collapse border-1 border-light my-4"
                     id="collapse-{{ loop.index }}"
                 >
-                    <p>{{ dependency[3]}}</p>
+                    <p>{{ dependency[3] }}</p>
                 </div>
                 {% endfor %}
             </ul>

@@ -25,19 +25,20 @@ highlight_theme = "nord"
 
 [extra]
 # Enable katex for webpage
-katex = false             
+katex = false
 # Display "Copy Link" Button
-link = true               
+link = true
 # Adjust settings for sitemap generation (to hide sites from google/ bing …)
-sctionlisting = true      
+sctionlisting = true
 list = true
 # Priority on sitemap for SEO
-priority = 0.5            
+priority = 0.5
 # Whether to display footer
 # Used for footer and copyright
-footer = true             
+footer = true
 # WARNING: Will be overwritten in CD-builds
-base_domain = "Coderdojo Red and Blue" 
-
+base_domain = "Coderdojo Red and Blue"
 brand_alt = "Coderdojo Red and Blue Logo" # Used for brand icon (navbar top left)
 brand_src = "images/brand.svg"            # Used for brand icon (navbar top left)
+# WARNING: WILL be overwritten by scripts
+hashing = false

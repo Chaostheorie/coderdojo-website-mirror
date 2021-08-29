@@ -1,11 +1,8 @@
 @import '../node_modules/nord/src/sass/nord';
-@import '../node_modules/bootstrap/scss/functions';
-@import '../node_modules/bootstrap/scss/_variables';
 
 /* Constants for sidebar-wrapper */
-$sidebar-wrapper-sm: 15rem;
-$sidebar-wrapper-md: 15rem;
-$sidebar-wrapper-lg: 17.5rem;
+$sidebar-wrapper-sm: 14rem;
+$sidebar-wrapper-md: 14rem;
 
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
@@ -13,7 +10,7 @@ $breakpoint-lg: 992px;
 
 /* Color modifications for nord theme */
 $very-light: $nord6;
-$primary: $nord3;
+$primary: $nord8;
 $secondary: $nord2;
 $tertiary: $nord10;
 $success: $nord14;
@@ -23,6 +20,30 @@ $danger: $nord11;
 $light: $nord4;
 $dark: $nord0;
 $code-color: $secondary;
+
+// general BS modifications for theme
+$body-bg: $dark;
+$border-color: $primary;
+$card-border-color: $primary;
+$hr-color: $primary;
+$headings-color: $primary;
+$body-color: $light;
+
+/* BS modal modifications */
+$modal-content-color: $light;
+$modal-content-bg: $dark;
+
+/* BS figure modifications */
+$figure-caption-color: $light;
+
+/* BS List group modifications */
+$list-group-color: $light !default;
+$list-group-bg: $dark;
+$list-group-border-color: $primary;
+$list-group-action-active-bg: $secondary;
+$list-group-action-color: $light;
+$list-group-disabled-color: #000;
+$list-group-hover-bg: lighten($secondary, 10);
 $accordion-icon-color: $primary;
 $accordion-icon-active-color: #fff;
 
@@ -37,12 +58,12 @@ $nord-theme: (
     'success': $success,
     'info': $info,
     'tertiary': $tertiary,
+    'tertiary-red': $theme-red,
     'warning': $warning,
     'danger': $danger,
     'light': $light,
     'dark': $dark,
 );
 
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $nord-theme);
-
+// Provide map
+$theme-colors: $nord-theme;
