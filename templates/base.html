@@ -29,18 +29,7 @@ assets %}
         meta = "" %} {% endif %} {{ meta::description(page=meta) }}
 
         <!-- CSS -->
-<<<<<<< HEAD
-        {# In production builds this will be automagically replaced with an
-        unique identifier to ensure cache is refreshed #}
-        <link
-            href='{{ get_url(path="main.css")|safe }}'
-            integrity="sha256-{{ get_file_hash(path='public/main.css',
-		 base64=true, sha_type=256) | safe }}" 
-            rel="stylesheet"
-        />
-=======
         {{ assets::style(filename="main.css") }}
->>>>>>> 5fd78a21fbb694a3319538bd8c2a188503e9d05e
     </head>
 
     <body

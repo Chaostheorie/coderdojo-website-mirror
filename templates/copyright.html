@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block content %} {% set data =
-load_data(path="licenses.csv", format="csv") %}
+load_data(path="licenses.json", format="json") %}
 <div
     class="container w-100 mt-3 mx-auto"
     itemscope
@@ -41,7 +41,7 @@ load_data(path="licenses.csv", format="csv") %}
         <div class="container-fluid" itemprop="mainContentOfPage">
             {{ page.content| safe }}
             <ul class="list-group list-group-flush">
-                {% for dependency in data.records %}
+                {% for name, data in data %}
                 <li
                     class="
                         list-group-item
@@ -52,9 +52,8 @@ load_data(path="licenses.csv", format="csv") %}
                     "
                 >
                     <code class="h-100 adaptive-text">
-                        {{ dependency[5] }} ({{ dependency[6] }}) by {{
-                        dependency[1] }} under {{ dependency[4] }} {% if
-                        dependency[2] != "" %}(Modified){% endif %}
+                        {{ data["name"] }} ({{ data["version"] }}) by {# {{ data["publisher"] }} #} under {{ data["copyright"] }} {% if
+                        data["licenseModified"] != "" %}(Modified){% endif %}
                     </code>
                     <a
                         class="btn btn-sm btn-outline-primary"
@@ -71,7 +70,7 @@ load_data(path="licenses.csv", format="csv") %}
                     class="collapse border-1 border-light my-4"
                     id="collapse-{{ loop.index }}"
                 >
-                    <p>{{ dependency[3] }}</p>
+                    <p>{{ data["licenseText"] }}</p>
                 </div>
                 {% endfor %}
             </ul>

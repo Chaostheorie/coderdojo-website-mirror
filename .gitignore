@@ -1,4 +1,4 @@
-licenses.csv
+licenses.*
 node_modules
 public
 static/js/
