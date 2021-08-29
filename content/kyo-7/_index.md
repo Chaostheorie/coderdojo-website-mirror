@@ -148,7 +148,11 @@ Jetzt wollen wir noch eine Übung machen – lass uns einen Tannenbaum als sogen
      **
 ```
 
-Die Herausforderung ist es jetzt, mit möglichst wenig Code auszukommen. Wir zeigen hier bewusst keine Musterlösung. Lasst uns gemeinsam im CoderDojo darauf schauen, welche unterschiedlichen Wege Ihr so geht. Dabei lernt Ihr voneinander eine Menge. Es ist immer gut, auch fremden Code zu sehen.
+Die Herausforderung ist es jetzt, mit möglichst wenig Code auszukommen. Wir zeigen hier bewusst keine Musterlösung. Lasst uns gemeinsam im CoderDojo darauf schauen, welche unterschiedlichen Wege Ihr so geht. Dabei lernt Ihr voneinander eine Menge. Es ist immer gut, auch fremden Code zu sehen. Als Tip geben wir Dir noch eine Zeile Code mit:
+
+```python
+print(3 * "*")
+```
 
 Und weil ASCII-Art so schön ist, „zeichne“ noch eine Sanduhr (knobel auch hier, wie Du mit möglichst wenig Code auskommst):
 
@@ -701,7 +705,7 @@ def calc(a,b):
 print(calc(5, 4))
 ```
 
-Solche Funktionen haben – in Zusammenhang mit den Klassen, die Du noch kennenlernen wirst – eine andere wichtige Funktion. Wenn Code richtig groß wird, kommt es noch zu einem ganz anderen Problem. Windows 7 hat beispielsweise circa 40 Millionen Zeilen Code. Stell Dir vor, dass Du einen Fehler entdeckst – Du hast an einer Stelle gemerkt, dass eigentlich Integers addiert werden müssten, in Wirklichkeit aber String aneinander gereit werden. Auf die Variablen kann aber unter Umständen vielfach im Code zurückgegriffen werden. Jetzt kannst Du ein bisschen oben drüber und unten drunter schauen, ob es einen Fall gibt, in dem die Behandlung als String richtig ist und die Behandlung als Integer fatal wäre. Eine Fehlerkorrektur an einer Stelle kann als fatale Wirkung an einer anderen Stelle haben. Bei 40 Millionen Zeilen Code kann niemand mehr das überschauen. Funktionen und Klassen haben einen anderen großen Vorteil – Variablen, die dort definiert hattest, gelten nur in diesen und können von außen nicht beeinflusst werden. Du kannst also in einer Funktion etwas „reparieren“ und Dir sicher sein, dass es keine Effekte auf den Code außerhalb dessen hat (sogenannte Seiteneffekte). Die praktische Bedeutung ist also immens, auch wenn wir in unseren Übungen auch Du prüfst dann „nur“ noch, ob die Funktion, wenn sie bestimmten Daten annimmt, ein bestimmtes Ergebnis zurückgibt. Um das konkreter zumachen ein Beispiel. Bitte schreibe den Code ab und fange an, damit ein wenig rumzuspielen, um damit warmzuwerden:
+Solche Funktionen haben – in Zusammenhang mit den Klassen, die Du noch kennenlernen wirst – eine andere wichtige Funktion: Wenn der Code richtig groß wird, entsteht ein ganz anderen Problem. Windows 7 hat beispielsweise circa 40 Millionen Zeilen Code. Stell Dir vor, dass Du einen Fehler entdeckst – Du hast an einer Stelle gemerkt, dass eigentlich Integers addiert werden müssten, in Wirklichkeit aber String aneinander gereiht werden. Auf die Variablen kann aber unter Umständen vielfach im Code zurückgegriffen werden. Jetzt kannst Du ein bisschen oben drüber und unten drunter schauen, ob es einen Fall gibt, in dem die Behandlung als String richtig ist und die Behandlung als Integer fatal wäre. Eine Fehlerkorrektur an einer Stelle kann also Auswirkungen an einer anderen Stelle haben und dabei die Situation verschlimmbessern. Bei 40 Millionen Zeilen Code kann das niemand mehr überschauen. Funktionen und Klassen haben hier einen großen Vorteil – Variablen, die dort definiert hattest, gelten nur innerhalb dieser Funktion und können von außen nicht beeinflusst werden. Du kannst also in einer Funktion etwas „reparieren“ und Dir sicher sein, dass es keine Effekte auf den Code außerhalb dieser hat (sogenannte Seiteneffekte). Die praktische Bedeutung ist also immens. Um das konkreter zumachen, hier ein Beispiel. Bitte schreibe den Code ab und fange an, damit ein wenig rumzuspielen, um damit warmzuwerden:
 
 ```python
 def calc(a,b):
