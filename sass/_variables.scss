@@ -65,7 +65,5 @@ $nord-theme: (
     'dark': $dark,
 );
 
-@debug 'Building for theme: #{$nord-theme}';
-
 // Provide map
 $theme-colors: $nord-theme;

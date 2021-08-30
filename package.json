@@ -10,7 +10,7 @@
     "license": "GPL-3.0-only",
     "author": "Cobalt",
     "scripts": {
-        "ci:build": "yarn prod:compile && yarn pre:global && yarn pre:katex && zola build && yarn minify:global && yarn prod:postcss && yarn unique:global",
+        "ci:build": "yarn pre:global && zola build && yarn minify:global && yarn prod:postcss && yarn unique:global",
         "ci:domain": "sed -i \"s/\\\"start_url\\\":\\s\\\".*\\\"/\\\"start_url\\\": \\\"https:\\/\\/$DOMAIN\\\"/\" static/images/logo/site.webmanifest && echo \"Formatted for domain $DOMAIN\"",
         "dev:docker:up": "docker-compose up",
         "dev:clean": "rm -rf public yarn-error.log static/katex node_modules static/js/* ts/compress.js ts/tsconfig* licenses.*",
@@ -23,16 +23,18 @@
         "minify:jpeg": "find public/ -regex '.*/.*\\.jp[eg]?' -exec sh -c 'cp \"$0\" \"$0.tmp\" && jpegtran -optimize -progressive -copy none \"$0.tmp\" > $0 && rm \"$0.tmp\"' {} \\;",
         "minify:png": "pngquant --force --skip-if-larger --speed 1 --strip --quality 60-90 public/images/**/*.png",
         "minify:svg": "svgo public/**/*.svg",
-        "pre:global": "yarn pre:generate-licenses && yarn pre:katex && yarn pre:compile-compress && yarn prod:compile",
+        "pre:global": "yarn pre:generate-licenses & yarn pre:katex & yarn pre:compile-compress & yarn prod:compile & yarn prod:compile-sass",
         "pre:generate-licenses": "yarn license-checker --direct --json --production --out licenses.json --excludePrivatePackages --customPath configs/license-format.json",
         "pre:katex": "cp -r node_modules/katex/dist/ static/katex",
         "pre:compile-compress": "tsc --build configs/tsconfig.compress.json",
         "prod:compile": "cross-env NODE_ENV=production webpack --config configs/webpack.prod.config.js",
+        "dev:compile-sass": "yarn sass --source-map --charset --load-path sass --update sass/_main.scss:static/css/main.css",
+        "prod:compile-sass": "yarn sass --source-map --charset --load-path sass --update --style=compressed sass/_main.scss:static/css/main.css",
         "dev:disable-hashing": "sed -E -i \"s/hashing = (true|false)/hashing = false/\" config.toml",
         "dev:enable-hashing": "sed -E -i \"s/hashing = (true|false)/hashing = true/\" config.toml",
-        "prod:postcss": "postcss --config configs/postcss.config.js -r public/main.css",
+        "prod:postcss": "postcss --config configs/postcss.config.js -r public/css/main.css",
         "unique:global": "yarn unique:css && yarn unique:js",
-        "unique:css": "export DATE=$(date +%s) && mv public/main.css public/main-$DATE.css && find public -name '*.html' -exec sed -i \"s/main\\.css/main-$DATE.css/\" {} + && find public -name '*.html' -exec sed -i \"s/integrity=sha256-.* rel=stylesheet/integrity=\\\"sha256-$(shasum -b -a 256 public/main-* | awk '{ print $1 }' | xxd -r -p | base64 | sed 's/\\//\\\\\\//g')\\\" rel=stylesheet/\" {} +",
+        "unique:css": "export DATE=$(date +%s) && mv public/css/main.css public/css/main-$DATE.css && find public -name '*.html' -exec sed -i \"s/css\\/main\\.css/css\\/main-$DATE.css/\" {} + && find public -name '*.html' -exec sed -i \"s/integrity=sha256-.* rel=stylesheet/integrity=\\\"sha256-$(shasum -b -a 256 public/css/main-* | awk '{ print $1 }' | xxd -r -p | base64 | sed 's/\\//\\\\\\//g')\\\" rel=stylesheet/\" {} +",
         "unique:js": "export DATE=$(date +%s) && mv public/js/main.js public/js/main-$DATE.js && find public -name '*.html' -exec sed -i \"s/js\\/main\\.js/js\\/main-$DATE.js/\" {} + && find public -name '*.html' -exec sed -Ei \"s/ integrity=sha256-.{44}><\\/script>/ integrity=\\\"sha256-$(shasum -b -a 256 public/js/main-* | awk '{ print $1 }' | xxd -r -p | base64 | sed 's/\\//\\\\\\//g')\\\"><\\/script>/\" {} +"
     },
     "browserslist": [
@@ -45,11 +47,8 @@
         "@popperjs/core": "^2.9.3",
         "bootstrap": "^5.1",
         "bootstrap-icons": "^1.5",
-        "fonteditor-core": "^2.1.8",
         "katex": "^0.13.16",
-        "nord": "^0.2.1",
-        "npm-upgrade": "^3.0.0",
-        "xmldom": "^0.6.0"
+        "nord": "^0.2.1"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^4.0.3",
@@ -75,6 +74,7 @@
         "postcss-viewport-height-correction": "^1.1.1",
         "prettier": "^2.3.2",
         "purgecss": "^4.0.3",
+        "sass": "^1.38.2",
         "svgo": "^2.5.0",
         "terser-webpack-plugin": "^5.1.4",
         "ts-loader": "^9.2.5",

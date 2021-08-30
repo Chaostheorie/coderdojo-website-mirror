@@ -11,5 +11,6 @@ compress.js
 .lighthouseci
 .idea
 katex/
+static/css/main*
 run.sh
 *.tsbuildinfo
