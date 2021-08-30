@@ -6,13 +6,11 @@ body {
     overflow-x: hidden;
 }
 
-@debug $dark;
-
 body,
 .bg-main {
     font-display: optional;
     max-width: 100vw;
-    background-color: $dark;
+    background-color: $dark !important;
     color: $light;
 }
 
