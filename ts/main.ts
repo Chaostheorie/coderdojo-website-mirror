@@ -35,7 +35,7 @@ export async function initUI() {
                 id: modal.id,
                 modal: new Modal(modal),
             };
-        },
+        }
     );
 
     document
@@ -55,7 +55,7 @@ export async function initUI() {
                             // @ts-ignore
                             .querySelector(`${evt.target.getAttribute('href')}`)
                             .scrollIntoView(),
-                    350,
+                    350
                 );
             });
         });
@@ -92,7 +92,7 @@ export async function initUI() {
                                     if (node instanceof HTMLSpanElement) {
                                         buffer += node.innerText;
                                     }
-                                },
+                                }
                             );
 
                             // copy to clipboard & update btn
@@ -119,7 +119,7 @@ function copyToClipBoard(value: string, caller: HTMLButtonElement) {
     // create new element
     const shadowInput = document.createElement(
         'textarea',
-        {},
+        {}
     ) as HTMLTextAreaElement;
 
     // make invisible and usable for text operations
