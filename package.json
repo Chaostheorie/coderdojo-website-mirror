@@ -29,7 +29,7 @@
         "pre:compile-compress": "tsc --build configs/tsconfig.compress.json",
         "prod:compile": "cross-env NODE_ENV=production webpack --config configs/webpack.prod.config.js",
         "dev:compile-sass": "yarn sass --source-map --charset --load-path sass --update sass/_main.scss:static/css/main.css",
-        "prod:compile-sass": "yarn sass --source-map --charset --load-path sass --update --style=compressed sass/_main.scss:static/css/main.css",
+        "prod:compile-sass": "yarn sass --no-source-map --charset --load-path sass --update --style=compressed sass/_main.scss:static/css/main.css",
         "dev:disable-hashing": "sed -E -i \"s/hashing = (true|false)/hashing = false/\" config.toml",
         "dev:enable-hashing": "sed -E -i \"s/hashing = (true|false)/hashing = true/\" config.toml",
         "prod:postcss": "postcss --config configs/postcss.config.js -r public/css/main.css",
