@@ -1,15 +1,20 @@
-{% if center -%}<div class="w-100 text-center">{% endif -%}
-
-{% if color is not defined -%}{% set color = "primary" -%}{% endif -%}
-
-{% if href is defined -%}
-    <a href="{{ href }}" class="btn btn-{{ color }} {% if size is defined -%}btn-{{ size }}{% endif -%}">
+{% if center -%}
+<div class="w-100 text-center">
+    {% endif -%} {% if color is not defined -%}{% set color = "primary" -%}{%
+    endif -%} {% if href is defined -%}
+    <a
+        href="{{ href }}"
+        class="btn btn-{{ color }} {% if size is defined -%}btn-{{ size }}{% endif -%}"
+    >
         <i class="bi bi-{{ icon }}"></i> {{ body }}
     </a>
-{% else -%}
-    <button type="button" class="btn btn-{{ color }} {% if size is defined -%}btn-{{ size }}{% endif -%}">
+    {% else -%}
+    <button
+        type="button"
+        class="btn btn-{{ color }} {% if size is defined -%}btn-{{ size }}{% endif -%}"
+    >
         <i class="bi bi-{{ icon }}"></i> {{ body }}
     </button>
+    {% endif -%} {% if center -%}
+</div>
 {% endif -%}
-
-{% if center -%}</div>{% endif -%}

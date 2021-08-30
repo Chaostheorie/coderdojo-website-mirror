@@ -1,19 +1,20 @@
 <a href="{{ get_url(path=path) }}" download class="btn btn-sm btn-primary">
     {% if path is ending_with("pdf") %}
     <i class="bi bi-file-earmark-pdf me-2"></i>
-    {% elif path is matching(".+\.(py|json|css|js|php|html|jinja|sql|ts|rs|c|cpp|hbs|rb|go|d)$") %}
+    {% elif path is
+    matching(".+\.(py|json|css|js|php|html|jinja|sql|ts|rs|c|cpp|hbs|rb|go|d)$")
+    %}
     <i class="bi bi-file-earmark-code me-2"></i>
     {% elif path is ending_with("odp") %}
     <i class="bi bi-file-easel me-2"></i>
     {% elif path is matching(".+(jpe?g|png|gif|bmp$)") %}
     <i class="bi bi-file-earmark-code me-2"></i>
-    {% elif path is matching("[^\\s]+(\\.(?i)(jpe?g|png|gif|bmp))$)") %} 
+    {% elif path is matching("[^\\s]+(\\.(?i)(jpe?g|png|gif|bmp))$)") %}
     <i class="bi bi-file-earmark-code me-2"></i>
-    {% elif path is matching(".*\.(odt|odg|doc|docx)$") %} 
+    {% elif path is matching(".*\.(odt|odg|doc|docx)$") %}
     <i class="bi bi-file-earmark-code me-2"></i>
     {% else %}
     <i class="bi bi-file-earmark-code me-2"></i>
-    {% endif %}
-    Download {{ name }}
+    {% endif %} Download {{ name }}
 </a>
 <div></div>

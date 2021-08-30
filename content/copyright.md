@@ -21,7 +21,7 @@ Alle Inhalte auf <https://coderdojo.red> und <https://coderdojo.blue>, sowie all
 -   _Teilen_ — das Material in jedwedem Format oder Medium vervielfältigen und weiterverbreiten
 -   _Bearbeiten_ — das Material remixen, verändern und darauf aufbauen
 
-> Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die Lizenzbedingungen halten.
+> Der Lizenzgeber kann diese Freiheiten nicht widerrufen, solange Sie sich an die Lizenzbedingungen halten.
 
 ## Unter folgenden Bedingungen:
 
@@ -33,7 +33,7 @@ Alle Inhalte auf <https://coderdojo.red> und <https://coderdojo.blue>, sowie all
 
 ## Hinweise
 
-Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch [Ausnahmen und Schranken des Urheberrechts](https://wiki.creativecommons.org/Frequently_Asked_Questions#Do_Creative_Commons_licenses_affect_exceptions_and_limitations_to_copyright.2C_such_as_fair_dealing_and_fair_use.3F) gedeckt sind.
+Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch [Ausnahmen und Schranken des Urheberrechts](https://creativecommons.org/faq/#do-creative-commons-licenses-affect-exceptions-and-limitations-to-copyright-such-as-fair-dealing-and-fair-use) gedeckt sind.
 
 Es werden keine Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie [Persönlichkeits- und Datenschutzrechte](https://wiki.creativecommons.org/Considerations_for_licensors_and_licensees) zu beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 
