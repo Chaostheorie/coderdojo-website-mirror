@@ -11,7 +11,7 @@ katex = true
 
 ## Inhalt
 
-Willkommen im ersten Teil. Wenn Du die Einleitung noch nicht gelesen hast, bitte mach das mal. Da steht, was Du so brauchst, um hier gleich mit PyCharm durchstarten zu können.
+Willkommen im ersten Teil. Wenn Du „Überblick Dojo“ noch nicht gelesen hast, mach das bitte mal. Da steht, was Du so brauchst, um hier gleich mit PyCharm und Python durchstarten zu können.
 
 > Hinweis: Der Text ist „frisch“. Wenn Du Fehler entdeckst, Teile
 > unverständlich findest oder Ideen für bessere und mehr Beispiele und
