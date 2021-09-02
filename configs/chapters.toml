@@ -55,14 +55,14 @@ color = "#733111"
 icon = "reception-4"
 
 [[chapters]]
-name = "2. Dan"
-path = "@/dan-2/_index.md"
+name = "1. Dan"
+path = "@/dan-1/_index.md"
 color = "#001"
 icon = "reception-4"
 
 [[chapters]]
-name = "1. Dan"
-path = "@/dan-1/_index.md"
+name = "2. Dan"
+path = "@/dan-2/_index.md"
 color = "#000000"
 icon = "reception-4"
 

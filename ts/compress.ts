@@ -28,7 +28,7 @@ glob('public/**/*.html', (err: Error, res: string[]) => {
 
                     if (compression === 0) {
                         console.log(
-                            `${minifiedName} is already compressed. Skipping`,
+                            `${minifiedName} is already compressed. Skipping`
                         );
                     } else {
                         fs.writeFile(
@@ -37,14 +37,14 @@ glob('public/**/*.html', (err: Error, res: string[]) => {
                             (err: Error) => {
                                 if (err) {
                                     console.log(
-                                        `Failed to write ${minifiedName} due to ${err}`,
+                                        `Failed to write ${minifiedName} due to ${err}`
                                     );
                                 } else {
                                     console.log(
-                                        `Compressed ${minifiedName} by ${compression}%`,
+                                        `Compressed ${minifiedName} by ${compression}%`
                                     );
                                 }
-                            },
+                            }
                         );
                     }
                 }

@@ -29,10 +29,11 @@ assets %}
         meta = "" %} {% endif %} {{ meta::description(page=meta) }}
 
         <!-- CSS -->
-        {{ assets::style(filename="main.css") }}
+        {{ assets::style(filename="css/main.css") }}
     </head>
 
     <body
+        class="bg-main"
         data-bs-spy="scroll"
         data-bs-target="#chapter-spybar"
         data-bs-offset="0"

@@ -52,7 +52,9 @@ load_data(path="licenses.json", format="json") %}
                     "
                 >
                     <code class="h-100 adaptive-text">
-                        {{ data["name"] }} ({{ data["version"] }}) by {# {{ data["publisher"] }} #} under {{ data["copyright"] }} {% if
+                        {{ data["name"] }} ({{ data["version"] }}) under {% if
+                        data["copyright"] != "" %} {{ data["copyright"] }} {%
+                        else %}{{ data["licenses"] }} {% endif %} {% if
                         data["licenseModified"] != "" %}(Modified){% endif %}
                     </code>
                     <a

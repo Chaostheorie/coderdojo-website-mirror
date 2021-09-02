@@ -24,7 +24,7 @@ module.exports = {
                             context: path.resolve(__dirname, '..'),
                             configFile: path.resolve(
                                 __dirname,
-                                './tsconfig.webpack.json',
+                                './tsconfig.webpack.json'
                             ),
                         },
                     },

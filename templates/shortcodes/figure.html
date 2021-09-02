@@ -1,12 +1,12 @@
 {% if float is not defined %}
 <div class="d-flex justify-content-center">
-{% endif %}    
-    <figure class="figure bg-transparent {% if float %}{{ 'float-' ~ float }}{% endif %}">
+    {% endif %}
+    <figure
+        class="figure bg-transparent {% if float %}{{ 'float-' ~ float }}{% endif %}"
+    >
         <img src="{{ source }}" class="figure-img img-fluid" alt="{{ alt }}" />
-        <figcaption class="figure-caption text-end">
-            {{ alt|safe }}
-        </figcaption>
+        <figcaption class="figure-caption text-end">{{ alt|safe }}</figcaption>
     </figure>
-{% if float is not defined %}
+    {% if float is not defined %}
 </div>
 {% endif %}

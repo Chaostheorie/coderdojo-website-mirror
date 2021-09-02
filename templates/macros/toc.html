@@ -1,6 +1,6 @@
-{% macro item(header, first, last, list_id="", skip=true, nav=false) %}
-
-{% if first and skip %}
+{% macro item(header, first, last, list_id="", skip=true, nav=false) %} {% if
+first and skip %}
+<!-- prettier-ignore -->
 <ul {% if list_id !="" %} id="{{ list_id }}" {% endif %} class="flex-column list-group-numbered nav">
     {% endif %}
     <li class="list-group-item border-0">
@@ -17,5 +17,4 @@
     {% endfor %}
     {% if last and skip %}
 </ul>
-{% endif %}
-{% endmacro footer %}
+{% endif %} {% endmacro footer %}

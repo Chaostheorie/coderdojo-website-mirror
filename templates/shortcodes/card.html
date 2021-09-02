@@ -1,14 +1,12 @@
 <div class="card">
     {% if src is defined -%}
-    <img src="{{ src }}" class="card-img-top" alt="{{ alt }}">
+    <img src="{{ src }}" class="card-img-top" alt="{{ alt }}" />
     {% endif -%}
     <div class="card-body">
         <h3 class="card-title">{{ title }}</h3>
         <p class="card-text">{{ body }}</p>
-        {% if links is defined -%}
-        {% for link in links -%}
+        {% if links is defined -%} {% for link in links -%}
         <a href="{{ link[0] }}" class="btn btn-primary">{{ link[1] }}</a>
-        {% endfor -%}
-        {% endif -%}
+        {% endfor -%} {% endif -%}
     </div>
 </div>
