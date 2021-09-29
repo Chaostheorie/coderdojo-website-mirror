@@ -173,6 +173,9 @@ beziehungsweise nochmal lesen, wenn etwas nicht funktioniert.
 
 Wenn es mathematische Zusatzaufgaben gibt, wird das extra ausgewiesen.
 
+Auf geht 's zum Weißgurt. Und bis wir uns beim nächsten BBB- oder
+Reallife-Meeting sehen - Stay safe and keep coding!
+
 ## Bildnachweise
 
 Kinder in dem philippinischen Karate-Dojo der Jack und Jill Schule in Bacolod -
