@@ -17,8 +17,8 @@ Python durchstarten zu können.
 
 > Hinweis: Der Text ist „frisch“. Wenn Du Fehler entdeckst, Teile unverständlich
 > findest oder Ideen für bessere und mehr Beispiele und Übungen hast, lass es
-> uns bitte wissen, damit wir ihn korrigieren und verbessern können. Stand 6.
-> August 2021 – die Seite wird gerade händisch formatiert (der Originaltext ist
+> uns bitte wissen, damit wir ihn korrigieren und verbessern können. Stand 10.
+> Oktober 2021 – die Seite wird gerade händisch formatiert (der Originaltext ist
 > Latex und pandoc wandelt doch längst nicht alles um). Also habe bitte noch
 > ein, zwei Tage Geduld.
 
@@ -69,7 +69,7 @@ Stolpersteine im Weg liegen, die Du vielleicht nicht ohne etwas Unterstützung
 aus dem Weg geräumt bekommst.
 
 Frag jemanden aus dem Umfeld, komm zu unserem wöchentlichen Videotreff vorbei
-oder wenn es Präsenztreffen gibt mit Deinem Rechner in den
+oder wenn es Präsenztreffen gibt, komm mit Deinem Rechner in den
 [xHain](https://x-hain.de/de/). Wenn das hier nicht läuft, kann der Rest auch
 nicht laufen. Es ist gut, wenn Du Dich selber daran versuchst, aber lass Dich
 nicht entmutigen, wenn es nicht klappt.
@@ -252,7 +252,7 @@ komplett neu reindenken zu müssen, sollte nicht der Fall sein müssen.
 Müsste es dann nicht besser „Schrittzähler“ statt „`i`“ heißen? Jein. Bei
 Schleifen und ähnlichen Konstruktionen gibt es quasi die Ausnahme von der Regel,
 dass `i` (und bei mehreren ineinander greifenden Schleifen `j`, `k` etc.) üblich
-sind. Die Variablen sollten gleichzeitig möglichst kurz sein, damit man nicht so
+sind. Das gilt nicht nur für Python. Die Variablen sollten gleichzeitig möglichst kurz sein, damit man nicht so
 viel schreiben muss, aber lang genug, dass man sie versteht. Das kommt also
 immer auf das konkrete Problem an. Wenn Du drei Koordinaten definieren willst,
 können `x`, `y` und `z` super Variablennamen sein. Wenn Du aber mehrere hast,
@@ -272,7 +272,9 @@ zu machen.
 
 ## Rechnen
 
-Computer heißen nicht umsonst auch Rechner. Die „üblichen“ Rechenoperationen
+Computer heißen nicht umsonst auch Rechner. Der Begriff kommt übrigens nur
+scheinbar aus dem Englischen - er leitet sich vom lateinischen Verb computare
+ab, was nichts anderes als rechnen heißt. Zurück zum Rechnen: Die „üblichen“ Rechenoperationen
 funktionieren hier natürlich auch. Das wollen wir uns mit ein wenig Code
 anschauen. Lösch Deinen bereits geschriebenen Code, schreib den Mustercode ab
 und schau Dir die Ausgabe an.
@@ -793,6 +795,12 @@ so kleine Tools benutzen. Hole Dir nochmal das Programm oben für die
 Konfektionsgrößen hervor. Baue das Programm so um, dass der Benutzer immer
 wieder die Möglichkeit bekommt, die Größen neu ausrechnen zu lassen, bis er
 `quit` schreibt.
+
+## Münzwechsler
+Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. Die
+Benutzerin gibt einen Geldbetrag von 1 bis 99 Cent ein. Der eingegebene Betrag
+soll dann in den Münzen mit 1, 2, 3, 10, 20 und 50 Cent ausgegeben werden - aber
+bitte so, dass möglichst wenig Münzen benötigt werden.
 
 ## Listen
 
