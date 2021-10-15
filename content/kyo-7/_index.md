@@ -1237,7 +1237,7 @@ while True:
     try:
         print("Ich bin nicht mehr unaufhaltsam")
     except Exception:
-        print(\"Fehler!\")
+        print("Fehler!")
 ```
 
 Jetzt wäre es ja noch hübsch, wenn er Dir anzeigte, was das für einen Fehler
