@@ -252,16 +252,17 @@ komplett neu reindenken zu müssen, sollte nicht der Fall sein müssen.
 Müsste es dann nicht besser „Schrittzähler“ statt „`i`“ heißen? Jein. Bei
 Schleifen und ähnlichen Konstruktionen gibt es quasi die Ausnahme von der Regel,
 dass `i` (und bei mehreren ineinander greifenden Schleifen `j`, `k` etc.) üblich
-sind. Das gilt nicht nur für Python. Die Variablen sollten gleichzeitig möglichst kurz sein, damit man nicht so
-viel schreiben muss, aber lang genug, dass man sie versteht. Das kommt also
-immer auf das konkrete Problem an. Wenn Du drei Koordinaten definieren willst,
-können `x`, `y` und `z` super Variablennamen sein. Wenn Du aber mehrere hast,
-hilft `x1` und `x2` vielleicht nicht mehr weiter, weil Du jedes Mal neu
-überlegen musst, wofür `x1` und `x2` stehen sollte. Das ganze sind keine starren
-Regeln, Du wirst sehen, dass wir gerade bei kleinen Codestücken uns ebenso nicht
-sklavisch daran halte. Behalte sie jedoch im Hinterkopf und Du wirst mit der
-Zeit ein Gefühl dafür gewinnen, wie gute Bezeichnungen aussehen. Das mag sich an
-dieser Stelle noch komisch anhören, ist aber tatsächlich ein wichtiges Thema.
+sind. Das gilt nicht nur für Python. Die Variablen sollten gleichzeitig
+möglichst kurz sein, damit man nicht so viel schreiben muss, aber lang genug,
+dass man sie versteht. Das kommt also immer auf das konkrete Problem an. Wenn Du
+drei Koordinaten definieren willst, können `x`, `y` und `z` super Variablennamen
+sein. Wenn Du aber mehrere hast, hilft `x1` und `x2` vielleicht nicht mehr
+weiter, weil Du jedes Mal neu überlegen musst, wofür `x1` und `x2` stehen
+sollte. Das ganze sind keine starren Regeln, Du wirst sehen, dass wir gerade bei
+kleinen Codestücken uns ebenso nicht sklavisch daran halte. Behalte sie jedoch
+im Hinterkopf und Du wirst mit der Zeit ein Gefühl dafür gewinnen, wie gute
+Bezeichnungen aussehen. Das mag sich an dieser Stelle noch komisch anhören, ist
+aber tatsächlich ein wichtiges Thema.
 
 Und als letzte Regel – wähle die Namen möglichst in Englisch. Wenn Dein Englisch
 noch nicht so gut ist, ist das am Anfang noch nicht so wichtig – aber eine gute
@@ -274,10 +275,10 @@ zu machen.
 
 Computer heißen nicht umsonst auch Rechner. Der Begriff kommt übrigens nur
 scheinbar aus dem Englischen - er leitet sich vom lateinischen Verb computare
-ab, was nichts anderes als rechnen heißt. Zurück zum Rechnen: Die „üblichen“ Rechenoperationen
-funktionieren hier natürlich auch. Das wollen wir uns mit ein wenig Code
-anschauen. Lösch Deinen bereits geschriebenen Code, schreib den Mustercode ab
-und schau Dir die Ausgabe an.
+ab, was nichts anderes als rechnen heißt. Zurück zum Rechnen: Die „üblichen“
+Rechenoperationen funktionieren hier natürlich auch. Das wollen wir uns mit ein
+wenig Code anschauen. Lösch Deinen bereits geschriebenen Code, schreib den
+Mustercode ab und schau Dir die Ausgabe an.
 
 {{ file(name="addition.py") }}
 
@@ -797,6 +798,7 @@ wieder die Möglichkeit bekommt, die Größen neu ausrechnen zu lassen, bis er
 `quit` schreibt.
 
 ## Münzwechsler
+
 Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. Die
 Benutzerin gibt einen Geldbetrag von 1 bis 99 Cent ein. Der eingegebene Betrag
 soll dann in den Münzen mit 1, 2, 3, 10, 20 und 50 Cent ausgegeben werden - aber

@@ -19,11 +19,6 @@ module.exports = {
             keyframes: true,
         }),
         require('postcss-svgo'),
-        require('postcss-purgefonts')({
-            to: 'public/fonts/',
-            purge_only_fonts: ['bootstrap-icons'],
-            ignore_urls: false,
-        }),
         require('cssnano')({
             preset: 'advanced',
         }),

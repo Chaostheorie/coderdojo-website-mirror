@@ -28,7 +28,7 @@
         "pre:katex": "cp -r node_modules/katex/dist/ static/katex",
         "pre:compile-compress": "tsc --build configs/tsconfig.compress.json",
         "prod:compile": "cross-env NODE_ENV=production webpack --config configs/webpack.prod.config.js",
-        "dev:compile-sass": "yarn sass --source-map --charset --load-path sass --update sass/_main.scss:static/css/main.css",
+        "dev:compile-sass": "yarn sass --no-source-map --charset --load-path sass --update sass/_main.scss:static/css/main.css",
         "prod:compile-sass": "yarn sass --no-source-map --charset --load-path sass --update --style=compressed sass/_main.scss:static/css/main.css",
         "dev:disable-hashing": "sed -E -i \"s/hashing = (true|false)/hashing = false/\" config.toml",
         "dev:enable-hashing": "sed -E -i \"s/hashing = (true|false)/hashing = true/\" config.toml",
@@ -48,7 +48,8 @@
         "bootstrap": "^5.1",
         "bootstrap-icons": "^1.5",
         "katex": "^0.13.16",
-        "nord": "^0.2.1"
+        "nord": "^0.2.1",
+        "shikwasa": "^2.1.2"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^4.0.3",
