@@ -12,7 +12,7 @@ defined %} {% set color = section.extra.color %} {% else %} {% set color =
     }
 </style>
 
-<section id="section-content">
+<section id="section-content py-2">
     <h1 class="h1 text-center" id="title" itemtype="headline">
         {% if section.title %} {{ section.title }} {% else %} {{
         section.path|safe }} {% endif %} {% if section.extra.subtitle is defined
