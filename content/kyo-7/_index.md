@@ -1430,3 +1430,7 @@ Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
 - Mit `from <Modul> import <Funktion>` hast Du die erste Bibliothek eingelesen und gleich mit `from random import randrange` Zufallszahlen generiert.
 
 - Kommentare kannst Du mit drei Hochkommata oder \# schreiben.
+
+- Und nicht zuletzt kennst Du die Antwort auf alle Fragen und weißt, ob Du die
+  blaube oder die rote Pille nehmen sollst.
+
