@@ -1399,35 +1399,41 @@ ganze Menge neuer Stoff.
 
 Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
 
-- print("foo"): Gibt eine Zeile auf dem Bildschirm aus.
+-   print("foo"): Gibt eine Zeile auf dem Bildschirm aus.
 
-- for i in foo: Schleife zur Wiederholung einer Sequenz.
+-   for i in foo: Schleife zur Wiederholung einer Sequenz.
 
-- range(a, b, c): Generiert eine interierbare Liste, welche super in Kombination mit der for-Schleife funktioniert. Der erste Wert steht für den Startwert, der zweite für den Endwert und der dritte für die Schrittweite.
+-   range(a, b, c): Generiert eine interierbare Liste, welche super in
+    Kombination mit der for-Schleife funktioniert. Der erste Wert steht für den
+    Startwert, der zweite für den Endwert und der dritte für die Schrittweite.
 
-- while: hast Du als Schleife mit Bedingung verwendet.
+-   while: hast Du als Schleife mit Bedingung verwendet.
 
-- Mit break und continue kannst Du Schleifen besser steuern.
+-   Mit break und continue kannst Du Schleifen besser steuern.
 
-- input("foo"): Liest eine Benutzerineingabe von der Kommandozeile ein.
+-   input("foo"): Liest eine Benutzerineingabe von der Kommandozeile ein.
 
-- if / elif / else: Wenn / dann / sonst - Bedingungen
+-   if / elif / else: Wenn / dann / sonst - Bedingungen
 
-- Die Stringformatierung f"foo {bar}" hast Du schon verwendet.
+-   Die Stringformatierung f"foo {bar}" hast Du schon verwendet.
 
-- Du kennst jetzt die Rechenoperationen +, -, /, //, *, ** und %.
+-   Du kennst jetzt die Rechenoperationen +, -, /, //, \*, \*\* und %.
 
-- Du hast die Datentypen String (str) für Zeichen, Integer (int) für ganze Zahlen und Float (float) für Gleitkommazahlen und kennengelernt.
+-   Du hast die Datentypen String (str) für Zeichen, Integer (int) für ganze
+    Zahlen und Float (float) für Gleitkommazahlen und kennengelernt.
 
-- Mit [foo] kannst Du schon Listen erzeugen. Und mit list.append hast Du Elemente einer Liste hinzugefügt.
+-   Mit [foo] kannst Du schon Listen erzeugen. Und mit list.append hast Du
+    Elemente einer Liste hinzugefügt.
 
-- def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst Du Werte zurückgeben.
+-   def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst Du
+    Werte zurückgeben.
 
-- try / except hat Dir eine erste Einführung im Abfangen von Fehlern gegeben.
+-   try / except hat Dir eine erste Einführung im Abfangen von Fehlern gegeben.
 
-- Mit `from <Modul> import <Funktion>` hast Du die erste Bibliothek eingelesen und gleich mit `from random import randrange` Zufallszahlen generiert.
+-   Mit `from <Modul> import <Funktion>` hast Du die erste Bibliothek eingelesen
+    und gleich mit `from random import randrange` Zufallszahlen generiert.
 
-- Kommentare kannst Du mit drei Hochkommata oder \# schreiben.
+-   Kommentare kannst Du mit drei Hochkommata oder \# schreiben.
 
-- Und nicht zuletzt kennst Du die Antwort auf alle Fragen und weißt, ob Du die
-  blaube oder die rote Pille nehmen sollst.
+-   Und nicht zuletzt kennst Du die Antwort auf alle Fragen und weißt, ob Du die
+    blaube oder die rote Pille nehmen sollst.
