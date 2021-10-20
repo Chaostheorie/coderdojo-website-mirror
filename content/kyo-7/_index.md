@@ -17,10 +17,8 @@ Python durchstarten zu können.
 
 > Hinweis: Der Text ist „frisch“. Wenn Du Fehler entdeckst, Teile unverständlich
 > findest oder Ideen für bessere und mehr Beispiele und Übungen hast, lass es
-> uns bitte wissen, damit wir ihn korrigieren und verbessern können. Stand 10.
-> Oktober 2021 – die Seite wird gerade händisch formatiert (der Originaltext ist
-> Latex und pandoc wandelt doch längst nicht alles um). Also habe bitte noch
-> ein, zwei Tage Geduld.
+> uns bitte wissen, damit wir ihn korrigieren und verbessern können. Stand 20.
+> Oktober 2021.
 
 ## Hello World
 
@@ -1433,4 +1431,3 @@ Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
 
 - Und nicht zuletzt kennst Du die Antwort auf alle Fragen und weißt, ob Du die
   blaube oder die rote Pille nehmen sollst.
-
