@@ -65,6 +65,8 @@ Daten über Zugriffe auf diese Seite erhoben und werden als „Server-Logfiles�
 abgespeichert. Sie werden automatisiert nach sieben Tagen gelöscht. Zur
 Maskierung der IP-Adressen setzen wir log-ipmask ein.
 
+Die Audio- und Videodatenen liegen zwar auf einem anderen Server. Dieser befindet sich aber ebenfalls in der EU und speichert die gleichen Daten ab.
+
 ## Webanalyse
 
 Auf diesen Internetseiten findet derzeit keine Webanalyse statt.
