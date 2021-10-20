@@ -17,5 +17,3 @@ treffen.
 
 Und falls Du Dich fragst, warum man Mathe braucht, wenn man Programmieren will,
 dann schau doch mal [hier](https://www.youtube.com/watch?v=sW9npZVpiMI) rein.
-
-

@@ -1,6 +1,7 @@
 import Collapse from 'bootstrap/js/dist/collapse';
 import Modal from 'bootstrap/js/dist/modal';
 import ScrollSpy from 'bootstrap/js/dist/scrollspy';
+import Shikwasa from 'shikwasa';
 
 /**
  * Init general UI elements
@@ -68,6 +69,20 @@ export async function initUI() {
     /*    const scrollSpy = new ScrollSpy(document.body, {
         target: '#chapter-inline-spybar'
     });*/
+
+    document
+        .querySelectorAll("[data-toggle='audio-player']")
+        .forEach((audioPlayer: Element) => {
+            return new Shikwasa({
+                container: audioPlayer,
+                audio: {
+                    artist: audioPlayer.getAttribute('data-artist'),
+                    cover: audioPlayer.getAttribute('data-cover'),
+                    src: audioPlayer.getAttribute('data-src'),
+                    title: audioPlayer.getAttribute('data-title'),
+                },
+            });
+        });
 
     document
         .querySelectorAll('div[data-type=file-helper]')

@@ -1,0 +1,602 @@
+@import '../variables';
+
+$shadow: lighten($nord0, 10);
+$shadow-body: 2px 2px 8px -2px #{$shadow};
+$shadow-body-mobile: 0 -2px 6px -2px #{$shadow};
+$shadow-handle: 0px 2px 10px 2px #{$shadow};
+$shadow-handle-mobile: 2px 2px 8px -2px #{$shadow};
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.shk {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.42;
+    cursor: auto;
+    position: relative;
+    border: none;
+    color: $very-light;
+
+    &[data-fixed-type='fixed'] {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+
+        &[data-fixed-pos='top'] {
+            top: 0;
+            bottom: auto;
+        }
+    }
+
+    &[data-seeking] .shk-player {
+        cursor: grabbing;
+    }
+
+    button {
+        font-family: inherit;
+    }
+
+    &-player {
+        height: 120px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        background: $dark;
+        position: relative;
+        z-index: 10;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-body {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        user-select: none;
+        position: relative;
+    }
+
+    &-cover {
+        width: 80px;
+        height: 80px;
+        flex: 0 0 auto;
+        margin-right: 16px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-main {
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    &-text {
+        overflow: hidden;
+    }
+
+    &-artist,
+    &-title {
+        white-space: nowrap;
+        margin: auto;
+    }
+
+    &-artist {
+        text-overflow: clip;
+        font-weight: 500;
+        color: $primary;
+    }
+
+    &-title_wrap[data-overflow] {
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            #202124 5%,
+            #202124 95%,
+            transparent
+        );
+    }
+
+    &-title_inner {
+        display: inline-flex;
+        overflow: visible;
+    }
+
+    &-title_wrap[data-overflow] &-title_inner {
+        padding: 0 3%;
+        box-sizing: border-box;
+        white-space: nowrap;
+        animation-duration: inherit;
+
+        &::after {
+            display: inline-block;
+            content: attr(data-title);
+        }
+    }
+
+    &-title_wrap[data-overflow] &-title_inner::after,
+    &-title {
+        font-weight: 300;
+        font-size: 1.33em;
+        color: $very-light;
+    }
+
+    &-title_wrap[data-overflow] &-title_inner::after,
+    &-title_wrap[data-overflow] &-title {
+        animation: marquee linear infinite;
+        animation-duration: inherit;
+        padding-right: 60px;
+    }
+
+    &-btn {
+        appearance: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: $primary;
+        fill: currentColor;
+        box-sizing: content-box;
+        padding: 10px;
+        position: relative;
+        font-size: 1em;
+        line-height: normal;
+
+        &:disabled {
+            color: $secondary;
+            cursor: not-allowed;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: $tertiary;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s cubic-bezier(0, 0, 0.2, 1),
+                visibility linear 1s;
+        }
+
+        &:not(:disabled):active::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        &_toggle svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        &_speed {
+            font-size: 0.86em;
+            font-weight: 400;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+        }
+
+        &_more {
+            position: relative;
+            z-index: 11;
+            transform: none;
+            transition: transform 0.2s 0.1s;
+        }
+    }
+
+    a.shk-btn:visited {
+        color: $primary;
+    }
+
+    &-controls {
+        position: relative;
+        width: 280px;
+        margin: 0 auto;
+        flex: 0 0 auto;
+
+        .shk-btn {
+            border-radius: 100%;
+        }
+
+        > div {
+            flex-flow: row nowrap;
+            align-items: center;
+            display: flex;
+        }
+
+        &_basic {
+            justify-content: space-between;
+        }
+
+        &_extra {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            margin-right: 44px;
+            padding-right: 0 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            z-index: 10;
+            justify-content: flex-end;
+            background: $dark;
+            transition: width 0.2s ease-in-out, opacity 0.1s 0.1s linear,
+                visibility 0.2s;
+        }
+    }
+
+    &[data-extra] &-controls_extra {
+        opacity: 1;
+        visibility: visible;
+        width: calc(100% - 44px);
+        transition: width 0.2s ease-in-out, opacity 0.1s linear;
+        .shk-btn {
+            display: inline-block;
+        }
+    }
+
+    &-display {
+        position: absolute;
+    }
+
+    &[data-play='paused'] &-btn_play,
+    &[data-play='playing'] &-btn_pause {
+        display: inline;
+    }
+
+    &[data-play='paused'] &-btn_pause,
+    &[data-play='playing'] &-btn_play {
+        display: none;
+    }
+
+    &[data-extra] &-btn_more {
+        transform: rotate(90deg);
+    }
+
+    svg.shk-btn_unmute,
+    &[data-mute] svg.shk-btn_mute {
+        display: inline-block;
+    }
+
+    svg.shk-btn_mute,
+    &[data-mute] svg.shk-btn_unmute {
+        display: none;
+    }
+
+    &-bar_wrap {
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+
+    &-bar {
+        position: relative;
+        height: 4px;
+        width: 100%;
+        box-sizing: border-box;
+        background: $shadow;
+    }
+
+    &-bar_loaded,
+    &-bar_played {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        transition: width ease-in 0.1s;
+    }
+
+    &-bar-handle {
+        background: $tertiary;
+        position: absolute;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        border: 0;
+        box-sizing: content-box;
+        cursor: grab;
+        border-radius: 20px;
+
+        &:disabled {
+            cursor: not-allowed;
+            box-shadow: none;
+            background-color: $secondary;
+        }
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+
+    &-bar_loaded {
+        background: $light;
+        border-radius: 0.5em;
+    }
+
+    &-bar_played {
+        background: $tertiary;
+    }
+
+    &[data-seeking] &-bar_played {
+        transition: none;
+    }
+
+    &-loader {
+        display: none;
+        vertical-align: middle;
+        color: $primary;
+
+        svg {
+            width: 12px;
+            height: 12px;
+            animation: rotate 1.4s linear infinite;
+            position: relative;
+        }
+    }
+
+    &[data-loading] &-loader {
+        display: inline-block;
+    }
+
+    &-visuallyhidden:not(:focus):not(:active) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    &-time {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0.8em;
+        font-weight: 300;
+        color: $primary;
+    }
+
+    & &-live {
+        display: none;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-family: sans-serif;
+        color: $primary;
+
+        &::before {
+            content: '';
+            background: $tertiary;
+            border-radius: 50%;
+            width: 0.5em;
+            height: 0.5em;
+            margin-right: 2px;
+        }
+    }
+
+    &-icons {
+        display: none;
+    }
+
+    &[data-live] &-bar,
+    &[data-live] &-time {
+        display: none;
+    }
+
+    &[data-live] &-live {
+        display: inline-flex;
+    }
+}
+
+.js-focus-visible:focus:not(.focus-visible),
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+@media (min-width: $breakpoint-sm) {
+    .shk {
+        &-player {
+            margin-top: 4px;
+            padding: 20px 16px;
+            box-shadow: $shadow-body;
+        }
+
+        &-main {
+            align-items: flex-end;
+            padding: 10px 0;
+            max-width: calc(100% - 96px);
+            flex-direction: row;
+        }
+
+        &-text {
+            flex: 2 1 auto;
+        }
+
+        &-bar_wrap {
+            position: absolute;
+            top: -4px;
+            left: 0px;
+            right: 0px;
+            padding: 4px 0 16px;
+
+            &:hover .shk-bar {
+                height: 10px;
+            }
+        }
+
+        &-bar {
+            transition: height 0.15s ease-in;
+
+            &-handle {
+                top: -9.5px;
+                border: 4px solid transparent;
+                box-shadow: $shadow-handle;
+                transform: scale(0.0001);
+                transition: all 0.1s ease-in;
+
+                &.focus-visible,
+                .shk-bar_wrap:hover &:not(:disabled) {
+                    border-color: #fff;
+                    transform: scale(0.8);
+                }
+            }
+        }
+
+        &-display {
+            top: -6px;
+            right: 8px;
+        }
+
+        &-loader {
+            margin-right: 4px;
+        }
+
+        &-time_duration::before {
+            content: '/';
+            margin: 0 4px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-sm) {
+    .shk {
+        &-player {
+            padding: 5px 16px;
+            box-shadow: $shadow-body-mobile;
+        }
+
+        &[data-fixed-type='auto'][data-fixed-pos='top'] {
+            top: 0;
+            bottom: auto;
+        }
+
+        &[data-live] &-bar_wrap {
+            height: 4px;
+        }
+
+        &-cover {
+            display: none;
+        }
+
+        &-main {
+            width: 100%;
+            max-width: none;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        &-text {
+            flex: 0 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        &-artist {
+            display: inline-block;
+
+            &_wrap {
+                font-size: 0.8em;
+                line-height: 1.1;
+            }
+        }
+
+        &-bar {
+            background: $tertiary;
+            border-radius: 2px;
+
+            &_wrap {
+                padding: 8px 0;
+                margin: 0 60px;
+            }
+
+            &-handle {
+                display: inline-block;
+                top: -8px;
+                box-shadow: $shadow-handle-mobile;
+            }
+        }
+
+        &-display {
+            top: -16px;
+            left: 0;
+            right: 0;
+        }
+
+        &-title_wrap[data-overflow] &-title_inner::after,
+        &-title {
+            font-size: 1em;
+            line-height: 1;
+        }
+
+        &-loader {
+            position: absolute;
+            left: -10px;
+            top: -5px;
+        }
+
+        &-time {
+            margin: 0 5px;
+            font-size: 0.7em;
+            line-height: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row nowrap;
+
+            &_now {
+                width: 40px;
+                text-align: right;
+            }
+
+            &_duration {
+                width: 40px;
+                text-align: left;
+            }
+        }
+
+        &-live {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
