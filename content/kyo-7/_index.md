@@ -299,7 +299,7 @@ Hier kurz die wichtigsten Rechenarten, die Du in Python nutzen kannst:
 
 -   // Ganzzahldivision (teste 22/8 und 22//8)
 
--   \% Modulo (gibt den Rest als Integer aus, teste 22%8)
+-   \% Modulo (gibt den ganzzahligen Rest als Integer aus, teste 22%8)
 
 -   \*\* für Potenzen, also 3-Quadrat ist 3\*\*2
 
@@ -534,7 +534,7 @@ a = False
 print(type(a))
 ```
 
-Der erste Typ nennt sich Float (`float `) und ist für sogenannte
+Der erste Typ nennt sich Float (`float`) und ist für sogenannte
 Gleitkommazahlen. Spätestens wenn Du dividierst oder mit Prozenten arbeitest,
 tauchen sie auf. Hier gibt es aber echte Untiefen, da Computer nicht so rechnen,
 wie wir das erwarten. Auf das Thema werden wir noch mehrfach zurückkommen.
@@ -1394,3 +1394,37 @@ und nimmst Dir unsere Empfehlungen unter Kultur vor.
 Alles geschafft? Wenn ja, dann **Herzlichen Glückwunsch**. Du bist bereit für
 einen neuen Level. Du kannst stolz auf Dich sein – das hier wahr schon eine
 ganze Menge neuer Stoff.
+
+## Zusammenfassung
+
+Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
+
+- print("foo"): Gibt eine Zeile auf dem Bildschirm aus.
+
+- for i in foo: Schleife zur Wiederholung einer Sequenz.
+
+- range(a, b, c): Generiert eine interierbare Liste, welche super in Kombination mit der for-Schleife funktioniert. Der erste Wert steht für den Startwert, der zweite für den Endwert und der dritte für die Schrittweite.
+
+- while: hast Du als Schleife mit Bedingung verwendet.
+
+- Mit break und continue kannst Du Schleifen besser steuern.
+
+- input("foo"): Liest eine Benutzerineingabe von der Kommandozeile ein.
+
+- if / elif / else: Wenn / dann / sonst - Bedingungen
+
+- Die Stringformatierung f"foo {bar}" hast Du schon verwendet.
+
+- Du kennst jetzt die Rechenoperationen +, -, /, //, *, ** und %.
+
+- Du hast die Datentypen String (str) für Zeichen, Integer (int) für ganze Zahlen und Float (float) für Gleitkommazahlen und kennengelernt.
+
+- Mit [foo] kannst Du schon Listen erzeugen. Und mit list.append hast Du Elemente einer Liste hinzugefügt.
+
+- def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst Du Werte zurückgeben.
+
+- try / except hat Dir eine erste Einführung im Abfangen von Fehlern gegeben.
+
+- Mit `from <Modul> import <Funktion>` hast Du die erste Bibliothek eingelesen und gleich mit `from random import randrange` Zufallszahlen generiert.
+
+- Kommentare kannst Du mit drei Hochkommata oder \# schreiben.
