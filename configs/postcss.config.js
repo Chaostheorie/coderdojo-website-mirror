@@ -14,7 +14,7 @@ module.exports = {
                 'collapse',
                 'collapsing',
                 'bi-clipboard-check',
-                /shk.*/
+                /shk.*/,
             ],
             fontFace: true,
             keyframes: true,
