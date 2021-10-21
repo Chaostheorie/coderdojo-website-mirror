@@ -14,8 +14,10 @@ color = "#55CCFF"
 > _The Matrix_
 
 > Diese Seite gibt es auch zum Hören:
-> {{ audio(src="https://dect42.de/audio/Uberblick.mp3", title="Überblick CoderDojo",
-> artist="bengoshi", cover="https://coderdojo.red/https://dect42.de/images/bengoshi.jpg") }}
+
+<!-- {{ audio(src="https://dect42.de/audio/Uberblick.mp3", title="Überblick CoderDojo", artist="bengoshi", cover="https://coderdojo.red/https://dect42.de/images/bengoshi.jpg") }} -->
+
+>
 
 Willkommen zum Kursbuch des CoderDojo. Während die meisten CoderDojos auf Kinder
 ausgerichte sind, liegt unser Fokus bei Jugendlichen. Wir nehmen das nicht so
