@@ -1,4 +1,6 @@
 #menu-toggle {
+    box-shadow: $box-shadow-sm;
+
     ~ ::before {
         background-color: $secondary;
         border-color: $tertiary;
