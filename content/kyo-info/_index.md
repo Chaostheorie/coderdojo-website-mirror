@@ -17,8 +17,6 @@ color = "#55CCFF"
 
 <!-- {{ audio(src="https://dect42.de/audio/Uberblick.mp3", title="Überblick CoderDojo", artist="bengoshi", cover="https://coderdojo.red/https://dect42.de/images/bengoshi.jpg") }} -->
 
->
-
 Willkommen zum Kursbuch des CoderDojo. Während die meisten CoderDojos auf Kinder
 ausgerichte sind, liegt unser Fokus bei Jugendlichen. Wir nehmen das nicht so
 genau, aber wenn Du jünger als 12 bis 14 Jahren bist, wirst wahrscheinlich mit
