@@ -13,6 +13,12 @@ color = "#55CCFF"
 icon = "reception-4"
 
 [[chapters]]
+name = "Mentoren"
+path = "@/kyo-info/mentoren.md"
+color = "#55CCFF"
+icon = "reception-4"
+
+[[chapters]]
 name = "7. Kyū"
 path = "@/kyo-7/_index.md"
 color = "#fff"
@@ -64,10 +70,4 @@ icon = "reception-4"
 name = "2. Dan"
 path = "@/dan-2/_index.md"
 color = "#000000"
-icon = "reception-4"
-
-[[chapters]]
-name = "Mentoren"
-path = "@/kyo-info/mentoren.md"
-color = "#fff"
 icon = "reception-4"
