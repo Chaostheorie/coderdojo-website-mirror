@@ -50,4 +50,5 @@ Er ist wie derMicha Mitglied im Berliner Hacker- und Makerspace
 
 ## Und Du?
 
-Hast Du Lust, bei uns mitzumachen? Neue Konzepte und Ideen auszuprobieren? Nur zu, melde Dich dann bei uns!
+Hast Du Lust, bei uns mitzumachen? Neue Konzepte und Ideen auszuprobieren? Nur
+zu, melde Dich dann bei uns!
