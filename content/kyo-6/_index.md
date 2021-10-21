@@ -218,10 +218,11 @@ wenn es geklappt hat. Wunderbar. Sonst ist das ein guter Punkt für den
 Donnerstag Abend...
 
 Jetzt kannst Du sorgenlos(er) Pakete bzw. Bibliotheken installieren. Das wollen
-wir mit 'pip install pygame' gleich mal machen. Läuft das sauber durch? Der
-sichere Test ist, dass Du schnell python startest und ein 'import pygame'
-eingibst. Wenn keine Fehlermeldung kommt, ist alles prima. Sonst - Du weißt
-schon. Donnerstag und so.
+wir mit 'pip install pygame' gleich mal machen. Wenn das bei Windows-Nutzenden
+nicht läuft, probiert bitte 'py -m pip install -U pygame --user' aus. Läuft das
+sauber durch? Der schnelle Test ist, dass Du schnell python startest und ein
+'import pygame' eingibst. Wenn keine Fehlermeldung kommt, ist alles prima.
+Sonst - Du weißt schon. Donnerstag und so.
 
 Das Verzeichnis venv enthält nichts, was mit unserem Code zu tun hat. Deshalb
 wollen wir das auf keinen Fall in unser Repository hochladen. Das wäre echter
@@ -286,7 +287,9 @@ Juhu, wir kommen zu pygames. Das ist eine Bibliothek, die es Dir ermöglicht,
 Grafik darzustellen und Tastatur- und Mauseingaben abzufangen, damit Du sie gut
 verarbeiten kannst. Wenn Du zockst, wollen wir gleich zugestehen, dass man mit
 pygames keine Hochleistungsspiele bauen kann. Aber Du kannst damit schon eine
-Menge machen und vor allem viel Coding spielerisch lernen.
+Menge machen und vor allem viel Coding spielerisch lernen. Wenn Du selber in der
+Dokumentation von pygame stöbern willst, findest Du sie auf der
+[pygame-Seite](https://www.pygame.org/docs/).
 
 Wir brauchen jetzt erstmal einen Hintergrund für die Spielfläche und eine Figur.
 Bei [OpenGameArt](https://opengameart.org/) kannst Du Dir was passendes
@@ -373,6 +376,122 @@ for event in pygame.event.get():
             sys.exit()
 ```
 
-Probiere jetzt mal den Code aus. Aber da fehlt die Figur. Probiere die jetzt
-bitte selber in den Code einzubauen. Und nicht beim folgendne Code schauen,
-sondern es selber probieren.
+Probiere jetzt mal den Code aus. Nimm ruhig auch mal die While-Schleife raus
+bzw. kommentiere sie aus. Einfach, um zu sehen, was passiert. Da fehlt aber noch
+die Figur. Probiere die jetzt bitte selber in den Code einzubauen. Und nicht
+beim folgendne Code schauen, sondern es selber probieren. Und wenn Du die
+positioniert hast, dann spiele mal mit den Koordinaten und versuche die Figur
+mal in die Mitte oder an einen Rand zu positionieren. Und zum Schluss ersetzt Du
+Deine Koordinaten durch die Variablen, die Du am Anfang definiert hast (player_x
+und player_y).
+
+Das sollte dann ungefähr so ausschauen (natürlich mit jeweils Deinem
+Hintergrund):
+
+{{ figure(source="/images/arcarde_1.png", alt="arcarde Screenshot") }}
+
+Insgesamt müsste bei Dir jetzt ungefähr dieser Code stehen:
+
+{{ file(name="game.py") }}
+
+```python
+import pygame, os, sys
+from pygame.locals import *
+
+pygame.init()
+fpsClock = pygame.time.Clock()
+surface = pygame.display.set_mode((800, 600))
+background = pygame.Color(100, 149, 237)
+image = pygame.image.load('canvas.png')
+meeple = pygame.image.load('meeple1g.png')
+player_x = 100
+player_y = 100
+
+while True:
+    surface.fill(background)
+    surface.blit(image, (0,0))
+    surface.blit(meeple, (player_x, player_y))
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+    pygame.display.update()
+    fpsClock.tick(30)
+```
+
+Jetzt wäre es nicht gerade attraktiv, die Figur zu steuern, wenn wir jedesmal
+den Code anpassen. Also sollten wir die Tastatureingaben der Benutzerin abfangen
+und das Ergebnis direkt auf die Figur übertragen. Dafür brauchen wir ein
+weiteres Ereignis beziehungsweise Event. Wir legen also in die for-Schleife 'for
+event in pygame.event.get():' einen weiteren Teil dazu:
+
+```python
+if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
+                ...
+```
+
+Was passiert da? Mit jedem Durchlauf durch die While-Schleife (was ja
+fortwährend passiert) fragt pygame, ob es ein Event gibt. Falls das Event
+'Keydown', also eine Taste gedrückt wird und wenn (sind ja zwei if-Bedingungen)
+auch noch Cursor-Taste gedrückt wurde, dann... ja was dann? Jetzt grübel mal
+bitte, was passieren muss, damit sich die Figur ein Stück runter bewegt. Das
+kannst Du schon! Im Zweifel probiere ein bißchen rum. Du kommst bestimmt selbst
+auf die Lösung. Hängst Du? Dann überlege, wie Du die Koordinaten jeweils in die
+gewünschte Richtung um 100 verändern kannst; wobei 100 eine Zahl ist, bei der
+probieren musst, ob das für Dich passt. Wenn Du das raus hast, dann versuche
+auch die anderen Richtungen zu programmieren. Auf 'K_RIGHT' folgt 'K_LEFT',
+'K_DOWN' und 'K_UP'. Wenn Du das alles hast, teste es und schau, ob sich Deine
+Figur wie erwartet bewegt. Tip: Das Erhöhung oder Vermindern von Variablen
+braucht man irgendwie ständig. Deshalb gibt es hierfür eine Abkürzung. Du
+könntest schreiben 'player_x = player_x + 100'. Aber Du kannst das abkürzen mit
+'player_x += 100'. Nebenbei - das Erhöhen einer Variable nennt man
+inkrementieren, das Verringern dekrementieren. Dafür muss der Datentyp ein
+Integer sein. Grübel mal nach, warum ein Float dafür keine gute Idee wäre.
+
+Der Code müsste dann ungefähr so bei Dir aussehen (nicht schmulen!, selber
+knobeln):
+
+```python
+import pygame, os, sys
+from pygame.locals import *
+
+pygame.init()
+fpsClock = pygame.time.Clock()
+surface = pygame.display.set_mode((800, 600))
+background = pygame.Color(100, 149, 237)
+image = pygame.image.load('canvas.png')
+meeple = pygame.image.load('meeple1g.png')
+player_x = 100
+player_y = 100
+
+while True:
+    surface.fill(background)
+    surface.blit(image, (0,0))
+    surface.blit(meeple, (player_x, player_y))
+    for event in pygame.event.get():
+      if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
+                player_x += 100
+            if event.key == pygame.K_LEFT:
+                player_x -= 100
+            if event.key == pygame.K_DOWN:
+                player_y += 100
+            if event.key == pygame.K_UP:
+                player_y -= 100
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+    pygame.display.update()
+    fpsClock.tick(30)
+```
+
+Hei, Du hast den Grundstein für Dein Spiel gelegt! Jetzt ist Dir aber vielleicht
+schon aufgefallen, dass Du mit der Figur in den „Abgrund“ stürzen kannst. Sie
+ist dann einfach weg. Die nächste Aufgabe ist, dass Du genau das verhinderst.
+Versuche also den Code so zu erweitern, dass immer vor der Bewegung der Figur
+geprüft wird, ob diese Bewegung noch möglich beziehungsweise zulässig ist. Wenn
+nicht, wird die Bewegung ignoriert. Lass Dir ruhig einen Moment Zeit dafür. Das
+kriegst Du bestimmt, aber es bedarf ein wenig Geduld. Wenn Du diese Aufgabe
+gemeistert hast, dann überlege Dir, wie Du diese Prüfung in eine Funktion
+auslagern kannst.
