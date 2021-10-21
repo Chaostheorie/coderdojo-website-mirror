@@ -1,7 +1,7 @@
 <div
     data-toggle="audio-player"
     data-src="{{ src|safe }}"
-    data-chapters="{{ chapters|safe }}"
+    {% if chapters %} data-chapters="{{ chapters|safe }}" {% endif %}
     data-title="{{ title }}"
     data-artist="{{ artist }}"
     data-cover="{{ cover|safe }}"
