@@ -1,7 +1,6 @@
 {% extends "base.html" %} {% block content %}
 <div
-    class="container-fluid mx-0 px-0 mt-3"
-    style="max-width: 100vw !important"
+    class="container-fluid mx-0 px-0 my-3"
     itemscope
     id="section-content"
     itemtype="https://schema.org/SearchResultsPage"
@@ -12,31 +11,25 @@
             <span class="visually-hidden">{{ page.extra.subtitle }} </span> {%
             endif -%}
         </h1>
-        <p id="info" class="dark-grey-text align-middle bg-beige text-dark">
-            {% if config.extra.rtime %} {% if page.extra.rtime is defined and
-            page.extra.rtime != true %} {% else %}
-            <span class="text-bold">
-                Reading Time: {{ page.reading_time }} min
-            </span>
-            <span class="px-1">/</span>
-            {% endif %} {% endif %} {% if page.date %}
-            <span class="text-bold">
-                Published: {{ page.month }}/{{ page.day }}/{{ page.year}}
-            </span>
-            <span class="px-1">/</span>
-            {% endif %} {% if page.draft %}
-
+        <p id="info" class="container-fluid align-middle">
+            {% if page.draft %}
             <span class="text-bold"> Draft </span>
             <span class="px-1">/</span>
-            {% endif %} {% if config.extra.link %} {% if page.extra.link is
-            defined and page.extra.link != true %} {% else %}
+            {% endif %} {% if config.extra.section %} {% if page.extra.section is
+            defined and page.extra.section != true %} {% else %}
+    
+            <span class="text-bold"> Section </span>
+            <span class="px-1">/</span>
+            {% endif %}{% endif %} {% if config.extra.link %} {% if
+            page.extra.link is defined and page.extra.link != true %} {% else
+            %}
             <button
-                class="btn btn-sm btn-outline-dark"
+                class="btn btn-sm btn-outline-primary"
                 onclick="window.CopyToClipBoard('{{ page.permalink|safe }}', this);"
             >
-                Copy Link <i class="bi bi-link-45deg"></i>
+                <i class="bi bi-link-45deg"></i> Copy Link
             </button>
-            {% endif %} {% endif %}
+            {% endif %}{% endif %}
         </p>
         <div itemprop="mainContentOfPage">{{ page.content| safe }}</div>
     </section>

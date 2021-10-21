@@ -1,6 +1,6 @@
 {% macro script(filename) %}
 <script
-    src="{{ get_url(path=filename)|safe }}"
+    src="{{ get_url(path=filename)|safe }}?b={{ now() | date(format='%m%d%y') }}"
     {%
     if
     config.extra.hashing
@@ -13,7 +13,7 @@
 ></script>
 {% endmacro %} {% macro style(filename) %}
 <link
-    href="{{ get_url(path=filename)|safe }}"
+    href="{{ get_url(path=filename)|safe }}?b={{ now() | date(format='%m%d%y') }}"
     rel="stylesheet"
     {%
     if

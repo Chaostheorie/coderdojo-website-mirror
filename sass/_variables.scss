@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import '../node_modules/nord/src/sass/nord';
 
 /* Constants for sidebar-wrapper */
@@ -17,9 +18,23 @@ $success: $nord14;
 $info: $nord15;
 $warning: $nord12;
 $danger: $nord11;
+$black: #000;
 $light: $nord4;
 $dark: $nord0;
 $code-color: $secondary;
+
+/* Shadows */
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
+
+/* BS Icons */
+$_cache_buster: random() * 10e6;
+$bootstrap-icons-font: 'bootstrap-icons' !default;
+$bootstrap-icons-font-src: url('/fonts/bootstrap-icons.woff2?b=#{$_cache_buster}')
+        format('woff2'),
+    url('/fonts/bootstrap-icons.woff?b=#{$_cache_buster}') format('woff') !default;
 
 // general BS modifications for theme
 $body-bg: $dark;

@@ -53,6 +53,7 @@ pre {
     border: 0.1rem solid $secondary;
     border-radius: 0.25rem;
     overflow-x: auto;
+    box-shadow: $box-shadow-sm;
 
     // fancy scrollbar for webkit based browsers
     ~ code {
@@ -76,6 +77,7 @@ pre {
 // figure
 figure {
     margin: 0 0.5rem;
+    box-shadow: $box-shadow-sm;
 }
 
 // blockquote
@@ -86,6 +88,7 @@ blockquote {
     border: 1px solid $dark;
     border-left: 3px solid $dark;
     border-radius: 0.5rem;
+    box-shadow: $box-shadow-sm;
 
     p {
         margin-bottom: 0;
@@ -114,7 +117,16 @@ a {
     }
 }
 
+.btn {
+    box-shadow: $box-shadow-sm;
+
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+
 .btn-primary:hover,
 btn-outline-secondary:hover {
     color: $light;
+    box-shadow: $box-shadow;
 }
