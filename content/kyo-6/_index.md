@@ -72,6 +72,8 @@ Git ist sehr mächtig. Deshalb wollen wir uns dem ganzen langsam nähern und im
 Gelbgurt zunächst nur die elementaren Befehle lernen. Im Orange-Gurt lernst Du,
 was man wissen muss, um ein Projekt zu managen.
 
+{{ figure(source="/images/kyo-6/Git-logo.png", float="end", alt="Das Git-Logo von Jason Long, CC BY 3.0.") }}
+
 Wir beginnen mit einem neuen Projekt. Du loggst Dich bitte in Coderberg ein.
 Klicke dort auf das Pluszeichen neben Repository. Repository ist quasi ein
 Softwareprojekt. Gib dem ganzen einen Namen. Wir beginnen hier mit einem kleinen
@@ -93,9 +95,9 @@ zur Verfügung stellt. Dabei gibt es regelmäßig mehr, die Du vielleicht dann u
 wann nutzen möchtest. Wenn Du die Befehle kannst, kannst Du meist ohne Probleme
 die verschiedenen grafischen Oberflächen nutzen - umgekehrt klappt das dagegen
 nicht. Weiter
-geht`s. Öffne bitte einen Terminal. Gehe in Dein Verzeichnis: Mit ` cd
-Pycharm`gehst Du in das Pycharm-Verzeichnis, mit`cd
-helloWorld`gehst Du in Dein neues Projekt. Mit`ls -lah` kannst Du Dir den Inhalt
+geht's. Öffne bitte einen Terminal. Gehe in Dein Verzeichnis: Mit ` cd
+Pycharm` gehst Du in das Pycharm-Verzeichnis, mit `cd
+helloWorld` gehst Du in Dein neues Projekt. Mit `ls -lah` kannst Du Dir den Inhalt
 des Verzeichnisses anzeigen lassen. Da ist noch nichts drin. Jetzt „arbeitest“
 Du die Coderberg-Anleitung ab:
 
