@@ -256,7 +256,11 @@ beherrschen, aber davon nicht abhängig zu sein.
 Wir kommen noch zu Linux, aber um Dir einen Vorgeschmack zu geben, besorge Dir
 mal seine Biographie „Just for Fun“ von Linus Torvalds und David Diamond. Das
 Buch gibt es auf Deutsch und auf Englisch. Das ist nicht neu, aber lohnt sich
-immer noch. Berliner:innen können sich das leihen. Geh auf
+immer noch. Berliner:innen können sich das leihen.
+
+{{ figure(source="/images/kyo-6/Tux.png", float="end", alt="Das Tux-Maskottchen von Larry Ewing, Simon Budig, Garrett LeSage") }}
+
+Geh auf
 [VOEBB](https://voebb.de). Da liegt es im Magazin der Amerikanischen
 Gedenkbibliothek. Kennst Du nicht? Dann ist das eine gute Gelegenheit,
 Deutschlands größte öffentliche Bibliothek kennen zu lernen. Wenn Du noch keinen
