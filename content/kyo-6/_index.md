@@ -249,7 +249,7 @@ Und schau mal oben in die Menüleiste - da wirst Du auf Git zum Klicken finden.
 Es lohnt sich, beide Wege zu können. Deine IDE (also hier PyCharme) zu
 beherrschen, aber davon nicht abhängig zu sein.
 
-## Kultur
+## Kultur I.
 
 Wir kommen noch zu Linux, aber um Dir einen Vorgeschmack zu geben, besorge Dir
 mal seine Biographie „Just for Fun“ von Linus Torvalds und David Diamond. Das
@@ -387,8 +387,8 @@ mal in die Mitte oder an einen Rand zu positionieren. Und zum Schluss ersetzt Du
 Deine Koordinaten durch die Variablen, die Du am Anfang definiert hast (player_x
 und player_y).
 
-Das sollte dann ungefähr so ausschauen (natürlich mit jeweils Deinem
-Hintergrund):
+Das sollte dann ungefähr so ausschauen (natürlich mit jeweils Deinem Hintergrund
+und Deiner Spielfigur):
 
 {{ figure(source="/images/arcarde_1.png", alt="arcarde Screenshot") }}
 
@@ -510,5 +510,27 @@ else:
   print("Kein Treffer!")
 ```
 
-Neben `and` ist `or` und `not` noch ganz wichtig. Es gibt noch mehr Funktionen,
-aber mit diesen beiden kannst Du die meisten Herausforderungen lösen.
+Neben `and` ist `or` und `not` noch ganz wichtig. Für `not` zeigen wir Dir
+später noch Beispiele. Um die Vergleichsoperatoren bei Bedingungen vollständig
+zu machen:
+
+-   == gleich
+
+-   != ungleich
+
+-   \> größer
+
+-   < kleiner
+
+-   \> = größer oder gleich
+
+-   <= kleiner oder gleich.
+
+Jetzt bist Du dran! Bevor Du jetzt in die Tasten haust, sichere einmal Deinen
+Code mit `git add game.py`, `git commit -m "Zwischenergebnis"`, `git push`. Nimm
+Dir Zeit, um das Spiel wie beschrieben weiterzuentwickeln. Und lass uns
+gemeinsam über Dein Ergebnis sprechen. Unten steht eine Möglichkeit, wie man es
+machen kann. Aber tue Dir selbst einen Gefallen und schau Dir das erst an, wenn
+Du selbst zu einer Lösung gekommen bist. Wenn Du wirklich nicht weiterkommst,
+hilft es Dir mehr, wenn Du zeigst, wo Du stecken geblieben bist, eine Richtung
+gesagt bekommst und weitertüftelst.

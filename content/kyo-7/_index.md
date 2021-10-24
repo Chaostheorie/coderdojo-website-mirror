@@ -839,7 +839,7 @@ Strom nur durch eine Richtung durchlassen, so wie die LED. Wenn die LED also mal
 nicht leuchtet - probiere sie mal zu drehen. Die mag es aber nicht wirklich,
 falsch herum angeschlossen zu werden. Deshalb haben die ein langes und ein
 kurzes Beinchen. Das lange nennt man Anode und kommt in Richtung Pluspol (die
-kurze Seite heißt Kathode; Eselsbrücke ´k´ wie ´K´athode). LEDs sind
+kurze Seite heißt Kathode; Eselsbrücke _k_ wie _K_ athode). LEDs sind
 empfindlich. Wir arbeiten gerne mit einem Batterieadapter, der drei 1,5
 Volt-Batterien zu 4,5 Volt (V) verbindet. Bei 4,5 V geht den meisten LEDs nur
 kurz ein Licht auf. Danach sind sie durchgebrannt. Das ist schade um das
@@ -866,7 +866,7 @@ es viele. Die Stärke wird gemessen in der Einheit Ω (gesprochen Ohm). Wenn man
 das Zeichen Ω nicht hat, kürzt man es mit R (das englische Wort für Widerstand
 ist ´resistor´) ab.
 
-{{ figure(source="/images/kyo-7/Widerstand.jpg", alt="LED-Schaltung") }}
+{{ figure(source="/images/kyo-7/Widerstand.jpg", alt="typischer Widerstand") }}
 
 Wieviel Ohm muss den unser Widerstand nun haben? Da wird es jetzt kurz einmal
 theoretisch, denn das kann man mit einer kleinen Formel selbst ausrechnen:
