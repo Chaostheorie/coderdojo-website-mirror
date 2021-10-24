@@ -189,7 +189,7 @@ hast, der Dir hilft:
 
 -   [pip](https://geekflare.com/de/python-pip-installation/)
 
--   [virtualenv](https://pypi.org/project/virtualenv/)
+-   [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
 
 -   [Community Edition PyCharm](https://www.jetbrains.com/de-de/pycharm/download/#section=linux)
 
