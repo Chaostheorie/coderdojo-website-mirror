@@ -7,6 +7,8 @@ heading_color = "#733111"
 katex = true
 +++
 
+# 6. Kyo – Gelbgurt
+
 > Hier siehst Du gerade den ersten und noch nicht vollständigen Aufschlag für
 > den Gelbgurt. Wir freuen uns über Fehlerkorrekturen! Wenn Du das Gefühl hast,
 > hier etwas nicht nachzuvollziehen zu können, schreib uns bitte oder sprich uns
