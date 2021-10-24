@@ -94,12 +94,11 @@ einer Anwendung bist Du immer davon abhängig, welche Optionen Dir die Anwendung
 zur Verfügung stellt. Dabei gibt es regelmäßig mehr, die Du vielleicht dann und
 wann nutzen möchtest. Wenn Du die Befehle kannst, kannst Du meist ohne Probleme
 die verschiedenen grafischen Oberflächen nutzen - umgekehrt klappt das dagegen
-nicht. Weiter
-geht's. Öffne bitte einen Terminal. Gehe in Dein Verzeichnis: Mit ` cd
-Pycharm` gehst Du in das Pycharm-Verzeichnis, mit `cd
-helloWorld` gehst Du in Dein neues Projekt. Mit `ls -lah` kannst Du Dir den Inhalt
-des Verzeichnisses anzeigen lassen. Da ist noch nichts drin. Jetzt „arbeitest“
-Du die Coderberg-Anleitung ab:
+nicht. Weiter geht's. Öffne bitte einen Terminal. Gehe in Dein Verzeichnis: Mit
+` cd Pycharm` gehst Du in das Pycharm-Verzeichnis, mit `cd helloWorld` gehst Du
+in Dein neues Projekt. Mit `ls -lah` kannst Du Dir den Inhalt des Verzeichnisses
+anzeigen lassen. Da ist noch nichts drin. Jetzt „arbeitest“ Du die
+Coderberg-Anleitung ab:
 
 ```bash
 touch README.md
@@ -258,10 +257,9 @@ mal seine Biographie „Just for Fun“ von Linus Torvalds und David Diamond. Da
 Buch gibt es auf Deutsch und auf Englisch. Das ist nicht neu, aber lohnt sich
 immer noch. Berliner:innen können sich das leihen.
 
-{{ figure(source="/images/kyo-6/Tux.png", float="end", alt="Das Tux-Maskottchen von Larry Ewing, Simon Budig, Garrett LeSage") }}
+{{ figure(source="/images/kyo-6/Tux.png", float="start", alt="Das Tux-Maskottchen von Larry Ewing, Simon Budig, Garrett LeSage") }}
 
-Geh auf
-[VOEBB](https://voebb.de). Da liegt es im Magazin der Amerikanischen
+Geh auf [VOEBB](https://voebb.de). Da liegt es im Magazin der Amerikanischen
 Gedenkbibliothek. Kennst Du nicht? Dann ist das eine gute Gelegenheit,
 Deutschlands größte öffentliche Bibliothek kennen zu lernen. Wenn Du noch keinen
 Ausweis hast - den kannst Du Dir in jeder Stadtteilbibliothek ausstellen lassen.
@@ -290,6 +288,8 @@ kriegt man für einen schmalen Taler bei den üblichen Verdächtigten Händlern 
 Netz. Also viel Spaß schon mal beim Lesen.
 
 ## PyGames
+
+{{ figure(source="/images/kyo-6/Pygame_logo.gif", float="end", alt="Das pygame-Logo von TheCorruptor/pygame developers  ") }}
 
 Juhu, wir kommen zu pygames. Das ist eine Bibliothek, die es Dir ermöglicht,
 Grafik darzustellen und Tastatur- und Mauseingaben abzufangen, damit Du sie gut
