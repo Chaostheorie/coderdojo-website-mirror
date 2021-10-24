@@ -109,8 +109,8 @@ for i in range(10):
 
 Die Einrückung erzeugst Du, indem Du die Tab-Taste verwendest. Das ist die Taste
 zwischen `CapsLock` (dauernd großschreiben und der \^-Taste). Probiere es gleich
-mal aus, indem Du wieder auf „Run“ und dann auf `Run `main`` gehst. Wähle die
-Ausgabe nach. Sind es wirklich zehn `Hello World`?
+mal aus, indem Du wieder auf „Run“ und dann auf
+`Run `main``gehst. Wähle die Ausgabe nach. Sind es wirklich zehn`Hello World`?
 
 Okay, jetzt bist Du dran. Als Nächstes bau den Code bitte so um, dass es zu
 folgender Ausgabe kommt:
@@ -578,24 +578,22 @@ Die Überschrift hieß nicht nur Variablentypen, sondern auch Stringspielereien.
 Wie man zwei Strings wie `"ot"` `"to"` kombiniert, hast Du schon gesehen: aus
 `"ot" + "to"` wird `"otto"`. Das ein String in zwei `""` eingefasst werden muss,
 haben wir noch nicht explizit gesagt, ist Dir aber sicherlich schon aufgefallen.
-Du kannst auch das ``` nehmen, also das Zeichen über der Raute. Beides geht, Du
-solltest es nur nicht in einem Code mischen. Aber was machst Du nun, wenn Du in
-einem String sagen wolltest: `print("Und er sagt: "Hallo"")`. Nur zu, Hack das
-ein. Soviel vorweg – das wird nichts. Denn Python liest das erste und weiß –
-jetzt geht der String los. Dann kommt das zweite und er denkt, der String ist zu
-Ende. Und dann kommt etwas, mit er echt nichts anfangen kann – `"Hallo"`.
+Du kannst auch das
+```nehmen, also das Zeichen über der Raute. Beides geht, Du solltest es nur nicht in einem Code mischen. Aber was machst Du nun, wenn Du in einem String sagen wolltest:`print("Und
+er sagt:
+"Hallo"")`. Nur zu, Hack das ein. Soviel vorweg – das wird nichts. Denn Python liest das erste und weiß – jetzt geht der String los. Dann kommt das zweite und er denkt, der String ist zu Ende. Und dann kommt etwas, mit er echt nichts anfangen kann – `"Hallo"`.
 Typisch menschlicher Kram halt. Hier gibt es zwei Wege.
 
-Entweder Du schreibst `print("Und er sagt: `Hallo`")` bzw.
-`print(`Und er sagt: "Hallo"`)`. Oder Du sagst ihm, dass das folgende Zeichen
-nicht in weiter beachtet werden soll, dafür benutzen wir den sogenannten
-Backslash. Das ist der Querstrich beim ß, den Du mit AltGr ansteuerst. Du
-würdest also schreiben `print("Und er sagt: \"Hallo\"")`. Python liest die
-ersten Anführungszeichen und weiß, der String geht los. Bei den zweiten kommt
-erst der `\` – da sagt sich Python -- nicht verarbeiten, stumpf ausgeben. Wir
-nennen diesen Vorgang escapen, von entkommen oder aussteigen. Und nur damit Du
-es gesehen hast – man kann auch mit drei `"` oder ``` arbeiten, um einen String
-zu definieren. Das funktioniert sogar über Zeilen hinweg.
+Entweder Du schreibst `print("Und er sagt: `Hallo`")` bzw. `print(`Und er sagt:
+"Hallo"`)`. Oder Du sagst ihm, dass das folgende Zeichen nicht in weiter
+beachtet werden soll, dafür benutzen wir den sogenannten Backslash. Das ist der
+Querstrich beim ß, den Du mit AltGr ansteuerst. Du würdest also schreiben
+`print("Und er sagt: \"Hallo\"")`. Python liest die ersten Anführungszeichen und
+weiß, der String geht los. Bei den zweiten kommt erst der `\` – da sagt sich
+Python -- nicht verarbeiten, stumpf ausgeben. Wir nennen diesen Vorgang escapen,
+von entkommen oder aussteigen. Und nur damit Du es gesehen hast – man kann auch
+mit drei `"` oder ``` arbeiten, um einen String zu definieren. Das funktioniert
+sogar über Zeilen hinweg.
 
 Die Ausgabe von Variablen hast Du schon gesehen, auch die Kombination mit Text.
 Dafür gibt es einen einfachen und einen eleganten Weg. Der einfache Weg ist
@@ -804,52 +802,119 @@ bitte so, dass möglichst wenig Münzen benötigt werden.
 
 ## Löten
 
-> And if smells like chicken,
-> it's the wrong side.
+> And if smells like chicken, it's the wrong side.
 
-Nachdem wir uns eine ganze Zeit mit Software beschäftigt haben, machen wir eine Runde Hardware. Am einfachsten dürfte das für Dich sein, wenn Du Dich dafür in einen (Deinem?) lokalen Hackerspace begibst. In Berlin bietet sich der familienfreundliche [xHain](https://x-hain.de) an. Wir setzen wie beim Programmieren beim Löten keinerlei Vorkenntnisse voraus, da die Teilnehmenden unterschiedlich alt sind und dem Thema in der Schule unterschiedliches Gewicht beigemessen wird. Es kann also gut sein, dass Du gerade am Anfang gähnst. Keine Sorge, wird steigern das Stück für Stück. Aber wir wollen alle mitnehmen.
+Nachdem wir uns eine ganze Zeit mit Software beschäftigt haben, machen wir eine
+Runde Hardware. Am einfachsten dürfte das für Dich sein, wenn Du Dich dafür in
+einen (Deinem?) lokalen Hackerspace begibst. In Berlin bietet sich der
+familienfreundliche [xHain](https://x-hain.de) an. Wir setzen wie beim
+Programmieren beim Löten keinerlei Vorkenntnisse voraus, da die Teilnehmenden
+unterschiedlich alt sind und dem Thema in der Schule unterschiedliches Gewicht
+beigemessen wird. Es kann also gut sein, dass Du gerade am Anfang gähnst. Keine
+Sorge, wird steigern das Stück für Stück. Aber wir wollen alle mitnehmen.
 
-Zunächst solltest Du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn Du noch keine Erfahrung hast, lass Dir ein kleines Stück Lochraster geben und ein paar alte Bauteile und versuche die, ein- und auszulöten. Wir können hier nur bedingt etwas zu erklären, da Dir am besten eine Mentorin kurz zeigt, wie es geht. Der Rest ist handwerkliche Fähigkeit, dass muss man also einfach ein bißchen selber gemacht haben.
+Zunächst solltest Du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn
+Du noch keine Erfahrung hast, lass Dir ein kleines Stück Lochraster geben und
+ein paar alte Bauteile und versuche die, ein- und auszulöten. Wir können hier
+nur bedingt etwas zu erklären, da Dir am besten eine Mentorin kurz zeigt, wie es
+geht. Der Rest ist handwerkliche Fähigkeit, dass muss man also einfach ein
+bißchen selber gemacht haben.
 
 {{ figure(source="/images/kyo-7/Lochraster_loeten.jpg", alt="Lötübungen am Lochraster") }}
 
-Wenn Du damit klar kommst, dann kommt als nächstes, eine LED zum Leuchten zu bringen. Lass Dir dafür bitte die passenden Bauteile geben. Für die Mentoren - benötigt werden:
+Wenn Du damit klar kommst, dann kommt als nächstes, eine LED zum Leuchten zu
+bringen. Lass Dir dafür bitte die passenden Bauteile geben. Für die Mentoren -
+benötigt werden:
 
-- Lochraster,
-- Draht,
-- 5mm LED rot,
-- 220 Ω Widerstand und
-- 4,5 V-Batterieadapter.
+-   Lochraster,
+-   Draht,
+-   5mm LED rot,
+-   220 Ω Widerstand und
+-   4,5 V-Batterieadapter.
 
 {{ figure(source="/images/kyo-7/Leiterbahnen_ziehen.jpg", alt="Leiterbahnen ziehen will geübt sein.") }}
 
-Strom braucht zum Fließen immer einen Stromkreis. Manche Bauelemente können Strom nur durch eine Richtung durchlassen, so wie die LED. Wenn die LED also mal nicht leuchtet - probiere sie mal zu drehen. Die mag es aber nicht wirklich, falsch herum angeschlossen zu werden. Deshalb haben die ein langes und ein kurzes Beinchen. Das lange nennt man Anode und kommt in Richtung Pluspol (die kurze Seite heißt Kathode; Eselsbrücke ´k´ wie ´K´athode). LEDs sind empfindlich. Wir arbeiten gerne mit einem Batterieadapter, der drei 1,5 Volt-Batterien zu 4,5 Volt (V) verbindet. Bei 4,5 V geht den meisten LEDs nur kurz ein Licht auf. Danach sind sie durchgebrannt. Das ist schade um das Bauteil, denn danach kann es nur noch in den Müll. Mit Hilfe eines Widerstandes kann man diese Spannung reduzieren. Mit dem Vergleich zu einem Wasserkreislauf kann man gut verstehen, was da passiert. Die Batterie ist dort ein Motor, der das Wasser antreibt. Die Röhren entsprechen den Stromleitungen. Und ein Widerstand ist einfach eine Röhre, die dünner wird. Da kann nicht so viel Wasser durchfließen, wie durch eine große Röhre. Stell Dir jetzt vor, die LED besteht aus einer dünnen Glasröhre. Drückt man da zuviel Wasser durch, platzt es. Das verhindern wir mit dem Widerstand. Hier eine kleine Zeichnung dazu: (Zeichnung ist in Arbeit)
+Strom braucht zum Fließen immer einen Stromkreis. Manche Bauelemente können
+Strom nur durch eine Richtung durchlassen, so wie die LED. Wenn die LED also mal
+nicht leuchtet - probiere sie mal zu drehen. Die mag es aber nicht wirklich,
+falsch herum angeschlossen zu werden. Deshalb haben die ein langes und ein
+kurzes Beinchen. Das lange nennt man Anode und kommt in Richtung Pluspol (die
+kurze Seite heißt Kathode; Eselsbrücke ´k´ wie ´K´athode). LEDs sind
+empfindlich. Wir arbeiten gerne mit einem Batterieadapter, der drei 1,5
+Volt-Batterien zu 4,5 Volt (V) verbindet. Bei 4,5 V geht den meisten LEDs nur
+kurz ein Licht auf. Danach sind sie durchgebrannt. Das ist schade um das
+Bauteil, denn danach kann es nur noch in den Müll. Mit Hilfe eines Widerstandes
+kann man diese Spannung reduzieren. Mit dem Vergleich zu einem Wasserkreislauf
+kann man gut verstehen, was da passiert. Die Batterie ist dort ein Motor, der
+das Wasser antreibt. Die Röhren entsprechen den Stromleitungen. Und ein
+Widerstand ist einfach eine Röhre, die dünner wird. Da kann nicht so viel Wasser
+durchfließen, wie durch eine große Röhre. Stell Dir jetzt vor, die LED besteht
+aus einer dünnen Glasröhre. Drückt man da zuviel Wasser durch, platzt es. Das
+verhindern wir mit dem Widerstand. Hier eine kleine Zeichnung dazu: (Zeichnung
+ist in Arbeit)
 
 <Platzhalter Wasserkreislauf>
 
-Solche Zeichnungen stellt man technisch mit sogenannten Schaltplänen dar. Dabei haben bestimmte Bauelemente fest definierte Zeichen. Die kleine Schaltung, die Du Dir zurecht gelötet hast, schaut dann so aus:
+Solche Zeichnungen stellt man technisch mit sogenannten Schaltplänen dar. Dabei
+haben bestimmte Bauelemente fest definierte Zeichen. Die kleine Schaltung, die
+Du Dir zurecht gelötet hast, schaut dann so aus:
 
 {{ figure(source="/images/kyo-7/LED-Schaltung.png", alt="LED-Schaltung") }}
 
-Vergleiche das mal mit Deiner Schaltung, wenn Du fertig bist. Widerstände gibt es viele. Die Stärke wird gemessen in der Einheit Ω (gesprochen Ohm). Wenn man das Zeichen Ω nicht hat, kürzt man es mit R (das englische Wort für Widerstand ist ´resistor´) ab.
+Vergleiche das mal mit Deiner Schaltung, wenn Du fertig bist. Widerstände gibt
+es viele. Die Stärke wird gemessen in der Einheit Ω (gesprochen Ohm). Wenn man
+das Zeichen Ω nicht hat, kürzt man es mit R (das englische Wort für Widerstand
+ist ´resistor´) ab.
 
 {{ figure(source="/images/kyo-7/Widerstand.jpg", alt="LED-Schaltung") }}
 
-Wieviel Ohm muss den unser Widerstand nun haben? Da wird es jetzt kurz einmal theoretisch, denn das kann man mit einer kleinen Formel selbst ausrechnen:
+Wieviel Ohm muss den unser Widerstand nun haben? Da wird es jetzt kurz einmal
+theoretisch, denn das kann man mit einer kleinen Formel selbst ausrechnen:
 
 $$
 Vorwiderstand\  R {_v} = \frac{Spannung\ am\ Vorwiderstand\ U{_R}}{Strom\ I}
 $$
 
-Äh - wie meinen? Das hört sich erstmal kompliziert an. Wer es mit Zettel und Stift mal selbst nachrechnet wird feststellen, dass das kein Hexenwerk ist. Und am Ende kannst Du daraus ein kleines Programm machen. Dann geht das beim nächsten mal ganz fix. Wir wollen den Widerstand vor der LED rauskriegen. Das ist der Vorwiderstand. Zunächst müssen wir wissen, wieviel Strom wir da eigentlich vernichten wollen. Unsere Batterie liefert 4,5 V. Jetzt müssen wir wissen, wie hoch die Spannung in der LED sein darf. Wir arbeiten hier mit einer kleinen (5mmm), roten LED und die haben es meist so bei 1,6 V bis 2 V kuschelig. Diesen Wert liefern die Hersteller in ihren Spezifikationen mit. Es gibt also zu jedem Bauteil so ein Datenblatt. Aus Vereinfachungsgründen sagen wir die notwendigen Werte aber an.
+Äh - wie meinen? Das hört sich erstmal kompliziert an. Wer es mit Zettel und
+Stift mal selbst nachrechnet wird feststellen, dass das kein Hexenwerk ist. Und
+am Ende kannst Du daraus ein kleines Programm machen. Dann geht das beim
+nächsten mal ganz fix. Wir wollen den Widerstand vor der LED rauskriegen. Das
+ist der Vorwiderstand. Zunächst müssen wir wissen, wieviel Strom wir da
+eigentlich vernichten wollen. Unsere Batterie liefert 4,5 V. Jetzt müssen wir
+wissen, wie hoch die Spannung in der LED sein darf. Wir arbeiten hier mit einer
+kleinen (5mmm), roten LED und die haben es meist so bei 1,6 V bis 2 V kuschelig.
+Diesen Wert liefern die Hersteller in ihren Spezifikationen mit. Es gibt also zu
+jedem Bauteil so ein Datenblatt. Aus Vereinfachungsgründen sagen wir die
+notwendigen Werte aber an.
 
 {{ figure(source="/images/kyo-7/LED-falsch.jpg", alt="So sollte eine LED nicht im Lochraster festgemacht werden...") }}
 
-Vereinfacht können wir jetzt sagen - 4,5 V Batteriespannung - 2 V will-die-LED-haben = 1,5 V zu vernichtende Spannung. Jetzt brauchen wir noch den Nennstrom der LED. Aus das stünde im Datenblattn, gehe jetzt bitte einfach von 0,025 Ampere (A) aus. Wir dividieren die zu vernichtende Spannung (1,5 V) durch den Nennstrom (0,025 A). Taschenrechner nehmen und nachrechnen. Da kommen 160 Ω raus. Wenn Du dann an den Materialschränken im xHain oder einem anderen Makerspace schaust, wirst Du sehen, dass es einen 160 Ω - Widerstand nicht gibt. Man nimmt dann einfach den nächst größeren - denn mehr Widerstand heißt, da fließt weniger Strom. Dann ist die LED vielleicht etwas dunkler, aber sie überlebt. Der nächst größere Widerstand sind 220 Ω. Die bunten Ringe darauf erklären wir Dir beim nächsten Kyo. Damit Du sicher bist, dass Du wirklich den richtigen genommen hast - lass Dir mal ein Messgerät zeigen und wie man damit umgeht. Da werden nicht genau 220 Ω angezeigt werden, aber so ungefähr 200 bis 240 Ω. Jetzt weißt Du, wie man so einen Widerstand aussucht. Okay, also brauchst Du zwei Daten für die LED und den Strom, den Dir jeweils die Batterie liefert. Daraus mach doch mal gleich in ein Programm. Mit der Zeit kannst Du da noch andere Werte für andere LEDs reinpacken. Jedenfalls brauchst Du zukünftig dafür keinen Taschenrechner mehr. Alles klar soweit? Wenn nicht, nicht schlimm. Deine Mentor:innen vor Ort helfen Dir da gerne.
+Vereinfacht können wir jetzt sagen - 4,5 V Batteriespannung - 2 V
+will-die-LED-haben = 1,5 V zu vernichtende Spannung. Jetzt brauchen wir noch den
+Nennstrom der LED. Aus das stünde im Datenblattn, gehe jetzt bitte einfach von
+0,025 Ampere (A) aus. Wir dividieren die zu vernichtende Spannung (1,5 V) durch
+den Nennstrom (0,025 A). Taschenrechner nehmen und nachrechnen. Da kommen 160 Ω
+raus. Wenn Du dann an den Materialschränken im xHain oder einem anderen
+Makerspace schaust, wirst Du sehen, dass es einen 160 Ω - Widerstand nicht gibt.
+Man nimmt dann einfach den nächst größeren - denn mehr Widerstand heißt, da
+fließt weniger Strom. Dann ist die LED vielleicht etwas dunkler, aber sie
+überlebt. Der nächst größere Widerstand sind 220 Ω. Die bunten Ringe darauf
+erklären wir Dir beim nächsten Kyo. Damit Du sicher bist, dass Du wirklich den
+richtigen genommen hast - lass Dir mal ein Messgerät zeigen und wie man damit
+umgeht. Da werden nicht genau 220 Ω angezeigt werden, aber so ungefähr 200 bis
+240 Ω. Jetzt weißt Du, wie man so einen Widerstand aussucht. Okay, also brauchst
+Du zwei Daten für die LED und den Strom, den Dir jeweils die Batterie liefert.
+Daraus mach doch mal gleich in ein Programm. Mit der Zeit kannst Du da noch
+andere Werte für andere LEDs reinpacken. Jedenfalls brauchst Du zukünftig dafür
+keinen Taschenrechner mehr. Alles klar soweit? Wenn nicht, nicht schlimm. Deine
+Mentor:innen vor Ort helfen Dir da gerne.
 
 {{ figure(source="/images/kyo-7/LED-richtig.jpg", alt="So schaut das richtig aus mit der LED!") }}
 
-Okay, wenn Deine LED leuchtet, soll es an dieser Stelle erstmal mit dem Kapitel löten gewesen sein. Beim nächsten Kyo wird ein Controller, quasi ein kleiner Computer, zusammengelötet. Einen Kyo später kümmern wir uns dann auch um die Programmierung desselben.
+Okay, wenn Deine LED leuchtet, soll es an dieser Stelle erstmal mit dem Kapitel
+löten gewesen sein. Beim nächsten Kyo wird ein Controller, quasi ein kleiner
+Computer, zusammengelötet. Einen Kyo später kümmern wir uns dann auch um die
+Programmierung desselben.
 
 ## Listen
 
@@ -1433,7 +1498,7 @@ beziehungsweise Aufgaben?
     Bildschirm „schweben“ (Der Kurs wird noch um ein Kapitel mit turtle
     ergänzt).
 
--   Erweitere Deine LED-Schaltung um einen kleinen Schalter.    
+-   Erweitere Deine LED-Schaltung um einen kleinen Schalter.
 
 -   Was ist die halbe Wahrheit?
 
