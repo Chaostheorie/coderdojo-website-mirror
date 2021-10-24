@@ -1,5 +1,5 @@
 +++
-title = "Worum geht's im Dōjō?"
+title = "Worum geht`s im Dōjō?"
 
 [extra]
 color = "#55CCFF"
@@ -97,7 +97,7 @@ unseren Treffen in unserem Hackspace oder auf dem Congress gerne einmal einen
 Lötkolben in die Hand. Der Weg zum _"schwarzen Gürtel"_ besteht also nicht nur
 aus dem Erlernen von ein paar Befehlen einer Programmiersprache, sondern aus
 einem Potpourri an Dingen. Und Dir sollte klar sein - zum begehrten _"schwarzen
-Gürtel"_ ist noch niemand über 's Wochenende gekommen. Gib Dir also selbst Zeit.
+Gürtel"_ ist noch niemand über `s Wochenende gekommen. Gib Dir also selbst Zeit.
 
 Der Anfang ist leider oft etwas trocken, weil man erst etwas Rüstzeug lernen
 muss, bevor es richtig spaßig wird. Bevor Du tolle Würfe und Tritte lernst,
@@ -177,8 +177,21 @@ beziehungsweise nochmal lesen, wenn etwas nicht funktioniert.
 
 Wenn es mathematische Zusatzaufgaben gibt, wird das extra ausgewiesen.
 
-Auf geht 's zum Weißgurt. Und bis wir uns beim nächsten BBB- oder
+Auf geht `s zum Weißgurt. Und bis wir uns beim nächsten BBB- oder
 Reallife-Meeting sehen - Stay safe and keep coding!
+
+## Selber installieren
+
+Wenn Du die notwendigen Dinge selbst installieren willst oder jemanden neben Dir
+hast, der Dir hilft:
+
+-   [Python, mindestens in Version 3.8](https://www.python.org/downloads/)
+
+-   [pip](https://geekflare.com/de/python-pip-installation/)
+
+-   [virtualenv](https://pypi.org/project/virtualenv/)
+
+-   [Community Edition PyCharm](https://www.jetbrains.com/de-de/pycharm/download/#section=linux)
 
 ## Bildnachweise
 
