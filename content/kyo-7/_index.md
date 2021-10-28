@@ -9,7 +9,9 @@ katex = true
 
 # 7. Kyo – Weißgurt
 
-> Am liebsten erinnere ich mich an die Zukunft. _Salvador Dali_
+> Am liebsten erinnere ich mich an die Zukunft.
+>
+> _Salvador Dali_
 
 ## Inhalt - was werden wird
 
