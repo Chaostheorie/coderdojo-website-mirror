@@ -9,7 +9,11 @@ katex = true
 
 # 7. Kyo – Weißgurt
 
-## Inhalt
+> Am liebsten erinnere ich mich
+> an die Zukunft.
+> _Salvador Dali_
+
+## Inhalt - was werden wird
 
 Willkommen im ersten Teil. Wenn Du „Überblick Dojo“ noch nicht gelesen hast,
 mach das bitte mal. Da steht, was Du so brauchst, um hier gleich mit PyCharm und
