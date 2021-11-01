@@ -9,6 +9,12 @@ katex = true
 
 # 6. Kyo – Gelbgurt
 
+> Es gibt keinen Misserfolg.
+>
+> Entweder du hast Erfolg oder du lernst.
+>
+> _Kevin Kruse_
+
 > Hier siehst Du gerade den ersten und noch nicht vollständigen Aufschlag für
 > den Gelbgurt. Wir freuen uns über Fehlerkorrekturen! Wenn Du das Gefühl hast,
 > hier etwas nicht nachzuvollziehen zu können, schreib uns bitte oder sprich uns
@@ -28,7 +34,7 @@ werden Arrays sein und der erste Kontakt mit Klassen. Zuletzt wollen wir einen
 ersten Blick auf html und css werfen und mit flask erste Webseiten an den Start
 bringen. Dabei lernst Du gleich die ersten Grundlagen, wie eine Internetseite
 die Du aufrust, auf Deinen Rechner kommst. Dafür lernen wir auch einiges über
-Linux kennen und warum dieses Betriebssystem für uns wichtig.
+Linux kennen und warum dieses Betriebssystem für uns wichtig ist.
 
 ## Git - Klappe die erste
 
@@ -542,3 +548,65 @@ machen kann. Aber tue Dir selbst einen Gefallen und schau Dir das erst an, wenn
 Du selbst zu einer Lösung gekommen bist. Wenn Du wirklich nicht weiterkommst,
 hilft es Dir mehr, wenn Du zeigst, wo Du stecken geblieben bist, eine Richtung
 gesagt bekommst und weitertüftelst.
+
+Der nachfolgende Code ist eine Möglichkeit, wie man es machen könnte.
+
+```python
+import pygame, os, sys
+from pygame.locals import *
+
+pygame.init()
+fpsClock = pygame.time.Clock()
+surface_x = 800
+surface_y = 600
+surface = pygame.display.set_mode((surface_x, surface_y))
+background = pygame.Color(100, 149, 237)
+image = pygame.image.load('canvas.png')
+meeple = pygame.image.load('meeple1g.png')
+player_x = 100
+player_y = 100
+step_size = 50
+
+def meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+    if (event_key == pygame.K_RIGHT) and (player_x + step_size > surface_x):
+        return True
+    if (event_key == pygame.K_LEFT) and (player_x - step_size < 0):
+        return True
+    if (event_key == pygame.K_DOWN) and (player_y + step_size > surface_y):
+        return True
+    if (event_key == pygame.K_UP) and (player_y - step_size < 0):
+        return True
+
+while True:
+    surface.fill(background)
+    surface.blit(image, (0,0))
+    surface.blit(meeple, (player_x, player_y))
+    for event in pygame.event.get():
+        if event.type == pygame.KEYDOWN:
+            event_key = event.key
+            if event.key == pygame.K_RIGHT or meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+                player_x += step_size
+            if event.key == pygame.K_LEFT or meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+                player_x -= step_size
+            if event.key == pygame.K_DOWN or meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+                player_y += step_size
+            if event.key == pygame.K_UP or meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+                player_y -= step_size
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+    pygame.display.update()
+    fpsClock.tick(30)
+```
+
+Läuft so weit alles? Juhu. Da hast Du wichtige Grundsteine gelegt. So alleine
+über den Bildschirm rennen fetzt aber jetzt nicht wirklich auf Dauer. erweitere
+bitte Dein Spiel um eine zweite Spielfigur und für eine zweite Spielerin. Diese
+nutzt statt der Cursor-Tasten die Tasten `a` für links, `s` für runter, `d` für
+rechts und `w` für rauf. Natürlich sollte diese Spielerin auch nicht vom
+Spielfeld fallen dürfen. Und Du solltest Dir überlegen, ob Du Code
+wiederverwendbar machst, in dem Du ihn in Funktionen auslagerst.
+
+> War es das schon mit dem Gelbgurt? Mitnichten! Aber wir erarbeiten gerade das
+> Programm. Es lohnt sich immer wieder vorbeizukommen, da wir die Seite Stück
+> für Stück ergänzen.
