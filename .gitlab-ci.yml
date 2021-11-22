@@ -15,7 +15,7 @@ Lint:
             - configs/*
             - .gitlab-ci.yml
     before_script:
-        - yarn install
+        - yarn install --non-interactive --check-files  --frozen-lockfile
     script:
         - yarn dev:lint
 
@@ -41,7 +41,7 @@ Lint:
             - main
     before_script:
         # Install all yarn dependencies (normally cached but clover#2 currently has problems with space)
-        - yarn install
+        - yarn install --non-interactive --check-files  --frozen-lockfile
         # Add shh folder
         - mkdir -p ~/.ssh
         # Start ssh agent
