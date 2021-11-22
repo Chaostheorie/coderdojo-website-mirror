@@ -1,7 +1,30 @@
 import Collapse from 'bootstrap/js/dist/collapse';
 import Modal from 'bootstrap/js/dist/modal';
-import ScrollSpy from 'bootstrap/js/dist/scrollspy';
+import { fromByteArray } from 'base64-js';
 import Shikwasa from 'shikwasa';
+
+/// collect code for buttons on code helper blocks
+function collectCode(element: Element): string {
+    // going from current helper -> next
+    // pre block (next element) ->
+    // inner code block -> iterate over spans
+
+    // string buffer for text in highlighted span elements
+    let buffer = '';
+
+    // recursively collect all text
+    //  from highlighted elements in code block
+    // eslint-disable-next-line max-len
+    element.nextElementSibling.children[0].childNodes.forEach(
+        (node: ChildNode) => {
+            if (node instanceof HTMLSpanElement) {
+                buffer += node.innerText;
+            }
+        }
+    );
+
+    return buffer;
+}
 
 /**
  * Init general UI elements
@@ -92,26 +115,35 @@ export async function initUI() {
                 .forEach((button: Element) => {
                     if (button instanceof HTMLButtonElement) {
                         button.onclick = () => {
-                            // going from current helper -> next
-                            // pre block (next element) ->
-                            // inner code block -> iterate over spans
-
-                            // string buffer for text in highlighted span elements
-                            let buffer = '';
-
-                            // recursively collect all text
-                            //  from highlighted elements in code block
-                            // eslint-disable-next-line max-len
-                            element.nextElementSibling.children[0].childNodes.forEach(
-                                (node: ChildNode) => {
-                                    if (node instanceof HTMLSpanElement) {
-                                        buffer += node.innerText;
-                                    }
-                                }
-                            );
-
                             // copy to clipboard & update btn
-                            copyToClipBoard(buffer, button);
+                            copyToClipBoard(collectCode(element), button);
+                        };
+                    }
+                });
+
+            element
+                .querySelectorAll('button[data-type=play]')
+                .forEach((button: Element) => {
+                    if (button instanceof HTMLButtonElement) {
+                        button.onclick = () => {
+                            let params = new URLSearchParams([
+                                [
+                                    'c',
+                                    encodeURI(
+                                        fromByteArray(
+                                            new TextEncoder().encode(
+                                                collectCode(element)
+                                            )
+                                        )
+                                    ),
+                                ],
+                            ]);
+
+                            // redirect
+                            window.location.href =
+                                'https://playground.cobalt.rocks/interactive?'.concat(
+                                    params.toString()
+                                );
                         };
                     }
                 });
