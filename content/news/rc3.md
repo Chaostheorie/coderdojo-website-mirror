@@ -43,12 +43,14 @@ monatlichen Vor-Ort-Treffen im Berliner
 [Jugend hackt Lab](https://jugendhackt.org/lab/berlin/) weiter hacken, löten und
 basteln.
 
-**Zielgruppe:** Wenn Du keine oder kaum Vorerfahrung hast, bist Du hier richtig.
+**Zielgruppe:**
+Wenn Du keine oder kaum Vorerfahrung hast, bist Du hier richtig.
 Du solltest mindestens 12 Jahre alt sein. Jung gebliebene Erwachsene sind aber
 auch willkommen. Da wir aber ein [CoderDojo](https://coderdojo.red) sind, haben
 Jugendliche Vorrang, falls es zu voll wird.
 
-**Voraussetzungen:** Du brauchst einen Rechner (kein Tablett). Am einfachsten
+**Voraussetzungen:**
+Du brauchst einen Rechner (kein Tablett). Am einfachsten
 hast Du einen 64GB-Stick zur Hand. Da bekommst Du eine Anleitung, Unterstützung
 und eine Arbeitsumgebung zum Programmieren. Der Stick darf gerne schneller sein,
 sollte also mindestens 120 Mbit/s Durchsatz haben. Beispielsweise käme
@@ -61,15 +63,23 @@ aktuelle Version von der
 auf Deinem Rechner selbst. Wir helfen Dir in der Willkommenssession bei
 Installationsproblemen.
 
-**Anmeldung:** Damit wir besser planen können, sag uns bitte kurz per
+**Anmeldung:**
+Damit wir besser planen können, sag uns bitte kurz per
 coderdojo@cyber4edu.org Bescheid, wenn Du teilnehmen möchtest.
 
-**Treffen:** Den Kurs findest Du auf [coderdojo.red](https://coderdojo.red). Das
-ist unser [Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org).
+**Treffen:**
+Den Kurs findest Du auf [coderdojo.red](https://coderdojo.red).
+
+Das ist unser [Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org).
+
 Onlinetreffen (jeweils circa eine Stunde):
+
 [27. Dezember 2021 11 Uhr - Kennenlernen / 20 Uhr 1. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
+
 [28. Dezember 2021 19 Uhr 2. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
+
 [29. Dezember 2021 19 Uhr 3. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
+
 [30. Dezember 2021 17 Uhr 4. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
 
 {{ figure(source="/images/man_muesste.jpg", alt="Man müsste …") }}
