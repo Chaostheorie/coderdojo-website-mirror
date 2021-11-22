@@ -126,13 +126,24 @@ export async function initUI() {
                 .forEach((button: Element) => {
                     if (button instanceof HTMLButtonElement) {
                         button.onclick = () => {
+                            let encoder = new TextEncoder();
                             let params = new URLSearchParams([
                                 [
                                     'c',
                                     encodeURI(
                                         fromByteArray(
-                                            new TextEncoder().encode(
-                                                collectCode(element)
+                                            encoder.encode(collectCode(element))
+                                        )
+                                    ),
+                                ],
+                                [
+                                    't',
+                                    encodeURI(
+                                        fromByteArray(
+                                            encoder.encode(
+                                                button.getAttribute(
+                                                    'data-title'
+                                                )
                                             )
                                         )
                                     ),
