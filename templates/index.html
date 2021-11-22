@@ -1,121 +1,114 @@
 {% extends "base.html" %} {% block content %}
 <div
-    class="container w-80 px-2 mt-3 mx-auto"
-    itemscope
-    id="section-content"
-    itemtype="https://schema.org/SearchResultsPage"
+  class="container w-80 px-2 mt-3 mx-auto"
+  itemscope
+  id="section-content"
+  itemtype="https://schema.org/SearchResultsPage"
 >
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Coderdojo Red Berlin</h1>
-            <p class="lead text-muted">
-                <code>
-                    <p>
-                        „Das ist deine letzte Chance. Danach gibt es kein
-                        zurück.
-                    </p>
-                    <p>
-                        Nimm die blaue Pille — die Geschichte endet,<br />
-                        du wachst in deinem Bett auf und glaubst was du auch
-                        immer glauben willst.
-                    </p>
-                    <p>
-                        Nimm die rote Pille — <br />
-                        du bleibst hier im Wunderland und ich werde dir zeigen
-                        wie tief das Kaninchenloch reicht.“
-                    </p>
-                    <p><small>Matrix</small></p>
-                </code>
-            </p>
-        </div>
-    </section>
-
-    <div class="py-3">
-        <p>
-            Willkommen beim CoderDojo für Jugendliche! Wir sitzen zwar in
-            Berlin, aber da bei uns vieles online stattfindet, kannst Du bei uns
-            an vielem auch teilnehmen, wenn Du hier nicht wohnst.
-        </p>
-        <p>
-            Wir wollen gemeinsam mit Dir die rote Pille nehmen und das
-            Wunderland entdecken. Grundsätzlich gibt es bei uns zwei Gruppen:
-        </p>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Coderdojo Red Berlin</h1>
+      <p class="lead text-muted">
+        <code>
+          <p>„Das ist deine letzte Chance. Danach gibt es kein zurück.</p>
+          <p>
+            Nimm die blaue Pille — die Geschichte endet,<br />
+            du wachst in deinem Bett auf und glaubst was du auch immer glauben
+            willst.
+          </p>
+          <p>
+            Nimm die rote Pille — <br />
+            du bleibst hier im Wunderland und ich werde dir zeigen wie tief das
+            Kaninchenloch reicht.“
+          </p>
+          <p><small>Matrix</small></p>
+        </code>
+      </p>
     </div>
+  </section>
 
-    <div class="row g-3 row-cols-1 row-cols-sm-2">
-        <div class="col-auto">
-            <div class="card h-100 shadow">
-                <div
-                    class="
-                        card-body
-                        bg-dark
-                        d-flex
-                        flex-column
-                        justify-content-start
-                        border border-rounded border-dark border-1
-                    "
-                >
-                    <h2 class="h5 card-title">
-                        <i class="bi bi-calculator" aria-label="Calculator"></i>
-                        Euler Gruppe
-                    </h2>
-                    <p class="card-text">
-                        Das EulerProjekt ist stark mathezentriert. In dieser
-                        Gruppe werden mathematische Probleme mit Code gelöst.
-                    </p>
-                    <div class="w-100 text-center mt-auto">
-                        <a
-                            href="{{ get_url(path='@/euler/_index.md')|safe }}"
-                            class="btn btn-outline-primary"
-                        >
-                            <i class="bi bi-arrow-left-square"></i> Gehe zur
-                            Euler Gruppe
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-auto">
-            <div class="card h-100 shadow">
-                <div
-                    class="
-                        card-body
-                        d-flex
-                        flex-column
-                        bg-dark
-                        justify-content-start
-                        border border-rounded border-dark border-1
-                    "
-                >
-                    <h2 class="card-title h5">
-                        <i
-                            class="bi bi-journal-code"
-                            aria-label="Software source code journal"
-                        ></i>
-                        Dojo
-                    </h2>
-                    <p class="card-text">
-                        Das Dojo, bei dem der Schwerpunkt beim Coden liegt. Der
-                        Begriff ist aber weit zu verstehen. Wenn Du mehr darüber
-                        wissen willst, klick am besten auf Überblick.
-                    </p>
-                    <div class="w-100 text-center mt-auto">
-                        <a
-                            href="{{ get_url(path='@/kyo-info/_index.md')|safe }}"
-                            class="btn btn-outline-primary shadow-sm"
-                        >
-                            Gehe zum Überblick
-                            <i class="bi bi-arrow-right-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <div class="py-3">
+    <p>
+      Willkommen beim CoderDojo für Jugendliche! Wir sitzen zwar in Berlin, aber
+      da bei uns vieles online stattfindet, kannst Du bei uns an vielem auch
+      teilnehmen, wenn Du hier nicht wohnst.
+    </p>
+    <p>
+      Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland
+      entdecken. Grundsätzlich gibt es bei uns zwei Gruppen:
+    </p>
+  </div>
 
+  <div class="row g-3 row-cols-1 row-cols-sm-2">
+    <div class="col-auto">
+      <div class="card h-100 shadow">
+        <div
+          class="
+            card-body
+            bg-dark
+            d-flex
+            flex-column
+            justify-content-start
+            border border-rounded border-dark border-1
+          "
+        >
+          <h2 class="h5 card-title">
+            <i class="bi bi-calculator" aria-label="Calculator"></i>
+            Euler Gruppe
+          </h2>
+          <p class="card-text">
+            Das EulerProjekt ist stark mathezentriert. In dieser Gruppe werden
+            mathematische Probleme mit Code gelöst.
+          </p>
+          <div class="w-100 text-center mt-auto">
+            <a
+              href="{{ get_url(path='@/euler/_index.md')|safe }}"
+              class="btn btn-outline-primary"
+            >
+              <i class="bi bi-arrow-left-square"></i> Gehe zur Euler Gruppe
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-    <p></p>
-    <img src="https://coderdojo.red/images/man_muesste.jpg" alt="Man_muesste">"
+    <div class="col-auto">
+      <div class="card h-100 shadow">
+        <div
+          class="
+            card-body
+            d-flex
+            flex-column
+            bg-dark
+            justify-content-start
+            border border-rounded border-dark border-1
+          "
+        >
+          <h2 class="card-title h5">
+            <i
+              class="bi bi-journal-code"
+              aria-label="Software source code journal"
+            ></i>
+            Dojo
+          </h2>
+          <p class="card-text">
+            Das Dojo, bei dem der Schwerpunkt beim Coden liegt. Der Begriff ist
+            aber weit zu verstehen. Wenn Du mehr darüber wissen willst, klick am
+            besten auf Überblick.
+          </p>
+          <div class="w-100 text-center mt-auto">
+            <a
+              href="{{ get_url(path='@/kyo-info/_index.md')|safe }}"
+              class="btn btn-outline-primary shadow-sm"
+            >
+              Gehe zum Überblick
+              <i class="bi bi-arrow-right-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p></p>
 </div>
-
 
 {% endblock %}
