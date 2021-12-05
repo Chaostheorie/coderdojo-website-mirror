@@ -601,7 +601,8 @@ Wie man zwei Strings wie `"ot"` `"to"` kombiniert, hast du schon gesehen: aus
 `"ot" + "to"` wird `"otto"`. Das ein String in zwei `""` eingefasst werden muss,
 haben wir noch nicht explizit gesagt, ist Dir aber sicherlich schon aufgefallen.
 du kannst auch das
-```nehmen, also das Zeichen über der Raute. Beides geht, du solltest es nur nicht
+
+````nehmen, also das Zeichen über der Raute. Beides geht, du solltest es nur nicht
  in einem Code mischen. Aber was machst du nun, wenn du in einem String sagen wolltest:`print("Und
 er sagt:
 "Hallo"")`. Nur zu, Hack das ein. Soviel vorweg – das wird nichts. Denn Python liest das erste und weiß – jetzt geht der String los. Dann kommt das zweite und er denkt, der String ist zu Ende. Und dann kommt etwas, mit er echt nichts anfangen kann – `"Hallo"`.
@@ -626,7 +627,7 @@ ist:
 ```python
 inhalt = 1000
 print(f"Der Inhalt ist: {inhalt}")
-```
+````
 
 Probier mal aus! Falls Dir mal solche Konstrukte mit einem `%`-Zeichen über den
 Weg laufen – das ist eine veraltete Methode, um Strings in Python zu
