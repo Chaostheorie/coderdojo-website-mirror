@@ -221,6 +221,10 @@ noch eine Zeile Code mit:
 print(3 * "*")
 ```
 
+Falls Du jetzt denkst, pah, so einen Baum, billo, kann ich überspringen: Mach
+den mal mit höchstens zwei Print-Zeilen und Du wirst sehen, da gibt es
+versteckte Untiefen.
+
 Und weil ASCII-Art so schön ist, „zeichne“ noch eine Sanduhr (knobel auch hier,
 wie Du mit möglichst wenig Code auskommst):
 
@@ -388,6 +392,20 @@ else:
     print("Ich bin verwirrt.")
     print("Habe fertig.")
 ```
+
+Wenn Du das Programm so übertragen hast, wirst Du feststellen, dass das gar
+nicht geht. Woran liegt das? Python denkt, bei der Eingabe handele es sich um
+einen Text und nicht um eine Zahl. Wir müssen ihm sagen, dass die Eingabe
+wirklich eine Zahl ist; ein bißchen mehr zu dem Thema kommt ein paar Absätze
+später. Ändere mal
+
+```python
+a = int(input("Bitte gib eine Zahl ein: "))
+```
+
+(und b entsprechend anpasst) und teste nochmal. Und als nächstes gib mal einen
+Buchstaben statt einer Zahl ein. Puh. Das Programm ist also noch fehleranfällig;
+Mittel dagegen lernst Du noch am Ende des Gürtels.
 
 Das Programm springt also in `if` und führt einen Vergleich durch. Ist der
 erfolgreich, springt es gleich an das Ende dieser Bedingung. In die anderen
