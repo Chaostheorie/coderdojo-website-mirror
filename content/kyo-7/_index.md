@@ -15,18 +15,18 @@ katex = true
 
 ## Inhalt - was werden wird
 
-Willkommen im ersten Teil. Wenn Du „Überblick Dojo“ noch nicht gelesen hast,
-mach das bitte mal. Da steht, was Du so brauchst, um hier gleich mit PyCharm und
+Willkommen im ersten Teil. Wenn du „Überblick Dojo“ noch nicht gelesen hast,
+mach das bitte mal. Da steht, was du so brauchst, um hier gleich mit PyCharm und
 Python durchstarten zu können.
 
-> Hinweis: Der Text ist „frisch“. Wenn Du Fehler entdeckst, Teile unverständlich
+> Hinweis: Der Text ist „frisch“. Wenn du Fehler entdeckst, Teile unverständlich
 > findest oder Ideen für bessere und mehr Beispiele und Übungen hast, lass es
-> uns bitte wissen, damit wir ihn korrigieren und verbessern können. Stand 20.
-> Oktober 2021.
+> uns bitte wissen, damit wir ihn korrigieren und verbessern können. Stand 5.
+> Dezember 2021.
 
 ## Hello World
 
-Wenn Du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
+Wenn du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 
 {{ figure(source="/images/kyo-7/8-1-Pycharm-2.png", alt="PyCharm – Welcome screen") }}
 
@@ -34,12 +34,12 @@ Klicke auf `New Project`. Dann schaut es ungefähr so aus:
 
 {{ figure(source="/images/kyo-7/8-1-Pycharm-3.png", alt="PyCharm – New Project screen") }}
 
-Bei der obersten Zeile mit Location änderst Du den Projektnamen auf
+Bei der obersten Zeile mit Location änderst du den Projektnamen auf
 „HelloWorld“. Das ist Dein Projektname. Die weiteren Einstellmöglichkeiten hier
-werden wir mit der Zeit kennenlernen. Dann klickst Du auf „Create“. Unter
+werden wir mit der Zeit kennenlernen. Dann klickst du auf „Create“. Unter
 Umständen rödelt Deine Kiste jetzt einen Moment. Im nächsten Schritt baut sich
-der Editor auf. In dem Teil main.py steht allerhand Zeug. Das löschst Du jetzt
-einfach – entweder Du markierst es mit der Maus und drückst die Entf-Taste oder
+der Editor auf. In dem Teil main.py steht allerhand Zeug. Das löschst du jetzt
+einfach – entweder du markierst es mit der Maus und drückst die Entf-Taste oder
 – Tastaturkürzel lernen ist immer gut – mit Strg+A oder Control+A alles
 markieren und dann Entf drücken. Dann sollte das bei Dir ungefähr so ausschauen:
 
@@ -47,7 +47,7 @@ markieren und dann Entf drücken. Dann sollte das bei Dir ungefähr so ausschaue
 
 Okay, jetzt kann es losgehen!
 
-Warst Du schon mal in einem Dojo? Falls nicht – immer wenn man ein Dojo betritt
+Warst du schon mal in einem Dojo? Falls nicht – immer wenn man ein Dojo betritt
 und verlässt, gibt es eine kleine Verbeugung als Gruß. Beginnt man mit einer
 neuen Programmiersprache, gibt es auch ein solches „Ritual“. Man beginnt damit,
 den Computer `Hello World` ausgeben zu lassen. Um etwas ausgeben zu lassen,
@@ -58,22 +58,22 @@ probieren:
 print("Hello World")
 ```
 
-Jetzt führst Du das Programm aus: Du gehst in der Menüzeile auf „Run“ und dort
+Jetzt führst du das Programm aus: du gehst in der Menüzeile auf „Run“ und dort
 auf den obersten Punkt „Run `main`“. Dann sollte sich unten ein Fenster
 aufbauen, in welchem das Ergebnis Deines Programms ausgeführt wird.
 
 {{ figure(source="/images/kyo-7/8-1-Pycharm-5.png", alt="PyCharm – hello world") }}
 
-Wenn da „Hello World“ steht, hast Du es geschafft: Dein erstes Programm! Okay,
-noch ein sehr kleines, aber immerhin. Wenn Du bis hierin nicht gekommen bist –
+Wenn da „Hello World“ steht, hast du es geschafft: Dein erstes Programm! Okay,
+noch ein sehr kleines, aber immerhin. Wenn du bis hierin nicht gekommen bist –
 bitte zögere nicht und lass Dir helfen! Hier können unvorhersehbare
-Stolpersteine im Weg liegen, die Du vielleicht nicht ohne etwas Unterstützung
+Stolpersteine im Weg liegen, die du vielleicht nicht ohne etwas Unterstützung
 aus dem Weg geräumt bekommst.
 
 Frag jemanden aus dem Umfeld, komm zu unserem wöchentlichen Videotreff vorbei
 oder wenn es Präsenztreffen gibt, komm mit Deinem Rechner in den
 [xHain](https://x-hain.de/de/). Wenn das hier nicht läuft, kann der Rest auch
-nicht laufen. Es ist gut, wenn Du Dich selber daran versuchst, aber lass Dich
+nicht laufen. Es ist gut, wenn du Dich selber daran versuchst, aber lass Dich
 nicht entmutigen, wenn es nicht klappt.
 
 ## Schleifen
@@ -98,7 +98,7 @@ print("Hello World")
 
 Aber der gute Admin ist faul – wenn er stupide Dinge mehrfach machen muss,
 automatisiert er sie. Und genau hier sind Computer ja auch echt stark. Zehnmal
-geht noch gut, wenn Du 100-mal das machen müsstest, wäre es schon nervig. Und Du
+geht noch gut, wenn du 100-mal das machen müsstest, wäre es schon nervig. Und Du
 müsstest, um sicherzugehen, dass es nicht 99 oder 101 sind, mehrfach nachzählen.
 Schöner wäre es doch, wenn wir dem Computer sagen könnten, dass er diese
 Befehlszeile n-mal wiederholen soll. Das machen wir mit einer sogenannten
@@ -111,12 +111,12 @@ for i in range(10):
     print("Hello World")
 ```
 
-Die Einrückung erzeugst Du, indem Du die Tab-Taste verwendest. Das ist die Taste
+Die Einrückung erzeugst du, indem du die Tab-Taste verwendest. Das ist die Taste
 zwischen `CapsLock` (dauernd großschreiben und der \^-Taste). Probiere es gleich
-mal aus, indem Du wieder auf „Run“ und dann auf
+mal aus, indem du wieder auf „Run“ und dann auf
 `Run `main``gehst. Wähle die Ausgabe nach. Sind es wirklich zehn`Hello World`?
 
-Okay, jetzt bist Du dran. Als Nächstes bau den Code bitte so um, dass es zu
+Okay, jetzt bist du dran. Als Nächstes bau den Code bitte so um, dass es zu
 folgender Ausgabe kommt:
 
 ```
@@ -128,7 +128,7 @@ World
 World
 ```
 
-Geschafft? Wenn nicht, dann als Hilfe – Du brauchst zwei `print`-Zeilen, je eine
+Geschafft? Wenn nicht, dann als Hilfe – du brauchst zwei `print`-Zeilen, je eine
 über und eine unter der Schleife. Gleich zur nächsten Übung. Versuche folgende
 Ausgabe zu erzeugen:
 
@@ -147,7 +147,7 @@ World
 
 ## Was passiert in der Schleife?
 
-Dabei solltest Du „Hello“ und „World“ jeweils nur einmal schreiben. Wenn Du da
+Dabei solltest du „Hello“ und „World“ jeweils nur einmal schreiben. Wenn du da
 Schwierigkeiten hast, dann einen Hinweis: Zur For-Schleife zählt alles das, was
 eingerückt ist. Diese Einrückung ist eine Besonderheit der Programmiersprache
 Python. Es gibt Sprachen die solche zusammenhängenden Blöcke mit `begin` und
@@ -155,10 +155,10 @@ Python. Es gibt Sprachen die solche zusammenhängenden Blöcke mit `begin` und
 ein. Hintergrund ist, dass man dies bei den anderen Programmiersprachen auch
 machen soll, damit der Code übersichtlicher und verständlicher wird. Die Tugend
 ist bei Python Pflicht. Rücke zwei print-Zeilen unterhalb der For-Schleife ein
-und lass sie Dir ausgeben. Dann probierst Du aus, wenn die erste nicht
+und lass sie Dir ausgeben. Dann probierst du aus, wenn die erste nicht
 eingerückt ist und wenn die erste, aber nicht die zweite eingerückt ist. Der
 erste Fall wirft Dir einen Fehler aus. Warum? Weil Python erwartet, dass es zu
-der Schleife einen Inhalt gibt. Rückst Du nichts ein, fehlt dieser Inhalt. Spiel
+der Schleife einen Inhalt gibt. Rückst du nichts ein, fehlt dieser Inhalt. Spiel
 ruhig damit ein wenig rum. Mach mal was mit zwei for-Schleifen oder ändere den
 Wert in Range.
 
@@ -166,7 +166,7 @@ Wert in Range.
 Schuhe...")      }}
 
 Was passiert jetzt bei dieser Schleife? `i` ist eine sogenannte Variable. Das
-kennst Du bestimmt schon aus dem Matheunterricht. Ihr wird mit jedem Durchlauf
+kennst du bestimmt schon aus dem Matheunterricht. Ihr wird mit jedem Durchlauf
 eine Zahl zugewiesen. `range(10)` gibt an, dass mit jedem Durchlauf `i` um eins
 erhöht werden soll, bis es `10` ist. Klingt wenig verständlich? Lass Dir einfach
 mal ausgeben, was in `i` in jedem Durchlauf drin steckt.
@@ -194,7 +194,7 @@ Zahlen ein.
 
 Jetzt wollen wir noch eine Übung machen – lass uns einen Tannenbaum als
 sogenannte ASCII-Art zeichnen. Wir gehen später noch genauer darauf ein, was
-ASCII ist, aber im kurzen sind es die Buchstaben und Zeichen, die Du so am
+ASCII ist, aber im kurzen sind es die Buchstaben und Zeichen, die du so am
 Computer siehst. Damit kann man kleine Kunstwerke schaffen. Versuche bitte, dass
 folgendes ausgegeben wird:
 
@@ -221,12 +221,12 @@ noch eine Zeile Code mit:
 print(3 * "*")
 ```
 
-Falls Du jetzt denkst, pah, so einen Baum, billo, kann ich überspringen: Mach
-den mal mit höchstens zwei Print-Zeilen und Du wirst sehen, da gibt es
+Falls du jetzt denkst, pah, so einen Baum, billo, kann ich überspringen: Mach
+den mal mit höchstens zwei Print-Zeilen und du wirst sehen, da gibt es
 versteckte Untiefen.
 
 Und weil ASCII-Art so schön ist, „zeichne“ noch eine Sanduhr (knobel auch hier,
-wie Du mit möglichst wenig Code auskommst):
+wie du mit möglichst wenig Code auskommst):
 
 ```
 *****
@@ -239,19 +239,19 @@ wie Du mit möglichst wenig Code auskommst):
 ## Benennung von Variablen
 
 Muss das eigentlich ein „`i`“ sein? Nein. Erlaubt ist für Variablen eine Menge.
-Du kannst groß- und kleinschreiben, Zahlen reinnehmen, Unterstriche dürfen auch
+du kannst groß- und kleinschreiben, Zahlen reinnehmen, Unterstriche dürfen auch
 drin sein. Python-Befehle dürfen nicht verwendet werden, da diese reserviert
-sind (die lernst Du jetzt mit der Zeit). Eine Variable darf jedoch nicht mit
+sind (die lernst du jetzt mit der Zeit). Eine Variable darf jedoch nicht mit
 einer Zahl anfangen. Dann gibt es ein paar Regeln, die zwar nicht zwingend sind,
-bei denen Du aber mit Zeit immer mehr sehen wirst, dass es total Sinn ergibt,
+bei denen du aber mit Zeit immer mehr sehen wirst, dass es total Sinn ergibt,
 sich diese von Anfang an anzugewöhnen: Variablennamen sollten immer klein
 anfangen, außer es handelt sich um eine Klasse. Was das ist, kommt ein ganzes
 Stück später. Merke Dir jetzt nur – sie beginnen mit einem kleinen Buchstaben.
 Für Variablennamen, die aus mehreren Wörtern bestehen, gibt es zwei
 Möglichkeiten: `anzahl_Autos` – das nennt man `snake_Case` oder `anzahlAutos` –
 das nennt man `CamelCase`. Bei Python wird `snake_Case` bevorzugt. Und Variablen
-sollten einen zeigen, was sie beinhalten. Stell Dir vor, dass Du Deinen Code
-nach einem Monat wieder anschaust. Dann wäre es hilfreich, wenn Du auf eine
+sollten einen zeigen, was sie beinhalten. Stell Dir vor, dass du Deinen Code
+nach einem Monat wieder anschaust. Dann wäre es hilfreich, wenn du auf eine
 Variable schaust und eine Ahnung davon hast, wofür sie ist. In den Code dafür
 komplett neu reindenken zu müssen, sollte nicht der Fall sein müssen.
 
@@ -260,19 +260,19 @@ Schleifen und ähnlichen Konstruktionen gibt es quasi die Ausnahme von der Regel
 dass `i` (und bei mehreren ineinander greifenden Schleifen `j`, `k` etc.) üblich
 sind. Das gilt nicht nur für Python. Die Variablen sollten gleichzeitig
 möglichst kurz sein, damit man nicht so viel schreiben muss, aber lang genug,
-dass man sie versteht. Das kommt also immer auf das konkrete Problem an. Wenn Du
+dass man sie versteht. Das kommt also immer auf das konkrete Problem an. Wenn du
 drei Koordinaten definieren willst, können `x`, `y` und `z` super Variablennamen
-sein. Wenn Du aber mehrere hast, hilft `x1` und `x2` vielleicht nicht mehr
-weiter, weil Du jedes Mal neu überlegen musst, wofür `x1` und `x2` stehen
-sollte. Das ganze sind keine starren Regeln, Du wirst sehen, dass wir gerade bei
+sein. Wenn du aber mehrere hast, hilft `x1` und `x2` vielleicht nicht mehr
+weiter, weil du jedes Mal neu überlegen musst, wofür `x1` und `x2` stehen
+sollte. Das ganze sind keine starren Regeln, du wirst sehen, dass wir gerade bei
 kleinen Codestücken uns ebenso nicht sklavisch daran halte. Behalte sie jedoch
-im Hinterkopf und Du wirst mit der Zeit ein Gefühl dafür gewinnen, wie gute
+im Hinterkopf und du wirst mit der Zeit ein Gefühl dafür gewinnen, wie gute
 Bezeichnungen aussehen. Das mag sich an dieser Stelle noch komisch anhören, ist
 aber tatsächlich ein wichtiges Thema.
 
 Und als letzte Regel – wähle die Namen möglichst in Englisch. Wenn Dein Englisch
 noch nicht so gut ist, ist das am Anfang noch nicht so wichtig – aber eine gute
-Gelegenheit, die eine oder andere Vokabel zu lernen. Und später wirst Du in
+Gelegenheit, die eine oder andere Vokabel zu lernen. Und später wirst du in
 größeren Gruppen coden. Dank des Internets passiert das nicht unbedingt nur mit
 Menschen, die Deutsch sprechen. Deshalb ergibt es Sinn, gleich alles in Englisch
 zu machen.
@@ -294,7 +294,7 @@ b = 5
 print("10 + 5 =", a + b)
 ```
 
-Hier kurz die wichtigsten Rechenarten, die Du in Python nutzen kannst:
+Hier kurz die wichtigsten Rechenarten, die du in Python nutzen kannst:
 
 -   \+ addieren
 
@@ -310,7 +310,7 @@ Hier kurz die wichtigsten Rechenarten, die Du in Python nutzen kannst:
 
 -   \*\* für Potenzen, also 3-Quadrat ist 3\*\*2
 
-Diese Klammern `(`, `)` kannst Du auch verwenden. Wie beim Taschenrechner werden
+Diese Klammern `(`, `)` kannst du auch verwenden. Wie beim Taschenrechner werden
 „Kommazahlen“ mit einem Punkt ausgegeben. Spiele damit ein wenig rum und
 probiere auch mal aus, ob die Regle Punkt-vor-Strich beachtet wird und wie mit
 Klammern diese Regel „umgangen“ werden kann und wie es sich mit Potenzen
@@ -322,7 +322,7 @@ $$
 \left(\LARGE{ \frac{1}{2} - \frac{1}{4} + \frac{4+3}{8} }\right) * 2
 $$
 
-Wenn Du richtig gerechnet hast, sollte 2.25 rauskommen. Wenn nicht, hast Du
+Wenn du richtig gerechnet hast, sollte 2.25 rauskommen. Wenn nicht, hast du
 vielleicht ein falsches Rechenzeichen gesetzt oder die Klammern nicht richtig
 positioniert.
 
@@ -341,13 +341,13 @@ oder sie hier eingeben soll. Das schaut so aus:
 userInput = input("Bitte gib eine Zahl ein: ")
 ```
 
-Jetzt bist Du wieder dran. Kombiniere das gelernte. Frage die Benutzer:in nach
+Jetzt bist du wieder dran. Kombiniere das gelernte. Frage die Benutzer:in nach
 zwei Zahlen, addiere sie und gib sie aus. Wenn das funktioniert, lege um den
 Code eine For-Schleife herum, die dafür sorgt, dass der Code dreimal ausgeführt
 wird. Teste ihn. Kommen beim zweiten Anlauf komische Ergebnisse heraus? Versuche
 herauszubekommen, woran das liegt. Es hilft, sich bei jeder Zeile zu überlegen,
 was diese macht und welche Variablen gerade welchen Wert haben (PyCharm wird Dir
-später dabei helfen). Falls Du hier zu keinem Ergebnis mehr kommst, lass uns in
+später dabei helfen). Falls du hier zu keinem Ergebnis mehr kommst, lass uns in
 einem virtuellen CoderDojo gemeinsam drauf schauen. Probiere auch mal aus, was
 passiert, wenn man einen Buchstaben, statt eine Zahl eingibt. Wie man solche
 Fehleingaben der Benutzenden verhindert, kommt etwas später.
@@ -373,7 +373,7 @@ else:
 
 Es kommt häufiger vor, dass wir mehrere Vergleiche machen müssen. Wie das
 ausschaut, zeigt das nächste Beispiel. Die Zeichen `<`, `>`, `<=` und `>=`
-solltest Du bereits aus der Schule kennen. Um zusagen, dass etwas ungleich ist,
+solltest du bereits aus der Schule kennen. Um zusagen, dass etwas ungleich ist,
 schreibt man `!=`.
 
 {{ file(name="number-comparison.py") }}
@@ -393,7 +393,7 @@ else:
     print("Habe fertig.")
 ```
 
-Wenn Du das Programm so übertragen hast, wirst Du feststellen, dass das gar
+Wenn du das Programm so übertragen hast, wirst du feststellen, dass das gar
 nicht geht. Woran liegt das? Python denkt, bei der Eingabe handele es sich um
 einen Text und nicht um eine Zahl. Wir müssen ihm sagen, dass die Eingabe
 wirklich eine Zahl ist; ein bißchen mehr zu dem Thema kommt ein paar Absätze
@@ -405,13 +405,13 @@ a = int(input("Bitte gib eine Zahl ein: "))
 
 (und b entsprechend anpasst) und teste nochmal. Und als nächstes gib mal einen
 Buchstaben statt einer Zahl ein. Puh. Das Programm ist also noch fehleranfällig;
-Mittel dagegen lernst Du noch am Ende des Gürtels.
+Mittel dagegen lernst du noch am Ende des Gürtels.
 
 Das Programm springt also in `if` und führt einen Vergleich durch. Ist der
 erfolgreich, springt es gleich an das Ende dieser Bedingung. In die anderen
 Codeteile schaut es gar nicht mehr herein. In den `else`-Teil kommt es nur dann
 rein, wenn keiner der vorher aufgeführten Bedingungen wahr war. Alles klar
-soweit? Dann hast Du schon wirklich wesentliche Elemente gelernt, mit denen man
+soweit? Dann hast du schon wirklich wesentliche Elemente gelernt, mit denen man
 schon eine Menge machen kannst.
 
 ## Übungen
@@ -437,7 +437,7 @@ Körpergröße in cm und t für das Alter in Jahren. Schreibe ein Programm, dass
 den Nutzenden die notwendigen Informationen abfragt und dann den Grundumsatz
 auswirft. Dieser wird in Kalorien, richtigerweise in Kilokalorien ausgegeben. Da
 diese Einheit zwar gebräuchlich, aber veraltet ist, gib das Ergebnis auch in
-Kilojoule aus. Eine Kalorie entspricht ungefähr 4,184 Joule. Wenn Du damit ins
+Kilojoule aus. Eine Kalorie entspricht ungefähr 4,184 Joule. Wenn du damit ins
 Stocken kommst, versuche erstmal Testwerte (Bsp. 80 kg, 170 cm und 25 Jahre) den
 Variablen zuzuweisen und die Ergebnisse für Männer und Frauen beide ausgeben zu
 lassen.
@@ -445,29 +445,29 @@ lassen.
 ### Summen
 
 Bitte frage den Benutzer nach einer Zahl. Addiere dann alle Zahlen von 1 bis zur
-Zahl die die Benutzerin Dir angegeben hat und gib das Ergebnis aus. Bekommst Du
+Zahl die die Benutzerin Dir angegeben hat und gib das Ergebnis aus. Bekommst du
 beispielsweise eine 5 übergeben, dann soll die Rechnung $1+2+3+4+5$ lauten.
 
 ### Schach mit ASCII-Art
 
 Gib ein Schachbrett ($8\times8$-Feld) aus. Dabei sollen die weißen Felder mit
 einer 0 dargestellt werden und die schwarzen Felder mit einer `#`. Verwende
-dafür For-Schleifen. Auch hier gilt – weniger Code ist mehr. Wenn Du den Code
+dafür For-Schleifen. Auch hier gilt – weniger Code ist mehr. Wenn du den Code
 fertig hast und die Ausgabe stimmt – nimm Dir Zeit und überlege, ob es nicht
-doch noch eine Lösung gibt, mit der Du das Ergebnis mit einer einfacheren Lösung
+doch noch eine Lösung gibt, mit der du das Ergebnis mit einer einfacheren Lösung
 hinbekommst. Und auch wenn Dir ein erster Lösungsansatz nicht einfällt – Geduld.
 Grübeln und probieren gehört dazu.
 
 ## Variablentypen und Stringspielereien
 
-Inzwischen hast Du schon recht viel mit Variablen gearbeitet. Ist Dir dabei
+Inzwischen hast du schon recht viel mit Variablen gearbeitet. Ist Dir dabei
 aufgefallen, dass bei einem `a = input("Gib was ein: ")` und `a = 1` das erste
 `a` für einen Text steht und das zweite für eine Zahl? In vielen
-Programmiersprachen musst Du bevor Du eine Variable das erste Mal nutzen kann,
-dem Rechner sagen, wie Du diese Variable verwenden willst. Das brauchst Du in
+Programmiersprachen musst du bevor du eine Variable das erste Mal nutzen kann,
+dem Rechner sagen, wie du diese Variable verwenden willst. Das brauchst du in
 Python nicht. Das hat so seine Vor- und Nachteile. Steht eine Variable für einen
 Text, verwendet man sie als sogenannten String, abgekürzt `str`. Bei natürlichen
-Zahlen nennt man sie Integer, abgekürzt `int`. Mit `type(a)` kannst Du Dir
+Zahlen nennt man sie Integer, abgekürzt `int`. Mit `type(a)` kannst du Dir
 ausgeben lassen, wie die Variable verwendet wird. Probiere mal folgenden Code
 aus:
 
@@ -496,7 +496,7 @@ print(number1 + text)
 ```
 
 Du kannst Python auch anweisen, dass Variablen einen bestimmten Typ annehmen.
-Mit `int(a)` sorgst Du dafür, dass a als Zahl behandelt wird und mit `str(a)`,
+Mit `int(a)` sorgst du dafür, dass a als Zahl behandelt wird und mit `str(a)`,
 dass es als Text verwendet wird. Probiere Folgendes aus:
 
 {{ file(name="explore-types.py") }}
@@ -523,7 +523,7 @@ print (text1 + text2)
 
 Jetzt füge vor dem `print` noch ein `text1 = int(text1)` ein und führe den Code
 aus. Da wird es „knallen“, will sagen, es gibt eine Fehlermeldung. Warum ist das
-so? Weil Du Zahlen nicht als Integer behandeln kannst. Mit einem
+so? Weil du Zahlen nicht als Integer behandeln kannst. Mit einem
 
 {{ file(name="compare-types.py") }}
 
@@ -531,7 +531,7 @@ so? Weil Du Zahlen nicht als Integer behandeln kannst. Mit einem
 if isinstance(a, int):
 ```
 
-kannst Du feststellen, ob `a` eine Zahl ist. Oben hattest Du einen einfachen
+kannst du feststellen, ob `a` eine Zahl ist. Oben hattest du einen einfachen
 Taschenrechner gebaut. Der hat zwei Zahlen addiert, die die Benutzer:in
 eingegeben hat. Alles ist gut, bis der Mensch ins Spiel kommt
 
@@ -564,60 +564,61 @@ Interessant ist der zweite Typ. Der nennt sich Bool (`bool`) oder Boolean
 (gesprochen Buhl bzw. Buhleo. Im Deutschen sog. boolesche Werte). Das ist ein
 Gedenken an den amerikanischen Mathematiker George Boole, der im 19. Jahrhundert
 lebte. Dieser Variablentyp kann nur zwischen Wahr und Falsch unterscheiden. Das
-klingt banal, aber Du wirst sehen, dass er sehr praktisch ist und häufig
+klingt banal, aber du wirst sehen, dass er sehr praktisch ist und häufig
 Verwendung findet.
 
 Jetzt wird es ein wenig abstrakt:\
 Nein, das war noch nicht alles. Python kennt noch mehr Variablentypen. Aber an dieser
 Stelle sollen uns die erst einmal genügen. Python versucht den Typ der Variable passend
-für Dich umzuwandeln. Wenn Du also einen String mit einem Integer addierst, würde
+für Dich umzuwandeln. Wenn du also einen String mit einem Integer addierst, würde
 in vielen Sprachen ein Fehler ausgeworfen werden. Python wandelt automatisch den
 Integer in einen String um – und wenn zwei Strings „addiert“ werden, dann hängt Python
 sie einfach hintereinander. Die andere Richtung geht nicht unbedingt. Denn ein String
 kann nur in einen Integer umgewandelt werden, wenn er nur aus Zahlen besteht. Fluch
 und Segen hängen oft nahe bei einander: Auf der einen Seite kann Dir diese automatische
-Umwandlung manch einen Programmabsturz ersparen. Auf der anderen Seite hast Du Deinen
-Code nicht richtig im Griff, sonst hättest Du wohl eher ausdrücklich (wir sagen explizit)
+Umwandlung manch einen Programmabsturz ersparen. Auf der anderen Seite hast du Deinen
+Code nicht richtig im Griff, sonst hättest du wohl eher ausdrücklich (wir sagen explizit)
 die Variable umgewandelt. Will sagen – wenn `a = 1` und `b = "a"` ist, dann ist `a + b = 1a`.
 Denn a wird zu einem String umgewandelt und beide werden kombiniert. Würde aber `b`
 einmal eine Zahl sein, dann würde Python nicht umwandeln, sondern sie addieren. Puh.
 Du müsstest also sicher sagen können, was in den Variablen drin steckt. Sicherer
-ist es in diesem Fall zu schreiben `str(a) + str(b)`. Dann kannst Du Dir sicher sein,
+ist es in diesem Fall zu schreiben `str(a) + str(b)`. Dann kannst du Dir sicher sein,
 was jetzt passiert. Dieses Thema ist anfangs etwas sperrig, aber wir kommen da so
-früh drauf, weil hier echte Untiefen lauern. Wenn Du das Gefühl hast, Du bekommst
+früh drauf, weil hier echte Untiefen lauern. Wenn du das Gefühl hast, du bekommst
 „komische“ Ergebnisse oder der Code läuft einfach nicht, schau Dir immer auch an,
-was die einzelnen Variablen gerade so machen. Wenn Du Dir unsicher bist, definiere
+was die einzelnen Variablen gerade so machen. Wenn du Dir unsicher bist, definiere
 sie explizit, also mit Variablentyp. Keine Sorge, wir werden das Thema noch üben
-und immer wieder darauf zurückkommen. Wichtig ist an dieser Stelle, dass Du schon
+und immer wieder darauf zurückkommen. Wichtig ist an dieser Stelle, dass du schon
 davon gehört hast und versucht, einen Blick dafür zu entwickeln, mit was für einem
-Variablentyp Du es gerade zu tun hast. Im Code kannst Du immer mit `type(Variablenname)`
+Variablentyp du es gerade zu tun hast. Im Code kannst du immer mit `type(Variablenname)`
 auswerfen lassen, wie Python ihn gerade behandelt.
 
 {{ figure(source="/images/kyo-7/SolarpanelBp_a.jpeg", float="start", alt="Solarzellen
  werden mittels Lötbändchen zu Strängen,<br> den sogeannten Strings verbunden") }}
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch Stringspielereien.
-Wie man zwei Strings wie `"ot"` `"to"` kombiniert, hast Du schon gesehen: aus
+Wie man zwei Strings wie `"ot"` `"to"` kombiniert, hast du schon gesehen: aus
 `"ot" + "to"` wird `"otto"`. Das ein String in zwei `""` eingefasst werden muss,
 haben wir noch nicht explizit gesagt, ist Dir aber sicherlich schon aufgefallen.
-Du kannst auch das
-```nehmen, also das Zeichen über der Raute. Beides geht, Du solltest es nur nicht in einem Code mischen. Aber was machst Du nun, wenn Du in einem String sagen wolltest:`print("Und
+du kannst auch das
+```nehmen, also das Zeichen über der Raute. Beides geht, du solltest es nur nicht
+ in einem Code mischen. Aber was machst du nun, wenn du in einem String sagen wolltest:`print("Und
 er sagt:
 "Hallo"")`. Nur zu, Hack das ein. Soviel vorweg – das wird nichts. Denn Python liest das erste und weiß – jetzt geht der String los. Dann kommt das zweite und er denkt, der String ist zu Ende. Und dann kommt etwas, mit er echt nichts anfangen kann – `"Hallo"`.
 Typisch menschlicher Kram halt. Hier gibt es zwei Wege.
 
-Entweder Du schreibst `print("Und er sagt: `Hallo`")` bzw. `print(`Und er sagt:
-"Hallo"`)`. Oder Du sagst ihm, dass das folgende Zeichen nicht in weiter
+Entweder du schreibst `print("Und er sagt: `Hallo`")` bzw. `print(`Und er sagt:
+"Hallo"`)`. Oder du sagst ihm, dass das folgende Zeichen nicht in weiter
 beachtet werden soll, dafür benutzen wir den sogenannten Backslash. Das ist der
-Querstrich beim ß, den Du mit AltGr ansteuerst. Du würdest also schreiben
+Querstrich beim ß, den du mit AltGr ansteuerst. Du würdest also schreiben
 `print("Und er sagt: \"Hallo\"")`. Python liest die ersten Anführungszeichen und
 weiß, der String geht los. Bei den zweiten kommt erst der `\` – da sagt sich
 Python -- nicht verarbeiten, stumpf ausgeben. Wir nennen diesen Vorgang escapen,
-von entkommen oder aussteigen. Und nur damit Du es gesehen hast – man kann auch
+von entkommen oder aussteigen. Und nur damit du es gesehen hast – man kann auch
 mit drei `"` oder ``` arbeiten, um einen String zu definieren. Das funktioniert
 sogar über Zeilen hinweg.
 
-Die Ausgabe von Variablen hast Du schon gesehen, auch die Kombination mit Text.
+Die Ausgabe von Variablen hast du schon gesehen, auch die Kombination mit Text.
 Dafür gibt es einen einfachen und einen eleganten Weg. Der einfache Weg ist
 `print("Inhalt von a: ", a)`. Der ist aber veraltet und wenig elegant. Besser
 ist:
@@ -651,16 +652,16 @@ beispielsweise auch etwas wie ein Datum passend formatieren lässt.
 
 ## Browser, E-Mail und Messenger
 
-Welchen Browser benutzt Du eigentlich? Safari, Chrome, Firefox oder Edge? Wir
-werden uns später noch genauer ansehen, was passiert, wenn Du mit einem Browser
+Welchen Browser benutzt du eigentlich? Safari, Chrome, Firefox oder Edge? Wir
+werden uns später noch genauer ansehen, was passiert, wenn du mit einem Browser
 auf eine Internetadresse zugreifst. An dieser Stelle aber schon einmal soviel –
-Du überträgst immer eine Menge Daten, die viel über Dich verraten. Klar könnte
+du überträgst immer eine Menge Daten, die viel über Dich verraten. Klar könnte
 man jetzt sage, egal, was soll schon jemand damit anfangen. Aber vielleicht
-suchst Du auch mal nach Dingen, die andere nichts angehen, besuchst Seiten, die
+suchst du auch mal nach Dingen, die andere nichts angehen, besuchst Seiten, die
 Unbekannte nichts angehen und vor allem nicht, dass sie Dir später vorgehalten
 werden können. Dir muss immer klar sein – Daten die von Unternehmen gesammelt
 werden können, bleiben im Zweifel dort und gehen dann, wann und auch einmal
-verloren. Vielleicht interessiert Dich jetzt ein Mensch und später möchtest Du
+verloren. Vielleicht interessiert Dich jetzt ein Mensch und später möchtest du
 damit nicht später aufgezogen werden. Um das bildlicher zu machen – stell Dir
 vor, Dein Eltern schauen Dir die ganze Zeit über die Schultern …
 
@@ -669,7 +670,7 @@ richtigen Browser gefunden!") }}
 
 Es gibt Browser, die besonders gerne Daten sammeln und manche auch nach Hause
 schicken. Ebenso gibt es Browser, die anderen Seiten es leichter oder schwerer
-machen, dies zu erkennen, wer Du bist. Aktuell empfehlen wir Dir Brave zu
+machen, dies zu erkennen, wer du bist. Aktuell empfehlen wir Dir Brave zu
 benutzen, da er recht datensparsam ist. Firefox ist auch ganz okay. Abraten
 würden wir Dir klar von Edge und Google Chrome. Brave baut auf Chromium, der
 Open-Source Variante von Google Chrome, auf, ist aber eben
@@ -680,36 +681,36 @@ gilt es dranzubleiben.
 
 E-Mail ist ein ganz großes Thema. Deutlich später wollen wir ebenfalls einmal
 dran zu machen zu schauen, wie das eigentlich so funktioniert. Das ist aber ein
-eigenes und größeres Kapitel. Wir gehen davon aus, dass Du keinen eigenen
+eigenes und größeres Kapitel. Wir gehen davon aus, dass du keinen eigenen
 E-Mail-Server betreust, sondern noch keine E-Mail-Adresse hast oder eine bei den
-bekannten Anbietern. Hier willigst Du teilweise sogar ausdrücklich ein, dass sie
+bekannten Anbietern. Hier willigst du teilweise sogar ausdrücklich ein, dass sie
 Deine E-Mails mitlesen dürfen, um Werbung für Dich zusammenzustellen. Was soll
-da schon schiefgehen … vorab – bevor Du Dir irgendwo ein Konto anlegst und noch
+da schon schiefgehen … vorab – bevor du Dir irgendwo ein Konto anlegst und noch
 minderjährig bist, sprich bitte mit Deinen Eltern darüber! E-Mails zu
 unterhalten kostet Geld. Entweder das wird über Werbung finanziert (wie bei
-Google, GMX und anderen) oder Du zahlst dafür. Dienste wie posteo bieten Dir
+Google, GMX und anderen) oder du zahlst dafür. Dienste wie posteo bieten Dir
 preiswerte E-Mails an, bei denen viel dafür spricht, dass sie nicht mitlesen
 (weil sie ihr Geld eben anders verdienen). Vielleicht sind Deine Eltern bereit,
 Dir das zu bezahlen. Oder sie schenken Dir eine Fördermitgliedschaft bei
 cyber4EDU e. V. und mit dem Mitgliedsbeitrag wird die Arbeit für freie,
-datenschutzkonforme Bildung gefördert. Da bekommst Du auch eine E-Mail-Adresse.
+datenschutzkonforme Bildung gefördert. Da bekommst du auch eine E-Mail-Adresse.
 Der einzige kostenlose Anbieter, den wir derzeit empfehlen können ist
 [disroot.org](https://disroot.org). Der Speicherplatz ist begrenzt, sollte aber
 für die meisten Sachen ausreichen. Neben dem Aspekt des Datenschutzes gibt es
-noch einen anderen, der nicht vergessen werden will: Um so mehr Du
-programmierst, um so mehr wirst Du Dich mit anderen austauschen – und da sehen
+noch einen anderen, der nicht vergessen werden will: Um so mehr du
+programmierst, um so mehr wirst du Dich mit anderen austauschen – und da sehen
 andere immer wieder auch Deine E-Mail-Adresse. Mit einer Adresse von Hotmail
-oder ähnlichen Anbietern läufst Du rum wie mit einer Clownsnase und rosa
-Plüschsocken. Das kannst Du besser (Plüschsocken sind natürlich eigentlich
+oder ähnlichen Anbietern läufst du rum wie mit einer Clownsnase und rosa
+Plüschsocken. Das kannst du besser (Plüschsocken sind natürlich eigentlich
 okay).
 
 Und als Letztes zu den Messengern. Du hast bestimmt schon gehört, dass es da
 gute und weniger gute gibt. Fangen wir gleich mit den Schlusslichtern an –
 WhatsApp oder SMS. Schmeiß das am besten gleich von Deinem Handy runter. Und
-nicht nur löschen – Du musst Dein Konto vorher aktivieren, damit die Deine Daten
-nicht für alle Zeiten behalten. Bei WhatsApp sendest Du jede Telefonnummer in
+nicht nur löschen – du musst Dein Konto vorher aktivieren, damit die Deine Daten
+nicht für alle Zeiten behalten. Bei WhatsApp sendest du jede Telefonnummer in
 Deinen Kontakten zu WhatsApp und damit zu Facebook – selbst, wenn deren
-Inhaberinnen kein WhatsApp haben. Und Du hast die betreffenden Menschen bestimmt
+Inhaberinnen kein WhatsApp haben. Und du hast die betreffenden Menschen bestimmt
 vorher nicht alle gefragt. Das ist nicht okay. Bring lieber Deine Freundinnen
 dazu, vernünftige Messenger zu benutzen. Ja, Telegram fällt da auch aus der
 Liste raus. Signal will leider zur Identifizierung eine Telefonnummer, aber
@@ -717,7 +718,7 @@ davon würden wir zum indest nicht abraten. Auch Threema ist okay. Du wirst
 später lernen, dass dezentrale Strukturen meist besser sind, als zentrale. Bei
 Signal braucht man unbedingt deren Server. Das geht besser. Tauglich sind
 hierfür Konzepte wie von Jabber, XMPP, RocketChat und Matrix. Wir empfehlen an
-dieser Stelle ausdrücklich Matrix – vor allem, weil Du uns da auch finden wirst.
+dieser Stelle ausdrücklich Matrix – vor allem, weil du uns da auch finden wirst.
 Das ist also kein Statement gegen RocketChat oder Jabber. Bei diesen Diensten
 kann man sich seinen eigenen Server aufsetzen. Und bei den Servern kann man dann
 wählen, ob man unter sich bleiben möchte (also nur die Nutzer\*innen des Servers
@@ -727,13 +728,13 @@ Deinen Eltern -- und wenn sie nichts dagegen haben, klick Dir bei beispielsweise
 bei matrix.cyber4edu.org einen kostenlosen Account. Für Matrix gibt es
 verschiedenste Clients, die auf dem PC, im Browser oder auf dem Handy laufen.
 Der bekannteste nennt sich Element. Lade Dir den runter und richte ihn Dir ein.
-Uns findest Du unter
-[@coderdojo:matrix.cyber4edu.org](https://matrix.to/#/@coderdojo:matrix.cyber4edu.org).
+Uns findest du unter
+[@coderdojo:matrix.cyber4edu.org](https://matrix.to/#/@coderdojo:chat.cyber4edu.org).
 
 {{ figure(source="/images/kyo-7/Cyber4EDU_sticker.png", float="end", alt="cyber4EDU Logo") }}
 
 Okay, mit dem richtigen Browser, einer vernünftigen E-Mail-Adresse und dem
-passenden Messenger ausgestattet bist Du von den Noobs erfolgreich einen ganzen
+passenden Messenger ausgestattet bist du von den Noobs erfolgreich einen ganzen
 Schritt hin zu den Nerds gegangen. Du fängst langsam an, Deinen Jogginganzug
 gegen einen Gi (das sind diese Anzüge für den japanischen Kampfsport)
 einzutauschen. Das schaut gleich viel besser aus!
@@ -751,7 +752,7 @@ Zum Steuern von Schleifen lernen wir zwei neue Befehle kennen:
 
 -   `continue`
 
-Diese werden vor allem interessant, wenn Du in einer Schleife eine Bedingung
+Diese werden vor allem interessant, wenn du in einer Schleife eine Bedingung
 gesetzt hast, also eine if-else-Konstruktion. Bei `break` wird die Schleife
 abgebrochen – egal wie viel Schleifendurchläufe eigentlich noch geplant gewesen
 wären.
@@ -790,11 +791,11 @@ while i != 10:
     i = question
 ```
 
-Okay, das Beispiel ist jetzt nicht der Bringer. Aber Du verstehst hoffentlich,
+Okay, das Beispiel ist jetzt nicht der Bringer. Aber du verstehst hoffentlich,
 worum es geht. Eine Vorschleife läuft grundsätzlich ihr Programm stupide ab,
 während die While-Schleife bei jedem Durchlauf die Bedingung des Kopfteils
-prüft. Wenn Du also vor der Schleife schon weißt, wie oft sie durchlaufen werden
-soll, dann ist die For-Schleife meist richtig. Wenn Du das nicht weißt, dann die
+prüft. Wenn du also vor der Schleife schon weißt, wie oft sie durchlaufen werden
+soll, dann ist die For-Schleife meist richtig. Wenn du das nicht weißt, dann die
 While-Schleife. Mit der While-Schleife kann man wunderbar eine endlos-Schleife
 bauen:
 
@@ -805,11 +806,11 @@ while True:
     print("Das so lange weiter, wie die Bedingung wahr ist und sie ist immer wahr.")
 ```
 
-Hier kannst Du entweder mit `Strg+c` bzw. `Control+c` den Ausstieg finden. Das
-ist aber nicht gerade elegant. Mit `break` kannst Du sauber aus der Schleife
-aussteigen. Wenn Du also solche endlos-Scheifen verwendest, musst Du Dir immer
-überlegen, wie Du da wieder rauskommst. Wenn wir mit einer grafischen Oberfläche
-arbeiten, wird das unser Standardeinstieg werden. Ansonsten kannst Du super für
+Hier kannst du entweder mit `Strg+c` bzw. `Control+c` den Ausstieg finden. Das
+ist aber nicht gerade elegant. Mit `break` kannst du sauber aus der Schleife
+aussteigen. Wenn du also solche endlos-Scheifen verwendest, musst du Dir immer
+überlegen, wie du da wieder rauskommst. Wenn wir mit einer grafischen Oberfläche
+arbeiten, wird das unser Standardeinstieg werden. Ansonsten kannst du super für
 so kleine Tools benutzen. Hole Dir nochmal das Programm oben für die
 Konfektionsgrößen hervor. Baue das Programm so um, dass der Benutzer immer
 wieder die Möglichkeit bekommt, die Größen neu ausrechnen zu lassen, bis er
@@ -827,16 +828,16 @@ bitte so, dass möglichst wenig Münzen benötigt werden.
 > And if smells like chicken, it's the wrong side.
 
 Nachdem wir uns eine ganze Zeit mit Software beschäftigt haben, machen wir eine
-Runde Hardware. Am einfachsten dürfte das für Dich sein, wenn Du Dich dafür in
+Runde Hardware. Am einfachsten dürfte das für Dich sein, wenn du Dich dafür in
 einen (Deinem?) lokalen Hackerspace begibst. In Berlin bietet sich der
 familienfreundliche [xHain](https://x-hain.de) an. Wir setzen wie beim
 Programmieren beim Löten keinerlei Vorkenntnisse voraus, da die Teilnehmenden
 unterschiedlich alt sind und dem Thema in der Schule unterschiedliches Gewicht
-beigemessen wird. Es kann also gut sein, dass Du gerade am Anfang gähnst. Keine
+beigemessen wird. Es kann also gut sein, dass du gerade am Anfang gähnst. Keine
 Sorge, wird steigern das Stück für Stück. Aber wir wollen alle mitnehmen.
 
-Zunächst solltest Du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn
-Du noch keine Erfahrung hast, lass Dir ein kleines Stück Lochraster geben und
+Zunächst solltest du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn
+du noch keine Erfahrung hast, lass Dir ein kleines Stück Lochraster geben und
 ein paar alte Bauteile und versuche die, ein- und auszulöten. Wir können hier
 nur bedingt etwas zu erklären, da Dir am besten eine Mentorin kurz zeigt, wie es
 geht. Der Rest ist handwerkliche Fähigkeit, dass muss man also einfach ein
@@ -844,7 +845,7 @@ bißchen selber gemacht haben.
 
 {{ figure(source="/images/kyo-7/Lochraster_loeten.jpg", alt="Lötübungen am Lochraster") }}
 
-Wenn Du damit klar kommst, dann kommt als nächstes, eine LED zum Leuchten zu
+Wenn du damit klar kommst, dann kommt als nächstes, eine LED zum Leuchten zu
 bringen. Lass Dir dafür bitte die passenden Bauteile geben. Für die Mentoren -
 benötigt werden:
 
@@ -879,11 +880,11 @@ ist in Arbeit)
 
 Solche Zeichnungen stellt man technisch mit sogenannten Schaltplänen dar. Dabei
 haben bestimmte Bauelemente fest definierte Zeichen. Die kleine Schaltung, die
-Du Dir zurecht gelötet hast, schaut dann so aus:
+du Dir zurecht gelötet hast, schaut dann so aus:
 
 {{ figure(source="/images/kyo-7/LED-Schaltung.png", alt="LED-Schaltung") }}
 
-Vergleiche das mal mit Deiner Schaltung, wenn Du fertig bist. Widerstände gibt
+Vergleiche das mal mit Deiner Schaltung, wenn du fertig bist. Widerstände gibt
 es viele. Die Stärke wird gemessen in der Einheit Ω (gesprochen Ohm). Wenn man
 das Zeichen Ω nicht hat, kürzt man es mit R (das englische Wort für Widerstand
 ist ´resistor´) ab.
@@ -899,7 +900,7 @@ $$
 
 Äh - wie meinen? Das hört sich erstmal kompliziert an. Wer es mit Zettel und
 Stift mal selbst nachrechnet wird feststellen, dass das kein Hexenwerk ist. Und
-am Ende kannst Du daraus ein kleines Programm machen. Dann geht das beim
+am Ende kannst du daraus ein kleines Programm machen. Dann geht das beim
 nächsten mal ganz fix. Wir wollen den Widerstand vor der LED rauskriegen. Das
 ist der Vorwiderstand. Zunächst müssen wir wissen, wieviel Strom wir da
 eigentlich vernichten wollen. Unsere Batterie liefert 4,5 V. Jetzt müssen wir
@@ -916,18 +917,18 @@ will-die-LED-haben = 1,5 V zu vernichtende Spannung. Jetzt brauchen wir noch den
 Nennstrom der LED. Aus das stünde im Datenblattn, gehe jetzt bitte einfach von
 0,025 Ampere (A) aus. Wir dividieren die zu vernichtende Spannung (1,5 V) durch
 den Nennstrom (0,025 A). Taschenrechner nehmen und nachrechnen. Da kommen 160 Ω
-raus. Wenn Du dann an den Materialschränken im xHain oder einem anderen
-Makerspace schaust, wirst Du sehen, dass es einen 160 Ω - Widerstand nicht gibt.
+raus. Wenn du dann an den Materialschränken im xHain oder einem anderen
+Makerspace schaust, wirst du sehen, dass es einen 160 Ω - Widerstand nicht gibt.
 Man nimmt dann einfach den nächst größeren - denn mehr Widerstand heißt, da
 fließt weniger Strom. Dann ist die LED vielleicht etwas dunkler, aber sie
 überlebt. Der nächst größere Widerstand sind 220 Ω. Die bunten Ringe darauf
-erklären wir Dir beim nächsten Kyo. Damit Du sicher bist, dass Du wirklich den
+erklären wir Dir beim nächsten Kyo. Damit du sicher bist, dass du wirklich den
 richtigen genommen hast - lass Dir mal ein Messgerät zeigen und wie man damit
 umgeht. Da werden nicht genau 220 Ω angezeigt werden, aber so ungefähr 200 bis
-240 Ω. Jetzt weißt Du, wie man so einen Widerstand aussucht. Okay, also brauchst
-Du zwei Daten für die LED und den Strom, den Dir jeweils die Batterie liefert.
-Daraus mach doch mal gleich in ein Programm. Mit der Zeit kannst Du da noch
-andere Werte für andere LEDs reinpacken. Jedenfalls brauchst Du zukünftig dafür
+240 Ω. Jetzt weißt du, wie man so einen Widerstand aussucht. Okay, also brauchst
+du zwei Daten für die LED und den Strom, den Dir jeweils die Batterie liefert.
+Daraus mach doch mal gleich in ein Programm. Mit der Zeit kannst du da noch
+andere Werte für andere LEDs reinpacken. Jedenfalls brauchst du zukünftig dafür
 keinen Taschenrechner mehr. Alles klar soweit? Wenn nicht, nicht schlimm. Deine
 Mentor:innen vor Ort helfen Dir da gerne.
 
@@ -948,13 +949,13 @@ zufällige Zahlen gibt es direkt keinen Befehl in Python. Wir müssten also
 erstmal etwas programmieren, dass zufällige Zahlen auswirft. „Künstlich“
 zufällige Zahlen ausgeben zu lassen, ist gar nicht einfach. Dankenswerterweise
 haben sich andere bereits die Arbeit gemacht und wir können deren Code nutzen.
-Man spricht hier von Bibliotheken beziehungsweise Libraries, die Du in Deinen
+Man spricht hier von Bibliotheken beziehungsweise Libraries, die du in Deinen
 Code einbindest. In Python werden diese Bibliotheken auch Module genannt. Ein
 solch es Modul stellt Dir quasi neue, weitere Befehle zur Verfügung. Ein Prinzip
 von Python ist es, dass Dir die notwendigen Bibliotheken mitgeliefert werden
-(wie man noch weitere findet und einbindet – Du weißt, später). Das Modul für
+(wie man noch weitere findet und einbindet – du weißt, später). Das Modul für
 Zufallszahlen heißt `random` (engl. für _Zufall_). Es gibt zwei Möglichkeiten es
-einzubinden – entweder komplett oder nur den Befehl, den Du wirklich brauchst.
+einzubinden – entweder komplett oder nur den Befehl, den du wirklich brauchst.
 Das passiert ganz einfach:
 
 {{ file(name="import-random.py") }}
@@ -973,11 +974,11 @@ from random import randrange
 
 Warum muss das sein und es wird nicht einfach alles eingebunden, was Python so
 mitliefert? Hinter jeder so einer Bibliothek stecken viele, viele Zeilen Code.
-Um so mehr Du davon einbindest, um so langsamer wird Dein Programm und um so
-mehr Speicher braucht es. Das merkst Du nicht, wenn Du etwas wie random dazu
-lädst. Wenn Du aber 50 solcher Bibliotheken laden würdest, wäre das schon
+Um so mehr du davon einbindest, um so langsamer wird Dein Programm und um so
+mehr Speicher braucht es. Das merkst du nicht, wenn du etwas wie random dazu
+lädst. Wenn du aber 50 solcher Bibliotheken laden würdest, wäre das schon
 weniger gut. Deswegen nutzen wir `import` immer nur für die Teile, die wir
-wirklich brauchen. Und Du ahnst es vielleicht schon – deswegen ist der Weg über
+wirklich brauchen. Und du ahnst es vielleicht schon – deswegen ist der Weg über
 `from <Modul> import <Funktion>` der deutlich vorzugswürdigere.
 
 Zurück zu unserer Aufgabe. Wie erstellen wir jetzt eine Zufallszahl? Wir wollen,
@@ -994,12 +995,12 @@ for i in range(20):
     print(count1)
 ```
 
-Jetzt solltest Du alles haben für unseren Kopfrechentrainer: Weise `count1` eine
+Jetzt solltest du alles haben für unseren Kopfrechentrainer: Weise `count1` eine
 Zufallszahl von 1 bis 100 zu, ebenso `count2`. Sag das dem Benutzer an und frage
 die Benutzerin nach dem Ergebnis. Vergleiche es. Wenn das stimmt, gibt es eine
 neue Aufgabe und wenn es falsch ist, sage das und gib erneut die Möglichkeit,
 ein Ergebnis einzugeben. Diese Gelegenheit erhalten Benutzende so lange, bis das
-Ergebnis passt (wenn Du willst, kann Du sie oder ihn nach drei Fehlversuchen
+Ergebnis passt (wenn du willst, kann du sie oder ihn nach drei Fehlversuchen
 auch „erlösen“ und die richtige Lösung verraten). Dann mal ran an die Tasten.
 
 Das Programm läuft. Aber jetzt wollen wir es um einen Highscore erweitern. Dafür
@@ -1007,7 +1008,7 @@ muss am Anfang die Benutzerin nach dem Namen gefragt werden. Das Spiel läuft so
 lange, bis als Antwort „fertig“ eingegeben wird. Für die Wertung wollen wir ein
 Verhältnis ausrechnen: Merke Dir, wie viele Aufgaben der Benutzende gemacht hat
 und wie oft Fehler auftraten. Wenn die Benutzerin „fertig“ eingibt, wirfst Du
-dieses Ergebnis als Wertung aus. Wenn Du das geschafft hast, kommen wir zum
+dieses Ergebnis als Wertung aus. Wenn du das geschafft hast, kommen wir zum
 nächsten Teil. Jetzt könnten wir uns diese Ergebnisse in einer Liste auf einem
 Blatt aufschreiben – oder …wir verwenden den Variablentyp Liste. Der wird über
 zwei eckige Klammern definiert. Da können wir neue Daten aufstapeln, sie abrufen
@@ -1060,10 +1061,10 @@ erstmal genügen. Jetzt haben wir mit `print(greaterList)` diese Liste
 ausgegeben. Aber was, wenn wir nicht die Liste auf einmal heraushauen wollen,
 sondern jedes Element einzeln. Stell Dir vor, in einer Liste stecken Zahlen.
 Aber bei der Ausgabe soll zu jedem Listenelement noch 100 dazu addiert werden.
-Versuche mal selbst, wie Du es lösen würdest. Wenn Du wissen willst, wie viele
+Versuche mal selbst, wie du es lösen würdest. Wenn du wissen willst, wie viele
 Elemente eine Liste enthält, dann geht das mit `anzahl = len(greaterList)`.
 
-Wenn Du nicht geschmult hast, wird Dein Ergebnis vermutlich so oder ähnlich
+Wenn du nicht geschmult hast, wird Dein Ergebnis vermutlich so oder ähnlich
 ausschauen:
 
 {{ file(name="range-iteration.py") }}
@@ -1104,22 +1105,22 @@ list_of_Numbers = [52, 235, 235, 93]
 [print(i + 100) for i in list_of_Numbers]
 ```
 
-Jetzt solltest Du es alleine hinbekommen, den Highscore noch dazu zu entwickeln.
+Jetzt solltest du es alleine hinbekommen, den Highscore noch dazu zu entwickeln.
 Das Ergebnis – also wie viele falsche im Verhältnis zu der Anzahl der Versuche
-war – speicherst Du einfach mit zum Namen. Wandel das Ergebnis also als String
+war – speicherst du einfach mit zum Namen. Wandel das Ergebnis also als String
 um und kombiniere es zum Namen. Einen Hinweis noch: ein
 
 ```python
 listenname.append("Element dazu hinzugefügt wird")
 ```
 
-setzt eine bereits bestehende Liste voraus. Deshalb musst Du die ganz am Anfang
-erschaffen; wir sagen, initialisieren. Dafür schreibst Du einfach
-`highscore = []`. Versuche die Aufgabe stückchenweise abzuarbeiten. Wenn Du
+setzt eine bereits bestehende Liste voraus. Deshalb musst du die ganz am Anfang
+erschaffen; wir sagen, initialisieren. Dafür schreibst du einfach
+`highscore = []`. Versuche die Aufgabe stückchenweise abzuarbeiten. Wenn du
 nicht zu Rande kommst – gar nicht schlimm. Nicht verzweifeln, sondern lass uns
 bei einer Videositzung gemeinsam drüber sprechen. Wir stupsen Dich dann an dem
-Punkt in die richtige Richtung, an dem Du stecken bleibst oder holen Dich aus
-der falschen Abbiegung zurück auf den richtigen Weg. Wenn Du da Dein Problem
+Punkt in die richtige Richtung, an dem du stecken bleibst oder holen Dich aus
+der falschen Abbiegung zurück auf den richtigen Weg. Wenn du da Dein Problem
 nicht vor der Gruppe besprechen magst (was an sich besser ist, weil alle dann
 was lernen), dann gehen wir mit Dir gerne auch einen Breakoutroom.
 
@@ -1137,9 +1138,9 @@ lassen. An dieser Stelle wollen wir Dir ein Buch empfehlen: „Per Anhalter durc
 die Galaxis“ bzw. im Original „The Hitchhiker’s Guide to the Galaxy“ von Douglas
 Adams. Es handelt sich um eine Trilogie in fünf Bänden. Wenn Dein Englisch gut
 genug ist, lies es im Original. Sonst halt in Deutsch. Zumindest der erste Band
-ist Pflichtlektüre, den Rest willst Du aber auch gelesen haben. Viele Witze
-unter Nerds lassen sich ohne diese Literatur nicht verstehen. Falls Du schon
-alle fünf Bände kennen solltest und im Original gelesen hast, solltest Du Dir in
+ist Pflichtlektüre, den Rest willst du aber auch gelesen haben. Viele Witze
+unter Nerds lassen sich ohne diese Literatur nicht verstehen. Falls du schon
+alle fünf Bände kennen solltest und im Original gelesen hast, solltest du Dir in
 einer Bibliothek die BBC-Fernsehserie besorgen.
 
 {{ figure(source="/images/kyo-7/Matrix-logo.png", float="end", alt="Matrix") }}
@@ -1153,13 +1154,13 @@ englischen) Untertiteln auf Englisch.
 ## Calc like an Egyptian
 
 Kennst Du das Lied „Walk Like an Egyptian“ von The Bangles? Okay, die Videos
-sind wirklich schwer auszuhalten. Aber die Musik ist immer noch gut. Wenn Du es
+sind wirklich schwer auszuhalten. Aber die Musik ist immer noch gut. Wenn du es
 nicht kennst, such Dir das mal raus und höre es Dir. Wir wollen aber jetzt
 weniger Musik hören wie die Ägypter, sondern rechnen wie diese. Die Ägypter
 hatten wie die Römer kein Stellenwertzahlensystem. Stellenwas? Also, bei uns ist
 klar, dass die erste Stelle die „Einer“, die zweite die „Zehner“, die dritte
 Stelle die „Hunderter“ sind. Wir steigen jetzt nicht weiter auf die Zahlen ein,
-sondern schauen uns im Vergleich die römischen Zahlen an, die Du bestimmt
+sondern schauen uns im Vergleich die römischen Zahlen an, die du bestimmt
 kennst. Das ist eine III eine 3, also die dritte Stelle gehört noch zum Einer.
 Bei XXX ist das aber nicht so. Der große Nachteil ist, dass schriftliches
 Multiplizieren und Dividieren damit nicht möglich ist. Trotzdem haben die
@@ -1171,19 +1172,19 @@ Blatt Papier zu nehmen und nachzuvollziehen, wie damals schriftlich
 Multipliziert wurde. Wenn Dir das klar ist, dann versuche das bitte in einen
 Code zu packen - aber dabei die gleichen Beschränkungen zu verwenden, unter
 denen die Ägypter das realisiert haben. Erlaubt ist also nur addieren und ja,
-ein klein bißchen subtrahieren wirst Du wohl brauchen. Du kannst bereits alles,
+ein klein bißchen subtrahieren wirst du wohl brauchen. Du kannst bereits alles,
 um die Aufgabe zu bewältigen, aber da muss man schon unter Umständen etwas
 knobeln. Also wirft nicht vorschnell das Handtuch, das grübeln, gehört dazu. Das
 massiert Dein Hirn und hält es schön geschmeidig. Es gibt viele Wege, die hier
 nach Kairo führen. Bringt Deinen Code also an einem Donnerstag mit und zeig mal,
-wie Du es gelöst hast. Vielleicht haben es andere genau so gemacht, vielleicht
-lernst Du neue Wege kennen. Und falls Du es nicht hinbekommst - das ist nicht
+wie du es gelöst hast. Vielleicht haben es andere genau so gemacht, vielleicht
+lernst du neue Wege kennen. Und falls du es nicht hinbekommst - das ist nicht
 schlimm und sollte Dir auf keinen Fall peinlich oder so sein. Am meisten lernt
 man aus Fehlern, dazu gehört auch, mal stecken zu bleiben. Oft sind es keine
 Steine auf dem Weg, der einen daran hindert, das Ziel zu erreichen, sondern nur
-Sand zwischenn den Zehen, der reibt. Lass uns gemeinsam darauf schauen, wo Du
+Sand zwischenn den Zehen, der reibt. Lass uns gemeinsam darauf schauen, wo du
 stehen geblieben bist, und wir helfen Dir, die richtige Richtung zu finden. Sei
-Dir sicher, Du wärst nicht der oder die erste. Und falls Dir das sehr gut von
+Dir sicher, du wärst nicht der oder die erste. Und falls Dir das sehr gut von
 der Hand ging, dann stürze Dich gleich noch auf die Multiplikation. Das oder die
 Programme sollten so sein, dass zwei Zahlen eingegeben werden können und das
 Programm rechnet das Ergebnis aus.
@@ -1191,7 +1192,7 @@ Programm rechnet das Ergebnis aus.
 ## Funktionen
 
 So langsam wird Dein Code größer. Das verlangt nach besserer Strukturierung. Und
-Du wirst an den Punkt kommen, an dem Du dieselben Codestücke mehrfach brauchst.
+du wirst an den Punkt kommen, an dem du dieselben Codestücke mehrfach brauchst.
 Für beides helfen Funktionen. Eine Funktion hat einen Namen, unter dem sie
 aufgerufen wird und sie kann (muss aber nicht!) Parameter mitbekommen und kann
 auch Ergebnisse zurückgeben. Das schauen wir uns gleich mal im Code an:
@@ -1253,20 +1254,20 @@ def calc(a,b):
 print(calc(5, 4))
 ```
 
-Solche Funktionen haben – in Zusammenhang mit den Klassen, die Du noch
+Solche Funktionen haben – in Zusammenhang mit den Klassen, die du noch
 kennenlernen wirst – eine andere wichtige Funktion: Wenn der Code richtig groß
 wird, entsteht ein ganz anderen Problem. Windows 7 hat beispielsweise circa 40
-Millionen Zeilen Code. Stell Dir vor, dass Du einen Fehler entdeckst – Du hast
+Millionen Zeilen Code. Stell Dir vor, dass du einen Fehler entdeckst – du hast
 an einer Stelle gemerkt, dass eigentlich Integers addiert werden müssten, in
 Wirklichkeit aber String aneinander gereiht werden. Auf die Variablen kann aber
-unter Umständen vielfach im Code zurückgegriffen werden. Jetzt kannst Du ein
+unter Umständen vielfach im Code zurückgegriffen werden. Jetzt kannst du ein
 bisschen oben drüber und unten drunter schauen, ob es einen Fall gibt, in dem
 die Behandlung als String richtig ist und die Behandlung als Integer fatal wäre.
 Eine Fehlerkorrektur an einer Stelle kann also Auswirkungen an einer anderen
 Stelle haben und dabei die Situation verschlimmbessern. Bei 40 Millionen Zeilen
 Code kann das niemand mehr überschauen. Funktionen und Klassen haben hier einen
 großen Vorteil – Variablen, die dort definiert hattest, gelten nur innerhalb
-dieser Funktion und können von außen nicht beeinflusst werden. Du kannst also in
+dieser Funktion und können von außen nicht beeinflusst werden. du kannst also in
 einer Funktion etwas „reparieren“ und Dir sicher sein, dass es keine Effekte auf
 den Code außerhalb dieser hat (sogenannte Seiteneffekte). Die praktische
 Bedeutung ist also immens. Um das konkreter zumachen, hier ein Beispiel. Bitte
@@ -1286,12 +1287,12 @@ print(a)
 print(c)
 ```
 
-Wenn Du das Programm startest, wird ein Fehler ausgeworfen. Da hast Du nichts
+Wenn du das Programm startest, wird ein Fehler ausgeworfen. Da hast du nichts
 falsch gemacht, dass muss so sein. Denn mit `print(a)` soll `a` ausgegeben
 werden, welches aber im Hauptprogramm gar nicht definiert ist. `c` ebenso wenig.
 Kommentiere mal die einzelnen Print-Zeilen aus und probiere, wann es läuft. Wenn
-Du das a aus der Funktion zurückgeben wolltest, müsstest Du es in das `return`
-aufnehmen. Aber auch nur in der Ausgabe kannst Du es abrufen. Würdest Du das
+du das a aus der Funktion zurückgeben wolltest, müsstest du es in das `return`
+aufnehmen. Aber auch nur in der Ausgabe kannst du es abrufen. Würdest du das
 Ergebnis weiterverwenden wollen, dann wäre so etwas denkbar:
 
 ```python
@@ -1316,27 +1317,27 @@ verwenden.
 
 ### Übungen {#übungen-1 .unnumbered}
 
-Als Erstes nimmst Du Dir jetzt bitte den Konfektionsgrößenrechner und packst die
-Berechnung in eine Funktion. Die Abfrage an die Benutzenden lässt Du im
+Als Erstes nimmst du Dir jetzt bitte den Konfektionsgrößenrechner und packst die
+Berechnung in eine Funktion. Die Abfrage an die Benutzenden lässt du im
 Hauptprogramm stehen.
 
-Und weil es so schön war, nimmst Du Dir das vorherige Spiel. Überlege Dir bitte,
-wie Du mit Funktionen das Ganze übersichtlicher gestalten könntest. Dabei sollte
+Und weil es so schön war, nimmst du Dir das vorherige Spiel. Überlege Dir bitte,
+wie du mit Funktionen das Ganze übersichtlicher gestalten könntest. Dabei sollte
 zumindest das Thema Highscore in einer Funktion ausgelagert werden.
 
 ## Jetzt knallt ’s
 
 Du hast ja bereits gesehen, dass Dein Code abstürzen kann. Meist hat das zwei
-Ursachen – entweder Du hast einen Fehler gemacht oder der Benutzer hat Dinge
+Ursachen – entweder du hast einen Fehler gemacht oder der Benutzer hat Dinge
 eingegeben, die an dieser Stelle da nicht hingehören. Dazu zählen beispielsweise
 Buchstaben, wenn man nur Zahlen erwarten dürfte. Streng genommen ist das aber
-auch Dein Fehler, denn Du musst immer damit rechnen, dass Benutzende aus
+auch Dein Fehler, denn du musst immer damit rechnen, dass Benutzende aus
 Versehen oder aus Böswilligkeit Dinge eingeben, die Mist sind. Solche Fehler
 gibt es eine Fehlerbehandlung. In Python heißt das _try-except_, aus anderen
 Programmiersprachen wird Dir der Ausdruck `catch` (engl. fangen) über den Weg
 laufen. Das Prinzip ist einfach:
 
-Was passiert hier? Im try-/Versuchs-Teil Du wirst nach einer Zahl gefragt. Dann
+Was passiert hier? Im try-/Versuchs-Teil du wirst nach einer Zahl gefragt. Dann
 versucht er die Variable, der die Benutzereingabe zugewiesen wurde, in einen
 Integer umzuwandeln. Liegt kein Integer vor, würde der Code jetzt abstürzen.
 (Probier das einfach mal ohne try-except aus.) Dann springt er in den
@@ -1347,8 +1348,8 @@ bauen und die Ausnahmebehandlung soll uns dabei helfen. Das heißt auch, dass wi
 den Fehler möglichst gut einkreisen wollen. Also lieber mehrere
 try-except-Funktionen verwenden. Besser wäre schon:
 
-Wenn es zum except-Teil kommt, weißt Du jetzt, in welcher Zeile das Problem
-auftritt. Aber, das, was wir hier sehen, ist immer noch nicht so, wie Du es
+Wenn es zum except-Teil kommt, weißt du jetzt, in welcher Zeile das Problem
+auftritt. Aber, das, was wir hier sehen, ist immer noch nicht so, wie du es
 verwenden solltest. Dieser kurze Code soll Dir das Problem zeigen (nicht
 abtippen!):
 
@@ -1362,8 +1363,8 @@ while True:
         print("Fehler!")
 ```
 
-Hier kommst Du regelmäßig nicht mehr aus dem Programm raus. Das Problem ist,
-dass Du mit Strg-C den Code nicht gleich abbrechen kannst. Nicht gut. Deshalb
+Hier kommst du regelmäßig nicht mehr aus dem Programm raus. Das Problem ist,
+dass du mit Strg-C den Code nicht gleich abbrechen kannst. Nicht gut. Deshalb
 gewöhne Dir bitte an:
 
 {{ file(name="failsave.py") }}
@@ -1382,8 +1383,8 @@ quick-and-dirty-Variante, um es jetzt nicht zu überladen. Das ist kein guter
 Stil, aber kann hilfreich sein:
 
 Wir kommen im nächsten Kyo darauf zurück und werden das Thema vertiefen. Jetzt
-bist Du dran: Bitte nimm Dir das Programm für Kopfrechenübungen wieder vor, dass
-Du gerade geschrieben hast. Sichere mit try-except ab, dass nur sinnvolle
+bist du dran: Bitte nimm Dir das Programm für Kopfrechenübungen wieder vor, dass
+du gerade geschrieben hast. Sichere mit try-except ab, dass nur sinnvolle
 Eingaben den Benutzenden verarbeitet werden. Weise die Benutzerin darauf hin,
 wenn eine Eingabe keinen Sinn ergibt. Gibt dabei dem Benutzer unendlich viele
 Gelegenheiten, eine sinnvolle Eingabe (also einen Integer) zu machen. Dann mal
@@ -1391,7 +1392,7 @@ ran an die Tasten.
 
 ## Hilfen
 
-Zunächst einmal kannst Du anderen helfen, wenn Du Code schreibst, ihn lesbar zu
+Zunächst einmal kannst du anderen helfen, wenn du Code schreibst, ihn lesbar zu
 machen. Dafür verwendet man Kommentare. Einen Kommentar wertet Python nicht aus.
 Er ist „nur“ für den Mensch hinter dem Code.
 
@@ -1415,15 +1416,15 @@ die Funktion, welche Parameter erwartet sie, was gibt sie zurück?
 Daneben kann man Kommentar super nutzen, um Teile des Codes kurz nicht zu
 verwenden, ohne sie gleich löschen zu müssen. PyCharm macht es Dir da einfach:
 Markiere den entsprechenden Code und gib Strg+\# ein und der Code wird
-auskommentiert. Machst Du das mit auskommentierten Code, wird er wieder aktiv.
+auskommentiert. Machst du das mit auskommentierten Code, wird er wieder aktiv.
 
 {{ figure(source="/images/kyo-7/help-2444110_1280_a.png", float="end", alt="Dir wird geholfen!") }}
 
-Wo kannst Du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst
+Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst
 natürlich in unserem Matrix-Kanal. Ansonsten empfehlen wir Dir diese
 Internet-Seiten:
 
--   Falls Du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes
+-   Falls du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes
     empfehlen:
 
     -   als Anfängerlektüre: Hauke Fehr, \<Let`s code\> Python
@@ -1434,7 +1435,7 @@ Internet-Seiten:
         Programmieren trainieren
 
 Viele Bibliotheken sind da gut ausgestattet. Schau da mal vorbei. Für die
-Berliner – welche Bibliothek was hat, kannst Du Dir aus
+Berliner – welche Bibliothek was hat, kannst du Dir aus
 [voebb.de](https://voebb.de) anschauen. Gerade die Berliner Stadtbibliothek in
 der Breite Straße, Nähe Alexanderplatz ist außergewöhnlich gut ausgestattet.
 
@@ -1445,24 +1446,24 @@ Als Webseiten empfehlen wir:
 Die Liste werden wir noch erweitern.
 
 Foren und Mailinglisten können sehr lehrreich sein, jedenfalls wenn es die
-richtigen sind. Also um sowas wie gute-frage.de machst Du bitte einen weiten
+richtigen sind. Also um sowas wie gute-frage.de machst du bitte einen weiten
 Bogen. Bitte halte Dich in solchen Foren und Mailinglisten an die Netiquette;
 ein höflicher Umgangston, ein Bitte und Danke, sollten da wie im „echten“ Leben
-auch verwendet werden. Bevor Du dort etwas postet: Bitte lies eine Zeit lang
-mit, um so ein Gefühl für die Umgebung dort zu bekommen. Bevor Du eine Frage
+auch verwendet werden. Bevor du dort etwas postet: Bitte lies eine Zeit lang
+mit, um so ein Gefühl für die Umgebung dort zu bekommen. Bevor du eine Frage
 stellst – bitte immer vorher mit einer Suchmaschine und insbesondere im
 betreffenden Forum schauen, ob die Frage schon gestellt und beantwortet wurde.
 Es ist wirklich lästig, wenn die gleiche Frage das zehnte Mal gestellt wird,
 weil der- oder diejenige einfach zu faul war, vorher zu suchen. Falls Dir
-Mailinglisten nichts sagen: Du trägst Dich dort mit Deiner E-Mail-Adresse ein.
-Schreibst Du eine E-Mail an die Mailingliste, kriegen sie alle, die sich dort
-eingetragen haben und Du bekommst umgekehrt auch alle Antworten. Meist haben die
+Mailinglisten nichts sagen: du trägst Dich dort mit Deiner E-Mail-Adresse ein.
+Schreibst du eine E-Mail an die Mailingliste, kriegen sie alle, die sich dort
+eingetragen haben und du bekommst umgekehrt auch alle Antworten. Meist haben die
 auch ein Archiv, in dem man die alten Posts nachlesen kann. Folgende Foren und
 Mailinglisten würden wir an dieser Stelle empfehlen:
 
 -   Kommt bald …
 
-Wenn Du Bücher, Mailinglisten oder anderes gefunden hast, bei dem Du denkst,
+Wenn du Bücher, Mailinglisten oder anderes gefunden hast, bei dem du denkst,
 dass die den anderen helfen – behalte das bitte nicht für Dich, sondern teile es
 mit uns. Und wir schauen, ob wir es ins Script bzw. Homepage aufnehmen.
 
@@ -1470,7 +1471,7 @@ mit uns. Und wir schauen, ob wir es ins Script bzw. Homepage aufnehmen.
 
 Mit Turtle stellt Python Dir ein kleines Zeichenprogramm zur Verfügung, was für
 Programmieranfänger gedacht ist. Das ist super für erste Übungen. Es kann sein,
-dass Du dafür noch eine Bibliothek installieren musst. Das kannst Du aber leicht
+dass du dafür noch eine Bibliothek installieren musst. Das kannst du aber leicht
 feststellen. Schreib einfach:
 
 ```python
@@ -1478,33 +1479,33 @@ import turtle
 ```
 
 und starte das. Wenn es keinen Fehler gibt – super. Wenn es einen Fehler gibt –
-wenn Du mit Deinem Betriebssystem schon besser klarkommst, dann kannst Du das
+wenn du mit Deinem Betriebssystem schon besser klarkommst, dann kannst du das
 mit „pip install turtle“ nachinstallieren. Wenn das nicht der Fall ist – nicht
-schlimm. An einem Donnerstagabend helfen wir Dir beim CoderDojo. Falls Du jetzt
+schlimm. An einem Donnerstagabend helfen wir Dir beim CoderDojo. Falls du jetzt
 nicht weiterkommst, lies im nächsten Kapitel weiter und komme auf Turtle zurück,
-nach Du Unterstützung bekommen hast.
+nach du Unterstützung bekommen hast.
 
 -   Der Teil Turtle ist im Entstehen. Bitte habe noch etwas Geduld.
 
 ## Test
 
-Der Weißgurt ist zum Greifen nahe. Schaffst Du die folgenden Fragen
+Der Weißgurt ist zum Greifen nahe. Schaffst du die folgenden Fragen
 beziehungsweise Aufgaben?
 
--   Schreibe das Spiel „Galgenmännchen“. Falls Du es nicht kennst, lies Dir
+-   Schreibe das Spiel „Galgenmännchen“. Falls du es nicht kennst, lies Dir
     bitte den entsprechenden Wikipedia-Artikel durch. Lege eine Liste mit
     mindestens 20 Wörtern an, aus der für jedes Spiel ein zufälliges Wort
     ausgewählt wird. Der Spieler sieht die Anzahl der Buchstaben und kann immer
     einen Buchstaben raten. Fehlerhafte geratene Buchstaben werden in einer
     Zeile aufgezeigt, richtig geratene in das Lösungswort eingesetzt. Kommt es
     zu einem Fehler, wird in ASCII-Art ein Galgenmännchen in 15 Stufen
-    gezeichnet. Wenn es Dir lieber ist, kannst Du das Galgenmännchen auch mit
+    gezeichnet. Wenn es Dir lieber ist, kannst du das Galgenmännchen auch mit
     turtle zeichnen.
 
 -   Was ist der einzige Zweck der Erde?
 
--   Schreibe eine Funktion, mit der Du mithilfe der Leibniz-Formel Pi
-    berechnest. Dabei kannst Du von folgender Berechnung ausgehen:
+-   Schreibe eine Funktion, mit der du mithilfe der Leibniz-Formel Pi
+    berechnest. Dabei kannst du von folgender Berechnung ausgehen:
 
     $$\pi = \frac{4}{1} - \frac{4}{3} - \frac{4}{5} - \frac{4}{7} - \frac{4}{9}$$
 
@@ -1524,9 +1525,9 @@ beziehungsweise Aufgaben?
 
 -   Was ist die halbe Wahrheit?
 
-Falls Du an einer Aufgabe festhängst – hei, kein Problem. Lass uns gemeinsam
-drauf schauen, woran es hakt. Du schaffst das! Und falls Du bei den
-Nicht-Programmieraufgaben nicht weiterkommst, lehnst Du Dich entspannt zurück
+Falls du an einer Aufgabe festhängst – hei, kein Problem. Lass uns gemeinsam
+drauf schauen, woran es hakt. Du schaffst das! Und falls du bei den
+Nicht-Programmieraufgaben nicht weiterkommst, lehnst du Dich entspannt zurück
 und nimmst Dir unsere Empfehlungen unter Kultur vor.
 
 Alles geschafft? Wenn ja, dann **Herzlichen Glückwunsch**. Du bist bereit für
@@ -1545,33 +1546,33 @@ Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
     Kombination mit der for-Schleife funktioniert. Der erste Wert steht für den
     Startwert, der zweite für den Endwert und der dritte für die Schrittweite.
 
--   while: hast Du als Schleife mit Bedingung verwendet.
+-   while: hast du als Schleife mit Bedingung verwendet.
 
--   Mit break und continue kannst Du Schleifen besser steuern.
+-   Mit break und continue kannst du Schleifen besser steuern.
 
 -   input("foo"): Liest eine Benutzerineingabe von der Kommandozeile ein.
 
 -   if / elif / else: Wenn / dann / sonst - Bedingungen
 
--   Die Stringformatierung f"foo {bar}" hast Du schon verwendet.
+-   Die Stringformatierung f"foo {bar}" hast du schon verwendet.
 
 -   Du kennst jetzt die Rechenoperationen +, -, /, //, \*, \*\* und %.
 
 -   Du hast die Datentypen String (str) für Zeichen, Integer (int) für ganze
     Zahlen und Float (float) für Gleitkommazahlen und kennengelernt.
 
--   Mit [foo] kannst Du schon Listen erzeugen. Und mit list.append hast Du
+-   Mit [foo] kannst du schon Listen erzeugen. Und mit list.append hast du
     Elemente einer Liste hinzugefügt.
 
--   def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst Du
+-   def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst du
     Werte zurückgeben.
 
 -   try / except hat Dir eine erste Einführung im Abfangen von Fehlern gegeben.
 
--   Mit `from <Modul> import <Funktion>` hast Du die erste Bibliothek eingelesen
+-   Mit `from <Modul> import <Funktion>` hast du die erste Bibliothek eingelesen
     und gleich mit `from random import randrange` Zufallszahlen generiert.
 
--   Kommentare kannst Du mit drei Hochkommata oder \# schreiben.
+-   Kommentare kannst du mit drei Hochkommata oder \# schreiben.
 
--   Und nicht zuletzt kennst Du die Antwort auf alle Fragen und weißt, ob Du die
+-   Und nicht zuletzt kennst du die Antwort auf alle Fragen und weißt, ob du die
     blaube oder die rote Pille nehmen sollst.

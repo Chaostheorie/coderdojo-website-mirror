@@ -35,7 +35,8 @@ sprechen dort regelmäßig über die Digitalisierung der Bildung.
 {{ figure(source="https://dect42.de/images/bengoshi.jpg", float="end", alt="bengoshi") }}
 
 Kai Kobschätzki (/bengoshi) war im zivilen Leben über zehn Jahre als
-Rechtsanwalt mit den Schwerpunkten Steuer- und Gesellschaftsrecht tätig. Aktuell
+Rechtsanwalt mit den Schwerpunkten Steuer- und Gesellschaftsrecht tätig, weshalb
+Begriff wie ERP, Legal Tech und Legal Design bengoshi sofort triggern. Aktuell
 ist er juristischer Referent bei der Berliner Beauftragten für Datenschutz und
 Informationsfreiheit.
 
@@ -48,7 +49,7 @@ Er ist wie derMicha Mitglied im Berliner Hacker- und Makerspace
 [xHain](https://x-hain.de) und ebenfalls Gründungsmitglied bei
 [cyber4EDU](https://cyber4edu.org).
 
-## Und Du?
+## Und du?
 
-Hast Du Lust, bei uns mitzumachen? Neue Konzepte und Ideen auszuprobieren? Nur
+Hast du Lust, bei uns mitzumachen? Neue Konzepte und Ideen auszuprobieren? Nur
 zu, melde Dich dann bei uns!
