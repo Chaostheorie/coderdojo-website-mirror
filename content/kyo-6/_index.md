@@ -607,23 +607,22 @@ rechts und `w` für rauf. Natürlich sollte diese Spielerin auch nicht vom
 Spielfeld fallen dürfen. Und du solltest Dir überlegen, ob du Code
 wiederverwendbar machst, in dem du ihn in Funktionen auslagerst.
 
-== Debugger
+Das ist vor allem Schreibarbeit. Nicht nur wegen Corona ist es nicht immer
+einfach, sich mit anderen zu treffen. Cool wäre doch, wenn wir jetzt die zweite
+Spielerin über das Netzwerk gesteuert werden könnte. Das machen wir als
+übernächstes. Vorher kommen noch zwei weitere Blöcke.
 
-> "Außerdem müssen wir offen sagen: [...] Programmieren lernen tut weh, weil
-> jeder daran scheitert, scheitert, scheitert - bis der Code funktioniert."
->
-> [Prof. Dr. Doris Aschenbrenner](https://www.golem.de/news/informatik-professorin-im-portraet-programmieren-lernen-tut-weh-2110-160267.html)
-> Professorin für Maschinenbau / Entwicklung: Design und Simulation an der
-> Hochschule Aalen
+## Kultur II.
 
-Wenn du bis hierin gekommen bist, wirst du es schon erlebt haben - der Code will
-nicht laufen. Meist verbringt man mit der Fehlersuche mindestens soviel Zeit wie
-mit dem eigentlichen Schreiben. Programmieren - nicht nur lernen - tut also
-immer auch ein bisschen weh. Es lohnt sich trotzdem, weil es ein großartiges
-Gefühl ist, wenn es dann doch irgendwann läuft. Es gibt Werkzeuge, mit denen man
-aber den Schmerz minimieren kann. Bug ist Dir sicherlich ein Begriff. Das steht
-für einen Fehler. Fehler beseitigen nennt man debuggen und Programme, die einem
-dabei helfen, debugger. Wie setzt du in PyCharm einen Debugger ein?
+kommt...
+
+## erste Begriffe für Netzwerktechnik
+
+kommt...
+
+## mqtt
+
+kommt...
 
 > War es das schon mit dem Gelbgurt? Mitnichten! Aber wir erarbeiten gerade das
 > Programm. Es lohnt sich immer wieder vorbeizukommen, da wir die Seite Stück
