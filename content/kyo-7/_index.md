@@ -556,7 +556,7 @@ print(type(a))
 ```
 
 Der erste Typ nennt sich Float (`float`) und ist für sogenannte
-Gleitkommazahlen. Spätestens wenn Du dividierst oder mit Prozenten arbeitest,
+Gleitkommazahlen. Spätestens wenn du dividierst oder mit Prozenten arbeitest,
 tauchen sie auf. Hier gibt es aber echte Untiefen, da Computer nicht so rechnen,
 wie wir das erwarten. Auf das Thema werden wir noch mehrfach zurückkommen.
 
@@ -788,8 +788,9 @@ ist:
 ```python
 i = 0
 while i != 10:
-    question = input("Rate die Abbruchbedingung: ")
-    i = question
+    i = int(input("Rate die Abbruchbedingung: "))
+print("Erfolgreich geraten!")
+
 ```
 
 Okay, das Beispiel ist jetzt nicht der Bringer. Aber du verstehst hoffentlich,
@@ -816,6 +817,38 @@ so kleine Tools benutzen. Hole Dir nochmal das Programm oben für die
 Konfektionsgrößen hervor. Baue das Programm so um, dass der Benutzer immer
 wieder die Möglichkeit bekommt, die Größen neu ausrechnen zu lassen, bis er
 `quit` schreibt.
+
+## Debugger
+
+> "Außerdem müssen wir offen sagen: [...] Programmieren lernen tut weh, weil
+> jeder daran scheitert, scheitert, scheitert - bis der Code funktioniert."
+>
+> [Prof. Dr. Doris Aschenbrenner](https://www.golem.de/news/informatik-professorin-im-portraet-programmieren-lernen-tut-weh-2110-160267.html)
+> Professorin für Maschinenbau / Entwicklung: Design und Simulation an der
+> Hochschule Aalen
+
+Wenn du bis hierin gekommen bist, wirst du es schon erlebt haben - der Code will
+nicht laufen. Meist verbringt man mit der Fehlersuche mindestens soviel Zeit wie
+mit dem eigentlichen Schreiben. Programmieren - nicht nur lernen - tut also
+immer auch ein bisschen weh. Es lohnt sich trotzdem, weil es ein großartiges
+Gefühl ist, wenn es dann doch irgendwann läuft. Es gibt Werkzeuge, mit denen man
+aber den Schmerz minimieren kann. Bug ist Dir sicherlich ein Begriff. Das steht
+für einen Fehler. Fehler beseitigen nennt man debuggen und Programme, die einem
+dabei helfen, debugger. Wie setzt du in PyCharm einen Debugger ein?
+
+Nimm Dir mal das obigen Programm control-while-loop.py. Statt Run startest du es
+jetzt mal in PyCharm unter dem Menüpunkt Run mit Debug. Da passiert jetzt
+erstmal nicht viel. Jetzt legst du dir vorher einen Stoppunkt fest, am besten
+auf Zeile 3, also die mit dem input. Jetzt startetst du nochmal mit debug.
+Huch - jetzt zeigt er dir an, welchen Wert i beim Auftreffen des Stopppunktes
+hat. Das kann super praktisch sein, weil du so sehen kannst, wie sich Variablen
+verändern. Du kannst mit F9 oder in dem du diesen weiterauführen lassen.
+Versuche bei den Programmen, die du ab jetzt schreibst, wenn du festhängst, mal
+mit diesen Stopppunkten zu spielen. Es lohnt sich, für den Debugger ein Gefühl
+zu entwickeln. Du wirst sehen, dass er ein mächtiges Werkzeug sein kann, um
+Fehler zu finden. Und wenn bei gemeinsamen Sitzungen kommt - wirf mal den
+Debugger an und setze dort mal einen Stopppunkt - weißt du jetzt schon, was
+gemeint ist.
 
 ## Münzwechsler
 
