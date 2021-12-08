@@ -617,8 +617,7 @@ Wie man zwei Strings wie `"ot"` `"to"` kombiniert, hast du schon gesehen: aus
 `"ot" + "to"` wird `"otto"`. Das ein String in zwei `""` eingefasst werden muss,
 haben wir noch nicht explizit gesagt, ist Dir aber sicherlich schon aufgefallen.
 du kannst auch das
-
-````nehmen, also das Zeichen über der Raute. Beides geht,
+\`\`\` nehmen, also das Zeichen über der Raute. Beides geht,
 du solltest es nur nicht in einem Code mischen. Aber was machst du nun, wenn du in einem String sagen wolltest:`print("Und
 er sagt:
 "Hallo"")`. Nur zu, Hack das ein. Soviel vorweg – das wird nichts. Denn Python liest das erste und weiß – jetzt geht der String los. Dann kommt das zweite und er denkt, der String ist zu Ende. Und dann kommt etwas, mit er echt nichts anfangen kann – `"Hallo"`.
@@ -1508,10 +1507,7 @@ weil der- oder diejenige einfach zu faul war, vorher zu suchen. Falls Dir
 Mailinglisten nichts sagen: du trägst Dich dort mit Deiner E-Mail-Adresse ein.
 Schreibst du eine E-Mail an die Mailingliste, kriegen sie alle, die sich dort
 eingetragen haben und du bekommst umgekehrt auch alle Antworten. Meist haben die
-auch ein Archiv, in dem man die alten Posts nachlesen kann. Folgende Foren und
-Mailinglisten würden wir an dieser Stelle empfehlen:
-
--   Kommt bald …
+auch ein Archiv, in dem man die alten Posts nachlesen kann. Foren und Maillinglisten können sehr hilfreich sein. Da aber die Qualität teilweise von Beitrag zu Beitrag erheblich schwankt, haben wir aktuell leider keine Empfehlungen. Wenn Du aber etwas hast, was Dir immer gut weiterhilft, schreib uns gerne.
 
 Wenn du Bücher, Mailinglisten oder anderes gefunden hast, bei dem du denkst,
 dass die den anderen helfen – behalte das bitte nicht für Dich, sondern teile es
