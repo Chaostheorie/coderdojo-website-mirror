@@ -192,6 +192,22 @@ Du kannst also Startwert, Endwert und Schrittweite definieren. Diese Zahlen
 können auch negativ sein. Spiel damit ein wenig rum und gib ein paar andere
 Zahlen ein.
 
+## Neue Dateien
+
+Du wirst jetzt immer wieder neuen, kleineren oder größeren Code schreiben. Du
+könntest einfach das bestehende löschen und die Datei wieder nutzen. Aber das
+ist nur bei wirklich kleinen Schnipseln sinnvoll, da Du vielleicht wieder
+nachschauen willst, was Du schon gemacht hast. Lege Dir also für neue Übungen
+einfach eine neue Datei an. Dafür gehst Du auf den Projektordner, rechte
+Maustaste, New, Python. Dann gibt Du einen Dateinamen an. Vermeide bei den
+Dateinamen bitte Leerzeichen.
+
+{{ figure(source="/images/kyo-7/8-1-Pycharm-6.png", alt="PyCharm – new file") }}
+
+{{ figure(source="/images/kyo-7/8-1-Pycharm-7.png", alt="PyCharm – new file") }}
+
+## Malen in Schleifen
+
 Jetzt wollen wir noch eine Übung machen – lass uns einen Tannenbaum als
 sogenannte ASCII-Art zeichnen. Wir gehen später noch genauer darauf ein, was
 ASCII ist, aber im kurzen sind es die Buchstaben und Zeichen, die du so am
@@ -602,8 +618,8 @@ Wie man zwei Strings wie `"ot"` `"to"` kombiniert, hast du schon gesehen: aus
 haben wir noch nicht explizit gesagt, ist Dir aber sicherlich schon aufgefallen.
 du kannst auch das
 
-````nehmen, also das Zeichen über der Raute. Beides geht, du solltest es nur nicht
- in einem Code mischen. Aber was machst du nun, wenn du in einem String sagen wolltest:`print("Und
+````nehmen, also das Zeichen über der Raute. Beides geht,
+du solltest es nur nicht in einem Code mischen. Aber was machst du nun, wenn du in einem String sagen wolltest:`print("Und
 er sagt:
 "Hallo"")`. Nur zu, Hack das ein. Soviel vorweg – das wird nichts. Denn Python liest das erste und weiß – jetzt geht der String los. Dann kommt das zweite und er denkt, der String ist zu Ende. Und dann kommt etwas, mit er echt nichts anfangen kann – `"Hallo"`.
 Typisch menschlicher Kram halt. Hier gibt es zwei Wege.
