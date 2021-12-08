@@ -622,7 +622,8 @@ immer wieder als Meme begegnen. Mal abgesehen davon, dass Du ein bisschen
 Computergeschichte dabei mitnimmst, zeigt es dir auch ein wenig den
 amerikanischen Blick auf den Begriff Hacker. Über den Begriff können wir ja
 gerne mal gemeinsam diskutieren. Wir orientieren uns dabei vielmehr an einem
-Satz, der [Wau Holland]() zugeschrieben wird:
+Satz, der [Wau Holland](https://de.wikiquote.org/wiki/Wau_Holland) zugeschrieben
+wird:
 
 > Ein Hacker ist jemand, der versucht einen Weg zu finden, wie man mit einer
 > Kaffeemaschine Toast zubereiten kann.
