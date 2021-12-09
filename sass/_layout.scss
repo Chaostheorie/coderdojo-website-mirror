@@ -35,10 +35,6 @@ body {
     h1 {
         color: $tertiary;
 
-        &:not(.markerless)::before {
-            content: '# ';
-        }
-
         &#title {
             color: transparent;
 
@@ -52,26 +48,14 @@ body {
 
     h2 {
         font-size: 21px;
-
-        &:not(.markerless)::before {
-            content: '## ';
-        }
     }
 
     h3 {
         font-size: 20px;
-
-        &:not(.markerless)::before {
-            content: '### ';
-        }
     }
 
     h4 {
         font-size: 18px;
-
-        &:not(.markerless)::before {
-            content: '#### ';
-        }
     }
 }
 

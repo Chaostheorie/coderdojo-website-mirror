@@ -12,8 +12,8 @@ defined %} {% set color = section.extra.color %} {% else %} {% set color =
   }
 </style>
 
-<section id="section-content" class="markerless">
-  <h1 class="h1 markerless text-center" id="title" itemtype="headline">
+<section id="section-content">
+  <h1 class="h1 text-center" id="title" itemtype="headline">
     {% if section.title %} {{ section.title }} {% else %} {{ section.path|safe
     }} {% endif %} {% if section.extra.subtitle is defined %}
     <span class="visually-hidden">{{ section.extra.subtitle }} </span>
