@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /images
-Disallow: /share
-Sitemap: {{ get_url(path="/static/sitemap.xml") }}
+Disallow: /fonts
+Disallow: /js
+Disallow: /katex
+Disallow: /imprint
+Sitemap: https://coderdojo.red/{{ get_url(path="/static/sitemap.xml") }}

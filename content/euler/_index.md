@@ -3,6 +3,7 @@ title = "Projektgruppe Euler"
 
 [extra]
 color = "#b48ead"
+date = 07-12-2021
 +++
 
 ## Inhalt

@@ -3,8 +3,9 @@ title = "6. Kyo"
 
 [extra]
 color = "#FFFF00"
-heading_color = "#733111"
+#heading_color = "#733111"
 katex = true
+date = 07-12-2021
 +++
 
 # 6. Kyo – Gelbgurt
@@ -317,7 +318,7 @@ Wichtig ist jetzt nur, dass diese beiden Dateien in Deinem Projektverzeichnis
 drin stehen. Die anderen Grafikdateien lass besser draußen. Auf geht es in den
 Code:
 
-{{ file(name="game.py") }}
+{{ file(name="game.py", play=false) }}
 
 ```python
 import pygame, os, sys
@@ -359,7 +360,7 @@ klar soweit?
 
 Noch ein bißchen Code:
 
-{{ file(name="game.py") }}
+{{ file(name="game.py", play=false) }}
 
 ```python
 while True:
@@ -383,7 +384,7 @@ Jetzt haben wir festgestellt, dass die While-Schleife eine Endlos-Schleife ist.
 Das ist unpraktisch, weil wir aus dem Spiel auch noch rauskommen wollen. Nach
 der Zeile mit dem blit fügst du ein:
 
-{{ file(name="game.py") }}
+{{ file(name="game.py", play=false) }}
 
 ```python
 for event in pygame.event.get():
@@ -408,7 +409,7 @@ und Deiner Spielfigur):
 
 Insgesamt müsste bei Dir jetzt ungefähr dieser Code stehen:
 
-{{ file(name="game.py") }}
+{{ file(name="game.py", play=false) }}
 
 ```python
 import pygame, os, sys
@@ -441,6 +442,8 @@ und das Ergebnis direkt auf die Figur übertragen. Dafür brauchen wir ein
 weiteres Ereignis beziehungsweise Event. Wir legen also in die for-Schleife
 `for event in pygame.event.get():` einen weiteren Teil dazu:
 
+{{ file(name="game.py", play=false) }}
+
 ```python
 if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
@@ -467,6 +470,8 @@ Integer sein. Grübel mal nach, warum ein Float dafür keine gute Idee wäre.
 
 Der Code müsste dann ungefähr so bei Dir aussehen (nicht schmulen!, selber
 knobeln):
+
+{{ file(name="game.py", play=false) }}
 
 ```python
 import pygame, os, sys
@@ -517,6 +522,8 @@ Bedingungen verknüpfen. Wenn du also beispielsweise sagen möchtest, dass der
 if-Teil nur dann wahr ist (und damit ausgeführt wird), wenn player_x = 100 und
 player_y = 100 ist, dann kannst du schreiben:
 
+{{ file(name="game.py", play=false) }}
+
 ```python
 if player_x == 100 and player_y == 100:
    print("Treffer!")
@@ -550,6 +557,8 @@ hilft es Dir mehr, wenn du zeigst, wo du stecken geblieben bist, eine Richtung
 gesagt bekommst und weitertüftelst.
 
 Der nachfolgende Code ist eine Möglichkeit, wie man es machen könnte.
+
+{{ file(name="game.py", play=false) }}
 
 ```python
 import pygame, os, sys

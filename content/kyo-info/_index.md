@@ -3,6 +3,7 @@ title = "Worum geht`s im Dōjō?"
 
 [extra]
 color = "#55CCFF"
+date = 07-12-2021
 +++
 
 ## Einleitung
@@ -192,31 +193,29 @@ hast, der Dir hilft:
 
 -   [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
 
--   [Community Edition PyCharm](https://www.jetbrains.com/de-de/pycharm/download/#section=linux)
+-   [Community Edition PyCharm](https://www.jetbrains.com/de-de/pycharm/download/)
 
 ## Los geht 's
 
 [Hier geht es direkt zum ersten Gurt.](https://coderdojo.red/kyo-7/)
 
-#### Bildnachweise
+## Bildnachweise
 
 Kinder in dem philippinischen Karate-Dojo der Jack und Jill Schule in Bacolod -
-Von Jjskarate. - Eigenes Werk; Übertragen aus en.wikipedia nach Commons.., CC
+Von Jjskarate. - Eigenes Werk; Übertragen aus en.wikipedia nach Commons, CC
 BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=50279796>
 
-Karatetraining - Image by
-<https://pixabay.com/users/stivy73-6360334/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2717178>Michele
-Stival from
-<https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2717178>Pixabay
+Karatetraining - Bild bei
+[Michele Stival](https://pixabay.com/users/stivy73-6360334/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2717178)
+von
+[Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2717178)
 
-Kindertraining - Image by
-<https://pixabay.com/users/publicdomainpictures-14/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=83009>
-PublicDomainPictures from
-<https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=83009>
-Pixabay
+Kindertraining - Bild bei
+[PublicDomainPictures](https://pixabay.com/users/publicdomainpictures-14/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=83009)
+von
+[Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=83009)
 
-Kentern - Image by
-<https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=31696>
-Clker-Free-Vector-Images from
-<https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=31696>
-Pixabay
+Kentern - Bild bei
+[Clker-Free-Vector-Images](https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=31696)
+von
+[Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=31696)

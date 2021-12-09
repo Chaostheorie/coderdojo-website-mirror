@@ -5,6 +5,7 @@ title = "7. Kyo"
 color = "#fff"
 heading_color = "#733111"
 katex = true
+date = 07-12-2021
 +++
 
 # 7. Kyo – Weißgurt

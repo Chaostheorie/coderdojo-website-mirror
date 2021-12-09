@@ -1,10 +1,9 @@
 +++
-title = "1. Dan"
+title = "2. Dan"
 
 [extra]
 color = "#001"
+date = 07-12-2021
 +++
 
-## Inhalt
-
-Das Programm für diesen Gürtel wird gerade konzipiert.
+{{ wip() }}

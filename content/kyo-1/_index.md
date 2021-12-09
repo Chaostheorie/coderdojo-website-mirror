@@ -3,8 +3,7 @@ title = "Kyo 7"
 
 [extra]
 color = "#fff"
+date = 07-12-2021
 +++
 
-## Inhalt
-
-Das Programm für diesen Gürtel wird gerade konzipiert.
+{{ wip() }}
