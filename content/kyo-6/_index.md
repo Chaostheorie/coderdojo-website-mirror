@@ -298,7 +298,7 @@ Netz. Also viel Spaß schon mal beim Lesen.
 
 ## PyGames
 
-{{ figure(source="/images/kyo-6/Pygame_logo.png", float="end", alt="Das pygame-Logo von TheCorruptor/pygame developers  ") }}
+{{ figure(source="/images/kyo-6/Pygame.png", float="end", alt="Das pygame-Logo von TheCorruptor/pygame developers  ") }}
 
 Juhu, wir kommen zu pygames. Das ist eine Bibliothek, die es Dir ermöglicht,
 Grafik darzustellen und Tastatur- und Mauseingaben abzufangen, damit du sie gut
