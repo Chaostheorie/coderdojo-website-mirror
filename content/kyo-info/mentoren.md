@@ -53,3 +53,9 @@ Er ist wie derMicha Mitglied im Berliner Hacker- und Makerspace
 
 Hast du Lust, bei uns mitzumachen? Neue Konzepte und Ideen auszuprobieren? Nur
 zu, melde Dich dann bei uns!
+
+<div class="d-flex justify-content-center py-2">
+    <a href="/contact/" class="btn btn-outline-primary btn-lg">
+       <i class="bi bi-envelope"></i> Kontakt
+    </a>
+</div>

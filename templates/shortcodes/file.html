@@ -10,6 +10,7 @@
     <span class="px-2 my-auto text-light font-monospace"> {{ name }} </span>
 
     <span>
+        {% if play is not defined or play != false %}
         <button
             class="btn btn-sm btn-secondary shadow-none rounded-0"
             data-type="play"
@@ -18,6 +19,7 @@
         >
             Play <i class="bi bi-play"></i>
         </button>
+        {% endif %}
         <button
             class="btn btn-sm btn-secondary shadow-none rounded-0"
             data-type="copy"
