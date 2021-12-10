@@ -3,7 +3,7 @@ title = "7. Kyo"
 
 [extra]
 color = "#fff"
-heading_color = "#733111"
+heading_color = "#fff"
 katex = true
 date = 07-12-2021
 +++
@@ -636,6 +636,8 @@ von entkommen oder aussteigen. Und nur damit du es gesehen hast – man kann auc
 mit drei `"` oder ``` arbeiten, um einen String zu definieren. Das funktioniert
 sogar über Zeilen hinweg.
 
+{{ figure(source="/images/kyo-7/Python_string_int.jpg", float="end", alt="Dieses Meme solltest Du jetzt nachvollziehen können.") }}
+
 Die Ausgabe von Variablen hast du schon gesehen, auch die Kombination mit Text.
 Dafür gibt es einen einfachen und einen eleganten Weg. Der einfache Weg ist
 `print("Inhalt von a: ", a)`. Der ist aber veraltet und wenig elegant. Besser
@@ -886,6 +888,8 @@ Programmieren beim Löten keinerlei Vorkenntnisse voraus, da die Teilnehmenden
 unterschiedlich alt sind und dem Thema in der Schule unterschiedliches Gewicht
 beigemessen wird. Es kann also gut sein, dass du gerade am Anfang gähnst. Keine
 Sorge, wird steigern das Stück für Stück. Aber wir wollen alle mitnehmen.
+
+{{ figure(source="/images/kyo-7/derMicha_Soldering_th.jpg", alt="derMicha bei einem Löt-Workshop", float="start") }}
 
 Zunächst solltest du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn
 du noch keine Erfahrung hast, lass Dir ein kleines Stück Lochraster geben und
@@ -1174,6 +1178,22 @@ Punkt in die richtige Richtung, an dem du stecken bleibst oder holen Dich aus
 der falschen Abbiegung zurück auf den richtigen Weg. Wenn du da Dein Problem
 nicht vor der Gruppe besprechen magst (was an sich besser ist, weil alle dann
 was lernen), dann gehen wir mit Dir gerne auch einen Breakoutroom.
+
+## Knobeln
+
+Damit das Hirn schon geschmeidig bleibt, lohnt es sich, es regelmäßig zu kneten.
+Versuche dich mal an der folgenden Aufgabe aus dem
+[Eulerprojekt](https://projecteuler.net/problem=1):
+
+Die möglichen Vielfachen von 3 _oder_ 5 aller natürlichen Zahlen bis 10 sind 3,
+5, 6 und 9. Wenn du diese Zahlen addierst, kommt 23 raus. Wie ist die Summe
+aller Vielfachen bis 1000?
+
+Wenn du das Ergebnis hast, kannst du im
+[Eulerprojekt](https://projecteuler.net/problem=1) prüfen, ob es richtig ist.
+Falls du dich dort nicht registrieren magst, kannst du uns auch fragen. Wie
+immer - wenn du auf der Stelle trittst, lass uns drüber sprechen, damit wir dich
+unterstüzen können, die Richtung zu finden.
 
 ## Kultur
 
