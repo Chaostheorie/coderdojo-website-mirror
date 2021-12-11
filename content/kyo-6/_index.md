@@ -725,8 +725,8 @@ mehreren Wohnungen. Wenn die Paketbotin jetzt drei Pakete hat, dann wäre es
 hilfreich, wenn sie die nicht einfach unten im Hausflur abwirft, sondern zur
 passenden Wohnung bringt. Umgekehrt warten die Bewohner schon gespannt auf die
 Pakete und lauschen schon, ob jemand an ihre Tür klopft. Hier sind wir bei den
-[Ports](<https://de.wikipedia.org/wiki/Port_(Protokoll)>) angelandet. Jede
-IP-Adresse kann so verschiedene Dienste (Päckchen) entgegen nehmen und
+[Ports](https://www.elektronik-kompendium.de/sites/net/1812041.htm) angelandet.
+Jede IP-Adresse kann so verschiedene Dienste (Päckchen) entgegen nehmen und
 umgekehrt, können bestimmte Bewohner schon lauschen, ob man jemand klopft. Die
 Ports gehen bei 0 los und können bis 65.535 gehen. Die ersten 1024 Ports,
 sogenannte System-Ports oder well-known-Ports, haben eine bestimmte Bedeutung
