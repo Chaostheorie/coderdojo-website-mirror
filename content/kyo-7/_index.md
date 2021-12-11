@@ -1539,6 +1539,8 @@ Wenn du Bücher, Mailinglisten oder anderes gefunden hast, bei dem du denkst,
 dass die den anderen helfen – behalte das bitte nicht für Dich, sondern teile es
 mit uns. Und wir schauen, ob wir es ins Script bzw. Homepage aufnehmen.
 
+<!---
+
 ## Turtle
 
 Mit Turtle stellt Python Dir ein kleines Zeichenprogramm zur Verfügung, was für
@@ -1559,7 +1561,9 @@ nach du Unterstützung bekommen hast.
 
 -   Der Teil Turtle ist im Entstehen. Bitte habe noch etwas Geduld.
 
-## Test
+-->
+
+# Test
 
 Der Weißgurt ist zum Greifen nahe. Schaffst du die folgenden Fragen
 beziehungsweise Aufgaben?
