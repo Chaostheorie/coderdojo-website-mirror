@@ -199,7 +199,7 @@ hast, der Dir hilft:
 
 [Hier geht es direkt zum ersten Gurt.](https://coderdojo.red/kyo-7/)
 
-## Bildnachweise
+#### Bildnachweise
 
 Kinder in dem philippinischen Karate-Dojo der Jack und Jill Schule in Bacolod -
 Von Jjskarate. - Eigenes Werk; Übertragen aus en.wikipedia nach Commons, CC

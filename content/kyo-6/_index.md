@@ -298,7 +298,7 @@ Netz. Also viel Spaß schon mal beim Lesen.
 
 ## PyGames
 
-{{ figure(source="/images/kyo-6/Pygame.png", float="end", alt="Das pygame-Logo von TheCorruptor/pygame developers  ") }}
+{{ figure(source="/images/kyo-6/Pygame.png", float="end", alt="Das pygame-Logo von TheCorruptor/pygame developers") }}
 
 Juhu, wir kommen zu pygames. Das ist eine Bibliothek, die es Dir ermöglicht,
 Grafik darzustellen und Tastatur- und Mauseingaben abzufangen, damit du sie gut
@@ -841,10 +841,11 @@ verbinden. Wir nehmen dafür - tata - ein Protokoll. Jetzt hast du ja schon eine
 grobe Ahnung, was ein Protokoll ist. In diesem Fall verwenden wir
 [MQTT](https://de.wikipedia.org/wiki/MQTT), was für _Message Queuing Telemetry
 Transport_ steht. Das ist dafür geschaffen worden, damit Maschinen untereinander
-reden können. Zwar wollt ihr zu zweit zocken, aber da zwischen euch immer die
-Rechner hängen, reden am Ende doch die Maschinen.. MQTT hat reservierte Ports
-auf 1883 und 8883. Auch damit kannst du jetzt schon was anfangen. MQTT kann über
-TLS abgesichert werden. Den Fall wollen wir aber erstmal (noch) nicht
+reden können. Also eigentlich eher sowas wie Sensoren, die Daten irgendwo hin
+senden. Hier wollt ihr mindestens zu zweit zocken. Aber da zwischen euch immer
+die Rechner hängen, reden am Ende doch die Maschinen.. MQTT hat reservierte
+Ports auf 1883 und 8883. Auch damit kannst du jetzt schon was anfangen. MQTT
+kann über TLS abgesichert werden. Den Fall wollen wir aber erstmal (noch) nicht
 betrachten.
 
 Der Rest folgt bald...
