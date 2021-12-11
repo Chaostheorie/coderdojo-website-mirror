@@ -1386,6 +1386,51 @@ Unterschied. Eine Funktion wird immer mit `def` eingeleitet, ob sie mit einem
 `return` endet oder nicht. Da kann man beide Begriff für das gleiche Konstrukt
 verwenden.
 
+### Stil
+
+Bei Funktionen solltest du bitte immer eine Leerzeile über und eine unter der
+Funktion freilassen. Das Programm würde auch ohne laufen. Aber es gibt bei
+Python einige Konventionen, auf die sich die Python-Programmierer geeinigt
+haben, um die Programme besser lesbar zu halten. Diese finden sich in den
+sogenannten
+[Python Enhancement Proposel bzw. PEP8](https://zrezai-dev.de/python/pep-8/).
+Das ist wie mit den Variablenbezeichnungen - am besten gewöhnt man sich sowas
+gleich richtig an. Mit einer Leerzeile ist auch wirklich nur eine gemeint, da es
+andere Codeblöcke gibt, die mit zwei Leerzeilen abgetrennt werden; die sog.
+Klassen, zu denen wir später noch kommen.
+
+Wenn die Funktion nicht aus dem Namen heraus klar macht, was sie machen soll,
+solltest du ihr einen Kommentar spendieren, der kurz erklärt, was die Funktion
+macht. Wenn sie einzeilig sind, sollte das so aussehen:
+
+```python
+def calc(a,b):
+    """Funktion addiert a und b und gibt die Summe als c zurück """
+    c = a + b
+    return c
+
+```
+
+Wenn sie mehrzeilig sind, schaut das so aus:
+
+```python
+def calc(a,b):
+    """Funktion addiert a und b
+    und gibt die Summe als c zurück
+    """
+    c = a + b
+    return c
+```
+
+Die Art der Kommentierung nennt man übrigens
+[_Docstring_](https://www.python.org/dev/peps/pep-0257/).
+
+Klar könnte man das auch anders machen, aber diese Art der Kommentierung bei
+Funktionen hat den Vorteil, dass Du automatisiert auslesen kannst. Das ist bei
+größeren Projekten sehr charmant. Auch hier gilt - gewöhn es dir gleich richtig
+an, das spart dir später einige Mühen... Und auch wenn die Kommentare hier in
+Deutsch sind - wenn möglich, dann verwende auch da Englisch.
+
 ### Übungen {#übungen-1 .unnumbered}
 
 Als Erstes nimmst du Dir jetzt bitte den Konfektionsgrößenrechner und packst die
