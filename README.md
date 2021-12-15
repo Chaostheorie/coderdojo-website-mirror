@@ -11,7 +11,7 @@ Code for [coderdojo.red](https://coderdojo.red) and
 
 ## Documentation
 
-> Only Zola 0.14 is supported ATM due to problems with hashing in other.
+> Only Zola 0.14+ is supported ATM due to problems with hashing in other.
 
 See
 [the Wiki](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/wikis/home)

@@ -48,7 +48,7 @@ markieren und dann Entf drücken. Dann sollte das bei Dir ungefähr so ausschaue
 
 Okay, jetzt kann es losgehen!
 
-Warst du schon mal in einem Dojo? Falls nicht – immer wenn man ein Dojo betritt
+Warst du schon mal in einem Dōjō? Falls nicht – immer wenn man ein Dōjō betritt
 und verlässt, gibt es eine kleine Verbeugung als Gruß. Beginnt man mit einer
 neuen Programmiersprache, gibt es auch ein solches „Ritual“. Man beginnt damit,
 den Computer `Hello World` ausgeben zu lassen. Um etwas ausgeben zu lassen,

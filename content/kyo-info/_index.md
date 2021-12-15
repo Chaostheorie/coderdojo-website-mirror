@@ -1,5 +1,5 @@
 +++
-title = "Worum geht`s im Dōjō?"
+title = "Worum geht's im Dōjō?"
 
 [extra]
 color = "#55CCFF"
@@ -201,7 +201,7 @@ hast, der Dir hilft:
 
 #### Bildnachweise
 
-Kinder in dem philippinischen Karate-Dojo der Jack und Jill Schule in Bacolod -
+Kinder in dem philippinischen Karate-Dōjō der Jack und Jill Schule in Bacolod -
 Von Jjskarate. - Eigenes Werk; Übertragen aus en.wikipedia nach Commons, CC
 BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=50279796>
 
