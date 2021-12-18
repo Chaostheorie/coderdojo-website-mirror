@@ -8,3 +8,12 @@
     src: local('Source Sans Pro'),
         url('/fonts/source-sans-pro-all.woff') format('woff');
 }
+
+@font-face {
+    font-display: swap;
+    font-family: 'Glyphter';
+    src: url('/fonts/belt.woff') format('woff'),
+        url('/fonts/belt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,40 +1,39 @@
 {% macro navbar() %}
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
-    <div class="sticky-top p-3">
-        <a href="/" class="nav-link p-0 align-middle">
-            {{ favicon::brand() }} Coderdojo
+  <div class="sticky-top p-3">
+    <a href="/" class="nav-link p-0 align-middle">
+      {{ favicon::brand() }} Coderdojo
+    </a>
+    <hr />
+    <ul class="nav nav-pills flex-column" id="menu">
+      <li>
+        <a href="/" class="nav-link px-0 align-middle">
+          <i class="bi bi-house"></i>
+          Home
         </a>
-        <hr />
-        <ul class="nav nav-pills flex-column" id="menu">
-            <li>
-                <a href="/" class="nav-link px-0 align-middle">
-                    <i class="bi bi-house"></i>
-                    Home
-                </a>
-            </li>
-            <li>
-                <a
-                    class="nav-link px-0 align-middle"
-                    href="{{ get_url(path='@/news/_index.md')|safe }}"
-                >
-                    <i class="bi bi-newspaper"></i>
-                    News
-                </a>
-            </li>
+      </li>
+      <li>
+        <a
+          class="nav-link px-0 align-middle"
+          href="{{ get_url(path='@/news/_index.md')|safe }}"
+        >
+          <i class="bi bi-newspaper"></i>
+          News
+        </a>
+      </li>
 
-            {% set sections = load_data(path="configs/chapters.toml") %} {% for
-            Lsection in sections.chapters %}
-            <li class="nav-item">
-                <a
-                    class="nav-link px-0"
-                    style="color: {{ Lsection['color'] }} !important;"
-                    href="{{ get_url(path=Lsection['path'])|safe }}"
-                >
-                    <i class="bi bi-{{ Lsection['icon'] }}"></i>
-                    {{ Lsection["name"] }}
-                </a>
-                <!--{#
+      {% set sections = load_data(path="configs/chapters.toml") %} {% for
+      Lsection in sections.chapters %}
+      <li class="nav-item">
+        <a
+          class="nav-link px-0 icon-belt align-bottom"
+          style="color: {{ Lsection['color'] }} !important"
+          href="{{ get_url(path=Lsection['path'])|safe }}"
+        >
+          {{ Lsection["name"] }}
+        </a>
+        <!--{#
                 This will stay hidden until scrollspy works
                 {% if section.extra.color is defined and section.extra.color ==
                 Lsection["color"] %}
@@ -62,9 +61,9 @@
 
                 {% endif %}
                   #}-->
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 {% endmacro %}
