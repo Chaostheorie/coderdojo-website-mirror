@@ -66,8 +66,7 @@ coderdojo@cyber4edu.org Bescheid, wenn Du teilnehmen möchtest.
 
 **Treffen:** Den Kurs findest Du auf [coderdojo.red](https://coderdojo.red).
 
-Das ist unser
-[Matrix-Kanal](https://matrix.to/#/#coderdojo:chat.cyber4edu.org).
+Das ist unser [Matrix-Kanal](https://matrix.to/#/#coderdojo:chat.cyber4edu.org).
 
 Onlinetreffen (jeweils circa eine Stunde):
 
