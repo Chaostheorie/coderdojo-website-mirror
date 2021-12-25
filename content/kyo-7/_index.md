@@ -22,8 +22,7 @@ Python durchstarten zu können.
 
 > Hinweis: Der Text ist „frisch“. Wenn du Fehler entdeckst, Teile unverständlich
 > findest oder Ideen für bessere und mehr Beispiele und Übungen hast, lass es
-> uns bitte wissen, damit wir ihn korrigieren und verbessern können. Stand 5.
-> Dezember 2021.
+> uns bitte wissen, damit wir ihn korrigieren und verbessern können.
 
 ## Hello World
 
@@ -1397,11 +1396,17 @@ sogenannten
 Das ist wie mit den Variablenbezeichnungen - am besten gewöhnt man sich sowas
 gleich richtig an. Mit einer Leerzeile ist auch wirklich nur eine gemeint, da es
 andere Codeblöcke gibt, die mit zwei Leerzeilen abgetrennt werden; die sog.
-Klassen, zu denen wir später noch kommen.
+Klassen, zu denen wir später noch kommen. Im laufenden Code kann eine Leerzeile
+gut sein, um größere Blöcke zu gliedern. Wenn das die Lesbarkeit erhöht - do it!
 
 Wenn die Funktion nicht aus dem Namen heraus klar macht, was sie machen soll,
 solltest du ihr einen Kommentar spendieren, der kurz erklärt, was die Funktion
-macht. Wenn sie einzeilig sind, sollte das so aussehen:
+macht. Vielleicht hilft als Faustformel - wenn du nach in zwei, drei Monaten
+einen Blick auf die Funktionen werfen würdest, könntest du dann auf einen Blick
+sagen, was sie macht, welche Parameter reingehen und was ggf. zurückgegeben
+wird? Alleine wenn du jetzt zögerst, spricht das für einen Kommentar.
+
+Wenn sie einzeilig sind, sollte das so aussehen:
 
 ```python
 def calc(a,b):
