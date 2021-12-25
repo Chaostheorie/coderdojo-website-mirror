@@ -45,8 +45,7 @@ basteln.
 
 **Zielgruppe:** Wenn Du keine oder kaum Vorerfahrung hast, bist Du hier richtig.
 Du solltest mindestens 12 Jahre alt sein. Jung gebliebene Erwachsene sind aber
-auch willkommen. Da wir aber ein [CoderDojo](https://coderdojo.red) sind, haben
-Jugendliche Vorrang, falls es zu voll wird.
+auch willkommen.
 
 **Voraussetzungen:** Du brauchst einen Rechner (kein Tablett). Am einfachsten
 hast Du einen 64GB-Stick zur Hand. Da bekommst Du eine Anleitung, Unterstützung
@@ -66,12 +65,7 @@ coderdojo@cyber4edu.org Bescheid, wenn Du teilnehmen möchtest.
 
 **Treffen:** Den Kurs findest Du auf [coderdojo.red](https://coderdojo.red).
 
-<<<<<<< HEAD
 Das ist unser [Matrix-Kanal](https://matrix.to/#/#coderdojo:chat.cyber4edu.org).
-=======
-Das ist unser
-[Matrix-Kanal](https://matrix.to/#/#coderdojo:chat.cyber4edu.org).
->>>>>>> e7abdaeccf3cfceb5ba4b3738401b097a8d0f83a
 
 Onlinetreffen (jeweils circa eine Stunde):
 
