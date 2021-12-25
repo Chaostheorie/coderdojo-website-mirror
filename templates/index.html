@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% block content %}
+{% set domain = get_env(name="DOMAIN", default="coderdojo.red") %}
 <div
   class="container w-80 px-2 mt-3 mx-auto"
   itemscope
@@ -7,7 +8,13 @@
 >
   <section class="jumbotron text-center">
     <div class="container">
-      <h1 class="jumbotron-heading" id="title">Coderdojo Red Berlin</h1>
+      <h1 class="jumbotron-heading" id="title">Coderdojo 
+        {% if domain == "coderdojo.blue" %}
+        Blue
+        {% else %}
+        Red
+        {% endif %}
+        Berlin</h1>
       <p class="lead text-muted">
         <code>
           <p>„Das ist deine letzte Chance. Danach gibt es kein zurück.</p>
@@ -40,6 +47,8 @@
         >donnerstags ab 20:30 Uhr hier treffen</a
       > bzw. per <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org"> Matrix verabreden oder austauschen</a>:
     </p>
+    <p>
+      Die Infos zur Veranstaltung „Man müsste mal“ zum rc3 zwischen den Jahren findest Du <a href="https://coderdojo.red/news/rd3/">hier</a>
   </div>
 
   <div class="row g-3 row-cols-1 row-cols-sm-2">
@@ -88,10 +97,10 @@
         >
           <h2 class="card-title h5">
             <i class="bi bi-journal-code"></i>
-            Dojo
+            Dōjō
           </h2>
           <p class="card-text">
-            Das Dojo, bei dem der Schwerpunkt beim Coden liegt. Der Begriff ist
+            Das Dōjō, bei dem der Schwerpunkt beim Coden liegt. Der Begriff ist
             aber weit zu verstehen. Wenn Du mehr darüber wissen willst, klick am
             besten auf Überblick.
           </p>

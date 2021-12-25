@@ -28,6 +28,7 @@
     min-height: 100vh;
     border-right: 0.1rem solid $primary;
     color: $light;
+    min-width: 10rem;
 }
 
 .sidebar-toggled {
@@ -63,4 +64,31 @@
     padding-top: 0.5rem;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+// nav links
+.nav-link.icon-belt {
+    transition: opacity ease-in-out 0.2s;
+
+    &::before {
+        display: inline-block;
+        font-family: 'Glyphter';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25em;
+        vertical-align: bottom;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        // outline for accesibilty with fallback for old browsers that don't support hex suffixes
+        -webkit-text-stroke: 0.025em $dark;
+        -webkit-text-stroke: 0.05em #{$dark}6f;
+
+        content: '\0053';
+    }
+
+    &:hover {
+        opacity: 0.65;
+    }
 }

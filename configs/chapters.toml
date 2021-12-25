@@ -7,7 +7,7 @@ color = "#b48ead"
 icon = "journal-code"
 
 [[chapters]]
-name = "Überblick Dojo"
+name = "Überblick Dōjō"
 path = "@/kyo-info/_index.md"
 color = "#55CCFF"
 icon = "reception-4"
