@@ -13,10 +13,12 @@ Die Projektgruppe Euler trifft sich donnerstags um Aufgaben aus dem
 Programmieren hast, ist das auf jeden Fall hilfreich. Aber im Zweifel schauen
 wir uns gemeinsam an, was noch Coding-Kenntnissen erforderlich ist, um die
 gestellten mathematischen Probleme zu lösen. Wenn Du bei uns teilnehmen
-möchtest, schreib am einfachsten [derMicha](https://matrix.to/#/@dermicha:matrix.cyber4edu.org) an. Wir sagen Dir dann, wo wir uns
-treffen.
+möchtest, schreib am einfachsten
+[derMicha](https://matrix.to/#/@dermicha:matrix.cyber4edu.org) an. Wir sagen Dir
+dann, wo wir uns treffen.
 
-In der Gruppe entstandene Lösungen findest du [hier](https://codeberg.org/pyCoderDojo/eulerProject).
+In der Gruppe entstandene Lösungen findest du
+[hier](https://codeberg.org/pyCoderDojo/eulerProject).
 
 Und falls Du Dich fragst, warum man Mathe braucht, wenn man Programmieren will,
 dann schau doch mal [hier](https://www.youtube.com/watch?v=sW9npZVpiMI) rein.
