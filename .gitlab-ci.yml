@@ -9,10 +9,20 @@ cache:
 Lint:
     only:
         changes:
+            - content/*/**
+            - chapter.toml
+            - content/*
+            - templates/*
+            - templates/**/*
+            - static/*/**
+            - static/*
             - sass/*
             - ts/*
+            - config.toml
             - package.json
-            - configs/*
+            - purgecss.config.js
+            - webpack.config.js
+            - webpack.prod.config.js
             - .gitlab-ci.yml
     before_script:
         - yarn install --non-interactive --check-files  --frozen-lockfile
