@@ -70,12 +70,12 @@ Das ist unser
 
 Onlinetreffen (jeweils circa eine Stunde):
 
-[27. Dezember 2021 11 Uhr - Kennenlernen / 20 Uhr 1. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
+[27. Dezember 2021 11 Uhr - Kennenlernen / 20 Uhr 1. Austauschtreffen](https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)
 
-[28. Dezember 2021 19 Uhr 2. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
+[28. Dezember 2021 19 Uhr 2. Austauschtreffen](https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)
 
-[29. Dezember 2021 19 Uhr 3. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
+[29. Dezember 2021 19 Uhr 3. Austauschtreffen](https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)
 
-[30. Dezember 2021 17 Uhr 4. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
+[30. Dezember 2021 17 Uhr 4. Austauschtreffen](https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)
 
 {{ figure(source="/images/man_muesste.jpg", alt="Man müsste …") }}
