@@ -21,7 +21,7 @@ for documentation.
 
 All contributions are welcome. If you want to contribute or report a bug, fell
 free to open an issue on our
-[GitHub Mirror](https://github.com/Chaostheorie/coderdojo-website-mirror). If
+[Codeberg Mirror](https://codeberg.org/c0balt/coderdojo-website-mirror). If
 you want to get direct access to a GitLab Account, please contact
 [Cobalt](https://cobalt.rocks/content/contact/)
 
