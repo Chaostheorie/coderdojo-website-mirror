@@ -120,7 +120,7 @@ for i in range(10):
 Die Einrückung erzeugst du, indem du die Tab-Taste verwendest. Das ist die Taste
 zwischen `CapsLock` (dauernd großschreiben und der \^-Taste). Probiere es gleich
 mal aus, indem du wieder auf „Run“ und dann auf
-`Run `main``gehst. Wähle die Ausgabe nach. Sind es wirklich zehn`Hello World`?
+`Run `main``gehst. Wähle die Ausgabe nach. Sind es wirklich zehn `Hello World`?
 Wenn es nicht geht - ist die Print-Zeile eingerückt? Ende die for-Zeile mit
 einem Doppelpunkt? Was sagt die Fehlermeldung? Wenn du das Problem nicht gefixt
 bekommst,
