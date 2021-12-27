@@ -899,7 +899,7 @@ ausgibt. Commite und pushe wieder.
 
 Und jetzt geht es zu Codeberg. Da findest du einmal:
 
-{{ figure(source="/images/kyo-6/git-2-helloWorld.png", float="end", alt="main branch") }}
+{{ figure(source="/images/kyo-6/git-2-helloWorld-crop.png", float="end", alt="main branch") }}
 
 Jetzt klickst du die Datei an. Hier ist der Code aus der main-Branch. Über
 Branch kannst du die test-branch auswählen und dir dort den Code anschauen.
