@@ -56,7 +56,7 @@ Oder Du installierst Dir [Python](https://www.python.org/downloads/), mindestens
 in Version 3.8 mit [pip](https://geekflare.com/de/python-pip-installation/) und
 [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html), und eine
 aktuelle Version von der
-[PyCharm Community Edition](https://www.jetbrains.com/de-de/pycharm/download/#section=linux)
+[PyCharm Community Edition](https://www.jetbrains.com/de-de/pycharm/download)
 auf Deinem Rechner selbst. Wir helfen Dir in der Willkommenssession bei
 Installationsproblemen.
 
