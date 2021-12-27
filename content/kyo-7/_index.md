@@ -26,6 +26,9 @@ Python durchstarten zu können.
 
 ## Hello World
 
+> Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen
+> beziehen sich nur auf PyCharm, um es übersichtlicher zu halten.
+
 Wenn du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 
 {{ figure(source="/images/kyo-7/8-1-Pycharm-2.png", alt="PyCharm – Welcome screen") }}

@@ -195,6 +195,9 @@ hast, der Dir hilft:
 
 -   [Community Edition PyCharm](https://www.jetbrains.com/de-de/pycharm/download/)
 
+Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen
+beziehen sich nur auf PyCharm, um es übersichtlicher zu halten.
+
 ## Los geht 's
 
 [Hier geht es direkt zum ersten Gurt.](https://coderdojo.red/kyo-7/)
