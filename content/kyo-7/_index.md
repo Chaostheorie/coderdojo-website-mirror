@@ -27,7 +27,10 @@ Python durchstarten zu können.
 ## Hello World
 
 > Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen
-> beziehen sich nur auf PyCharm, um es übersichtlicher zu halten.
+> beziehen sich nur auf PyCharm, um es übersichtlicher zu halten. Im Weißgurt
+> sollte es auch ganz gut ohne IDE (wie PyCharm) gehen. Du kannst im Browser
+> programmieren. Klick einfach mal auf den Schalter Play, wenn du ein Stück Code
+> siehst. Da kannst du auch eigenen Code reinschreiben und ausführen.
 
 Wenn du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 
@@ -118,6 +121,11 @@ Die Einrückung erzeugst du, indem du die Tab-Taste verwendest. Das ist die Tast
 zwischen `CapsLock` (dauernd großschreiben und der \^-Taste). Probiere es gleich
 mal aus, indem du wieder auf „Run“ und dann auf
 `Run `main``gehst. Wähle die Ausgabe nach. Sind es wirklich zehn`Hello World`?
+Wenn es nicht geht - ist die Print-Zeile eingerückt? Ende die for-Zeile mit
+einem Doppelpunkt? Was sagt die Fehlermeldung? Wenn du das Problem nicht gefixt
+bekommst,
+[melde dich bei uns](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org) und
+wir helfen dir.
 
 Okay, jetzt bist du dran. Als Nächstes bau den Code bitte so um, dass es zu
 folgender Ausgabe kommt:
