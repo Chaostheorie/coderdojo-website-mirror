@@ -904,19 +904,19 @@ Und jetzt geht es zu Codeberg. Da findest du einmal:
 Jetzt klickst du die Datei an. Hier ist der Code aus der main-Branch. Über
 Branch kannst du die test-branch auswählen und dir dort den Code anschauen.
 
-{{ figure(source="/images/kyo-6/git-2-branch-test-loop.png", float="end", alt="Branch wählen") }}
+{{ figure(source="/images/kyo-6/git-2-branch-test-loop-crop.png", float="end", alt="Branch wählen") }}
 
 Du erkennst also jetzt, dass du das Projekt mit zwei unterschiedlichen Codebasen
 fährst. Das ist cool! Und jetzt wollen wir noch die zwei Zweige zusammenführen.
 
-{{ figure(source="/images/kyo-6/git-2-klonen.png", float="end", alt="Git klonen") }}
+{{ figure(source="/images/kyo-6/git-2-klonen-crop.png", float="end", alt="Git klonen") }}
 
 Du wechselst jetzt wieder auf die main-Branch und wirst dort das Feld „Neuer
 Pull-Request“ angezeigt bekommen. Das klickst du jetzt an. Jetzt kannst du
 auswählen, welche Branch du mit welcher zusammenführen willst. In unserem Fall
 ist das Ziel main und du pullst von test-loop.
 
-{{ figure(source="/images/kyo-6/git-2-choose-branch.png", float="end", alt="pull request") }}
+{{ figure(source="/images/kyo-6/git-2-choose-branch-crop.png", float="end", alt="pull request") }}
 
 Jetzt siehst du, wie sich der Code unterscheidet und du kannst kontrollieren,
 was du machen willst. Was du dort siehst, ist eine sogenannte Diff-Ansicht. Die
