@@ -64,6 +64,11 @@ probieren:
 print("Hello World")
 ```
 
+PyCharm sorgt dafür, dass die Klammer farbig dargestellt wird. Welche die Farbe
+die Klammer hat, ist egal. Die Farben sollen dir nur helfen, bei mehreren
+Klammern zu sehen, welche Klammern zusammen gehören. Also lass dich von der
+Farbe der Klammern bei Screenshots nicht verwirren.
+
 Jetzt führst du das Programm aus: du gehst in der Menüzeile auf „Run“ und dort
 auf den obersten Punkt „Run `main`“. Dann sollte sich unten ein Fenster
 aufbauen, in welchem das Ergebnis Deines Programms ausgeführt wird.
@@ -366,12 +371,15 @@ oder sie hier eingeben soll. Das schaut so aus:
 
 ```python
 userInput = input("Bitte gib eine Zahl ein: ")
+userInput = int(userInput)
 ```
 
-Jetzt bist du wieder dran. Kombiniere das gelernte. Frage die Benutzer:in nach
-zwei Zahlen, addiere sie und gib sie aus. Wenn das funktioniert, lege um den
-Code eine For-Schleife herum, die dafür sorgt, dass der Code dreimal ausgeführt
-wird. Teste ihn. Kommen beim zweiten Anlauf komische Ergebnisse heraus? Versuche
+Die zweite Zeile nimm bitte erstmal hin, dazu kommen wir gleich. Wenn du an
+dieser willst, dass die Eingabe als Zahl behandelt wird, brauchst du das. Jetzt
+bist du wieder dran. Kombiniere das gelernte. Frage die Benutzer:in nach zwei
+Zahlen, addiere sie und gib sie aus. Wenn das funktioniert, lege um den Code
+eine For-Schleife herum, die dafür sorgt, dass der Code dreimal ausgeführt wird.
+Teste ihn. Kommen beim zweiten Anlauf komische Ergebnisse heraus? Versuche
 herauszubekommen, woran das liegt. Es hilft, sich bei jeder Zeile zu überlegen,
 was diese macht und welche Variablen gerade welchen Wert haben (PyCharm wird Dir
 später dabei helfen). Falls du hier zu keinem Ergebnis mehr kommst, lass uns in
@@ -842,10 +850,9 @@ ist aber nicht gerade elegant. Mit `break` kannst du sauber aus der Schleife
 aussteigen. Wenn du also solche endlos-Scheifen verwendest, musst du Dir immer
 überlegen, wie du da wieder rauskommst. Wenn wir mit einer grafischen Oberfläche
 arbeiten, wird das unser Standardeinstieg werden. Ansonsten kannst du super für
-so kleine Tools benutzen. Hole Dir nochmal das Programm oben für die
-Konfektionsgrößen hervor. Baue das Programm so um, dass der Benutzer immer
-wieder die Möglichkeit bekommt, die Größen neu ausrechnen zu lassen, bis er
-`quit` schreibt.
+so kleine Tools benutzen. Hole Dir nochmal das Programm oben für den Grundumsatz
+hervor. Baue das Programm so um, dass der Benutzer immer wieder die Möglichkeit
+bekommt, die Größen neu ausrechnen zu lassen, bis er `quit` schreibt.
 
 ## Debugger
 
@@ -1449,7 +1456,7 @@ Deutsch sind - wenn möglich, dann verwende auch da Englisch.
 
 ### Übungen {#übungen-1 .unnumbered}
 
-Als Erstes nimmst du Dir jetzt bitte den Konfektionsgrößenrechner und packst die
+Als Erstes nimmst du Dir jetzt bitte den Grundumsatzrechner und packst die
 Berechnung in eine Funktion. Die Abfrage an die Benutzenden lässt du im
 Hauptprogramm stehen.
 
