@@ -30,7 +30,11 @@ Python durchstarten zu können.
 > beziehen sich nur auf PyCharm, um es übersichtlicher zu halten. Im Weißgurt
 > sollte es auch ganz gut ohne IDE (wie PyCharm) gehen. Du kannst im Browser
 > programmieren. Klick einfach mal auf den Schalter Play, wenn du ein Stück Code
-> siehst. Da kannst du auch eigenen Code reinschreiben und ausführen.
+> siehst. Da kannst du auch eigenen Code reinschreiben und ausführen. Also wenn
+> du das Gefühl hast, dass PyCharm an der Stelle mehr schadet als nützt, nutzt
+> erstmal die Möglichkeit des Playground, also das was du siehst, wenn du Play
+> klickst. Spätestens ab dem Gelbgurt solltest du mit PyCharm oder einer
+> vergleichbaren IDE arbeiten.
 
 Wenn du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 
@@ -221,6 +225,12 @@ Dateinamen bitte Leerzeichen.
 {{ figure(source="/images/kyo-7/8-1-Pycharm-6.png", alt="PyCharm – new file") }}
 
 {{ figure(source="/images/kyo-7/8-1-Pycharm-7.png", alt="PyCharm – new file") }}
+
+In PyCharm gibt es jetzt eine Falle... Wenn du jetzt auf `Run` gehst, wird nicht
+die neue Datei ausgeführt, sondern weiterhin die vorherige. Du musst `Run` und
+dann auf das zweite `Run` in dem Menü gehen. Jetzt kannst du die neue Datei zum
+Start auswählen. Scheint hier umständlich, ist aber an anderer Stelle praktisch.
+Und gut ist es, die Besonderheit zu kennen.
 
 ## Malen in Schleifen
 
@@ -559,24 +569,12 @@ print (text1 + text2)
 
 Jetzt füge vor dem `print` noch ein `text1 = int(text1)` ein und führe den Code
 aus. Da wird es „knallen“, will sagen, es gibt eine Fehlermeldung. Warum ist das
-so? Weil du Zahlen nicht als Integer behandeln kannst. Mit einem
-
-{{ file(name="compare-types.py") }}
-
-```python
-if isinstance(a, int):
-```
-
-kannst du feststellen, ob `a` eine Zahl ist. Oben hattest du einen einfachen
-Taschenrechner gebaut. Der hat zwei Zahlen addiert, die die Benutzer:in
-eingegeben hat. Alles ist gut, bis der Mensch ins Spiel kommt
-
--   denn wenn der Benutzer eine einen Buchstaben eingibt, kann er nicht mehr
-    addieren, sondern setzt bestenfalls die beiden Abfragen zusammen. Du hast
-    jetzt gelernt, warum das so ist. Jetzt schreibe das Programm so, das prüft,
-    ob der Benutzer einen Integer eingegeben hat. Falls nicht, soll die Abfrage
-    nochmal durchlaufen werden und der Hinweis erfolgen, dass nur ganze Zahlen
-    erlaubt sind.
+so? Weil du Text nicht als Integer behandeln kannst. Dein Taschenrechner ist
+insoweit abhängig, dass kein Nutzender auf die Idee kommt, einen Buchstaben
+einzugeben. Es ist nie gut, darauf zu vertrauen, dass Nutzende sinnvolle Dinge
+tun. Das ist ein Sicherheitsrisiko (und schön ist es auch nicht, wenn ein
+Programm sich aufhängt). Wie man solche Möglichkeiten abfängt, zeigen wir dir
+weiter unten. Das müssen wir hier gerade noch offen lassen.
 
 Wir wollen uns ein paar weitere Variablentypen anschauen:
 
@@ -809,17 +807,38 @@ geht mit dem nächsten Durchlauf weiter. Wir zeigen Dir ein Beispiel:
 
 ```python
 for i in range(5):
-    print("Wir machen ")
+    print("Wir sind am Schleifenanfang und i ist ", i)
     if i == 1:
-        print("feinen Fug")
+        print("Jetzt ist i gleich ", i)
     elif i == 2:
-        print("i: ", i)
-        continue print("groben Unfug")
+        print("Jetzt ist i gleich ", i)
+        continue
+        print("Wird das mal aufgeworfen?")
     elif i == 4:
-        print(" genug.")
-	    break
-    print("und so.")
+        print("Jetzt ist i gleich ", i)
+        break
+    print("Und jetzt sind wir am Ende der Schleife.")
 ```
+
+Bevor du jetzt vorschnell den Play-Button drückst oder das Programm in PyCharm
+überführst - schau dir das in Ruhe an und versuche rauszufinden, was bei jedem
+Schleifendurchlauf ausgegeben würde. Schau dir dann erst an, was wirklich
+passiert.
+
+Wofür braucht man jetzt `continue` und `break`? Also zunächst einmal sind das
+zwei Elemente, die immer auf schnellen und schmutzigen Code schließen lassen.
+Behalte das bitte im Hinterkopf. Am Anfang ist das noch okay, weil du erst ein
+paar Konstrukte noch kennen lernen musst, um ohne sie auszukommen. Und du musst
+sie kennen, weil sie dir in fremden Code immer wieder über den Weg laufen
+werden. Dann sollte bei dir eine Leuchte mit „quick and dirty“ angehen... Okay,
+bis dahin - `break` hilfreich sein, um eine Schleife abzubrechen, weil in der
+Schleife rauskommt, dass deine Aufgabe bereits erledigt ist. Und mit `continue`
+kannst du sehr schön Codeblöcke förmlich überspringen. Man muss nur schon
+überlegen, ob das zu Unsinn führt. Die print-Zeile unter dem `continue` wäre ein
+Kandidat dafür, denn die wird nie unter keinen Umständen ausgeführt. Aber wenn
+du die print-Zeile am Ende verhindern wolltest, wäre das an dieser Stelle ein
+Weg. Mit dem `break` am Ende wird verhindert, dass der fünfte Schleifendurchlauf
+überhaupt ausgeführt wird.
 
 ### While-Schleife
 
