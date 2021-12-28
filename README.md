@@ -21,8 +21,8 @@ for documentation.
 
 All contributions are welcome. If you want to contribute or report a bug, fell
 free to open an issue on our
-[Codeberg Mirror](https://codeberg.org/c0balt/coderdojo-website-mirror). If
-you want to get direct access to a GitLab Account, please contact
+[Codeberg Mirror](https://codeberg.org/c0balt/coderdojo-website-mirror). If you
+want to get direct access to a GitLab Account, please contact
 [Cobalt](https://cobalt.rocks/content/contact/)
 
 ## Licensing
