@@ -501,10 +501,11 @@ aufgefallen, dass bei einem `a = input("Gib was ein: ")` und `a = 1` das erste
 Programmiersprachen musst du bevor du eine Variable das erste Mal nutzen kann,
 dem Rechner sagen, wie du diese Variable verwenden willst. Das brauchst du in
 Python nicht. Das hat so seine Vor- und Nachteile. Steht eine Variable für einen
-Text, verwendet man sie als sogenannten String, abgekürzt `str`. Bei natürlichen
-Zahlen nennt man sie Integer, abgekürzt `int`. Mit `type(a)` kannst du Dir
-ausgeben lassen, wie die Variable verwendet wird. Probiere mal folgenden Code
-aus:
+Text, verwendet man sie als sogenannten String, abgekürzt `str`. Bei ganzen
+Zahlen nennt man sie Integer (engl. für ganze Zahl), abgekürzt `int`. Ganze Zahl
+heißt - es gehen sowohl positive als auch negative Zahlen. Mit `type(a)` kannst
+du Dir ausgeben lassen, wie die Variable verwendet wird. Probiere mal folgenden
+Code aus:
 
 {{ file(name="print-types.py") }}
 
@@ -594,6 +595,12 @@ Der erste Typ nennt sich Float (`float`) und ist für sogenannte
 Gleitkommazahlen. Spätestens wenn du dividierst oder mit Prozenten arbeitest,
 tauchen sie auf. Hier gibt es aber echte Untiefen, da Computer nicht so rechnen,
 wie wir das erwarten. Auf das Thema werden wir noch mehrfach zurückkommen.
+
+Wie groß ein int oder float sein kann, hing unter Python2 noch von deinem System
+ab. Und das ist bei vielen Computersprachen ebenfalls so. In Python3 - was du
+sicherlich verwendest - besteht diese Beschränkung theoretisch nicht mehr. Du
+kannst dir ja mal eine kleine Funktion bauen, die immer wieder 1 auf eine
+Variable draufaddiert und mal schauen, wie weit du damit kommst.
 
 Interessant ist der zweite Typ. Der nennt sich Bool (`bool`) oder Boolean
 (gesprochen Buhl bzw. Buhleo. Im Deutschen sog. boolesche Werte). Das ist ein
