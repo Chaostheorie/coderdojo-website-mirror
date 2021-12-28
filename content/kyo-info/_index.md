@@ -38,7 +38,7 @@ teilweise setzen wir die Inanspruchnahme der Hilfe sogar ausdrücklich voraus.
 Und bei uns geht es mehr als nur „schnöden" Code. Wir schauen auf Dinge wie
 Datenschutz, Nerdkultur ebenso wie auf Hardware.
 
-{{ figure(source="/images/JJS_Dojo_s.jpg", float="end", alt="Gürtel") }}
+{{ figure(source="/images/kyo-info/JJS_Dojo_s.jpg", float="end", alt="Gürtel") }}
 
 Trainieren? Der Begriff Dōjō kommt aus dem Kampfsport und stellt dort den
 Trainingsraum oder -halle dar. Programmieren lernen hat vieles damit gemeinsam.
@@ -84,7 +84,7 @@ Dir von den Mentorinnen helfen zu lassen. Oft braucht es nur einen kleinen
 Stupser in die richtige Richtung und du kannst die Aufgabe selber richtig
 weiterlösen.
 
-{{ figure(source="/images/karate-2717178_1280_s.jpg", float="start", alt="Bruchtest") }}
+{{ figure(source="/images/kyo-info/karate-2717178_1280_s.jpg", float="start", alt="Bruchtest") }}
 
 Was lernen wir? Wir beginnen mit Python. Die Wahl der „richtigen"
 Programmiersprache kann zu regelrechten Glaubensstreitigkeiten führen. Es gibt
@@ -114,7 +114,7 @@ Dinge machen, die anfangs noch nicht erklärt werden können. Aus diesem Grund
 verzichten wir zunächst auf grafische „Spielereien". Aber halte durch, die
 kommen!
 
-{{ figure(source="/images/martial-83009_1280_s.jpg", float="end", alt="Training") }}
+{{ figure(source="/images/kyo-info/martial-83009_1280_s.jpg", float="end", alt="Training") }}
 
 Wie oft solltest du Dich damit beschäftigen müssen? Müssen wäre schon mal kein
 guter Start. Wir sind hier nicht in der Schule. Wir treffen uns, weil wir
@@ -133,7 +133,7 @@ Böen können anstrengend sein, aber mit jeder lernt man etwas dazu. Und wenn da
 Bötchen kentert - nicht schlimm, wieder aufrichten, Wasser rausschöpfen,
 weiterfahren.
 
-{{ figure(source="/images/capsized-31696_1280_s.png", float="start", alt="Kentern") }}
+{{ figure(source="/images/kyo-info/capsized-31696_1280_s.png", float="start", alt="Kentern") }}
 
 Wir setzen keine Kenntnisse voraus. Wenn du schon Vorkenntnisse hast und später
 einsteigen willst, ist das kein Problem. Mach die Tests am Ende eines Kapitels
@@ -141,6 +141,14 @@ einsteigen willst, ist das kein Problem. Mach die Tests am Ende eines Kapitels
 keine Kapitel? Dann wirst du Dich leider gedulden müssen, da der Kurs noch im
 Entstehen ist. Wenn du aber schon soweit bist - beteilige Dich doch und hilf
 uns, den Kurs weiteraufzubauen.
+
+Vielen Dingen werden wir uns wie in einer Spirale annähern. Wir können nicht
+jedes Thema gleich bis in die Tiefe bearbeiten, weil das überforderte. Falls du
+also schon Vorkenntnisse hast oder dich auch sonst fragst, ob das zu einem Thema
+schon alles ist - in aller Regel nicht. Wir greifen die einzelnen Teile später
+wieder auf und vertiefen sie Stück für Stück.
+
+{{ figure(source="/images/kyo-info/fantasy-fractal.jpg", float="start", alt="Spirale") }}
 
 Was du jedoch brauchen wirst, ist eine installierte Python-Version mit
 virtualenv und eine Oberfläche, um einen Code zu schreiben. Wir empfehlen hier
@@ -208,17 +216,20 @@ Kinder in dem philippinischen Karate-Dōjō der Jack und Jill Schule in Bacolod 
 Von Jjskarate. - Eigenes Werk; Übertragen aus en.wikipedia nach Commons, CC
 BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=50279796>
 
-Karatetraining - Bild bei
+Karatetraining - Bild von
 [Michele Stival](https://pixabay.com/users/stivy73-6360334/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2717178)
 von
 [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2717178)
 
-Kindertraining - Bild bei
+Kindertraining - Bild von
 [PublicDomainPictures](https://pixabay.com/users/publicdomainpictures-14/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=83009)
 von
 [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=83009)
 
-Kentern - Bild bei
+Kentern - Bild von
 [Clker-Free-Vector-Images](https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=31696)
 von
 [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=31696)
+
+Spirale - Bild von
+[Stefan keller von Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4356228)

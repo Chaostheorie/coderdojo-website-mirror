@@ -10,6 +10,10 @@ date = 07-12-2021
 
 # 7. Kyo – Weißgurt
 
+> Hinweis: Der Text ist „frisch“. Wenn du Fehler entdeckst, Teile unverständlich
+> findest oder Ideen für bessere und mehr Beispiele und Übungen hast, lass es
+> uns bitte wissen, damit wir ihn korrigieren und verbessern können.
+
 > Am liebsten erinnere ich mich an die Zukunft.
 >
 > _Salvador Dali_
@@ -19,10 +23,6 @@ date = 07-12-2021
 Willkommen im ersten Teil. Wenn du „Überblick Dojo“ noch nicht gelesen hast,
 mach das bitte mal. Da steht, was du so brauchst, um hier gleich mit PyCharm und
 Python durchstarten zu können.
-
-> Hinweis: Der Text ist „frisch“. Wenn du Fehler entdeckst, Teile unverständlich
-> findest oder Ideen für bessere und mehr Beispiele und Übungen hast, lass es
-> uns bitte wissen, damit wir ihn korrigieren und verbessern können.
 
 ## Hello World
 
