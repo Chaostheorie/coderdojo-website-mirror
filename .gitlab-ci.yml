@@ -1,7 +1,7 @@
 image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-zola-builder:latest
 
 cache:
-    key: "${CI_COMMIT_REF_SLUG}"
+    key: '${CI_COMMIT_REF_SLUG}'
     paths:
         - node_modules
         - public
@@ -36,11 +36,11 @@ Lint:
             - themes/*
             - themes/**/*
             - helper/*
-            - "_config.yaml"
+            - '_config.yaml'
             - package.json
-            - "tailwind.config.js"
-            - "postcss.config.js"
-            - "yarn.lock"
+            - 'tailwind.config.js'
+            - 'postcss.config.js'
+            - 'yarn.lock'
             - .gitlab-ci.yml
         refs:
             - v2
@@ -75,7 +75,7 @@ CD:Red-Alternate:
         url: https://v2.coderdojo.red
     variables:
         DOMAIN: v2.coderdojo.red
-        KEY: "$CD_RED_V2_PRIVATE_KEY"
+        KEY: '$CD_RED_V2_PRIVATE_KEY'
         PRODUCTION: 1
 
 CD:Blue-Alternate:
@@ -86,5 +86,5 @@ CD:Blue-Alternate:
         url: https://v2.coderdojo.blue
     variables:
         DOMAIN: v2.coderdojo.blue
-        KEY: "$CD_BLUE_V2_PRIVATE_KEY"
+        KEY: '$CD_BLUE_V2_PRIVATE_KEY'
         PRODUCTION: 1
