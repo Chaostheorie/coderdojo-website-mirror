@@ -15,7 +15,7 @@ Daten die von Unternehmen gesammelt werden können, bleiben im Zweifel dort und 
 verloren. Vielleicht interessiert Dich jetzt ein Mensch und später möchtest du damit nicht später aufgezogen werden. Um
 das bildlicher zu machen – stell Dir vor, Dein Eltern schauen Dir die ganze Zeit über die Schultern …
 
-{% figure("/images/kyo-7/children-593313_1280_s.jpg", "right", "Den richtigen Browser gefunden!") %}
+{% figure "/images/kyo-7/children-593313_1280_s.jpg" "Den richtigen Browser gefunden!" "right" %}
 
 Es gibt Browser, die besonders gerne Daten sammeln und manche auch nach Hause schicken. Ebenso gibt es Browser, die
 anderen Seiten es leichter oder schwerer machen, dies zu erkennen, wer du bist. Aktuell empfehlen wir Dir Brave zu
@@ -23,7 +23,7 @@ benutzen, da er recht datensparsam ist. Firefox ist auch ganz okay. Abraten wür
 Chrome. Brave baut auf Chromium, der Open-Source Variante von Google Chrome, auf, ist aber eben datenschutzfreundlicher.
 Diese Empfehlung gilt jetzt – Software ändert sich. Da gilt es dranzubleiben.
 
-{% figure("/images/kyo-7/Brave.png", "right", "Brave") %}
+{% figure "/images/kyo-7/Brave.png" "Brave" "right" %}
 
 E-Mail ist ein ganz großes Thema. Deutlich später wollen wir ebenfalls einmal dran zu machen zu schauen, wie das
 eigentlich so funktioniert. Das ist aber ein eigenes und größeres Kapitel. Wir gehen davon aus, dass du keinen eigenen
@@ -59,7 +59,7 @@ matrix.cyber4edu.org einen kostenlosen Account. Für Matrix gibt es verschiedens
 oder auf dem Handy laufen. Der bekannteste nennt sich Element. Lade Dir den runter und richte ihn Dir ein. Uns findest
 du unter [@coderdojo:matrix.cyber4edu.org](https://matrix.to/#/@coderdojo:chat.cyber4edu.org).
 
-{% figure("/images/kyo-7/Cyber4EDU_sticker.png", "right", "cyber4EDU Logo") %}
+{% figure "/images/kyo-7/Cyber4EDU_sticker.png" "cyber4EDU Logo" "right" %}
 
 Okay, mit dem richtigen Browser, einer vernünftigen E-Mail-Adresse und dem passenden Messenger ausgestattet bist du von
 den Noobs erfolgreich einen ganzen Schritt hin zu den Nerds gegangen. Du fängst langsam an, Deinen Jogginganzug gegen

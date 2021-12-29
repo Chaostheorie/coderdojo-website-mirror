@@ -79,7 +79,7 @@ async function initUI() {
     menuToggle.addEventListener('click', (evt) => {
         evt.preventDefault();
         menuToggle.classList.toggle('toggled');
-        document.getElementById('sidenav').classList.toggle('-ml-[15rem]');
+        document.getElementById('sidenav').classList.toggle('tw--ml-[15rem]');
     });
 
     // Shikwasa support

@@ -5,27 +5,27 @@
     }
 
     .underlined-theme {
-        @apply font-mono border-b-4 border-solid border-theme w-fit;
+        @apply tw-font-mono tw-border-b-4 tw-border-solid tw-border-theme tw-w-fit;
     }
 
     .btn {
-        @apply flex items-center justify-center px-3 py-2 cursor-pointer md:py-3 md:px-4 xl:px-3 xl:py-2;
+        @apply tw-cursor-pointer tw-justify-center tw-flex tw-items-center tw-px-3 tw-py-2 md:tw-py-3 md:tw-px-4 xl:tw-px-3 xl:tw-py-2;
     }
 
     .btn-sm {
-        @apply flex items-center justify-center px-2 py-1;
+        @apply tw-justify-center tw-flex tw-items-center tw-px-2 tw-py-1;
     }
 
     .btn-primary {
-        @apply p-2 transition-short hoverable-shadow text-slate-100 bg-theme hover:text-theme hover:bg-slate-100 hover:ring-2 hover:ring-theme;
+        @apply tw-p-2 transition-short hoverable-shadow tw-text-slate-100 tw-bg-theme hover:tw-text-theme hover:tw-bg-slate-100 hover:tw-ring-2 hover:tw-ring-theme;
     }
 
     .toggled {
-        @apply left-[16rem] rotate-180 motion-reduce:rotate-0 !important;
+        @apply tw-left-[16rem] tw-rotate-180 motion-reduce:tw-rotate-0 !important;
     }
 
     .card-transition {
-        @apply transition duration-500 ease-in-out;
+        @apply tw-transition tw-duration-500 tw-ease-in-out;
     }
 
     .card-title-hoverable {
@@ -37,19 +37,19 @@
     }
 
     .card {
-        @apply m-2 bg-slate-100 hoverable-shadow card-transition;
+        @apply tw-m-2 tw-bg-slate-100 hoverable-shadow card-transition;
     }
 
     .card-title {
-        @apply w-full p-2 text-xl bg-theme text-slate-100;
+        @apply tw-p-2 tw-text-xl tw-w-full tw-bg-theme tw-text-slate-100;
     }
 
     .card-content {
-        @apply p-2;
+        @apply tw-p-2;
     }
 
     .icon-belt::before {
-        @apply inline-block font-normal font-['Glyphter'] content-['\0053'] text-current align-bottom leading-4 text-xl not-italic rotate-180;
+        @apply tw-inline-block tw-font-normal tw-font-['Glyphter'] tw-content-['\0053'] tw-text-current tw-align-bottom tw-leading-4 tw-text-xl tw-not-italic tw-rotate-180;
         -webkit-text-stroke: 0.015em #fff;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -58,10 +58,10 @@
     /* code blocks */
     figure.highlight,
     pre[class*='language-'] {
-        @apply px-1 my-2 overflow-x-scroll border-2 border-opacity-50 border-solid rounded border-theme;
+        @apply tw-overflow-x-scroll tw-rounded tw-px-1 tw-my-2 tw-border-2 tw-border-opacity-50 tw-border-solid tw-border-theme;
     }
 
     figure.highlight {
-        @apply block py-0 max-h-fit;
+        @apply tw-block tw-py-0 tw-max-h-fit;
     }
 }

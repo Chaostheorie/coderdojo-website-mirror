@@ -119,8 +119,7 @@ sie explizit, also mit Variablentyp. Keine Sorge, wir werden das Thema noch übe
 ist an dieser Stelle, dass du schon davon gehört hast und versucht, einen Blick dafür zu entwickeln, mit was für einem Variablentyp
 du es gerade zu tun hast. Im Code kannst du immer mit `type(Variablenname)` auswerfen lassen, wie Python ihn gerade behandelt.
 
-{% figure("/images/kyo-7/SolarpanelBp_a.jpeg", "start", "Solarzellen
- werden mittels Lötbändchen zu Strängen,<br> den sogeannten Strings verbunden") %}
+{% figure "/images/kyo-7/SolarpanelBp_a.jpeg" "Solarzellen werden mittels Lötbändchen zu Strängen,<br> den sogeannten Strings verbunden" "left) %}
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch Stringspielereien. Wie man zwei Strings wie `"ot"` `"to"`
 kombiniert, hast du schon gesehen: aus `"ot" + "to"` wird `"otto"`. Das ein String in zwei `""` eingefasst werden muss,
@@ -139,7 +138,7 @@ Python -- nicht verarbeiten, stumpf ausgeben. Wir nennen diesen Vorgang escapen,
 damit du es gesehen hast – man kann auch mit drei `"` oder ``` arbeiten, um einen String zu definieren. Das funktioniert
 sogar über Zeilen hinweg.
 
-{% figure("/images/kyo-7/Python_string_int.jpg", "right", "Dieses Meme solltest Du jetzt nachvollziehen können.") %}
+{% figure "/images/kyo-7/Python_string_int.jpg" "Dieses Meme solltest Du jetzt nachvollziehen können." "right" %}
 
 Die Ausgabe von Variablen hast du schon gesehen, auch die Kombination mit Text. Dafür gibt es einen einfachen und einen
 eleganten Weg. Der einfache Weg ist `print("Inhalt von a: ", a)`. Der ist aber veraltet und wenig elegant. Besser ist:

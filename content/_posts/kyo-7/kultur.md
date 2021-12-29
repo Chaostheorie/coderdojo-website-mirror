@@ -18,7 +18,7 @@ ist Pflichtlektüre, den Rest willst du aber auch gelesen haben. Viele Witze unt
 nicht verstehen. Falls du schon alle fünf Bände kennen solltest und im Original gelesen hast, solltest du Dir in einer
 Bibliothek die BBC-Fernsehserie besorgen.
 
-{% figure("/images/kyo-7/Matrix-logo.png", "right", "Matrix") %}
+{% figure "/images/kyo-7/Matrix-logo.png" "Matrix" "right" %}
 
 Unsere Filmempfehlung zum 8. Kyo sind die drei Teile von Matrix. Auch hier gilt – Filme sind wie Bücher eine gute
 Gelegenheit, sein Englisch zu trainieren. Wenn Dir das bei Filmen noch schwerfällt, probiere es mit englischer Tonspur

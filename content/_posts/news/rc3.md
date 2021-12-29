@@ -62,4 +62,4 @@ Onlinetreffen (jeweils circa eine Stunde):
 
 [30. Dezember 2021 17 Uhr 4. Austauschtreffen](<(https://https://bbb.cyber4edu.org/b/der-0rc-8x7-4re)>)
 
-{% figure("/images/man_muesste.jpg", null, "Man müsste …") %}
+{% figure "/images/man_muesste.jpg" "Man müsste …" %}

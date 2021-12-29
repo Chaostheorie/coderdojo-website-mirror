@@ -12,7 +12,7 @@ category: info
 >
 > _The Matrix_
 
-> Diese Seite gibt es auch zum Hören:
+### Diese Seite gibt es auch zum Hören:
 
 {% audio "https://dect42.de/audio/Uberblick.mp3" "Überblick CoderDojo" "bengoshi" "/images/pregenerated/default_transparent_765x625.png" %}
 
@@ -30,7 +30,7 @@ hat, dass da viele das Handtuch schmeißen, beispielsweise die Installation. Las
 setzen wir die Inanspruchnahme der Hilfe sogar ausdrücklich voraus. Und bei uns geht es mehr als nur „schnöden" Code.
 Wir schauen auf Dinge wie Datenschutz, Nerdkultur ebenso wie auf Hardware.
 
-{% figure("/images/JJS_Dojo_s.jpg", "right", "Gürtel") %}
+{% figure "/images/kyo-info/JJS_Dojo_s.jpg" "Gürtel" "right" %}
 
 Trainieren? Der Begriff Dōjō kommt aus dem Kampfsport und stellt dort den Trainingsraum oder -halle dar. Programmieren
 lernen hat vieles damit gemeinsam. Jeder der Lesen und Schreiben kann, kann Programmieren lernen. Aber wenn du
@@ -62,7 +62,7 @@ nicht in der Schule. Hier geht es nicht darum, eine Prüfung zu bestehen, sonder
 Test stecken bleibst, nimm das zum Anlass, um Dir von den Mentorinnen helfen zu lassen. Oft braucht es nur einen kleinen
 Stupser in die richtige Richtung und du kannst die Aufgabe selber richtig weiterlösen.
 
-{% figure("/images/karate-2717178_1280_s.jpg", "left", "Bruchtest") %}
+{% figure "/images/kyo-info/karate-2717178_1280_s.jpg" "Bruchtest" "left" %}
 
 Was lernen wir? Wir beginnen mit Python. Die Wahl der „richtigen" Programmiersprache kann zu regelrechten
 Glaubensstreitigkeiten führen. Es gibt Sprachen, die sich eher für Anfänger eignen und welche, die sich weniger für
@@ -84,7 +84,7 @@ gleich ein Weltraumspiel bauen und dieses Stück für Stück weiter ausbauen. Gl
 die anfangs noch nicht erklärt werden können. Aus diesem Grund verzichten wir zunächst auf grafische „Spielereien". Aber
 halte durch, die kommen!
 
-{% figure("/images/martial-83009_1280_s.jpg", "end", "Training") %}
+{% figure "/images/kyo-info/martial-83009_1280_s.jpg" "Training" "right" %}
 
 Wie oft solltest du Dich damit beschäftigen müssen? Müssen wäre schon mal kein guter Start. Wir sind hier nicht in der
 Schule. Wir treffen uns, weil wir neugierig sind und Spaß an der Sache haben, nicht weil wir müssen. Insofern kann man
@@ -97,7 +97,7 @@ sondern motiviere, dran zu bleiben. Der Anfang stellt erfahrungsgemäß eine ers
 Höhen und Tiefen. Niemand lernt Segeln, wenn immer Flaute ist. Böen können anstrengend sein, aber mit jeder lernt man
 etwas dazu. Und wenn das Bötchen kentert - nicht schlimm, wieder aufrichten, Wasser rausschöpfen, weiterfahren.
 
-{% figure("/images/capsized-31696_1280_s.png", float="left", "Kentern") %}
+{% figure "/images/kyo-info/capsized-31696_1280_s.png" "Kentern" "right" %}
 
 Wir setzen keine Kenntnisse voraus. Wenn du schon Vorkenntnisse hast und später einsteigen willst, ist das kein Problem.
 Mach die Tests am Ende eines Kapitels (nicht nur lesen, lösen!). Wenn du die hinbekommst, weiterziehen. Es gibt noch

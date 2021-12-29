@@ -1,25 +1,17 @@
 @layer utilities {
-    .bg-theme {
-        background-color: theme('colors.theme');
-    }
-
-    .text-theme {
-        color: theme('colors.theme');
-    }
-
     .hoverable-shadow-border {
-        @apply border-2 border-black border-solid;
+        @apply tw-border-2 tw-border-black tw-border-solid;
     }
 
     .hoverable-shadow {
-        @apply drop-shadow-[4px_4px_0px_#000] hoverable-shadow-border hover:drop-shadow-none;
+        @apply tw-drop-shadow-[4px_4px_0px_#000] hoverable-shadow-border hover:tw-drop-shadow-none;
     }
 
     .h-0-important {
-        height: 0 !important;
+        @apply tw-h-0 !important;
     }
 
     .transition-short {
-        @apply transition-all duration-300 ease-in-out;
+        @apply tw-ease-in-out tw-transition-all tw-duration-300;
     }
 }

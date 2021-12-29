@@ -3,7 +3,7 @@
     "version": "2.0.0",
     "private": true,
     "scripts": {
-        "ci:build": "yarn pre:global && yarn dev:build && yarn compress:global",
+        "ci:build": "yarn pre:global && yarn dev:build && yarn post:global",
         "ci:lint": "yarn dev:format-sub -c",
         "compress:global": "yarn compress:html && yarn compress:svg && yarn run compress:png && yarn run compress:jpeg",
         "compress:html": "node helper/compress.js",
@@ -19,7 +19,10 @@
         "pre:generate-licenses": "yarn license-checker --direct --json --production --out licenses.json --excludePrivatePackages --customPath license-format.json",
         "pre:global": "yarn pre:postcss && yarn pre:rollup && yarn pre:generate-licenses",
         "pre:rollup": "rollup -c",
-        "pre:postcss": "postcss 'themes/v2/source/_css/index.css' --output 'themes/v2/source/css/index.css'"
+        "pre:strawman-css": "echo '' > themes/v2/source/css/index.css",
+        "pre:postcss": "postcss 'themes/v2/source/_css/index.css' --output 'themes/v2/source/css/index.css'",
+        "post:global": "yarn compress:global && yarn post:postcss",
+        "post:postcss": "postcss 'themes/v2/source/_css/index.css' --output 'public/css/index.css'"
     },
     "hexo": {
         "version": "6.0.0"

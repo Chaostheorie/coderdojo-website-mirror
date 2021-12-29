@@ -10,4 +10,4 @@ von 14 bis 17 Uhr. Das ist eine gute Gelegenheit für diejenigen, die beim letzt
 sich zu treffen und ihre Projekte fortsetzen wollen. Und natürlich für alle anderen, die neu hinzukommen wollen. Der
 xHain ist ein Hacker- und Makerspace, der diverse Möglichkeiten zum Hacken und Basteln bietet.
 
-{% figure("/images/man_muesste.jpg", null, "Man müsste …") %}
+{% figure "/images/man_muesste.jpg" "Man müsste …" %}

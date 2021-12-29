@@ -4,19 +4,19 @@
 <%- partial('partial/head') %>
 
 <html>
-    <body class="md:flex md:flex-row md:flex-nowrap max-w-[100vw]">
+    <body class="md:tw-flex md:tw-flex-row md:tw-flex-nowrap tw-max-w-[100vw]">
         <%- partial('partial/sidenav') %>
         <div
-            class="container w-full p-2 mx-auto"
+            class="tw-container tw-w-full tw-p-2 tw-mx-auto"
             itemscope
             id="section-content"
             itemtype="https://schema.org/SearchResultsPage"
         >
-            <button class="fixed z-20 p-3 btn-primary left-5 top-5 xl:hidden" id="sidenav-toggle" tabindex="0">
+            <button class="tw-fixed tw-z-20 tw-p-3 btn-primary tw-left-5 tw-top-5 xl:tw-hidden" id="sidenav-toggle" tabindex="0">
                 <i class="bi bi-chevron-right"></i>
             </button>
-            <div class="body min-h-screen mt-16 mx-auto max-w-[50rem] z-10"><%- body %></div>
-            <div class="footer"><%- partial('partial/footer') %></div>
+            <div class="tw-body tw-min-h-screen tw-mt-16 tw-mx-auto tw-max-w-[50rem] tw-z-10"><%- body %></div>
+            <div class="tw-footer tw-mx-auto tw-max-w-[50rem]"><%- partial('partial/footer') %></div>
         </div>
     </body>
 </html>

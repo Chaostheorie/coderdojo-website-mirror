@@ -23,11 +23,11 @@ brauchst, um hier gleich mit PyCharm und Python durchstarten zu können.
 
 Wenn du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 
-{% figure("/images/kyo-7/8-1-Pycharm-2.png", null, "PyCharm – Welcome screen") %}
+{% figure "/images/kyo-7/8-1-Pycharm-2.png" "PyCharm – Welcome screen" %}
 
 Klicke auf `New Project`. Dann schaut es ungefähr so aus:
 
-{% figure("/images/kyo-7/8-1-Pycharm-3.png", null, "PyCharm – New Project screen") %}
+{% figure "/images/kyo-7/8-1-Pycharm-3.png" "PyCharm – New Project screen" %}
 
 Bei der obersten Zeile mit Location änderst du den Projektnamen auf „HelloWorld“. Das ist Dein Projektname. Die weiteren
 Einstellmöglichkeiten hier werden wir mit der Zeit kennenlernen. Dann klickst du auf „Create“. Unter Umständen rödelt
@@ -36,7 +36,7 @@ Das löschst du jetzt einfach – entweder du markierst es mit der Maus und drü
 lernen ist immer gut – mit Strg+A oder Control+A alles markieren und dann Entf drücken. Dann sollte das bei Dir ungefähr
 so ausschauen:
 
-{% figure("/images/kyo-7/8-1-Pycharm-4.png", null, "PyCharm – Empty main.py") %}
+{% figure "/images/kyo-7/8-1-Pycharm-4.png" "PyCharm – Empty main.py" %}
 
 Okay, jetzt kann es losgehen!
 
@@ -52,7 +52,7 @@ print("Hello World")
 Jetzt führst du das Programm aus: du gehst in der Menüzeile auf „Run“ und dort auf den obersten Punkt „Run `main`“. Dann
 sollte sich unten ein Fenster aufbauen, in welchem das Ergebnis Deines Programms ausgeführt wird.
 
-{% figure("/images/kyo-7/8-1-Pycharm-5.png", null, "PyCharm – hello world") %}
+{% figure "/images/kyo-7/8-1-Pycharm-5.png" "PyCharm – hello world" %}
 
 Wenn da „Hello World“ steht, hast du es geschafft: Dein erstes Programm! Okay, noch ein sehr kleines, aber immerhin.
 Wenn du bis hierin nicht gekommen bist – bitte zögere nicht und lass Dir helfen! Hier können unvorhersehbare
@@ -137,7 +137,7 @@ eingerückt ist und wenn die erste, aber nicht die zweite eingerückt ist. Der e
 Warum? Weil Python erwartet, dass es zu der Schleife einen Inhalt gibt. Rückst du nichts ein, fehlt dieser Inhalt. Spiel
 ruhig damit ein wenig rum. Mach mal was mit zwei for-Schleifen oder ändere den Wert in Range.
 
-{% figure("/images/kyo-7/Tie_shoelace.png", "start", "Schleifen für Schuhe...") %}
+{% figure "/images/kyo-7/Tie_shoelace.png" "Schleifen für Schuhe..." "left" %}
 
 Was passiert jetzt bei dieser Schleife? `i` ist eine sogenannte Variable. Das kennst du bestimmt schon aus dem
 Matheunterricht. Ihr wird mit jedem Durchlauf eine Zahl zugewiesen. `range(10)` gibt an, dass mit jedem Durchlauf `i` um
@@ -171,9 +171,9 @@ nachschauen willst, was Du schon gemacht hast. Lege Dir also für neue Übungen 
 auf den Projektordner, rechte Maustaste, New, Python. Dann gibt Du einen Dateinamen an. Vermeide bei den Dateinamen
 bitte Leerzeichen.
 
-{% figure("/images/kyo-7/8-1-Pycharm-6.png", null, "PyCharm – new file") %}
+{% figure "/images/kyo-7/8-1-Pycharm-6.png" "PyCharm – new file" %}
 
-{% figure("/images/kyo-7/8-1-Pycharm-7.png", null, "PyCharm – new file") %}
+{% figure "/images/kyo-7/8-1-Pycharm-7.png" "PyCharm – new file" %}
 
 ## Malen in Schleifen
 

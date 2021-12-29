@@ -6,8 +6,6 @@ date: 07-12-2021
 category: chapters
 ---
 
-## Löten
-
 > And if smells like chicken, it's the wrong side.
 
 Nachdem wir uns eine ganze Zeit mit Software beschäftigt haben, machen wir eine Runde Hardware. Am einfachsten dürfte
@@ -17,14 +15,14 @@ voraus, da die Teilnehmenden unterschiedlich alt sind und dem Thema in der Schul
 wird. Es kann also gut sein, dass du gerade am Anfang gähnst. Keine Sorge, wird steigern das Stück für Stück. Aber wir
 wollen alle mitnehmen.
 
-{% figure("/images/kyo-7/derMicha_Soldering_th.jpg", null, "derMicha bei einem Löt-Workshop") %}
+{% figure "/images/kyo-7/derMicha_Soldering_th.jpg" "derMicha bei einem Löt-Workshop" %}
 
 Zunächst solltest du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn du noch keine Erfahrung hast, lass Dir
 ein kleines Stück Lochraster geben und ein paar alte Bauteile und versuche die, ein- und auszulöten. Wir können hier nur
 bedingt etwas zu erklären, da Dir am besten eine Mentorin kurz zeigt, wie es geht. Der Rest ist handwerkliche Fähigkeit,
 dass muss man also einfach ein bißchen selber gemacht haben.
 
-{% figure("/images/kyo-7/Lochraster_loeten.jpg", null, "Lötübungen am Lochraster") %}
+{% figure "/images/kyo-7/Lochraster_loeten.jpg" "Lötübungen am Lochraster" %}
 
 Wenn du damit klar kommst, dann kommt als nächstes, eine LED zum Leuchten zu bringen. Lass Dir dafür bitte die passenden
 Bauteile geben. Für die Mentoren - benötigt werden:
@@ -35,7 +33,7 @@ Bauteile geben. Für die Mentoren - benötigt werden:
 -   220 Ω Widerstand und
 -   4,5 V-Batterieadapter.
 
-{% figure("/images/kyo-7/Leiterbahnen_ziehen.jpg", null, "Leiterbahnen ziehen will geübt sein.") %}
+{% figure "/images/kyo-7/Leiterbahnen_ziehen.jpg" "Leiterbahnen ziehen will geübt sein." %}
 
 Strom braucht zum Fließen immer einen Stromkreis. Manche Bauelemente können Strom nur durch eine Richtung durchlassen,
 so wie die LED. Wenn die LED also mal nicht leuchtet - probiere sie mal zu drehen. Die mag es aber nicht wirklich,
@@ -55,13 +53,13 @@ man da zuviel Wasser durch, platzt es. Das verhindern wir mit dem Widerstand. Hi
 Solche Zeichnungen stellt man technisch mit sogenannten Schaltplänen dar. Dabei haben bestimmte Bauelemente fest
 definierte Zeichen. Die kleine Schaltung, die du Dir zurecht gelötet hast, schaut dann so aus:
 
-{% figure("/images/kyo-7/LED-Schaltung.png", null, "LED-Schaltung") %}
+{% figure "/images/kyo-7/LED-Schaltung.png" "LED-Schaltung" %}
 
 Vergleiche das mal mit Deiner Schaltung, wenn du fertig bist. Widerstände gibt es viele. Die Stärke wird gemessen in der
 Einheit Ω (gesprochen Ohm). Wenn man das Zeichen Ω nicht hat, kürzt man es mit R (das englische Wort für Widerstand ist
 ´resistor´) ab.
 
-{% figure("/images/kyo-7/Widerstand.jpg", null, "typischer Widerstand") %}
+{% figure "/images/kyo-7/Widerstand.jpg" "typischer Widerstand" %}
 
 Wieviel Ohm muss den unser Widerstand nun haben? Da wird es jetzt kurz einmal theoretisch, denn das kann man mit einer
 kleinen Formel selbst ausrechnen:
@@ -78,7 +76,7 @@ hoch die Spannung in der LED sein darf. Wir arbeiten hier mit einer kleinen (5mm
 bei 1,6 V bis 2 V kuschelig. Diesen Wert liefern die Hersteller in ihren Spezifikationen mit. Es gibt also zu jedem
 Bauteil so ein Datenblatt. Aus Vereinfachungsgründen sagen wir die notwendigen Werte aber an.
 
-{% figure("/images/kyo-7/LED-falsch.jpg", null, "So sollte eine LED nicht im Lochraster festgemacht werden…") %}
+{% figure "/images/kyo-7/LED-falsch.jpg" "So sollte eine LED nicht im Lochraster festgemacht werden…" %}
 
 Vereinfacht können wir jetzt sagen - 4,5 V Batteriespannung - 2 V will-die-LED-haben = 1,5 V zu vernichtende Spannung.
 Jetzt brauchen wir noch den Nennstrom der LED. Aus das stünde im Datenblattn, gehe jetzt bitte einfach von 0,025 Ampere
@@ -94,7 +92,7 @@ ein Programm. Mit der Zeit kannst du da noch andere Werte für andere LEDs reinp
 dafür keinen Taschenrechner mehr. Alles klar soweit? Wenn nicht, nicht schlimm. Deine Mentor:innen vor Ort helfen Dir da
 gerne.
 
-{% figure("/images/kyo-7/LED-richtig.jpg", null, "So schaut das richtig aus mit der LED!") %}
+{% figure "/images/kyo-7/LED-richtig.jpg" "So schaut das richtig aus mit der LED!" %}
 
 Okay, wenn Deine LED leuchtet, soll es an dieser Stelle erstmal mit dem Kapitel löten gewesen sein. Beim nächsten Kyo
 wird ein Controller, quasi ein kleiner Computer, zusammengelötet. Einen Kyo später kümmern wir uns dann auch um die

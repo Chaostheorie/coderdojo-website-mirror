@@ -4,25 +4,32 @@ const truncate = hexo.extend.helper.get('truncate').bind(hexo);
 const strip = hexo.extend.helper.get('strip_html').bind(hexo);
 const helper_cache = {};
 
-hexo.extend.tag.register('figure', function (path, alt, float) {
-    return '';
+// [path, alt, float = "null"]
+hexo.extend.tag.register('figure', function (data) {
+    return `
+    <div class="${data.length >= 3 ? '' : 'tw-w-full tw-my-2'}">
+        <figure class="${data.length >= 3 ? `tw-m-2 tw-float-${data[2]}` : 'tw-mx-auto tw-w-fit'}">
+            <img src="${url_for(data[0])}" alt="${data[1]}">
+            <figcaption>${data[1]}</figcaption>
+        </figure>
+    </div>`;
 });
 
 hexo.extend.tag.register('audio', function (src) {
-    return `<div data-toggle="audio-player" data-src="${src[0]}" data-title="${src[1]}" data-artist="${src[2]}" data-cover="${src[3]}" class="my-4"></div>`;
+    return `<div data-toggle="audio-player" data-src="${src[0]}" data-title="${src[1]}" data-artist="${src[2]}" data-cover="${src[3]}" class="tw-my-4"></div>`;
 });
 
 hexo.extend.tag.register('button', function (data) {
     let button = `
-    <a class="btn btn-primary mx-2" href="${url_for(data[1])}">
-        <i class="bi bi-${data.length >= 4 ? data[3] || 'link-45deg' : 'link45-deg'} mr-2"></i> ${data[0]}
+    <a class="btn btn-primary tw-mx-2" href="${url_for(data[1])}">
+        <i class="bi bi-${data.length >= 4 ? data[3] || 'link-45deg' : 'link45-deg'} tw-mr-2"></i> ${data[0]}
     </a>`;
 
     if (data[2] === 'null') {
         return button;
     } else {
         return `
-        <div class="flex w-full my-1 justify-${data[2] || 'center'}">
+        <div class="tw-flex tw-w-full tw-my-1 tw-justify-${data[2] || 'center'}">
             ${button}
         </div>
         `;
@@ -53,22 +60,24 @@ hexo.extend.tag.register('attributions', function () {
 
             console.log('Cache Bust');
             return `
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-3">
+            <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-2 tw-mt-3">
                 ${Object.keys(licenses)
                     .map((license) => {
                         let data = licenses[license];
 
                         return `
-                        <div class="flex flex-col card">
-                            <div class="card-title font-bold flex justify-between">
-                                ${strip(license)} <span class="border-solid border-theme border-1 p-1">${strip(
+                        <div class="tw-flex tw-flex-col card">
+                            <div class="card-title tw-font-bold tw-flex tw-justify-between">
+                                ${strip(
+                                    license
+                                )} <span class="tw-border-solid tw-border-theme tw-border-1 tw-p-1">${strip(
                             data['licenses']
                         )}
                         </span>
                             </div>
 
-                            <div class="flex flex-col justify-between flex-grow card-content">
-                                <p class="flex-grow">
+                            <div class="tw-flex tw-flex-col tw-justify-between tw-flex-grow card-content">
+                                <p class="tw-flex-grow">
                                     <details>
                                         <summary>${strip(
                                             truncate(
@@ -122,6 +131,7 @@ hexo.extend.helper.register('chapters', (page, theme) => {
         next = null;
 
     if (
+        page.categories !== undefined &&
         page.categories.data.some((category) => {
             return category.name === 'chapters';
         })

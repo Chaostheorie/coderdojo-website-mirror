@@ -10,7 +10,7 @@ Wir kommen noch zu Linux, aber um Dir einen Vorgeschmack zu geben, besorge Dir m
 Linus Torvalds und David Diamond. Das Buch gibt es auf Deutsch und auf Englisch. Das ist nicht neu, aber lohnt sich
 immer noch. Berliner:innen können sich das leihen.
 
-{% figure("/images/kyo-6/Tux.png", "start", "Das Tux-Maskottchen von Larry Ewing, Simon Budig, Garrett LeSage") %}
+{% figure "/images/kyo-6/Tux.png" "Das Tux-Maskottchen von Larry Ewing, Simon Budig, Garrett LeSage" "left" %}
 
 Geh auf [VOEBB](https://voebb.de). Da liegt es im Magazin der Amerikanischen Gedenkbibliothek. Kennst du nicht? Dann ist
 das eine gute Gelegenheit, Deutschlands größte öffentliche Bibliothek kennen zu lernen. Wenn du noch keinen Ausweis

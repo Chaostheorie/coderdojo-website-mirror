@@ -4,17 +4,17 @@
     /* @author: ericwbailey | Rewritten for tailwind with WCGA AAA target by Cobalt */
 
     .hljs {
-        @apply block pt-0 pb-0 overflow-x-scroll md:pt-2 text-slate-900;
+        @apply tw-block tw-pt-0 tw-pb-0 tw-overflow-x-scroll md:tw-pt-2 tw-text-slate-900;
     }
 
     .gutter {
-        @apply pr-1;
+        @apply tw-pr-1;
     }
 
     /* Comment */
     .hljs-comment,
     .hljs-quote {
-        @apply text-gray-800;
+        @apply tw-text-gray-800;
     }
 
     /* Red */
@@ -26,7 +26,7 @@
     .hljs-selector-class,
     .hljs-regexp,
     .hljs-deletion {
-        @apply text-fuchsia-800;
+        @apply tw-text-fuchsia-800;
     }
 
     /* Orange */
@@ -38,12 +38,12 @@
     .hljs-params,
     .hljs-meta,
     .hljs-link {
-        @apply text-red-800;
+        @apply tw-text-red-800;
     }
 
     /* Yellow */
     .hljs-attribute {
-        @apply text-orange-800;
+        @apply tw-text-orange-800;
     }
 
     /* Green */
@@ -51,26 +51,26 @@
     .hljs-symbol,
     .hljs-bullet,
     .hljs-addition {
-        @apply text-lime-800;
+        @apply tw-text-lime-800;
     }
 
     /* Blue */
     .hljs-title,
     .hljs-section {
-        @apply text-teal-800;
+        @apply tw-text-teal-800;
     }
 
     /* Purple */
     .hljs-keyword,
     .hljs-selector-tag {
-        @apply text-purple-800;
+        @apply tw-text-purple-800;
     }
 
     .hljs-emphasis {
-        @apply italic;
+        @apply tw-italic;
     }
 
     .hljs-strong {
-        @apply font-bold;
+        @apply tw-font-bold;
     }
 }

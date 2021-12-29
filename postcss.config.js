@@ -1,3 +1,9 @@
+const is_prod = () => {
+    return process.env.PRODUCTION !== undefined;
+};
+
+console.log(`Purging: ${is_prod()}`);
+
 module.exports = {
     plugins: [
         require('postcss-import')(),
@@ -7,11 +13,11 @@ module.exports = {
         require('postcss-font-magician')(),
         require('postcss-viewport-height-correction'),
         require('postcss-pxtorem')(),
-        process.env.PRODUCTION
+        is_prod()
             ? require('@fullhuman/postcss-purgecss')({
                   content: ['public/**/*.html', 'public/*.html', 'themes/v2/**/*.ejs', 'content/{**/*, *}.{md, html}'],
-                  css: ['public/main.css'],
-                  safelist: ['bi-clipboard-check', /shk./],
+                  css: ['public/css/index.css'],
+                  safelist: ['bi-clipboard-check', /shk./, 'toggled', /tw./, /md./, /xl./, /lg./, /sm./],
                   fontFace: true,
                   keyframes: true,
               })

@@ -6,7 +6,7 @@ date: 07-12-2021
 category: chapters
 ---
 
-{% figure("/images/kyo-6/Pygame.png", "right", "Das pygame-Logo von TheCorruptor/pygame developers") %}
+{% figure "/images/kyo-6/Pygame.png" "Das pygame-Logo von TheCorruptor/pygame developers" "right" %}
 
 Juhu, wir kommen zu pygames. Das ist eine Bibliothek, die es Dir ermöglicht, Grafik darzustellen und Tastatur- und
 Mauseingaben abzufangen, damit du sie gut verarbeiten kannst. Wenn du zockst, wollen wir gleich zugestehen, dass man mit
@@ -93,7 +93,7 @@ Deine Koordinaten durch die Variablen, die du am Anfang definiert hast (player_x
 
 Das sollte dann ungefähr so ausschauen (natürlich mit jeweils Deinem Hintergrund und Deiner Spielfigur):
 
-{% figure("/images/arcarde_1.png", null, "arcarde Screenshot") %}
+{% figure "/images/arcarde_1.png" "arcarde Screenshot" %}
 
 Insgesamt müsste bei Dir jetzt ungefähr dieser Code stehen:
 

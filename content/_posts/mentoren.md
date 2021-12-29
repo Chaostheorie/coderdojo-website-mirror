@@ -8,7 +8,7 @@ category: info
 
 ## derMicha
 
-{% figure("https://dect42.de/images/derMicha.jpg", "left", "derMicha") %}
+{% figure "https://dect42.de/images/derMicha.jpg" "derMicha" "left" %}
 
 Michael Merz (/derMicha) ist seit mehr als 20 Jahren als Software-Entwickler und -Architekt tätig. Er ist unter anderem
 Mitgründer der [ubirch GmbH](https://ubirch.com). Beruflich liegen seine Schwerpunkte bei Scala, Java, IoT und Big Data.
@@ -24,7 +24,7 @@ Digitalisierung der Bildung.
 
 ## bengoshi
 
-{% figure("https://dect42.de/images/bengoshi.jpg", "right", "bengoshi") %}
+{% figure "https://dect42.de/images/bengoshi.jpg" "bengoshi" "right" %}
 
 Kai Kobschätzki (/bengoshi) war im zivilen Leben über zehn Jahre als Rechtsanwalt mit den Schwerpunkten Steuer- und
 Gesellschaftsrecht tätig, weshalb Begriff wie ERP, Legal Tech und Legal Design bengoshi sofort triggern. Aktuell ist er
@@ -43,6 +43,6 @@ Hast du Lust, bei uns mitzumachen? Neue Konzepte und Ideen auszuprobieren? Nur z
 
 <div class="flex justify-center py-2">
     <a href="/contact/" class="w-fit btn btn-primary">
-       <i class="bi bi-envelope mr-1"></i> Kontakt
+       <i class="mr-1 bi bi-envelope"></i> Kontakt
     </a>
 </div>

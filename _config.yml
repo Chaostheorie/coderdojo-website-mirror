@@ -110,10 +110,10 @@ theme_config:
     domains:
         - blue:
               - coderdojo.blue
-              - v2.corderojo.blue
+              - v2.coderdojo.blue
         - red:
               - coderdojo.red
-              - v2.corderojo.red
+              - v2.coderdojo.red
     menu:
         Überblick Dōjō:
             - /info/introduction/

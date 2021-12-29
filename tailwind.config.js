@@ -1,6 +1,7 @@
 const YAML = require('yaml');
 const fs = require('fs');
 
+// determining config domains
 let red_domains;
 
 if (fs.existsSync('_config.yml')) {
@@ -13,14 +14,23 @@ if (fs.existsSync('_config.yml')) {
     red_domains = ['coderdojo.red'];
 }
 
-console.info(`Assuming coderdojo.red domains are ${red_domains} for building CSS files`);
+const get_theme_color = () => {
+    return red_domains.indexOf(process.env.DOMAIN) !== -1 ? '#d01110' : '#1f4865';
+};
+
+console.info(
+    `
+Assuming coderdojo.red domains are ${red_domains} for building CSS files.
+Building for ${get_theme_color()}
+`
+);
 
 module.exports = {
     content: ['themes/v2/**/*.ejs', 'content/{**/*, *}.{md, html}'],
     theme: {
         extend: {
             colors: {
-                theme: red_domains.indexOf(process.env.DOMAIN) !== -1 ? '#d01110' : '#1f4865',
+                theme: get_theme_color(),
             },
         },
         fontFamily: {
@@ -54,5 +64,6 @@ module.exports = {
             ],
         },
     },
+    prefix: 'tw-',
     plugins: [],
 };

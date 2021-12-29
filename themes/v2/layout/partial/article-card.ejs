@@ -1,13 +1,13 @@
-<div class="flex flex-col card">
+<div class="tw-flex tw-flex-col card">
     <div class="card-title">
         <h1><%- title_case(item.title) %></h1>
     </div>
 
-    <div class="flex flex-col justify-between flex-grow card-content">
-        <p class="flex-grow"><%= item.summary || item.description || truncate(item.content, {"length": 20}) %></p>
+    <div class="tw-flex tw-flex-col tw-justify-between tw-flex-grow card-content">
+        <p class="tw-flex-grow"><%= item.summary || item.description || truncate(item.content, {"length": 20}) %></p>
 
-        <a href="<%- url_for(item.path) %>" class="mx-auto mt-2 btn btn-primary w-fit">
-            Lese mehr <i class="ml-2 bi bi-eyeglasses"></i>
+        <a href="<%- url_for(item.path) %>" class="tw-mx-auto tw-mt-2 btn btn-primary tw-w-fit">
+            Lese mehr <i class="tw-ml-2 bi bi-eyeglasses"></i>
         </a>
     </div>
 </div>

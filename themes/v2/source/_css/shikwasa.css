@@ -17,57 +17,57 @@
 }
 
 .shk {
-    @apply relative text-lg font-normal leading-normal border-none cursor-auto text-theme;
+    @apply tw-relative tw-text-lg tw-font-normal tw-leading-normal tw-border-none tw-cursor-auto tw-text-theme;
 }
 
 .js-focus-visible:focus:not(.focus-visible),
 .js-focus-visible :focus:not(.focus-visible) {
-    @apply outline-none;
+    @apply tw-outline-none;
 }
 
 .shk[data-fixed-type='fixed'] {
-    @apply fixed bottom-0 left-0 w-full m-0;
+    @apply tw-m-0 tw-w-full tw-fixed tw-bottom-0 tw-left-0;
 }
 
 .shk[data-fixed-type='fixed'][data-fixed-pos='top'] {
-    @apply top-0 bottom-auto;
+    @apply tw-top-0 tw-bottom-auto;
 }
 
 .shk[data-seeking] .shk-player {
-    @apply cursor-grabbing;
+    @apply tw-cursor-grabbing;
 }
 
 .shk button {
-    @apply font-[inherit];
+    @apply tw-font-[inherit];
 }
 
 .shk-player {
-    @apply box-border z-10 h-32 px-2 py-5 mt-1 border-2 border-solid bg-slate-100 border-theme sm:px-5 hoverable-shadow card-transition;
+    @apply tw-h-32 tw-z-10 tw-box-border tw-mt-1 tw-px-2 tw-py-5 tw-border-2 tw-border-solid tw-bg-slate-100 tw-border-theme sm:tw-px-5 hoverable-shadow card-transition;
 }
 
 .shk-body {
-    @apply relative flex flex-row items-stretch w-full select-none flex-nowrap;
+    @apply tw-select-none tw-items-stretch tw-w-full tw-flex tw-flex-row tw-relative tw-flex-nowrap;
 }
 
 .shk-cover {
-    @apply flex-[0_0_auto] w-20 h-20 mr-4 bg-no-repeat bg-cover aspect-square;
+    @apply tw-flex-[0_0_auto] tw-w-20 tw-h-20 tw-mr-4 tw-bg-no-repeat tw-bg-cover tw-aspect-square;
 }
 
 .shk-main {
-    @apply relative flex flex-row justify-start flex-grow max-h-full flex-nowrap sm:items-end sm:px-3;
+    @apply tw-max-h-full tw-justify-start tw-flex tw-flex-row tw-flex-grow tw-relative tw-flex-nowrap sm:tw-items-end sm:tw-px-3;
 }
 
 .shk-text {
-    @apply overflow-hidden sm:flex-[2_1_auto];
+    @apply tw-overflow-hidden sm:tw-flex-[2_1_auto];
 }
 
 .shk-artist,
 .shk-title {
-    @apply m-auto whitespace-nowrap;
+    @apply tw-m-auto tw-whitespace-nowrap;
 }
 
 .shk-artist {
-    @apply font-medium text-slate-900 overflow-clip;
+    @apply tw-font-medium tw-text-slate-900 tw-overflow-clip;
 }
 
 .shk-title_wrap[data-overflow] {
@@ -75,217 +75,222 @@
 }
 
 .shk-title_inner {
-    @apply inline-flex overflow-visible;
+    @apply tw-inline-flex tw-overflow-visible;
 }
 
 .shk-title_wrap[data-overflow] .shk-title_inner {
-    @apply box-border py-2 duration-300 whitespace-nowrap;
+    @apply tw-duration-300 tw-box-border tw-py-2 tw-whitespace-nowrap;
 }
 
 .shk-title_wrap[data-overflow] .shk-title_inner::after {
-    @apply inline-block content-[attr(data-title)];
+    @apply tw-inline-block tw-content-[attr(data-title)];
 }
 
 .shk-title_wrap[data-overflow] .shk-title_inner::after,
 .shk-title {
-    @apply font-mono text-xl text-theme;
+    @apply md:tw-text-base md:tw-leading-5;
+}
+
+.shk-title_wrap[data-overflow] .shk-title_inner::after,
+.shk-title {
+    @apply tw-font-mono tw-text-xl tw-text-theme;
 }
 
 .shk-title_wrap[data-overflow] .shk-title_inner::after,
 .shk-title_wrap[data-overflow] .shk-title {
-    @apply pr-16 duration-300 animate-[marquee_linear_infinite];
+    @apply tw-pr-16 tw-duration-300 tw-animate-[marquee_linear_infinite];
 }
 
 .shk-btn {
-    @apply box-content relative p-3 text-base leading-normal bg-transparent border-none appearance-none cursor-pointer fill-current text-theme;
+    @apply tw-fill-current tw-appearance-none tw-p-3 tw-box-content tw-relative tw-text-base tw-leading-normal tw-border-none tw-cursor-pointer tw-text-theme;
 }
 
 .shk-btn:disabled {
-    @apply cursor-not-allowed text-slate-900;
+    @apply tw-cursor-not-allowed tw-text-slate-900;
 }
 
 .shk-btn::after {
-    transition: opacity 1s cubic-bezier(0, 0, 0.2, 1), visibility linear 1s;
-    @apply -z-10 opacity-0 pointer-events-none invisible bg-theme rounded-[50%] w-full h-full -translate-x-[50%] -translate-y-[50%] left-[50%] top-[50%] absolute content-[""];
+    transition: tw-opacity 1s cubic-bezier(0, 0, 0.2, 1), visibility linear 1s;
+    @apply tw--z-10 tw-opacity-0 tw-pointer-events-none tw-invisible tw-bg-theme tw-rounded-[50%] tw-w-full tw-h-full tw--translate-x-[50%] tw--translate-y-[50%] tw-left-[50%] tw-top-[50%] tw-absolute tw-content-[""];
 }
 
 .shk-btn:not(:disabled):active::after {
-    @apply visible opacity-100;
+    @apply tw-visible tw-opacity-100;
 }
 
 a.shk-btn:visited {
-    @apply text-theme;
+    @apply tw-text-theme;
 }
 
 .shk-btn svg {
-    @apply w-6 h-6 align-middle aspect-square;
+    @apply tw-align-middle tw-h-6 tw-w-6 tw-aspect-square;
 }
 
 .shk-controls {
-    @apply flex-[0_0_auto] relative mx-0 my-auto w-72;
+    @apply tw-flex-[0_0_auto] tw-relative tw-mx-0 tw-my-auto tw-w-72;
 }
 
 .shk-controls .shk-btn {
-    @apply rounded-full;
+    @apply tw-rounded-full;
 }
 
 .shk-controls > div {
-    @apply flex flex-row items-center flex-nowrap;
+    @apply tw-items-center tw-flex tw-flex-row tw-flex-nowrap;
 }
 
 .shk-controls_basic {
-    @apply justify-between;
+    @apply tw-justify-between;
 }
 
 .shk-controls_extra {
-    transition: width 0.2s ease-in-out, opacity 0.1s 0.1s linear, visibility 0.2s;
+    transition: width 0.2s ease-in-out, tw-opacity 0.1s 0.1s linear, visibility 0.2s;
 
-    @apply absolute bottom-0 right-0 z-10 justify-end invisible w-0 h-full pr-2 overflow-hidden opacity-0 bg-slate-100 mr-11 whitespace-nowrap;
+    @apply tw-absolute tw-justify-end tw-h-full tw-z-10 tw-invisible tw-opacity-0 tw-overflow-hidden tw-w-0 tw-bottom-0 tw-right-0 tw-pr-2 tw-bg-slate-100 tw-mr-11 tw-whitespace-nowrap;
 }
 
 .shk[data-extra] .shk-controls_extra {
     width: calc(100%- 44px);
-    transition: width 0.2s ease-in-out, opacity 0.1s linear;
+    transition: width 0.2s ease-in-out, tw-opacity 0.1s linear;
 
-    @apply visible opacity-100;
+    @apply tw-visible tw-opacity-100;
 }
 
 .shk[data-extra] .shk-controls_extra .shk-btn {
-    @apply inline-block;
+    @apply tw-inline-block;
 }
 
 .shk-btn_toggle svg {
-    @apply w-8 h-8 aspect-square;
+    @apply tw-h-8 tw-w-8 tw-aspect-square;
 }
 
 .shk[data-play='paused'] .shk-btn_play,
 .shk[data-play='playing'] .shk-btn_pause {
-    @apply inline;
+    @apply tw-inline;
 }
 
 .shk[data-play='paused'] .shk-btn_pause,
 .shk[data-play='playing'] .shk-btn_play {
-    @apply hidden;
+    @apply tw-hidden;
 }
 
 .shk-btn_speed {
-    @apply p-0 text-sm font-normal h-11 w-11 aspect-square;
+    @apply tw-p-0 tw-text-sm tw-font-normal tw-h-11 tw-w-11 tw-aspect-square;
 }
 
 .shk-btn_more {
     transition: transform 0.2s 0.1s;
 
-    @apply transform-none z-[11] relative;
+    @apply tw-transform-none tw-z-[11] tw-relative;
 }
 
 .shk[data-extra] .shk-btn_more {
-    @apply rotate-90;
+    @apply tw-rotate-90;
 }
 
 svg.shk-btn_unmute,
 .shk[data-mute] svg.shk-btn_mute {
-    @apply inline-block;
+    @apply tw-inline-block;
 }
 
 svg.shk-btn_mute,
 .shk[data-mute] svg.shk-btn_unmute {
-    @apply hidden;
+    @apply tw-hidden;
 }
 
 .shk-bar_wrap {
-    @apply z-[1] relative cursor-pointer sm:right-0 sm:-top-1 sm:left-0 sm:absolute sm:px-1 sm:pb-4;
+    @apply tw-z-[1] tw-relative tw-cursor-pointer sm:tw-right-0 sm:tw--top-1 sm:tw-left-0 sm:tw-absolute sm:tw-px-1 sm:tw-pb-4;
 }
 
 .shk-bar {
-    @apply box-border relative w-full h-4 mt-2 bg-transparent;
+    @apply tw-h-4 tw-box-border tw-mt-2 tw-w-full tw-bg-transparent tw-relative;
 }
 
 .shk-bar_loaded,
 .shk-bar_played {
     transition: width ease-in 0.1s;
 
-    @apply absolute top-0 bottom-0 left-0 w-0;
+    @apply tw-absolute tw-w-0 tw-top-0 tw-bottom-0 tw-left-0;
 }
 
 .shk-bar_loaded {
-    @apply bg-theme;
+    @apply tw-bg-theme;
 }
 
 .shk-bar_played {
-    @apply bg-slate-600;
+    @apply tw-bg-slate-600;
 }
 
 .shk[data-seeking] .shk-bar_played {
-    @apply transform-none;
+    @apply tw-transform-none;
 }
 
 .shk-bar-handle {
-    @apply box-content absolute w-5 h-5 p-0 rounded-3xl cursor-grab -right-3 bg-theme sm:border-4 sm:border-solid sm:border-transparent sm:-top-[9.5px];
+    @apply tw-box-content tw-absolute tw-w-5 tw-h-5 tw-p-0 tw-rounded-3xl tw-cursor-grab tw--right-3 tw-bg-theme sm:tw-border-4 sm:tw-border-solid sm:tw-border-transparent sm:tw--top-[9.5px];
 }
 
 .shk-bar-handle:disabled {
-    @apply shadow-none cursor-not-allowed bg-slate-600;
+    @apply tw-shadow-none tw-cursor-not-allowed tw-bg-slate-600;
 }
 
 .shk-bar-handle:active {
-    @apply cursor-grabbing;
+    @apply tw-cursor-grabbing;
 }
 
 .shk-display {
-    @apply absolute sm:-top-2 sm:right-2;
+    @apply tw-absolute sm:tw--top-2 sm:tw-right-2;
 }
 
 .shk-loader {
-    @apply hidden align-middle text-slate-300 sm:mr-1;
+    @apply tw-align-middle tw-hidden tw-text-slate-300 sm:tw-mr-1;
 }
 
 .shk[data-loading] .shk-loader {
-    @apply inline-block;
+    @apply tw-inline-block;
 }
 
 .shk-loader svg {
     animation: rotate 1.4s linear infinite;
 
-    @apply relative w-3 h-3;
+    @apply tw-h-3 tw-w-3 tw-relative;
 }
 
 .shk-visuallyhidden:not(:focus):not(:active) {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
 
-    @apply overflow-hidden whitespace-nowrap p-0 border-0 h-[1px] w-[1px] -m-[1px] absolute;
+    @apply tw-overflow-hidden tw-whitespace-nowrap tw-p-0 tw-border-0 tw-h-[1px] tw-w-[1px] tw--m-[1px] tw-absolute;
 }
 
 .shk-time {
-    @apply inline-block text-sm font-light align-middle text-slate-800;
+    @apply tw-align-middle tw-inline-block tw-text-sm tw-font-light tw-text-slate-800;
 }
 
 .shk .shk-live {
-    @apply items-center hidden font-sans text-sm uppercase text-theme;
+    @apply tw-uppercase tw-items-center tw-hidden tw-font-sans tw-text-sm tw-text-theme;
 }
 
 .shk .shk-live::before {
-    @apply content-[""] rounded-[50%] w-2 h-2 mr-1;
+    @apply tw-content-[""] tw-rounded-[50%] tw-w-2 tw-h-2 tw-mr-1;
 }
 
 .shk-icons,
 .shk[data-live] .shk-bar,
 .shk[data-live] .shk-time {
-    @apply hidden;
+    @apply tw-hidden;
 }
 
 .shk[data-live] .shk-live {
-    @apply inline-flex;
+    @apply tw-inline-flex;
 }
 
 .shk-bar_wrap:hover .shk-bar {
-    @apply sm:h-3;
+    @apply sm:tw-h-3;
 }
 
 .shk-time_duration::before {
     content: ' - ';
 
-    @apply sm:py-1;
+    @apply sm:tw-py-1;
 }
 
 @media (min-width: 641px) {
@@ -302,7 +307,7 @@ svg.shk-btn_mute,
     .shk-bar_wrap:hover .shk-bar-handle:not(:disabled) {
         transform: scale(0.8);
 
-        @apply border-slate-100;
+        @apply tw-border-slate-100;
     }
 }
 
@@ -310,10 +315,7 @@ svg.shk-btn_mute,
 
 @media (max-width: 640px) {
     .shk[data-fixed-type='auto'] {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        @apply tw-left-0 tw-bottom-0 tw-w-full tw-fixed;
     }
     .shk[data-fixed-type='auto'][data-fixed-pos='top'] {
         top: 0;
@@ -339,27 +341,24 @@ svg.shk-btn_mute,
         width: 100%;
         text-align: center;
     }
+
     .shk-artist_wrap {
         font-size: 0.8em;
         line-height: 1.1;
     }
+
     .shk-artist {
-        display: inline-block;
+        @apply tw-inline-block;
     }
-    .shk-title_wrap[data-overflow] .shk-title_inner::after,
-    .shk-title {
-        font-size: 1em;
-        line-height: 1;
-    }
+
     .shk-bar_wrap {
-        padding: 8px 0;
-        margin: 0 60px;
+        @apply tw-px-2 tw-py-0 tw-mx-0 tw-my-16;
     }
+
     .shk-bar-handle {
-        display: inline-block;
-        top: -8px;
-        box-shadow: var(--shadow-handle-mobile);
+        @apply tw--top-3 tw-shadow-md tw-inline-block;
     }
+
     .shk-bar {
         background: var(--color-opac);
         border-radius: 2px;
@@ -370,7 +369,7 @@ svg.shk-btn_mute,
         right: 0;
     }
     .shk-loader {
-        position: absolute;
+        position: tw-absolute;
         left: -10px;
         top: -5px;
     }
@@ -378,20 +377,20 @@ svg.shk-btn_mute,
         margin: 0 5px;
         font-size: 0.7em;
         line-height: 1;
-        display: flex;
+        display: tw-flex;
         justify-content: space-between;
         flex-flow: row nowrap;
     }
     .shk-time_now {
         width: 40px;
-        text-align: right;
+        text-align: tw-right;
     }
     .shk-time_duration {
         width: 40px;
-        text-align: left;
+        text-align: tw-left;
     }
     .shk-live {
-        position: absolute;
+        position: tw-absolute;
         right: 0;
         top: 0;
     }
