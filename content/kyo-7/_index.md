@@ -1319,27 +1319,22 @@ auskommentieren
 
 Kommentieren ist gar nicht so einfach. Beschreibe keine selbstverständlichen Teile, dass verwirrt bloß (also nicht wie
 im Beispielcode). Dafür solltest Du immer ein paar Worte verlieren, wenn sich Code nicht selbst erklärt. Was macht die
-<<<<<<< HEAD Funktion, welche Parameter erwartet sie, was gibt sie zurück? Als Faustformel - stell dir einfach die
-Frage, ob wenn du in drei Monaten auf den Code schaust, du noch ohne Kommentar verstehst bzw. was da stehen müsstest,
-damit du zumindest deinen eigenen Code wieder verstehst.
+Funktion, welche Parameter erwartet sie, was gibt sie zurück - das sind die Fragen, deren Antworten sich oft einfacher
+und schneller aus etwas Text ergeben.
+
+Als Faustformel - stell dir einfach die Frage, ob wenn du in drei Monaten auf den Code schaust, du noch ohne Kommentar
+verstehst bzw. was da stehen müsstest, damit du zumindest deinen eigenen Code wieder verstehst.
 
 {{ figure(source="/images/kyo-7/Code-Kommentare.jpg", float="end", alt="Da wäre ein Kommentar hilfreich gewesen...") }}
 
-======= Funktion, welche Parameter erwartet sie, was gibt sie zurück?
-
-> > > > > > > 4f87c47bf65af3856be965fe017fb879644074b1 Daneben kann man Kommentar super nutzen, um Teile des Codes kurz
-> > > > > > > nicht zu verwenden, ohne sie gleich löschen zu müssen. PyCharm macht es Dir da einfach: Markiere den
-> > > > > > > entsprechenden Code und gib Strg+\# ein und der Code wird auskommentiert. Machst du das mit
-> > > > > > > auskommentierten Code, wird er wieder aktiv.
+Daneben kann man Kommentar super nutzen, um Teile des Codes kurz nicht zu verwenden, ohne sie gleich löschen zu müssen.
+PyCharm macht es Dir da einfach: Markiere den entsprechenden Code und gib Strg+\# ein und der Code wird auskommentiert.
+Machst du das mit auskommentierten Code, wird er wieder aktiv.
 
 {{ figure(source="/images/kyo-7/help-2444110_1280_a.png", float="end", alt="Dir wird geholfen!") }}
 
-<<<<<<< HEAD Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst natürlich in unserem
-[Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org). ======= Wo kannst du Dir Hilfe außerhalb der
-CoderDojo-Termine holen? Zu aller erst natürlich in unserem Matrix-Kanal. Ansonsten empfehlen wir Dir diese
-Internet-Seiten:
-
-> > > > > > > 4f87c47bf65af3856be965fe017fb879644074b1
+Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst natürlich in unserem
+[Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org).
 
 -   Falls du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes empfehlen:
 
@@ -1351,7 +1346,7 @@ Internet-Seiten:
 
 Viele Bibliotheken sind da gut ausgestattet. Schau da mal vorbei. Für die Berliner – welche Bibliothek was hat, kannst
 du Dir aus [voebb.de](https://voebb.de) anschauen. Gerade die Berliner Stadtbibliothek in der Breite Straße, Nähe
-Alexanderplatz ist außergewöhnlich gut ausgestattet.
+Alexanderplatz, ist außergewöhnlich gut ausgestattet.
 
 Als Webseiten empfehlen wir:
 
@@ -1417,15 +1412,13 @@ Der Weißgurt ist zum Greifen nahe. Schaffst du die folgenden Fragen beziehungsw
 
     $$\pi = \frac{4}{1} - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9}$$
 
-<<<<<<< HEAD Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner um 2 erhöht. Die Werte werden abwechselnd
-addiert und subtrahiert, so dass man sich immer mehr $\pi$ annähert. Die Funktion sollte einen Wert annehmen, der die
-Anzahl der Teile der Formel angibt. Um so höher dieser ist, um so genauer wird Pi. Vergleiche das Ergebnis
-beispielsweise mit dem Ergebnis auf dem Wikipedia-Artikel „Kreiszahl“. ======= Du siehst, dass der Zähler bei 4 bleibt,
-während sich der Nenner um 2 erhöht. Die Funktion sollte einen Wert annehmen, der die Anzahl der Teile der Formel
-angibt. Um so höher dieser ist, um so genauer wird Pi. Vergleiche das Ergebnis beispielsweise mit dem Ergebnis auf dem
-Wikipedia-Artikel „Kreiszahl“.
-
-> > > > > > > 4f87c47bf65af3856be965fe017fb879644074b1
+Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner um 2 erhöht. Die Werte werden abwechselnd addiert und
+subtrahiert, so dass man sich immer mehr $\pi$ annähert. Die Funktion sollte einen Wert annehmen, der die Anzahl der
+Teile der Formel angibt. Um so höher dieser ist, um so genauer wird Pi. Vergleiche das Ergebnis beispielsweise mit dem
+Ergebnis auf dem Wikipedia-Artikel „Kreiszahl“. ======= Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner
+um 2 erhöht. Die Funktion sollte einen Wert annehmen, der die Anzahl der Teile der Formel angibt. Um so höher dieser
+ist, um so genauer wird Pi. Vergleiche das Ergebnis beispielsweise mit dem Ergebnis auf dem Wikipedia-Artikel
+„Kreiszahl“.
 
 -   Was ist ein Vogel?
 
