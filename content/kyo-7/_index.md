@@ -1414,11 +1414,9 @@ Der Weißgurt ist zum Greifen nahe. Schaffst du die folgenden Fragen beziehungsw
 
 Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner um 2 erhöht. Die Werte werden abwechselnd addiert und
 subtrahiert, so dass man sich immer mehr $\pi$ annähert. Die Funktion sollte einen Wert annehmen, der die Anzahl der
-Teile der Formel angibt. Um so höher dieser ist, um so genauer wird Pi. Vergleiche das Ergebnis beispielsweise mit dem
-Ergebnis auf dem Wikipedia-Artikel „Kreiszahl“. ======= Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner
-um 2 erhöht. Die Funktion sollte einen Wert annehmen, der die Anzahl der Teile der Formel angibt. Um so höher dieser
-ist, um so genauer wird Pi. Vergleiche das Ergebnis beispielsweise mit dem Ergebnis auf dem Wikipedia-Artikel
-„Kreiszahl“.
+Teile der Formel angibt. Um so höher dieser ist, um so genauer wird $\pi$. Versuche dich $\pi$ deutlich über die obige
+Formel hin anzunähern. Vergleiche das Ergebnis beispielsweise mit dem Ergebnis auf dem
+[Wikipedia-Artikel „Kreiszahl“](https://de.wikipedia.org/wiki/Kreiszahl).
 
 -   Was ist ein Vogel?
 
