@@ -71,18 +71,18 @@ CD:Red-Alternate:
     <<: *rs-deploy
     stage: deploy
     environment:
-        name: production-1
+        name: production-1-v2
         url: https://v2.coderdojo.red
     variables:
         DOMAIN: v2.coderdojo.red
-        KEY: '$CD_RED_PRIVATE_KEY'
+        KEY: '$CD_RED_V2_PRIVATE_KEY'
 
 CD:Blue-Alternate:
     <<: *rs-deploy
     stage: deploy
     environment:
-        name: production-2
+        name: production-2-v2
         url: https://v2.coderdojo.blue
     variables:
         DOMAIN: v2.coderdojo.blue
-        KEY: '$CD_BLUE_PRIVATE_KEY'
+        KEY: '$CD_BLUE_V2_PRIVATE_KEY'
