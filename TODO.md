@@ -1,0 +1,6 @@
+-   [ ] Pagination for categories
+-   [ ] Figure out where the generation error is coming from
+-   [ ] Pat the shark
+-   [ ] Implement `figure` tag
+-   [ ] Implement `file` tag
+-   [x] Publish notice
