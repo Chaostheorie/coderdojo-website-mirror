@@ -1,0 +1,80 @@
+<div
+    class="w-[15rem] z-20 overflow-scroll md:overflow-hidden fixed top-0 left-0 -ml-[15rem] xl:-ml-[0rem] transition-short motion-reduce:transition-none bg-transparent"
+    id="sidenav"
+>
+    <div class="group card">
+        <div class="card-title">
+            <a href="/" class="flex flex-row text-slate-100 hover:text-slate-300">
+                <% if (color()) { %>
+                <img src="/images/brand-red.svg" alt="" height="32" width="32" class="aspect-square" /> <%} else { %>
+                <img src="/images/brand-blue.svg" alt="" height="32" width="32" class="aspect-square" /> <% } %>
+                Coderdojo <% if (color()) { %> Red <%} else { %> Blue <% } %>
+            </a>
+        </div>
+
+        <p class="leading-relaxed card-content">Treffen jeden Donnerstag über BigBlueButton</p>
+    </div>
+
+    <div class="flex-row hidden group card text-bold flex-nowrap">
+        <% // flex might need to be added %>
+        <p class="flex-1 p-2">
+            Die Infos zur Veranstaltung „Man müsste mal“ zum rc3 zwischen den Jahren findest Du
+            <a href="https://coderdojo.red/news/rc3/" class="card-transition"> hier </a>
+        </p>
+        <div class="flex flex-col justify-around w-28 md:w-52">
+            <img
+                src="https://styleguide.rc3.world/02a_Logo/02a_Logo_web_200px_still.png"
+                alt="rc3-Logo"
+                class="w-auto h-auto aspect-square"
+            />
+        </div>
+    </div>
+
+    <div class="mt-2 card">
+        <div class="card-title">
+            <span>Navigation</span>
+        </div>
+
+        <ul class="ml-0 leading-relaxed list-none card-content">
+            <% for (var item in theme.menu){ %>
+            <a href="<%- url_for(theme.menu[item][0]) %>" class="w-full">
+                <li class="flex justify-between group">
+                    <span>
+                        <% if (theme.menu[item].length !=1){ %>
+                        <i class="bi <%= theme.menu[item][1] %>"></i>
+                        <% } %> <%= item %>
+                    </span>
+                    <i class="hidden bi bi-chevron-right group-hover:inline"></i>
+                </li>
+            </a>
+            <% } %>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="card-title">
+            <span>Themen</span>
+        </div>
+        <ul class="ml-0 leading-relaxed list-none card-content">
+            <% for (var item in theme.chapters){ %>
+            <a href="<%- url_for(Object.values(theme.chapters[item][1]['order'][0])[0]) %>" class="w-full">
+                <li class="flex justify-between group">
+                    <span>
+                        <i class="icon-belt" style="color: <%- theme.chapters[item][0] %> !important"></i> <%= item %>
+                    </span>
+                    <i class="hidden bi bi-chevron-right group-hover:inline"></i>
+                </li>
+            </a>
+            <% } %>
+        </ul>
+    </div>
+
+    <% if (page.content !==undefined) { %> <% let _toc=toc(page.content); if (_toc !=="" ) { %>
+    <div class="group card">
+        <div class="card-title">
+            <span class="text-xl"> <%- page.title %> <%- site.title %> </span>
+        </div>
+        <div class="card-content"><%- _toc %></div>
+    </div>
+    <% } %> <% } %>
+</div>

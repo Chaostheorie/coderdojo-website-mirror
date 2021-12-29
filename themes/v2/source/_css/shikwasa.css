@@ -1,0 +1,398 @@
+/*
+ ported shikwasa.css code from https://github.com/jessuni/shikwasa
+  */
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.shk {
+    @apply relative text-lg font-normal leading-normal border-none cursor-auto text-theme;
+}
+
+.js-focus-visible:focus:not(.focus-visible),
+.js-focus-visible :focus:not(.focus-visible) {
+    @apply outline-none;
+}
+
+.shk[data-fixed-type='fixed'] {
+    @apply fixed bottom-0 left-0 w-full m-0;
+}
+
+.shk[data-fixed-type='fixed'][data-fixed-pos='top'] {
+    @apply top-0 bottom-auto;
+}
+
+.shk[data-seeking] .shk-player {
+    @apply cursor-grabbing;
+}
+
+.shk button {
+    @apply font-[inherit];
+}
+
+.shk-player {
+    @apply box-border z-10 h-32 px-2 py-5 mt-1 border-2 border-solid bg-slate-100 border-theme sm:px-5 hoverable-shadow card-transition;
+}
+
+.shk-body {
+    @apply relative flex flex-row items-stretch w-full select-none flex-nowrap;
+}
+
+.shk-cover {
+    @apply flex-[0_0_auto] w-20 h-20 mr-4 bg-no-repeat bg-cover aspect-square;
+}
+
+.shk-main {
+    @apply relative flex flex-row justify-start flex-grow max-h-full flex-nowrap sm:items-end sm:px-3;
+}
+
+.shk-text {
+    @apply overflow-hidden sm:flex-[2_1_auto];
+}
+
+.shk-artist,
+.shk-title {
+    @apply m-auto whitespace-nowrap;
+}
+
+.shk-artist {
+    @apply font-medium text-slate-900 overflow-clip;
+}
+
+.shk-title_wrap[data-overflow] {
+    mask-image: linear-gradient(to right, transparent, #202124 5%, #202124 95%, transparent);
+}
+
+.shk-title_inner {
+    @apply inline-flex overflow-visible;
+}
+
+.shk-title_wrap[data-overflow] .shk-title_inner {
+    @apply box-border py-2 duration-300 whitespace-nowrap;
+}
+
+.shk-title_wrap[data-overflow] .shk-title_inner::after {
+    @apply inline-block content-[attr(data-title)];
+}
+
+.shk-title_wrap[data-overflow] .shk-title_inner::after,
+.shk-title {
+    @apply font-mono text-xl text-theme;
+}
+
+.shk-title_wrap[data-overflow] .shk-title_inner::after,
+.shk-title_wrap[data-overflow] .shk-title {
+    @apply pr-16 duration-300 animate-[marquee_linear_infinite];
+}
+
+.shk-btn {
+    @apply box-content relative p-3 text-base leading-normal bg-transparent border-none appearance-none cursor-pointer fill-current text-theme;
+}
+
+.shk-btn:disabled {
+    @apply cursor-not-allowed text-slate-900;
+}
+
+.shk-btn::after {
+    transition: opacity 1s cubic-bezier(0, 0, 0.2, 1), visibility linear 1s;
+    @apply -z-10 opacity-0 pointer-events-none invisible bg-theme rounded-[50%] w-full h-full -translate-x-[50%] -translate-y-[50%] left-[50%] top-[50%] absolute content-[""];
+}
+
+.shk-btn:not(:disabled):active::after {
+    @apply visible opacity-100;
+}
+
+a.shk-btn:visited {
+    @apply text-theme;
+}
+
+.shk-btn svg {
+    @apply w-6 h-6 align-middle aspect-square;
+}
+
+.shk-controls {
+    @apply flex-[0_0_auto] relative mx-0 my-auto w-72;
+}
+
+.shk-controls .shk-btn {
+    @apply rounded-full;
+}
+
+.shk-controls > div {
+    @apply flex flex-row items-center flex-nowrap;
+}
+
+.shk-controls_basic {
+    @apply justify-between;
+}
+
+.shk-controls_extra {
+    transition: width 0.2s ease-in-out, opacity 0.1s 0.1s linear, visibility 0.2s;
+
+    @apply absolute bottom-0 right-0 z-10 justify-end invisible w-0 h-full pr-2 overflow-hidden opacity-0 bg-slate-100 mr-11 whitespace-nowrap;
+}
+
+.shk[data-extra] .shk-controls_extra {
+    width: calc(100%- 44px);
+    transition: width 0.2s ease-in-out, opacity 0.1s linear;
+
+    @apply visible opacity-100;
+}
+
+.shk[data-extra] .shk-controls_extra .shk-btn {
+    @apply inline-block;
+}
+
+.shk-btn_toggle svg {
+    @apply w-8 h-8 aspect-square;
+}
+
+.shk[data-play='paused'] .shk-btn_play,
+.shk[data-play='playing'] .shk-btn_pause {
+    @apply inline;
+}
+
+.shk[data-play='paused'] .shk-btn_pause,
+.shk[data-play='playing'] .shk-btn_play {
+    @apply hidden;
+}
+
+.shk-btn_speed {
+    @apply p-0 text-sm font-normal h-11 w-11 aspect-square;
+}
+
+.shk-btn_more {
+    transition: transform 0.2s 0.1s;
+
+    @apply transform-none z-[11] relative;
+}
+
+.shk[data-extra] .shk-btn_more {
+    @apply rotate-90;
+}
+
+svg.shk-btn_unmute,
+.shk[data-mute] svg.shk-btn_mute {
+    @apply inline-block;
+}
+
+svg.shk-btn_mute,
+.shk[data-mute] svg.shk-btn_unmute {
+    @apply hidden;
+}
+
+.shk-bar_wrap {
+    @apply z-[1] relative cursor-pointer sm:right-0 sm:-top-1 sm:left-0 sm:absolute sm:px-1 sm:pb-4;
+}
+
+.shk-bar {
+    @apply box-border relative w-full h-4 mt-2 bg-transparent;
+}
+
+.shk-bar_loaded,
+.shk-bar_played {
+    transition: width ease-in 0.1s;
+
+    @apply absolute top-0 bottom-0 left-0 w-0;
+}
+
+.shk-bar_loaded {
+    @apply bg-theme;
+}
+
+.shk-bar_played {
+    @apply bg-slate-600;
+}
+
+.shk[data-seeking] .shk-bar_played {
+    @apply transform-none;
+}
+
+.shk-bar-handle {
+    @apply box-content absolute w-5 h-5 p-0 rounded-3xl cursor-grab -right-3 bg-theme sm:border-4 sm:border-solid sm:border-transparent sm:-top-[9.5px];
+}
+
+.shk-bar-handle:disabled {
+    @apply shadow-none cursor-not-allowed bg-slate-600;
+}
+
+.shk-bar-handle:active {
+    @apply cursor-grabbing;
+}
+
+.shk-display {
+    @apply absolute sm:-top-2 sm:right-2;
+}
+
+.shk-loader {
+    @apply hidden align-middle text-slate-300 sm:mr-1;
+}
+
+.shk[data-loading] .shk-loader {
+    @apply inline-block;
+}
+
+.shk-loader svg {
+    animation: rotate 1.4s linear infinite;
+
+    @apply relative w-3 h-3;
+}
+
+.shk-visuallyhidden:not(:focus):not(:active) {
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+
+    @apply overflow-hidden whitespace-nowrap p-0 border-0 h-[1px] w-[1px] -m-[1px] absolute;
+}
+
+.shk-time {
+    @apply inline-block text-sm font-light align-middle text-slate-800;
+}
+
+.shk .shk-live {
+    @apply items-center hidden font-sans text-sm uppercase text-theme;
+}
+
+.shk .shk-live::before {
+    @apply content-[""] rounded-[50%] w-2 h-2 mr-1;
+}
+
+.shk-icons,
+.shk[data-live] .shk-bar,
+.shk[data-live] .shk-time {
+    @apply hidden;
+}
+
+.shk[data-live] .shk-live {
+    @apply inline-flex;
+}
+
+.shk-bar_wrap:hover .shk-bar {
+    @apply sm:h-3;
+}
+
+.shk-time_duration::before {
+    content: ' - ';
+
+    @apply sm:py-1;
+}
+
+@media (min-width: 641px) {
+    .shk-bar {
+        transition: height 0.15s ease-in;
+    }
+
+    .shk-bar-handle {
+        transition: all 0.1s ease-in;
+        transform: scale(0.0001);
+    }
+
+    .shk-bar-handle.focus-visible,
+    .shk-bar_wrap:hover .shk-bar-handle:not(:disabled) {
+        transform: scale(0.8);
+
+        @apply border-slate-100;
+    }
+}
+
+/* TODO: Migrate last rules to TailwindCSS */
+
+@media (max-width: 640px) {
+    .shk[data-fixed-type='auto'] {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .shk[data-fixed-type='auto'][data-fixed-pos='top'] {
+        top: 0;
+        bottom: auto;
+    }
+    .shk[data-live] .shk-bar_wrap {
+        height: 4px;
+    }
+    .shk-cover {
+        display: none;
+    }
+    .shk-main {
+        width: 100%;
+        max-width: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .shk-text {
+        flex: 0 0 auto;
+    }
+    .shk-text {
+        width: 100%;
+        text-align: center;
+    }
+    .shk-artist_wrap {
+        font-size: 0.8em;
+        line-height: 1.1;
+    }
+    .shk-artist {
+        display: inline-block;
+    }
+    .shk-title_wrap[data-overflow] .shk-title_inner::after,
+    .shk-title {
+        font-size: 1em;
+        line-height: 1;
+    }
+    .shk-bar_wrap {
+        padding: 8px 0;
+        margin: 0 60px;
+    }
+    .shk-bar-handle {
+        display: inline-block;
+        top: -8px;
+        box-shadow: var(--shadow-handle-mobile);
+    }
+    .shk-bar {
+        background: var(--color-opac);
+        border-radius: 2px;
+    }
+    .shk-display {
+        top: -16px;
+        left: 0;
+        right: 0;
+    }
+    .shk-loader {
+        position: absolute;
+        left: -10px;
+        top: -5px;
+    }
+    .shk-time {
+        margin: 0 5px;
+        font-size: 0.7em;
+        line-height: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+    }
+    .shk-time_now {
+        width: 40px;
+        text-align: right;
+    }
+    .shk-time_duration {
+        width: 40px;
+        text-align: left;
+    }
+    .shk-live {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

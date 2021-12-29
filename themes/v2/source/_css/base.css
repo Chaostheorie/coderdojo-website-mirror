@@ -1,0 +1,34 @@
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply mt-2 text-xl text-theme underlined-theme;
+    }
+
+    h3 {
+        @apply mt-1 text-xl text-theme underlined-theme;
+    }
+
+    a {
+        @apply hover:text-inherit text-theme;
+    }
+
+    ul {
+        @apply ml-5 list-disc;
+    }
+
+    b,
+    code {
+        @apply select-all text-theme;
+    }
+
+    blockquote {
+        @apply p-1 my-2 border-2 border-solid border-theme border-opacity-30;
+    }
+
+    em {
+        @apply italic font-medium;
+    }
+}

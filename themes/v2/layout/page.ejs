@@ -1,0 +1,37 @@
+<div class="w-full h-[3rem] border-solid border-b-2 border-theme flex items-end justify-center text-center mb-3">
+    <h1 class="my-2 text-5xl text-theme"><%- page.title %></h1>
+</div>
+
+<div class="flex mb-3 border-solid border-theme border-1">
+    <% if (page.date !== undefined) {%>
+    <div class="mr-2 bg-theme text-slate-100 btn-sm hoverable-shadow">
+        <p>Erschaffen: <%- page.date.format(config.date_format) %></p>
+    </div>
+    <% } %> <% if (page.updated !== undefined && (page.date !== undefined && page.date.format(config.date_format) !==
+    page.updated.format(config.date_format))) {%>
+    <div class="hidden mr-2 bg-theme text-slate-100 btn-sm hoverable-shadow md:flex">
+        <p>Letztes Update: <%- page.updated.format(config.date_format) %></p>
+    </div>
+    <% } %>
+
+    <button data-action="copy-link" data-target="<%- page.permalink %>" class="btn-sm btn-primary">
+        <i class="mr-2 bi bi-link-45deg"></i> Link kopieren
+    </button>
+</div>
+
+<% if (page.subtitle !== undefined) {%>
+<h2 class="text-2xl"><%- page.subtitle %></h2>
+<% } %> <%- page.content %>
+
+<div class="flex flex-row flex-wrap justify-center py-5 mt-2 align-middle">
+    <% let { prev, next } = chapters(page, theme); %> <% if (prev !== null && prev !== undefined) {%>
+    <a class="w-full btn btn-primary md:w-fit" href="<%- url_for(prev[1]) %>">
+        <i class="mr-2 bi bi-arrow-left-square-fill"></i> Zurück zu <%- prev[0] %>
+    </a>
+    <%}%> <% if (next !== null && next !== undefined) {%>
+    <a class="w-full btn btn-primary md:w-fit" href="<%- url_for(next[1]) %>">
+        Weiter zu <%- next[0] %>
+        <i class="ml-2 bi bi-arrow-right-square-fill"></i>
+    </a>
+    <%}%>
+</div>

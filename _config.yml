@@ -1,0 +1,188 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Coderdojo Red and Blue
+subtitle: ''
+description: ''
+keywords:
+    - coderdojo
+    - python
+    - berlin
+    - programming
+    - german
+author: DerMicha & Bengoshi
+language: de
+timezone: 'Europe/Berlin'
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://coderdojo.red
+permalink: :category/:title/
+permalink_defaults:
+pretty_urls:
+    trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+    trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: content
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+    enable: true # Open external links in new tab
+    field: site # Apply to the whole site
+    exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+    enable: true
+    tab_replace: '    '
+    line_number: true
+    auto_detect: false
+    hljs: true
+prismjs:
+    enable: false
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+    path: ''
+    per_page: 10
+    order_by: -date
+
+# Category & Tag
+default_category: uc # uncategorized
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include: []
+exclude: []
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+marked:
+    gfm: true
+    breaks: false
+    smartLists: true
+    smartypants: true
+    quotes: '„“‘’'
+
+## Themes: https://hexo.io/themes/
+theme: v2
+theme_config:
+    license_index: licenses.json
+    domains:
+        - blue:
+              - coderdojo.blue
+              - v2.corderojo.blue
+        - red:
+              - coderdojo.red
+              - v2.corderojo.red
+    menu:
+        Überblick Dōjō:
+            - /info/introduction/
+            - bi-body-text
+        Mentoren:
+            - /info/mentoren/
+            - bi-people
+        Kontakt:
+            - /info/contact
+            - bi-envelope
+        News:
+            - /categories/news/
+            - bi-newspaper
+        Euler Gruppe:
+            - /info/euler/projektgruppe/
+            - bi-journal-code
+            - '#b48ead'
+    chapters:
+        7. Kyo:
+            - '#fff'
+            - order:
+                  - Einführung: /chapters/kyo-7/hello-world-schleifen/
+                  - Arithmetik: /chapters/kyo-7/arithmetik/
+                  - Bedingungen: /chapters/kyo-7/bedingungen/
+                  - Browser, Mail & Messenger: /chapters/kyo-7/browser-mail-messenger/
+                  - Schleifen II: /chapters/kyo-7/schleifen-2/
+                  - Löten: /chapters/kyo-7/loeten/
+                  - Listen: /chapters/kyo-7/listen/
+                  - Kultur: /chapters/kyo-7/kultur/
+                  - Funktionen: /chapters/kyo-7/funktionen/
+                  - Jetzt's Knallts: /chapters/kyo-7/final/
+        6. Kyo:
+            - '#FFFF00'
+            - order:
+                  - Einführung: /chapters/kyo-6/git/
+                  - Kultur I: /chapters/kyo-6/kultur-1/
+                  - Pygames: /chapters/kyo-6/pygames/
+                  - Kultur II: /chapters/kyo-6/kultur-2/
+                  - Netzwerktechnik: /chapters/kyo-6/netzwerktechnik/
+        5. Kyo:
+            - '#FF9900'
+            - order:
+                  - Einführung: /chapters/kyo-5/placeholder/
+        4. Kyo:
+            - '#33cc33'
+            - order:
+                  - Einführung: /chapters/kyo-4/placeholder/
+        3. Kyo:
+            - '#0066ff'
+            - order:
+                  - Einführung: /chapters/kyo-3/placeholder/
+        2. Kyo:
+            - '#35077a'
+            - order:
+                  - Einführung: /chapters/kyo-2/placeholder/
+        1. Kyo:
+            - '#733111'
+            - order:
+                  - Einführung: /chapters/kyo-1/placeholder/
+        1. Dan:
+            - '#001'
+            - order:
+                  - Einführung: /chapters/dan-1/placeholder/
+        2. Dan:
+            - '#000000'
+            - order:
+                  - Einführung: /chapters/dan-2/placeholder/
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+    type: ''

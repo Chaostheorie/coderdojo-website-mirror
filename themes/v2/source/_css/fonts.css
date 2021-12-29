@@ -1,0 +1,9 @@
+@import '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../../../../node_modules/@fontsource/jetbrains-mono/400.css';
+@import '../../../../node_modules/@fontsource/fira-sans/400.css';
+
+@font-face {
+    font-display: swap;
+    font-family: 'Glyphter';
+    src: url('/css/files/belt.woff') format('woff'), url('/css/files/belt.ttf') format('truetype');
+}

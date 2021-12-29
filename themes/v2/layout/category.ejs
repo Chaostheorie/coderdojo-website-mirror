@@ -1,0 +1,14 @@
+<div class="w-full h-[3rem] border-solid border-b-2 border-theme flex items-end justify-center text-center mb-3">
+    <h1 class="text-5xl text-theme my-2"><%- title_case(page.category) %></h1>
+</div>
+
+<div class="border-theme border-1 border-solid flex mb-3">
+    <button data-action="copy-link" data-target="<%- page.permalink %>" class="btn-sm btn-primary">
+        <i class="bi bi-link-45deg"></i> Link teilen
+    </button>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <% page.posts.each(function(item){ %> <%- partial('partial/article-card', {item: item}) %> <% }); %>
+</div>
+

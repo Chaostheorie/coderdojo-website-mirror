@@ -1,0 +1,67 @@
+@layer components {
+    .ring-theme {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(theme('colors.theme') / var(--tw-ring-opacity));
+    }
+
+    .underlined-theme {
+        @apply font-mono border-b-4 border-solid border-theme w-fit;
+    }
+
+    .btn {
+        @apply flex items-center justify-center px-3 py-2 cursor-pointer md:py-3 md:px-4 xl:px-3 xl:py-2;
+    }
+
+    .btn-sm {
+        @apply flex items-center justify-center px-2 py-1;
+    }
+
+    .btn-primary {
+        @apply p-2 transition-short hoverable-shadow text-slate-100 bg-theme hover:text-theme hover:bg-slate-100 hover:ring-2 hover:ring-theme;
+    }
+
+    .toggled {
+        @apply left-[16rem] rotate-180 motion-reduce:rotate-0 !important;
+    }
+
+    .card-transition {
+        @apply transition duration-500 ease-in-out;
+    }
+
+    .card-title-hoverable {
+        @apply group-hover:text-theme group-hover:bg-slate-100 card-transition;
+    }
+
+    .card-content-hoverable {
+        @apply group-hover:text-slate-100 group-hover:bg-theme card-transition;
+    }
+
+    .card {
+        @apply m-2 bg-slate-100 hoverable-shadow card-transition;
+    }
+
+    .card-title {
+        @apply w-full p-2 text-xl bg-theme text-slate-100;
+    }
+
+    .card-content {
+        @apply p-2;
+    }
+
+    .icon-belt::before {
+        @apply inline-block font-normal font-['Glyphter'] content-['\0053'] text-current align-bottom leading-4 text-xl not-italic rotate-180;
+        -webkit-text-stroke: 0.015em #fff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* code blocks */
+    figure.highlight,
+    pre[class*='language-'] {
+        @apply px-1 my-2 overflow-x-scroll border-2 border-opacity-50 border-solid rounded border-theme;
+    }
+
+    figure.highlight {
+        @apply block py-0 max-h-fit;
+    }
+}

@@ -1,0 +1,16 @@
+/* Tailwind base */
+@import '../../../../node_modules/tailwindcss/base.css';
+@import '../../../../node_modules/tailwindcss/components.css';
+@import '../../../../node_modules/tailwindcss/utilities.css';
+
+/* All the fonts */
+@import 'fonts.css';
+
+/* utility, component and base addons */
+@import 'base.css';
+@import 'components.css';
+@import 'utilities.css';
+
+/* Ports for Shikwasa and Highlight.js */
+@import 'hljs.css';
+@import 'shikwasa.css';
