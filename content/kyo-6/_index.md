@@ -931,6 +931,8 @@ Code kontrolliert wird - du darfst zwar regelmäßig den Pull-Request anstoßen 
 dem Maintainer, also der Inhaberin eines Projekt sagen, dass du da was tolles im
 Angebot hast. Aber bestätigen dürfen ihn nur die Maintainer.
 
+Wenn du das Thema „Pull-Request“ nochmal anders beschrieben lesen möchtest, schau doch [mal hier](https://www.atlassian.com/de/git/tutorials/making-a-pull-request).
+
 ## MQTT
 
 Jetzt wird es praktisch. Wir wollen ja unsere beiden Spielfiguren über das Netz
