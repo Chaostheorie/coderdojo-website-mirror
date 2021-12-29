@@ -488,7 +488,7 @@ print(text1 + text2)
 
 Jetzt füge vor dem `print` noch ein `text1 = int(text1)` ein und führe den Code aus. Da wird es „knallen“, will sagen,
 es gibt eine Fehlermeldung. Warum ist das so? Weil du Text nicht als Integer behandeln kannst. Dein Taschenrechner ist
-insoweit abhängig, dass kein Nutzender auf die Idee kommt, einen Buchstaben einzugeben. Es ist nie gut, darauf zu
+insoweit abhängig davon, dass kein Nutzender auf die Idee kommt, einen Buchstaben einzugeben. Es ist nie gut, darauf zu
 vertrauen, dass Nutzende sinnvolle Dinge tun. Das ist ein Sicherheitsrisiko (und schön ist es auch nicht, wenn ein
 Programm sich aufhängt). Wie man solche Möglichkeiten abfängt, zeigen wir dir weiter unten. Das müssen wir hier gerade
 noch offen lassen.
@@ -1319,30 +1319,27 @@ auskommentieren
 
 Kommentieren ist gar nicht so einfach. Beschreibe keine selbstverständlichen Teile, dass verwirrt bloß (also nicht wie
 im Beispielcode). Dafür solltest Du immer ein paar Worte verlieren, wenn sich Code nicht selbst erklärt. Was macht die
-<<<<<<< HEAD
-Funktion, welche Parameter erwartet sie, was gibt sie zurück? Als Faustformel - stell dir einfach die Frage, ob wenn du
-in drei Monaten auf den Code schaust, du noch ohne Kommentar verstehst bzw. was da stehen müsstest, damit du zumindest
-deinen eigenen Code wieder verstehst.
+<<<<<<< HEAD Funktion, welche Parameter erwartet sie, was gibt sie zurück? Als Faustformel - stell dir einfach die
+Frage, ob wenn du in drei Monaten auf den Code schaust, du noch ohne Kommentar verstehst bzw. was da stehen müsstest,
+damit du zumindest deinen eigenen Code wieder verstehst.
 
 {{ figure(source="/images/kyo-7/Code-Kommentare.jpg", float="end", alt="Da wäre ein Kommentar hilfreich gewesen...") }}
 
-=======
-Funktion, welche Parameter erwartet sie, was gibt sie zurück?
+======= Funktion, welche Parameter erwartet sie, was gibt sie zurück?
 
->>>>>>> 4f87c47bf65af3856be965fe017fb879644074b1
-Daneben kann man Kommentar super nutzen, um Teile des Codes kurz nicht zu verwenden, ohne sie gleich löschen zu müssen.
-PyCharm macht es Dir da einfach: Markiere den entsprechenden Code und gib Strg+\# ein und der Code wird auskommentiert.
-Machst du das mit auskommentierten Code, wird er wieder aktiv.
+> > > > > > > 4f87c47bf65af3856be965fe017fb879644074b1 Daneben kann man Kommentar super nutzen, um Teile des Codes kurz
+> > > > > > > nicht zu verwenden, ohne sie gleich löschen zu müssen. PyCharm macht es Dir da einfach: Markiere den
+> > > > > > > entsprechenden Code und gib Strg+\# ein und der Code wird auskommentiert. Machst du das mit
+> > > > > > > auskommentierten Code, wird er wieder aktiv.
 
 {{ figure(source="/images/kyo-7/help-2444110_1280_a.png", float="end", alt="Dir wird geholfen!") }}
 
-<<<<<<< HEAD
-Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst natürlich in unserem
-[Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org).
-=======
-Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst natürlich in unserem Matrix-Kanal. Ansonsten
-empfehlen wir Dir diese Internet-Seiten:
->>>>>>> 4f87c47bf65af3856be965fe017fb879644074b1
+<<<<<<< HEAD Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst natürlich in unserem
+[Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org). ======= Wo kannst du Dir Hilfe außerhalb der
+CoderDojo-Termine holen? Zu aller erst natürlich in unserem Matrix-Kanal. Ansonsten empfehlen wir Dir diese
+Internet-Seiten:
+
+> > > > > > > 4f87c47bf65af3856be965fe017fb879644074b1
 
 -   Falls du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes empfehlen:
 
@@ -1420,16 +1417,15 @@ Der Weißgurt ist zum Greifen nahe. Schaffst du die folgenden Fragen beziehungsw
 
     $$\pi = \frac{4}{1} - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9}$$
 
-<<<<<<< HEAD
-    Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner um 2 erhöht. Die Werte werden abwechselnd addiert
-    und subtrahiert, so dass man sich immer mehr $\pi$ annähert. Die Funktion sollte einen Wert annehmen, der die Anzahl
-    der Teile der Formel angibt. Um so höher dieser ist, um so genauer wird Pi. Vergleiche das Ergebnis beispielsweise
-    mit dem Ergebnis auf dem Wikipedia-Artikel „Kreiszahl“.
-=======
-    Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner um 2 erhöht. Die Funktion sollte einen Wert
-    annehmen, der die Anzahl der Teile der Formel angibt. Um so höher dieser ist, um so genauer wird Pi. Vergleiche das
-    Ergebnis beispielsweise mit dem Ergebnis auf dem Wikipedia-Artikel „Kreiszahl“.
->>>>>>> 4f87c47bf65af3856be965fe017fb879644074b1
+<<<<<<< HEAD Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner um 2 erhöht. Die Werte werden abwechselnd
+addiert und subtrahiert, so dass man sich immer mehr $\pi$ annähert. Die Funktion sollte einen Wert annehmen, der die
+Anzahl der Teile der Formel angibt. Um so höher dieser ist, um so genauer wird Pi. Vergleiche das Ergebnis
+beispielsweise mit dem Ergebnis auf dem Wikipedia-Artikel „Kreiszahl“. ======= Du siehst, dass der Zähler bei 4 bleibt,
+während sich der Nenner um 2 erhöht. Die Funktion sollte einen Wert annehmen, der die Anzahl der Teile der Formel
+angibt. Um so höher dieser ist, um so genauer wird Pi. Vergleiche das Ergebnis beispielsweise mit dem Ergebnis auf dem
+Wikipedia-Artikel „Kreiszahl“.
+
+> > > > > > > 4f87c47bf65af3856be965fe017fb879644074b1
 
 -   Was ist ein Vogel?
 
