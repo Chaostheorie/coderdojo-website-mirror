@@ -1582,7 +1582,9 @@ auskommentieren
 Kommentieren ist gar nicht so einfach. Beschreibe keine selbstverständlichen
 Teile, dass verwirrt bloß (also nicht wie im Beispielcode). Dafür solltest Du
 immer ein paar Worte verlieren, wenn sich Code nicht selbst erklärt. Was macht
-die Funktion, welche Parameter erwartet sie, was gibt sie zurück?
+die Funktion, welche Parameter erwartet sie, was gibt sie zurück? Als Faustformel - stell dir einfach die Frage, ob wenn du in drei Monaten auf den Code schaust, du noch ohne Kommentar verstehst bzw. was da stehen müsstest, damit du zumindest deinen eigenen Code wieder verstehst.
+
+{{ figure(source="/images/kyo-7/Code-Kommentare.jpg", float="end", alt="Da wäre ein Kommentar hilfreich gewesen...") }}
 
 Daneben kann man Kommentar super nutzen, um Teile des Codes kurz nicht zu
 verwenden, ohne sie gleich löschen zu müssen. PyCharm macht es Dir da einfach:
@@ -1592,8 +1594,7 @@ auskommentiert. Machst du das mit auskommentierten Code, wird er wieder aktiv.
 {{ figure(source="/images/kyo-7/help-2444110_1280_a.png", float="end", alt="Dir wird geholfen!") }}
 
 Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst
-natürlich in unserem Matrix-Kanal. Ansonsten empfehlen wir Dir diese
-Internet-Seiten:
+natürlich in unserem [Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org).
 
 -   Falls du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes
     empfehlen:
