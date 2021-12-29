@@ -7,15 +7,7 @@ module.exports = {
         require('@fullhuman/postcss-purgecss')({
             content: ['public/**/*.html', 'public/*.html'],
             css: ['public/main.css'],
-            safelist: [
-                'toggled',
-                'sidebar-toggled',
-                'show',
-                'collapse',
-                'collapsing',
-                'bi-clipboard-check',
-                /shk.*/,
-            ],
+            safelist: ['toggled', 'sidebar-toggled', 'show', 'collapse', 'collapsing', 'bi-clipboard-check', /shk.*/],
             fontFace: true,
             keyframes: true,
         }),

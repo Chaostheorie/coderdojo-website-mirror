@@ -22,10 +22,7 @@ module.exports = {
                         loader: 'ts-loader',
                         options: {
                             context: path.resolve(__dirname, '..'),
-                            configFile: path.resolve(
-                                __dirname,
-                                './tsconfig.webpack.json'
-                            ),
+                            configFile: path.resolve(__dirname, './tsconfig.webpack.json'),
                         },
                     },
                 ],

@@ -6,28 +6,21 @@
 
 # Website for Coderdojo Red and Blue
 
-Code for [coderdojo.red](https://coderdojo.red) and
-[coderdojo.blue](https://coderdojo.blue).
+Code for [coderdojo.red](https://coderdojo.red) and [coderdojo.blue](https://coderdojo.blue).
 
 ## Documentation
 
 > Only Zola 0.14+ is supported ATM due to problems with hashing in other.
 
-See
-[the Wiki](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/wikis/home)
-for documentation.
+See [the Wiki](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/wikis/home) for documentation.
 
 ## Contributing
 
-All contributions are welcome. If you want to contribute or report a bug, fell
-free to open an issue on our
-[Codeberg Mirror](https://codeberg.org/c0balt/coderdojo-website-mirror). If you
-want to get direct access to a GitLab Account, please contact
-[Cobalt](https://cobalt.rocks/content/contact/)
+All contributions are welcome. If you want to contribute or report a bug, fell free to open an issue on our
+[Codeberg Mirror](https://codeberg.org/c0balt/coderdojo-website-mirror). If you want to get direct access to a GitLab
+Account, please contact [Cobalt](https://cobalt.rocks/content/contact/)
 
 ## Licensing
 
-The content is licensend under
-[CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode.de)
-while the code is licensed under
-[AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
+The content is licensend under [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode.de) while the
+code is licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
