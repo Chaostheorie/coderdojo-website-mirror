@@ -469,7 +469,7 @@ Zahl behandelt wird und mit `str(a)`, dass es als Text verwendet wird. Probiere 
 ```python
 number1 = 5
 number2 = 3
-print(type(number1)
+print(type(number1))
 print(number1 + number2)
 number1 = str(number1)
 number2 = str(number2)
@@ -483,7 +483,7 @@ Und jetzt probieren wird es in die andere Richtung:
 ```python
 text1 = "alles"
 text2 = " Quatsch"
-print (text1 + text2)
+print(text1 + text2)
 ```
 
 Jetzt füge vor dem `print` noch ein `text1 = int(text1)` ein und führe den Code aus. Da wird es „knallen“, will sagen,
