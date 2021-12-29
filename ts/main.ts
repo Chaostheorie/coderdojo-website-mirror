@@ -15,13 +15,11 @@ function collectCode(element: Element): string {
     // recursively collect all text
     //  from highlighted elements in code block
     // eslint-disable-next-line max-len
-    element.nextElementSibling.children[0].childNodes.forEach(
-        (node: ChildNode) => {
-            if (node instanceof HTMLSpanElement) {
-                buffer += node.innerText;
-            }
+    element.nextElementSibling.children[0].childNodes.forEach((node: ChildNode) => {
+        if (node instanceof HTMLSpanElement) {
+            buffer += node.innerText;
         }
-    );
+    });
 
     return buffer;
 }
@@ -53,36 +51,32 @@ export async function initUI() {
         document.getElementById('wrapper').classList.toggle('sidebar-toggled');
     });
 
-    const modals = Array.from(document.querySelectorAll('.modal')).map(
-        (modal: Element) => {
-            return {
-                id: modal.id,
-                modal: new Modal(modal),
-            };
-        }
-    );
+    const modals = Array.from(document.querySelectorAll('.modal')).map((modal: Element) => {
+        return {
+            id: modal.id,
+            modal: new Modal(modal),
+        };
+    });
 
-    document
-        .querySelectorAll('[data-toggle=toc]')
-        .forEach((trigger: Element) => {
-            trigger.addEventListener('click', (evt) => {
-                evt.preventDefault();
-                const id = trigger.getAttribute('data-target');
-                modals.forEach((element) => {
-                    if (element.id === id) {
-                        element.modal.hide();
-                    }
-                });
-                setTimeout(
-                    () =>
-                        document
-                            // @ts-ignore
-                            .querySelector(`${evt.target.getAttribute('href')}`)
-                            .scrollIntoView(),
-                    350
-                );
+    document.querySelectorAll('[data-toggle=toc]').forEach((trigger: Element) => {
+        trigger.addEventListener('click', (evt) => {
+            evt.preventDefault();
+            const id = trigger.getAttribute('data-target');
+            modals.forEach((element) => {
+                if (element.id === id) {
+                    element.modal.hide();
+                }
             });
+            setTimeout(
+                () =>
+                    document
+                        // @ts-ignore
+                        .querySelector(`${evt.target.getAttribute('href')}`)
+                        .scrollIntoView(),
+                350
+            );
         });
+    });
 
     // scrollspy support
     // broken ATM until is resolved https://github.com/twbs/bootstrap/pull/34412
@@ -93,72 +87,43 @@ export async function initUI() {
         target: '#chapter-inline-spybar'
     });*/
 
-    document
-        .querySelectorAll("[data-toggle='audio-player']")
-        .forEach((audioPlayer: Element) => {
-            return new Shikwasa({
-                container: audioPlayer,
-                audio: {
-                    artist: audioPlayer.getAttribute('data-artist'),
-                    cover: audioPlayer.getAttribute('data-cover'),
-                    src: audioPlayer.getAttribute('data-src'),
-                    title: audioPlayer.getAttribute('data-title'),
-                },
-            });
+    document.querySelectorAll("[data-toggle='audio-player']").forEach((audioPlayer: Element) => {
+        return new Shikwasa({
+            container: audioPlayer,
+            audio: {
+                artist: audioPlayer.getAttribute('data-artist'),
+                cover: audioPlayer.getAttribute('data-cover'),
+                src: audioPlayer.getAttribute('data-src'),
+                title: audioPlayer.getAttribute('data-title'),
+            },
+        });
+    });
+
+    document.querySelectorAll('div[data-type=file-helper]').forEach((element: Element) => {
+        element.querySelectorAll('button[data-type=copy]').forEach((button: Element) => {
+            if (button instanceof HTMLButtonElement) {
+                button.onclick = () => {
+                    // copy to clipboard & update btn
+                    copyToClipBoard(collectCode(element), button);
+                };
+            }
         });
 
-    document
-        .querySelectorAll('div[data-type=file-helper]')
-        .forEach((element: Element) => {
-            element
-                .querySelectorAll('button[data-type=copy]')
-                .forEach((button: Element) => {
-                    if (button instanceof HTMLButtonElement) {
-                        button.onclick = () => {
-                            // copy to clipboard & update btn
-                            copyToClipBoard(collectCode(element), button);
-                        };
-                    }
-                });
+        element.querySelectorAll('button[data-type=play]').forEach((button: Element) => {
+            if (button instanceof HTMLButtonElement) {
+                button.onclick = () => {
+                    let encoder = new TextEncoder();
+                    let params = new URLSearchParams([
+                        ['c', encodeURI(fromByteArray(encoder.encode(collectCode(element))))],
+                        ['t', encodeURI(fromByteArray(encoder.encode(button.getAttribute('data-title'))))],
+                    ]);
 
-            element
-                .querySelectorAll('button[data-type=play]')
-                .forEach((button: Element) => {
-                    if (button instanceof HTMLButtonElement) {
-                        button.onclick = () => {
-                            let encoder = new TextEncoder();
-                            let params = new URLSearchParams([
-                                [
-                                    'c',
-                                    encodeURI(
-                                        fromByteArray(
-                                            encoder.encode(collectCode(element))
-                                        )
-                                    ),
-                                ],
-                                [
-                                    't',
-                                    encodeURI(
-                                        fromByteArray(
-                                            encoder.encode(
-                                                button.getAttribute(
-                                                    'data-title'
-                                                )
-                                            )
-                                        )
-                                    ),
-                                ],
-                            ]);
-
-                            // redirect
-                            window.location.href =
-                                'https://playground.cobalt.rocks/interactive?'.concat(
-                                    params.toString()
-                                );
-                        };
-                    }
-                });
+                    // redirect
+                    window.location.href = 'https://playground.cobalt.rocks/interactive?'.concat(params.toString());
+                };
+            }
         });
+    });
 
     // @ts-ignore
     window.CopyToClipBoard = copyToClipBoard;
@@ -175,10 +140,7 @@ export async function initUI() {
  */
 function copyToClipBoard(value: string, caller: HTMLButtonElement) {
     // create new element
-    const shadowInput = document.createElement(
-        'textarea',
-        {}
-    ) as HTMLTextAreaElement;
+    const shadowInput = document.createElement('textarea', {}) as HTMLTextAreaElement;
 
     // make invisible and usable for text operations
     shadowInput.style.opacity = '0';

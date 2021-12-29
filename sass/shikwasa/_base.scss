@@ -107,13 +107,7 @@ $shadow-handle-mobile: 2px 2px 8px -2px #{$shadow};
     }
 
     &-title_wrap[data-overflow] {
-        mask-image: linear-gradient(
-            to right,
-            transparent,
-            #202124 5%,
-            #202124 95%,
-            transparent
-        );
+        mask-image: linear-gradient(to right, transparent, #202124 5%, #202124 95%, transparent);
     }
 
     &-title_inner {
@@ -179,8 +173,7 @@ $shadow-handle-mobile: 2px 2px 8px -2px #{$shadow};
             pointer-events: none;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 1s cubic-bezier(0, 0, 0.2, 1),
-                visibility linear 1s;
+            transition: opacity 1s cubic-bezier(0, 0, 0.2, 1), visibility linear 1s;
         }
 
         &:not(:disabled):active::after {
@@ -254,8 +247,7 @@ $shadow-handle-mobile: 2px 2px 8px -2px #{$shadow};
             z-index: 10;
             justify-content: flex-end;
             background: $dark;
-            transition: width 0.2s ease-in-out, opacity 0.1s 0.1s linear,
-                visibility 0.2s;
+            transition: width 0.2s ease-in-out, opacity 0.1s 0.1s linear, visibility 0.2s;
         }
     }
 
