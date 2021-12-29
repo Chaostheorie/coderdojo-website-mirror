@@ -11,7 +11,7 @@ priority = 1.0
 +++
 
 <p class="mb-3 text-center">
-    Du erreichst uns per [Matrix](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org) und E-Mail.
+    Du erreichst uns per [Matrix](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org) und E-Mail über coderdojo klammeraffe cyber4EDU pünktchen org.
 </p>
 
 <div class="w-100 text-center">
