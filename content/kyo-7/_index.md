@@ -1263,7 +1263,13 @@ Unsere Filmempfehlung zum 8. Kyo sind die drei Teile von Matrix. Auch hier gilt
 – Filme sind wie Bücher eine gute Gelegenheit, sein Englisch zu trainieren. Wenn
 Dir das bei Filmen noch schwerfällt, probiere es mit englischer Tonspur und
 englischen Untertiteln. Oder schau sie erst auf Deutsch und dann nochmal (mit
-englischen) Untertiteln auf Englisch.
+englischen) Untertiteln auf Englisch. Wenn dir diese Teile gefalen haben - dann
+solltest du dir auch den vierten Teil geben. Und wer auf Comics steht, dem seien
+nach dem Film die zwei Bände „Matrix Comics“ von Wachowski ans Herz gelegt.
+Berliner:innen bekommen diese auch in der Jugendbibliothek „Hallescher Komets“
+in der Amerikanischen Gedenkbibliothek am Halleschen Tor unter der Signatur „02
+Ju 600 Matrix“ (vorher vielleicht mal schauen ob sie da sind und ggf.
+reservieren).
 
 ## Calc like an Egyptian
 
