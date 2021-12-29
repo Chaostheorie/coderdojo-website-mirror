@@ -751,12 +751,16 @@ PyCharm einen Debugger ein?
 
 Nimm Dir mal das obigen Programm control-while-loop.py. Statt Run startest du es jetzt mal in PyCharm unter dem
 Menüpunkt Run mit Debug. Da passiert jetzt erstmal nicht viel. Jetzt legst du dir vorher einen Stoppunkt fest, am besten
-auf Zeile 3, also die mit dem input. Jetzt startetst du nochmal mit debug. Huch - jetzt zeigt er dir an, welchen Wert i
-beim Auftreffen des Stopppunktes hat. Das kann super praktisch sein, weil du so sehen kannst, wie sich Variablen
-verändern. Du kannst mit F9 oder in dem du diesen weiterauführen lassen. Versuche bei den Programmen, die du ab jetzt
-schreibst, wenn du festhängst, mal mit diesen Stopppunkten zu spielen. Es lohnt sich, für den Debugger ein Gefühl zu
-entwickeln. Du wirst sehen, dass er ein mächtiges Werkzeug sein kann, um Fehler zu finden. Und wenn bei gemeinsamen
-Sitzungen kommt - wirf mal den Debugger an und setze dort mal einen Stopppunkt - weißt du jetzt schon, was gemeint ist.
+auf Zeile 3, also die mit dem input. Jetzt startetst du nochmal mit debug.
+
+{{ figure(source="/images/kyo-7/Haltepunkt.png", float="end", alt="Um einen Halte- oder Stopppunkt zu setzen (der rote Kringel), klickst du einfach mit der Maus neben die Zeilennummer.") }}
+
+Huch - jetzt zeigt er dir an, welchen Wert i beim Auftreffen des Stopppunktes hat. Das kann super praktisch sein, weil
+du so sehen kannst, wie sich Variablen verändern. Du kannst mit F9 oder in dem du diesen weiterauführen lassen. Versuche
+bei den Programmen, die du ab jetzt schreibst, wenn du festhängst, mal mit diesen Stopppunkten zu spielen. Es lohnt
+sich, für den Debugger ein Gefühl zu entwickeln. Du wirst sehen, dass er ein mächtiges Werkzeug sein kann, um Fehler zu
+finden. Und wenn bei gemeinsamen Sitzungen kommt - wirf mal den Debugger an und setze dort mal einen Stopppunkt - weißt
+du jetzt schon, was gemeint ist.
 
 ## Münzwechsler
 
