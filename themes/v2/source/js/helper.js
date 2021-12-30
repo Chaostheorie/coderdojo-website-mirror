@@ -78,7 +78,7 @@ async function initUI() {
 
     menuToggle.addEventListener('click', (evt) => {
         evt.preventDefault();
-        menuToggle.classList.toggle('toggled');
+        menuToggle.classList.toggle('tw-toggled');
         document.getElementById('sidenav').classList.toggle('tw--ml-[15rem]');
     });
 

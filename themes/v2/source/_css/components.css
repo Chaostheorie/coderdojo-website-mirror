@@ -1,50 +1,37 @@
 @layer components {
-    .ring-theme {
-        --tw-ring-opacity: 1;
-        --tw-ring-color: rgb(theme('colors.theme') / var(--tw-ring-opacity));
+    .tw-btn {
+        @apply tw-cursor-pointer tw-thick-border tw-justify-center tw-flex tw-items-center tw-px-3 tw-py-2 md:tw-py-3 md:tw-px-4 xl:tw-px-3 xl:tw-py-2;
     }
 
-    .underlined-theme {
-        @apply tw-font-mono tw-border-b-4 tw-border-solid tw-border-theme tw-w-fit;
+    .tw-btn-sm {
+        @apply tw-justify-center tw-flex tw-items-center tw-px-2 tw-py-1 tw-thick-border;
     }
 
-    .btn {
-        @apply tw-cursor-pointer tw-justify-center tw-flex tw-items-center tw-px-3 tw-py-2 md:tw-py-3 md:tw-px-4 xl:tw-px-3 xl:tw-py-2;
+    .tw-btn-primary {
+        @apply tw-p-2 tw-transition-short tw-text-slate-100 tw-bg-theme hover:tw-text-theme hover:tw-bg-slate-100 hover:tw-ring-2 hover:tw-ring-theme;
     }
 
-    .btn-sm {
-        @apply tw-justify-center tw-flex tw-items-center tw-px-2 tw-py-1;
-    }
-
-    .btn-primary {
-        @apply tw-p-2 transition-short hoverable-shadow tw-text-slate-100 tw-bg-theme hover:tw-text-theme hover:tw-bg-slate-100 hover:tw-ring-2 hover:tw-ring-theme;
-    }
-
-    .toggled {
+    .tw-toggled {
         @apply tw-left-[16rem] tw-rotate-180 motion-reduce:tw-rotate-0 !important;
     }
 
-    .card-transition {
-        @apply tw-transition tw-duration-500 tw-ease-in-out;
+    .tw-card-title-hoverable {
+        @apply group-hover:text-theme group-hover:bg-slate-100 tw-card-transition;
     }
 
-    .card-title-hoverable {
-        @apply group-hover:text-theme group-hover:bg-slate-100 card-transition;
+    .tw-card-content-hoverable {
+        @apply group-hover:text-slate-100 group-hover:bg-theme tw-card-transition;
     }
 
-    .card-content-hoverable {
-        @apply group-hover:text-slate-100 group-hover:bg-theme card-transition;
+    .tw-card {
+        @apply tw-m-2 tw-bg-slate-100 tw-hoverable-shadow tw-card-transition;
     }
 
-    .card {
-        @apply tw-m-2 tw-bg-slate-100 hoverable-shadow card-transition;
-    }
-
-    .card-title {
+    .tw-card-title {
         @apply tw-p-2 tw-text-xl tw-w-full tw-bg-theme tw-text-slate-100;
     }
 
-    .card-content {
+    .tw-card-content {
         @apply tw-p-2;
     }
 

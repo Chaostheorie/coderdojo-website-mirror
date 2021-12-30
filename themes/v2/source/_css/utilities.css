@@ -1,17 +1,21 @@
 @layer utilities {
-    .hoverable-shadow-border {
+    .tw-thick-border {
         @apply tw-border-2 tw-border-black tw-border-solid;
     }
 
-    .hoverable-shadow {
-        @apply tw-drop-shadow-[4px_4px_0px_#000] hoverable-shadow-border hover:tw-drop-shadow-none;
+    .tw-hoverable-shadow {
+        @apply tw-drop-shadow-[4px_4px_0px_#000] tw-thick-border hover:tw-drop-shadow-none;
     }
 
     .h-0-important {
         @apply tw-h-0 !important;
     }
 
-    .transition-short {
+    .tw-transition-short {
         @apply tw-ease-in-out tw-transition-all tw-duration-300;
+    }
+
+    .tw-card-transition {
+        @apply tw-transition tw-duration-500 tw-ease-in-out;
     }
 }

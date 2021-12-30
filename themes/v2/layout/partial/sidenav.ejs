@@ -1,18 +1,18 @@
 <div
-    class="tw-w-[15rem] tw-z-20 tw-overflow-scroll md:tw-overflow-hidden tw-fixed tw-top-0 tw-left-0 tw--ml-[15rem] xl:tw--ml-[0rem] transition-short motion-reduce:tw-transition-none tw-bg-transparent"
+    class="tw-w-[15rem] tw-z-20 tw-overflow-scroll md:tw-overflow-hidden tw-fixed tw-top-0 tw-left-0 tw--ml-[15rem] xl:tw--ml-[0rem] tw-transition-short motion-reduce:tw-transition-none tw-bg-transparent"
     id="sidenav"
 >
-    <div class="tw-group card">
-        <div class="card-title">
+    <div class="tw-group tw-card tw-drop-shadow-none">
+        <div class="tw-card-title">
             <a href="/" class="tw-flex tw-flex-row tw-text-slate-100 hover:tw-text-slate-300">
                 <% if (color()) { %>
-                <img src="/images/brand-red.svg" alt="" height="32" width="32" class="tw-aspect-square" /> <%} else { %>
-                <img src="/images/brand-blue.svg" alt="" height="32" width="32" class="tw-aspect-square" /> <% } %>
+                <img src="/images/brand-red.svg" alt="" height="32" width="32" class="tw-aspect-square tw-mr-1" /> <%} else { %>
+                <img src="/images/brand-blue.svg" alt="" height="32" width="32" class="tw-aspect-square tw-mr-1" /> <% } %>
                 Coderdojo <% if (color()) { %> Red <%} else { %> Blue <% } %>
             </a>
         </div>
 
-        <p class="tw-leading-relaxed card-content">Treffen jeden Donnerstag über BigBlueButton</p>
+        <p class="tw-leading-relaxed tw-card-content">Treffen jeden Donnerstag über BigBlueButton</p>
     </div>
 
     <div class="tw-flex-row tw-hidden tw-group card tw-text-bold tw-flex-nowrap">
@@ -30,12 +30,12 @@
         </div>
     </div>
 
-    <div class="tw-mt-2 card">
-        <div class="card-title">
+    <div class="tw-mt-2 tw-card">
+        <div class="tw-card-title">
             <span>Navigation</span>
         </div>
 
-        <ul class="tw-ml-0 tw-leading-relaxed tw-list-none card-content">
+        <ul class="tw-ml-0 tw-leading-relaxed tw-list-none tw-card-content">
             <% for (var item in theme.menu){ %>
 
             <li class="tw-flex tw-justify-between tw-group">
@@ -51,11 +51,11 @@
         </ul>
     </div>
 
-    <div class="card">
-        <div class="card-title">
+    <div class="tw-card">
+        <div class="tw-card-title">
             <span>Themen</span>
         </div>
-        <ul class="tw-ml-0 tw-leading-relaxed tw-list-none card-content">
+        <ul class="tw-ml-0 tw-leading-relaxed tw-list-none tw-card-content">
             <% for (var item in theme.chapters){ %>
 
             <li class="tw-flex tw-justify-between tw-group tw-w-full">
@@ -70,11 +70,11 @@
     </div>
 
     <% if (page.content !==undefined) { %> <% let _toc=toc(page.content); if (_toc !=="" ) { %>
-    <div class="tw-group card">
-        <div class="card-title">
+    <div class="tw-group tw-card">
+        <div class="tw-card-title">
             <span class="tw-text-xl"> <%- page.title %> <%- site.title %> </span>
         </div>
-        <div class="card-content"><%- _toc %></div>
+        <div class="tw-card-content"><%- _toc %></div>
     </div>
     <% } %> <% } %>
 </div>

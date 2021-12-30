@@ -33,7 +33,7 @@
     }
 
     figure img {
-        @apply hoverable-shadow tw-bg-slate-100;
+        @apply tw-hoverable-shadow tw-card-transition tw-bg-slate-100;
     }
 
     figcaption {

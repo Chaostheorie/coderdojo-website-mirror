@@ -5,32 +5,32 @@
 </div>
 
 <div class="tw-flex tw-mb-3 tw-border-solid tw-border-theme tw-border-1">
-    <% if (page.date !== undefined) {%>
-    <div class="tw-mr-2 tw-bg-theme tw-text-slate-100 btn-sm hoverable-shadow">
+    <% if (page.date !==undefined) {%>
+    <div class="tw-mr-2 tw-bg-theme tw-text-slate-100 tw-btn-sm">
         <p>Erschaffen: <%= page.date.format(config.date_format) %></p>
     </div>
-    <% } %> <% if (page.updated !== undefined && (page.date !== undefined && page.date.format(config.date_format) !==
-    page.updated.format(config.date_format))) {%>
-    <div class="tw-hidden tw-mr-2 tw-bg-theme tw-text-slate-100 btn-sm hoverable-shadow md:tw-flex">
+    <% } %> <% if (page.updated !==undefined && (page.date !==undefined && page.date.format(config.date_format)
+    !==page.updated.format(config.date_format))) {%>
+    <div class="tw-hidden tw-mr-2 tw-bg-theme tw-text-slate-100 tw-btn-sm md:tw-flex">
         <p>Letztes Update: <%= page.updated.format(config.date_format) %></p>
     </div>
     <% } %>
 
-    <button data-action="copy-link" data-target="<%- page.permalink %>" class="btn-sm btn-primary">
+    <button data-action="copy-link" data-target="<%- page.permalink %>" class="tw-btn-sm tw-btn-primary">
         <i class="tw-mr-1 bi bi-link-45deg"></i> Link kopieren
     </button>
 </div>
 
-<% if (page.subtitle !== undefined) {%>
+<% if (page.subtitle !==undefined) {%>
 <h2 class="tw-text-2xl"><%- page.subtitle %></h2>
-<% } %> <%- page.content %> <% if (page !== undefined && theme !== undefined) { %>
+<% } %> <%- page.content %> <% if (page !==undefined && theme !==undefined) { %>
 <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-py-5 tw-mt-2 tw-align-middle">
-    <% let { prev, next } = chapters(page, theme); %> <% if (prev !== null && prev !== undefined) {%>
-    <a class="tw-w-full btn btn-primary md:tw-w-fit" href="<%- url_for(prev[1]) %>">
+    <% let { prev, next }=chapters(page, theme); %> <% if (prev !==null && prev !==undefined) {%>
+    <a class="tw-w-full tw-btn tw-btn-primary md:tw-w-fit" href="<%- url_for(prev[1]) %>">
         <i class="tw-mr-2 bi bi-arrow-left-square-fill"></i> Zurück zu <%- prev[0] %>
     </a>
-    <%}%> <% if (next !== null && next !== undefined) {%>
-    <a class="tw-w-full btn btn-primary md:tw-w-fit" href="<%- url_for(next[1]) %>">
+    <%}%> <% if (next !==null && next !==undefined) {%>
+    <a class="tw-w-full tw-btn tw-btn-primary md:tw-w-fit" href="<%- url_for(next[1]) %>">
         Weiter zu <%- next[0] %>
         <i class="tw-ml-2 bi bi-arrow-right-square-fill"></i>
     </a>

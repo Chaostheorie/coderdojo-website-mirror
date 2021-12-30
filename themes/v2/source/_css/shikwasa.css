@@ -42,7 +42,7 @@
 }
 
 .shk-player {
-    @apply tw-h-32 tw-z-10 tw-box-border tw-mt-1 tw-px-2 tw-py-5 tw-border-2 tw-border-solid tw-bg-slate-100 tw-border-theme sm:tw-px-5 hoverable-shadow card-transition;
+    @apply tw-h-32 tw-z-10 tw-box-border tw-mt-1 tw-px-2 tw-py-5 tw-border-2 tw-border-solid tw-bg-slate-100 tw-border-theme sm:tw-px-5 tw-hoverable-shadow tw-card-transition;
 }
 
 .shk-body {
