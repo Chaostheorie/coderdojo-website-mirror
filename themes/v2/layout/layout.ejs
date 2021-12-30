@@ -12,11 +12,18 @@
             id="section-content"
             itemtype="https://schema.org/SearchResultsPage"
         >
-            <button class="tw-fixed tw-z-20 tw-p-3 btn-primary tw-left-5 tw-top-5 xl:tw-hidden" id="sidenav-toggle" tabindex="0">
+            <button
+                class="tw-fixed tw-z-20 tw-p-3 btn-primary tw-left-5 tw-top-5 xl:tw-hidden"
+                id="sidenav-toggle"
+                tabindex="0"
+            >
                 <i class="bi bi-chevron-right"></i> <span class="tw-sr-only">Toggle Sidebar</span>
             </button>
             <div class="tw-body tw-min-h-screen tw-mt-16 tw-mx-auto tw-max-w-[50rem] tw-z-10"><%- body %></div>
             <div class="tw-footer tw-mx-auto tw-max-w-[50rem]"><%- partial('partial/footer') %></div>
         </div>
     </body>
+
+    <!-- JS -->
+    <script src="<%- url_for('js/bundle.js') %>?b=<%= Date.now() %>"></script>
 </html>
