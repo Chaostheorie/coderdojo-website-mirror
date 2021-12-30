@@ -1,0 +1,6 @@
+<!-- JS -->
+<script src="<%- url_for('js/bundle.js') %>?b=<%= Date.now() %>"></script>
+
+<% if (page !== undefined && page.katex && false) { %>
+    <script src="<%- url_for('js/katex-bundle.js') %>?b=<%= Date.now() %>"></script>
+<% } %>

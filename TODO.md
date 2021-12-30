@@ -1,7 +1,7 @@
 -   [ ] Pagination for categories
 -   [ ] Find a way to handle the belt colors (most likely some outline)
--   [ ] Figure out where the generation error is coming from
+-   [x] Figure out where the generation error is coming from
 -   [ ] Pat the shark
--   [ ] Implement `figure` tag
+-   [x] Implement `figure` tag
 -   [ ] Implement `file` tag
 -   [x] Publish notice

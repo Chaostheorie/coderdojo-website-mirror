@@ -3,6 +3,10 @@
         @apply tw-border-2 tw-border-black tw-border-solid;
     }
 
+    .tw-thick-underline {
+        @apply tw-underline tw-decoration-theme tw-decoration-4;
+    }
+
     .tw-hoverable-shadow {
         @apply tw-drop-shadow-[4px_4px_0px_#000] tw-thick-border hover:tw-drop-shadow-none;
     }

@@ -6,9 +6,10 @@
         <div class="tw-card-title">
             <a href="/" class="tw-flex tw-flex-row tw-text-slate-100 hover:tw-text-slate-300">
                 <% if (color()) { %>
-                <img src="/images/brand-red.svg" alt="" height="32" width="32" class="tw-aspect-square tw-mr-1" /> <%} else { %>
-                <img src="/images/brand-blue.svg" alt="" height="32" width="32" class="tw-aspect-square tw-mr-1" /> <% } %>
-                Coderdojo <% if (color()) { %> Red <%} else { %> Blue <% } %>
+                <img src="/images/brand-red.svg" alt="" height="32" width="32" class="tw-aspect-square tw-mr-1" /> <%}
+                else { %>
+                <img src="/images/brand-blue.svg" alt="" height="32" width="32" class="tw-aspect-square tw-mr-1" /> <% }
+                %> Coderdojo <% if (color()) { %> Red <%} else { %> Blue <% } %>
             </a>
         </div>
 
@@ -51,6 +52,23 @@
         </ul>
     </div>
 
+    <% if (page !== undefined && page.categories !== undefined && is_chapter(page)) { %>
+    <div class="tw-card">
+        <div class="tw-card-title">
+            <span>Unterthemen</span>
+        </div>
+        <ul class="tw-ml-0 tw-leading-relaxed tw-list-none tw-card-content">
+            <% console.log(page.subtitle) %>
+            <% let order = chapter_order(page, theme) %> <% for (var item in order){ %>
+            <li class="tw-flex tw-justify-between tw-group tw-w-full">
+                <a href="<%- url_for(order[item][1]) %>" class="tw-w-full <%= page.subtitle === order[item][0] ? 'tw-thick-underline' : '' %>"> <%= order[item][0] %> </a>
+                <i class="tw-hidden bi bi-chevron-right group-hover:tw-inline"></i>
+            </li>
+
+            <% } %>
+        </ul>
+    </div>
+    <% } else { %>
     <div class="tw-card">
         <div class="tw-card-title">
             <span>Themen</span>
@@ -69,7 +87,7 @@
         </ul>
     </div>
 
-    <% if (page.content !==undefined) { %> <% let _toc=toc(page.content); if (_toc !=="" ) { %>
+    <% } %> <% if (page.content !==undefined) { %> <% let _toc=toc(page.content); if (_toc !=="" ) { %>
     <div class="tw-group tw-card">
         <div class="tw-card-title">
             <span class="tw-text-xl"> <%- page.title %> <%- site.title %> </span>

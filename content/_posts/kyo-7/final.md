@@ -82,7 +82,7 @@ Daneben kann man Kommentar super nutzen, um Teile des Codes kurz nicht zu verwen
 PyCharm macht es Dir da einfach: Markiere den entsprechenden Code und gib Strg+\# ein und der Code wird auskommentiert.
 Machst du das mit auskommentierten Code, wird er wieder aktiv.
 
-{% figure("/images/kyo-7/help-2444110_1280_a.png", "end", "Dir wird geholfen!") %}
+{% figure "/images/kyo-7/help-2444110_1280_a.png" "Dir wird geholfen!" "right" %}
 
 Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst natürlich in unserem Matrix-Kanal. Ansonsten
 empfehlen wir Dir diese Internet-Seiten:
@@ -121,31 +121,7 @@ weiterhilft, schreib uns gerne.
 Wenn du Bücher, Mailinglisten oder anderes gefunden hast, bei dem du denkst, dass die den anderen helfen – behalte das
 bitte nicht für Dich, sondern teile es mit uns. Und wir schauen, ob wir es ins Script bzw. Homepage aufnehmen.
 
-<!---
-
-## Turtle
-
-Mit Turtle stellt Python Dir ein kleines Zeichenprogramm zur Verfügung, was für
-Programmieranfänger gedacht ist. Das ist super für erste Übungen. Es kann sein,
-dass du dafür noch eine Bibliothek installieren musst. Das kannst du aber leicht
-feststellen. Schreib einfach:
-
-```python
-import turtle
-```
-
-und starte das. Wenn es keinen Fehler gibt – super. Wenn es einen Fehler gibt –
-wenn du mit Deinem Betriebssystem schon besser klarkommst, dann kannst du das
-mit „pip install turtle“ nachinstallieren. Wenn das nicht der Fall ist – nicht
-schlimm. An einem Donnerstagabend helfen wir Dir beim CoderDojo. Falls du jetzt
-nicht weiterkommst, lies im nächsten Kapitel weiter und komme auf Turtle zurück,
-nach du Unterstützung bekommen hast.
-
--   Der Teil Turtle ist im Entstehen. Bitte habe noch etwas Geduld.
-
--->
-
-# Test
+### Test
 
 Der Weißgurt ist zum Greifen nahe. Schaffst du die folgenden Fragen beziehungsweise Aufgaben?
 

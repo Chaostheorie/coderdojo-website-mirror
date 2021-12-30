@@ -23,7 +23,5 @@
             <div class="tw-footer tw-mx-auto tw-max-w-[50rem]"><%- partial('partial/footer') %></div>
         </div>
     </body>
-
-    <!-- JS -->
-    <script src="<%- url_for('js/bundle.js') %>?b=<%= Date.now() %>"></script>
+    <%- partial('partial/scripts') %>
 </html>
