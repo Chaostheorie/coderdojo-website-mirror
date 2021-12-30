@@ -149,7 +149,7 @@ Wenn du die notwendigen Dinge selbst installieren willst oder jemanden neben Dir
 
 ## Los geht 's
 
-{% button "Hier geht es direkt zum ersten Gurt." "chapters/kyo-7/hello-world-schleifen/" "center mb-5" %}
+{% button "Hier geht es direkt zum ersten Gurt." "chapters/kyo-7/hello-world-schleifen/" "tw-center tw-mb-5" %}
 
 ## Bildnachweise
 

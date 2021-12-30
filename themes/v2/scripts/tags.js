@@ -21,7 +21,7 @@ hexo.extend.tag.register('audio', (src) => {
 
 hexo.extend.tag.register('button', (data) => {
     let button = `
-    <a class="btn btn-primary tw-mx-2" href="${url_for(data[1])}">
+    <a class="tw-btn tw-btn-primary tw-mx-2" href="${url_for(data[1])}">
         <i class="bi bi-${data.length >= 4 ? data[3] || 'link-45deg' : 'link45-deg'} tw-mr-2"></i> ${data[0]}
     </a>`;
 
