@@ -2,11 +2,15 @@
     <!-- Page metadata -->
     <meta charset="UTF-8" />
     <title>Coderdojo Red and Blue</title>
-    <meta property="og:title" content="Coderdojo" />
+
+    <!-- Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta property="og:site_name" content="Coderdojo" />
-    <meta property="og:type" content="text/html" />
+    <meta
+        name="description"
+        content="<%= page.description || page.summary || page.title || site.description || site.title %>"
+    />
+    <%- open_graph() %> <%- meta_generator() %>
 
     <!-- Icon -->
     <%- partial('favicon') %>

@@ -1,18 +1,18 @@
 <div
     class="tw-w-full tw-h-[3rem] tw-border-solid tw-border-b-2 tw-border-theme tw-flex tw-items-end tw-justify-center tw-text-center tw-mb-3"
 >
-    <h1 class="tw-my-2 tw-text-5xl tw-text-theme"><%- page.title %></h1>
+    <h1 class="tw-my-2 tw-text-5xl tw-text-theme"><%= page.title %></h1>
 </div>
 
 <div class="tw-flex tw-mb-3 tw-border-solid tw-border-theme tw-border-1">
     <% if (page.date !== undefined) {%>
     <div class="tw-mr-2 tw-bg-theme tw-text-slate-100 btn-sm hoverable-shadow">
-        <p>Erschaffen: <%- page.date.format(config.date_format) %></p>
+        <p>Erschaffen: <%= page.date.format(config.date_format) %></p>
     </div>
     <% } %> <% if (page.updated !== undefined && (page.date !== undefined && page.date.format(config.date_format) !==
     page.updated.format(config.date_format))) {%>
     <div class="tw-hidden tw-mr-2 tw-bg-theme tw-text-slate-100 btn-sm hoverable-shadow md:tw-flex">
-        <p>Letztes Update: <%- page.updated.format(config.date_format) %></p>
+        <p>Letztes Update: <%= page.updated.format(config.date_format) %></p>
     </div>
     <% } %>
 

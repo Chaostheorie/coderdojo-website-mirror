@@ -37,16 +37,16 @@
 
         <ul class="tw-ml-0 tw-leading-relaxed tw-list-none card-content">
             <% for (var item in theme.menu){ %>
-            <a href="<%- url_for(theme.menu[item][0]) %>" class="tw-w-full">
-                <li class="tw-flex tw-justify-between tw-group">
-                    <span>
-                        <% if (theme.menu[item].length !=1){ %>
-                        <i class="bi <%= theme.menu[item][1] %>"></i>
-                        <% } %> <%= item %>
-                    </span>
-                    <i class="tw-hidden bi bi-chevron-right group-hover:tw-inline"></i>
-                </li>
-            </a>
+
+            <li class="tw-flex tw-justify-between tw-group">
+                <a href="<%- url_for(theme.menu[item][0]) %>" class="tw-w-full">
+                    <% if (theme.menu[item].length !=1){ %>
+                    <i class="bi <%= theme.menu[item][1] %>"></i>
+                    <% } %> <%= item %>
+                </a>
+                <i class="tw-hidden bi bi-chevron-right group-hover:tw-inline"></i>
+            </li>
+
             <% } %>
         </ul>
     </div>
@@ -57,14 +57,14 @@
         </div>
         <ul class="tw-ml-0 tw-leading-relaxed tw-list-none card-content">
             <% for (var item in theme.chapters){ %>
-            <a href="<%- url_for(Object.values(theme.chapters[item][1]['order'][0])[0]) %>" class="tw-w-full">
-                <li class="tw-flex tw-justify-between tw-group">
-                    <span>
-                        <i class="icon-belt" style="color: <%- theme.chapters[item][0] %> !important"></i> <%= item %>
-                    </span>
-                    <i class="tw-hidden bi bi-chevron-right group-hover:tw-inline"></i>
-                </li>
-            </a>
+
+            <li class="tw-flex tw-justify-between tw-group tw-w-full">
+                <a href="<%- url_for(Object.values(theme.chapters[item][1]['order'][0])[0]) %>" class="tw-w-full">
+                    <i class="icon-belt" style="color: <%- theme.chapters[item][0] %> !important"></i> <%= item %>
+                </a>
+                <i class="tw-hidden bi bi-chevron-right group-hover:tw-inline"></i>
+            </li>
+
             <% } %>
         </ul>
     </div>
