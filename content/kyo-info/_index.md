@@ -20,10 +20,10 @@ date = 07-12-2021
 
 Willkommen zum Kursbuch des CoderDojo. Während die meisten CoderDojos auf Kinder ausgerichte sind, liegt unser Fokus bei
 Jugendlichen. Wir nehmen das nicht so genau, aber wenn du jünger als 12 bis 14 Jahren bist, wirst wahrscheinlich mit dem
-[CoderDojo Berlin](https://www.coderdojo-deutschland.de/) besser beraten sein. Dort findest du Gleichaltrige und wirst Programmieren mit einer graphischen
-Oberfläche lernen. Die schauen wir uns zwar auch einmal an, aber es stellt nicht unseren Schwerpunkt dar. Für
-diejenigen, die 16 Jahre und älter sind gibt es immer wieder zusätzliche Aufgaben, die mathematisch orientiert sind.
-Daran kannst du zusätzlich knobeln und weiter trainieren.
+[CoderDojo Berlin](https://www.coderdojo-deutschland.de/) besser beraten sein. Dort findest du Gleichaltrige und wirst
+Programmieren mit einer graphischen Oberfläche lernen. Die schauen wir uns zwar auch einmal an, aber es stellt nicht
+unseren Schwerpunkt dar. Für diejenigen, die 16 Jahre und älter sind gibt es immer wieder zusätzliche Aufgaben, die
+mathematisch orientiert sind. Daran kannst du zusätzlich knobeln und weiter trainieren.
 
 Vorab - wer jetzt denkt - wofür ein weiterer Python-Buch bzw. -Kurs? Gibt es davon nicht schon genug? Ja, das ist
 richtig. Aber wir streben weder einen Selbstlernkurs an, noch setzen wir auf Unterricht wie in der Schule. Unser Ansatz
@@ -37,17 +37,17 @@ Wir schauen auf Dinge wie Datenschutz, Nerdkultur ebenso wie auf Hardware.
 Trainieren? Der Begriff Dōjō kommt aus dem Kampfsport und stellt dort den Trainingsraum oder -halle dar. Programmieren
 lernen hat vieles damit gemeinsam. Jeder der Lesen und Schreiben kann, kann Programmieren lernen. Aber wenn du
 Programmieren lernen willst, wird das nicht klappen, indem du nur ein Buch liest oder einen Film schaust. So lernst du
-weder Karate, Judo oder Fahrrad fahren. Da gehört immer eine ordentliche Portion Übung dazu. Man kann eine Kata, also die vorgeschrieben Bewegungsabläufe, alleine üben. Aber regelmäßige
-Partnerübungen sind genauso wichtig wie das sich jemand von außen das anschaut und Dir hilft, Deine Bewegungen zu
-verbessern. So ist das beim Coden auch. Es hilft, sich gegenseitig Code vorzustellen, sich zu besprechen und sich
-Unterstützung zu holen, wenn es mal klemmt. Und jeder macht früher oder später die Erfahrung, dass es mal nicht
-weitergeht. Statt das Handtuch zu werfen, lernt Ihr Euch gegenseitig zu helfen oder von den erfahrenen Mentoren
-unterstützt zu werden. Dieser Teil ist mindestens so bedeutsam wie alleine zu frickeln. Und am meisten lernt, wer
-lehrt - du wirst von Problemen anderer hören, kannst ihnen helfen und eine Menge selbst dazu lernen. Aktuell treffen wir
-uns einmal wöchentlich in einer Videokonferenz. Das wollen wir ergänzen durch ein einmal monatliches Treffen im Berliner
-[Hackerspace xHain](https://x-hain.de/de/). An dieser Stelle kann das Script beziehungsweise der Text nicht immer aktuell sein - also schau bitte
-auf unserer Homepage unter News nach. Wenn du nicht aus Berlin kommst, sprich uns an und wir versuchen dir zu helfen, in
-Deiner Stadt Ansprechpartner zu finden.
+weder Karate, Judo oder Fahrrad fahren. Da gehört immer eine ordentliche Portion Übung dazu. Man kann eine Kata, also
+die vorgeschrieben Bewegungsabläufe, alleine üben. Aber regelmäßige Partnerübungen sind genauso wichtig wie das sich
+jemand von außen das anschaut und Dir hilft, Deine Bewegungen zu verbessern. So ist das beim Coden auch. Es hilft, sich
+gegenseitig Code vorzustellen, sich zu besprechen und sich Unterstützung zu holen, wenn es mal klemmt. Und jeder macht
+früher oder später die Erfahrung, dass es mal nicht weitergeht. Statt das Handtuch zu werfen, lernt Ihr Euch gegenseitig
+zu helfen oder von den erfahrenen Mentoren unterstützt zu werden. Dieser Teil ist mindestens so bedeutsam wie alleine zu
+frickeln. Und am meisten lernt, wer lehrt - du wirst von Problemen anderer hören, kannst ihnen helfen und eine Menge
+selbst dazu lernen. Aktuell treffen wir uns einmal wöchentlich in einer Videokonferenz. Das wollen wir ergänzen durch
+ein einmal monatliches Treffen im Berliner [Hackerspace xHain](https://x-hain.de/de/). An dieser Stelle kann das Script
+beziehungsweise der Text nicht immer aktuell sein - also schau bitte auf unserer Homepage unter News nach. Wenn du nicht
+aus Berlin kommst, sprich uns an und wir versuchen dir zu helfen, in Deiner Stadt Ansprechpartner zu finden.
 
 Kennst du die Gürtelfarben aus dem Kampfsport? Ein bunter Strauß an Farben, der dich am Ende zum schwarzen Gürtel führen
 soll, die sogenannten Kyo-Grade oder im deutschen Schüler-Grade. Es gibt nicht nur einen schwarzen Gürtel, sondern
@@ -67,14 +67,14 @@ Stupser in die richtige Richtung und du kannst die Aufgabe selber richtig weiter
 
 Was lernen wir? Wir beginnen mit Python. Die Wahl der „richtigen" Programmiersprache kann zu regelrechten
 Glaubensstreitigkeiten führen. Es gibt Sprachen, die sich eher für Anfänger eignen und welche, die sich weniger für
-Anfänger eigenen. Und es gibt Sprachen, die für einen bestimmten Zweck besser geeignet sind als andere. Es gibt nicht _"die"_
-Programmiersprache. Insofern werden wir mit jedem Gurt auch einen Blick auf weitere Sprache werfen. Es sind keine
-Programmiersprachen im eigentlichen Sinne, aber html und css, um Internetseiten zu erstellen, werden wir ebenfalls erlernen. Wir
-werden ebenso einen Blick auf Dinge wie Netzwerktechnik, auf Linux, Datenschutz, Cybersicherheit werfen und nehmen bei
-unseren Treffen in unserem Hackspace oder auf dem Congress gerne einmal einen Lötkolben in die Hand. Der Weg zum
-_"schwarzen Gürtel"_ besteht also nicht nur aus dem Erlernen von ein paar Befehlen einer Programmiersprache, sondern aus
-einem Potpourri an Dingen. Und dir sollte klar sein - zum begehrten _"schwarzen Gürtel"_ ist noch niemand über `s
-Wochenende gekommen. Gib dir also selbst Zeit.
+Anfänger eigenen. Und es gibt Sprachen, die für einen bestimmten Zweck besser geeignet sind als andere. Es gibt nicht
+_"die"_ Programmiersprache. Insofern werden wir mit jedem Gurt auch einen Blick auf weitere Sprache werfen. Es sind
+keine Programmiersprachen im eigentlichen Sinne, aber html und css, um Internetseiten zu erstellen, werden wir ebenfalls
+erlernen. Wir werden ebenso einen Blick auf Dinge wie Netzwerktechnik, auf Linux, Datenschutz, Cybersicherheit werfen
+und nehmen bei unseren Treffen in unserem Hackspace oder auf dem Congress gerne einmal einen Lötkolben in die Hand. Der
+Weg zum _"schwarzen Gürtel"_ besteht also nicht nur aus dem Erlernen von ein paar Befehlen einer Programmiersprache,
+sondern aus einem Potpourri an Dingen. Und dir sollte klar sein - zum begehrten _"schwarzen Gürtel"_ ist noch niemand
+über `s Wochenende gekommen. Gib dir also selbst Zeit.
 
 Der Anfang ist leider oft etwas trocken, weil man erst etwas Rüstzeug lernen muss, bevor es richtig spaßig wird. Bevor
 du tolle Würfe und Tritte lernst, steht immer erst eine Runde Fallschule und Bewegungslehre an. So ist das hier auch. Im
