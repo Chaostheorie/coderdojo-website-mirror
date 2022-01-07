@@ -85,15 +85,15 @@ und wann nutzen möchtest. Wenn Du die Befehle kannst, kannst du meist ohne Prob
 Oberflächen nutzen - umgekehrt klappt das dagegen nicht. Weiter geht's. Öffne bitte einen Terminal. Gehe in Dein
 Verzeichnis: Mit ` cd Pycharm` gehst du in das Pycharm-Verzeichnis, mit `cd helloWorld` gehst du in Dein neues Projekt.
 Mit `ls -lah` kannst du Dir den Inhalt des Verzeichnisses anzeigen lassen. Da ist noch nichts drin. Jetzt „arbeitest“ du
-die Coderberg-Anleitung ab:
+die Coderberg-Anleitung ab (ersetze `<dein Benutzername>` mit deinem Benutzernamen):
 
 ```bash
 touch README.md
 git init
 git checkout -b main
 git add README.md
-git commit -m "first commit"
-git remote add origin git@codeberg.org:DeinBenutzername/helloWorld.git
+git commit -m "erster commit"
+git remote add origin https://codeberg.org/<dein Benutzername>/helloWorld.git
 git push -u origin main
 ```
 
