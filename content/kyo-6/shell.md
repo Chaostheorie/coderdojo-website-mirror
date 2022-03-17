@@ -5,7 +5,7 @@ title = "6. Kyo - Ghost in the Shell"
 color = "#FFFF00"
 #heading_color = "#733111"
 katex = true
-date = 07-12-2021
+date = 2022-03-17
 +++
 
 # 6. Kyo – Ghost in the Shell
@@ -18,7 +18,5 @@ date = 07-12-2021
 
 ## Überblick
 
-Der Rest folgt bald...
-
-> War es das schon mit dem Gelbgurt? Mitnichten! Aber wir erarbeiten gerade das Programm. Es lohnt sich immer wieder
-> vorbeizukommen, da wir die Seite Stück für Stück ergänzen.
+Den Workshop „Ghost in the Shell“ werden wir zeitnah in unser Programm für den 6. Kyo aufnehmen. Bis dahin könnt
+[Ihr hier aber den Foliensatz für den Workshop](https://coderdojo.red/images/kyo-6/shell-ohne.pdf) einsehen.
