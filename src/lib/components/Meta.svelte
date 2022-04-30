@@ -1,0 +1,54 @@
+<script lang="ts">
+	export let title: string | false = false;
+	export let description: string | false = false;
+</script>
+
+<svelte:head>
+	{#if title}
+		<title>
+			Coderdojo R & B - {title}
+		</title>
+	{:else}
+		<title>Coderdojo R & B</title>
+	{/if}
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta property="og:site_name" content="Coderdojo" />
+	<meta property="og:type" content="text/html" />
+
+	{#if description}
+		<meta name="description" content={description} />
+		<meta property="og:description" content={description} />
+	{/if}
+	<meta name="lang" content="de" />
+	<meta property="og:locale" content="de" />
+
+	<meta name="apple-mobile-web-app-title" content="Coderdojo" />
+	<meta name="application-name" content="Coderdojo" />
+	<meta name="msapplication-TileColor" content="#314958" />
+	<meta name="msapplication-TileImage" content="/images/logo/mstile-144x144.png" />
+	<meta name="msapplication-config" content="/images/logo/browserconfig.xml" />
+	<meta name="theme-color" content="#314958" />
+
+	<!-- theme/images/favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/logo/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/logo/favicon-32x32.png" />
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="192x192"
+		href="/images/logo/android-chrome-192x192.png"
+	/>
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/logo/favicon-16x16.png" />
+	<link rel="manifest" href="/images/logo/site.webmanifest" />
+	<link rel="mask-icon" href="/images/logo/safari-pinned-tab.svg" color="#5bbad5" />
+	<link rel="shortcut icon" href="/images/logo/favicon.ico" />
+	<meta name="apple-mobile-web-app-title" content="Coderdojo Red and Blue" />
+	<meta name="application-name" content="Coderdojo Red and Blue" />
+	<meta name="msapplication-TileColor" content="#d8dee9" />
+	<meta name="msapplication-TileImage" content="/images/logo/mstile-144x144.png" />
+	<meta name="msapplication-config" content="/images/logo/browserconfig.xml" />
+	<meta name="theme-color" content="#d8dee9" />
+	<meta property="og:image" content="/images/logo/android-chrome-192x192.png" />
+</svelte:head>

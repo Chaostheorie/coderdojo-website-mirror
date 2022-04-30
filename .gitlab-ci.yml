@@ -1,0 +1,88 @@
+image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-zola-builder:latest
+
+cache:
+  key: '${CI_COMMIT_REF_SLUG}'
+  paths:
+    - node_modules
+    - public
+
+Lint:
+  only:
+    changes:
+      - .gitlab-ci.yml
+      - .prettierrc
+      - 'src/*'
+      - 'src/*/*'
+      - 'src/*/*/*'
+      - mdsvex.config.js
+      - package.json
+      - postcss.config.cjs
+      - svelte.config.js
+      - tailwind.config.cjs
+      - tsconfig.json
+  before_script:
+    - pnpm i --frozen-lockfile
+  script:
+    - pnpm lint
+
+.template: &rs-deploy
+  only:
+    changes:
+      - .gitlab-ci.yml
+      - 'src/*'
+      - 'src/*/*'
+      - 'src/*/*/*'
+      - 'static/*'
+      - 'static/*/*'
+      - 'static/*/*/*'
+      - mdsvex.config.js
+      - package.json
+      - pnpm-lock.yaml
+      - postcss.config.cjs
+      - svelte.config.js
+      - tailwind.config.cjs
+      - tsconfig.json
+    refs:
+      - main
+  before_script:
+    # Install all yarn dependencies (normally cached but clover#2 currently has (since 2 years) problems with space)
+    - pnpm i --frozen-lockfile
+    # Add shh folder
+    - mkdir -p ~/.ssh
+    # Start ssh agent
+    - eval $(ssh-agent -s)
+    # Dump keys from CI variables to files
+    - echo "$KEY" > ~/.ssh/id_rsa
+    - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
+    # SSH agent requires specific permissions
+    - chmod 644 ~/.ssh/known_hosts
+    - chmod 700 ~/.ssh
+    - chmod 600 ~/.ssh/id_rsa
+  script:
+    - pnpm build
+  after_script:
+    # Restart agent - Not necessary for prod only needed for debugging
+    # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"
+    # Upload
+    - rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc
+      --delete  ./public/*  "$CD_DIST_USER@$CD_DIST_HOST:"
+
+CD:Red:
+  <<: *rs-deploy
+  stage: deploy
+  environment:
+    name: production-1
+    url: https://coderdojo.red
+  variables:
+    DOMAIN: coderdojo.red
+    KEY: '$CD_RED_PRIVATE_KEY'
+
+CD:Blue:
+  <<: *rs-deploy
+  stage: deploy
+  environment:
+    name: production-2
+    url: https://coderdojo.blue
+  variables:
+    DOMAIN: coderdojo.blue
+    KEY: '$CD_BLUE_PRIVATE_KEY'
