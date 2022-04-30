@@ -1,10 +1,10 @@
 <script lang="ts">
-	export let title: string | false = false;
-	export let description: string | false = false;
+	export let title = '';
+	export let description = '';
 </script>
 
 <svelte:head>
-	{#if title}
+	{#if title !== ''}
 		<title>
 			Coderdojo R & B - {title}
 		</title>
@@ -17,7 +17,7 @@
 	<meta property="og:site_name" content="Coderdojo" />
 	<meta property="og:type" content="text/html" />
 
-	{#if description}
+	{#if description !== ''}
 		<meta name="description" content={description} />
 		<meta property="og:description" content={description} />
 	{/if}
