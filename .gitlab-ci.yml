@@ -1,3 +1,98 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2beaf95b6324e2c1df3fb82422f8d91cd2d8867e4aa4ef77db9cf5240e3e30fb
-size 2773
+image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-zola-builder:latest
+
+cache:
+    key: '${CI_COMMIT_REF_SLUG}'
+    paths:
+        - node_modules
+        - public
+
+Lint:
+    only:
+        changes:
+            - .gitlab-ci.yml
+            - 'content/*'
+            - 'content/*/*'
+            - 'content/*/*/*'
+            - 'sass/*'
+            - 'static/*'
+            - 'static/*/*'
+            - 'static/*/*/*'
+            - 'templates/*'
+            - 'templates/*/*'
+            - 'ts/*'
+            - chapter.toml
+            - config.toml
+            - package.json
+            - purgecss.config.js
+            - webpack.config.js
+            - webpack.prod.config.js
+    before_script:
+        - yarn install --non-interactive --check-files  --frozen-lockfile
+    script:
+        - yarn dev:lint
+
+.template: &rs-deploy
+    only:
+        changes:
+            - 'content/*'
+            - 'content/*/*'
+            - 'content/*/*/*'
+            - 'sass/*'
+            - 'static/*'
+            - 'static/*/*'
+            - 'static/*/*/*'
+            - 'templates/*'
+            - 'templates/*/*'
+            - 'ts/*'
+            - chapter.toml
+            - config.toml
+            - package.json
+            - purgecss.config.js
+            - webpack.config.js
+            - webpack.prod.config.js
+            - .gitlab-ci.yml
+        refs:
+            - main
+    before_script:
+        # Install all yarn dependencies (normally cached but clover#2 currently has problems with space)
+        - yarn install --non-interactive --check-files  --frozen-lockfile
+        # Add shh folder
+        - mkdir -p ~/.ssh
+        # Start ssh agent
+        - eval $(ssh-agent -s)
+        # Dump keys from CI variables to files
+        - echo "$KEY" > ~/.ssh/id_rsa
+        - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
+        # SSH agent requires specific permissions
+        - chmod 644 ~/.ssh/known_hosts
+        - chmod 700 ~/.ssh
+        - chmod 600 ~/.ssh/id_rsa
+    script:
+        - yarn ci:domain
+        - yarn ci:build
+    after_script:
+        # Restart agent - Not necessary for prod only needed for debugging
+        # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"
+        # Upload
+        - rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc
+          --delete  ./public/*  "$CD_DIST_USER@$CD_DIST_HOST:"
+
+CD:Red:
+    <<: *rs-deploy
+    stage: deploy
+    environment:
+        name: production-1
+        url: https://coderdojo.red
+    variables:
+        DOMAIN: coderdojo.red
+        KEY: '$CD_RED_PRIVATE_KEY'
+
+CD:Blue:
+    <<: *rs-deploy
+    stage: deploy
+    environment:
+        name: production-2
+        url: https://coderdojo.blue
+    variables:
+        DOMAIN: coderdojo.blue
+        KEY: '$CD_BLUE_PRIVATE_KEY'
