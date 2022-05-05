@@ -7,7 +7,7 @@ import { toString } from 'mdast-util-to-string';
 const TocFile = './src/.toc-cache.json';
 
 /** @type {import('unified').Plugin<[], import('mdast').Root>} */
-function myRemarkPlugin() {
+function tocPlugin() {
 	return (tree) => {
 		if (tree.children[0].type === 'toml') {
 			// extract title from toml (title = '<this part>')
@@ -26,7 +26,7 @@ function myRemarkPlugin() {
 
 				visit(tree, (node) => {
 					if (node.type === 'heading') {
-						headlines.push([toString(node), node.data.id]);
+						headlines.push([toString(node), node.data.id + '-section']);
 					}
 				});
 
@@ -39,4 +39,4 @@ function myRemarkPlugin() {
 	};
 }
 
-export { myRemarkPlugin };
+export { tocPlugin };

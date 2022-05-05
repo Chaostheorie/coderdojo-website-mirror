@@ -107,6 +107,19 @@
 		}
 	}
 
+	/* Sidebar */
+	.toc-menu {
+		@apply flex flex-col gap-1;
+
+		& a {
+			@apply border-l-2 leading-none px-2 border-transparent border-solid;
+
+			&.active {
+				@apply border-theme;
+			}
+		}
+	}
+
 	/* Footer */
 	.footer-container {
 		@apply container px-5 pb-2 pt-10 mt-10 mb-0 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col;

@@ -2,7 +2,8 @@ import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import { parse as load } from '@iarna/toml';
 import loadLanguages from 'prismjs/components/index.js';
 import Prism from 'prismjs';
-import { myRemarkPlugin } from './src/lib/toc.js';
+import { tocPlugin } from './src/lib/toc.js';
+import { sectionPlugin } from './src/lib/section-ids.js';
 import rehypeKatexSvelte from 'rehype-katex-svelte';
 import remarkMath from 'remark-math';
 import remarkSlug from 'remark-slug';
@@ -70,8 +71,8 @@ const config = defineConfig({
 		}
 	},
 
-	remarkPlugins: [remarkMath, remarkSlug, myRemarkPlugin, remarkGfm, remarkEmoji],
-	rehypePlugins: [rehypeKatexSvelte]
+	remarkPlugins: [remarkMath, remarkSlug, tocPlugin, remarkGfm, remarkEmoji],
+	rehypePlugins: [sectionPlugin, rehypeKatexSvelte]
 });
 
 export default config;
