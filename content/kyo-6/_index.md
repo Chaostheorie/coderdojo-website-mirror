@@ -834,7 +834,8 @@ Der Rest folgt bald...
 # ATTiny löten
 
 > Dieser Teil ist Bestandteil eines unserer Präsenz-Workshops. Wir werden die Inhalte dazu aber zeitnah online stellen.
-> Hier sind schon einmal die [Folien](https://coderdojo.red/images/kyo-6/attiny/ATTiny.pdf) des Workshops.
+>
+> Hier sind schon einmal die [Folien](https://coderdojo.red/images/kyo-6/ATTiny.pdf) des Workshops.
 
 # ATTiny Programmieren
 
