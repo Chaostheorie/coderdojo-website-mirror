@@ -1,52 +1,50 @@
 // audio-player support
-@import 'shikwasa/base';
-@import 'shikwasa/chapters';
+@import "shikwasa/base";
+@import "shikwasa/chapters";
 
 // modify pre when putting helper on top
-div[data-type='file-helper'] {
-    box-shadow: $box-shadow-sm;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+div[data-type="file-helper"] {
+  box-shadow: $box-shadow-sm;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 
-    + pre {
-        border-top: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
+  + pre {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 
 .button-special {
-    background: linear-gradient(to right, $theme-red, $theme-blue);
-    color: #fff;
-    font-size: large;
+  background: linear-gradient(to right, $theme-red, $theme-blue);
+  color: #fff;
+  font-size: large;
 
-    &-reverse {
-        background: linear-gradient(to left, $theme-red, $theme-blue);
-    }
+  &-reverse {
+    background: linear-gradient(to left, $theme-red, $theme-blue);
+  }
 }
 
 .modal {
-    max-width: 100vw;
+  max-width: 100vw;
 
-    h5.modal-title {
-        color: $primary !important;
-    }
+  h5.modal-title {
+    color: $primary !important;
+  }
 }
 
 // cursor support for image enhancing
 img {
-    &.figure-img {
-        cursor: zoom-in;
-    }
+  &.figure-img {
+    cursor: zoom-in;
+  }
 
-    &.expanded {
-        cursor: zoom-out;
-        height: fit-content;
-        max-height: 100%;
-    }
+  &.expanded {
+    cursor: zoom-out;
+  }
 }
 
 // support for opaque background in expanded hover
 .bg-opaque {
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
