@@ -9,21 +9,23 @@ cache:
 Lint:
     only:
         changes:
-            - content/*/**
+            - .gitlab-ci.yml
+            - 'content/*'
+            - 'content/*/*'
+            - 'content/*/*/*'
+            - 'sass/*'
+            - 'static/*'
+            - 'static/*/*'
+            - 'static/*/*/*'
+            - 'templates/*'
+            - 'templates/*/*'
+            - 'ts/*'
             - chapter.toml
-            - content/*
-            - templates/*
-            - templates/**/*
-            - static/*/**
-            - static/*
-            - sass/*
-            - ts/*
             - config.toml
             - package.json
             - purgecss.config.js
             - webpack.config.js
             - webpack.prod.config.js
-            - .gitlab-ci.yml
     before_script:
         - yarn install --non-interactive --check-files  --frozen-lockfile
     script:
@@ -32,15 +34,17 @@ Lint:
 .template: &rs-deploy
     only:
         changes:
-            - content/*/**
+            - 'content/*'
+            - 'content/*/*'
+            - 'content/*/*/*'
+            - 'sass/*'
+            - 'static/*'
+            - 'static/*/*'
+            - 'static/*/*/*'
+            - 'templates/*'
+            - 'templates/*/*'
+            - 'ts/*'
             - chapter.toml
-            - content/*
-            - templates/*
-            - templates/**/*
-            - static/*/**
-            - static/*
-            - sass/*
-            - ts/*
             - config.toml
             - package.json
             - purgecss.config.js
