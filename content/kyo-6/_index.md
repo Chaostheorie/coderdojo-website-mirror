@@ -837,13 +837,21 @@ Der Rest folgt bald...
 
 # ATTiny Programmieren
 
-In den Präsenz-Workshops geben wir dir am Ende des Lötteils zum Testen einen fertig programmierten ATTiny. Das ist aber wie fertiger Kartoffelbrei - macht satt, aber nicht glücklich. Wir wollen den also selber programmieren. Dafür bedarf es ein wenig Vorbereitung. Zum Coden installierst du dir am besten die [AVR IDE](https://www.arduino.cc/en/software). Wenn du da Unterstützung brauchst, stehen wir dir bei den Workshops oder donnerstags gerne zur Seite. Zum Testen des Codes schaffst du dir ein Konto auf [Wokwi](https://wokwi.com/). Klar nimmst du dafür Fakedaten, oder?
+In den Präsenz-Workshops geben wir dir am Ende des Lötteils zum Testen einen fertig programmierten ATTiny. Das ist aber
+wie fertiger Kartoffelbrei - macht satt, aber nicht glücklich. Wir wollen den also selber programmieren. Dafür bedarf es
+ein wenig Vorbereitung. Zum Coden installierst du dir am besten die [AVR IDE](https://www.arduino.cc/en/software). Wenn
+du da Unterstützung brauchst, stehen wir dir bei den Workshops oder donnerstags gerne zur Seite. Zum Testen des Codes
+schaffst du dir ein Konto auf [Wokwi](https://wokwi.com/). Klar nimmst du dafür Fakedaten, oder?
 
-Als nächstes brauchen wir einen Programmer. Das ist ein Stück Hardware, welches deinen Code nachher auf den ATTiny bringt. Das kannst du dir später auch gut zusammenlöten. Aber dann musst du für jede Codeänderung den ATTiny aus dem Sockel ziehen müsstest und wieder reinstecken, ist das erstmal unpraktisch. Auch wenn man vorsichtig ist, geht das nicht lange gut. Zum Rumspielen nimmst du dir besser ein Breadboard und steckst alles zusammen.
+Als nächstes brauchen wir einen Programmer. Das ist ein Stück Hardware, welches deinen Code nachher auf den ATTiny
+bringt. Das kannst du dir später auch gut zusammenlöten. Aber dann musst du für jede Codeänderung den ATTiny aus dem
+Sockel ziehen müsstest und wieder reinstecken, ist das erstmal unpraktisch. Auch wenn man vorsichtig ist, geht das nicht
+lange gut. Zum Rumspielen nimmst du dir besser ein Breadboard und steckst alles zusammen.
 
 {{ figure(source="/images/kyo-6/attiny/1-attiny.jpg", float="end", alt="ATTiny auf einem Breadboard") }}
 
-Als nächstes nimmst du dir sechs Headerkabel mit männlichen Steckern an beiden Enden, das sind diese kurzen Kabel zum Bauen von Schaltungen auf dem Breadboard. Die steckst du erstmal in den Programmer.
+Als nächstes nimmst du dir sechs Headerkabel mit männlichen Steckern an beiden Enden, das sind diese kurzen Kabel zum
+Bauen von Schaltungen auf dem Breadboard. Die steckst du erstmal in den Programmer.
 
 {{ figure(source="/images/kyo-6/attiny/2-programmer.jpg", float="end", alt="Programmer") }}
 
@@ -865,7 +873,9 @@ für
 
 Stück.
 
-Und dann nimmst du dir noch eine einfache LED und verbindest sie mit mit Port 1 und VCC. Der VCC entspricht dem Pluspol, der Port dem Minuspol. Bei der LED muss die Anode zum Pluspol zeigen und die Kathode (Merkhilfe: _K_athode / _k_urzes Bein) zum Minuspol.
+Und dann nimmst du dir noch eine einfache LED und verbindest sie mit mit Port 1 und VCC. Der VCC entspricht dem Pluspol,
+der Port dem Minuspol. Bei der LED muss die Anode zum Pluspol zeigen und die Kathode (Merkhilfe: \_K_athode / \_k_urzes
+Bein) zum Minuspol.
 
 {{ figure(source="/images/kyo-6/attiny/7-LED.jpg", float="end", alt="LED") }}
 
@@ -873,7 +883,8 @@ Die LED ist für die Aufwärmübungen.
 
 {{ figure(source="/images/kyo-6/attiny/8-LED.jpg", float="end", alt="LED") }}
 
-Bring den erstmal zum Blinken, bevor du dich am Stripe versuchst. Weil wir aber gerade am Basteln sind, machen wir das erst noch fertig. Isoliere den Stripe am Anfang ab. Sei vorsichtig - da kann man leicht bei abrutschen...
+Bring den erstmal zum Blinken, bevor du dich am Stripe versuchst. Weil wir aber gerade am Basteln sind, machen wir das
+erst noch fertig. Isoliere den Stripe am Anfang ab. Sei vorsichtig - da kann man leicht bei abrutschen...
 
 {{ figure(source="/images/kyo-6/attiny/9-stripe.jpg", float="end", alt="Stripe") }}
 
@@ -902,9 +913,6 @@ Der Pluspol (rot) kommt auf VCC, der Minuspol (weiß) auf Ground und das Datenka
 Jetzt kommt der Programmer in deinen USB-Port und dann kann es mit dem Coden losgehen!
 
 {{ figure(source="/images/kyo-6/attiny/17-programmer.jpg", float="end", alt="Programmer") }}
-
-
-
 
 > War es das schon mit dem Gelbgurt? Mitnichten! Aber wir erarbeiten gerade das Programm. Es lohnt sich immer wieder
 > vorbeizukommen, da wir die Seite Stück für Stück ergänzen.
