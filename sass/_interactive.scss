@@ -41,5 +41,12 @@ img {
 
     &.expanded {
         cursor: zoom-out;
+        height: fit-content;
+        max-height: 100%;
     }
+}
+
+// support for opaque background in expanded hover
+.bg-opaque {
+    background: rgba(0, 0, 0, 0.5);
 }
