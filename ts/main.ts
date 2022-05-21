@@ -51,7 +51,7 @@ export async function initUI() {
         document.getElementById('wrapper').classList.toggle('sidebar-toggled');
     });
 
-    const modals = Array.from(document.querySelectorAll('.modal')).map((modal: Element) => {
+    const modals = Array.from(document.querySelectorAll('.modal:not(.controlled)')).map((modal: Element) => {
         return {
             id: modal.id,
             modal: new Modal(modal),
@@ -86,6 +86,40 @@ export async function initUI() {
     /*    const scrollSpy = new ScrollSpy(document.body, {
         target: '#chapter-inline-spybar'
     });*/
+
+    // support for expanding figures
+    const figureModal = new Modal(document.getElementById('figureModal'), {
+            focus: false,
+            backdrop: true,
+            keyboard: true,
+        }),
+        figureModalBody = document.getElementById('figureModalBody'),
+        figureModalFigure = document.getElementById('figureModalFigure'),
+        figureModalLabel = document.getElementById('figureModalLabel');
+
+    figureModalBody.onclick = () => {
+        figureModal.hide();
+    };
+
+    document.querySelectorAll('.figure-img').forEach((figureElement: Element) => {
+        if (figureElement instanceof HTMLElement) {
+            figureElement.onclick = () => {
+                // check if url is a thumbnail
+                let src = figureElement.getAttribute('src');
+
+                if (/_th\.jpg/.test(src)) {
+                    src = src.replace('_th.jpg', '.jpg');
+                }
+
+                // copy values to the modal elements
+                const alt = figureElement.getAttribute('alt');
+                figureModalFigure.setAttribute('src', src);
+                figureModalFigure.setAttribute('alt', alt);
+                figureModalLabel.innerText = alt;
+                figureModal.show();
+            };
+        }
+    });
 
     document.querySelectorAll("[data-toggle='audio-player']").forEach((audioPlayer: Element) => {
         return new Shikwasa({

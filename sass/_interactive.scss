@@ -32,3 +32,14 @@ div[data-type='file-helper'] {
         color: $primary !important;
     }
 }
+
+// cursor support for image enhancing
+img {
+    &.figure-img {
+        cursor: zoom-in;
+    }
+
+    &.expanded {
+        cursor: zoom-out;
+    }
+}
