@@ -684,7 +684,7 @@ gibst du einen Namen ein wie „helloWorld“ und scrollst bis an das Ende der S
 die Möglichkeit, das Repository zu klonen, also lokal bei Dir abzulegen. Wir zeigen dir jetzt die Wege über PyCharm und
 über die Kommandozeile parallel. Wenn möglich, probierst du auch beide aus...
 
-{{ figure(source="/images/kyo-6/git-2-klonen.png", float="end", alt="Git klonen") }}
+{{ figure(source="/images/kyo-6/git-2-klonen-crop.png", float="end", alt="Git klonen") }}
 
 Zunächst die ersten Schritte auf Shell:
 
