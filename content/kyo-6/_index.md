@@ -963,10 +963,11 @@ würde.
 Was passiert jetzt bei dem obigen Code? Die Zeilen, welche mit einer # beginnen, werden vom Compiler ausgewertet,
 _bevor_ der Code übersetzt wird. _include_ entspricht einem Import aus Python. Mit _define_ wird der erste Ausdruck im
 Code gesucht und durch den zweiten ersetzt. Das hilft, Code lesbarer zu machen. Nimm dir den Code und hau den erstmal in
-das Wokwi rein. Kriegst du ihn da zu laufen? Super, dann pack ihn in die AVR-IDE rein. Klick erst den Haken an, um den
-Code zu überprüfen. Läuft alles durch? Dann klickst du auf Upload und wartest kurz. Im Zweifel musst du die LED mal
-ziehen. Blinkt sie? Super! Spiel mal ein bißchen damit, um damit warm zu werden. Lass das Teil schneller blinken,
-tausche mal den Port. Wenn du da soweit fit bist, geht es auf zum Stripe.
+das Wokwi rein. Da musst du an den ATTiny bei der Simulation noch eine LED und zwei Kabel ergänzen. Löten durch Klicken
+quasi. Kriegst du ihn da zu laufen? Super, dann pack ihn in die AVR-IDE rein. Klick erst den Haken an, um den Code zu
+überprüfen. Läuft alles durch? Dann klickst du auf Upload und wartest kurz. Im Zweifel musst du die LED mal ziehen.
+Blinkt sie? Super! Spiel mal ein bißchen damit, um damit warm zu werden. Lass das Teil schneller blinken, tausche mal
+den Port. Wenn du da soweit fit bist, geht es auf zum Stripe.
 
 Hier wäre ein einfaches Beispiel dafür:
 
@@ -990,6 +991,55 @@ void loop() {
 }
 
 ```
+
+Auch hier - fang bitte an, mit dem Code zu spielen. Nimm dir dafür das Wokwi und statt des Stripes nimmst du dir im
+Simulator einen NEOPIXEL Ring. Wenn dir hier irgendwo nicht klar ist, was der Code macht, zögere nicht, und frage bitte.
+
+Die vorhandene Basis erweitern wir jetzt:
+
+```c
+#include "FastLED.h"
+#include <avr/power.h>
+
+#define  NUM_PIXEL 16
+#define  DATAPIN 0
+
+CRGB leds[NUM_PIXEL];
+
+void setup() {
+  clock_prescale_set(clock_div_1);
+
+  FastLED.addLeds<NEOPIXEL, DATAPIN>(leds, NUM_PIXEL);
+}
+
+void loop() {
+  static uint8_t offset = 0;
+  static uint8_t increment = 1;
+  FastLED.clear();
+  offset = offset + increment;
+  leds[offset % NUM_PIXEL] = CRGB::Green; ;
+  FastLED.show();
+
+  if(offset % NUM_PIXEL == 0) {
+    increment *= -1;
+  }
+
+  delay(20);
+
+}
+```
+
+Auch hier - packe den Code ins Wokwi, baue dir den NEOPIXEL-Ring an und versuche den Code zu verstehen. Die erste Zeile
+im loop ist erklärungsbedürftig: In C müssen anders als in Python Variablen immer mit ihrem Typ definiert werden, bevor
+sie benutzt werden können. offset wird als Integer definiert und startet mit 0. _static_ sorgt dafür, dass der Wert von
+offset beibehalten wird, wenn die Funktion verlassen wird und neu dorthin reingesprungen wird.
+
+Wenn du da eingestiegen bist, versuche den Code dahin gehend abzuändern, dass die LEDs, immer wenn sie oben anschlagen,
+die Farbe wechseln. Hier wäre eine [Musterlösung](https://wokwi.com/projects/332108069669438034).
+
+Geschafft - na, dann ist eine Regenbogen das nächste, was ansteht! Natürlich gilt wie immer beim Coden - selber
+probieren und erst wenn es läuft, auf die [Musterlösung](https://wokwi.com/projects/332108540314387028) schauen. Wenn du
+hängst, frag lieber, ob wir dir einen Stupser geben können, bevor du auf die Lösung schmulst. :)
 
 > War es das schon mit dem Gelbgurt? Mitnichten! Aber wir erarbeiten gerade das Programm. Es lohnt sich immer wieder
 > vorbeizukommen, da wir die Seite Stück für Stück ergänzen.
