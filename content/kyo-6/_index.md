@@ -855,7 +855,7 @@ lange gut. Zum Rumspielen nimmst du dir besser ein Breadboard und steckst alles 
 Als nächstes nimmst du dir sechs Headerkabel mit männlichen Steckern an beiden Enden, das sind diese kurzen Kabel zum
 Bauen von Schaltungen auf dem Breadboard. Die steckst du erstmal in den Programmer.
 
-{{ figure(source="/images/kyo-6/attiny/2-programmer_th .jpg", float="end", alt="Programmer") }}
+{{ figure(source="/images/kyo-6/attiny/2-programmer_th.jpg", float="end", alt="Programmer") }}
 
 Dann nimmst du dir diese Zeichnung
 
