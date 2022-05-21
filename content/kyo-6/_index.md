@@ -857,7 +857,7 @@ Bauen von Schaltungen auf dem Breadboard. Die steckst du erstmal in den Programm
 
 Dann nimmst du dir diese Zeichnung
 
-{{ figure(source="/images/kyo-6/attiny/3-zeichnung.png", float="end", alt="ATTiny auf einem Breadboard") }}
+{{ figure(source="/images/kyo-6/attiny/3-zeichnung.jpg", float="end", alt="Belegungsplan") }}
 
 und verbindest die Headerkabel passend mit dem Breadboard.
 
@@ -895,7 +895,7 @@ Dann verbindest du das ganze mit dem Konnektor.
 
 Die Enden isolierst du ab. Aber bitte nicht mit so einem Messer. Dafür gibt es Abisolierzangen.
 
-{{ figure(source="/images/kyo-6/attiny/12-konnektor.jpg", float="end", alt="Konnektor") }}
+{{ figure(source="/images/kyo-6/attiny/12-abisolieren.jpg", float="end", alt="Konnektor") }}
 
 Und bei der Gelegenheit geht es gleich nochmal zum Lötkolben...
 
