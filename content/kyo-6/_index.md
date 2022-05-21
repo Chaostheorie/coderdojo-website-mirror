@@ -914,5 +914,82 @@ Jetzt kommt der Programmer in deinen USB-Port und dann kann es mit dem Coden los
 
 {{ figure(source="/images/kyo-6/attiny/17-programmer.jpg", float="end", alt="Programmer") }}
 
+In einem Tab solltest du dir die [ATTiny-Referenz](https://cdn.sparkfun.com/assets/0/4/1/4/a/Tiny_QuickRef_v2_2_1.png)
+aufrufen.
+
+{{ figure(source="https://cdn.sparkfun.com/assets/0/4/1/4/a/Tiny_QuickRef_v2_2_1.png", float="end", alt="Referenz") }}
+
+Dann die Hände entspannt auf die Tastatur legen und los geht's...
+
+{{ figure(source="/images/kyo-6/attiny/18-haende.jpg", float="end", alt="Hände") }}
+
+Wir fangen erstmal mit einem ganz einfachen Stück Code an.
+
+```c
+
+#include <FastLED.h>
+
+#define LED 1
+
+void setup() {
+  pinMode(LED, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED,HIGH);
+  delay(1000);
+  digitalWrite(LED,LOW);
+  delay(1000);
+}
+```
+
+Wir kommen gleich zum ersten großen Unterschied zwischen C und Python: Bei Python läuft im Hintergrund ein Stück
+Software, was aus dem Script maschinenlesbaren Code produziert. Der Vorteil ist, dass du so etwas wie die Python-Shell
+nutzen kannst. Die Alternative sind sogenannte compilierte Sprachen. Da muss vor einer Anwendung der Code erst
+compiliert werden. Das Ergebnis ist eine direkt ausführbare Datei. Der Vorteil von so einer Script-Sprache wie Python
+(oder Ruby, Pearl und einigen anderen) ist, dass etwas wie eine Python-Shell möglich ist. Der Code ist direkt
+ausführbar, was das Entwickeln vereinfacht und beschleunigt. Der Nachteil ist, dass der Code erst zur Laufzeit für die
+Maschine lesbar gemacht wird und dadurch langsamer ist. Und ein Python-Interpreter muss immer im Hintergrund laufen. Für
+schmale Maschinen wie einem ATTiny ist das also nichts. C gehört zu den compilierten Sprachen. Der Code muss also immer
+erst compiliert werden und kann dann auf den Microcontroller gespielt werden. void zeigt an, dass eine Funktion nichts
+zurückliefert. Wir brauchen zwei Funktionen. Wie die Namen schon verraten, sorgt die erste für das Setup und die zweite
+bindet eine nette Schleife um den Code. Während bei Python Codeblöcke durch passende Einrückungen zusammen gehalten
+werden, wird das bei C - wie bei vielen anderen Sprachen - durch geschwungene Klammern definiert. Im Englischen heißen
+die übrigends curly brackets. Einrückungen sind zur besseren lesbarkeit zwar trotzdem üblich, aber sie sind syntaktisch
+nicht wichtig. Deswegen müssen Codezeilen mit einem Semikolon abgeschlossen werden. Jede Zeile bietet eine Chance, genau
+das zu vergessen. Wenn dein Code also mal nicht läuft, wäre das mit das erste, auf das ich an deiner Steller mal schauen
+würde.
+
+Was passiert jetzt bei dem obigen Code? Die Zeilen, welche mit einer # beginnen, werden vom Compiler ausgewertet,
+_bevor_ der Code übersetzt wird. _include_ entspricht einem Import aus Python. Mit _define_ wird der erste Ausdruck im
+Code gesucht und durch den zweiten ersetzt. Das hilft, Code lesbarer zu machen. Nimm dir den Code und hau den erstmal in
+das Wokwi rein. Kriegst du ihn da zu laufen? Super, dann pack ihn in die AVR-IDE rein. Klick erst den Haken an, um den
+Code zu überprüfen. Läuft alles durch? Dann klickst du auf Upload und wartest kurz. Im Zweifel musst du die LED mal
+ziehen. Blinkt sie? Super! Spiel mal ein bißchen damit, um damit warm zu werden. Lass das Teil schneller blinken,
+tausche mal den Port. Wenn du da soweit fit bist, geht es auf zum Stripe.
+
+Hier wäre ein einfaches Beispiel dafür:
+
+```c
+
+#include "FastLED.h"
+
+#define  NUM_PIXEL 16
+#define  DATAPIN 0
+
+CRGB leds[NUM_PIXEL];
+
+void setup() {
+  FastLED.addLeds<NEOPIXEL, DATAPIN>(leds, NUM_PIXEL);
+}
+
+void loop() {
+  static uint8_t hue = 0;
+  FastLED.showColor(CHSV(hue++, 255, 255));
+  delay(10);
+}
+
+```
+
 > War es das schon mit dem Gelbgurt? Mitnichten! Aber wir erarbeiten gerade das Programm. Es lohnt sich immer wieder
 > vorbeizukommen, da wir die Seite Stück für Stück ergänzen.
