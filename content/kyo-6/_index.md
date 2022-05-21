@@ -848,12 +848,12 @@ bringt. Das kannst du dir später auch gut zusammenlöten. Aber dann musst du f�
 Sockel ziehen müsstest und wieder reinstecken, ist das erstmal unpraktisch. Auch wenn man vorsichtig ist, geht das nicht
 lange gut. Zum Rumspielen nimmst du dir besser ein Breadboard und steckst alles zusammen.
 
-{{ figure(source="/images/kyo-6/attiny/1-attiny.jpg", float="end", alt="ATTiny auf einem Breadboard") }}
+[ {{ figure(source="/images/kyo-6/attiny/1-attiny_th.jpg", float="end", alt="ATTiny auf einem Breadboard") }} ](https://coderdojo.red/images/kyo-6/attiny/1-attiny.jpg)
 
 Als nächstes nimmst du dir sechs Headerkabel mit männlichen Steckern an beiden Enden, das sind diese kurzen Kabel zum
 Bauen von Schaltungen auf dem Breadboard. Die steckst du erstmal in den Programmer.
 
-{{ figure(source="/images/kyo-6/attiny/2-programmer.jpg", float="end", alt="Programmer") }}
+{{ figure(source="/images/kyo-6/attiny/2-programmer_th .jpg", float="end", alt="Programmer") }}
 
 Dann nimmst du dir diese Zeichnung
 
