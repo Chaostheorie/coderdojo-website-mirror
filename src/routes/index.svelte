@@ -22,7 +22,7 @@
 			Matrix verabreden oder austauschen. Schau einfach unter News nach, was aktuell ansteht.
 		</p>
 		<div class="flex flex-row justify-center">
-			<Button href="/posts/dojo">
+			<Button href="/posts/kyo-7/">
 				Zum Dojo <Arrow size={16} />
 			</Button>
 		</div>
