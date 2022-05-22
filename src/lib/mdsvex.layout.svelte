@@ -36,7 +36,7 @@
 <div class="flex gap-3 w-full flex-row items-start">
 	{#if prose}
 		<div
-			class="hidden md:block sticky justify-self-start max-w-64 w-64 top-2 px-2 py-1 h-fit mx-auto border-2 shadow rounded border-solid border-emerald-500"
+			class="hidden md:block sticky justify-self-start max-w-64 w-64 top-2 px-2 py-1 h-fit mx-auto border-2 shadow rounded border-solid border-theme-neutral"
 		>
 			{#if toc}
 				<div class="px-6 py-4">

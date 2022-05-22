@@ -14,19 +14,21 @@
 		<div class="footer-logo">
 			<a href="/">
 				<Logo w={10} h={10} />
-				<span> Coderdōjō R & B</span>
+				<span> CoderDōjō <span>R & B</span></span>
 			</a>
-			<p>Insert descrition</p>
+			<p>Evtl. eine Beschreibung</p>
 		</div>
 		<div class="footer-section-container">
 			<div class="footer-section ">
-				<span> Coderdojo </span>
+				<span> CoderDōjō </span>
 				<ul>
 					<li>
 						<a href="/posts/imprint/"><Article size={16} /> Impressum</a>
 					</li>
 					<li>
-						<a href="https://cobalt.rocks/content/privacy/"><LockKey size={16} /> Datenschutzrichtline</a>
+						<a href="https://cobalt.rocks/content/privacy/"
+							><LockKey size={16} /> Datenschutzrichtline</a
+						>
 					</li>
 					<li>
 						<a href="/posts/copyright/"><Copyright size={16} /> Urheberrecht</a>

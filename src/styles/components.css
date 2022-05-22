@@ -43,6 +43,9 @@
 	}
 
 	/* Navbar */
+	header {
+	}
+
 	.navbar {
 		@apply container mx-auto flex flex-nowrap p-5 flex-row items-center justify-between;
 	}
@@ -68,7 +71,7 @@
 	}
 
 	.nav-toggle {
-		@apply bg-theme-neutral nav-action md:hidden;
+		@apply bg-theme-neutral nav-action md:hidden fixed top-[1.25rem];
 	}
 
 	.nav-search {
@@ -76,15 +79,19 @@
 	}
 
 	.sidebar-backdrop {
-		@apply z-40 w-full h-full transition-transform duration-200 absolute -translate-x-full bg-slate-100 bg-opacity-60;
+		@apply z-40 w-full h-screen fixed top-0 transition-opacity duration-200 opacity-0 hidden bg-slate-100 bg-opacity-60;
+
+		&-open {
+			@apply block opacity-100;
+		}
 	}
 
 	.sidebar {
-		@apply z-50 w-60 h-full p-3 pt-5 transition-transform duration-300 absolute -translate-x-full bg-slate-200;
-	}
+		@apply z-50 w-60 h-screen p-3 pt-5 fixed top-0 transition-transform duration-300 -translate-x-full bg-slate-200;
 
-	.sidebar-open {
-		@apply translate-x-[0%];
+		&-open {
+			@apply translate-x-[0%];
+		}
 	}
 
 	.sidebar-section {
@@ -131,8 +138,16 @@
 		& a {
 			@apply flex font-medium items-center md:justify-start justify-center text-base;
 
+			& svg {
+				@apply w-12 h-12;
+			}
+
 			& span {
 				@apply ml-3 text-xl;
+
+				& span {
+					@apply text-transparent bg-gradient bg-clip-text ml-0 hover:text-inherit hover:bg-transparent;
+				}
 			}
 		}
 
@@ -175,12 +190,33 @@
 	}
 
 	/* gradient background */
-	.gradient-bg {
-		@apply bg-gradient-to-bl from-[#bf616a] to-[#5e81ac];
+	.bg-gradient {
+		@apply bg-gradient-to-l from-theme to-opposite-theme;
+	}
+
+	.bg-gradient-reverse {
+		@apply bg-gradient-to-r from-theme to-opposite-theme;
 	}
 
 	/* Main layout */
 	main {
 		@apply container flex min-h-screen justify-start items-center flex-col w-full mx-auto;
+	}
+
+	/* Index */
+	.quote-card {
+		@apply hidden text-slate-100 md:flex flex-col leading-relaxed border-solid border-2 rounded p-4 justify-around items-center md:w-1/2 w-full shadow bg-gradient;
+
+		#bar {
+			@apply inline-block h-1 w-10 rounded bg-emerald-500 mx-2;
+		}
+
+		& h2 {
+			@apply font-medium tracking-wider text-sm;
+		}
+
+		& p {
+			@apply text-lg;
+		}
 	}
 }

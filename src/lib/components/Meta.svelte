@@ -6,15 +6,15 @@
 <svelte:head>
 	{#if title !== ''}
 		<title>
-			Coderdojo R & B - {title}
+			CoderDōjō R & B - {title}
 		</title>
 	{:else}
-		<title>Coderdojo R & B</title>
+		<title>CoderDōjō R & B</title>
 	{/if}
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<meta property="og:site_name" content="Coderdojo" />
+	<meta property="og:site_name" content="CoderDōjō" />
 	<meta property="og:type" content="text/html" />
 
 	{#if description !== ''}
@@ -24,8 +24,8 @@
 	<meta name="lang" content="de" />
 	<meta property="og:locale" content="de" />
 
-	<meta name="apple-mobile-web-app-title" content="Coderdojo" />
-	<meta name="application-name" content="Coderdojo" />
+	<meta name="apple-mobile-web-app-title" content="CoderDōjō" />
+	<meta name="application-name" content="CoderDōjō" />
 	<meta name="msapplication-TileColor" content="#314958" />
 	<meta name="msapplication-TileImage" content="/images/logo/mstile-144x144.png" />
 	<meta name="msapplication-config" content="/images/logo/browserconfig.xml" />
@@ -44,8 +44,8 @@
 	<link rel="manifest" href="/images/logo/site.webmanifest" />
 	<link rel="mask-icon" href="/images/logo/safari-pinned-tab.svg" color="#5bbad5" />
 	<link rel="shortcut icon" href="/images/logo/favicon.ico" />
-	<meta name="apple-mobile-web-app-title" content="Coderdojo Red and Blue" />
-	<meta name="application-name" content="Coderdojo Red and Blue" />
+	<meta name="apple-mobile-web-app-title" content="CoderDōjō Red and Blue" />
+	<meta name="application-name" content="CoderDōjō Red and Blue" />
 	<meta name="msapplication-TileColor" content="#d8dee9" />
 	<meta name="msapplication-TileImage" content="/images/logo/mstile-144x144.png" />
 	<meta name="msapplication-config" content="/images/logo/browserconfig.xml" />

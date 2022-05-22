@@ -21,6 +21,13 @@
 		}}
 	/>
 
+	<div
+		class="sidebar-backdrop"
+		class:sidebar-backdrop-open={sidebar_open}
+		on:click={() => {
+			sidebar_open = false;
+		}}
+	/>
 	<div class="sidebar" class:sidebar-open={sidebar_open}>
 		<Button
 			size="small-icon"
@@ -56,6 +63,7 @@
 		>
 			<List size={18} />
 		</button>
+		<span class="nav-action p-5" />
 
 		<a class="nav-title" href="/">
 			<Logo /> <span>Coderdōjō R & B</span>

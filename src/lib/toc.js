@@ -9,6 +9,7 @@ const TocFile = './src/.toc-cache.json';
 /** @type {import('unified').Plugin<[], import('mdast').Root>} */
 function tocPlugin() {
 	return (tree) => {
+		console.log(tree.children[2]);
 		if (tree.children[0].type === 'toml') {
 			// extract title from toml (title = '<this part>')
 			let title = tree.children[0].value.match(/title = ['"](?<title>[^\n]+)['"]/);
