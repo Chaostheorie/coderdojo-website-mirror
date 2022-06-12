@@ -734,6 +734,10 @@ Standardeinstieg werden. Ansonsten kannst du super für so kleine Tools benutzen
 den Grundumsatz hervor. Baue das Programm so um, dass der Benutzer immer wieder die Möglichkeit bekommt, die Größen neu
 ausrechnen zu lassen, bis er `quit` schreibt.
 
+### multiplizieren
+
+Um die Unterschiede zwischen beiden Schleifentypen mal in einem kleinen Codestück umzusetzen, baue bitte einen Taschenrechner. Der oder die Benutzende soll zwei Zahlen eingeben. Diese sollen ohne '\*' miteinander multipliziert werden. Ist der erste Faktor größer als der zweite, soll das mit einer for-Schleife passieren, sonder mit einer while-Schleife. Alles klar? Stell Dein Ergebnis bei einem CoderDojo-Abend einmal vor.
+
 ## Debugger
 
 > "Außerdem müssen wir offen sagen: [...] Programmieren lernen tut weh, weil jeder daran scheitert, scheitert,
