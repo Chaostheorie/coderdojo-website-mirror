@@ -1,7 +1,6 @@
 +++
 title = "7. Kyo"
 color = "#fff"
-katex = true
 created = 2021-12-07
 +++
 
@@ -11,8 +10,10 @@ created = 2021-12-07
 
 # 7. Kyo – Weißgurt
 
-> Hinweis: Der Text ist „frisch“. Wenn du Fehler entdeckst, Teile unverständlich findest oder Ideen für bessere und mehr
-> Beispiele und Übungen hast, lass es uns bitte wissen, damit wir ihn korrigieren und verbessern können.
+:::info Hinweis
+Der Text ist „frisch“. Wenn du Fehler entdeckst, Teile unverständlich findest oder Ideen für bessere und mehr
+Beispiele und Übungen hast, lass es uns bitte wissen, damit wir ihn korrigieren und verbessern können.
+:::
 
 > Am liebsten erinnere ich mich an die Zukunft.
 >
@@ -25,12 +26,14 @@ brauchst, um hier gleich mit PyCharm und Python durchstarten zu können.
 
 ## Hello World
 
-> Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen beziehen sich nur auf PyCharm, um es
-> übersichtlicher zu halten. Im Weißgurt sollte es auch ganz gut ohne IDE (wie PyCharm) gehen. Du kannst im Browser
-> programmieren. Klick einfach mal auf den Schalter Play, wenn du ein Stück Code siehst. Da kannst du auch eigenen Code
-> reinschreiben und ausführen. Also wenn du das Gefühl hast, dass PyCharm an der Stelle mehr schadet als nützt, nutzt
-> erstmal die Möglichkeit des Playground, also das was du siehst, wenn du Play klickst. Spätestens ab dem Gelbgurt
-> solltest du mit PyCharm oder einer vergleichbaren IDE arbeiten.
+:::tip Notiz
+Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen beziehen sich nur auf PyCharm, um es
+übersichtlicher zu halten. Im Weißgurt sollte es auch ganz gut ohne IDE (wie PyCharm) gehen. Du kannst im Browser
+programmieren. Klick einfach mal auf den Schalter Play, wenn du ein Stück Code siehst. Da kannst du auch eigenen Code
+reinschreiben und ausführen. Also wenn du das Gefühl hast, dass PyCharm an der Stelle mehr schadet als nützt, nutzt
+erstmal die Möglichkeit des Playground, also das was du siehst, wenn du Play klickst. Spätestens ab dem Gelbgurt
+solltest du mit PyCharm oder einer vergleichbaren IDE arbeiten.
+:::
 
 Wenn du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 

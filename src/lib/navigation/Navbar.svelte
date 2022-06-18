@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+
 	import Logo from '$lib/components/Logo.svelte';
 
 	import List from 'phosphor-svelte/lib/List';
@@ -10,6 +12,13 @@
 	import Button from '$lib/components/Button.svelte';
 
 	let sidebar_open = false;
+
+	const sidebarLinks: [string, unknown, string][] = [
+		['/posts/dojo', Code, 'Dōjō'],
+		['/posts/about', Code, 'Mentoren'],
+		['/news', Newspaper, 'News'],
+		['/posts/kyus', ListNumbers, 'Kyus']
+	];
 </script>
 
 <header>
@@ -41,15 +50,14 @@
 
 		<div class="sidebar-section">
 			<ul>
-				<li>
-					<a href="/posts/dojo"><Code size={16} /> Dōjō</a>
-				</li>
-				<li>
-					<a href="/news/"><Newspaper size={16} /> News</a>
-				</li>
-				<li>
-					<a href="/posts/kyo-7"><ListNumbers size={16} /> Kyus</a>
-				</li>
+				{#each sidebarLinks as [href, Icon, content]}
+					<li>
+						<a {href} class:active={$page.url.pathname === href}>
+							<Icon size={16} />
+							{content}
+						</a>
+					</li>
+				{/each}
 			</ul>
 		</div>
 	</div>
@@ -70,9 +78,11 @@
 		</a>
 
 		<nav class="nav-btn-group">
-			<a href="/posts/dojo">Dōjō</a>
-			<a href="/news/">News</a>
-			<a href="/posts/kyus">Kyus</a>
+			{#each sidebarLinks as [href, Icon, content]}
+				<a {href} class:active={$page.url.pathname === href}>
+					{content}
+				</a>
+			{/each}
 		</nav>
 
 		<button class="nav-search">

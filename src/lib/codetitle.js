@@ -1,8 +1,57 @@
-// Copy and Play icon from phosphor icon set
-// distributed under MIT license (https://github.com/phosphor-icons/phosphor-home/blob/master/LICENSE) with a licensing notice in the final webpage
-const copy_phosphor_icon =
-	'<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="168 168 216 168 216 40 88 40 88 88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><rect x="40" y="88" width="128" height="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect></svg>';
-const play_phosphor_icon =
-	'<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M228.1,121.2,84.2,33.2A8,8,0,0,0,72,40V216a8,8,0,0,0,12.2,6.8l143.9-88A7.9,7.9,0,0,0,228.1,121.2Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>';
+// Support for code titles and (TBD) code linking
 
-export { copy_phosphor_icon, play_phosphor_icon };
+// for syntax highlighting
+import Prism from 'prismjs';
+import loadLanguages from 'prismjs/components/index.js';
+
+// svg icons
+import { copy_phosphor_icon, play_phosphor_icon } from './icons.js';
+
+loadLanguages(['python', 'json', 'yaml', 'html', 'javascript', 'c', 'rust', 'bash']);
+
+/**
+ * Hightlight code blocks with Prism.js and optional header support
+ * Source code blocks may have an associated filename as part of the language name (syntax: lang[:filename])
+ * @param {string} code
+ * @param {string} lang
+ * @return {string}
+ */
+function highlight(code, lang) {
+	// check if lang is defined. if lang defined, check if filename is specified
+	const code_lang =
+		lang !== null
+			? /[a-z]+:.+/.test(lang)
+				? lang.split(':').slice(0, 2)
+				: [lang, `${lang} code`]
+			: ['', 'plain text'];
+	console.log(code_lang);
+
+	const prefix = `<div class="codetitle">
+		<span>${code_lang[1]}</span>
+		<span class='codetitle-btn-group'>
+		  <button class="codetitle-btn" type="button" onclick="window.copy_to_clipboard('code')">
+		  ${copy_phosphor_icon}
+		  </button>
+		  ${
+				code_lang[0] === 'python'
+					? `<button class="codetitle-btn" type="button" onclick="window.run_playground('code')">${play_phosphor_icon}</button>`
+					: ''
+			}
+		</span>
+		</div>`;
+
+	let result;
+	if (code_lang[0] !== '') {
+		result = `<div class="codewrapper">${prefix}<pre class="lang-${code_lang[0]}">${Prism.highlight(
+			code,
+			Prism.languages[code_lang[0]],
+			code_lang[0]
+		)}</pre></div>`;
+	} else {
+		result = `<div class="codewrapper">${prefix}<pre><code>${code}</code></pre></div>`;
+	}
+
+	return result.replace(/{/g, '&#123;').replace(/}/g, '&#125;');
+}
+
+export { highlight };

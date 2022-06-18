@@ -5,23 +5,13 @@
 import { findAfter } from 'unist-util-find-after';
 import { visitParents } from 'unist-util-visit-parents';
 
-const heading_regex = /h([1-4])/;
+const heading_regex = /h([1-3])/;
 
 function sectionPlugin() {
 	return transform;
 }
 
 function transform(tree) {
-	let i = 0;
-	console.log(
-		'section',
-		tree.children.forEach((element) => {
-			if (element.type === 'element' && element.tagName === 'p' && i < 5) {
-				console.log(element);
-				i++;
-			}
-		})
-	);
 	visitParents(
 		tree,
 		(node) => node.type === 'element' && heading_regex.test(node.tagName),

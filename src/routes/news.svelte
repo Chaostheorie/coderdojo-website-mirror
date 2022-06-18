@@ -6,3 +6,5 @@
 <Meta title={'News'} />
 
 <WIP />
+
+<!-- TODO: Add helper to fetch articles from folder and display as card grid -->

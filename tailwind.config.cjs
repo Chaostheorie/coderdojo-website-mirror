@@ -1,5 +1,4 @@
 const typography = require('@tailwindcss/typography');
-const forms = require('@tailwindcss/forms');
 
 const palettes = {
 	blue: {
@@ -21,7 +20,7 @@ const palettes = {
 };
 
 const config = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{html,js,svelte,ts,md}'],
 
 	theme: {
 		extend: {
@@ -36,7 +35,7 @@ const config = {
 		}
 	},
 
-	plugins: [forms, typography]
+	plugins: [typography]
 };
 
 module.exports = config;

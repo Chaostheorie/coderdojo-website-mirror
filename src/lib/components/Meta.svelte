@@ -8,6 +8,7 @@
 		<title>
 			CoderDōjō R & B - {title}
 		</title>
+		<meta property="og:title" content={title} />
 	{:else}
 		<title>CoderDōjō R & B</title>
 	{/if}

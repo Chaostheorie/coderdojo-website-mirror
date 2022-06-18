@@ -8,13 +8,11 @@
 	class:max-w-full={!float}
 	class:d-flex={!float}
 	class:justify-content-center={!float}
-	class:float-left={float === 'left'}
-	class:float-right={float === 'right'}
+	class:md:float-left={float === 'left'}
+	class:md:float-right={float === 'right'}
+	class="hidden md:inline-flex items-center justify-center rounded-full bg-slate-300 bg-opacity-50 w-40 h-40"
 >
-	<figure>
-		<img {src} {alt} />
-		<figcaption>{alt}</figcaption>
-	</figure>
+	<img {src} {alt} class="rounded-full w-36 h-36" />
 </div>
 
 <style lang="postcss">

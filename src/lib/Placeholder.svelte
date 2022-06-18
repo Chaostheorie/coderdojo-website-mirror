@@ -3,3 +3,14 @@
 </div>
 
 <div class="w-8 h-8 active" />
+
+<div class="admonition admonition-tip alert alert--success">
+	<div class="admonition-heading">
+		<h5>
+			<span class="admonition-icon" />
+		</h5>
+	</div>
+	<div class="admonition-content">
+		<p />
+	</div>
+</div>

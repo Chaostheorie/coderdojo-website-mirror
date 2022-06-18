@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Quotes from 'phosphor-svelte/lib/Quotes';
+	import Info from 'phosphor-svelte/lib/Info';
 	import Arrow from 'phosphor-svelte/lib/ArrowFatLineRight';
 	import Button from '$lib/components/Button.svelte';
 	import Meta from '$lib/components/Meta.svelte';
@@ -21,9 +22,12 @@
 			gibt es bei uns zwei Gruppen, die sich beide donnerstags ab 20:30 Uhr hier treffen bzw. per
 			Matrix verabreden oder austauschen. Schau einfach unter News nach, was aktuell ansteht.
 		</p>
-		<div class="flex flex-row justify-center">
+		<div class="flex flex-row justify-center btn-group">
 			<Button href="/posts/kyo-7/">
-				Zum Dojo <Arrow size={16} />
+				Mehr übers Dojo <Info size={24} />
+			</Button>
+			<Button href="/posts/kyo-7/">
+				Zum 7. Kyu <Arrow size={24} />
 			</Button>
 		</div>
 	</div>

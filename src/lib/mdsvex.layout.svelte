@@ -1,80 +1,133 @@
 <script>
-	import raw_toc from '../.toc-cache.json';
-	import jump from 'jump.js';
-	import scrollSpy from 'simple-scrollspy';
+	import tocCache from '../.toc-cache.json';
 	import Meta from './components/Meta.svelte';
-	import { onMount } from 'svelte';
+	import Wip from './navigation/WIP.svelte';
+	import TocDropdown from './components/TocDropdown.svelte';
+	import TocList from './components/TocList.svelte';
 
+	// data props
 	export let title;
 	export let description;
+	export let draft;
+	export let filename;
 	export let prose = true;
 
-	let menu;
-	let toc = raw_toc[title] !== undefined ? raw_toc[title] : null;
-
-	onMount(() => {
-		if (toc) {
-			scrollSpy(menu, {
-				menuActiveTarget: '[data-type="scrollspy-links"]',
-				hrefAttribute: 'data-target',
-				sectionClass: '[data-type="scrollspy-tracked"]',
-				activeClass: 'active',
-				smoothScroll: {
-					duration: 1000,
-					offset: -100
-				},
-				smoothScrollBehavior: function (element, options) {
-					jump(element, options); // jump(element.querySelector('h1, h2, h3, h4'), options);
-				}
-			});
+	// helper for loading toc from tocCache
+	const loadToc = () => {
+		if (title === undefined || tocCache[title] === undefined) {
+			return null;
 		}
-	});
+
+		// in case only one file is associated with the title -> use TocList
+		const keys = Object.keys(tocCache[title]);
+		if (keys.length === 1) {
+			tocList = true;
+			return tocCache[title][keys[0]].headings;
+		}
+
+		// otherwise use full-blown TocDropdown
+		return (
+			Object.entries(tocCache[title])
+				// sort by first three digits
+				.sort(([firstKey, _], [secondKey, _s]) => {
+					if (firstKey === 'index.md') {
+						return -1;
+					} else if (secondKey === 'index.md') {
+						return 1;
+					}
+
+					const firstNumber = digitRegex.exec(firstKey),
+						secondNumber = digitRegex.exec(secondKey);
+
+					if (firstNumber !== undefined) {
+						if (secondNumber !== undefined) {
+							return Number.parseInt(firstNumber) - Number.parseInt(secondNumber);
+						} else {
+							return 1;
+						}
+					} else {
+						if (secondNumber !== undefined) {
+							return -1;
+						} else {
+							return firstKey - secondKey;
+						}
+					}
+				})
+				// ensure only entries with headings are used - they shouldn't exist ... but ya know
+				.filter(([_, data]) => data.headings.length > 0)
+				// extract first headline and transform into easily renderable format
+				.map(([entryFilename, data]) => {
+					return [entryFilename, data.headings.shift(), data.headings, data.path];
+				})
+		);
+	};
+
+	// regex for fetching up to 3 numbers
+	const digitRegex = new RegExp(/^[0-9]{1,3}/);
+
+	let tocList = false;
+	let toc = loadToc();
 </script>
 
 <Meta {title} {description} />
 
-<div class="flex gap-3 w-full flex-row items-start">
-	{#if prose}
-		<div
-			class="hidden md:block sticky justify-self-start max-w-64 w-64 top-2 px-2 py-1 h-fit mx-auto border-2 shadow rounded border-solid border-theme-neutral"
-		>
+{#if !draft}
+	<div class="flex gap-3 w-full flex-row items-start">
+		{#if prose}
 			{#if toc}
-				<div class="px-6 py-4">
-					<div class="font-bold text-xl tracking-wide">{title || 'Inhaltsverzeichnis'}</div>
-					<ul class="toc-menu" bind:this={menu}>
-						{#each toc as [headline, id]}
-							<li>
-								<a
-									href="#{id.match(/(.*)-section/)[1]}"
-									data-target="#{id}"
-									class=""
-									data-type="scrollspy-links"
-								>
-									{headline}
-								</a>
-							</li>
-						{/each}
-					</ul>
+				<div class="toc-container toc-container-lg">
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl tracking-wide">{title}</div>
+
+						<div class="toc-inner-container">
+							{#if tocList}
+								<TocList headings={toc} />
+							{:else}
+								{#each toc as [entryFilename, firstHeading, headings, targetUrl]}
+									<TocDropdown
+										collapsed={entryFilename !== filename}
+										active={entryFilename === filename}
+										{headings}
+										{firstHeading}
+										{targetUrl}
+									/>
+								{/each}
+							{/if}
+						</div>
+					</div>
 				</div>
 			{/if}
-		</div>
 
-		<div class="md:-ml-64 flex-grow">
-			<div class="md:prose prose-extension xl:prose-xl prose-sm mx-auto max-w-[80%]">
-				{#if toc}
-					<div class="md:hidden flex flex-col">
-						<div class="font-bold text-xl tracking-wide">{title || 'Inhaltsverzeichnis'}</div>
-						<ol class="list-decimal">
-							{#each toc as [headline, id]}
-								<li><a href="#{id}">{headline}</a></li>
-							{/each}
-						</ol>
-					</div>
-				{/if}
-				<slot />
+			<div class="flex-grow">
+				<div class="prose prose-extension mx-auto max-w-[80%]">
+					{#if toc}
+						<div class="toc-container toc-container-sm my-2">
+							<div class="font-bold text-xl tracking-wide">{title} - Inhaltsverzeichnis</div>
+
+							{#if tocList}
+								<TocList headings={toc} />
+							{:else}
+								<div class="toc-inner-container">
+									{#each toc as [entryFilename, firstHeading, headings, targetUrl]}
+										<TocDropdown
+											collapsed={entryFilename !== filename}
+											active={entryFilename === filename}
+											{headings}
+											{firstHeading}
+											{targetUrl}
+										/>
+									{/each}
+								</div>
+							{/if}
+						</div>
+					{/if}
+					<slot />
+				</div>
 			</div>
-		</div>
-	{:else}
-		<slot />
-	{/if}
-</div>
+		{:else}
+			<slot />
+		{/if}
+	</div>
+{:else}
+	<Wip />
+{/if}

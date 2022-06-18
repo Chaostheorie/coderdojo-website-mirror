@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let title_class = 'mt-2 text-lg font-semibold text-gray-800 dark:text-white';
-	export let content_class = 'mt-2 text-sm text-gray-600 dark:text-gray-300';
+	export let title_class = 'prose font-semibold flex justify-center text-xl items-center';
+	export let content_class = 'prose mt-2 text-sm text-gray-600';
 </script>
 
 <div class="card">
@@ -12,7 +12,7 @@
 		</h2>
 
 		<p class={content_class}>
-			<slot name="content">Unknown Title</slot>
+			<slot name="content">Unknown Content</slot>
 		</p>
 	</div>
 
@@ -21,6 +21,6 @@
 
 <style lang="postcss">
 	.card {
-		@apply w-full max-w-sm px-4 py-3 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800;
+		@apply max-w-sm px-4 py-2 bg-slate-50 rounded-md shadow-md;
 	}
 </style>

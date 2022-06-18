@@ -1,5 +1,5 @@
 +++
-title = "Worum geht's im Dōjō?"
+title = "Attributionen"
 date = 2022-04-30
 +++
 

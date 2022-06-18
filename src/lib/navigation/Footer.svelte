@@ -39,13 +39,13 @@
 				<span>Schnellzugriffe</span>
 				<ul>
 					<li>
-						<a href="/rss"><Rss size={16} /> RSS Feed</a>
+						<a disabled href="/rss"><Rss size={16} /> RSS Feed</a>
 					</li>
 					<li>
 						<a href="https://kit.svelte.dev/"><Heart size={16} /> Gebaut mit SvelteKit</a>
 					</li>
 					<li>
-						<a href="https://cobalt.rocks"><Laptop size={16} /> Designt von Cobalt</a>
+						<a href="https://cobalt.rocks"><Laptop size={16} /> Gebaut von Cobalt</a>
 					</li>
 					<li>
 						<a href="https://gitlab.cobalt.rocks/coderdojo/koneko"><Code size={16} /> Quellcode</a>
