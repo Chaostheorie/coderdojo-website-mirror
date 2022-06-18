@@ -3,7 +3,7 @@ image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-koneko-runne
 cache:
   key: '${CI_COMMIT_REF_SLUG}'
   paths:
-    - node_modules
+    - /store
     - public
 
 Lint:
