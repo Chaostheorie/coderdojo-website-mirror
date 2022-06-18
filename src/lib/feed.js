@@ -1,5 +1,4 @@
 import { Feed } from 'feed';
-import { readdirSync, readFileSync } from 'fs';
 
 /**
  * Fetch all frontmatter data from markdown files recursively
@@ -19,7 +18,12 @@ function collectPosts(post) {
  */
 function generateFeed(type) {
 	// initialize feed object
-	const feed = new Feed();
+	const feed = new Feed({
+		title: 'Coderdojo R & B',
+		link: 'https://coderdojo.red',
+		description:
+			'Willkommen beim CoderDōjō für Jugendliche! Wir sitzen zwar in Berlin, aber da bei uns vieles online stattfindet, kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht wohnst. Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken.'
+	});
 
 	// todo: implement bind to recursively collect posts and create feeds
 

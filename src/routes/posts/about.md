@@ -51,7 +51,7 @@ Gründungsmitglied bei [cyber4EDU](https://cyber4edu.org).
 Hast du Lust, bei uns mitzumachen? Neue Konzepte und Ideen auszuprobieren? Nur zu, melde Dich dann bei uns!
 
 <div class="flex justify-center py-2">
-    <Button href="/contact/">
+    <Button href="/posts/contact/">
         <User size={24} /> Kontakt
     </Button>
 </div>

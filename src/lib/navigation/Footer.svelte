@@ -39,7 +39,7 @@
 				<span>Schnellzugriffe</span>
 				<ul>
 					<li>
-						<a disabled href="/rss"><Rss size={16} /> RSS Feed</a>
+						<a disabled href="/rss.xml"><Rss size={16} /> RSS Feed</a>
 					</li>
 					<li>
 						<a href="https://kit.svelte.dev/"><Heart size={16} /> Gebaut mit SvelteKit</a>

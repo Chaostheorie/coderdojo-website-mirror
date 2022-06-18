@@ -14,17 +14,3 @@
 >
 	<img {src} {alt} class="rounded-full w-36 h-36" />
 </div>
-
-<style lang="postcss">
-	figure {
-		@apply bg-transparent inline-block px-2 my-0 !important;
-
-		& > img {
-			@apply my-0 !important;
-		}
-
-		& > figcaption {
-			@apply text-sm text-end;
-		}
-	}
-</style>
