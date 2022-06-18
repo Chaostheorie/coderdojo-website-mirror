@@ -14,10 +14,10 @@
 	let sidebar_open = false;
 
 	const sidebarLinks: [string, unknown, string][] = [
-		['/posts/dojo', Code, 'Dōjō'],
-		['/posts/about', Code, 'Mentoren'],
-		['/news', Newspaper, 'News'],
-		['/posts/kyus', ListNumbers, 'Kyus']
+		['/posts/dojo/', Code, 'Dōjō'],
+		['/posts/about/', Code, 'Mentoren'],
+		['/news/', Newspaper, 'News'],
+		['/posts/kyus/', ListNumbers, 'Kyus']
 	];
 </script>
 
