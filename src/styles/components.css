@@ -21,8 +21,12 @@
 		@apply border-l-theme-dark border-solid border-l-2 bg-slate-50 shadow bg-opacity-50 !important;
 	}
 
-	.prose-extension a {
-		@apply underline decoration-slate-400 hover:decoration-slate-900;
+	.prose-extension {
+		@apply px-2 mx-auto max-w-[100vw] md:max-w-[65ch] !important;
+
+		& a {
+			@apply underline decoration-slate-400 hover:decoration-slate-900;
+		}
 	}
 
 	.prose :where(blockquote p:last-of-type):not(:where([class~='not-prose'] *)) {
