@@ -120,14 +120,14 @@
 
 	/* Sidebar */
 	.toc-container {
-		@apply bg-slate-50 justify-self-start px-2 py-1 h-fit  border-t-2 shadow rounded border-solid border-theme-neutral;
+		@apply bg-slate-50 justify-self-start px-2 py-1 h-fit  border-t-2 shadow rounded border-solid border-theme-neutral md:mx-0 mx-auto;
 
 		&-lg {
-			@apply hidden lg:block w-72 top-2 sticky mx-auto;
+			@apply hidden lg:block w-72 top-2 sticky;
 		}
 
 		&-sm {
-			@apply lg:hidden w-80 mx-0;
+			@apply lg:hidden w-80;
 		}
 	}
 

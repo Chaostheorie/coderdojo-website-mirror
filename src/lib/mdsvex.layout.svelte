@@ -99,7 +99,7 @@
 			{/if}
 
 			<div class="flex-grow">
-				<div class="prose prose-extension mx-auto max-w-[80%]">
+				<div class="prose lg:prose-lg prose-slate prose-extension mx-auto max-w-[100vw]">
 					{#if toc}
 						<div class="toc-container toc-container-sm my-2">
 							<div class="font-bold text-xl tracking-wide">{title} - Inhaltsverzeichnis</div>
