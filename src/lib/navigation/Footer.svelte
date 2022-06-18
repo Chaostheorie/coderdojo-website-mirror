@@ -23,7 +23,7 @@
 				<span> CoderDōjō </span>
 				<ul>
 					<li>
-						<a href="/posts/imprint/"><Article size={16} /> Impressum</a>
+						<a href="/posts/imprint"><Article size={16} /> Impressum</a>
 					</li>
 					<li>
 						<a href="https://cobalt.rocks/content/privacy/"
@@ -31,7 +31,7 @@
 						>
 					</li>
 					<li>
-						<a href="/posts/copyright/"><Copyright size={16} /> Urheberrecht</a>
+						<a href="/posts/copyright"><Copyright size={16} /> Urheberrecht</a>
 					</li>
 				</ul>
 			</div>
