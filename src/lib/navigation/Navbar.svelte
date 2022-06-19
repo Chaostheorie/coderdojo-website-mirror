@@ -21,7 +21,7 @@
     (arg: string) => boolean | null
   ][] = [
     ["/posts/dojo/", Student, "Workshops", null],
-    ["/posts/dojo/", Code, "Dōjō", null],
+    ["/posts/dojo/", Code, "Einführung", null],
     ["/posts/about/", Code, "Mentoren", null],
     ["/news/", Newspaper, "News", null],
     [
@@ -84,12 +84,14 @@
       <List size={18} />
     </button>
 
+    <span class="nav-action p-5" />
+
     <a class="nav-title" href="/">
       <Logo /> <span>Coderdōjō R & B</span>
     </a>
 
     <nav class="nav-btn-group">
-      {#each sidebarLinks as [href, Icon, content, check]}
+      {#each sidebarLinks as [href, Icon, content, check], i}
         <a
           {href}
           class:active={check !== null
@@ -98,6 +100,7 @@
         >
           {content}
         </a>
+        {#if sidebarLinks.length !== i + 1} | {/if}
       {/each}
     </nav>
 
