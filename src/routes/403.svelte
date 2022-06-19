@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Meta from '$lib/components/Meta.svelte';
-	import WIP from '$lib/navigation/WIP.svelte';
+  import Meta from "$lib/components/Meta.svelte";
+  import WIP from "$lib/navigation/WIP.svelte";
 </script>
 
-<Meta title={'403 Forbidden'} />
+<Meta title={"403 Forbidden"} />
 
 <WIP />

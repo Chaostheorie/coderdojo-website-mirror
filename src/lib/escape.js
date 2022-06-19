@@ -1,4 +1,4 @@
-import { visit } from 'unist-util-visit';
+import { visit } from "unist-util-visit";
 
 /**
  * Escape html tags in markdown text nodes
@@ -6,13 +6,13 @@ import { visit } from 'unist-util-visit';
  * @param {Root} fn
  */
 function escapePlugin(fn) {
-	fn = fn || function () {};
+  fn = fn || function () {};
 
-	return (tree) => {
-		visit(tree, 'text', (node) => {
-			node.value = node.value.replace(/>/g, '&gt;').replace(/</g, '&lt;');
-		});
-	};
+  return (tree) => {
+    visit(tree, "text", (node) => {
+      node.value = node.value.replace(/>/g, "&gt;").replace(/</g, "&lt;");
+    });
+  };
 }
 
 export { escapePlugin };

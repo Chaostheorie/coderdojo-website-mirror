@@ -1,5 +1,5 @@
 <script lang="ts">
-	import WIP from '$lib/navigation/WIP.svelte';
+  import WIP from "$lib/navigation/WIP.svelte";
 </script>
 
 <WIP />

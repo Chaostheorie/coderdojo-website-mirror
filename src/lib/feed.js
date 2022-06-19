@@ -1,13 +1,14 @@
-import { Feed } from 'feed';
+import { Feed } from "feed";
 
 /**
  * Fetch all frontmatter data from markdown files recursively
  * (currently uncached since it only needs to be build once)
  * @param {string} path
- * @return {DATA}
+ * @return {[string, string, string][]}
  */
 function collectPosts(post) {
-	// TODO: implement post collection and return type struct
+  // TODO: implement post collection and return type struct
+  return [];
 }
 
 /**
@@ -17,17 +18,15 @@ function collectPosts(post) {
  * @return {string}
  */
 function generateFeed(type) {
-	// initialize feed object
-	const feed = new Feed({
-		title: 'Coderdojo R & B',
-		link: 'https://coderdojo.red',
-		description:
-			'Willkommen beim CoderDōjō für Jugendliche! Wir sitzen zwar in Berlin, aber da bei uns vieles online stattfindet, kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht wohnst. Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken.'
-	});
+  // initialize feed object
+  const feed = new Feed({
+    title: "Coderdojo R & B",
+    link: "https://coderdojo.red",
+    description:
+      "Willkommen beim CoderDōjō für Jugendliche! Wir sitzen zwar in Berlin, aber da bei uns vieles online stattfindet, kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht wohnst. Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken.",
+  });
 
-	// todo: implement bind to recursively collect posts and create feeds
-
-	return type === 'atom' ? feed.atom1() : feed.rss2();
+  return type === "atom" ? feed.atom1() : feed.rss2();
 }
 
 export { generateFeed };

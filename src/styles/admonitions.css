@@ -1,77 +1,77 @@
 /* Admonition classic.css port */
 
 .admonition {
-	/* General admonition with default style applied */
-	@apply px-3 py-2 text-slate-800 bg-slate-400 border-l-8 border-solid border-slate-800 bg-opacity-50 rounded-sm;
+  /* General admonition with default style applied */
+  @apply rounded-sm border-l-8 border-solid border-slate-800 bg-slate-400 bg-opacity-50 px-3 py-2 text-slate-800;
 
-	& p {
-		@apply my-0;
-	}
+  & p {
+    @apply my-0;
+  }
 
-	& h5 {
-		@apply mt-0 mb-1 uppercase flex items-center gap-2;
-	}
+  & h5 {
+    @apply mt-0 mb-1 flex items-center gap-2 uppercase;
+  }
 
-	& .admonition-icon {
-		@apply inline-block align-middle;
+  & .admonition-icon {
+    @apply inline-block align-middle;
 
-		& svg {
-			@apply inline-block w-6 h-6 stroke-slate-800 fill-slate-800;
+    & svg {
+      @apply inline-block h-6 w-6 fill-slate-800 stroke-slate-800;
 
-			stroke-width: 0;
-		}
-	}
+      stroke-width: 0;
+    }
+  }
 
-	&-content > :last-child {
-		@apply p-0;
-	}
+  &-content > :last-child {
+    @apply p-0;
+  }
 
-	/* native variants */
-	&-caution {
-		@apply bg-[#e67e221A] border-l-[#e67e22];
+  /* native variants */
+  &-caution {
+    @apply border-l-[#e67e22] bg-[#e67e221A];
 
-		& h5 {
-			@apply text-[#e67e22];
-		}
+    & h5 {
+      @apply text-[#e67e22];
+    }
 
-		& .admonition-icon svg {
-			@apply stroke-[#e67e22] fill-[#e67e22];
-		}
-	}
+    & .admonition-icon svg {
+      @apply fill-[#e67e22] stroke-[#e67e22];
+    }
+  }
 
-	&-tip {
-		@apply bg-[#2ecc711F] border-l-[#2bb939];
+  &-tip {
+    @apply border-l-[#2bb939] bg-[#2ecc711F];
 
-		& h5 {
-			@apply text-[#2bb939];
-		}
+    & h5 {
+      @apply text-[#2bb939];
+    }
 
-		& .admonition-icon svg {
-			@apply stroke-[#2bb939] fill-[#2bb939];
-		}
-	}
+    & .admonition-icon svg {
+      @apply fill-[#2bb939] stroke-[#2bb939];
+    }
+  }
 
-	&-warning {
-		@apply bg-[#e74c3c1A] border-l-[#e74c3c];
+  &-warning {
+    @apply border-l-[#e74c3c] bg-[#e74c3c1A];
 
-		& h5 {
-			@apply text-[#e74c3c];
-		}
+    & h5 {
+      @apply text-[#e74c3c];
+    }
 
-		& .admonition-icon svg {
-			@apply stroke-[#e74c3c] fill-[#e74c3c];
-		}
-	}
+    & .admonition-icon svg {
+      @apply fill-[#e74c3c] stroke-[#e74c3c];
+    }
+  }
 
-	&-important {
-		@apply bg-[#3498db1A] border-l-[#3498db];
+  &-important {
+    @apply border-l-[#3498db] bg-[#3498db1A];
 
-		& h5 {
-			@apply text-[#3498db];
-		}
+    & h5 {
+      @apply text-[#3498db];
+    }
 
-		& .admonition-icon svg {
-			@apply stroke-[#3498db] fill-[#3498db];
-		}
-	}
+    & .admonition-icon svg {
+      @apply fill-[#3498db] stroke-[#3498db];
+    }
+  }
 }

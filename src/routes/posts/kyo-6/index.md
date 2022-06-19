@@ -1,11 +1,5 @@
 +++
 title = "6. Kyo"
-chapters = [
-    "pygame.md",
-    "kultur-2-netzwerk.md",
-    "git-2-mqtt.md",
-    "loeten.md"
-]
 date = 2021-12-07
 +++
 
@@ -47,7 +41,7 @@ soll. Das Programm soll also in den Versionen stabil und testing genutzt werden.
 Versionsverwaltungssysteme. Ihren größten Vorteil spielen sie aber aus, wenn du mit mehreren an einem Projekt arbeitest.
 Versionsverwaltungssysteme sind alt und es gibt viele verschiedene. Linus Thorvalds, der Erfinder des Linux-Kernels, war
 aber mit allen unzufrieden. Deshalb hat er eine neue Versionsverwaltung geschrieben - Git. Dieses ist inzwischen das am
-meisten genutzte System und wird von Plattformen wie github und gitlab verwendet. Vielleicht hast du von denen schon
+meisten genutzte System und wird von Plattformen wie GitHub und GitLab verwendet. Vielleicht hast du von denen schon
 gehört. Für Git braucht es einen zentralen Server. Solche Plattformen können da sehr hilfreich sein, wenn man selbst
 keinen betreiben möchte. Um Github machen wir einen Bogen, da es von Microsoft gekauft wurde. Gitlab ist okay, aber auch
 ein Unternehmen und vieles von dem, was die haben, brauchen wir nicht. Wir könnten auch einen eigenen Server betreiben,
@@ -56,7 +50,7 @@ verwenden. Das ist ein Verein, der nicht mit den Daten Geld verdient, sondern si
 mit Deinen Eltern darüber, ob es okay ist, dort einen Account anzulegen. Und klick Dir dann bitte bei codeberg.de einen
 Account.
 
-```
+:::tip Info
 Der Name „Git“ bedeutet in der britischen Umgangssprache so viel wie „Blödmann“.
 Linus Torvalds erklärte seine Wahl des ungewöhnlichen Namens mit einem Witz sowie damit,
 dass das Wort praktikabel und in der Softwarewelt noch weitgehend unbenutzt war:
@@ -69,7 +63,7 @@ Zuerst ‚Linux‘, jetzt eben ‚Git‘.“
 
 Linus Torvalds
 Quelle: Wikipedia
-```
+:::
 
 Git ist sehr mächtig. Deshalb wollen wir uns dem ganzen langsam nähern und im Gelbgurt zunächst nur die elementaren
 Befehle lernen. Im Orange-Gurt lernst du, was man wissen muss, um ein Projekt zu managen.

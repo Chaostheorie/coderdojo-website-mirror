@@ -1,7 +1,7 @@
-@import 'prismjs/themes/prism-coy.min.css';
-@import 'katex/dist/katex.min.css';
-@import './styles/admonitions.css';
-@import '@fontsource/fira-mono';
-@import './styles/base.css';
-@import './styles/utilities.css';
-@import './styles/components.css';
+@import "../node_modules/prismjs/themes/prism.min.css";
+@import "katex/dist/katex.min.css";
+@import "./styles/admonitions.css";
+@import "@fontsource/fira-mono";
+@import "./styles/base.css";
+@import "./styles/utilities.css";
+@import "./styles/components.css";
