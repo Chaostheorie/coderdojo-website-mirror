@@ -1,4 +1,4 @@
-image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-koneko-runner:latest
+image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-koneko-builder:latest
 
 cache:
   key: "${CI_COMMIT_REF_SLUG}"
@@ -60,6 +60,7 @@ Lint:
     - chmod 600 ~/.ssh/id_rsa
   script:
     - pnpm build
+    - pnpm minify
   after_script:
     # Restart agent - Not necessary for prod only needed for debugging
     # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"

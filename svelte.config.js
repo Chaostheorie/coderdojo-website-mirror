@@ -17,7 +17,9 @@ const config = {
   ],
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      precompress: true,
+    }),
     trailingSlash: "always",
     prerender: {
       default: true,

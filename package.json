@@ -10,7 +10,12 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+    "minify": "pnpm minify:jpeg & pnpm minify:png & pnpm minify:svg",
+    "minify:jpeg": "find build/ -regex '.*/.*\\.jp[eg]?' -exec sh -c 'cp \"$0\" \"$0.tmp\" && jpegtran -optimize -progressive -copy none \"$0.tmp\" > $0 && rm \"$0.tmp\"' {} \\;",
+    "minify:png": "pngquant --force --skip-if-larger --speed 1 --strip --quality 60-90 build/**/*.png",
+    "minify:svg": "svgo build/**/*.svg",
+    "license-checker": "license-checker --direct --json --production --out licenses.json --excludePrivatePackages --customPath license-format.config.json"
   },
   "devDependencies": {
     "@iarna/toml": "^2.2.5",
@@ -27,6 +32,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "katex": "^0.16.0",
+    "license-checker": "^25.0.1",
     "mdast-util-to-string": "^3.1.0",
     "mdsvex": "^0.10.6",
     "postcss": "^8.4.14",
