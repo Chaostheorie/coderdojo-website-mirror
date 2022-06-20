@@ -1,7 +1,13 @@
 +++
 title = "Urheberrecht"
 showToc = false
+modal = true
 +++
+
+<script>
+    import licenses from "$lib/licenses.json";
+    import AttributionCard from "$lib/components/AttributionCard.svelte";
+</script>
 
 # Urheberrecht
 
@@ -57,8 +63,14 @@ beachten sein, die Ihre Nutzung des Materials entsprechend beschränken.
 Wir benutzen für diese Website mehrere Open-Source Bibliotheken. Der Code der Webseite ist auch Open-Source und auf
 [Cobalt’s GitLab Instanz](https://gitlab.cobalt.rocks/coderdojo) verfügbar. Attributionen für Bilder u.ä. sind direkt auf der dazugehörigen Seite zu finden.
 
-## Logo
+### Logo
 
 Das Logo wurde von Cobalt basierend auf dem "Berlin tower" Piktogramm aus der [Carbon Piktogramm Sammlung](https://carbondesignsystem.com/guidelines/pictograms/library/) von der IBM Corporation unter der Apache 2.0 Lizenz erstellt.
 
-// TODO: Create list of used dependencies and tools
+### OSS Biblotheken
+
+<div class="gap-3 grid grid-cols-1 md:grid-cols-2">
+    {#each Object.values(licenses) as license}
+        <AttributionCard {license} />
+    {/each}
+</div>

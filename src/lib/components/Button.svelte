@@ -2,7 +2,7 @@
   import { createEventDispatcher } from "svelte";
 
   export let href: string = undefined;
-  export let color: "theme" | "secondary" = "theme";
+  export let color: "theme" | "theme-neutral" | "secondary" = "theme";
   export let size: "small" | "small-icon" | "medium" = "medium";
   export let opacity = 1.0;
 
@@ -52,10 +52,14 @@
 
   /* Color variants (respects the currently loaded color palette) */
   .button-theme {
-    @apply bg-theme hover:bg-theme-dark dark:bg-theme-dark dark:hover:bg-theme-neutral;
+    @apply bg-theme hover:bg-theme-dark;
+  }
+
+  .button-theme-neutral {
+    @apply bg-theme-neutral hover:bg-theme-dark;
   }
 
   .button-secondary {
-    @apply bg-secondary hover:bg-secondary-dark dark:bg-secondary-dark dark:hover:bg-secondary;
+    @apply bg-secondary hover:bg-secondary-dark;
   }
 </style>

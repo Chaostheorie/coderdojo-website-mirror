@@ -12,16 +12,6 @@
     "path": "/home/cobalt/P/rust/coderdojo-koneko/node_modules/@fontsource/fira-mono",
     "licenseFile": "/home/cobalt/P/rust/coderdojo-koneko/node_modules/@fontsource/fira-mono/README.md"
   },
-  "coderdojo-koneko@0.0.1": {
-    "licenses": "Custom: https://img.shields.io/website",
-    "copyright": "",
-    "licenseModified": "",
-    "licenseText": "[![Website Status for v2.coderdojo.red](https://img.shields.io/website?down_color=gray&down_message=DOWN&label=Red&logo=nginx&style=flat-square&up_color=red&up_message=UP&url=https%3A%2F%2Fv2.coderdojo.red)](https://v2.coderdojo.red)\n[![Website Status for v2.coderdojo.blue](https://img.shields.io/website?down_color=gray&down_message=DOWN&label=Blue&logo=nginx&style=flat-square&up_color=blue&up_message=UP&url=https%3A%2F%2Fv2.coderdojo.blue)](https://v2.coderdojo.blue)\n[![Pipeline Status](https://img.shields.io/gitlab/pipeline/coderdojo/coderdojo-website/koneko?gitlab_url=https%3A%2F%2Fgitlab.cobalt.rocks&label=Build&logo=gitlab&style=flat-square)](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/pipelines)\n[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&logo=prettier)](https://github.com/prettier/prettier)\n\n# Website for CoderDōjō Red and Blue\n\nCode for [v2.coderdojo.red](https://coderdojo.red) and [v2.coderdojo.blue](https://coderdojo.blue).\n\n## Issues\n\nWe track issues over the [Codeberg](https://codeberg.org/c0balt/coderdojo-website-mirror) and\n[GitHub](https://github.com/Chaostheorie/coderdojo-website-mirror) push mirrors. You are welcome to open an issue in\nthose repositories. We are grateful for any feedback.\n\n## Documentation\n\n> Not yet updated\n\nSee [the Wiki](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/wikis/home) for documentation.\n\n## Contributing\n\nAll contributions are welcome. If you want to contribute or report a bug, fell free to open an issue on our\n[Codeberg Mirror](https://codeberg.org/c0balt/coderdojo-website-mirror). If you want to get direct access to a GitLab\nAccount, please contact [Cobalt](https://cobalt.rocks/content/contact/).\n\n## Licensing\n\nThe content is licensend under [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode.de) while the\ncode is licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).",
-    "name": "coderdojo-koneko",
-    "version": "0.0.1",
-    "path": "/home/cobalt/P/rust/coderdojo-koneko",
-    "licenseFile": "/home/cobalt/P/rust/coderdojo-koneko/README.md"
-  },
   "feed@4.2.2": {
     "licenses": "MIT",
     "repository": "https://github.com/jpmonette/feed",
