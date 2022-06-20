@@ -7,43 +7,42 @@ cache:
     - public
 
 Lint:
-  only:
-    changes:
-      - .gitlab-ci.yml
-      - .prettierrc
-      - "src/*"
-      - "src/*/*"
-      - "src/*/*/*"
-      - mdsvex.config.js
-      - package.json
-      - postcss.config.cjs
-      - svelte.config.js
-      - tailwind.config.cjs
-      - tsconfig.json
+  rules:
+    - changes:
+        - .gitlab-ci.yml
+        - prettier.config.js
+        - "src/*"
+        - "src/*/*"
+        - "src/*/*/*"
+        - mdsvex.config.js
+        - package.json
+        - postcss.config.cjs
+        - svelte.config.js
+        - tailwind.config.cjs
+        - tsconfig.json
   before_script:
     - pnpm i --frozen-lockfile
   script:
     - pnpm lint
 
 .template: &rs-deploy
-  only:
-    changes:
-      - .gitlab-ci.yml
-      - "src/*"
-      - "src/*/*"
-      - "src/*/*/*"
-      - "static/*"
-      - "static/*/*"
-      - "static/*/*/*"
-      - mdsvex.config.js
-      - package.json
-      - pnpm-lock.yaml
-      - postcss.config.cjs
-      - svelte.config.js
-      - tailwind.config.cjs
-      - tsconfig.json
-    refs:
-      - koneko
+  rules:
+    - changes:
+        - .gitlab-ci.yml
+        - "src/*"
+        - "src/*/*"
+        - "src/*/*/*"
+        - "static/*"
+        - "static/*/*"
+        - "static/*/*/*"
+        - mdsvex.config.js
+        - package.json
+        - pnpm-lock.yaml
+        - postcss.config.cjs
+        - svelte.config.js
+        - tailwind.config.cjs
+        - tsconfig.json
+    - if: $CI_COMMIT_BRANCH == 'koneko'
   before_script:
     # Install all yarn dependencies (normally cached but clover#2 currently has (since 2 years) problems with space)
     - pnpm i --frozen-lockfile
