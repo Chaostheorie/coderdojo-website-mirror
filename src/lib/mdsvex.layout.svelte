@@ -11,10 +11,11 @@
   export let draft = false;
   export let filename;
   export let prose = true;
+  export let showToc = true;
 
   // helper for loading toc from tocCache
   const loadToc = () => {
-    if (title === undefined || tocCache[title] === undefined) {
+    if (title === undefined || tocCache[title] === undefined || !showToc) {
       return [null, null];
     }
 

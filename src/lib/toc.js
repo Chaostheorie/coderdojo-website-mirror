@@ -14,7 +14,7 @@ const TocFile = "./src/.toc-cache.json";
 // Regexps for routeMapper
 // extracts both the dir after src/routes/ as well as the filename from the absolute file path
 const srcRegex = new RegExp(
-  /src[\//]routes(?<path>[\//].*[\//])(?<filename>.*\.md)/
+  /src[\//]routes(?<path>[\//].*[\//]?)(?<filename>.*\.md)/
 );
 
 /**
@@ -26,7 +26,7 @@ function routeMapper(path) {
   // WARNING: This is not strictly adhering to sveltekits router (I couldn't find the sluggify algorithm) and may be prone to errors
   // trace path back to src root
 
-  // we are assuming that this will alwas match ... since otherwise the routing would have changed
+  // we are assuming that this will always match ... since otherwise the routing would have changed
   const urlParts = srcRegex.exec(path).groups;
   let url = urlParts.path;
 

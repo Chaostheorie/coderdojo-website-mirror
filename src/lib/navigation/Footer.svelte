@@ -23,12 +23,12 @@
         <span> CoderDōjō </span>
         <ul>
           <li>
-            <a href="/posts/imprint/"><Article size={16} /> Impressum</a>
+            <a href="/imprint/"><Article size={16} /> Impressum</a>
           </li>
           <li>
-            <a href="https://cobalt.rocks/content/privacy/"
-              ><LockKey size={16} /> Datenschutzrichtline</a
-            >
+            <a href="https://cobalt.rocks/content/privacy/">
+              <LockKey size={16} /> Datenschutzrichtline
+            </a>
           </li>
           <li>
             <a href="/posts/copyright/"><Copyright size={16} /> Urheberrecht</a>
@@ -42,19 +42,21 @@
             <a disabled href="/rss.xml"><Rss size={16} /> RSS Feed</a>
           </li>
           <li>
-            <a href="https://kit.svelte.dev/"
-              ><Heart size={16} /> Gebaut mit SvelteKit</a
-            >
+            <a href="https://kit.svelte.dev/">
+              <Heart size={16} /> Gebaut mit SvelteKit
+            </a>
           </li>
           <li>
-            <a href="https://cobalt.rocks"
-              ><Laptop size={16} /> Gebaut von Cobalt</a
-            >
+            <a href="https://cobalt.rocks">
+              <Laptop size={16} /> Gebaut von Cobalt
+            </a>
           </li>
           <li>
-            <a href="https://gitlab.cobalt.rocks/coderdojo/koneko"
-              ><Code size={16} /> Quellcode</a
+            <a
+              href="https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/tree/koneko"
             >
+              <Code size={16} /> Quellcode
+            </a>
           </li>
         </ul>
       </div>
