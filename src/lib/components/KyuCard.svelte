@@ -23,9 +23,7 @@
   <p class="leading-relaxed mb-8">
     {description}
   </p>
-  <div
-    class="flex items-center justify-between flex-wrap pb-4 mb-4 mt-auto w-full"
-  >
+  <div class="flex items-center justify-between flex-wrap pb-4 mb-4 mt-auto w-full">
     <a
       class="flex py-1 px-2 justify-between no-underline text-slate-100 hover:text-slate-100 focus:outline-none transition-all ease-in-out duration-500 rounded bg-theme hover:bg-theme-dark items-center gap-2 hover:gap-3"
       {href}
@@ -33,9 +31,7 @@
       Beginne Kyu
       <ArrowRight size={24} />
     </a>
-    <span
-      class="text-theme md:inline-flex items-center leading-none text-sm hidden"
-    >
+    <span class="text-theme md:inline-flex items-center leading-none text-sm hidden">
       Letzte Aktualisierung: {last_updated}
     </span>
   </div>

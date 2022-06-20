@@ -13,9 +13,7 @@ const TocFile = "./src/.toc-cache.json";
 
 // Regexps for routeMapper
 // extracts both the dir after src/routes/ as well as the filename from the absolute file path
-const srcRegex = new RegExp(
-  /src[\//]routes(?<path>[\//].*[\//]?)(?<filename>.*\.md)/
-);
+const srcRegex = new RegExp(/src[\//]routes(?<path>[\//].*[\//]?)(?<filename>.*\.md)/);
 
 /**
  * converts path to basic route (prone to errors)
@@ -70,11 +68,7 @@ const TitleRegex = new RegExp(/^title *= *["'](?<title>.+)['"] *$/m);
  * @return {[string, string][]}
  */
 function collectSluggedHeadings(content) {
-  return unified()
-    .use(remarkParse)
-    .use(remarkSlug)
-    .use(tocCompiler)
-    .processSync(content).result;
+  return unified().use(remarkParse).use(remarkSlug).use(tocCompiler).processSync(content).result;
 }
 
 /** @type {import('unified').Plugin<[], import('mdast').Root>} */
@@ -123,10 +117,7 @@ function tocPlugin() {
             keys.splice(idx, 1);
             const sync = statSync(path).mtimeMs;
 
-            if (
-              toc[title][name].mtime !== sync ||
-              !toc[title][name].headings === {}
-            ) {
+            if (toc[title][name].mtime !== sync || !toc[title][name].headings === {}) {
               return [path, name, sync];
             } else {
               return null;
@@ -151,18 +142,13 @@ function tocPlugin() {
           const frontmatter = FrontmatterRegex.exec(content);
 
           if (frontmatter !== null) {
-            const frontmatterTitle = TitleRegex.exec(
-              frontmatter.groups.frontmatter
-            );
+            const frontmatterTitle = TitleRegex.exec(frontmatter.groups.frontmatter);
 
-            if (
-              frontmatterTitle !== null &&
-              frontmatterTitle.groups.title === title
-            ) {
+            if (frontmatterTitle !== null && frontmatterTitle.groups.title === title) {
               toc[title][name] = {
                 headings: collectSluggedHeadings(content),
                 mtime,
-                path: routeMapper(path),
+                path: routeMapper(path)
               };
             }
           }

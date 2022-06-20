@@ -7,16 +7,7 @@ import loadLanguages from "prismjs/components/index.js";
 // svg icons
 import { copy_phosphor_icon, play_phosphor_icon } from "./icons.js";
 
-loadLanguages([
-  "python",
-  "json",
-  "yaml",
-  "html",
-  "javascript",
-  "c",
-  "rust",
-  "bash",
-]);
+loadLanguages(["python", "json", "yaml", "html", "javascript", "c", "rust", "bash"]);
 
 function title(str) {
   return str[0].toUpperCase() + str.substr(1);
@@ -54,9 +45,7 @@ function highlight(code, lang) {
 
   let result;
   if (code_lang[0] !== "") {
-    result = `<div class="codewrapper">${prefix}<pre class="lang-${
-      code_lang[0]
-    }">${Prism.highlight(
+    result = `<div class="codewrapper">${prefix}<pre class="lang-${code_lang[0]}">${Prism.highlight(
       code,
       Prism.languages[code_lang[0].toLowerCase()],
       code_lang[0].toLowerCase()

@@ -20,10 +20,7 @@
     }}
   >
     {firstHeading[0]}
-    <span
-      class="transition-transform duration-300 ease-in-out"
-      class:rotate-180={collapsed}
-    >
+    <span class="transition-transform duration-300 ease-in-out" class:rotate-180={collapsed}>
       <CaretDown />
     </span>
   </button>

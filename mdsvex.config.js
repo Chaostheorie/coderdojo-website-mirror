@@ -16,7 +16,7 @@ const config = defineConfig({
   smartypants: {
     dashes: "oldschool",
     backticks: true,
-    ellipses: true,
+    ellipses: true
   },
   frontmatter: {
     marker: "+",
@@ -27,18 +27,11 @@ const config = defineConfig({
       } catch (e) {
         messages.push(e.message);
       }
-    },
+    }
   },
   highlight: { highlighter: highlight, alias: { py: "python" } },
-  remarkPlugins: [
-    escapePlugin,
-    remarkMath,
-    remarkSlug,
-    remarkAdmonitions,
-    tocPlugin,
-    remarkGfm,
-  ],
-  rehypePlugins: [sectionPlugin, rehypeKatexSvelte],
+  remarkPlugins: [escapePlugin, remarkMath, remarkSlug, remarkAdmonitions, tocPlugin, remarkGfm],
+  rehypePlugins: [sectionPlugin, rehypeKatexSvelte]
 });
 
 export default config;

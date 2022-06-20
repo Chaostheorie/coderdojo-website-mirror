@@ -14,12 +14,7 @@
 
   let sidebar_open = false;
 
-  const sidebarLinks: [
-    string,
-    unknown,
-    string,
-    (arg: string) => boolean | null
-  ][] = [
+  const sidebarLinks: [string, unknown, string, (arg: string) => boolean | null][] = [
     ["/posts/dojo/", Student, "Workshops", null],
     ["/posts/dojo/", Code, "Einführung", null],
     ["/posts/about/", Code, "Mentoren", null],
@@ -28,8 +23,8 @@
       "/posts/kyus/",
       ListNumbers,
       "Kyus",
-      (arg: string) => arg.includes("kyo") || arg.includes("kyu"),
-    ],
+      (arg: string) => arg.includes("kyo") || arg.includes("kyu")
+    ]
   ];
 </script>
 
@@ -94,9 +89,7 @@
       {#each sidebarLinks as [href, Icon, content, check], i}
         <a
           {href}
-          class:active={check !== null
-            ? check($page.url.pathname)
-            : $page.url.pathname === href}
+          class:active={check !== null ? check($page.url.pathname) : $page.url.pathname === href}
         >
           {content}
         </a>

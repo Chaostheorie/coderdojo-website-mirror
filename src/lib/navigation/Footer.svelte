@@ -56,9 +56,7 @@
             </a>
           </li>
           <li>
-            <a
-              href="https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/tree/koneko"
-            >
+            <a href="https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/tree/koneko">
               <Code size={16} /> Quellcode
             </a>
           </li>

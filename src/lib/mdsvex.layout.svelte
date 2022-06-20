@@ -33,13 +33,8 @@
         .filter(([_, data]) => data.headings.length > 0)
         // extract first headline and transform into easily renderable format
         .map(([entryFilename, data]) => {
-          return [
-            entryFilename,
-            data.headings.shift(),
-            data.headings,
-            data.path,
-          ];
-        }),
+          return [entryFilename, data.headings.shift(), data.headings, data.path];
+        })
     ];
   };
 
@@ -49,9 +44,7 @@
 <Meta {title} {description} />
 
 {#if !draft}
-  <div
-    class="flex gap-3 w-full flex-col md:flex-row items-center md:items-start"
-  >
+  <div class="flex gap-3 w-full flex-col md:flex-row items-center md:items-start">
     {#if prose}
       {#if toc}
         <div class="toc-container">

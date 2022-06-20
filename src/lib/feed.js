@@ -23,7 +23,7 @@ function generateFeed(type) {
     title: "Coderdojo R & B",
     link: "https://coderdojo.red",
     description:
-      "Willkommen beim CoderDōjō für Jugendliche! Wir sitzen zwar in Berlin, aber da bei uns vieles online stattfindet, kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht wohnst. Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken.",
+      "Willkommen beim CoderDōjō für Jugendliche! Wir sitzen zwar in Berlin, aber da bei uns vieles online stattfindet, kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht wohnst. Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken."
   });
 
   return type === "atom" ? feed.atom1() : feed.rss2();

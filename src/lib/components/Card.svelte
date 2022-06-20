@@ -1,6 +1,5 @@
 <script lang="ts">
-  export let title_class =
-    "prose font-semibold flex justify-center text-xl items-center";
+  export let title_class = "prose font-semibold flex justify-center text-xl items-center";
   export let content_class = "prose mt-2 text-sm text-gray-600";
 </script>
 

@@ -37,21 +37,14 @@ function sectionize(node, ancestors) {
       }
     }
 
-    return (
-      (node.type === "raw" &&
-        node.value.startsWith("</Layout_MDSVEX_DEFAULT>")) ||
-      lower
-    );
+    return (node.type === "raw" && node.value.startsWith("</Layout_MDSVEX_DEFAULT>")) || lower;
   };
   const end = findAfter(parent, start, isEnd);
 
   const startIndex = parent.children.indexOf(start);
   const endIndex = parent.children.indexOf(end);
 
-  const between = parent.children.slice(
-    startIndex,
-    endIndex > 0 ? endIndex : undefined
-  );
+  const between = parent.children.slice(startIndex, endIndex > 0 ? endIndex : undefined);
 
   const section = {
     type: "element",
@@ -62,9 +55,9 @@ function sectionize(node, ancestors) {
       start.properties !== undefined && start.properties.id !== undefined
         ? {
             id: start.properties.id + "-section",
-            "data-type": "scrollspy-tracked",
+            "data-type": "scrollspy-tracked"
           }
-        : {},
+        : {}
   };
 
   parent.children.splice(startIndex, section.children.length, section);

@@ -11,27 +11,27 @@ const config = {
   // for more information about preprocessors
   preprocess: [
     preprocess({
-      postcss: true,
+      postcss: true
     }),
-    mdsvex(mdsvexConfig),
+    mdsvex(mdsvexConfig)
   ],
 
   kit: {
     adapter: adapter({
-      precompress: true,
+      precompress: true
     }),
     trailingSlash: "always",
     prerender: {
       default: true,
       enabled: true,
       concurrency: 4,
-      crawl: true,
+      crawl: true
     },
     browser: {
       hydrate: true,
-      router: false,
-    },
-  },
+      router: false
+    }
+  }
 };
 
 export default config;
