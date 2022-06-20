@@ -20,11 +20,11 @@
       : license.url;
 </script>
 
-<div class="px-2 md:px-6 py-2 items-start bg-slate-50 bg-opacity-50 shadow">
+<div class="px-2 md:px-6 py-2 flex flex-col items-start bg-slate-50 bg-opacity-50 shadow">
   <span class="text-2xl mb-4 my-0">
     {license.name}
   </span>
-  <p class="leading-relaxed mb-8">
+  <p class="leading-relaxed mb-8 flex-grow">
     {description}
   </p>
   <div class="flex items-center justify-around flex-wrap mt-auto w-full">
