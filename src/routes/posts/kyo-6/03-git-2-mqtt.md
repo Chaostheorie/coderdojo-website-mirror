@@ -9,7 +9,7 @@ date = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-## Git - Klappe die zweiten
+# Git - Klappe die zweiten
 
 Gleich wollen wir anfangen, unsere App bereit machen, über ein Netz mit anderen Teilnehmenden zu kommunizieren. Jetzt
 solltest du aber mit Deinem aktuellen Code eine Version haben, die funktioniert und lokal läuft. Also bauen wir gerade

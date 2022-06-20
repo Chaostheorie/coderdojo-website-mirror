@@ -9,7 +9,7 @@ date = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-## Kultur II.
+# Kultur II.
 
 Es wird Zeit für Kultur! Über eine Bibliothek, einen (legalen) Streamingdienst oder andere Wege besorge Dir doch mal den
 Film [Hackers](https://de.wikipedia.org/wiki/Hackers_%E2%80%93_Im_Netz_des_FBI). Der ist zwar schon von 1995, aber immer

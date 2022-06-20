@@ -7,6 +7,7 @@
   import Copyright from "phosphor-svelte/lib/Copyright";
   import Code from "phosphor-svelte/lib/Code";
   import Laptop from "phosphor-svelte/lib/Laptop";
+  import User from "phosphor-svelte/lib/User";
 </script>
 
 <footer>
@@ -32,6 +33,9 @@
           </li>
           <li>
             <a href="/posts/copyright/"><Copyright size={16} /> Urheberrecht</a>
+          </li>
+          <li>
+            <a href="/posts/contact/"><User size={16} /> Kontakt</a>
           </li>
         </ul>
       </div>

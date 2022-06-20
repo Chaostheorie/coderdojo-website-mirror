@@ -9,7 +9,7 @@ date = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-## PyGames
+# PyGames
 
 <Figure src="/images/kyo-6/Pygame.png" alt="Das pygame-Logo von TheCorruptor/pygame developers" />
 

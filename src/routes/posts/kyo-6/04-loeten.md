@@ -17,7 +17,7 @@ Dieser Teil ist Bestandteil eines unserer Präsenz-Workshops. Wir werden die Inh
 Hier sind schon einmal die [Folien](https://coderdojo.red/images/kyo-6/ATTiny.pdf) des Workshops.
 :::
 
-# ATTiny Programmieren
+## ATTiny Programmieren
 
 In den Präsenz-Workshops geben wir dir am Ende des Lötteils zum Testen einen fertig programmierten ATTiny. Das ist aber
 wie fertiger Kartoffelbrei - macht satt, aber nicht glücklich. Wir wollen den also selber programmieren. Dafür bedarf es
