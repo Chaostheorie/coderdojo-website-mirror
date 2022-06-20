@@ -3,14 +3,14 @@ const typography = require("@tailwindcss/typography");
 const palettes = {
   blue: {
     theme: "#2d557d",
-    "opposite-theme": "#bf616a",
+    "opposite-theme": "#b84f59",
     "theme-neutral": "#244464",
     "theme-dark": "#002c50",
     secondary: "#a9ac5d",
     "secondary-dark": "#787d31"
   },
   red: {
-    theme: "#bf616a",
+    theme: "#b84f59",
     "opposite-theme": "#2d557d",
     "theme-neutral": "#a4424c",
     "theme-dark": "#8b323f",
