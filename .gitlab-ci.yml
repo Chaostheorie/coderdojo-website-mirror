@@ -42,8 +42,7 @@ Lint:
         - svelte.config.js
         - tailwind.config.cjs
         - tsconfig.json
-    - if: $CI_COMMIT_BRANCH == 'koneko'
-    - if: $CI_PIPELINE_SOURCE != "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == 'koneko' && $CI_PIPELINE_SOURCE != "merge_request_event"
   before_script:
     # Install all yarn dependencies (normally cached but clover#2 currently has (since 2 years) problems with space)
     - pnpm i --frozen-lockfile
