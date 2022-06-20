@@ -18,7 +18,7 @@
     ["/posts/dojo/", Student, "Workshops", null],
     ["/posts/dojo/", Code, "Einführung", null],
     ["/posts/about/", Code, "Mentoren", null],
-    ["/news/", Newspaper, "News", null],
+    ["/posts/news/", Newspaper, "News", null],
     [
       "/posts/kyus/",
       ListNumbers,

@@ -169,4 +169,4 @@ function tocPlugin() {
   };
 }
 
-export { tocPlugin };
+export { tocPlugin, routeMapper, TitleRegex, FrontmatterRegex };
