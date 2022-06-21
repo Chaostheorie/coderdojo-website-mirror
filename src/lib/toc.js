@@ -104,16 +104,16 @@ function tocPlugin() {
       readdirSync(dir, { encoding: "utf8" })
         // extract full path and filename
         .map((file) => [joinPath(dir, file), basename(file)])
-        // filter our all non-markdown files
+        // filter out all non-markdown files
         .filter(([path, _name]) => path.endsWith(".md"))
         // check entries agains keys
         .map(([path, name]) => {
           const idx = keys.indexOf(name);
           if (idx === -1) {
-            // if not in list, add to modified (i.e., add new file)
+            // if not part of the cache, add to modified (i.e., add new file)
             return [path, name, statSync(path).mtimeMs];
           } else {
-            // if found, remove from list and check if modified
+            // if in cache, remove from cache and check if modified
             keys.splice(idx, 1);
             const sync = statSync(path).mtimeMs;
 
