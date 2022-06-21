@@ -44,7 +44,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/logo/favicon-16x16.png" />
   <link rel="manifest" href="/images/logo/site.webmanifest" />
   <link rel="mask-icon" href="/images/logo/safari-pinned-tab.svg" color="#5bbad5" />
-  <link rel="shortcut icon" href="/images/logo/favicon.ico" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
   <meta name="apple-mobile-web-app-title" content="CoderDōjō Red and Blue" />
   <meta name="application-name" content="CoderDōjō Red and Blue" />
   <meta name="msapplication-TileColor" content="#d8dee9" />

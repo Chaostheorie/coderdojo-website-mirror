@@ -10,7 +10,7 @@
 
   // shikwasa container for audio widget
   // refer to the shikwasa documentation for more information
-  let container;
+  let container: HTMLDivElement;
 
   // create shikwasa instance on load
   onMount(() => {
