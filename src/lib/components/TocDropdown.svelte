@@ -25,11 +25,11 @@
     </span>
   </button>
 
-  <div class="toc-list" class:toc-list-collapsed={collapsed}>
+  <ol class="toc-list" class:toc-list-collapsed={collapsed}>
     {#each headings as [heading, id]}
       <li>
         <a href="{targetUrl}#{id}">{heading}</a>
       </li>
     {/each}
-  </div>
+  </ol>
 </div>

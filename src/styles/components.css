@@ -36,18 +36,10 @@
 
   /* Prisma adjustements */
   pre {
-    @apply mt-0 rounded-t-none text-black !important;
-  }
-
-  pre,
-  .token.operator {
-    @apply overflow-x-scroll bg-transparent !important;
+    @apply mt-0 overflow-x-scroll rounded-t-none !important;
   }
 
   /* Navbar */
-  header {
-  }
-
   .navbar {
     @apply container mx-auto flex flex-row flex-nowrap items-center justify-between p-5;
   }
@@ -216,7 +208,11 @@
 
   /* codetitle support */
   .codewrapper {
-    @apply bg-slate-100 shadow;
+    @apply shadow;
+
+    & pre {
+      @apply px-4 py-2;
+    }
   }
 
   .codetitle {

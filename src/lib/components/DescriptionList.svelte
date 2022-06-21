@@ -9,8 +9,8 @@
   </h2>
   <dl class="flex flex-col gap-2 list-none">
     {#each items as [Icon, dt, dd]}
-      <div class="flex flex-row flex-wrap gap-3 justify-between md:flex-nowrap">
-        <dt class="flex items-center gap-2"><Icon size={16} /> {dt}</dt>
+      <div class="flex flex-row gap-3 justify-between flex-nowrap">
+        <dt class="flex items-center gap-2"><svelte:component this={Icon} size={16} /> {dt}</dt>
         <dd>{dd}</dd>
       </div>
     {/each}

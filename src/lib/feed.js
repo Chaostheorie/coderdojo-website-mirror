@@ -3,10 +3,10 @@ import { Feed } from "feed";
 /**
  * Fetch all frontmatter data from markdown files recursively
  * (currently uncached since it only needs to be build once)
- * @param {string} path
+ * @param {string} _post
  * @return {[string, string, string][]}
  */
-function collectPosts(post) {
+function collectPosts(_post) {
   // TODO: implement post collection and return type struct
   return [];
 }

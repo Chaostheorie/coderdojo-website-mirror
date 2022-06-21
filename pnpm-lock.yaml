@@ -37,6 +37,7 @@ specifiers:
   remark-math: 3.0.1
   remark-parse: ^10.0.1
   remark-slug: ^7.0.1
+  shikwasa: ^2.1.3
   svelte: ^3.48.0
   svelte-check: ^2.7.2
   svelte-preprocess: ^4.10.7
@@ -55,6 +56,7 @@ dependencies:
   phosphor-svelte: 1.2.1_svelte@3.48.0
   remark-admonitions: 1.2.1
   remark-parse: 10.0.1
+  shikwasa: 2.1.3
 
 devDependencies:
   "@iarna/toml": 2.2.5
@@ -3528,6 +3530,13 @@ packages:
       }
     engines: { node: ">=8" }
     dev: true
+
+  /shikwasa/2.1.3:
+    resolution:
+      {
+        integrity: sha512-PPEUI9V5yjQ3N8+wuAAreqGrd0WHnq3wls1WHLuRmjfNRKA1de5vfdgRM5DcRr1fOyNoIDj6MbDKBmcVoH/hrw==
+      }
+    dev: false
 
   /slash/3.0.0:
     resolution:

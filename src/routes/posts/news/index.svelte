@@ -17,6 +17,8 @@
   export let news: [string, string, string, string][];
 </script>
 
+<Meta title="News" description="News und Updates rund um CoderDōjō" />
+
 <div class="flex gap-3 w-full flex-col md:flex-row items-center md:items-start">
   <div class="flex-grow">
     <div class="prose lg:prose-lg prose-slate prose-extension mb-3 text-center">

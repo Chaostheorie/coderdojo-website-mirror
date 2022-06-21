@@ -5,6 +5,11 @@ color = "#55CCFF"
 date = 2021-12-07
 +++
 
+<script lang="ts">
+    import Audio from '$lib/components/Audio.svelte';
+    import Figure from '$lib/components/Figure.svelte';
+</script>
+
 # Einleitung
 
 > Dummerweise kann man niemanden erklären, <br />
@@ -13,9 +18,11 @@ date = 2021-12-07
 >
 > _The Matrix_
 
-> Diese Seite gibt es auch zum Hören:
+:::note Info
+Diese Seite gibt es auch zum Hören:
+:::
 
-<!-- {{ audio(src="https://dect42.de/audio/Uberblick.mp3", chapters="", title="Überblick CoderDojo", artist="bengoshi", cover="/images/pregenerated/default_transparent_765x625.png") }} -->
+<Audio src="https://dect42.de/audio/Uberblick.mp3" title="Überblick CoderDojo" cover="/images/brand.svg" artist="bengoshi" />
 
 Willkommen zum Kursbuch des CoderDojo. Während die meisten CoderDojos auf Kinder ausgerichte sind, liegt unser Fokus bei
 Jugendlichen. Wir nehmen das nicht so genau, aber wenn du jünger als 12 bis 14 Jahren bist, wirst wahrscheinlich mit dem
@@ -31,7 +38,7 @@ hat, dass da viele das Handtuch schmeißen, beispielsweise die Installation. Las
 setzen wir die Inanspruchnahme der Hilfe sogar ausdrücklich voraus. Und bei uns geht es mehr als nur „schnöden" Code.
 Wir schauen auf Dinge wie Datenschutz, Nerdkultur ebenso wie auf Hardware.
 
-<!-- {{ figure(source="/images/kyo-info/JJS_Dojo_s.jpg", float="end", alt="Gürtel") }} -->
+<Figure src="/images/kyo-info/JJS_Dojo_s.jpg" alt="Gürtel" />
 
 Trainieren? Der Begriff Dōjō kommt aus dem Kampfsport und stellt dort den Trainingsraum oder -halle dar. Programmieren
 lernen hat vieles damit gemeinsam. Jeder der Lesen und Schreiben kann, kann Programmieren lernen. Aber wenn du
@@ -62,7 +69,7 @@ nicht in der Schule. Hier geht es nicht darum, eine Prüfung zu bestehen, sonder
 Test stecken bleibst, nimm das zum Anlass, um dir von den Mentorinnen helfen zu lassen. Oft braucht es nur einen kleinen
 Stupser in die richtige Richtung und du kannst die Aufgabe selber richtig weiterlösen.
 
-<!-- {{ figure(source="/images/kyo-info/karate-2717178_1280_s.jpg", float="start", alt="Bruchtest") }} -->
+<Figure src="/images/kyo-info/karate-2717178_1280_s.jpg" alt="Bruchtest" float="right" />
 
 Was lernen wir? Wir beginnen mit Python. Die Wahl der „richtigen" Programmiersprache kann zu regelrechten
 Glaubensstreitigkeiten führen. Es gibt Sprachen, die sich eher für Anfänger eignen und welche, die sich weniger für
@@ -84,7 +91,7 @@ gleich ein Weltraumspiel bauen und dieses Stück für Stück weiter ausbauen. Gl
 die anfangs noch nicht erklärt werden können. Aus diesem Grund verzichten wir zunächst auf grafische „Spielereien". Aber
 halte durch, die kommen!
 
-<!-- {{ figure(source="/images/kyo-info/martial-83009_1280_s.jpg", float="end", alt="Training") }} -->
+<Figure src="/images/kyo-info/martial-83009_1280_s.jpg" alt="Training" float="left" caption={false} />
 
 Wie oft solltest du dich damit beschäftigen müssen? Müssen wäre schon mal kein guter Start. Wir sind hier nicht in der
 Schule. Wir treffen uns, weil wir neugierig sind und Spaß an der Sache haben, nicht weil wir müssen. Insofern kann man
@@ -97,7 +104,7 @@ sondern motiviere, dran zu bleiben. Der Anfang stellt erfahrungsgemäß eine ers
 Höhen und Tiefen. Niemand lernt Segeln, wenn immer Flaute ist. Böen können anstrengend sein, aber mit jeder lernt man
 etwas dazu. Und wenn das Bötchen kentert - nicht schlimm, wieder aufrichten, Wasser rausschöpfen, weiterfahren.
 
-<!-- {{ figure(source="/images/kyo-info/capsized-31696_1280_s.png", float="start", alt="Kentern") }} -->
+<Figure src="/images/kyo-info/capsized-31696_1280_s.png" alt="Kentern" />
 
 Wir setzen keine Kenntnisse voraus. Wenn du schon Vorkenntnisse hast und später einsteigen willst, ist das kein Problem.
 Mach die Tests am Ende eines Kapitels (nicht nur lesen, lösen!). Wenn du die hinbekommst, weiterziehen. Es gibt noch
@@ -109,7 +116,7 @@ bearbeiten, weil das überforderte. Falls du also schon Vorkenntnisse hast oder 
 Thema schon alles ist - in aller Regel nicht. Wir greifen die einzelnen Teile später wieder auf und vertiefen sie Stück
 für Stück.
 
-<!-- {{ figure(source="/images/kyo-info/fantasy-fractal.jpg", float="start", alt="Spirale") }} -->
+<Figure src="/images/kyo-info/fantasy-fractal.jpg" alt="Spirale" />
 
 Was du jedoch brauchen wirst, ist eine installierte Python-Version mit virtualenv und eine Oberfläche, um einen Code zu
 schreiben. Wir empfehlen hier die Community-Version von PyCharme. Klar ginge es auch mit anderen anderen IDEs, aber du
@@ -147,11 +154,8 @@ sehen - Stay safe and keep coding!
 Wenn du die notwendigen Dinge selbst installieren willst oder jemanden neben dir hast, der dir hilft:
 
 - [Python, mindestens in Version 3.8](https://www.python.org/downloads/)
-
 - [pip](https://geekflare.com/de/python-pip-installation/)
-
 - [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
-
 - [Community Edition PyCharm](https://www.jetbrains.com/de-de/pycharm/download/)
 
 Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen beziehen sich nur auf PyCharm, um es
@@ -161,7 +165,7 @@ Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen bez
 
 [Hier geht es direkt zum ersten Gurt.](https://coderdojo.red/kyo-7/)
 
-#### Bildnachweise
+### Bildnachweise
 
 Kinder in dem philippinischen Karate-Dōjō der Jack und Jill Schule in Bacolod - Von Jjskarate. - Eigenes Werk;
 Übertragen aus en.wikipedia nach Commons, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=50279796>

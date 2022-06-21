@@ -27,7 +27,7 @@ export async function get() {
         if (frontmatterTitle !== null) {
           // try to extract date and otherwise fallback to mtime
           const dateMatch = DateRegex.exec(frontmatter.groups.frontmatter);
-          let date;
+          let date: string;
 
           if (dateMatch !== null && dateMatch.groups.date !== null) {
             date = dateMatch.groups.date;

@@ -2,18 +2,21 @@
   export let src: string;
   export let alt: string;
   export let float: "left" | "right" | undefined;
+  export let caption = true;
 </script>
 
 <div
   class:max-w-full={!float}
   class:d-flex={!float}
-  class:justify-content-center={!float}
-  class:float-left={float === "left"}
-  class:float-right={float === "right"}
+  class:md:justify-content-center={!float}
+  class:md:float-left={float === "left"}
+  class:md:float-right={float === "right"}
 >
   <figure>
     <img {src} {alt} />
-    <figcaption>{alt}</figcaption>
+    {#if caption}
+      <figcaption>{alt}</figcaption>
+    {/if}
   </figure>
 </div>
 

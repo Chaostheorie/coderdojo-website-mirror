@@ -8,6 +8,8 @@
   // data props
   export let title;
   export let description;
+  export let summary;
+  $: metaDescription = description ? description : summary;
   export let draft = false;
   export let filename;
   export let prose = true;
@@ -41,7 +43,7 @@
   const [tocList, toc] = loadToc();
 </script>
 
-<Meta {title} {description} />
+<Meta {title} description={metaDescription} />
 
 {#if !draft}
   <div class="flex gap-3 w-full flex-col md:flex-row items-center md:items-start">

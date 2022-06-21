@@ -58,7 +58,7 @@
                 ? check($page.url.pathname)
                 : $page.url.pathname === href}
             >
-              <Icon size={16} />
+              <svelte:component this={Icon} size={16} />
               {content}
             </a>
           </li>
@@ -86,7 +86,7 @@
     </a>
 
     <nav class="nav-btn-group">
-      {#each sidebarLinks as [href, Icon, content, check], i}
+      {#each sidebarLinks as [href, _, content, check], i}
         <a
           {href}
           class:active={check !== null ? check($page.url.pathname) : $page.url.pathname === href}
