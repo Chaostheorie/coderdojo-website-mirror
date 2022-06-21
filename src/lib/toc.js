@@ -124,7 +124,7 @@ function tocPlugin() {
             }
           }
         })
-        // filter our all unmodified entries
+        // filter out all unmodified entries
         .filter((value) => value !== null)
         // sort by filename (will always prefer index.md as the lowest member)
         .sort((a, b) => {
