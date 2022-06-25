@@ -41,8 +41,8 @@ function sectionize(node, ancestors) {
   };
   const end = findAfter(parent, start, isEnd);
 
-  const startIndex = parent.children.indexOf(start);
-  const endIndex = parent.children.indexOf(end);
+  const startIndex = parent.children.indexOf(start),
+    endIndex = parent.children.indexOf(end);
 
   const between = parent.children.slice(startIndex, endIndex > 0 ? endIndex : undefined);
 

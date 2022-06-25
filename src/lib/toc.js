@@ -13,7 +13,7 @@ const TocFile = "./src/.toc-cache.json";
 
 // Regexps for routeMapper
 // extracts both the dir after src/routes/ as well as the filename from the absolute file path
-const srcRegex = new RegExp(/src[\//]routes(?<path>[\//].*[\//]?)(?<filename>.*\.md)/);
+const srcRegex = /src[\\//]routes(?<path>[\\/].*[\\/]?)(?<filename>.*\.md)/;
 
 /**
  * converts path to basic route (prone to errors)
@@ -46,7 +46,8 @@ function tocCompiler() {
    * @type {import('unified').Compiler<Node<any>, [string, string][]>}
    */
   this.Compiler = (tree) => {
-    let headlines = [];
+    /** @type{[string, string][]} */
+    const headlines = [];
 
     visit(tree, "heading", (node) => {
       if (node.depth <= 3) {
@@ -59,8 +60,8 @@ function tocCompiler() {
 }
 
 // Regexps for fetching frontmatter titles from a markdown file
-const FrontmatterRegex = new RegExp(/^\+{3}\n(?<frontmatter>[^\+]*)\+{3}$/m);
-const TitleRegex = new RegExp(/^title *= *["'](?<title>.+)['"] *$/m);
+const FrontmatterRegex = /^\+{3}\n(?<frontmatter>[^+]*)\+{3}$/m;
+const TitleRegex = /^title *= *["'](?<title>.+)['"] *$/m;
 
 /**
  * use tocCompiler to fetch headings
@@ -80,12 +81,16 @@ function tocPlugin() {
       file.data.fm.filename = basename(file.filename);
 
       // parametes for checking cache
-      const dir = dirname(file.filename),
-        title = file.data.fm.title;
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+      const dir = dirname(file.filename);
+      /** @type{{title: string}} */
+      const { title } = file.data.fm;
 
+      /** @@type{{[key: string]: {[key: string]: {mtime: number, headings: [string, string][], path: string}}}} */
       // load or create toc cache
       let toc;
       try {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         toc = JSON.parse(readFileSync(TocFile));
       } catch (e) {
         toc = {};
@@ -97,44 +102,52 @@ function tocPlugin() {
       }
 
       // save all keys that need to be processed
-      let keys = Object.keys(toc[title]),
-        modifiedCounter = 0;
+      const keys = Object.keys(toc[title]);
+      let modifiedCounter = 0;
 
       // check mtime on all files in diretory
       readdirSync(dir, { encoding: "utf8" })
         // extract full path and filename
-        .map((file) => [joinPath(dir, file), basename(file)])
+        .map((path) => [joinPath(dir, path), basename(path)])
         // filter out all non-markdown files
-        .filter(([path, _name]) => path.endsWith(".md"))
+        .filter((bundled_path) => bundled_path[0].endsWith(".md"))
         // check entries agains keys
         .map(([path, name]) => {
           const idx = keys.indexOf(name);
           if (idx === -1) {
             // if not part of the cache, add to modified (i.e., add new file)
             return [path, name, statSync(path).mtimeMs];
-          } else {
-            // if in cache, remove from cache and check if modified
-            keys.splice(idx, 1);
-            const sync = statSync(path).mtimeMs;
-
-            if (toc[title][name].mtime !== sync || !toc[title][name].headings === {}) {
-              return [path, name, sync];
-            } else {
-              return null;
-            }
           }
+
+          // if in cache, remove from cache and check if modified
+          keys.splice(idx, 1);
+          const sync = statSync(path).mtimeMs;
+
+          if (toc[title][name].mtime !== sync || !toc[title][name].headings === {}) {
+            return [path, name, sync];
+          }
+
+          return null;
         })
         // filter out all unmodified entries
         .filter((value) => value !== null)
         // sort by filename (will always prefer index.md as the lowest member)
         .sort((a, b) => {
+          // prefer index.md
           if (a[1] === "index.md") {
             return -1;
-          } else if (b[1] === "index.md") {
-            return 1;
-          } else {
-            return a[1] > b[1] ? 1 : a[1] === b[1] ? 0 : -1;
           }
+
+          if (b[1] === "index.md") {
+            return 1;
+          }
+
+          // otherwise sort by filename (asc)
+          if (a[1] > b[1]) {
+            return 1;
+          }
+
+          return a[1] === b[1] ? 0 : -1;
         })
         // update toc for all new or modified files
         .forEach(([path, name, mtime]) => {
@@ -153,14 +166,16 @@ function tocPlugin() {
             }
           }
 
-          modifiedCounter++;
+          modifiedCounter += 1;
         });
 
       // remove all unused keys (all keys remaining in `keys`)
       keys.forEach((key) => {
         delete toc[title][key];
-        modifiedCounter++;
+
+        modifiedCounter += 1;
       });
+
       // if any files were modified, save in cache
       if (modifiedCounter !== 0) {
         writeFileSync(TocFile, JSON.stringify(toc));

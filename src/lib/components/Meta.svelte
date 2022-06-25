@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { base_description } from "$lib/constants";
+
   export let title = "";
   export let description = "";
 </script>
@@ -18,9 +20,12 @@
   <meta property="og:site_name" content="CoderDōjō" />
   <meta property="og:type" content="text/html" />
 
-  {#if description !== ""}
+  {#if description}
     <meta name="description" content={description} />
     <meta property="og:description" content={description} />
+  {:else}
+    <meta name="description" content={base_description} />
+    <meta property="og:description" content={base_description} />
   {/if}
   <meta name="lang" content="de" />
   <meta property="og:locale" content="de" />
