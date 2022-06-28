@@ -3,7 +3,7 @@ import { cwd } from "node:process";
 import { statSync } from "fs";
 import { join as joinPath } from "path";
 
-export async function get() {
+export function get() {
   // retrieve metadata about kyus and provide enriched kyu data for kyus.svelte
   let enriched_kyus = kyus.map(([count, title, fill, path, href, description]) => {
     const last_updated = statSync(joinPath(cwd(), path)).mtime;

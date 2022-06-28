@@ -21,17 +21,19 @@
     @apply border-l-2 border-solid border-l-theme-dark bg-slate-50 bg-opacity-50 shadow !important;
   }
 
-  .prose-extension {
-    @apply mx-auto max-w-[100vw] px-2 md:max-w-[65ch] !important;
+  .prose {
+    &-extension {
+      @apply mx-auto max-w-[100vw] px-2 md:max-w-[65ch] !important;
 
-    & a {
-      @apply underline decoration-slate-400 hover:decoration-slate-900;
+      & a {
+        @apply underline decoration-slate-400 hover:decoration-slate-900;
+      }
     }
-  }
 
-  .prose :where(blockquote p:last-of-type):not(:where([class~="not-prose"] *))::after,
-  .prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
-    content: "";
+    & :where(blockquote p:last-of-type):not(:where([class~="not-prose"] *))::after,
+    & :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
+      content: "";
+    }
   }
 
   /* Prisma adjustements */
@@ -44,115 +46,119 @@
     @apply container mx-auto flex flex-row flex-nowrap items-center justify-between p-5;
   }
 
-  .nav-title {
-    @apply flex items-center gap-3 text-base font-medium;
+  .nav {
+    &-title {
+      @apply flex items-center gap-3 text-base font-medium;
 
-    & span {
-      @apply hidden md:block;
-    }
-  }
-
-  .nav-btn-group {
-    @apply hidden flex-wrap items-center justify-center gap-2 text-base md:ml-auto md:mr-auto md:flex;
-
-    & a {
-      @apply text-adaptive transition-all duration-300 hover:cursor-pointer hover:underline;
-
-      &.active {
-        @apply font-bold;
+      & span {
+        @apply hidden md:block;
       }
     }
-  }
 
-  .nav-action {
-    @apply flex items-center justify-between gap-3 rounded border-0 p-3 text-slate-100 no-underline transition-all duration-500 ease-in-out focus:outline-none md:py-1;
-  }
+    &-btn-group {
+      @apply hidden flex-wrap items-center justify-center gap-2 text-base md:ml-auto md:mr-auto md:flex;
 
-  .nav-toggle {
-    @apply nav-action fixed top-[1.25rem] bg-theme-neutral md:hidden;
-  }
+      & a {
+        @apply text-adaptive transition-all duration-300 hover:cursor-pointer hover:underline;
 
-  .nav-search {
-    @apply nav-action bg-theme;
-  }
+        &.active {
+          @apply font-bold;
+        }
+      }
+    }
 
-  .sidebar-backdrop {
-    @apply fixed top-0 z-40 hidden h-screen w-full bg-slate-100 bg-opacity-60 opacity-0 transition-opacity duration-200;
+    &-action {
+      @apply flex items-center justify-between gap-3 rounded border-0 p-3 text-slate-100 no-underline transition-all duration-500 ease-in-out focus:outline-none md:py-1;
+    }
 
-    &-open {
-      @apply block opacity-100;
+    &-toggle {
+      @apply nav-action fixed top-[1.25rem] bg-theme-neutral md:hidden;
+    }
+
+    &-search {
+      @apply nav-action bg-theme;
     }
   }
 
   .sidebar {
     @apply fixed top-0 z-50 h-screen w-60 -translate-x-full bg-slate-200 p-3 pt-5 transition-transform duration-300;
 
+    &-backdrop {
+      @apply fixed top-0 z-40 hidden h-screen w-full bg-slate-100 bg-opacity-60 opacity-0 transition-opacity duration-200;
+
+      &-open {
+        @apply block opacity-100;
+      }
+    }
+
     &-open {
       @apply translate-x-[0%];
     }
-  }
 
-  .sidebar-section {
-    @apply w-full lg:w-1/2;
+    &-section {
+      @apply w-full lg:w-1/2;
 
-    & > span {
-      @apply mb-3 text-sm font-medium tracking-widest text-gray-900;
-    }
+      & > span {
+        @apply mb-3 text-sm font-medium tracking-widest text-gray-900;
+      }
 
-    & ul {
-      @apply mb-10 list-none;
+      & ul {
+        @apply mb-10 list-none;
 
-      & li {
-        @apply mt-2;
+        & li {
+          @apply mt-2;
 
-        & a {
-          @apply flex flex-row items-center gap-1 p-1 text-slate-800 transition-colors duration-300;
+          & a {
+            @apply flex flex-row items-center gap-1 p-1 text-slate-800 transition-colors duration-300;
+          }
         }
       }
     }
   }
 
   /* Sidebar */
-  .toc-container {
-    @apply mx-2 h-fit justify-self-start rounded border-t-2  border-solid border-theme-neutral bg-slate-50 px-2 py-1 shadow lg:mx-auto;
-  }
-
-  .toc-inner-container {
-    @apply bg-slate-50;
-  }
-
-  .toc-dropdown {
-    @apply flex flex-col gap-0;
-  }
-
-  .toc-btn {
-    @apply flex w-full items-center justify-between border-l-2 border-solid border-transparent bg-transparent px-2;
-
-    &-active {
-      @apply border-theme-dark;
-    }
-  }
-
-  .toc-list {
-    @apply h-auto max-h-fit list-none overflow-y-hidden bg-slate-50 pl-8 transition-all duration-500;
-
-    &-standalone {
-      @apply toc-list pl-0;
+  .toc {
+    &-container {
+      @apply mx-2 h-fit min-w-[80%] justify-self-start rounded border-t-2 border-solid border-theme-neutral bg-slate-50 px-2 py-1 shadow md:min-w-[10rem] lg:mx-auto;
     }
 
-    &-collapsed {
-      @apply max-h-0;
+    &-inner-container {
+      @apply bg-slate-50;
     }
-  }
 
-  .toc-menu {
-    @apply flex flex-col gap-1;
+    &-dropdown {
+      @apply flex flex-col gap-0;
+    }
 
-    & a {
-      @apply border-l-2 border-solid border-transparent px-2 leading-none;
+    &-btn {
+      @apply flex w-full items-center justify-between border-l-2 border-solid border-transparent bg-transparent px-2;
 
-      &.active {
-        @apply border-theme;
+      &-active {
+        @apply border-theme-dark;
+      }
+    }
+
+    &-list {
+      @apply h-auto max-h-fit list-none overflow-y-hidden bg-slate-50 pl-8 transition-all duration-500;
+
+      &-standalone {
+        @apply toc-list pl-0;
+      }
+
+      &-collapsed {
+        @apply max-h-0;
+      }
+    }
+
+    &-menu {
+      @apply flex flex-col gap-1;
+
+      & a {
+        @apply border-l-2 border-solid border-transparent px-2 leading-none;
+
+        &.active {
+          @apply border-theme;
+        }
       }
     }
   }
@@ -221,19 +227,10 @@
     &-btn-group {
       @apply flex flex-row gap-2;
     }
-  }
 
-  .codetitle-btn > svg {
-    @apply h-6 w-6 duration-300 ease-in-out hover:text-gray-500;
-  }
-
-  /* gradient background */
-  .bg-gradient {
-    @apply bg-gradient-to-l from-theme to-opposite-theme;
-  }
-
-  .bg-gradient-reverse {
-    @apply bg-gradient-to-r from-theme to-opposite-theme;
+    &-btn > svg {
+      @apply h-6 w-6 duration-300 ease-in-out hover:text-gray-500;
+    }
   }
 
   /* Main layout */
@@ -260,14 +257,11 @@
 
   /* Button group support */
   .btn-group {
-    @apply flex flex-row;
+    @apply flex flex-col gap-3 md:flex-row;
 
-    & > :last-child {
-      @apply rounded-l-none;
-    }
-
-    & > :first-child {
-      @apply rounded-r-none;
+    & > button,
+    & > a {
+      @apply rounded;
     }
   }
 }
