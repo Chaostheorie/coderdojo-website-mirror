@@ -1,14 +1,20 @@
 image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-koneko-builder:latest
 
+stages:
+  - Testing
+  - Deploy
+
 cache:
   key: "${CI_COMMIT_REF_SLUG}"
   paths:
     - /store
-    - public
+    - build
 
 Lint:
+  stage: Testing
   rules:
     - changes:
+        - vite.config.js
         - .gitlab-ci.yml
         - prettier.config.js
         - "src/*"
@@ -45,6 +51,7 @@ Lint:
         - svelte.config.js
         - tailwind.config.cjs
         - tsconfig.json
+        - vite.config.js
     - if: $CI_COMMIT_BRANCH != 'koneko'
       when: never
     - if: $CI_MERGE_REQUEST_ID
@@ -77,7 +84,7 @@ Lint:
 
 CD:Red-Alternate:
   <<: *rs-deploy
-  stage: deploy
+  stage: Deploy
   environment:
     name: production-1-v2
     url: https://v2.coderdojo.red
@@ -88,7 +95,7 @@ CD:Red-Alternate:
 
 CD:Blue-Alternate:
   <<: *rs-deploy
-  stage: deploy
+  stage: Deploy
   environment:
     name: production-2-v2
     url: https://v2.coderdojo.blue
