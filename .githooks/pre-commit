@@ -1,0 +1,12 @@
+#!/bin/sh
+# Pre commit git hook for checking the formatting of project files
+# To enable this hook, rename this file to "pre-commit".
+
+# Redirect output to stderr.
+exec 1>&2
+
+if ! pnpm lint; then
+  echo "[ERROR]: Content of new commit are not properly formatted. Please use 'pnpm format' before commiting any files to the repository"
+  exit 1
+fi
+

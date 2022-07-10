@@ -1,0 +1,6 @@
+#!/bin/sh
+# Post commit hook for keeping node dependencies up to date
+
+# Check if pnpm updates are needed
+pnpm i
+
