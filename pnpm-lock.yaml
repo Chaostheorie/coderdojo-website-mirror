@@ -3,7 +3,6 @@ lockfileVersion: 5.4
 specifiers:
   "@fontsource/fira-mono": ^4.5.8
   "@iarna/toml": ^2.2.5
-  "@minify-html/js": ^0.8.1
   "@sveltejs/adapter-static": next
   "@sveltejs/kit": next
   "@tailwindcss/typography": ^0.5.3
@@ -70,7 +69,6 @@ dependencies:
 
 devDependencies:
   "@iarna/toml": 2.2.5
-  "@minify-html/js": 0.8.1
   "@sveltejs/adapter-static": 1.0.0-next.35
   "@sveltejs/kit": 1.0.0-next.367_svelte@3.49.0+vite@2.9.14
   "@tailwindcss/typography": 0.5.3_tailwindcss@3.1.5
@@ -218,16 +216,6 @@ packages:
       {
         integrity: sha512-6Wci+Tp3CgPt/B9B0a3J4s3yMgLNSku6w5TV6mN+61C71UqsRBv2FUibBf3tPGlNxebgPHMEUzKpb1ggE8KCKw==
       }
-    dev: true
-
-  /@minify-html/js/0.8.1:
-    resolution:
-      {
-        integrity: sha512-U3uNTS54r02rNSbiI67OoMrd6cIQThRKMgziqfGfwYgyG6wTq2rcJVswNFdkQGoONRUH+QKvPuJHE3t66tVb/w==
-      }
-    engines: { node: ">= 8.6.0" }
-    hasBin: true
-    requiresBuild: true
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:

@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "@iarna/toml": "^2.2.5",
-    "@minify-html/js": "^0.8.1",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "@tailwindcss/typography": "^0.5.3",

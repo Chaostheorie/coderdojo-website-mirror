@@ -1,16 +1,25 @@
 /* eslint-disable max-len */
 const glob = require("glob");
 const fs = require("fs");
-const minifyHtml = require("@minify-html/js");
+const minify = require("html-minifier").minify;
 
-const cfg = minifyHtml.createConfiguration({
-  ensure_spec_compliant_unquoted_attribute_values: true,
-  keep_html_and_head_opening_tags: true,
-  keep_comments: true,
-  keep_closing_tags: true,
-  minifyJs: true,
-  minifyCss: true
-});
+const cfg = {
+  sortAttributes: true,
+  sortClassName: true,
+  useShortDoctype: true,
+  minifyJS: true,
+  minifyCSS: true,
+  removeStyleLinkTypeAttributes: false,
+  removeEmptyAttributes: false,
+  processConditionalComments: true,
+  preserveLineBreaks: false,
+  minifyURLs: false,
+  keepClosingSlash: true,
+  html5: true,
+  conservativeCollapse: true,
+  collapseWhitespace: true,
+  collapseInlineTagWhitespace: true
+};
 
 glob("build/**/*.html", (err, res) => {
   if (err) {
@@ -22,7 +31,7 @@ glob("build/**/*.html", (err, res) => {
           console.log("File Writing Error", err);
         } else {
           const source = buf.toString();
-          const compressed = minifyHtml.minify(source, cfg).toString();
+          const compressed = minify(source, cfg).toString();
           const compression = 100 - Math.round(compressed.length / (source.length / 100));
           const minifiedName = res[i].substr(6);
 
