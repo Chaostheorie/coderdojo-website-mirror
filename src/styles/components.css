@@ -255,6 +255,55 @@
     }
   }
 
+  /* Footer */
+  .footer-container {
+    @apply container mx-auto mt-10 mb-0 flex flex-col flex-wrap px-5 pb-2 pt-10 md:flex-row md:flex-nowrap md:items-center lg:items-start;
+  }
+
+  .footer-logo {
+    @apply mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left;
+
+    & a {
+      @apply flex items-center justify-center text-base font-medium md:justify-start;
+
+      & svg {
+        @apply h-12 w-12;
+      }
+
+      & span {
+        @apply ml-3 text-xl;
+
+        & span {
+          @apply bg-gradient ml-0 bg-clip-text text-transparent hover:bg-transparent hover:text-inherit;
+        }
+      }
+    }
+
+    & p {
+      @apply text-adaptive mt-2 text-sm;
+    }
+  }
+
+  .footer-section-container {
+    @apply -mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left;
+  }
+
+  .footer-section {
+    @apply w-full px-4 md:w-1/2;
+
+    & > span {
+      @apply mb-3 text-sm font-medium tracking-widest text-gray-900;
+    }
+
+    & ul {
+      @apply mb-10 list-none;
+
+      & li a {
+        @apply flex flex-row items-center gap-1 text-gray-600 hover:text-gray-800;
+      }
+    }
+  }
+
   /* Button group support */
   .btn-group {
     @apply flex flex-col gap-3 md:flex-row;
