@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   "@fontsource/fira-mono": ^4.5.8
   "@iarna/toml": ^2.2.5
+  "@minify-html/js": ^0.8.1
   "@sveltejs/adapter-static": next
   "@sveltejs/kit": next
   "@tailwindcss/typography": ^0.5.3
@@ -22,6 +23,8 @@ specifiers:
   eslint-plugin-svelte3: ^4.0.0
   eslint-plugin-tsdoc: ^0.2.16
   feed: ^4.2.2
+  glob: ^8.0.3
+  html-minifier: ^4.0.0
   ical.js: ^1.5.0
   katex: ^0.16.0
   license-checker: ^25.0.1
@@ -67,6 +70,7 @@ dependencies:
 
 devDependencies:
   "@iarna/toml": 2.2.5
+  "@minify-html/js": 0.8.1
   "@sveltejs/adapter-static": 1.0.0-next.35
   "@sveltejs/kit": 1.0.0-next.367_svelte@3.49.0+vite@2.9.14
   "@tailwindcss/typography": 0.5.3_tailwindcss@3.1.5
@@ -85,6 +89,8 @@ devDependencies:
   eslint-plugin-promise: 6.0.0_eslint@8.19.0
   eslint-plugin-svelte3: 4.0.0_jxmmfmurkts274jdspwh3cyqve
   eslint-plugin-tsdoc: 0.2.16
+  glob: 8.0.3
+  html-minifier: 4.0.0
   katex: 0.16.0
   license-checker: 25.0.1
   mdast-util-to-string: 3.1.0
@@ -212,6 +218,16 @@ packages:
       {
         integrity: sha512-6Wci+Tp3CgPt/B9B0a3J4s3yMgLNSku6w5TV6mN+61C71UqsRBv2FUibBf3tPGlNxebgPHMEUzKpb1ggE8KCKw==
       }
+    dev: true
+
+  /@minify-html/js/0.8.1:
+    resolution:
+      {
+        integrity: sha512-U3uNTS54r02rNSbiI67OoMrd6cIQThRKMgziqfGfwYgyG6wTq2rcJVswNFdkQGoONRUH+QKvPuJHE3t66tVb/w==
+      }
+    engines: { node: ">= 8.6.0" }
+    hasBin: true
+    requiresBuild: true
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -819,6 +835,15 @@ packages:
       concat-map: 0.0.1
     dev: true
 
+  /brace-expansion/2.0.1:
+    resolution:
+      {
+        integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==
+      }
+    dependencies:
+      balanced-match: 1.0.2
+    dev: true
+
   /braces/3.0.2:
     resolution:
       {
@@ -866,6 +891,16 @@ packages:
         integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
       }
     engines: { node: ">=6" }
+    dev: true
+
+  /camel-case/3.0.0:
+    resolution:
+      {
+        integrity: sha512-+MbKztAYHXPr1jNTSKQF52VpcFjwY5RkR7fxksV8Doo4KAYc5Fl4UJRgthBbTmEx8C54DqahhbLJkDwjI3PI/w==
+      }
+    dependencies:
+      no-case: 2.3.2
+      upper-case: 1.1.3
     dev: true
 
   /camelcase-css/2.0.1:
@@ -944,6 +979,16 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /clean-css/4.2.4:
+    resolution:
+      {
+        integrity: sha512-EJUDT7nDVFDvaQgAo2G/PJvxmp1o/c6iXLbswsBbUFXi1Nr+AjA2cKmfbKDMjMvzEe75g3P6JkaDDAKk96A85A==
+      }
+    engines: { node: ">= 4.0" }
+    dependencies:
+      source-map: 0.6.1
+    dev: true
+
   /color-convert/1.9.3:
     resolution:
       {
@@ -988,6 +1033,13 @@ packages:
     resolution:
       {
         integrity: sha512-G5yTt3KQN4Yn7Yk4ed73hlZ1evrFKXeUW3086p3PRFNp7m2vIjI6Pg+Kgb+oyzhd9F2qdcoj67+y3SdxL5XWsg==
+      }
+    dev: true
+
+  /commander/2.20.3:
+    resolution:
+      {
+        integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
       }
     dev: true
 
@@ -2208,6 +2260,20 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
+  /glob/8.0.3:
+    resolution:
+      {
+        integrity: sha512-ull455NHSHI/Y1FqGaaYFaLGkNMMJbavMrEGFXG/PGrg6y7sutWHUHrz6gy6WEBH6akM1M414dWKCNs+IhKdiQ==
+      }
+    engines: { node: ">=12" }
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 5.1.0
+      once: 1.4.0
+    dev: true
+
   /globals/13.16.0:
     resolution:
       {
@@ -2435,11 +2501,36 @@ packages:
       space-separated-tokens: 1.1.5
     dev: false
 
+  /he/1.2.0:
+    resolution:
+      {
+        integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+      }
+    hasBin: true
+    dev: true
+
   /hosted-git-info/2.8.9:
     resolution:
       {
         integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
       }
+    dev: true
+
+  /html-minifier/4.0.0:
+    resolution:
+      {
+        integrity: sha512-aoGxanpFPLg7MkIl/DDFYtb0iWz7jMFGqFhvEDZga6/4QTjneiD8I/NXL1x5aaoCp7FSIT6h/OhykDdPsbtMig==
+      }
+    engines: { node: ">=6" }
+    hasBin: true
+    dependencies:
+      camel-case: 3.0.0
+      clean-css: 4.2.4
+      commander: 2.20.3
+      he: 1.2.0
+      param-case: 2.1.1
+      relateurl: 0.2.7
+      uglify-js: 3.16.2
     dev: true
 
   /ical.js/1.5.0:
@@ -2861,6 +2952,13 @@ packages:
     resolution:
       {
         integrity: sha512-cHlYSUpL2s7Fb3394mYxwTYj8niTaNHUCLr0qdiCXQfSjfuA7CKofpX2uSwEfFDQ0EB7JcnMnm+GjbqqoinYYg==
+      }
+    dev: true
+
+  /lower-case/1.1.4:
+    resolution:
+      {
+        integrity: sha512-2Fgx1Ycm599x+WGpIYwJOvsjmXFzTSc34IwDWALRA/8AopUKAVPwfJ+h5+f85BCp0PWmmJcWzEpxOpoXycMpdA==
       }
     dev: true
 
@@ -3389,6 +3487,16 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
+  /minimatch/5.1.0:
+    resolution:
+      {
+        integrity: sha512-9TPBGGak4nHfGZsPBohm9AWg6NoT7QTCehS3BIJABslyZbzxfV78QM2Y6+i741OPZIafFAaiiEMh5OyIrJPgtg==
+      }
+    engines: { node: ">=10" }
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
   /minimist/1.2.6:
     resolution:
       {
@@ -3447,6 +3555,15 @@ packages:
       {
         integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
       }
+    dev: true
+
+  /no-case/2.3.2:
+    resolution:
+      {
+        integrity: sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==
+      }
+    dependencies:
+      lower-case: 1.1.4
     dev: true
 
   /node-emoji/1.11.0:
@@ -3675,6 +3792,15 @@ packages:
         integrity: sha512-U1etNYuMJoIz3ZXSrrySFjsXQTWOx2/jdi86L+2pRvph/qMKL6sbcCYdH23fqsbm8TH2Gn0OybpT4eSFlCVHww==
       }
     engines: { node: ">=4" }
+    dev: true
+
+  /param-case/2.1.1:
+    resolution:
+      {
+        integrity: sha512-eQE845L6ot89sk2N8liD8HAuH4ca6Vvr7VWAWwt7+kvvG5aBcPmmphQ68JsEG2qa9n1TykS2DLeMt363AAH8/w==
+      }
+    dependencies:
+      no-case: 2.3.2
     dev: true
 
   /parent-module/1.0.1:
@@ -4071,6 +4197,14 @@ packages:
       unist-util-visit: 4.1.0
     dev: true
 
+  /relateurl/0.2.7:
+    resolution:
+      {
+        integrity: sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==
+      }
+    engines: { node: ">= 0.10" }
+    dev: true
+
   /remark-admonitions/1.2.1:
     resolution:
       {
@@ -4351,6 +4485,14 @@ packages:
     resolution:
       {
         integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+      }
+    engines: { node: ">=0.10.0" }
+    dev: true
+
+  /source-map/0.6.1:
+    resolution:
+      {
+        integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
       }
     engines: { node: ">=0.10.0" }
     dev: true
@@ -4798,6 +4940,15 @@ packages:
     hasBin: true
     dev: true
 
+  /uglify-js/3.16.2:
+    resolution:
+      {
+        integrity: sha512-AaQNokTNgExWrkEYA24BTNMSjyqEXPSfhqoS0AxmHkCJ4U+Dyy5AvbGV/sqxuxficEfGGoX3zWw9R7QpLFfEsg==
+      }
+    engines: { node: ">=0.8.0" }
+    hasBin: true
+    dev: true
+
   /unbox-primitive/1.0.2:
     resolution:
       {
@@ -4931,6 +5082,13 @@ packages:
       browserslist: 4.21.1
       escalade: 3.1.1
       picocolors: 1.0.0
+    dev: true
+
+  /upper-case/1.1.3:
+    resolution:
+      {
+        integrity: sha512-WRbjgmYzgXkCV7zNVpy5YgrHgbBv126rMALQQMrmzOVC4GM2waQ9x7xtm8VU+1yF2kWyPzI9zbZ48n4vSxwfSA==
+      }
     dev: true
 
   /uri-js/4.4.1:
