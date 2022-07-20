@@ -142,7 +142,7 @@
       @apply h-auto max-h-fit list-none overflow-y-hidden bg-slate-50 pl-8 transition-all duration-500;
 
       &-standalone {
-        @apply toc-list pl-0;
+        @apply toc-list pl-0 text-base;
       }
 
       &-collapsed {
