@@ -10,7 +10,7 @@
   export let last_updated: string;
 </script>
 
-<div class="px-12 py-2 lg:p-12 lg:w-1/2 flex flex-col items-start">
+<div class="px-3 md:px-12 py-2 lg:p-12 lg:w-1/2 flex flex-col items-start">
   <span
     class="py-1 px-2 hidden md:flex rounded text-slate-100 bg-theme-neutral bg-opacity-80 text-sm font-medium items-center gap-2 flex-no-wrap"
   >
