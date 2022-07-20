@@ -1,6 +1,7 @@
 <script lang="ts">
   import ArrowRight from "phosphor-svelte/lib/ArrowRight";
   import Belt from "$lib/components/Belt.svelte";
+  import Button from "./Button.svelte";
 
   export let fill: string;
   export let count: number;
@@ -24,13 +25,10 @@
     {description}
   </p>
   <div class="flex items-center justify-between flex-wrap pb-4 mb-4 mt-auto w-full">
-    <a
-      class="flex py-1 px-2 justify-between no-underline text-slate-100 hover:text-slate-100 focus:outline-none transition-all ease-in-out duration-500 rounded bg-theme hover:bg-theme-dark items-center gap-2 hover:gap-3"
-      {href}
-    >
+    <Button {href}>
       Beginne Kyu
       <ArrowRight size={24} />
-    </a>
+    </Button>
     <span class="text-theme md:inline-flex items-center leading-none text-sm hidden">
       Letzte Aktualisierung: {last_updated}
     </span>
