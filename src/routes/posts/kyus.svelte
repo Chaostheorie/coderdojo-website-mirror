@@ -40,7 +40,7 @@
   };
 </script>
 
-<div class="container px-2 py-6 lg:py-24 mx-auto">
+<div class="container prose px-2 py-6 lg:py-24 mx-auto">
   <div class="flex flex-wrap lg:justify-around">
     {#each meta["kyus"] as [count, title, last_updated, fill, href, description]}
       <KyuCard {count} {title} {href} {fill} {description} {last_updated} />
