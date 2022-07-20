@@ -10,7 +10,7 @@
   class:justify-content-center={!float}
   class:md:float-left={float === "left"}
   class:md:float-right={float === "right"}
-  class="hidden md:inline-flex items-center justify-center rounded-full bg-slate-300 bg-opacity-50 w-40 h-40"
+  class="hidden md:inline-flex"
 >
-  <img {src} {alt} class="rounded-full w-36 h-36" />
+  <img {src} {alt} class="rounded m-2 ring-2 ring-slate-500 max-w-[20rem]" />
 </div>
