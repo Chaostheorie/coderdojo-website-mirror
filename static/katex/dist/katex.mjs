@@ -8858,7 +8858,7 @@ var makeGlyphSpan = function makeGlyphSpan(symbol, font, mode) {
   if (font === "Size1-Regular") {
     sizeClass = "delim-size1";
   } else {
-  /* if (font === "Size4-Regular") */
+    /* if (font === "Size4-Regular") */
     sizeClass = "delim-size4";
   }
 
@@ -9460,7 +9460,7 @@ var makeCustomSizedDelim = function makeCustomSizedDelim(
   } else if (delimType.type === "large") {
     return makeLargeDelim(delim, delimType.size, center, options, mode, classes);
   } else {
-  /* if (delimType.type === "stack") */
+    /* if (delimType.type === "stack") */
     return makeStackedDelim(delim, height, center, options, mode, classes);
   }
 };
