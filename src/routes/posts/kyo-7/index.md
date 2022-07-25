@@ -11,7 +11,7 @@ created = 2021-12-07
 # 7. Kyo – Weißgurt
 
 :::info Hinweis
-Der Text ist „frisch“. Wenn du Fehler entdeckst, Teile unverständlich findest oder Ideen für bessere und mehr
+Der Text hat bestimmt noch Ecken und Kanten. Wenn du Fehler entdeckst, Teile unverständlich findest oder Ideen für bessere und mehr
 Beispiele und Übungen hast, lass es uns bitte wissen, damit wir ihn korrigieren und verbessern können.
 :::
 
@@ -457,7 +457,6 @@ number2 = str(number2)
 print(number1 + number2)
 ```
 
-
 Und jetzt probieren wird es in die andere Richtung:
 
 ```python:explore-types.py
@@ -519,7 +518,6 @@ du es gerade zu tun hast. Im Code kannst du immer mit `type(Variablenname)` ausw
 <Figure src="/images/kyo-7/SolarpanelBp_a.jpg" alt="Solarzellen
  werden mittels Lötbändchen zu Strängen,<br> den sogeannten Strings verbunden" />
 
-
 Die Überschrift hieß nicht nur Variablentypen, sondern auch Stringspielereien. Wie man zwei Strings wie `"ot"` `"to"`
 kombiniert, hast du schon gesehen: aus `"ot" + "to"` wird `"otto"`. Das ein String in zwei `""` eingefasst werden muss,
 haben wir noch nicht explizit gesagt, ist Dir aber sicherlich schon aufgefallen. du kannst auch das \`\`\` nehmen, also
@@ -538,7 +536,6 @@ damit du es gesehen hast – man kann auch mit drei `"` oder ``` arbeiten, um ei
 sogar über Zeilen hinweg.
 
 <Figure src="/images/kyo-7/Python_string_int.jpg" alt="Dieses Meme solltest du jetz nachvollziehen können." />
-
 
 Die Ausgabe von Variablen hast du schon gesehen, auch die Kombination mit Text. Dafür gibt es einen einfachen und einen
 eleganten Weg. Der einfache Weg ist `print("Inhalt von a: ", a)`. Der ist aber veraltet und wenig elegant. Besser ist:
@@ -582,7 +579,6 @@ das bildlicher zu machen – stell Dir vor, Dein Eltern schauen Dir die ganze Ze
 
 <Figure src="/images/kyo-7/children-593313_s.jpg" alt="Den richtigen Browser gefunden!"" />
 
-
 Es gibt Browser, die besonders gerne Daten sammeln und manche auch nach Hause schicken. Ebenso gibt es Browser, die
 anderen Seiten es leichter oder schwerer machen, dies zu erkennen, wer du bist. Aktuell empfehlen wir Dir Brave zu
 benutzen, da er recht datensparsam ist. Firefox ist auch ganz okay. Abraten würden wir Dir klar von Edge und Google
@@ -590,7 +586,6 @@ Chrome. Brave baut auf Chromium, der Open-Source Variante von Google Chrome, auf
 Diese Empfehlung gilt jetzt – Software ändert sich. Da gilt es dranzubleiben.
 
 <Figure src="/images/kyo-7/Brave.png" alt="Brave"/>
-
 
 E-Mail ist ein ganz großes Thema. Deutlich später wollen wir ebenfalls einmal dran zu machen zu schauen, wie das
 eigentlich so funktioniert. Das ist aber ein eigenes und größeres Kapitel. Wir gehen davon aus, dass du keinen eigenen
@@ -627,6 +622,7 @@ oder auf dem Handy laufen. Der bekannteste nennt sich Element. Lade Dir den runt
 du unter [@coderdojo:matrix.cyber4edu.org](https://matrix.to/#/@coderdojo:chat.cyber4edu.org).
 
 {{ figure(source="/images/kyo-7/Cyber4EDU_sticker.png", float="end", alt="cyber4EDU Logo") }}
+
 <Figure src="/images/kyo-7/Cyber4EDU_sticker.png" alt="cyber4EDU Logo"/>
 
 Okay, mit dem richtigen Browser, einer vernünftigen E-Mail-Adresse und dem passenden Messenger ausgestattet bist du von
@@ -641,9 +637,9 @@ Wir wollen zum Thema Schleifen zurückkehren und lernen, wie wir die eleganter u
 
 Zum Steuern von Schleifen lernen wir zwei neue Befehle kennen:
 
--   `break`
+- `break`
 
--   `continue`
+- `continue`
 
 Diese werden vor allem interessant, wenn du in einer Schleife eine Bedingung gesetzt hast, also eine
 if-else-Konstruktion. Bei `break` wird die Schleife abgebrochen – egal wie viel Schleifendurchläufe eigentlich noch
@@ -685,7 +681,6 @@ dem `break` am Ende wird verhindert, dass der fünfte Schleifendurchlauf überha
 Neben der for-Schleife kennt Python noch einen Schleifentyp – die `while`-Schleife. Diese läuft so lange, bis die
 Bedingung im Kopfteil erfüllt ist:
 
-
 ```python:control-while-loop.py
 i = 0
 while i != 10:
@@ -698,7 +693,6 @@ Okay, das Beispiel ist jetzt nicht der Bringer. Aber du verstehst hoffentlich, w
 grundsätzlich ihr Programm stupide ab, während die While-Schleife bei jedem Durchlauf die Bedingung des Kopfteils prüft.
 Wenn du also vor der Schleife schon weißt, wie oft sie durchlaufen werden soll, dann ist die For-Schleife meist richtig.
 Wenn du das nicht weißt, dann die While-Schleife. Mit der While-Schleife kann man wunderbar eine endlos-Schleife bauen:
-
 
 ```python:inifint-while-loop.py
 while True:
@@ -776,11 +770,11 @@ dass muss man also einfach ein bißchen selber gemacht haben.
 Wenn du damit klar kommst, dann kommt als nächstes, eine LED zum Leuchten zu bringen. Lass Dir dafür bitte die passenden
 Bauteile geben. Für die Mentoren - benötigt werden:
 
--   Lochraster,
--   Draht,
--   5mm LED rot,
--   220 Ω Widerstand und
--   4,5 V-Batterieadapter.
+- Lochraster,
+- Draht,
+- 5mm LED rot,
+- 220 Ω Widerstand und
+- 4,5 V-Batterieadapter.
 
 <Figure src="/images/kyo-7/Leiterbahnen_ziehen" alt="Leiterbahnen ziehen will geübt sein."/>
 
@@ -842,6 +836,7 @@ dafür keinen Taschenrechner mehr. Alles klar soweit? Wenn nicht, nicht schlimm.
 gerne.
 
 {{ figure(source="/images/kyo-7/LED-richtig.jpg", alt="So schaut das richtig aus mit der LED!") }}
+
 <Figure src="/images/kyo-7/LED-richtig.jpg" alt="So schaut das richtig aus mit der LED"/>
 
 Okay, wenn Deine LED leuchtet, soll es an dieser Stelle erstmal mit dem Kapitel löten gewesen sein. Beim nächsten Kyo
@@ -862,13 +857,11 @@ noch weitere findet und einbindet – du weißt, später). Das Modul für Zufall
 Es gibt zwei Möglichkeiten es einzubinden – entweder komplett oder nur den Befehl, den du wirklich brauchst. Das
 passiert ganz einfach:
 
-
 ```python:import-random.py
 import random
 ```
 
 Hier laden wir nur die Funktion `randrange` aus dem Modul `random`:
-
 
 ```python: import-randrange.py
 from random import randrange
@@ -883,7 +876,6 @@ deutlich vorzugswürdigere.
 
 Zurück zu unserer Aufgabe. Wie erstellen wir jetzt eine Zufallszahl? Wir wollen, dass `count1` eine Zufallszahl von 1
 bis 100 zugewiesen bekommt. Und damit wir sehen, dass das geht, lassen wir 20 solcher Zahlen ausgeben.
-
 
 ```python:random-number-generation.py
 from random import randrange
@@ -907,7 +899,6 @@ nächsten Teil. Jetzt könnten wir uns diese Ergebnisse in einer Liste auf einem
 den Variablentyp Liste. Der wird über zwei eckige Klammern definiert. Da können wir neue Daten aufstapeln, sie abrufen
 und löschen. Entweder wird eine Liste gleich mit Werten gefüllt. Dann sähe das so aus:
 
-
 ```python:greater-list.py
 greatList = ["Antonia", "Johannes", "Lukasz"]
 ```
@@ -915,13 +906,11 @@ greatList = ["Antonia", "Johannes", "Lukasz"]
 Mit `print(greatList)` können wir sie ausgeben. Die Datentypen innerhalb einer Liste können alle möglichen sein, auch
 gemischt. Eine Liste kann also auch so aussehen:
 
-
 ```python:greater-list.py
 greaterList = ["Antonio", 24, "Johannes"]
 ```
 
 Wenn wir ein bestimmtes Element ausgeben wollen, dass schreiben wir:
-
 
 ```python:greater-list-py
 greaterList = ["Antonia", "Johannes", "Lukasz"]
@@ -934,7 +923,6 @@ soll deshalb schon Menschen gegeben haben, die aus Gewohnheit mit dem Aufzug in 
 Taste „4“ gedrückt haben.
 
 Wie fügen wir jetzt ein neues Element an:
-
 
 ```python:greater-list.py
 greaterList = ["Antonia", "Johannes", "Lukasz"]
@@ -950,7 +938,6 @@ eine Liste enthält, dann geht das mit `anzahl = len(greaterList)`.
 
 Wenn du nicht geschmult hast, wird Dein Ergebnis vermutlich so oder ähnlich ausschauen:
 
-
 ```python:range-iteration.py
 list_of_Numbers = [52, 235, 235, 93]
 length = len(list_of_Numbers)
@@ -959,7 +946,6 @@ for i in range(length):
 ```
 
 Möglich wäre auch:
-
 
 ```python:inplace-range-iteration.py
 list_of_Numbers = [52, 235, 235, 93]
@@ -970,13 +956,11 @@ for i in range(len(list_of_Numbers)):
 Eingefleischten Pythonfans brennen jetzt die Augen (deshalb vergiss die beiden obigen Beispiele ganz schnell wieder).
 Der richtige Weg hierfür sind sogenannte List Comprehension. Das schaut so aus:
 
-
 ```python:comprehension-print.py
 [print(i) for i in [52, 235, 235, 93]]
 ```
 
 Jetzt wollten wir aber, dass die Zahl um 100 erhöht wird, also:
-
 
 ```python:comprehension-incremention.py
 list_of_Numbers = [52, 235, 235, 93]
@@ -1024,8 +1008,8 @@ ist Pflichtlektüre, den Rest willst du aber auch gelesen haben. Viele Witze unt
 nicht verstehen. Falls du schon alle fünf Bände kennen solltest und im Original gelesen hast, solltest du Dir in einer
 Bibliothek die BBC-Fernsehserie besorgen.
 
-
 {{ figure(source="/images/kyo-7/Matrix-logo.png", float="end", alt="Matrix") }}
+
 <Figure src="/images/kyo-7/Matrix-logo.png" alt="Matrix"/>
 
 Unsere Filmempfehlung zum 8. Kyo sind die drei Teile von Matrix. Auch hier gilt – Filme sind wie Bücher eine gute
@@ -1069,7 +1053,6 @@ dieselben Codestücke mehrfach brauchst. Für beides helfen Funktionen. Eine Fun
 aufgerufen wird und sie kann (muss aber nicht!) Parameter mitbekommen und kann auch Ergebnisse zurückgeben. Das schauen
 wir uns gleich mal im Code an:
 
-
 ```python:print-hello-func.py
 def hallo():
     print("Hallo")
@@ -1078,7 +1061,6 @@ hallo()
 ```
 
 Jetzt bauen wir eine `printStrich`-Funktion, die immer über und unter dem Text einen Strich setzt:
-
 
 ```python:print-content.py
 def printStrich(content):
@@ -1091,7 +1073,6 @@ printStrich("Hallo")
 
 Und jetzt wollen wir noch Werte zurückgeben.
 
-
 ```python:add.py
 def add(a, b):
     c = a + b
@@ -1102,14 +1083,12 @@ print(add(a,b))
 
 Bei solchen Funktionen kann sogar direkt im `return` gerechnet werden:
 
-
 ```python:add.py
 def add(a, b):
     return a + b
 ```
 
 Und als letztes Beispiel:
-
 
 ```python:tuple-return.py
 def calc(a,b):
@@ -1243,7 +1222,6 @@ verwenden. Besser wäre schon:
 Wenn es zum except-Teil kommt, weißt du jetzt, in welcher Zeile das Problem auftritt. Aber, das, was wir hier sehen, ist
 immer noch nicht so, wie du es verwenden solltest. Dieser kurze Code soll Dir das Problem zeigen (nicht abtippen!):
 
-
 ```python:failsave.py
 while True:
     try:
@@ -1254,7 +1232,6 @@ while True:
 
 Hier kommst du regelmäßig nicht mehr aus dem Programm raus. Das Problem ist, dass du mit Strg-C den Code nicht gleich
 abbrechen kannst. Nicht gut. Deshalb gewöhne Dir bitte an:
-
 
 ```python:failsave.py
 while True:
@@ -1279,7 +1256,6 @@ die Tasten.
 Zunächst einmal kannst du anderen helfen, wenn du Code schreibst, ihn lesbar zu machen. Dafür verwendet man Kommentare.
 Einen Kommentar wertet Python nicht aus. Er ist „nur“ für den Mensch hinter dem Code.
 
-
 ```python:failsave.py
 print("Quatsch") # diese Zeile druckt Quatsch
 # das wertet Python nicht aus
@@ -1299,6 +1275,7 @@ Als Faustformel - stell dir einfach die Frage, ob wenn du in drei Monaten auf de
 verstehst bzw. was da stehen müsstest, damit du zumindest deinen eigenen Code wieder verstehst.
 
 {{ figure(source="/images/kyo-7/Code-Kommentare.jpg", float="end", alt="Da wäre ein Kommentar hilfreich gewesen...") }}
+
 <Figure src="/images/kyo-7/Code-Kommentare.jpg" alt="Da wäre ein Kommentar hilfreich gewesen..."/>
 
 Daneben kann man Kommentar super nutzen, um Teile des Codes kurz nicht zu verwenden, ohne sie gleich löschen zu müssen.
@@ -1310,13 +1287,13 @@ Machst du das mit auskommentierten Code, wird er wieder aktiv.
 Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst natürlich in unserem
 [Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org).
 
--   Falls du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes empfehlen:
+- Falls du ein Freund von Büchern bist, würden wir Dir am Anfang folgendes empfehlen:
 
-    -   als Anfängerlektüre: Hauke Fehr, \<Let`s code\> Python
+  - als Anfängerlektüre: Hauke Fehr, \<Let`s code\> Python
 
-    -   zum Nachschlagen: Johannes Ernesti, Python3
+  - zum Nachschlagen: Johannes Ernesti, Python3
 
-    -   zum Üben: Luigi Lo Iacono, Stephan Wiefling und Michael Schneider, Programmieren trainieren
+  - zum Üben: Luigi Lo Iacono, Stephan Wiefling und Michael Schneider, Programmieren trainieren
 
 Viele Bibliotheken sind da gut ausgestattet. Schau da mal vorbei. Für die Berliner – welche Bibliothek was hat, kannst
 du Dir aus [voebb.de](https://voebb.de) anschauen. Gerade die Berliner Stadtbibliothek in der Breite Straße, Nähe
@@ -1324,7 +1301,7 @@ Alexanderplatz, ist außergewöhnlich gut ausgestattet.
 
 Als Webseiten empfehlen wir:
 
--   [python-kurs.eu](https://python-kurs.eu)
+- [python-kurs.eu](https://python-kurs.eu)
 
 Die Liste werden wir noch erweitern.
 
@@ -1372,19 +1349,19 @@ nach du Unterstützung bekommen hast.
 
 Der Weißgurt ist zum Greifen nahe. Schaffst du die folgenden Fragen beziehungsweise Aufgaben?
 
--   Schreibe das Spiel „Galgenmännchen“. Falls du es nicht kennst, lies Dir bitte den entsprechenden Wikipedia-Artikel
-    durch. Lege eine Liste mit mindestens 20 Wörtern an, aus der für jedes Spiel ein zufälliges Wort ausgewählt wird.
-    Der Spieler sieht die Anzahl der Buchstaben und kann immer einen Buchstaben raten. Fehlerhafte geratene Buchstaben
-    werden in einer Zeile aufgezeigt, richtig geratene in das Lösungswort eingesetzt. Kommt es zu einem Fehler, wird in
-    ASCII-Art ein Galgenmännchen in 15 Stufen gezeichnet. Wenn es Dir lieber ist, kannst du das Galgenmännchen auch mit
-    turtle zeichnen.
+- Schreibe das Spiel „Galgenmännchen“. Falls du es nicht kennst, lies Dir bitte den entsprechenden Wikipedia-Artikel
+  durch. Lege eine Liste mit mindestens 20 Wörtern an, aus der für jedes Spiel ein zufälliges Wort ausgewählt wird.
+  Der Spieler sieht die Anzahl der Buchstaben und kann immer einen Buchstaben raten. Fehlerhafte geratene Buchstaben
+  werden in einer Zeile aufgezeigt, richtig geratene in das Lösungswort eingesetzt. Kommt es zu einem Fehler, wird in
+  ASCII-Art ein Galgenmännchen in 15 Stufen gezeichnet. Wenn es Dir lieber ist, kannst du das Galgenmännchen auch mit
+  turtle zeichnen.
 
--   Was ist der einzige Zweck der Erde?
+- Was ist der einzige Zweck der Erde?
 
--   Schreibe eine Funktion, mit der du mithilfe der Leibniz-Formel Pi berechnest. Dabei kannst du von folgender
-    Berechnung ausgehen:
+- Schreibe eine Funktion, mit der du mithilfe der Leibniz-Formel Pi berechnest. Dabei kannst du von folgender
+  Berechnung ausgehen:
 
-    $$\pi = \frac{4}{1} - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9}$$
+  $$\pi = \frac{4}{1} - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9}$$
 
 Du siehst, dass der Zähler bei 4 bleibt, während sich der Nenner um 2 erhöht. Die Werte werden abwechselnd addiert und
 subtrahiert, so dass man sich immer mehr $\pi$ annähert. Die Funktion sollte einen Wert annehmen, der die Anzahl der
@@ -1392,14 +1369,14 @@ Teile der Formel angibt. Um so höher dieser ist, um so genauer wird $\pi$. Vers
 Formel hin anzunähern. Vergleiche das Ergebnis beispielsweise mit dem Ergebnis auf dem
 [Wikipedia-Artikel „Kreiszahl“](https://de.wikipedia.org/wiki/Kreiszahl).
 
--   Was ist ein Vogel?
+- Was ist ein Vogel?
 
--   Zeichne mit turtle ein Dreieck und lasse es von rechts nach links über den Bildschirm „schweben“ (Der Kurs wird noch
-    um ein Kapitel mit turtle ergänzt).
+- Zeichne mit turtle ein Dreieck und lasse es von rechts nach links über den Bildschirm „schweben“ (Der Kurs wird noch
+  um ein Kapitel mit turtle ergänzt).
 
--   Erweitere Deine LED-Schaltung um einen kleinen Schalter.
+- Erweitere Deine LED-Schaltung um einen kleinen Schalter.
 
--   Was ist die halbe Wahrheit?
+- Was ist die halbe Wahrheit?
 
 Falls du an einer Aufgabe festhängst – hei, kein Problem. Lass uns gemeinsam drauf schauen, woran es hakt. Du schaffst
 das! Und falls du bei den Nicht-Programmieraufgaben nicht weiterkommst, lehnst du Dich entspannt zurück und nimmst Dir
@@ -1412,38 +1389,38 @@ Dich sein – das hier wahr schon eine ganze Menge neuer Stoff.
 
 Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
 
--   print("foo"): Gibt eine Zeile auf dem Bildschirm aus.
+- print("foo"): Gibt eine Zeile auf dem Bildschirm aus.
 
--   for i in foo: Schleife zur Wiederholung einer Sequenz.
+- for i in foo: Schleife zur Wiederholung einer Sequenz.
 
--   range(a, b, c): Generiert eine interierbare Liste, welche super in Kombination mit der for-Schleife funktioniert.
-    Der erste Wert steht für den Startwert, der zweite für den Endwert und der dritte für die Schrittweite.
+- range(a, b, c): Generiert eine interierbare Liste, welche super in Kombination mit der for-Schleife funktioniert.
+  Der erste Wert steht für den Startwert, der zweite für den Endwert und der dritte für die Schrittweite.
 
--   while: hast du als Schleife mit Bedingung verwendet.
+- while: hast du als Schleife mit Bedingung verwendet.
 
--   Mit break und continue kannst du Schleifen besser steuern.
+- Mit break und continue kannst du Schleifen besser steuern.
 
--   input("foo"): Liest eine Benutzerineingabe von der Kommandozeile ein.
+- input("foo"): Liest eine Benutzerineingabe von der Kommandozeile ein.
 
--   if / elif / else: Wenn / dann / sonst - Bedingungen
+- if / elif / else: Wenn / dann / sonst - Bedingungen
 
--   Die Stringformatierung f"foo {bar}" hast du schon verwendet.
+- Die Stringformatierung f"foo {bar}" hast du schon verwendet.
 
--   Du kennst jetzt die Rechenoperationen +, -, /, //, \*, \*\* und %.
+- Du kennst jetzt die Rechenoperationen +, -, /, //, \*, \*\* und %.
 
--   Du hast die Datentypen String (str) für Zeichen, Integer (int) für ganze Zahlen und Float (float) für
-    Gleitkommazahlen und kennengelernt.
+- Du hast die Datentypen String (str) für Zeichen, Integer (int) für ganze Zahlen und Float (float) für
+  Gleitkommazahlen und kennengelernt.
 
--   Mit [foo] kannst du schon Listen erzeugen. Und mit list.append hast du Elemente einer Liste hinzugefügt.
+- Mit [foo] kannst du schon Listen erzeugen. Und mit list.append hast du Elemente einer Liste hinzugefügt.
 
--   def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst du Werte zurückgeben.
+- def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst du Werte zurückgeben.
 
--   try / except hat Dir eine erste Einführung im Abfangen von Fehlern gegeben.
+- try / except hat Dir eine erste Einführung im Abfangen von Fehlern gegeben.
 
--   Mit `from <Modul> import <Funktion>` hast du die erste Bibliothek eingelesen und gleich mit
-    `from random import randrange` Zufallszahlen generiert.
+- Mit `from <Modul> import <Funktion>` hast du die erste Bibliothek eingelesen und gleich mit
+  `from random import randrange` Zufallszahlen generiert.
 
--   Kommentare kannst du mit drei Hochkommata oder \# schreiben.
+- Kommentare kannst du mit drei Hochkommata oder \# schreiben.
 
--   Und nicht zuletzt kennst du die Antwort auf alle Fragen und weißt, ob du die blaube oder die rote Pille nehmen
-    sollst.
+- Und nicht zuletzt kennst du die Antwort auf alle Fragen und weißt, ob du die blaube oder die rote Pille nehmen
+  sollst.
