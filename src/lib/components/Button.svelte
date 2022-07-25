@@ -34,7 +34,11 @@
 
 <style lang="postcss">
   .button {
-    @apply flex items-center justify-between gap-3 rounded border-0 text-slate-100 no-underline transition-all duration-500 ease-in-out focus:outline-none;
+    @apply flex items-center justify-between gap-3 rounded border-0 no-underline transition-all duration-500 ease-in-out focus:outline-none;
+  }
+
+  .button {
+    @apply text-slate-100 hover:text-slate-300 !important;
   }
 
   /* Size variants */
