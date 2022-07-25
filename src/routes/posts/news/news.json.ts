@@ -6,7 +6,7 @@ import { routeMapper, TitleRegex, FrontmatterRegex } from "$lib/toc.js";
 const DescriptionRegex = new RegExp(/^(description|summary) *= *["'](?<description>.+)['"] *$/m);
 const DateRegex = new RegExp(/^date *= *(?<date>[0-9]{2,4}-[0-9]{2}-[0-9]{2}) *$/m);
 
-export async function get() {
+export async function GET() {
   // collection of news interface
   let news = [];
 

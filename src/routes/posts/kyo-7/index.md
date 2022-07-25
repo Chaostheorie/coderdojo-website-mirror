@@ -515,7 +515,7 @@ sie explizit, also mit Variablentyp. Keine Sorge, wir werden das Thema noch übe
 ist an dieser Stelle, dass du schon davon gehört hast und versucht, einen Blick dafür zu entwickeln, mit was für einem Variablentyp
 du es gerade zu tun hast. Im Code kannst du immer mit `type(Variablenname)` auswerfen lassen, wie Python ihn gerade behandelt.
 
-<Figure src="/images/kyo-7/SolarpanelBp_a.jpg" alt="Solarzellen
+<Figure src="/images/kyo-7/SolarpanelBp_a.jpeg" alt="Solarzellen
  werden mittels Lötbändchen zu Strängen,<br> den sogeannten Strings verbunden" />
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch Stringspielereien. Wie man zwei Strings wie `"ot"` `"to"`
@@ -577,7 +577,7 @@ Daten die von Unternehmen gesammelt werden können, bleiben im Zweifel dort und 
 verloren. Vielleicht interessiert Dich jetzt ein Mensch und später möchtest du damit nicht später aufgezogen werden. Um
 das bildlicher zu machen – stell Dir vor, Dein Eltern schauen Dir die ganze Zeit über die Schultern …
 
-<Figure src="/images/kyo-7/children-593313_s.jpg" alt="Den richtigen Browser gefunden!"" />
+<Figure src="/images/kyo-7/children-593313_s.jpg" alt="Den richtigen Browser gefunden!" />
 
 Es gibt Browser, die besonders gerne Daten sammeln und manche auch nach Hause schicken. Ebenso gibt es Browser, die
 anderen Seiten es leichter oder schwerer machen, dies zu erkennen, wer du bist. Aktuell empfehlen wir Dir Brave zu
@@ -620,8 +620,6 @@ sein. Sprich mit Deinen Eltern -- und wenn sie nichts dagegen haben, klick Dir b
 matrix.cyber4edu.org einen kostenlosen Account. Für Matrix gibt es verschiedenste Clients, die auf dem PC, im Browser
 oder auf dem Handy laufen. Der bekannteste nennt sich Element. Lade Dir den runter und richte ihn Dir ein. Uns findest
 du unter [@coderdojo:matrix.cyber4edu.org](https://matrix.to/#/@coderdojo:chat.cyber4edu.org).
-
-{{ figure(source="/images/kyo-7/Cyber4EDU_sticker.png", float="end", alt="cyber4EDU Logo") }}
 
 <Figure src="/images/kyo-7/Cyber4EDU_sticker.png" alt="cyber4EDU Logo"/>
 
@@ -776,7 +774,7 @@ Bauteile geben. Für die Mentoren - benötigt werden:
 - 220 Ω Widerstand und
 - 4,5 V-Batterieadapter.
 
-<Figure src="/images/kyo-7/Leiterbahnen_ziehen" alt="Leiterbahnen ziehen will geübt sein."/>
+<Figure src="/images/kyo-7/Leiterbahnen_ziehen.jpg" alt="Leiterbahnen ziehen will geübt sein."/>
 
 Strom braucht zum Fließen immer einen Stromkreis. Manche Bauelemente können Strom nur durch eine Richtung durchlassen,
 so wie die LED. Wenn die LED also mal nicht leuchtet - probiere sie mal zu drehen. Die mag es aber nicht wirklich,
@@ -791,7 +789,7 @@ Wasser durchfließen, wie durch eine große Röhre. Stell Dir jetzt vor, die LED
 man da zuviel Wasser durch, platzt es. Das verhindern wir mit dem Widerstand. Hier eine kleine Zeichnung dazu:
 (Zeichnung ist in Arbeit)
 
-<Platzhalter Wasserkreislauf>
+== Platzhalter Wasserkreislauf ==
 
 Solche Zeichnungen stellt man technisch mit sogenannten Schaltplänen dar. Dabei haben bestimmte Bauelemente fest
 definierte Zeichen. Die kleine Schaltung, die du Dir zurecht gelötet hast, schaut dann so aus:
@@ -835,8 +833,6 @@ ein Programm. Mit der Zeit kannst du da noch andere Werte für andere LEDs reinp
 dafür keinen Taschenrechner mehr. Alles klar soweit? Wenn nicht, nicht schlimm. Deine Mentor:innen vor Ort helfen Dir da
 gerne.
 
-{{ figure(source="/images/kyo-7/LED-richtig.jpg", alt="So schaut das richtig aus mit der LED!") }}
-
 <Figure src="/images/kyo-7/LED-richtig.jpg" alt="So schaut das richtig aus mit der LED"/>
 
 Okay, wenn Deine LED leuchtet, soll es an dieser Stelle erstmal mit dem Kapitel löten gewesen sein. Beim nächsten Kyo
@@ -863,7 +859,7 @@ import random
 
 Hier laden wir nur die Funktion `randrange` aus dem Modul `random`:
 
-```python: import-randrange.py
+```python:import-randrange.py
 from random import randrange
 ```
 
@@ -1007,8 +1003,6 @@ in fünf Bänden. Wenn Dein Englisch gut genug ist, lies es im Original. Sonst h
 ist Pflichtlektüre, den Rest willst du aber auch gelesen haben. Viele Witze unter Nerds lassen sich ohne diese Literatur
 nicht verstehen. Falls du schon alle fünf Bände kennen solltest und im Original gelesen hast, solltest du Dir in einer
 Bibliothek die BBC-Fernsehserie besorgen.
-
-{{ figure(source="/images/kyo-7/Matrix-logo.png", float="end", alt="Matrix") }}
 
 <Figure src="/images/kyo-7/Matrix-logo.png" alt="Matrix"/>
 
@@ -1194,7 +1188,7 @@ automatisiert auslesen kannst. Das ist bei größeren Projekten sehr charmant. A
 richtig an, das spart dir später einige Mühen... Und auch wenn die Kommentare hier in Deutsch sind - wenn möglich, dann
 verwende auch da Englisch.
 
-### Übungen {#übungen-1 .unnumbered}
+### Übungen
 
 Als Erstes nimmst du Dir jetzt bitte den Grundumsatzrechner und packst die Berechnung in eine Funktion. Die Abfrage an
 die Benutzenden lässt du im Hauptprogramm stehen.
@@ -1273,8 +1267,6 @@ und schneller aus etwas Text ergeben.
 
 Als Faustformel - stell dir einfach die Frage, ob wenn du in drei Monaten auf den Code schaust, du noch ohne Kommentar
 verstehst bzw. was da stehen müsstest, damit du zumindest deinen eigenen Code wieder verstehst.
-
-{{ figure(source="/images/kyo-7/Code-Kommentare.jpg", float="end", alt="Da wäre ein Kommentar hilfreich gewesen...") }}
 
 <Figure src="/images/kyo-7/Code-Kommentare.jpg" alt="Da wäre ein Kommentar hilfreich gewesen..."/>
 

@@ -9,6 +9,7 @@ function escapePlugin() {
     visit(tree, "text", (node) => {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       node.value = node.value.replace(/>/g, "&gt;").replace(/</g, "&lt;");
+      node.value = node.value.replace(/{/g, "&lbrace;").replace(/}/g, "&rbrace;");
     });
   };
 }

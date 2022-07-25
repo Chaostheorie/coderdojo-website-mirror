@@ -18,6 +18,13 @@ function title(str) {
   return str[0].toUpperCase() + str.substr(1);
 }
 
+// partition string at first occurence of ":"
+function partitionLanguage(language) {
+  const parts = language.split(":");
+
+  return [parts[0], parts.splice(1).join(":")];
+}
+
 /**
  * Hightlight code blocks with Prism.js and optional header support
  * Source code blocks may have an associated filename as part of the language name (syntax: lang[:filename])
@@ -30,7 +37,7 @@ function highlight(code, lang) {
   const code_lang =
     lang !== null
       ? /[a-z]+:.+/.test(lang)
-        ? lang.split(":").slice(0, 2)
+        ? partitionLanguage(lang)
         : [lang, `${lang} code`]
       : ["", "plain text"];
 
