@@ -1,5 +1,5 @@
 <script>
-  import tocCache from "../.toc-cache.json";
+  import toccache from "../.toc-cache.json";
   import Meta from "./components/Meta.svelte";
   import Wip from "./navigation/WIP.svelte";
   import TocDropdown from "./components/TocDropdown.svelte";
@@ -9,41 +9,42 @@
   export let title;
   export let description;
   export let summary;
-  $: metaDescription = description ? description : summary;
+  $: metadescription = description ? description : summary;
   export let draft = false;
   export let filename;
   export let prose = true;
-  export let showToc = true;
+  export let showtoc = true;
 
-  // helper for loading toc from tocCache
-  const loadToc = () => {
-    if (title === undefined || tocCache[title] === undefined || !showToc) {
+  // helper for loading toc from toccache
+  const loadtoc = () => {
+    if (title === undefined || toccache[title] === undefined || !showtoc) {
       return [null, null];
     }
 
-    // in case only one file is associated with the title -> use TocList
-    const keys = Object.keys(tocCache[title]);
+    // in case only one file is associated with the title -> use toclist
+    const keys = Object.keys(toccache[title]);
     if (keys.length === 1) {
-      return [true, tocCache[title][keys[0]].headings];
+      return [true, toccache[title][keys[0]].headings];
     }
 
-    // otherwise use full-blown TocDropdown
+    // otherwise use full-blown tocdropdown
     return [
       false,
-      Object.entries(tocCache[title])
+      object
+        .entries(toccache[title])
         // ensure only entries with headings are used - they shouldn't exist ... but ya know
         .filter(([_, data]) => data.headings.length > 0)
         // extract first headline and transform into easily renderable format
-        .map(([entryFilename, data]) => {
-          return [entryFilename, data.headings.shift(), data.headings, data.path];
+        .map(([entryfilename, data]) => {
+          return [entryfilename, data.headings.shift(), data.headings, data.path];
         })
     ];
   };
 
-  const [tocList, toc] = loadToc();
+  const [toclist, toc] = loadtoc();
 </script>
 
-<Meta {title} description={metaDescription} />
+<Meta {title} description={metadescription} />
 
 {#if !draft}
   <div class="flex gap-3 w-full flex-col md:flex-row items-center md:items-start">
@@ -54,16 +55,16 @@
             <div class="font-bold text-xl tracking-wide">{title}</div>
 
             <div class="toc-inner-container">
-              {#if tocList}
+              {#if toclist}
                 <TocList headings={toc} />
               {:else}
-                {#each toc as [entryFilename, firstHeading, headings, targetUrl]}
+                {#each toc as [entryfilename, firstheading, headings, targeturl]}
                   <TocDropdown
-                    collapsed={entryFilename !== filename}
-                    active={entryFilename === filename}
+                    collapsed={entryfilename !== filename}
+                    active={entryfilename === filename}
                     {headings}
-                    {firstHeading}
-                    {targetUrl}
+                    {firstheading}
+                    {targeturl}
                   />
                 {/each}
               {/if}
@@ -83,4 +84,5 @@
   </div>
 {:else}
   <Wip />
+  <slot />
 {/if}

@@ -52,7 +52,7 @@ function highlight(code, lang) {
 		  </button>
 		  ${
         code_lang[0] === "python"
-          ? `<button class="codetitle-btn" type="button" onclick="window.run_playground('${id}', this)" data-title="${encodeURIComponent(
+          ? `<button class="codetitle-btn hidden" type="button" onclick="window.run_playground('${id}', this)" data-title="${encodeURIComponent(
               code_lang[1]
             )}"><div class="sr-only">Execute Code in Playground</div>${play_phosphor_icon}</button>`
           : ""

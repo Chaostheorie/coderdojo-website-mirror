@@ -12,7 +12,9 @@ import { highlight } from "./src/lib/codetitle.js";
 
 const config = defineConfig({
   extensions: [".svelte.md", ".md"],
-  //  layout: "./src/lib/mdsvex.layout.svelte",
+  layout: {
+    _: "./src/lib/mdsvex.layout.svelte"
+  },
   smartypants: {
     dashes: "oldschool",
     backticks: true,

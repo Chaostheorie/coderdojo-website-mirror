@@ -2,7 +2,7 @@
   <span class="codetitle-btn-group"><button class="codetitle-btn"><svg>;</svg></button></span>
 </div>
 
-<div class="w-8 h-8 active" />
+<div class="w-8 h-8 active " />
 <span class="sr-only" />
 
 <div class="admonition admonition-tip alert alert--success">
