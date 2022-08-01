@@ -30,8 +30,7 @@
     // otherwise use full-blown tocdropdown
     return [
       false,
-      object
-        .entries(toccache[title])
+      Object.entries(toccache[title])
         // ensure only entries with headings are used - they shouldn't exist ... but ya know
         .filter(([_, data]) => data.headings.length > 0)
         // extract first headline and transform into easily renderable format
@@ -58,13 +57,13 @@
               {#if toclist}
                 <TocList headings={toc} />
               {:else}
-                {#each toc as [entryfilename, firstheading, headings, targeturl]}
+                {#each toc as [entryFilename, firstHeading, headings, targetUrl]}
                   <TocDropdown
-                    collapsed={entryfilename !== filename}
-                    active={entryfilename === filename}
+                    collapsed={entryFilename !== filename}
+                    active={entryFilename === filename}
                     {headings}
-                    {firstheading}
-                    {targeturl}
+                    {firstHeading}
+                    {targetUrl}
                   />
                 {/each}
               {/if}
