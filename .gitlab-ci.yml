@@ -77,22 +77,22 @@ Lint:
         - rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc
           --delete  ./public/*  "$CD_DIST_USER@$CD_DIST_HOST:"
 
-CD:Red:
+CD:Red-Alternate:
     <<: *rs-deploy
     stage: deploy
     environment:
         name: production-1
-        url: https://coderdojo.red
+        url: https://v2.coderdojo.red
     variables:
-        DOMAIN: coderdojo.red
-        KEY: '$CD_RED_PRIVATE_KEY'
+        DOMAIN: v2.coderdojo.red
+        KEY: '$CD_RED_V2_PRIVATE_KEY'
 
-CD:Blue:
+CD:Blue-Alternate:
     <<: *rs-deploy
     stage: deploy
     environment:
         name: production-2
-        url: https://coderdojo.blue
+        url: https://v2.coderdojo.blue
     variables:
-        DOMAIN: coderdojo.blue
-        KEY: '$CD_BLUE_PRIVATE_KEY'
+        DOMAIN: v2.coderdojo.blue
+        KEY: '$CD_BLUE_V2_PRIVATE_KEY'
