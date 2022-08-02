@@ -1,4 +1,4 @@
-[![Website Status for coderdojo.red](https://img.shields.io/website?down_color=gray&down_message=DOWN&label=Red&logo=nginx&style=flat-square&up_color=red&up_message=UP&url=https%3A%2F%2F.coderdojo.red)](https://coderdojo.red)
+[![Website Status for coderdojo.red](https://img.shields.io/website?down_color=gray&down_message=DOWN&label=Red&logo=nginx&style=flat-square&up_color=red&up_message=UP&url=https%3A%2F%2Fcoderdojo.red)](https://coderdojo.red)
 [![Website Status for coderdojo.blue](https://img.shields.io/website?down_color=gray&down_message=DOWN&label=Blue&logo=nginx&style=flat-square&up_color=blue&up_message=UP&url=https%3A%2F%2Fcoderdojo.blue)](https://coderdojo.blue)
 [![Pipeline Status](https://img.shields.io/gitlab/pipeline/coderdojo/coderdojo-website/koneko?gitlab_url=https%3A%2F%2Fgitlab.cobalt.rocks&label=Build&logo=gitlab&style=flat-square)](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/pipelines)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&logo=prettier)](https://github.com/prettier/prettier)
