@@ -17,7 +17,6 @@
         <Logo w={10} h={10} />
         <span> CoderDōjō <span>R & B</span></span>
       </a>
-      <p>Evtl. eine Beschreibung</p>
     </div>
     <div class="footer-section-container">
       <div class="footer-section ">
