@@ -41,7 +41,7 @@
       <div class="footer-section">
         <span>Schnellzugriffe</span>
         <ul>
-          <li>
+          <li class="hidden">
             <a disabled href="/rss.xml"><Rss size={16} /> RSS Feed</a>
           </li>
           <li>
