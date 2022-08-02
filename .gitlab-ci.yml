@@ -86,7 +86,7 @@ CD:Red:
   <<: *rs-deploy
   stage: Deploy
   environment:
-    name: production-1-v2
+    name: production-1
     url: https://coderdojo.red
   variables:
     DOMAIN: coderdojo.red
@@ -97,7 +97,7 @@ CD:Blue:
   <<: *rs-deploy
   stage: Deploy
   environment:
-    name: production-2-v2
+    name: production-2
     url: https://coderdojo.blue
   variables:
     DOMAIN: coderdojo.blue
