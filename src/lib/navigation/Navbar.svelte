@@ -15,16 +15,16 @@
   let sidebar_open = false;
 
   const sidebarLinks: [string, unknown, string, (arg: string) => boolean | null][] = [
-    ["/posts/dojo/", Student, "Workshops", null],
-    ["/posts/dojo/", Code, "Einführung", null],
-    ["/posts/about/", Code, "Mentoren", null],
     ["/posts/news/", Newspaper, "News", null],
+    ["/posts/dojo/", Code, "Einführung", null],
     [
       "/posts/kyus/",
       ListNumbers,
       "Kyus",
       (arg: string) => arg.includes("kyo") || arg.includes("kyu")
-    ]
+    ],
+    ["/posts/workshops/", Student, "Workshops", null],
+    ["/posts/about/", Code, "Mentoren", null]
   ];
 </script>
 

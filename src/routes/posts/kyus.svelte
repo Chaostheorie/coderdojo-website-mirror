@@ -10,7 +10,7 @@
       "7. Kyo – Weißgurt",
       "white",
       "/posts/kyo-7/",
-      "Hier siehst du gerade den ersten und noch nicht vollständigen Aufschlag für den Gelbgurt. Wir freuen uns über Fehlerkorrekturen! Wenn du das Gefühl hast, hier etwas nicht nachzuvollziehen zu können, schreib uns bitte oder sprich uns beim CoderDojo an, damit wir das Script verbessern können. Wenn du es nicht verstehst, liegt es nicht an Dir und anderen wird es auch so gehen. Lass es uns gemeinsam für die nächsten Leser:innen besser machen."
+      "Hier siehst du gerade den ersten Aufschlag für den Weißgurt. Wir freuen uns über Fehlerkorrekturen! Wenn du das Gefühl hast, hier etwas nicht nachzuvollziehen zu können, schreib uns bitte oder sprich uns beim CoderDojo an, damit wir das Script verbessern können. Wenn du es nicht verstehst, liegt es nicht an Dir und anderen wird es auch so gehen. Lass es uns gemeinsam für die nächsten Leser:innen besser machen."
     ],
     [
       6,
