@@ -13,8 +13,8 @@ date = 2022-04-30
 # Mentoren
 
 :::tip Hinweis
-Das wichtigste vorab: Mentor:innen gesucht! Wenn Du gleich welche Sprache programmieren kannst oder weißt auf welcher
-Seite der Lötkolben heiss wird und Interesse an der Arbeit mit Kindern und Jugendlichen hast - melde Dich bei uns.
+Das wichtigste vorab: Mentor:innen gesucht! Wenn du gleich welche Sprache programmieren kannst oder weißt auf welcher
+Seite der Lötkolben heiss wird und Interesse an der Arbeit mit Kindern und Jugendlichen hast - melde dich bei uns. Dies gilt insbesondere, wenn du Interesse daran hättest, diese Seite weiter auf- und auszubauen!
 :::
 
 ## derMicha
