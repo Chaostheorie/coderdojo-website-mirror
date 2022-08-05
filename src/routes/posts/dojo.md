@@ -163,7 +163,7 @@ Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen bez
 
 ## Los geht 's
 
-[Hier geht es direkt zum ersten Gurt.](https://coderdojo.red/kyo-7/)
+[Hier geht es direkt zum ersten Gurt.](https://coderdojo.red/posts/kyo-7/)
 
 ### Bildnachweise
 
