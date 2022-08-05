@@ -23,11 +23,11 @@
       Matrix verabreden oder austauschen. Schau einfach unter News nach, was aktuell ansteht.
     </p>
     <div class="flex flex-row justify-center btn-group">
-      <Button href="/posts/kyo-7/">
-        Mehr übers Dojo <Info size={24} />
+      <Button href="/posts/news/">
+        News zum Dojo <Info size={24} />
       </Button>
-      <Button href="/posts/kyo-7/">
-        Zum 7. Kyu <Arrow size={24} />
+      <Button href="/posts/dojo/">
+        Zur Einführung<Arrow size={24} />
       </Button>
     </div>
   </div>
