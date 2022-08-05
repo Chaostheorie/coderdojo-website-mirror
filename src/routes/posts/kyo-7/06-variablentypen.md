@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Variablentypen und Stringspielereien
 
 Inzwischen hast du schon recht viel mit Variablen gearbeitet. Ist Dir dabei aufgefallen, dass bei einem

@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Jetzt knallt ’s
 
 Du hast ja bereits gesehen, dass Dein Code abstürzen kann. Meist hat das zwei Ursachen – entweder du hast einen Fehler

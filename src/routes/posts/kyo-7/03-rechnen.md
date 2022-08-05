@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Rechnen
 
 Computer heißen nicht umsonst auch Rechner. Der Begriff kommt übrigens nur scheinbar aus dem Englischen - er leitet sich

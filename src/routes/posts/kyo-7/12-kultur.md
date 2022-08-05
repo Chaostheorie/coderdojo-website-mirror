@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Kultur
 
 In der Einführung haben wir das versucht schon anklingen zu lassen -- uns geht es um mehr, als nur darum zu lernen, ein

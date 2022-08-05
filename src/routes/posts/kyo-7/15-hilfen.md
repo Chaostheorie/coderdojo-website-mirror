@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Hilfen
 
 Zunächst einmal kannst du anderen helfen, wenn du Code schreibst, ihn lesbar zu machen. Dafür verwendet man Kommentare.

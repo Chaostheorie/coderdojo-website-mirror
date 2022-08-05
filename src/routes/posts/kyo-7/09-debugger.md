@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Debugger
 
 > "Außerdem müssen wir offen sagen: [...] Programmieren lernen tut weh, weil jeder daran scheitert, scheitert,

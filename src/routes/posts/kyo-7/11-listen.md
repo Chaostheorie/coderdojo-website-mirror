@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Listen
 
 Als Erstes eine Fingerübung: Wir wollen das „große“ Einmaleins üben – also die Multiplikationsreihen von $1\times 1$ bis

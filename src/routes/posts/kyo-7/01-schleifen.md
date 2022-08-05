@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Schleifen
 
 Als Nächstes wollen wir dieses „Hello World“ zehnmal ausgeben. Eine einfache Methode wäre jetzt sowas:

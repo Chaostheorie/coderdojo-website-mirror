@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Zusammenfassung
 
 Hier noch einmal kurz die im 7. Kyo gelernten Befehle:

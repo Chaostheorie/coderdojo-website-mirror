@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Benennung von Variablen
 
 Muss das eigentlich ein „`i`“ sein? Nein. Erlaubt ist für Variablen eine Menge. du kannst groß- und kleinschreiben,

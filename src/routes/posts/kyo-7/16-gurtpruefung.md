@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 # Test
 
 Der Weißgurt ist zum Greifen nahe. Schaffst du die folgenden Fragen beziehungsweise Aufgaben?

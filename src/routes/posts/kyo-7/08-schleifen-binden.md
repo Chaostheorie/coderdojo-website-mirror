@@ -8,7 +8,6 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-
 ## Schleifen binden
 
 Wir wollen zum Thema Schleifen zurückkehren und lernen, wie wir die eleganter um Dinge herum binden können.
