@@ -26,15 +26,15 @@
             <a href="/imprint/"><Article size={16} /> Impressum</a>
           </li>
           <li>
-            <a href="https://cobalt.rocks/content/privacy/">
+            <a href="/privacy/">
               <LockKey size={16} /> Datenschutzrichtline
             </a>
           </li>
           <li>
-            <a href="/posts/copyright/"><Copyright size={16} /> Urheberrecht</a>
+            <a href="/copyright/"><Copyright size={16} /> Urheberrecht</a>
           </li>
           <li>
-            <a href="/posts/contact/"><User size={16} /> Kontakt</a>
+            <a href="/contact/"><User size={16} /> Kontakt</a>
           </li>
         </ul>
       </div>
@@ -55,7 +55,7 @@
             </a>
           </li>
           <li>
-            <a href="https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/tree/koneko">
+            <a href="https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/">
               <Code size={16} /> Quellcode
             </a>
           </li>
