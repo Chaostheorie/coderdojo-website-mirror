@@ -5,6 +5,7 @@
   export let color: "theme" | "theme-neutral" | "secondary" = "theme";
   export let size: "small" | "small-icon" | "medium" = "medium";
   export let opacity = 1.0;
+  export let hoverable = false;
 
   const dispatch = createEventDispatcher();
 </script>
@@ -14,6 +15,7 @@
     {href}
     class="button button-{color} button-{size}"
     style="--tw-bg-opacity: {opacity};"
+    class:button-hoverable={hoverable}
     on:click={(evt) => {
       dispatch("click", evt);
     }}
@@ -24,6 +26,7 @@
   <button
     class="button button-{color} button-{size}"
     style="--tw-bg-opacity: {opacity};"
+    class:button-hoverable={hoverable}
     on:click={(evt) => {
       dispatch("click", evt);
     }}
@@ -34,11 +37,15 @@
 
 <style lang="postcss">
   .button {
-    @apply flex items-center justify-between gap-3 rounded border-0 no-underline transition-all duration-500 ease-in-out focus:outline-none;
+    @apply flex items-center justify-between gap-2 rounded border-0 no-underline transition-all duration-500 ease-in-out focus:outline-none;
   }
 
   .button {
     @apply text-slate-100 hover:text-slate-300 !important;
+  }
+
+  .button-hoverable {
+    @apply hover:gap-3 hover:bg-theme-dark hover:text-slate-100 !important;
   }
 
   /* Size variants */

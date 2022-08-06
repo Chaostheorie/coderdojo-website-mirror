@@ -15,3 +15,4 @@
     <p />
   </div>
 </div>
+<button type="button" class="button-hoverable" />

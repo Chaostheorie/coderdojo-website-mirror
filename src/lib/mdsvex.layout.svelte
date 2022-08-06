@@ -5,6 +5,7 @@
   import Button from "./components/Button.svelte";
   import TocDropdown from "./components/TocDropdown.svelte";
   import TocList from "./components/TocList.svelte";
+  import ArrowRight from "phosphor-svelte/lib/ArrowRight";
 
   // data props
   export let title;
@@ -87,7 +88,9 @@
 
           {#if next}
             <div class="flex justify-center">
-              <Button href={next}>Weiter</Button>
+              <Button href={next} hoverable={true}>
+                Weiter <ArrowRight size={24} />
+              </Button>
             </div>
           {/if}
         </div>
@@ -97,7 +100,9 @@
 
       {#if next}
         <div class="flex justify-center">
-          <Button href={next}>Weiter</Button>
+          <Button href={next} hoverable={true}>
+            Weiter <ArrowRight size={24} />
+          </Button>
         </div>
       {/if}
     {/if}
