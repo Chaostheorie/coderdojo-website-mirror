@@ -24,7 +24,7 @@
       (arg: string) => arg.includes("kyo") || arg.includes("kyu")
     ],
     ["/posts/workshops/", Student, "Workshops", null],
-    ["/posts/about/", Code, "Mentoren", null]
+    ["/about/", Code, "Mentoren", null]
   ];
 </script>
 
