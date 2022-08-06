@@ -11,25 +11,31 @@
 </script>
 
 <div class="toc-dropdown">
-  <button
-    type="button"
-    class="toc-btn"
-    class:toc-btn-active={active}
-    on:click={() => {
-      collapsed = !collapsed;
-    }}
-  >
-    {firstHeading[0]}
-    <span class="transition-transform duration-300 ease-in-out" class:rotate-180={collapsed}>
-      <CaretDown />
-    </span>
-  </button>
+  {#if headings.length == 0}
+    <a class="toc-btn" class:toc-btn-active={active} href={targetUrl}>
+      {firstHeading[0]}
+    </a>
+  {:else}
+    <button
+      type="button"
+      class="toc-btn"
+      class:toc-btn-active={active}
+      on:click={() => {
+        collapsed = !collapsed;
+      }}
+    >
+      {firstHeading[0]}
+      <span class="transition-transform duration-300 ease-in-out" class:rotate-180={collapsed}>
+        <CaretDown />
+      </span>
+    </button>
 
-  <ol class="toc-list" class:toc-list-collapsed={collapsed}>
-    {#each headings as [heading, id]}
-      <li>
-        <a href="{targetUrl}#{id}">{heading}</a>
-      </li>
-    {/each}
-  </ol>
+    <ol class="toc-list" class:toc-list-collapsed={collapsed}>
+      {#each headings as [heading, id]}
+        <li>
+          <a href="{targetUrl}#{id}">{heading}</a>
+        </li>
+      {/each}
+    </ol>
+  {/if}
 </div>
