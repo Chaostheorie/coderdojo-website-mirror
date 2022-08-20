@@ -2,6 +2,7 @@
 title = "7. Kyo"
 color = "#fff"
 created = 2021-12-07
+draft = True
 +++
 
 <script lang="ts">

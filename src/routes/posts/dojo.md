@@ -1,6 +1,5 @@
 +++
 title = "Worum geht's im Dōjō?"
-chapters = false
 color = "#55CCFF"
 date = 2021-12-07
 +++
