@@ -19,3 +19,5 @@ Unsere nächsten Workshops sind:
 - 3. September 2022 von 14 bis 17 Uhr - [Jugend hackt - Einführung in html/CSS (online)](https://coderdojo.red/posts/news/2022-09-03/)
 
 - 2. Oktober 2022 von 14 bis 17 Uhr - [CoderDojo.red - Einführung in Python (in Präsenz)](https://coderdojo.red/posts/news/2022-10-02/)
+
+Die Materialien für die Workshops erscheinen demnächst hier.
