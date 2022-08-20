@@ -13,7 +13,7 @@
   }
 
   a {
-    @apply text-adaptive text-adaptive-hoverable;
+    @apply text-adaptive text-adaptive-hoverable underline decoration-slate-400 hover:decoration-theme-neutral;
   }
 
   /* Prose adjustements */
@@ -50,7 +50,7 @@
 
   .nav {
     &-title {
-      @apply flex items-center gap-3 text-base font-medium;
+      @apply flex items-center gap-3 text-base font-medium no-underline;
 
       & span {
         @apply hidden md:block;
@@ -61,7 +61,7 @@
       @apply hidden flex-wrap items-center justify-center gap-2 text-base md:ml-auto md:mr-auto md:flex;
 
       & a {
-        @apply text-adaptive transition-all duration-300 hover:cursor-pointer hover:underline;
+        @apply text-adaptive no-underline transition-all duration-300 hover:cursor-pointer hover:underline;
 
         &.active {
           @apply font-bold;
@@ -174,7 +174,7 @@
     @apply mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left;
 
     & a {
-      @apply flex items-center justify-center text-base font-medium md:justify-start;
+      @apply flex items-center justify-center text-base font-medium no-underline md:justify-start;
 
       & svg {
         @apply h-12 w-12;
