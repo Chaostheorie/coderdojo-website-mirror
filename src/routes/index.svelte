@@ -21,7 +21,7 @@
       Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken. Wir treffen uns
       immer donnerstags ab 20:30 Uhr in unserem <a href="https://bbb.cyber4edu.org/b/der-0rc-8x7-4re">
       BigBlueButton-Raum</a> Raum. Unsere aktuelle Kommunikation findet in unserem <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org">
-      Matrix-Raum</aY statt.
+      Matrix-Raum</a> statt.
       Am besten schaust du da mal rein. Dort verabreden wir uns, tauschen uns aus und kündigen auch an,
       wenn sich ein Termin verschiebt oder was für Themen anstehen.
     </p>
