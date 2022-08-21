@@ -1,0 +1,16 @@
++++
+title = "Online-Workshop Einführung in Python"
+color = "#fff"
+created = 2022-08-05
+description = "Online-Workshop Einführung in Python"
++++
+
+<script lang="ts">
+  import Figure from '$lib/components/Figure.svelte';
+</script>
+
+# Einführung in Python
+
+Zu unserem Online-Workshop Einführung in Python benötigst du für deine ersten Programme Python. Wenn du nicht schon Python auf deinem Rechner drauf hast, kannst du einfach [unseren Playground nutzen](http://playground.coderdojo.red/).
+
+Danach gehen wir ins Dojo und beginnen gemeinsam [mit dem weißen Gurt](https://coderdojo.red/posts/kyo-7/)...
