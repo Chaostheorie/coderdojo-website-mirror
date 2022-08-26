@@ -45,5 +45,5 @@ Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
 
 - Kommentare kannst du mit drei Hochkommata oder \# schreiben.
 
-- Und nicht zuletzt kennst du die Antwort auf alle Fragen und weißt, ob du die blaube oder die rote Pille nehmen
+- Und nicht zuletzt kennst du die Antwort auf alle Fragen und weißt, ob du die blaue oder die rote Pille nehmen
   sollst.
