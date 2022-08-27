@@ -1,5 +1,5 @@
 +++
-title = "html/CSS"
+title = "Workshops"
 color = "#fff"
 created = 2022-08-27
 +++
@@ -8,7 +8,7 @@ created = 2022-08-27
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-# Einführung in html/CSS
+# Online-Einführung in html/CSS
 
 Unser Online-Workshop findet im [Jugend-hackt-BBB](https://meet.alpaka.live/jh-lab-berlin) statt.
 
