@@ -20,7 +20,6 @@ Unsere nächsten Workshops sind:
 
 Die Materialien für die Workshops erscheinen demnächst hier.
 
-
 Derzeit bieten wir Einführungs-Workshops zu den Themen:
 
 - Python
