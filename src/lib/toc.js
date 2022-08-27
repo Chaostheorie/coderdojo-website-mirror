@@ -33,6 +33,11 @@ function routeMapper(path) {
     url += urlParts.filename.replace(".md", "");
   }
 
+  // fix url suffixes until sveltekit replacement
+  if (url.endsWith("index")) {
+    url = url.substring(0, url.length - 5);
+  }
+
   return url;
 }
 
