@@ -1,5 +1,5 @@
 +++
-title = "Workshops"
+title = "Online-Einführung in Pyhton"
 color = "#fff"
 created = 2022-08-27
 +++
