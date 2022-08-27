@@ -2,7 +2,6 @@
 title = "Workshops"
 color = "#fff"
 created = 2022-08-05
-showToc = false
 +++
 
 <script lang="ts">
