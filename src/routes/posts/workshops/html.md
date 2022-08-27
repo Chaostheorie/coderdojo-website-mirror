@@ -1,5 +1,5 @@
 +++
-title = "Workshops"
+title = "html/CSS"
 color = "#fff"
 created = 2022-08-05
 draft=True
