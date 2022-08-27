@@ -1,8 +1,7 @@
 +++
-title = "Online-Workshop Einführung in Python"
+title = "Online-Einführung in Python"
 color = "#fff"
 created = 2022-08-27
-description = "Online-Workshop Einführung in Python"
 +++
 
 <script lang="ts">
