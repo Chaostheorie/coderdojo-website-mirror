@@ -17,7 +17,7 @@ those repositories. We are grateful for any feedback.
 
 > Documentation updates are in the review stage. Any feedback is welcome :)
 
-See [the Wiki](https://outline.cobalt.rocks/collection/coderdojo-pQzvevzpWS) for documentation.
+See [the Wiki](https://outline.cobalt.rocks/share/15895a06-29f6-4225-a0ed-0aa3cec5382b) for documentation.
 
 ## Contributing
 
