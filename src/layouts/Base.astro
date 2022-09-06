@@ -1,0 +1,32 @@
+---
+import "$styles/app.css";
+
+import Meta from "$components/Meta.astro";
+import Navbar from "$components/Navbar.svelte";
+import Footer from "$components/Footer.astro";
+
+const { meta = {} } = Astro.props;
+
+let title;
+if (Astro.props.frontmatter !== undefined) {
+  title = Astro.props.frontmatter.title;
+} else if (Astro.props.title !== undefined) {
+  title = Astro.props.title;
+}
+---
+
+<html lang="en">
+  <head>
+    <Meta title={title} />
+  </head>
+
+  <body>
+    <Navbar client:load url={Astro.url} />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer client:ui />
+  </body>
+</html>

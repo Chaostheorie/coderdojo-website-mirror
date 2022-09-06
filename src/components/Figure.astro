@@ -1,0 +1,23 @@
+---
+import { Picture } from '@astrojs/image/components';
+
+export interface Props {
+  src: string;
+  alt: string;
+  float: "left" | "right" | undefined;
+  caption: boolean;
+}
+
+const { src, alt, float = undefined, caption = true } = Astro.props;
+---
+
+<div
+  class:list={[
+    ...(float ? [`float-${float}`] : ["max-w-full", "flex", "justify-center"]),
+  ]}
+>
+  <figure class="my-0 inline-block bg-transparent px-2">
+    <img {src} {alt} />
+    {caption && <figcaption class="text-end text-sm">{alt}</figcaption>}
+  </figure>
+</div>

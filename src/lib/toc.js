@@ -33,11 +33,6 @@ function routeMapper(path) {
     url += urlParts.filename.replace(".md", "");
   }
 
-  // fix url suffixes until sveltekit replacement
-  if (url.endsWith("index")) {
-    url = url.substring(0, url.length - 5);
-  }
-
   return url;
 }
 
@@ -74,7 +69,11 @@ const TitleRegex = /^title *= *["'](?<title>.+)['"] *$/m;
  * @return {[string, string][]}
  */
 function collectSluggedHeadings(content) {
-  return unified().use(remarkParse).use(remarkSlug).use(tocCompiler).processSync(content).result;
+  return unified()
+    .use(remarkParse)
+    .use(remarkSlug)
+    .use(tocCompiler)
+    .processSync(content).result;
 }
 
 /** @type {import('unified').Plugin<[], import('mdast').Root>} */
@@ -128,7 +127,10 @@ function tocPlugin() {
           keys.splice(idx, 1);
           const sync = statSync(path).mtimeMs;
 
-          if (toc[title][name].mtime !== sync || !toc[title][name].headings === {}) {
+          if (
+            toc[title][name].mtime !== sync ||
+            !toc[title][name].headings === {}
+          ) {
             return [path, name, sync];
           }
 
@@ -160,13 +162,18 @@ function tocPlugin() {
           const frontmatter = FrontmatterRegex.exec(content);
 
           if (frontmatter !== null) {
-            const frontmatterTitle = TitleRegex.exec(frontmatter.groups.frontmatter);
+            const frontmatterTitle = TitleRegex.exec(
+              frontmatter.groups.frontmatter
+            );
 
-            if (frontmatterTitle !== null && frontmatterTitle.groups.title === title) {
+            if (
+              frontmatterTitle !== null &&
+              frontmatterTitle.groups.title === title
+            ) {
               toc[title][name] = {
                 headings: collectSluggedHeadings(content),
                 mtime,
-                path: routeMapper(path)
+                path: routeMapper(path),
               };
             }
           }

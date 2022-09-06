@@ -1,0 +1,14 @@
+---
+export interface Props {
+  url: string;
+  headings: [string, string][];
+}
+
+const { url, headings } = Astro.props;
+---
+
+<div class="toc-dropdown">
+  <ol class="toc-list-standalone">
+    {headings.map(([heading, id]) => <li><a href="{url}#{id}">{heading}</a></li>)}
+  </ol>
+</div>

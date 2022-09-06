@@ -1,5 +1,3 @@
-const typography = require("@tailwindcss/typography");
-
 const palettes = {
   blue: {
     theme: "#2d557d",
@@ -7,7 +5,7 @@ const palettes = {
     "theme-neutral": "#244464",
     "theme-dark": "#002c50",
     secondary: "#a9ac5d",
-    "secondary-dark": "#787d31"
+    "secondary-dark": "#787d31",
   },
   red: {
     theme: "#b84f59",
@@ -15,12 +13,12 @@ const palettes = {
     "theme-neutral": "#a4424c",
     "theme-dark": "#8b323f",
     secondary: "#60be86",
-    "secondary-dark": "#2c8d59"
-  }
+    "secondary-dark": "#2c8d59",
+  },
 };
 
-const config = {
-  content: ["./src/**/*.{html,js,svelte,ts,md}"],
+module.exports = {
+  content: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,md}"],
 
   theme: {
     extend: {
@@ -30,12 +28,10 @@ const config = {
           ? process.env.DOMAIN.includes("red")
             ? palettes.red
             : palettes.blue
-          : palettes.blue)
-      }
-    }
+          : palettes.blue),
+      },
+    },
   },
 
-  plugins: [typography]
+  plugins: [require("@tailwindcss/typography")],
 };
-
-module.exports = config;

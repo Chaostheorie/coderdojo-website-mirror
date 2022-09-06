@@ -1,0 +1,46 @@
+---
+import Base from "$layouts/Page.astro";
+import NewsCard from "$components/NewsCard.astro";
+
+const news: [string, string, string, string][] = await Astro.glob(
+  "./20*.mdx"
+).then((files) =>
+  files
+    .map((file) => [file, file.frontmatter])
+    .filter(
+      ([file, frontmatter]) =>
+        frontmatter.date !== undefined &&
+        frontmatter.title !== undefined &&
+        frontmatter.description !== undefined
+    )
+    .map(([file, frontmatter]) => [
+      file.url,
+      frontmatter.title,
+      frontmatter.date.substr(0, 10),
+      frontmatter.description,
+    ])
+);
+---
+
+<!-- <Meta title="News" description="News und Updates rund um CoderDōjō" /> -->
+<Base>
+  <div
+    class="flex w-full flex-col items-center gap-3 md:flex-row md:items-start"
+  >
+    <div class="flex-grow">
+      <div
+        class="prose-extension prose prose-slate mb-3 text-center lg:prose-lg"
+      >
+        <h1>News</h1>
+      </div>
+
+      <div class="grid w-full grid-flow-row grid-cols-1 gap-2 md:grid-cols-2">
+        {
+          news.map(([href, title, date, description]) => (
+            <NewsCard {title} {href} {description} {date} />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Base>

@@ -1,3 +1,31 @@
 {
-  "extends": "./.svelte-kit/tsconfig.json"
+  "compilerOptions": {
+    // Enable top-level await, and other modern ESM features.
+    "target": "ES6",
+    "module": "ESNext",
+    // Enable node-style module resolution, for things like npm package imports.
+    "moduleResolution": "node",
+    // Enable JSON imports.
+    "resolveJsonModule": true,
+    // Enable stricter transpilation for better output.
+    "isolatedModules": true,
+    // Allow mixed usage with JS modules
+    "allowSyntheticDefaultImports": true,
+    // Astro will directly run your TypeScript code, no transpilation needed.
+    "noEmit": true,
+    // Import Astro type stubs
+    "types": ["astro/client"],
+    // Forbid any use of Types of values
+    "importsNotUsedAsValues": "error",
+    // Ensure the base path for all imports is the cwd
+    "baseUrl": ".",
+    // Allow import paths for better code organization
+    "paths": {
+      "~/*": ["src/*"],
+      "$styles/*": ["src/assets/styles/*"],
+      "$components/*": ["src/components/*"],
+      "$layouts/*": ["src/layouts/*"],
+      "$lib/*": ["src/lib/*"]
+    }
+  }
 }

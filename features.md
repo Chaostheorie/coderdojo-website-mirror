@@ -1,3 +1,0 @@
-- Code Bloecke die eine externe Datei verlinken
-  - Dabei hat jede Seite eine verbundenes repository und der Dateiname eines Codeblocks berwist auf die Datei in dem Git Repositiory
-  - Jeder Codeblock hat einen zusatzlichen Button der einen Link auf die volle Datei hat

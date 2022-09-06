@@ -1,0 +1,25 @@
+---
+import Base from "./Base.astro";
+---
+
+<Base
+  title={Astro.props.frontmatter !== undefined
+    ? Astro.props.frontmatter.title
+    : Astro.props.title}
+>
+  <div class="flex-grow">
+    <div class="prose lg:prose-lg prose-slate prose-extension">
+      <slot />
+
+      {
+        Astro.props?.frontmatter?.next && (
+          <div class="flex justify-center">
+            <Button href={Astro.props.frontmatter.next} hoverable={true}>
+              Weiter <i class="ph-arrow-right" />
+            </Button>
+          </div>
+        )
+      }
+    </div>
+  </div>
+</Base>

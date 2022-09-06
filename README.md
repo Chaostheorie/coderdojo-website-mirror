@@ -1,31 +1,45 @@
-[![Website Status for coderdojo.red](https://img.shields.io/website?down_color=gray&down_message=DOWN&label=Red&logo=nginx&style=flat-square&up_color=red&up_message=UP&url=https%3A%2F%2Fcoderdojo.red)](https://coderdojo.red)
-[![Website Status for coderdojo.blue](https://img.shields.io/website?down_color=gray&down_message=DOWN&label=Blue&logo=nginx&style=flat-square&up_color=blue&up_message=UP&url=https%3A%2F%2Fcoderdojo.blue)](https://coderdojo.blue)
-[![Pipeline Status](https://img.shields.io/gitlab/pipeline/coderdojo/coderdojo-website/koneko?gitlab_url=https%3A%2F%2Fgitlab.cobalt.rocks&label=Build&logo=gitlab&style=flat-square)](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/pipelines)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&logo=prettier)](https://github.com/prettier/prettier)
+# Astro Starter Kit: Minimal
 
-# Website for CoderDōjō Red and Blue
+```
+npm init astro -- --template minimal
+```
 
-Code for [coderdojo.red](https://coderdojo.red) and [coderdojo.blue](https://coderdojo.blue).
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
 
-## Issues
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-We track issues over the [Codeberg](https://codeberg.org/c0balt/coderdojo-website-mirror) and
-[GitHub](https://github.com/Chaostheorie/coderdojo-website-mirror) push mirrors. You are welcome to open an issue in
-those repositories. We are grateful for any feedback.
+## 🚀 Project Structure
 
-## Documentation
+Inside of your Astro project, you'll see the following folders and files:
 
-> Documentation updates are in the review stage. Any feedback is welcome :)
+```
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-See [the Wiki](https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/-/wikis/home) for documentation.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-## Contributing
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-All contributions are welcome. If you want to contribute or report a bug, fell free to open an issue on our
-[Codeberg Mirror](https://codeberg.org/c0balt/coderdojo-website-mirror). If you want to get direct access to a GitLab
-Account, please contact [Cobalt](https://cobalt.rocks/content/contact/).
+Any static assets, like images, can be placed in the `public/` directory.
 
-## Licensing
+## 🧞 Commands
 
-The content is licensend under [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode.de) while the
-code is licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
+All commands are run from the root of the project, from a terminal:
+
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
