@@ -8,7 +8,7 @@ const news: [string, string, string, string][] = await Astro.glob(
   files
     .map((file) => [file, file.frontmatter])
     .filter(
-      ([file, frontmatter]) =>
+      ([_, frontmatter]) =>
         frontmatter.date !== undefined &&
         frontmatter.title !== undefined &&
         frontmatter.description !== undefined
@@ -37,7 +37,7 @@ const news: [string, string, string, string][] = await Astro.glob(
       <div class="grid w-full grid-flow-row grid-cols-1 gap-2 md:grid-cols-2">
         {
           news.map(([href, title, date, description]) => (
-            <NewsCard {title} {href} {description} {date} />
+            <NewsCard title={title} href={href} description={description} date={date} />
           ))
         }
       </div>

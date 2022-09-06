@@ -1,0 +1,26 @@
+---
+export interface Props {
+  href: string;
+  color?: "theme" | "theme-neutral" | "secondary";
+  size?: "small" | "small-icon" | "medium";
+  opacity?: number;
+  hoverable?: boolean;
+}
+
+const {
+  href,
+  color = "theme",
+  size = "medium",
+  opacity = 1.0,
+  hoverable = false,
+} = Astro.props;
+---
+
+<a
+  href={href}
+  class={`button button-${color} button-${size} not-prose`}
+  style={`--tw-bg-opacity: ${opacity};`}
+  class:button-hoverable={hoverable}
+>
+  <slot />
+</a>

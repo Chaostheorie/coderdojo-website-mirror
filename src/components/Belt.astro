@@ -1,9 +1,18 @@
-<script lang="ts">
-  export let fill: string;
-  export let stroke = "none";
-  export let stroke_width = 2;
-  export let svg_class = "w-8 h-8 mx-2";
-</script>
+---
+export interface Props {
+  fill: string;
+  stroke?: string;
+  stroke_width?: string;
+  svg_class?: string;
+}
+
+const {
+  fill,
+  stroke = "theme",
+  stroke_width = "2",
+  svg_class = "w-8 h-8 mx-2"
+} = Astro.props;
+---
 
 <svg
   version="1.0"

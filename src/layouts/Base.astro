@@ -5,9 +5,7 @@ import Meta from "$components/Meta.astro";
 import Navbar from "$components/Navbar.svelte";
 import Footer from "$components/Footer.astro";
 
-const { meta = {} } = Astro.props;
-
-let title;
+let title: string;
 if (Astro.props.frontmatter !== undefined) {
   title = Astro.props.frontmatter.title;
 } else if (Astro.props.title !== undefined) {

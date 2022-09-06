@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env TELEMETRY_DISABLED=1 ASTRO_TELEMETRY_DISABLED=1 NODE_ENV=dev astro dev",
-    "build": "cross-env TELEMETRY_DISABLED=1 ASTRO_TELEMETRY_DISABLED=1 NODE_ENV=dev astro check && tsc --noEmit && cross-env TELEMETRY_DISABLED=1 ASTRO_TELEMETRY_DISABLED=1 NODE_ENV=prod astro build",
+    "build": "cross-env TELEMETRY_DISABLED=1 ASTRO_TELEMETRY_DISABLED=1 NODE_ENV=dev astro check && cross-env TELEMETRY_DISABLED=1 ASTRO_TELEMETRY_DISABLED=1 NODE_ENV=prod astro build",
+    "check:tsc": "tsc --noEmit",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "preview": "cross-env TELEMETRY_DISABLED=1 ASTRO_TELEMETRY_DISABLED=1 NODE_ENV=prod astro preview"

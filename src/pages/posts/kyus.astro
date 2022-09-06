@@ -1,7 +1,7 @@
 ---
-import Button from "$components/Button.svelte";
-import Base from "../../layouts/Base.astro";
-import Belt from "../../components/Belt.svelte";
+import Button from "$components/Button.astro";
+import Base from "$layouts/Base.astro";
+import Belt from "$components/Belt.astro";
 
 const meta: [number, string, string, string, string][] = [
   [
@@ -31,9 +31,9 @@ const meta: [number, string, string, string, string][] = [
           <h2 class="sm:text-3xl text-2xl font-medium mt-4 flex flex-row gap-3 md:gap-6 justify-center items-center">
             <span class="bg-theme p-2 rounded">
               <Belt
-                {fill}
+                fill={fill}
                 stroke="black"
-                stroke-width="5pt"
+                stroke_width="5pt"
                 svg_class="h-4 w-4 md:w-6 md:h-6"
               />
             </span>
@@ -43,7 +43,7 @@ const meta: [number, string, string, string, string][] = [
           <p class="leading-relaxed text-lg">{description}</p>
 
           <div class="flex flex-row justify-center flex-start">
-            <Button {href}>
+            <Button href={href}>
               Zum {count}. Kyo <i class="ph-arrow ph-xl" />
             </Button>
           </div>

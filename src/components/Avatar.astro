@@ -1,0 +1,28 @@
+---
+import { Picture } from "@astrojs/image/components";
+
+export interface Props {
+  src: string;
+  alt: string;
+  float: "left" | "right" | undefined;
+}
+
+const { src, alt, float } = Astro.props;
+---
+
+<div
+  class:list={[
+    {
+      "max-w-full": !float,
+      flex: !float,
+      "justify-center": !float,
+      "md:float-left": float === "left",
+      "md:float-right": float === "right",
+    },
+    "hidden",
+    "md:inline-flex",
+  ]}
+>
+  <Picture {src} {alt} class="rounded m-2 ring-2 ring-slate-500 max-w-[20rem]"
+  />
+</div>

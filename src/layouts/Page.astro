@@ -1,60 +1,8 @@
 ---
 import Base from "./Base.astro";
-import Button from "../components/Button.svelte";
+import Button from "$components/Button.astro";
 ---
 
-<!--
-    {#if prose}
-      {#if toc}
-        <div class="toc-container">
-          <div class="p-2 md:px-6 md:py-4">
-            <div class="font-bold text-xl tracking-wide">{title}</div>
-
-            <div class="toc-inner-container">
-              {#if toclist}
-                <TocList headings={toc} />
-              {:else}
-                {#each toc as [entryFilename, firstHeading, headings, targetUrl]}
-                  <TocDropdown
-                    collapsed={entryFilename !== filename}
-                    active={entryFilename === filename}
-                    {headings}
-                    {firstHeading}
-                    {targetUrl}
-                  />
-                {/each}
-              {/if}
-            </div>
-          </div>
-        </div>
-      {/if}
-
-      <div class="flex-grow">
-        <div class="prose lg:prose-lg prose-slate prose-extension">
-          <slot />
-
-          {#if next}
-            <div class="flex justify-center">
-              <Button href={next} hoverable={true}>
-                Weiter <ArrowRight size={24} />
-              </Button>
-            </div>
-          {/if}
-        </div>
-      </div>
-    {:else}
-      <slot />
-
-      {#if next}
-        <div class="flex justify-center">
-          <Button href={next} hoverable={true}>
-            Weiter <ArrowRight size={24} />
-          </Button>
-        </div>
-      {/if}
-    {/if}
-  </div>
---><!DOCTYPE html>
 <Base
   title={Astro.props.frontmatter !== undefined
     ? Astro.props.frontmatter.title
