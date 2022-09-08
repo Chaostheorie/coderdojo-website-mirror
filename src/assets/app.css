@@ -1,5 +1,5 @@
 @import "./styles/duotone.css";
-@import "phosphor-icons/src/css/icons.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 @import "shikwasa/dist/shikwasa.min.css";
 @import "katex/dist/katex.min.css";
 @import "./styles/admonitions.css";

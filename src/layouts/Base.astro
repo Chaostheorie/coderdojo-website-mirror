@@ -4,7 +4,7 @@ import type { MarkdownHeading } from "astro";
 export interface Props {
   title?: string;
   description?: string;
-  showToc: boolean;
+  showToc?: boolean;
   files?: [string, MarkdownHeading[]][];
   next?: string;
 }
@@ -20,8 +20,8 @@ import TocDropdown from "$components/TocDropdown.svelte";
 
 // helper for loading toc from toccache
 const loadTOC = async () => {
-  if (Astro.props.showToc === false) {
-    return { list: false };
+  if (Astro.props?.showToc === false) {
+    return {};
   }
 
   // normalize url by removing any trailing / characters for comparisons
@@ -81,11 +81,9 @@ let toc:
       toc: [boolean, [string, string], [string, string][]][];
       next: string | boolean;
     }
-  | { list: boolean };
+  | {};
 
-if (Astro.props.showToc) {
-  toc = await loadTOC();
-}
+toc = await loadTOC();
 
 const next = Astro.props?.next || toc?.next;
 ---
@@ -100,7 +98,7 @@ const next = Astro.props?.next || toc?.next;
 
     <main>
       {
-        toc !== undefined && (
+        toc.toc !== undefined && (
           <div class="toc-container">
             <div class="p-2 md:px-6 md:py-4">
               <div class="font-bold text-xl tracking-wide">
@@ -134,7 +132,7 @@ const next = Astro.props?.next || toc?.next;
           next !== undefined && (
             <div class="flex justify-center mt-2">
               <Button href={next} hoverable={true}>
-                Weiter <i class="ph-arrow-right" />
+                Weiter <i class="text-2xl md:text-xl bi-caret-right" />
               </Button>
             </div>
           )

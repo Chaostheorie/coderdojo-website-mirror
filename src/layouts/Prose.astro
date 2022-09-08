@@ -59,7 +59,7 @@ if (Astro.props?.frontmatter?.title) {
 
 <Base
   title={title}
-  showToc={Astro.props?.frontmatter?.showToc || true}
+  showToc={Astro.props?.frontmatter?.showToc}
   files={files}
   next={Astro.props?.frontmatter?.next}
 >
@@ -67,3 +67,13 @@ if (Astro.props?.frontmatter?.title) {
     <slot />
   </div>
 </Base>
+
+<script>
+  import { copy_to_clipboard, run_playground } from "../lib/codetitle-helper";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    window.copy_to_clipboard = copy_to_clipboard;
+    window.run_playground = run_playground;
+    console.log(1);
+  });
+</script>

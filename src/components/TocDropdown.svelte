@@ -26,7 +26,7 @@
         class="transition-transform duration-300 ease-in-out"
         class:rotate-180={collapsed}
       >
-        <i class="ph-caret-down" />
+        <i class="text-xl bi-arrow-down-circle" />
       </span>
     </button>
 

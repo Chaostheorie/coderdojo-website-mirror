@@ -11,16 +11,16 @@
     string,
     (arg: string) => boolean | null
   ][] = [
-    ["/posts/news/", "newspapers", "News", null],
-    ["/posts/dojo/", "code", "Einführung", null],
+    ["/posts/news/", "bi-newspapers", "News", null],
+    ["/posts/dojo/", "bi-code", "Einführung", null],
     [
       "/posts/kyus/",
-      "list-numbers",
+      "bi-list-ol",
       "Kyus",
       (arg: string) => arg.includes("kyo") || arg.includes("kyu"),
     ],
-    ["/posts/workshops/", "student", "Workshops", null],
-    ["/about/", "code", "Mentoren", null],
+    ["/posts/workshops/", "bi-people", "Workshops", null],
+    ["/about/", "bi-person", "Mentoren", null],
   ];
 </script>
 
@@ -34,14 +34,14 @@
   />
   <div class="sidebar" class:sidebar-open={sidebar_open}>
     <Button
-      size="small-icon"
+      size={"small-icon"}
       opacity={0.85}
       on:click={() => {
         sidebar_open = !sidebar_open;
       }}
     >
       <div class="sr-only">Toggle Sidebar</div>
-      <i class="ph ph-x" />
+      <i class="text-2xl bi-x" />
     </Button>
 
     <div class="sidebar-section">
@@ -54,7 +54,7 @@
                 ? check(url.href)
                 : url.href === href}
             >
-              <i class="ph-{icon}" />
+              <i class={icon} />
               {content}
             </a>
           </li>
@@ -72,7 +72,7 @@
     >
       <div class="sr-only">Toggle Sidebar</div>
 
-      <i class="ph-list" />
+      <i class="text-xl bi-list" />
     </button>
 
     <span class="nav-action p-5" />

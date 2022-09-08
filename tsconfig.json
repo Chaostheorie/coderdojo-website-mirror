@@ -22,7 +22,7 @@
     // Allow import paths for better code organization
     "paths": {
       "~/*": ["src/*"],
-      "$styles/*": ["src/assets/styles/*"],
+      "$styles/*": ["src/assets/*"],
       "$components/*": ["src/components/*"],
       "$layouts/*": ["src/layouts/*"],
       "$lib/*": ["src/lib/*"]

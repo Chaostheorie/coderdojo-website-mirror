@@ -1,7 +1,5 @@
 // unist and hast utils
 import { visit } from "unist-util-visit";
-import { h } from "hastscript";
-import { fromHtml } from "hast-util-from-html";
 
 // for syntax highlighting
 import Prism from "prismjs";
@@ -51,8 +49,8 @@ export function codetitlePlugin() {
           ? /[a-z]+:.+/.test(node.lang)
             ? partitionLanguage(node.lang)
             : LANGUAGES.includes(node.lang)
-              ? [node.lang, `${node.lang} code`]
-              : ["", "plain text"]
+            ? [node.lang, `${node.lang} code`]
+            : ["", "plain text"]
           : ["", "plain text"];
 
       const code =
@@ -73,12 +71,13 @@ export function codetitlePlugin() {
 		  <button class="codetitle-btn" type="button" onclick="window.copy_to_clipboard('${id}', this)">
 			<span class="sr-only">Copy Code to Clipboard</span> ${copy_phosphor_icon}
 		  </button>
-		  ${code_lang[0] === "python"
-          ? `<button class="codetitle-btn hidden" type="button" onclick="window.run_playground('${id}', this)" data-title="${encodeURIComponent(
-            code_lang[1]
-          )}"><div class="sr-only">Execute Code in Playground</div>${play_phosphor_icon}</button>`
+		  ${
+        code_lang[0] === "python"
+          ? `<button class="codetitle-btn" type="button" onclick="window.run_playground('${id}', this)" data-title="${encodeURIComponent(
+              code_lang[1]
+            )}"><div class="sr-only">Execute Code in Playground</div>${play_phosphor_icon}</button>`
           : ""
-        }
+      }
 		</span>
 		</div>`;
 
@@ -87,12 +86,13 @@ export function codetitlePlugin() {
       node.type = "html";
       node.children = undefined;
       if (code_lang[0] !== "") {
-        node.value = `<div class="codewrapper">${prefix}<pre class="lang-${code_lang[0]
-          }">${Prism.highlight(
-            code,
-            Prism.languages[code_lang[0].toLowerCase()],
-            code_lang[0].toLowerCase()
-          )}</pre></div>`;
+        node.value = `<div class="codewrapper">${prefix}<pre class="lang-${
+          code_lang[0]
+        }">${Prism.highlight(
+          code,
+          Prism.languages[code_lang[0].toLowerCase()],
+          code_lang[0].toLowerCase()
+        )}</pre></div>`;
       } else {
         node.value = `<div class="codewrapper">${prefix}<pre><code>${code}</code></pre></div>`;
       }
