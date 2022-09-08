@@ -1,12 +1,8 @@
 ---
-import { base_description } from "$lib/constants";
-const default_title = "CoderDōjō R & B";
+import { base_description, default_title } from "$lib/constants";
 
 let { title } = Astro.props;
-const {
-  description = base_description,
-  canonical,
-} = Astro.props;
+const { description = base_description, canonical } = Astro.props;
 
 if (title) {
   title = `${default_title} - ${title}`;
@@ -35,14 +31,9 @@ if (title) {
 <meta name="apple-mobile-web-app-title" content="CoderDōjō" />
 <meta name="application-name" content="CoderDōjō" />
 <meta name="msapplication-TileColor" content="#314958" />
-<meta
-  name="msapplication-TileImage"
-  content="/images/logo/mstile-144x144.png"
+<meta name="msapplication-TileImage" content="/images/logo/mstile-144x144.png"
 />
-<meta
-  name="msapplication-config"
-  content="/images/logo/browserconfig.xml"
-/>
+<meta name="msapplication-config" content="/images/logo/browserconfig.xml" />
 <meta name="theme-color" content="#314958" />
 
 <!-- theme/images/favicon -->
@@ -70,28 +61,17 @@ if (title) {
   href="/images/logo/favicon-16x16.png"
 />
 <link rel="manifest" href="/images/logo/site.webmanifest" />
-<link
-  rel="mask-icon"
-  href="/images/logo/safari-pinned-tab.svg"
-  color="#5bbad5"
+<link rel="mask-icon" href="/images/logo/safari-pinned-tab.svg" color="#5bbad5"
 />
 <link rel="shortcut icon" href="/images/favicon.ico" />
 <meta name="apple-mobile-web-app-title" content="CoderDōjō Red and Blue" />
 <meta name="application-name" content="CoderDōjō Red and Blue" />
 <meta name="msapplication-TileColor" content="#d8dee9" />
-<meta
-  name="msapplication-TileImage"
-  content="/images/logo/mstile-144x144.png"
+<meta name="msapplication-TileImage" content="/images/logo/mstile-144x144.png"
 />
-<meta
-  name="msapplication-config"
-  content="/images/logo/browserconfig.xml"
-/>
+<meta name="msapplication-config" content="/images/logo/browserconfig.xml" />
 <meta name="theme-color" content="#d8dee9" />
-<meta
-  property="og:image"
-  content="/images/logo/android-chrome-192x192.png"
-/>
+<meta property="og:image" content="/images/logo/android-chrome-192x192.png" />
 
 <!-- Twitter Meta Tags -->
 {canonical && <meta name="twitter:url" content={canonical} />}

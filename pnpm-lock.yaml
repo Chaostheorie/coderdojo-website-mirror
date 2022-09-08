@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/mdx': ^0.10.0
+  '@astrojs/rss': ^1.0.0
   '@astrojs/sitemap': ^1.0.0
   '@astrojs/svelte': ^1.0.0
   '@astrojs/tailwind': ^1.0.0
@@ -61,6 +62,7 @@ dependencies:
 
 devDependencies:
   '@astrojs/mdx': 0.10.0_rollup@2.78.1
+  '@astrojs/rss': 1.0.0
   '@astrojs/sitemap': 1.0.0
   '@astrojs/svelte': 1.0.0_fje22ktja5v2dh6nbkissncqme
   '@astrojs/tailwind': 1.0.0
@@ -202,6 +204,12 @@ packages:
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
       prismjs: 1.29.0
+    dev: true
+
+  /@astrojs/rss/1.0.0:
+    resolution: {integrity: sha512-vOPocf/SC0TfHsCwQXupvLGm0y3oIwpRCnnF2igDP3gFSxQEOk4nmsuVTEU2N87hYyX1/5uxbjJhixuSV/L8Cw==}
+    dependencies:
+      fast-xml-parser: 4.0.9
     dev: true
 
   /@astrojs/sitemap/1.0.0:
@@ -1690,6 +1698,13 @@ packages:
       glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.5
+
+  /fast-xml-parser/4.0.9:
+    resolution: {integrity: sha512-4G8EzDg2Nb1Qurs3f7BpFV4+jpMVsdgLVuG1Uv8O2OHJfVCg7gcA53obuKbmVqzd4Y7YXVBK05oJG7hzGIdyzg==}
+    hasBin: true
+    dependencies:
+      strnum: 1.0.5
+    dev: true
 
   /fastq/1.13.0:
     resolution: {integrity: sha512-YpkpUnK8od0o1hmeSc7UUs/eB/vIPWJYjKck2QKIzAf71Vm1AAQ3EbuZB3g2JIy+pg+ERD0vqI79KyZiB2e2Nw==}
@@ -3873,6 +3888,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       min-indent: 1.0.1
+    dev: true
+
+  /strnum/1.0.5:
+    resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
     dev: true
 
   /style-to-object/0.3.0:
