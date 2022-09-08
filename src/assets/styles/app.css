@@ -3,7 +3,7 @@
 @import "shikwasa/dist/shikwasa.min.css";
 @import "katex/dist/katex.min.css";
 @import "./styles/admonitions.css";
-@import "@fontsource/fira-mono/index.css";
+@import "@fontsource/fira-mono/latin-ext-400.css";
 @import "./styles/base.css";
 @import "./styles/utilities.css";
 @import "./styles/components.css";
