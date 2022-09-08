@@ -33,14 +33,6 @@
   }
 
   .prose :not(:where([class~="not-prose"] *)) {
-    &-extension :not(:where([class~="not-prose"] *)) {
-      @apply mx-auto max-w-[100vw] px-2 md:max-w-[65ch] !important;
-
-      & a :not(:where([class~="not-prose"] *)) {
-        @apply underline decoration-slate-400 hover:decoration-slate-900;
-      }
-    }
-
     & :where(code):not(:where([class~="not-prose"] *))::after,
     & :where(code):not(:where([class~="not-prose"] *))::before,
     &
@@ -50,6 +42,14 @@
       :where(blockquote p:first-of-type):not(:where([class~="not-prose"]
           *))::before {
       content: "";
+    }
+  }
+
+  .prose-extension {
+    @apply mx-auto max-w-[100vw] px-2 md:max-w-[65ch] !important;
+
+    & a :not(:where([class~="not-prose"] *)) {
+      @apply underline decoration-slate-400 hover:decoration-slate-900;
     }
   }
 
@@ -224,7 +224,7 @@
       @apply mb-10 list-none;
 
       & li a {
-        @apply flex items-center flex-shrink text-gray-600 hover:text-gray-800;
+        @apply flex items-center flex-shrink text-gray-600 hover:text-gray-800 no-underline;
       }
     }
   }
@@ -252,7 +252,7 @@
 
   /* Main layout */
   main {
-    @apply container mx-auto flex min-h-screen w-full flex-col items-center justify-start;
+    @apply container mx-auto flex min-h-screen w-full md:gap-5 flex-col md:flex-row items-start justify-start;
   }
 
   /* Index */

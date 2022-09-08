@@ -5,8 +5,7 @@ date: 2021-12-07
 layout: "$layouts/Prose.astro"
 ---
 
-
-import Figure from "$lib/components/Figure.svelte";
+import Figure from "$components/Figure.astro";
 
 # PyGames
 
@@ -203,17 +202,17 @@ else:
 Neben `and` ist `or` und `not` noch ganz wichtig. Für `not` zeigen wir Dir später noch Beispiele. Um die
 Vergleichsoperatoren bei Bedingungen vollständig zu machen:
 
-- == gleich
+- `==` gleich
 
-- != ungleich
+- `!=` ungleich
 
-- < größer
+- `<` größer
 
-- \> kleiner
+- `>` kleiner
 
-- <= größer oder gleich
+- `<=` größer oder gleich
 
-- \>= kleiner oder gleich.
+- `>=` kleiner oder gleich.
 
 Jetzt bist Dd dran! Bevor du jetzt in die Tasten haust, sichere einmal Deinen Code mit `git add game.py`,
 `git commit -m "Zwischenergebnis"`, `git push`. Nimm Dir Zeit, um das Spiel wie beschrieben weiterzuentwickeln. Und lass

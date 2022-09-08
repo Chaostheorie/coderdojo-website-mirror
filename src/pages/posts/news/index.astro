@@ -22,8 +22,7 @@ const news: [string, string, string, string][] = await Astro.glob(
 );
 ---
 
-<!-- <Meta title="News" description="News und Updates rund um CoderDōjō" /> -->
-<Base>
+<Base title="News" description="News und Updates rund um CoderDōjō">
   <div
     class="flex w-full flex-col items-center gap-3 md:flex-row md:items-start"
   >
@@ -34,10 +33,17 @@ const news: [string, string, string, string][] = await Astro.glob(
         <h1>News</h1>
       </div>
 
-      <div class="grid w-full grid-flow-row grid-cols-1 gap-2 md:grid-cols-2">
+      <div
+        class="grid w-full grid-flow-row grid-cols-1 gap-2 md:grid-cols-2 mx-auto md:max-w-[100ch]"
+      >
         {
           news.map(([href, title, date, description]) => (
-            <NewsCard title={title} href={href} description={description} date={date} />
+            <NewsCard
+              title={title}
+              href={href}
+              description={description}
+              date={date}
+            />
           ))
         }
       </div>

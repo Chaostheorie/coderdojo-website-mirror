@@ -2,16 +2,15 @@
   // Simple dropdown handled over max-height of toc-list
   // props
   export let collapsed: boolean;
-  export let active: boolean;
-  export let firstHeading: [string, string];
-  export let targetUrl: string;
+  export let first_heading: [string, string];
   export let headings: [string, string][];
+  export let active: boolean;
 </script>
 
 <div class="toc-dropdown">
   {#if headings.length == 0}
-    <a class="toc-btn" class:toc-btn-active={active} href={targetUrl}>
-      {firstHeading[0]}
+    <a class="toc-btn" class:toc-btn-active={active} href={first_heading[0]}>
+      {first_heading[1]}
     </a>
   {:else}
     <button
@@ -22,7 +21,7 @@
         collapsed = !collapsed;
       }}
     >
-      {firstHeading[0]}
+      {first_heading[1]}
       <span
         class="transition-transform duration-300 ease-in-out"
         class:rotate-180={collapsed}
@@ -32,9 +31,9 @@
     </button>
 
     <ol class="toc-list" class:toc-list-collapsed={collapsed}>
-      {#each headings as [heading, id]}
+      {#each headings as [url, heading]}
         <li>
-          <a href="{targetUrl}#{id}">{heading}</a>
+          <a href={url}>{heading}</a>
         </li>
       {/each}
     </ol>

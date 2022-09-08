@@ -38,7 +38,6 @@ export function admonitionPlugin() {
         iconWrapperData.hProperties = h("div", {
           class: "flex items-center gap-2",
         }).properties;
-        console.log(node)
         iconWrapper.children = [icon, h("span", admonitionInfo.text)];  
 
         // Creating the wrapper for the callout's content.

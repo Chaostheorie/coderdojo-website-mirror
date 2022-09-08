@@ -1,26 +1,69 @@
 ---
 import Base from "./Base.astro";
-import Button from "$components/Button.astro";
+import { dirname, basename } from "path";
+import type { MarkdownHeading } from "astro";
+
+const title =
+  Astro.props.frontmatter !== undefined
+    ? Astro.props.frontmatter.title
+    : Astro.props.title;
+
+let files = [];
+if (Astro.props?.frontmatter?.title) {
+  const parent_dir = dirname(Astro.props.frontmatter.file);
+
+  try {
+    files = await Astro.glob("../pages/**/*.mdx").then((mdx_documents) => {
+      // find all files from same dir with same title
+      return (
+        mdx_documents
+          .filter(
+            (file) =>
+              file.frontmatter.title === Astro.props.frontmatter.title &&
+              dirname(file?.file || ".") === parent_dir
+          )
+          // sort by filename (will always prefer index.md as the lowest member)
+          .sort((a, b) => {
+            const a_file = basename(a.file),
+              b_file = basename(b.file);
+
+            // prefer index.md
+            if (a_file.startsWith("index")) {
+              return -1;
+            }
+
+            if (b_file.startsWith("index")) {
+              return 1;
+            }
+
+            // otherwise sort by filename (asc)
+            if (a_file > b_file) {
+              return 1;
+            }
+
+            return a_file === b_file ? 0 : -1;
+          })
+          .map((file) => [
+            file.url,
+            file
+              .getHeadings()
+              .filter((heading: MarkdownHeading) => heading.depth <= 2),
+          ])
+      );
+    });
+  } catch (e) {
+    console.error("Failed to get files: ", e);
+  }
+}
 ---
 
 <Base
-  title={Astro.props.frontmatter !== undefined
-    ? Astro.props.frontmatter.title
-    : Astro.props.title}
+  title={title}
+  showToc={Astro.props?.frontmatter?.showToc || true}
+  files={files}
+  next={Astro.props?.frontmatter?.next}
 >
-  <div class="flex-grow">
-    <div class="prose lg:prose-lg prose-slate prose-extension">
-      <slot />
-
-      {
-        Astro.props?.frontmatter?.next && (
-          <div class="flex justify-center">
-            <Button href={Astro.props.frontmatter.next} hoverable={true}>
-              Weiter <i class="ph-arrow-right" />
-            </Button>
-          </div>
-        )
-      }
-    </div>
+  <div class="prose lg:prose-lg prose-slate prose-extension">
+    <slot />
   </div>
 </Base>

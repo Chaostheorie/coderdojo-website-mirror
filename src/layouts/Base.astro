@@ -1,28 +1,145 @@
 ---
+import type { MarkdownHeading } from "astro";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  showToc: boolean;
+  files?: [string, MarkdownHeading[]][];
+  next?: string;
+}
+
 import "$styles/app.css";
 
 import Meta from "$components/Meta.astro";
+import Button from "$components/Button.astro";
 import Navbar from "$components/Navbar.svelte";
 import Footer from "$components/Footer.astro";
+import TocList from "$components/TocList.astro";
+import TocDropdown from "$components/TocDropdown.svelte";
 
-let title: string;
-if (Astro.props.frontmatter !== undefined) {
-  title = Astro.props.frontmatter.title;
-} else if (Astro.props.title !== undefined) {
-  title = Astro.props.title;
+// helper for loading toc from toccache
+const loadTOC = async () => {
+  if (Astro.props.showToc === false) {
+    return { list: false };
+  }
+
+  // normalize url by removing any trailing / characters for comparisons
+  const normalize_url = (url: string) =>
+    url[url.length - 1] === "/" ? url.slice(0, -1) : url;
+
+  // -- fetch TOC from files --
+  Astro.props.files = Astro.props?.files || [];
+
+  // handle files with single-file TOC
+  if (Astro.props.files.length === 1) {
+    return {
+      list: true,
+      toc: Astro.props.files[0][1].map((heading: MarkdownHeading) => [
+        `${Astro.props.files[0][0]}#${heading.slug}`,
+        heading.text,
+      ]),
+    };
+  }
+
+  // handle files with shared TOC
+  const pathname = normalize_url(Astro.url.pathname);
+  const headings: [boolean, [string, string], [string, string][]][] =
+    Astro.props.files
+      .map(([url, headings]) => [
+        normalize_url(url) === pathname,
+        headings.map((heading: MarkdownHeading) => [
+          `${url}#${heading.slug}`,
+          heading.text,
+        ]),
+      ])
+      .map(([url, headings]: [boolean, [string, string][]]) => [
+        url,
+        headings.shift(),
+        headings,
+      ]);
+
+  return {
+    list: false,
+    toc: headings,
+    next: headings
+      // extract filename and original index in entries
+      .map(([current, _first, _headings], idx) => [current, idx])
+      // find current entry - this should leave only the current entry
+      .filter(([current, _]: [boolean, number]) => current)
+      // map current entry optionally to next
+      .map(([_, idx]: [boolean, number]) => {
+        return headings.length > idx + 1 ? headings[idx + 1][1][0] : undefined;
+      })[0],
+  };
+};
+
+let toc:
+  | { list: boolean; toc: [string, string][] }
+  | {
+      list: boolean;
+      toc: [boolean, [string, string], [string, string][]][];
+      next: string | boolean;
+    }
+  | { list: boolean };
+
+if (Astro.props.showToc) {
+  toc = await loadTOC();
 }
+
+const next = Astro.props?.next || toc?.next;
 ---
 
 <html lang="en">
   <head>
-    <Meta title={title} />
+    <Meta title={Astro.props.title} />
   </head>
 
   <body>
     <Navbar client:load url={Astro.url} />
 
     <main>
-      <slot />
+      {
+        toc !== undefined && (
+          <div class="toc-container">
+            <div class="p-2 md:px-6 md:py-4">
+              <div class="font-bold text-xl tracking-wide">
+                {Astro.props.title || "Title missing"}
+              </div>
+
+              <div class="toc-inner-container">
+                {toc.list ? (
+                  <TocList headings={toc.toc} />
+                ) : (
+                  toc.toc.map(([active, first_heading, headings]) => (
+                    <TocDropdown
+                      client:load
+                      collapsed={!active}
+                      active={active}
+                      first_heading={first_heading}
+                      headings={headings}
+                    />
+                  ))
+                )}
+              </div>
+            </div>
+          </div>
+        )
+      }
+
+      <div class="flex-grow">
+        <slot />
+
+        {
+          next !== undefined && (
+            <div class="flex justify-center mt-2">
+              <Button href={next} hoverable={true}>
+                Weiter <i class="ph-arrow-right" />
+              </Button>
+            </div>
+          )
+        }
+      </div>
     </main>
 
     <Footer client:ui />

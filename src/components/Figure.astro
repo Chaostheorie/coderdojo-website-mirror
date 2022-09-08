@@ -1,14 +1,29 @@
 ---
-import { Picture } from '@astrojs/image/components';
-
 export interface Props {
   src: string;
-  alt: string;
-  float: "left" | "right" | undefined;
-  caption: boolean;
+  // alt of the image, should be "" if image is decorative
+  alt?: string;
+  // let the image float besides the content
+  float?: "left" | "right";
+  // show alt as a figure caption
+  caption?: boolean;
+  // toggle to disable warnings when loading remote images
+  gdpr_compliant?: boolean;
 }
 
-const { src, alt, float = undefined, caption = true } = Astro.props;
+const {
+  src,
+  alt = "",
+  float,
+  caption = true,
+  gdpr_compliant = false,
+} = Astro.props;
+
+if (src.startsWith("http") && !gdpr_compliant) {
+  console.warn(
+    `${src} was included as an image. Please review the privacy policy of the remote host before pushing this change. You can disable this warning by adding: gdpr_compliant={true} to the Figure tag`
+  );
+}
 ---
 
 <div
@@ -17,7 +32,8 @@ const { src, alt, float = undefined, caption = true } = Astro.props;
   ]}
 >
   <figure class="my-0 inline-block bg-transparent px-2">
-    <Picture {src} {alt} />
+    <img src={src} alt={alt} />
+
     {caption && <figcaption class="text-end text-sm">{alt}</figcaption>}
   </figure>
 </div>
