@@ -16,6 +16,6 @@ Wir beginnen nicht mit dem Rechner, sondern mit einem Brettspiel. So lernst du, 
 
 Wenn das steht, beginnen wir mit den ersten Schritten in Python. Solltest du schon paar Vorerfahrungen mitbringen, so haben wir für dich auch passende Herausforderungen.
 
-Zwischendurch zeigen wir noch den x-Hain - einen Hacker- und Makerspace mit vielen interessanten Dingen, die es zu entdecken gilt.
+Zwischendurch zeigen wir noch den x-Hain - einem Hacker- und Makerspace mit vielen interessanten Dingen, die es zu entdecken gilt.
 
 Um unseren Workshop besser planen zu können, **buche Dir bitte vorher** über [die Coderdojo-Seite ein Ticket](https://zen.coderdojo.com/dojos/de/berlin/berlin-mitte-xhain).
