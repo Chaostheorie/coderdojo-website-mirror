@@ -10,7 +10,7 @@ created = 2022-08-05
 
 # Workshops
 
-Unser nächster Workshops ist:
+Unser nächster Workshop ist:
 
 - 2. Oktober 2022 von 14 bis 17 Uhr - [CoderDojo.red - Einführung in Python (in Präsenz)](https://coderdojo.red/posts/news/2022-10-02/)
 
