@@ -24,7 +24,7 @@
       >
         BigBlueButton-Raum</a
       >
-      Raum. Unsere aktuelle Kommunikation findet in unserem
+      . Unsere aktuelle Kommunikation findet in unserem
       <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org"> Matrix-Raum</a> statt. Am besten
       schaust du da mal rein. Dort verabreden wir uns, tauschen uns aus und kündigen auch an, wenn sich
       ein Termin verschiebt oder was für Themen anstehen.
