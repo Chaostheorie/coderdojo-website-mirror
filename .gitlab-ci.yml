@@ -1,7 +1,7 @@
 image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-koneko-builder:latest
 
 stages:
-  - Testing
+  - Lint 
   - Deploy
 
 cache:
@@ -11,7 +11,7 @@ cache:
     - build
 
 Lint:
-  stage: Testing
+  stage: Lint 
   rules:
     - changes:
         - .gitlab-ci.yml
