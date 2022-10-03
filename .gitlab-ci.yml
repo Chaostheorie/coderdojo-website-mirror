@@ -69,7 +69,7 @@ Lint:
     # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"
     # Upload
     - rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc
-      --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:"
+      --delete  ./dist/*  "$CD_DIST_USER@$CD_DIST_HOST:"
 
 CD:Red:
   <<: *rs-deploy
