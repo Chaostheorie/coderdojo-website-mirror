@@ -29,5 +29,3 @@ Account, please contact [Cobalt](https://cobalt.rocks/content/contact/).
 
 The content is licensend under [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode.de) while the
 code is licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
-
-

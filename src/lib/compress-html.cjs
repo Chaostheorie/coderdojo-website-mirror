@@ -18,7 +18,7 @@ const cfg = {
   html5: true,
   conservativeCollapse: true,
   collapseWhitespace: true,
-  collapseInlineTagWhitespace: true
+  collapseInlineTagWhitespace: true,
 };
 
 glob("dist/**/*.html", (err, res) => {
@@ -32,7 +32,8 @@ glob("dist/**/*.html", (err, res) => {
         } else {
           const source = buf.toString();
           const compressed = minify(source, cfg).toString();
-          const compression = 100 - Math.round(compressed.length / (source.length / 100));
+          const compression =
+            100 - Math.round(compressed.length / (source.length / 100));
           const minifiedName = res[i].substr(6);
 
           if (compression === 0) {
@@ -51,4 +52,3 @@ glob("dist/**/*.html", (err, res) => {
     }
   }
 });
-

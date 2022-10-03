@@ -6,7 +6,6 @@ export const get = () =>
     title: default_title,
     description: base_description,
     site: import.meta.env.SITE,
-    items: import.meta
-      .glob('./**/*.mdx'),
+    items: import.meta.glob("./**/*.mdx"),
     customData: `<language>de-de</language>`,
   });

@@ -26,7 +26,7 @@
         class="transition-transform duration-300 ease-in-out"
         class:rotate-180={collapsed}
       >
-        <i class="text-xl bi-chevron-down" />
+        <i class="bi-chevron-down text-xl" />
       </span>
     </button>
 

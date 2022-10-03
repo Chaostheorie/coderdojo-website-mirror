@@ -20,11 +20,10 @@
         artist,
         cover,
         src,
-        title
-      }
+        title,
+      },
     });
   });
 </script>
 
 <div bind:this={container} class="mb-2" />
-

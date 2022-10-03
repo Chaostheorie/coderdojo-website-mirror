@@ -46,7 +46,7 @@ if (Astro.props?.frontmatter?.title) {
           .map((file) => [
             file.url,
             file
-            .getHeadings()
+              .getHeadings()
               // @ts-ignore - The type for MarkdownHeading is often not correcly inferred
               .filter((heading: MarkdownHeading) => heading.depth <= 2),
           ])

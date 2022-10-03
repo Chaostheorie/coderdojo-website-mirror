@@ -1,11 +1,23 @@
 import { visit } from "unist-util-visit";
-import { h } from 'hastscript';
+import { h } from "hastscript";
 
 const acceptableCalloutTypes = {
   tip: { cssClass: "admonition-tip", iconClass: "info", text: "Tip" },
-  info: { cssClass: "admonition-important", iconClass: "info", text: "Hinweis" },
-  warning: { cssClass: "admonition-warning", iconClass: "warning", text: "Achtung!" },
-  danger: { cssClass: "admonition-caution", iconClass: "warning-octagon", text: "Achtung!" },
+  info: {
+    cssClass: "admonition-important",
+    iconClass: "info",
+    text: "Hinweis",
+  },
+  warning: {
+    cssClass: "admonition-warning",
+    iconClass: "warning",
+    text: "Achtung!",
+  },
+  danger: {
+    cssClass: "admonition-caution",
+    iconClass: "warning-octagon",
+    text: "Achtung!",
+  },
 };
 
 /**
@@ -16,11 +28,11 @@ const acceptableCalloutTypes = {
 export function admonitionPlugin() {
   return (tree) => {
     visit(tree, (node) => {
-      if (
-        node.type === "containerDirective"
-      ) {
+      if (node.type === "containerDirective") {
         // determine name or default to tip
-        const name = !Object.keys(acceptableCalloutTypes).includes(node.name) ? "tip" : node.name ;
+        const name = !Object.keys(acceptableCalloutTypes).includes(node.name)
+          ? "tip"
+          : node.name;
         const admonitionInfo = acceptableCalloutTypes[name];
 
         // Creating the icon.
@@ -38,7 +50,7 @@ export function admonitionPlugin() {
         iconWrapperData.hProperties = h("div", {
           class: "flex items-center gap-2",
         }).properties;
-        iconWrapper.children = [icon, h("span", admonitionInfo.text)];  
+        iconWrapper.children = [icon, h("span", admonitionInfo.text)];
 
         // Creating the wrapper for the callout's content.
         const contentWrapper = h("div");

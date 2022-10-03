@@ -9,7 +9,7 @@ const { headings } = Astro.props;
 <div class="toc-dropdown">
   <ol class="toc-list-standalone">
     {
-    headings.map(([url, heading]) => (
+      headings.map(([url, heading]) => (
         <li>
           <a href={url}>{heading}</a>
         </li>

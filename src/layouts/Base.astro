@@ -102,7 +102,7 @@ const next = Astro.props?.next || toc?.next;
         toc.toc.length !== 0 && (
           <div class="toc-container">
             <div class="p-2 md:px-6 md:py-4">
-              <div class="font-bold text-xl tracking-wide">
+              <div class="text-xl font-bold tracking-wide">
                 {Astro.props.title || "Title missing"}
               </div>
 
@@ -133,9 +133,9 @@ const next = Astro.props?.next || toc?.next;
 
         {
           next !== undefined && (
-            <div class="flex justify-center mt-2">
+            <div class="mt-2 flex justify-center">
               <Button href={next} hoverable={true}>
-                Weiter <i class="text-2xl md:text-xl bi-chevron-double-right" />
+                Weiter <i class="bi-chevron-double-right text-2xl md:text-xl" />
               </Button>
             </div>
           )

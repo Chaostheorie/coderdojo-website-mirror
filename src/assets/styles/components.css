@@ -136,7 +136,7 @@
   /* Sidebar */
   .toc {
     &-container {
-      @apply my-2 md:sticky md:top-5 mx-auto md:mx-2 h-fit min-w-[80%] justify-self-start rounded border-t-2 border-solid border-theme-neutral bg-slate-50 px-2 py-1 shadow md:min-w-[10rem] lg:mx-auto;
+      @apply my-2 mx-auto h-fit min-w-[80%] justify-self-start rounded border-t-2 border-solid border-theme-neutral bg-slate-50 px-2 py-1 shadow md:sticky md:top-5 md:mx-2 md:min-w-[10rem] lg:mx-auto;
     }
 
     &-inner-container {
@@ -224,7 +224,7 @@
       @apply mb-10 list-none;
 
       & li a {
-        @apply flex items-center flex-shrink text-gray-600 hover:text-gray-800 no-underline;
+        @apply flex flex-shrink items-center text-gray-600 no-underline hover:text-gray-800;
       }
     }
   }
@@ -246,13 +246,13 @@
     }
 
     &-btn > svg {
-      @apply h-6 w-6 duration-300 ease-in-out text-gray-500 hover:text-gray-700;
+      @apply h-6 w-6 text-gray-500 duration-300 ease-in-out hover:text-gray-700;
     }
   }
 
   /* Main layout */
   main {
-    @apply container mx-auto flex min-h-screen w-full md:gap-5 flex-col md:flex-row items-start justify-start;
+    @apply container mx-auto flex min-h-screen w-full flex-col items-start justify-start md:flex-row md:gap-5;
   }
 
   /* Index */
@@ -333,7 +333,7 @@
 
   /* Button component */
   .button {
-    @apply flex items-center justify-between gap-2 rounded border-0 no-underline transition-all duration-500 ease-in-out focus:outline-none no-underline;
+    @apply flex items-center justify-between gap-2 rounded border-0 no-underline no-underline transition-all duration-500 ease-in-out focus:outline-none;
 
     & p {
       @apply inline-flex gap-2;

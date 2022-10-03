@@ -6,7 +6,7 @@ layout: $layouts/Prose.astro
 pubDate: 2022-09-08
 ---
 
-import DescriptionList from '$components/DescriptionList.astro';
+import DescriptionList from "$components/DescriptionList.astro";
 
 # Impressum
 
@@ -15,10 +15,24 @@ Die Inhalte von externen Links machen wir uns nicht zu eigen.
 Wenn Du Korrekturen oder Verbesserungsvorschläge hast - schreib uns bitte
 einfach per E-Mail oder Matrix an.
 
-<DescriptionList title={"Betreiber"} items={[
-["<i class='text-xl bi-person'></i>", "Verantwortliche", "Kai Kobschätzki (/bengoshi) und Michael Merz (/derMicha)"],
-["<i class='text-xl bi-house'></i>", "Addresse", "Raabestraße 8, 10405 Berlin"],
-["<i class='text-xl bi-envelope'></i>", "E-Mail", "bengoshi ät cyber4edu pünktchen org"],
-["<i class='text-xl bi-phone'></i>", "Telefon", "+49 30 488 24 394"]
-]} />
-
+<DescriptionList
+  title={"Betreiber"}
+  items={[
+    [
+      "<i class='text-xl bi-person'></i>",
+      "Verantwortliche",
+      "Kai Kobschätzki (/bengoshi) und Michael Merz (/derMicha)",
+    ],
+    [
+      "<i class='text-xl bi-house'></i>",
+      "Addresse",
+      "Raabestraße 8, 10405 Berlin",
+    ],
+    [
+      "<i class='text-xl bi-envelope'></i>",
+      "E-Mail",
+      "bengoshi ät cyber4edu pünktchen org",
+    ],
+    ["<i class='text-xl bi-phone'></i>", "Telefon", "+49 30 488 24 394"],
+  ]}
+/>

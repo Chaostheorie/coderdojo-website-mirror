@@ -27,9 +27,9 @@ const meta: [number, string, string, string, string][] = [
   >
     {
       meta.map(([count, title, fill, href, description]) => (
-        <div class="flex flex-col gap-3 md:w-1/2 w-full">
-          <h2 class="sm:text-3xl text-2xl font-medium mt-4 flex flex-row gap-3 md:gap-6 justify-center items-center">
-            <span class="bg-theme p-2 rounded">
+        <div class="flex w-full flex-col gap-3 md:w-1/2">
+          <h2 class="mt-4 flex flex-row items-center justify-center gap-3 text-2xl font-medium sm:text-3xl md:gap-6">
+            <span class="rounded bg-theme p-2">
               <Belt
                 fill={fill}
                 stroke="black"
@@ -40,11 +40,11 @@ const meta: [number, string, string, string, string][] = [
             {title}
           </h2>
 
-          <p class="leading-relaxed text-lg">{description}</p>
+          <p class="text-lg leading-relaxed">{description}</p>
 
-          <div class="flex flex-row justify-center flex-start">
+          <div class="flex-start flex flex-row justify-center">
             <Button href={href}>
-              Zum {count}. Kyo <i class="text-2xl md:text-xl bi-caret-right" />
+              Zum {count}. Kyo <i class="bi-caret-right text-2xl md:text-xl" />
             </Button>
           </div>
         </div>

@@ -10,7 +10,7 @@ module.exports = {
     project: ["./tsconfig.json"],
     extraFileExtensions: [".svelte"],
     sourceType: "module",
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
   rules: {
     semi: ["error", "always"],
@@ -20,7 +20,7 @@ module.exports = {
     "import/prefer-default-export": "off",
     "import/no-mutable-exports": 0,
     "no-labels": 0,
-    "no-restricted-syntax": 0
+    "no-restricted-syntax": 0,
   },
   overrides: [
     {
@@ -40,11 +40,11 @@ module.exports = {
             allowNumber: true,
             allowBoolean: true,
             allowNullish: true,
-            allowAny: true
-          }
-        ]
-      }
-    }
+            allowAny: true,
+          },
+        ],
+      },
+    },
   ],
   settings: {
     "svelte3/typescript": () => typescript,
@@ -52,10 +52,10 @@ module.exports = {
     "import/extensions": [".js", ".ts"],
     "import/resolver": {
       node: {
-        extensions: [".js", ".ts"]
+        extensions: [".js", ".ts"],
       },
-      typescript: {}
-    }
+      typescript: {},
+    },
   },
   plugins: ["svelte3", "@typescript-eslint", "eslint-plugin-tsdoc"],
   extends: [
@@ -65,12 +65,17 @@ module.exports = {
     "plugin:eslint-comments/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "prettier"
+    "prettier",
   ],
-  ignorePatterns: ["*.cjs", "static/*.js", "svelte.config.js", "scripts/js/*.ts"],
+  ignorePatterns: [
+    "*.cjs",
+    "static/*.js",
+    "svelte.config.js",
+    "scripts/js/*.ts",
+  ],
   env: {
     browser: true,
     node: true,
-    es2020: true
-  }
+    es2020: true,
+  },
 };

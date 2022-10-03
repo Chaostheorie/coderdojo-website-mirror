@@ -41,7 +41,7 @@
       }}
     >
       <div class="sr-only">Toggle Sidebar</div>
-      <i class="text-2xl bi-x" />
+      <i class="bi-x text-2xl" />
     </Button>
 
     <div class="sidebar-section">
@@ -72,13 +72,13 @@
     >
       <div class="sr-only">Toggle Sidebar</div>
 
-      <i class="text-xl bi-list" />
+      <i class="bi-list text-xl" />
     </button>
 
     <span class="nav-action p-5" />
 
     <a class="nav-title" href="/">
-      <div class="w-8 h-8">
+      <div class="h-8 w-8">
         <Logo />
       </div>
       <span>Coderdōjō R & B</span>

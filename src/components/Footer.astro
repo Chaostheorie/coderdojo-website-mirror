@@ -11,8 +11,18 @@ const sections: { [key: string]: [string, string, string, boolean][] } = {
   Schnellzugriffe: [
     ["bi-rss", "RSS", "/feed/", true],
     ["bi-heart", "Gebaut mit Astro", "https://astro.build", false],
-    ["bi-wrench-adjustable-circle", "Gebaut von Cobalt", "https://cobalt.rocks", false],
-    ["bi-code-slash", "Quellcode", "https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/", false]
+    [
+      "bi-wrench-adjustable-circle",
+      "Gebaut von Cobalt",
+      "https://cobalt.rocks",
+      false,
+    ],
+    [
+      "bi-code-slash",
+      "Quellcode",
+      "https://gitlab.cobalt.rocks/coderdojo/coderdojo-website/",
+      false,
+    ],
   ],
 };
 ---
@@ -35,7 +45,11 @@ const sections: { [key: string]: [string, string, string, boolean][] } = {
             <ul>
               {value.map(([icon, item, href, disabled]) => (
                 <li>
-                  <a href={href} class={icon} style={disabled ? {pointerEvents: "none"} : null}>
+                  <a
+                    href={href}
+                    class={icon}
+                    style={disabled ? { pointerEvents: "none" } : null}
+                  >
                     {item}
                   </a>
                 </li>

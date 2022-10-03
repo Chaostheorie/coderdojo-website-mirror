@@ -13,8 +13,10 @@ const { title, items } = Astro.props;
   <dl class="flex flex-col gap-2 list-none not-prose">
     {
       items.map(([icon, dt, dd]) => (
-        <div class="flex flex-row gap-3 justify-between flex-nowrap">
-          <dt class="flex items-center gap-2"><Fragment set:html={icon} /> {dt}</dt>
+        <div class="flex flex-row flex-nowrap justify-between gap-3">
+          <dt class="flex items-center gap-2">
+            <Fragment set:html={icon} /> {dt}
+          </dt>
           <dd>{dd}</dd>
         </div>
       ))
