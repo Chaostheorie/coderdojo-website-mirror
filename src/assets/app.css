@@ -1,9 +1,9 @@
-@import "./styles/duotone.css";
+@import "./duotone.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "shikwasa/dist/shikwasa.min.css";
 @import "katex/dist/katex.min.css";
-@import "./styles/admonitions.css";
+@import "./admonitions.css";
 @import "@fontsource/fira-mono/latin-ext-400.css";
-@import "./styles/base.css";
-@import "./styles/utilities.css";
-@import "./styles/components.css";
+@import "./base.css";
+@import "./utilities.css";
+@import "./components.css";

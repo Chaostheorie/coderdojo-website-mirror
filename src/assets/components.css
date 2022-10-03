@@ -12,11 +12,6 @@
     @apply text-base;
   }
 
-  i[class^="ph-"]:before {
-    display: inline-block;
-    text-decoration: none;
-  }
-
   a {
     &::before {
       text-decoration: none !important;
@@ -29,7 +24,7 @@
 
   /* Prose adjustements */
   blockquote {
-    @apply border-l-2 border-solid border-l-theme-dark bg-slate-50 bg-opacity-50 shadow !important;
+    @apply border-l-2 border-solid border-l-theme-dark bg-slate-50 bg-opacity-60 shadow !important;
   }
 
   .prose :not(:where([class~="not-prose"] *)) {

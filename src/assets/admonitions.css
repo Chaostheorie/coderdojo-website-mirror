@@ -2,7 +2,7 @@
 
 .admonition {
   /* General admonition with default style applied */
-  @apply rounded-sm border-l-8 border-solid border-slate-800 bg-slate-400 bg-opacity-50 px-3 py-2 text-slate-800;
+  @apply rounded-sm border-l-8 border-solid border-slate-800 bg-slate-400 bg-opacity-80 px-3 py-2 text-slate-800;
 
   & p {
     @apply my-0;
