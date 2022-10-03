@@ -34,26 +34,23 @@ Lint:
   rules:
     - changes:
         - .gitlab-ci.yml
+        - .eslintrc.cjs
+        - .prettierrc.js
         - "src/*"
         - "src/*/*"
         - "src/*/*/*"
-        - "static/*"
-        - "static/*/*"
-        - "static/*/*/*"
-        - mdsvex.config.js
         - package.json
-        - pnpm-lock.yaml
-        - postcss.config.cjs
-        - svelte.config.js
+        - postcss.config.js
         - tailwind.config.cjs
         - tsconfig.json
-        - vite.config.js
+        - astro.config.ts
+        - "public/*"
+        - "public/*/*"
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
   before_script:
     # Install all yarn dependencies (normally cached but clover#2 currently has (since 2 years) problems with space)
     - pnpm i --frozen-lockfile
-    # Add shh folder
+    # Add ssh folder
     - mkdir -p ~/.ssh
     # Start ssh agent
     - eval $(ssh-agent -s)
