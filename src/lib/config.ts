@@ -1,5 +1,8 @@
 // TODO: Make env aware for coderdojo.{red, blue}
 export const SITE = {
   name: "Coderdojo R & B",
-  domain: process.env.DOMAIN || "https://coderdojo.red",
+  domain:
+    process.env.DOMAIN !== undefined
+      ? `https://${process.env.DOMAIN}}`
+      : "https://coderdojo.red",
 };
