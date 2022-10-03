@@ -136,7 +136,7 @@
   /* Sidebar */
   .toc {
     &-container {
-      @apply my-2 md:my-auto mx-auto md:mx-2 h-fit min-w-[80%] justify-self-start rounded border-t-2 border-solid border-theme-neutral bg-slate-50 px-2 py-1 shadow md:min-w-[10rem] lg:mx-auto;
+      @apply my-2 md:sticky md:top-5 mx-auto md:mx-2 h-fit min-w-[80%] justify-self-start rounded border-t-2 border-solid border-theme-neutral bg-slate-50 px-2 py-1 shadow md:min-w-[10rem] lg:mx-auto;
     }
 
     &-inner-container {

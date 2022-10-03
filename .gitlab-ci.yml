@@ -14,18 +14,17 @@ Lint:
   stage: Testing
   rules:
     - changes:
-        - vite.config.js
         - .gitlab-ci.yml
-        - prettier.config.js
+        - .eslintrc.cjs
+        - .prettierrc.js
         - "src/*"
         - "src/*/*"
         - "src/*/*/*"
-        - mdsvex.config.js
         - package.json
-        - postcss.config.cjs
-        - svelte.config.js
+        - postcss.config.js
         - tailwind.config.cjs
         - tsconfig.json
+        - astro.config.ts
   before_script:
     - pnpm i --frozen-lockfile
   script:

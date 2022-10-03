@@ -18,9 +18,8 @@ const {
 
 <a
   href={href}
-  class={`button button-${color} button-${size} not-prose`}
+  class={`button button-${color} button-${size} not-prose ${hoverable ? 'button-hoverable' : ''}`}
   style={`--tw-bg-opacity: ${opacity};`}
-  class:button-hoverable={hoverable}
 >
   <slot />
 </a>

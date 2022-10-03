@@ -21,7 +21,7 @@ import TocDropdown from "$components/TocDropdown.svelte";
 // helper for loading toc from toccache
 const loadTOC = async () => {
   if (Astro.props?.showToc === false) {
-    return {};
+    return { toc: [], list: false };
   }
 
   // normalize url by removing any trailing / characters for comparisons
@@ -81,10 +81,11 @@ let toc:
       toc: [boolean, [string, string], [string, string][]][];
       next: string | boolean;
     }
-  | {};
+  | { toc: []; list: boolean };
 
 toc = await loadTOC();
 
+// @ts-ignore - toc.next is sometimes undefined but in this case undefined is okay
 const next = Astro.props?.next || toc?.next;
 ---
 
@@ -98,7 +99,7 @@ const next = Astro.props?.next || toc?.next;
 
     <main>
       {
-        toc.toc !== undefined && (
+        toc.toc.length !== 0 && (
           <div class="toc-container">
             <div class="p-2 md:px-6 md:py-4">
               <div class="font-bold text-xl tracking-wide">
@@ -107,8 +108,10 @@ const next = Astro.props?.next || toc?.next;
 
               <div class="toc-inner-container">
                 {toc.list ? (
+                  // @ts-ignore - List is a toggle for the structure, refer to the return values of the loadToc function for reference
                   <TocList headings={toc.toc} />
                 ) : (
+                  // @ts-ignore - Same as above
                   toc.toc.map(([active, first_heading, headings]) => (
                     <TocDropdown
                       client:load
@@ -132,7 +135,7 @@ const next = Astro.props?.next || toc?.next;
           next !== undefined && (
             <div class="flex justify-center mt-2">
               <Button href={next} hoverable={true}>
-                Weiter <i class="text-2xl md:text-xl bi-caret-right" />
+                Weiter <i class="text-2xl md:text-xl bi-chevron-double-right" />
               </Button>
             </div>
           )

@@ -46,7 +46,8 @@ if (Astro.props?.frontmatter?.title) {
           .map((file) => [
             file.url,
             file
-              .getHeadings()
+            .getHeadings()
+              // @ts-ignore - The type for MarkdownHeading is often not correcly inferred
               .filter((heading: MarkdownHeading) => heading.depth <= 2),
           ])
       );
@@ -71,9 +72,15 @@ if (Astro.props?.frontmatter?.title) {
 <script>
   import { copy_to_clipboard, run_playground } from "../lib/codetitle-helper";
 
+  declare global {
+    interface Window {
+      copy_to_clipboard: any;
+      run_playground: any;
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     window.copy_to_clipboard = copy_to_clipboard;
     window.run_playground = run_playground;
-    console.log(1);
   });
 </script>
