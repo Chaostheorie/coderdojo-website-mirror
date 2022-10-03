@@ -5,6 +5,7 @@ export interface Props {
   size?: "small" | "small-icon" | "medium";
   opacity?: number;
   hoverable?: boolean;
+  onclick?: () => {};
 }
 
 const {
@@ -13,6 +14,7 @@ const {
   size = "medium",
   opacity = 1.0,
   hoverable = false,
+  onclick = null,
 } = Astro.props;
 ---
 
@@ -21,6 +23,7 @@ const {
   class={`button button-${color} button-${size} not-prose ${
     hoverable ? "button-hoverable" : ""
   }`}
+  onclick={onclick}
   style={`--tw-bg-opacity: ${opacity};`}
 >
   <slot />

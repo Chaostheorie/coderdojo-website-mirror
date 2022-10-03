@@ -1,0 +1,113 @@
+{
+  "@fontsource/fira-mono@4.5.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/fontsource/fontsource",
+    "publisher": "Lotus",
+    "email": "declininglotus@gmail.com",
+    "copyright": "",
+    "licenseModified": "",
+    "licenseText": "# Fontsource Fira Mono\n\n[![npm (scoped)](https://img.shields.io/npm/v/@fontsource/fira-mono?color=brightgreen)](https://www.npmjs.com/package/@fontsource/fira-mono) [![Generic badge](https://img.shields.io/badge/fontsource-passing-brightgreen)](https://github.com/fontsource/fontsource) [![Monthly downloads](https://badgen.net/npm/dm/@fontsource/fira-mono)](https://github.com/fontsource/fontsource) [![Total downloads](https://badgen.net/npm/dt/@fontsource/fira-mono)](https://github.com/fontsource/fontsource) [![GitHub stars](https://img.shields.io/github/stars/fontsource/fontsource.svg?style=social&label=Star)](https://github.com/fontsource/fontsource/stargazers)\n\nThe CSS and web font files to easily self-host the “Fira Mono” font. Please visit the main [Fontsource website](https://fontsource.org/fonts/fira-mono) to view more details on this package.\n\n## Quick Installation\n\nFontsource has a variety of methods to import CSS, such as using a bundler like Webpack. Alternatively, it supports SASS. Full documentation can be found [here](https://fontsource.org/docs/introduction).\n\n```javascript\nyarn add @fontsource/fira-mono // npm install @fontsource/fira-mono\n```\n\nWithin your app entry file or site component, import it in.\n\n```javascript\nimport \"@fontsource/fira-mono\"; // Defaults to weight 400.\n```\n\nSupported variables:\n\n- Weights: `[400,500,700]`\n- Styles: `[normal]`\n- Supported subsets: `[cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext]`\n\nFinally, you can reference the font name in a CSS stylesheet, CSS Module, or CSS-in-JS.\n\n```css\nbody {\n  font-family: \"Fira Mono\";\n}\n```\n\n## Licensing\n\nIt is important to always read the license for every font that you use.\nMost of the fonts in the collection use the SIL Open Font License, v1.1. Some fonts use the Apache 2 license. The Ubuntu fonts use the Ubuntu Font License v1.0.\n\n[Google Fonts License Attributions](https://fonts.google.com/attribution)\n\n## Other Notes\n\nFont version (provided by source): `v14`.\n\nFeel free to star and contribute new ideas to this repository that aim to improve the performance of font loading, as well as expanding the existing library we already have. Any suggestions or ideas can be voiced via an [issue](https://github.com/fontsource/fontsource/issues).",
+    "name": "@fontsource/fira-mono",
+    "version": "4.5.9",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/@fontsource/fira-mono",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/@fontsource/fira-mono/README.md"
+  },
+  "@tailwindcss/typography@0.5.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/tailwindcss/typography",
+    "copyright": "Copyright (c) Tailwind Labs, Inc.",
+    "licenseModified": "",
+    "licenseText": "MIT License\n\nCopyright (c) Tailwind Labs, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+    "name": "@tailwindcss/typography",
+    "version": "0.5.4",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/@tailwindcss/typography",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/@tailwindcss/typography/LICENSE"
+  },
+  "base64-js@1.5.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/beatgammit/base64-js",
+    "publisher": "T. Jameson Little",
+    "email": "t.jameson.little@gmail.com",
+    "copyright": "Copyright (c) 2014 Jameson Little",
+    "licenseModified": "",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2014 Jameson Little\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+    "name": "base64-js",
+    "version": "1.5.1",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/base64-js",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/base64-js/LICENSE"
+  },
+  "bootstrap-icons@1.9.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/twbs/icons",
+    "publisher": "mdo",
+    "copyright": "Copyright (c) 2019-2021 The Bootstrap Authors",
+    "licenseModified": "",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2019-2021 The Bootstrap Authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+    "name": "bootstrap-icons",
+    "version": "1.9.1",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/bootstrap-icons",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/bootstrap-icons/LICENSE.md"
+  },
+  "katex@0.16.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/KaTeX/KaTeX",
+    "copyright": "Copyright (c) 2013-2020 Khan Academy and other contributors",
+    "licenseModified": "",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2013-2020 Khan Academy and other contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+    "name": "katex",
+    "version": "0.16.2",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/katex",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/katex/LICENSE"
+  },
+  "prismjs@1.29.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/PrismJS/prism",
+    "publisher": "Lea Verou",
+    "copyright": "Copyright (c) 2012 Lea Verou",
+    "licenseModified": "",
+    "licenseText": "MIT LICENSE\n\nCopyright (c) 2012 Lea Verou\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+    "name": "prismjs",
+    "version": "1.29.0",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/prismjs",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/prismjs/LICENSE"
+  },
+  "reading-time@1.5.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ngryman/reading-time",
+    "publisher": "Nicolas Gryman",
+    "email": "ngryman@gmail.com",
+    "url": "http://ngryman.sh",
+    "copyright": "Copyright (c) Nicolas Gryman <ngryman@gmail.com> (ngryman.sh)",
+    "licenseModified": "",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) Nicolas Gryman <ngryman@gmail.com> (ngryman.sh)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+    "name": "reading-time",
+    "version": "1.5.0",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/reading-time",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/reading-time/license"
+  },
+  "shikwasa@2.1.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jessuni/shikwasa",
+    "publisher": "Jessie Ji",
+    "email": "jessunix+shikwasa@gmail.com",
+    "url": "https://jessieji.com",
+    "copyright": "Copyright (c) 2019 jessunix@gmail.com",
+    "licenseModified": "",
+    "licenseText": "MIT License\n\nCopyright (c) 2019 jessunix@gmail.com\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+    "name": "shikwasa",
+    "version": "2.1.4",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/shikwasa",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/shikwasa/LICENSE.md"
+  },
+  "tailwindcss@3.1.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/tailwindlabs/tailwindcss",
+    "copyright": "Copyright (c) Tailwind Labs, Inc.",
+    "licenseModified": "",
+    "licenseText": "MIT License\n\nCopyright (c) Tailwind Labs, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+    "name": "tailwindcss",
+    "version": "3.1.8",
+    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/tailwindcss",
+    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/tailwindcss/LICENSE"
+  }
+}
