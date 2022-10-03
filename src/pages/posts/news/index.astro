@@ -9,14 +9,14 @@ const news: [string, string, string, string][] = await Astro.glob(
     .map((file) => [file, file.frontmatter])
     .filter(
       ([_, frontmatter]) =>
-        frontmatter.date !== undefined &&
+        frontmatter.pubDate !== undefined &&
         frontmatter.title !== undefined &&
         frontmatter.description !== undefined
     )
     .map(([file, frontmatter]) => [
       file.url,
       frontmatter.title,
-      frontmatter.date.substr(0, 10),
+      frontmatter.pubDate.substr(0, 10),
       frontmatter.description,
     ])
 );
