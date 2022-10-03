@@ -11,9 +11,9 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "preview": "cross-env TELEMETRY_DISABLED=1 ASTRO_TELEMETRY_DISABLED=1 NODE_ENV=prod astro preview",
     "minify": "pnpm minify:jpeg & pnpm minify:png & pnpm minify:svg & pnpm minify:html",
-    "minify:jpeg": "find build/ -regex '.*/.*\\.jp[eg]?' -exec sh -c 'cp \"$0\" \"$0.tmp\" && jpegtran -optimize -progressive -copynone \"$0.tmp\" > $0 && rm \"$0.tmp\"' {} \\;",
+    "minify:jpeg": "find dist/ -regex '.*/.*\\.jp[eg]?' -exec sh -c 'cp \"$0\" \"$0.tmp\" && jpegtran -optimize -progressive -copynone \"$0.tmp\" > $0 && rm \"$0.tmp\"' {} \\;",
     "minify:png": "pngquant --force --skip-if-larger --speed 1 --strip --quality 60-90 dist/**/*.png",
-    "minify:svg": "svgo build/**/*.svg",
+    "minify:svg": "svgo dist/**/*.svg",
     "minify:html": "node src/lib/compress-html.cjs",
     "license-checker": "license-checker --direct --json --production --out src/lib/licenses.json --excludePrivatePackages --customPath license-format.config.json"
   },
