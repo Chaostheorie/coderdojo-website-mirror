@@ -7,5 +7,11 @@ module.exports = {
         parser: "astro",
       },
     },
+    {
+      files: "*.mdx",
+      options: {
+        parser: "mdx",
+      },
+    },
   ],
 };
