@@ -3,6 +3,10 @@ import licenses from "$lib/licenses.json";
 import AttributionCard from "$components/AttributionCard.astro";
 ---
 
-<div class="gap-3 grid grid-cols-1 md:grid-cols-2">
-  {Object.values(licenses).map((license) => <AttributionCard {license} />)}
+<div class="gap-3 flex flex-col">
+  {
+    Object.values(licenses).map((license) => (
+      <AttributionCard license={license} />
+    ))
+  }
 </div>

@@ -2,7 +2,7 @@
   "@fontsource/fira-mono@4.5.9": {
     "licenses": "MIT",
     "repository": "https://github.com/fontsource/fontsource",
-    "publisher": "Lotus",
+    "publisher": "",
     "email": "declininglotus@gmail.com",
     "copyright": "",
     "licenseModified": "",
@@ -20,13 +20,14 @@
     "licenseText": "MIT License\n\nCopyright (c) Tailwind Labs, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
     "name": "@tailwindcss/typography",
     "version": "0.5.4",
+    "publisher": "",
     "path": "/home/cobalt/P/node/coderdojo-website/node_modules/@tailwindcss/typography",
     "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/@tailwindcss/typography/LICENSE"
   },
   "base64-js@1.5.1": {
     "licenses": "MIT",
     "repository": "https://github.com/beatgammit/base64-js",
-    "publisher": "T. Jameson Little",
+    "publisher": "",
     "email": "t.jameson.little@gmail.com",
     "copyright": "Copyright (c) 2014 Jameson Little",
     "licenseModified": "",
@@ -39,7 +40,7 @@
   "bootstrap-icons@1.9.1": {
     "licenses": "MIT",
     "repository": "https://github.com/twbs/icons",
-    "publisher": "mdo",
+    "publisher": "",
     "copyright": "Copyright (c) 2019-2021 The Bootstrap Authors",
     "licenseModified": "",
     "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2019-2021 The Bootstrap Authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
@@ -56,13 +57,14 @@
     "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2013-2020 Khan Academy and other contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
     "name": "katex",
     "version": "0.16.2",
+    "publisher": "",
     "path": "/home/cobalt/P/node/coderdojo-website/node_modules/katex",
     "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/katex/LICENSE"
   },
   "prismjs@1.29.0": {
     "licenses": "MIT",
     "repository": "https://github.com/PrismJS/prism",
-    "publisher": "Lea Verou",
+    "publisher": "",
     "copyright": "Copyright (c) 2012 Lea Verou",
     "licenseModified": "",
     "licenseText": "MIT LICENSE\n\nCopyright (c) 2012 Lea Verou\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
@@ -71,24 +73,10 @@
     "path": "/home/cobalt/P/node/coderdojo-website/node_modules/prismjs",
     "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/prismjs/LICENSE"
   },
-  "reading-time@1.5.0": {
-    "licenses": "MIT",
-    "repository": "https://github.com/ngryman/reading-time",
-    "publisher": "Nicolas Gryman",
-    "email": "ngryman@gmail.com",
-    "url": "http://ngryman.sh",
-    "copyright": "Copyright (c) Nicolas Gryman <ngryman@gmail.com> (ngryman.sh)",
-    "licenseModified": "",
-    "licenseText": "The MIT License (MIT)\n\nCopyright (c) Nicolas Gryman <ngryman@gmail.com> (ngryman.sh)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
-    "name": "reading-time",
-    "version": "1.5.0",
-    "path": "/home/cobalt/P/node/coderdojo-website/node_modules/reading-time",
-    "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/reading-time/license"
-  },
   "shikwasa@2.1.4": {
     "licenses": "MIT",
     "repository": "https://github.com/jessuni/shikwasa",
-    "publisher": "Jessie Ji",
+    "publisher": "",
     "email": "jessunix+shikwasa@gmail.com",
     "url": "https://jessieji.com",
     "copyright": "Copyright (c) 2019 jessunix@gmail.com",
@@ -107,6 +95,7 @@
     "licenseText": "MIT License\n\nCopyright (c) Tailwind Labs, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
     "name": "tailwindcss",
     "version": "3.1.8",
+    "publisher": "",
     "path": "/home/cobalt/P/node/coderdojo-website/node_modules/tailwindcss",
     "licenseFile": "/home/cobalt/P/node/coderdojo-website/node_modules/tailwindcss/LICENSE"
   }

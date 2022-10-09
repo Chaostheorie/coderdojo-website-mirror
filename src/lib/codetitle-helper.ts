@@ -1,4 +1,3 @@
-import { check_circle_icon } from "./icons.js";
 import { fromByteArray } from "base64-js";
 
 export const run_playground = (id: string, caller: HTMLButtonElement) => {
@@ -33,7 +32,7 @@ export const copy_to_clipboard = (id: string, caller: HTMLButtonElement) => {
   const update_icon = () => {
     // set check circle icon as instead of 'copy icon' to provide feedback after success
     const old = caller.innerHTML;
-    caller.innerHTML = check_circle_icon;
+    caller.innerHTML = '<i class="bi bi-clipboard-check"></i>';
 
     // reverse feedback after a second
     setTimeout(() => {

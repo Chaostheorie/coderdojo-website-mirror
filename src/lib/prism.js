@@ -5,9 +5,6 @@ import { visit } from "unist-util-visit";
 import Prism from "prismjs";
 import loadLanguages from "prismjs/components/index.js";
 
-// svg icons
-import { copy_phosphor_icon, play_phosphor_icon } from "./icons.js";
-
 // languages for prism
 const LANGUAGES = [
   "python",
@@ -69,13 +66,13 @@ export function codetitlePlugin() {
 		<span>${title(code_lang[1])}</span>
 		<span class='codetitle-btn-group'>
 		  <button class="codetitle-btn" type="button" onclick="window.copy_to_clipboard('${id}', this)">
-			<span class="sr-only">Copy Code to Clipboard</span> ${copy_phosphor_icon}
+			<span class="sr-only">Copy Code to Clipboard</span> <i class="bi bi-clipboard"></i>
 		  </button>
 		  ${
         code_lang[0] === "python"
           ? `<button class="codetitle-btn" type="button" onclick="window.run_playground('${id}', this)" data-title="${encodeURIComponent(
               code_lang[1]
-            )}"><div class="sr-only">Execute Code in Playground</div>${play_phosphor_icon}</button>`
+            )}"><div class="sr-only">Execute Code in Playground</div><i class="bi bi-play"></i></button>`
           : ""
       }
 		</span>
