@@ -43,8 +43,9 @@ const meta: [number, string, string, string, string][] = [
           <p class="text-lg leading-relaxed">{description}</p>
 
           <div class="flex-start flex flex-row justify-center">
-            <Button href={href}>
-              Zum {count}. Kyo <i class="bi-caret-right text-2xl md:text-xl" />
+            <Button href={href} hoverable={true}>
+              Zum {count}. Kyo{" "}
+              <i class="bi-chevron-double-right text-2xl md:text-xl" />
             </Button>
           </div>
         </div>
