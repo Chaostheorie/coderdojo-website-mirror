@@ -18,13 +18,11 @@
     <p class="leading-relaxed text-lg">
       Willkommen beim CoderDōjō für Jugendliche! Wir sitzen zwar in Berlin, aber da bei uns vieles
       online stattfindet, kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht wohnst.
-      Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken. Wir treffen
-      uns immer donnerstags ab 20:30 Uhr in unserem <a
-        href="https://bbb.cyber4edu.org/b/der-0rc-8x7-4re"
-      >
-        BigBlueButton-Raum</a
-      >
-      . Unsere aktuelle Kommunikation findet in unserem
+      Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken. Aktuell treffen wir uns nur zu
+      zu unseren Workshops oder wenn Teilnehmende Bedarf über unseren Matrix-Raum anmelden. Die Donnerstags-Treffen sind also
+      derzeit <a href="https://bbb.cyber4edu.org/b/der-0rc-8x7-4re"ausgesetzt</a>.
+
+      Unsere aktuelle Kommunikation findet in unserem
       <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org"> Matrix-Raum</a> statt. Am besten
       schaust du da mal rein. Dort verabreden wir uns, tauschen uns aus und kündigen auch an, wenn sich
       ein Termin verschiebt oder was für Themen anstehen.
