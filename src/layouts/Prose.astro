@@ -82,5 +82,39 @@ if (Astro.props?.frontmatter?.title) {
   document.addEventListener("DOMContentLoaded", function () {
     window.copy_to_clipboard = copy_to_clipboard;
     window.run_playground = run_playground;
+
+    document.querySelectorAll("div.admonition-hint").forEach((element) => {
+      if (element.children[1] instanceof HTMLElement) {
+        const wrapper = element.children[1];
+
+        element.addEventListener("click", () => {
+          // implement a basic locking mechanism to prevent any overlaps between transitions
+          if (wrapper.hasAttribute("data-transitioning")) {
+            return;
+          } else {
+            wrapper.setAttribute("data-transitioning", "");
+          }
+
+          // change height (transition goverened by css class)
+          const visible = wrapper.style["height"] !== "0px";
+
+          wrapper.addEventListener(
+            "transitionend",
+            () => {
+              wrapper.removeAttribute("data-transitioning");
+              console.log(element.children[0].children);
+              element.children[0].children[2].classList.remove("hidden");
+            },
+            { once: true }
+          );
+
+          if (visible) {
+            wrapper.style["height"] = "0px";
+          } else {
+            wrapper.style["height"] = `${wrapper.scrollHeight}px`;
+          }
+        });
+      }
+    });
   });
 </script>

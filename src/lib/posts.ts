@@ -1,4 +1,3 @@
-import getReadingTime from "reading-time";
 import glob from "fast-glob";
 
 export const extractFrontMatter = async (post) => {
@@ -26,7 +25,7 @@ export const extractFrontMatter = async (post) => {
     image: image,
     authors: authors,
     slug: file.split("/").pop().split(".").shift(),
-    readingTime: Math.ceil(getReadingTime(rawContent()).minutes),
+    // readingTime: Math.ceil(getReadingTime(rawContent()).minutes),
   };
 };
 

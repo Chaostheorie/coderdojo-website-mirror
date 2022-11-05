@@ -4,7 +4,7 @@ import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/lib/config";
 import remarkMath from "remark-math";
-import { admonitionPlugin } from "./src/lib/admonition-shim.js";
+import { admonitionPlugin } from "./src/lib/admonition.js";
 import { codetitlePlugin } from "./src/lib/prism.js";
 import remarkSlug from "remark-slug";
 import remarkDirectives from "remark-directive";
