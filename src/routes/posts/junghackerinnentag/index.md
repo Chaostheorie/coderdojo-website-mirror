@@ -20,7 +20,7 @@ description ="Programm zum Berliner Junghacker:innentag 2022!"
 > Du hast Fragen oder möchtest mit uns in Kontakt treten? Am einfachsten schreibst Du uns [per Matrix an](https://matrix.to/#/#junghackerinnentag:x-hain.de) oder schreibst uns eine E-Mail an junghackerinnentag at cyber4edu pünktchen org
 
 <Figure src="/images/future-hacker.jpg" alt="Junghacker:in bei der Arbeit" />
-
+[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) via flickr/[BlinkenArea.org](https://www.flickr.com/photos/blinkenarea/20632120901/)
 ## Programm
 
 | Uhrzeit       | Titel und Anmeldelink       | Alter        | Mentor:innen          | max. Teilnehmende | Worum geht's                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
