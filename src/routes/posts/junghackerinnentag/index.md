@@ -1,7 +1,7 @@
 +++
 title = "Junghacker:innentag"
-date = 2022-12-01
-updated = 2022-11-24
+date = 2022-12-28
+updated = 2022-11-30
 showToc = false
 description ="Programm zum Berliner Junghacker:innentag 2022!"
 +++
@@ -14,12 +14,12 @@ description ="Programm zum Berliner Junghacker:innentag 2022!"
 
 # Berliner Junghacker:innentag 2022 im xHain
 
-Hintergrund: Eigentlich gibt es auf dem Congress des CCC zwischen den Jahren zum zweiten Congresstag einen sog. Junghackertag. Der Congress öffnet dann für einen Tag für junge Menschen seine Türen. Da der Congress coronabedingt erneut ausfällt, veranstalten wir für junge Menschen von sechs bis 18 Jahren (je nach Workshop) einen Tag! Die Workshops finden im Friedrichshainer [xHain](https://x-hain.de/de/) in der Grünberger Straße 16 statt. Alle Veranstaltugnen sind kostenfrei, Spenden natürlich gerne gesehen. Bitte beachte unsere unten anstehenden Coronaregeln!
+Hintergrund: Eigentlich gibt es auf dem Congress des [CCC](https://ccc.de) zwischen den Jahren zum zweiten Congresstag einen sog. Junghackertag. Der Congress öffnet dann für einen Tag für junge Menschen seine Türen. Da der Congress coronabedingt erneut ausfällt, veranstalten wir für junge Menschen von sechs bis 18 Jahren (je nach Workshop) einen Tag! Die Workshops finden am 28. Dezember 2022 im Friedrichshainer [xHain](https://x-hain.de/de/) in der Grünberger Straße 16 statt. Alle Veranstaltugnen sind kostenfrei, Spenden natürlich gerne gesehen. Bitte beachte unsere unten anstehenden Coronaregeln!
 
 > Du hast Fragen oder möchtest mit uns in Kontakt treten? Am einfachsten schreibst Du uns [per Matrix an](https://matrix.to/#/#junghackerinnentag:x-hain.de) oder schreibst uns eine E-Mail an junghackerinnentag at cyber4edu pünktchen org
 
-<small><Figure src="/images/future-hacker.jpg" alt="Junghacker:in bei der Arbeit" />
-[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) via flickr/[BlinkenArea.org](https://www.flickr.com/photos/blinkenarea/20632120901/)</small>
+<Figure src="/images/future-hacker.jpg" alt="Junghacker:in bei der Arbeit" />
+<small>[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) via flickr/[BlinkenArea.org](https://www.flickr.com/photos/blinkenarea/20632120901/)</small>
 
 ## Programm
 
