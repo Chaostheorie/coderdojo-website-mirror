@@ -14,14 +14,13 @@ description ="Programm zum Berliner Junghacker:innentag 2022!"
 
 # Berliner Junghacker:innentag 2022 im xHain
 
-> Hintergrund: Eigentlich gibt es auf dem Congress des CCC zwischen den Jahren zum zweiten Congresstag einen sog. Junghackertag. Der Congress öffnet dann für einen Tag für junge Menschen seine Toren. Da der Congress coronabedingt erneut ausfällt, veranstalten wir für junge Menschen ab sechs Jahren (je nach Workshop) einen Tag! Alle Veranstaltugnen sind kostenfrei, Spenden natürlich gerne gesehen.
-
-> Du bist bereits Mentor:in oder möchstest es werden, hast Zeit und Lust, Dich einzubringen? Do it! [Melde Dich einfach bei uns.](https://matrix.to/#/#junghackerinnentag:x-hain.de)
+Hintergrund: Eigentlich gibt es auf dem Congress des CCC zwischen den Jahren zum zweiten Congresstag einen sog. Junghackertag. Der Congress öffnet dann für einen Tag für junge Menschen seine Türen. Da der Congress coronabedingt erneut ausfällt, veranstalten wir für junge Menschen von sechs bis 18 Jahren (je nach Workshop) einen Tag! Die Workshops finden im Friedrichshainer [xHain](https://x-hain.de/de/) in der Grünberger Straße 16 statt. Alle Veranstaltugnen sind kostenfrei, Spenden natürlich gerne gesehen. Bitte beachte unsere unten anstehenden Coronaregeln!
 
 > Du hast Fragen oder möchtest mit uns in Kontakt treten? Am einfachsten schreibst Du uns [per Matrix an](https://matrix.to/#/#junghackerinnentag:x-hain.de) oder schreibst uns eine E-Mail an junghackerinnentag at cyber4edu pünktchen org
 
-<Figure src="/images/future-hacker.jpg" alt="Junghacker:in bei der Arbeit" />
-[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) via flickr/[BlinkenArea.org](https://www.flickr.com/photos/blinkenarea/20632120901/)
+<small><Figure src="/images/future-hacker.jpg" alt="Junghacker:in bei der Arbeit" />
+[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) via flickr/[BlinkenArea.org](https://www.flickr.com/photos/blinkenarea/20632120901/)</small>
+
 ## Programm
 
 | Uhrzeit       | Titel und Anmeldelink                               | Alter         | Mentor:innen          | max. Teilnehmende | Worum geht's                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -34,12 +33,7 @@ description ="Programm zum Berliner Junghacker:innentag 2022!"
 | 15:15 - 16:30 | Schlösseröffnen / Lockpicking                       | 12 - 18 Jahre | Jascha                | 10                | Beschreibung kommt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 16:30 - 17:15 | Podcasten - Dein erster Podcast                     | 10 - 16 Jahre | Bernd                 | 6                 | Podcast, wie kommt mein Hörspiel ins Internet? Wie geht das, was braucht man und wie fange ich an? Wenn Ihr Euch diese Fragen gestellt habt, kommt vorbei und wir helfen Euch bei den ersten Schritte zum eigenen Podcast.                                                                                                                                                                                                                                                                          |
 | 16:45 - 18:15 | Nähen - eine maschinengestützte Einführung          | 10 - 16 Jahre | Beate                 | XX                | Beschreibung kommt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 18:30 - 20:30 | Shell in the Ghost - Linux-Shell für Anfänger:innen | 14 - 18 Jahre | bengoshi & derMicha   | 12                | In vielen Filmen, in dem Hacker\*innen dargestellt werden, seht ihr diese mysteriöse Shell, über die Server in Rechenzentren angesteuert werden. Hier wollen wir euch auf eine kleine Reise mitnehmen und das ganze entzaubern.                                                                                                                                                                                                                                                                     |
-
-Was ist Linux eigentlich und warum will man das nutzen?
-Wir gucken uns gemeinsam die Unterschiede zu anderen Betriebssystemen wie Windows oder MacOS an und erklären bei ein paar der großen Linux-Distributionen, welche für wen geeignet ist. Im Workshop widmen wir uns ein wenig der Shell. Wir erklären euch, warum man sie am heimischen Linux-Rechner nicht braucht und warum und wann sie doch unverzichtbar ist. Alle Teilnehmenden erhalten über ihren Browser einen Zugang zu einer Shell, so dass jede\*r alles gleich live ausprobieren kann. Ihr lernt. euch auf einem Server zu bewegen und mit den ersten Befehlen umzugehen.
-
-Das klangt jetzt alles schon sehr fortgeschritten? Keine Sorge, ihr braucht keine Vorkenntnisse, es ist ein Workshop für Anfänger\*innen. Ihr braucht dafür keine Software, kein eigenes Linux – sondern nur einen Internetbrowser (Firefox, Brave oder ähnliches) und Dein Notebook (kein Tablet) |
+| 18:30 - 20:30 | Shell in the Ghost - Linux-Shell für Anfänger:innen | 14 - 18 Jahre | bengoshi & derMicha   | 12                | In vielen Filmen, in dem Hacker\*innen dargestellt werden, seht ihr diese mysteriöse Shell, über die Server in Rechenzentren angesteuert werden. Hier wollen wir euch auf eine kleine Reise mitnehmen und das ganze entzaubern. Du brauchst keine Vorkenntnisse, keinen Linux-Rechner, sondern nur Dein eigenes Notebook (kein Tablet!). Falls Du kein eigenes Gerät hast, sag rechtzeitig Bescheid, dann bereiten wir Dir ein Leihgerät vor.                                                       |
 
 ## Coronaregeln
 
@@ -48,6 +42,8 @@ Corona macht auch vor unserer Tür nicht halt. Deswegen gelten bei uns folgende 
 - über 18jährige müssen eine vollständige Impfung nachweisen, am einfachsten mit CoronaWarnApp (also einschließlich Booster oder zwei Impfungen bei nachgewiesener Infektion)
 
 - altersunabhängig alle müssen vor Ort einen Schnelltest machen. Bis das Testergebnis vorliegt gilt Maskenpflicht. Wenn das Testergebnis nach einer Viertelstunde vorliegt, darf die Maske gerne aufbehalten werden, darf aber auch abgesetzt werden. Da wir keinen Sponsor haben, wäre es super, wenn Du Dir einen Test mitbringst und vielleicht einen zweiten oder dritten für diejenigen, die ihren vergessen haben oder kein Geld dafür haben.
+
+> Du bist bereits Mentor:in oder möchstest es werden, hast Zeit und Lust, Dich einzubringen? Do it! [Melde Dich einfach bei uns.](https://matrix.to/#/#junghackerinnentag:x-hain.de)
 
 <div class="flex justify-center">
     <Button href="https://routing.openstreetmap.de/?z=17&center=52.512803%2C13.449798&loc=52.512790%2C13.449777&hl=de&alt=0&srv=1#">
