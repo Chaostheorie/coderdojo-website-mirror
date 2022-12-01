@@ -39,7 +39,7 @@ Digitalisierung der Bildung.
 
 Kai Kobschätzki (/bengoshi) war im zivilen Leben über zehn Jahre als Rechtsanwalt mit den Schwerpunkten Steuer- und
 Gesellschaftsrecht tätig, aber auch als kaufmännischer Leiter eines Unternehmens und als Ausbilder unterwegs. Deshalb triggern ihn Begriff wie ERP, Legal Tech, Legal Design und Bildung sofort. Zuletzt war er gut
-eineinhalb Jahre als juristischer Referent bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit für den Bereich Schule zuständig und er ist derzeit in der Berliner Finanzverwaltung beschäftigt.
+eineinhalb Jahre als juristischer Referent bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit für den Bereich Schule zuständig. Derzeit ist bengoshi in der Berliner Finanzverwaltung beschäftigt.
 
 Privat war er über ein Jahrzehnt in der in der Kinderarbeit einer katholischen Gemeinde engagiert und leitete mehr als
 sieben Jahre ehrenamtlich die dortige Jugendarbeit. Er begeistert sich für Python, Django, PostgreSQL und frickelt auch
