@@ -107,13 +107,13 @@ Der Loop bzw. die Schleife entspricht einem „While True:“ in Python. Er wird
 
 GPIO steht für General Purpose Input/Output. Das heißt wörtlich übersetzt Allzweckeingabe/-ausgabe. Das sind durchnummerierten Pins auf deinem Arduino. Darüber können Daten ein- und ausgelesen werden. Mit digitalWrite wird ein Zustand auf einen bestimmten Pin geschrieben. Umgekehrt wird mit digitalRead etwas vom Pin gelesen. Digital heißt - es gibt an oder aus, oder eben HIGH bzw. LOW. Der erste Wert in der Klammer sagt dir, welcher Pin angepsrochen wird. LED_BUILTIN steht für Pin 13. Das kannst du einfach testen, indem du dir zwei Kabel, einen 100 Ohm Widerstand und eine blaue LED nimmst. Die schließt du wie dargestellt an:
 
-<Figure src="/images/arduino/one_LED.svg" alt="eine LED" />
+<Figure src="/images/kyo-6/arduino/one_LED.svg" alt="eine LED" />
 
 Und der delay-Befehl entspricht einem time.sleep unter Python.
 
 Eine LED blinkt. Damit haben wir noch nicht viel gewonnen. Als nächstes kommt ein Blinklicht.
 
-<Figure src="/images/arduino/two_LED.svg" alt="zwei LEDs" />
+<Figure src="/images/kyo-6/arduino/two_LED.svg" alt="zwei LEDs" />
 
 Dafür nutzen wir jetzt gleich die Definition von Variablen. Das passiert über dem Setup-Teil. Du kannst mit 'int LED_1 = 12; ' dir eine Variable definieren, die über den GPIO 12 angesprochen wird. Sowas brauchst du auch noch für Pin 13. Alles klar? Stecke alles wie in der Grafik angezeigt und schreibe den Code dazu. Du kannst schon alles, was du dazu brauchst.
 
