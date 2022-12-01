@@ -3,10 +3,13 @@ title = "6. Kyo"
 
 color = "#FFFF00"
 date = 2022-10-28
+description ="Arduino programmieren"
 +++
 
 <script lang="ts">
-  import Figure from '$lib/components/Figure.svelte';
+    import Button from '$lib/components/Button.svelte';
+    import Figure from '$lib/components/Figure.svelte';
+    import UserRectangle from "phosphor-svelte/lib/UserRectangle";
 </script>
 
 # Arduino programmieren
