@@ -13,6 +13,8 @@ date = 2022-10-28
 
 :::tip Info
 Dieser Teil ist Bestandteil eines unserer Präsenz-Workshops. Dort verfügen wir auch über einen entsprechenden Satz von Arduionos. Wenn du keinen Präsenz-Workshop von uns besuchen kannst, brauchst du für dieses Kaptel einen Arduiono 2560 R3 und ein wenig Elektronik-Zubehör. Auf deinem Rechner muss eine Arduino-IDE installiert sein.
+
+Wir bauen diese Seite und den dazugehörigen Workshop gerade auf. Das ist hier also gerade eher Alpha- als Betastadium..
 :::
 
 ## Arduino prorammieren
