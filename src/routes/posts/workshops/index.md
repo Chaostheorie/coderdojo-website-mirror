@@ -10,9 +10,7 @@ created = 2022-08-05
 
 # Workshops
 
-Unser nächster Workshop ist:
-
-- 26. November 2022 von 14 bis 17 Uhr - [ Jugend hackt Lab Berlin - Python II (Einführung in pygame)](https://coderdojo.red/posts/news/2022-11-26/)
+Unsere nächsten Workshops von uns und anderen Mentor:innen sind alle auf der Seite des [Junghacker:innentages](https://junghackerinnentag.de) zu sehen.
 
 Gerade gelaufen sind:
 
@@ -21,6 +19,8 @@ Gerade gelaufen sind:
 - 3. September 2022 von 14 bis 17 Uhr - [Jugend hackt - Einführung in html/CSS (online)](https://coderdojo.red/posts/news/2022-09-03/)
 
 - 2. Oktober 2022 von 14 bis 17 Uhr - [CoderDojo.red - Einführung in Python (in Präsenz)](https://coderdojo.red/posts/news/2022-10-02/)
+
+- 26. November 2022 von 14 bis 17 Uhr - [ Jugend hackt Lab Berlin - Python II (Einführung in pygame)](https://coderdojo.red/posts/news/2022-11-26/)
 
 Die Materialien für die Workshops erscheinen demnächst hier.
 
