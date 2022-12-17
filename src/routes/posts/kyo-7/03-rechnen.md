@@ -33,11 +33,11 @@ Hier kurz die wichtigsten Rechenarten, die du in Python nutzen kannst:
 
 - // Ganzzahldivision (teste 22/8 und 22//8)
 
-- \% Modulo (gibt den ganzzahligen Rest als Integer aus, teste 22%8)
+- % Modulo (gibt den ganzzahligen Rest als Integer aus, teste 22%8)
 
 - \*\* für Potenzen, also 3-Quadrat ist 3\*\*2
 
-Diese Klammern `(`, `)` kannst du auch verwenden. Wie beim Taschenrechner werden „Kommazahlen“ mit einem Punkt
+Diese Klammern `(` `)` kannst du auch verwenden. Wie beim Taschenrechner werden „Kommazahlen“ mit einem Punkt
 ausgegeben. Spiele damit ein wenig rum und probiere auch mal aus, ob die Regle Punkt-vor-Strich beachtet wird und wie
 mit Klammern diese Regel „umgangen“ werden kann und wie es sich mit Potenzen verhält.
 

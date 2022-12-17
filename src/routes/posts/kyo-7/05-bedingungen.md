@@ -11,8 +11,10 @@ created = 2021-12-07
 ## Bedingungen
 
 Kommen wir zu einem neuen Element: Bedingungen. Es gibt recht häufig Situationen, in denen etwas zu entscheiden ist.
-Dabei müssen etwas vergleichen. Da ein Gleichheitszeichen bereits mit der Zuweisung für eine Variable belegt ist, nimmt
-man einfach zwei Gleichheitszeichen. Das folgende Beispiel ist sehr simpel, zeigt Dir aber, wie es funktioniert:
+Das geschieht durch Vergleiche. So in der Art - ist es draußen über 25°C, öffne das Fenster. Oder auch - ist es draußen über 25°C und es regnet draußen nicht, öffne das Fenster, sonst schließe es.
+
+Da ein Gleichheitszeichen bereits mit der Zuweisung für eine Variable belegt ist, ist es für solche Vergleiche „verbraucht“. Python nimmt
+deshalb einfach zwei Gleichheitszeichen. Das folgende Beispiel ist sehr simpel, zeigt Dir aber, wie es funktioniert:
 
 ```python:equality-check.py
 a = input("Bitte gib eine Zahl ein: ")

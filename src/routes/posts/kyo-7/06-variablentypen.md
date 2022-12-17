@@ -13,7 +13,7 @@ created = 2021-12-07
 Inzwischen hast du schon recht viel mit Variablen gearbeitet. Ist Dir dabei aufgefallen, dass bei einem
 `a = input("Gib was ein: ")` und `a = 1` das erste `a` für einen Text steht und das zweite für eine Zahl? In vielen
 Programmiersprachen musst du bevor du eine Variable das erste Mal nutzen kann, dem Rechner sagen, wie du diese Variable
-verwenden willst. Das brauchst du in Python nicht. Das hat so seine Vor- und Nachteile. Steht eine Variable für einen
+verwenden willst. Im nächsten Gurt fängst du beispielsweise an, die Sprache C zu lernen. Da wird das genau so gemacht. Das brauchst du in Python aber nicht. Das hat so seine Vor- und Nachteile. Steht eine Variable für einen
 Text, verwendet man sie als sogenannten String, abgekürzt `str`. Bei ganzen Zahlen nennt man sie Integer (engl. für
 ganze Zahl), abgekürzt `int`. Ganze Zahl heißt - es gehen sowohl positive als auch negative Zahlen. Mit `type(a)` kannst
 du Dir ausgeben lassen, wie die Variable verwendet wird. Probiere mal folgenden Code aus:
@@ -64,7 +64,7 @@ es gibt eine Fehlermeldung. Warum ist das so? Weil du Text nicht als Integer beh
 insoweit abhängig davon, dass kein Nutzender auf die Idee kommt, einen Buchstaben einzugeben. Es ist nie gut, darauf zu
 vertrauen, dass Nutzende sinnvolle Dinge tun. Das ist ein Sicherheitsrisiko (und schön ist es auch nicht, wenn ein
 Programm sich aufhängt). Wie man solche Möglichkeiten abfängt, zeigen wir dir weiter unten. Das müssen wir hier gerade
-noch offen lassen.
+noch offen lassen. Was du aber aus Gründen der Sicherheit immer im Hinterkopf haben musst - Eingaben von Benutzenden darf niemals nicht vertraut werden. Entweder, weil dort ein Mensch sitzt, der schlichtweg mal Fehler macht oder weil dort ein Mensch vor deinem Code sitzt, welche:r böswillig Fehleingaben vornimmt.
 
 Wir wollen uns ein paar weitere Variablentypen anschauen:
 
@@ -77,7 +77,7 @@ a = False
 print(type(a))
 ```
 
-Der erste Typ nennt sich Float (`float`) und ist für sogenannte Gleitkommazahlen. Spätestens wenn du dividierst oder mit
+Der erste Typ nennt sich Float (`float`) und ist für sogenannte Gleitkommazahlen gedacht. Spätestens wenn du dividierst oder mit
 Prozenten arbeitest, tauchen sie auf. Hier gibt es aber echte Untiefen, da Computer nicht so rechnen, wie wir das
 erwarten. Auf das Thema werden wir noch mehrfach zurückkommen.
 
@@ -91,8 +91,8 @@ sog. boolesche Werte). Das ist ein Gedenken an den amerikanischen Mathematiker G
 lebte. Dieser Variablentyp kann nur zwischen Wahr und Falsch unterscheiden. Das klingt banal, aber du wirst sehen, dass
 er sehr praktisch ist und häufig Verwendung findet.
 
-Jetzt wird es ein wenig abstrakt:\
-Nein, das war noch nicht alles. Python kennt noch mehr Variablentypen. Aber an dieser Stelle sollen uns die erst einmal genügen.
+Python kennt noch mehr Variablentypen. Aber an dieser Stelle sollen uns die erst einmal genügen.
+
 Python versucht den Typ der Variable passend für Dich umzuwandeln. Wenn du also einen String mit einem Integer addierst,
 würde in vielen Sprachen ein Fehler ausgeworfen werden. Python wandelt automatisch den Integer in einen String um – und wenn
 zwei Strings „addiert“ werden, dann hängt Python sie einfach hintereinander. Die andere Richtung geht nicht unbedingt. Denn
@@ -110,21 +110,18 @@ ist an dieser Stelle, dass du schon davon gehört hast und versucht, einen Blick
 du es gerade zu tun hast. Im Code kannst du immer mit `type(Variablenname)` auswerfen lassen, wie Python ihn gerade behandelt.
 
 <Figure src="/images/kyo-7/SolarpanelBp_a.jpeg" alt="Solarzellen
- werden mittels Lötbändchen zu Strängen,<br> den sogeannten Strings verbunden" />
+ werden mittels Lötbändchen zu Strängen, den sogeannten Strings verbunden" />
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch Stringspielereien. Wie man zwei Strings wie `"ot"` `"to"`
 kombiniert, hast du schon gesehen: aus `"ot" + "to"` wird `"otto"`. Das ein String in zwei `""` eingefasst werden muss,
-haben wir noch nicht explizit gesagt, ist Dir aber sicherlich schon aufgefallen. du kannst auch das \`\`\` nehmen, also
+haben wir noch nicht explizit gesagt, ist Dir aber sicherlich schon aufgefallen. du kannst auch das \` nehmen, also
 das Zeichen über der Raute. Beides geht, du solltest es nur nicht in einem Code mischen. Aber was machst du nun, wenn du
 in einem String sagen wolltest:`print("Und er sagt: "Hallo"")`. Nur zu, Hack das ein. Soviel vorweg – das wird nichts.
 Denn Python liest das erste und weiß – jetzt geht der String los. Dann kommt das zweite und er denkt, der String ist zu
 Ende. Und dann kommt etwas, mit er echt nichts anfangen kann – `"Hallo"`. Typisch menschlicher Kram halt. Hier gibt es
 zwei Wege.
 
-Entweder du schreibst `print("Und er sagt: `Hallo`")` bzw. `print(`Und er sagt: "Hallo"`)`. Oder du sagst ihm, dass das
-folgende Zeichen nicht in weiter beachtet werden soll, dafür benutzen wir den sogenannten Backslash. Das ist der
-Querstrich beim ß, den du mit AltGr ansteuerst. Du würdest also schreiben `print("Und er sagt: \"Hallo\"")`. Python
-liest die ersten Anführungszeichen und weiß, der String geht los. Bei den zweiten kommt erst der `\` – da sagt sich
+Entweder du schreibst `print("Und er sagt: \`Hallo\`")`bzw.`print(\`Und er sagt: "Hallo"\`)`. Oder besser, du sagst ihm, dass das folgende Zeichen nicht in weiter beachtet werden soll. Dafür benutzen wir den sogenannten Backslash. Das ist der Querstrich beim ß, den du mit AltGr ansteuerst. Du würdest also schreiben `print("Und er sagt: \"Hallo\"")`. Python liest die ersten Anführungszeichen und weiß, der String geht los. Bei den zweiten kommt erst der `\` – da sagt sich
 Python -- nicht verarbeiten, stumpf ausgeben. Wir nennen diesen Vorgang escapen, von entkommen oder aussteigen. Und nur
 damit du es gesehen hast – man kann auch mit drei `"` oder ``` arbeiten, um einen String zu definieren. Das funktioniert
 sogar über Zeilen hinweg.

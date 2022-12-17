@@ -26,7 +26,7 @@ print("Hello World")
 ```
 
 Aber der gute Admin ist faul – wenn er stupide Dinge mehrfach machen muss, automatisiert er sie. Und genau hier sind
-Computer ja auch echt stark. Zehnmal geht noch gut, wenn du 100-mal das machen müsstest, wäre es schon nervig. Und Du
+Computer ja auch echt stark. Zehnmal geht noch gut, wenn du 100-mal das machen müsstest, wäre es schon nervig. Und du
 müsstest, um sicherzugehen, dass es nicht 99 oder 101 sind, mehrfach nachzählen. Schöner wäre es doch, wenn wir dem
 Computer sagen könnten, dass er diese Befehlszeile n-mal wiederholen soll. Das machen wir mit einer sogenannten
 For-Schleife oder For-Loop.
@@ -37,8 +37,8 @@ for i in range(10):
 ```
 
 Die Einrückung erzeugst du, indem du die Tab-Taste verwendest. Das ist die Taste zwischen `CapsLock` (dauernd
-großschreiben und der \^-Taste). Probiere es gleich mal aus, indem du wieder auf „Run“ und dann auf
-`Run `main``gehst. Wähle die Ausgabe nach. Sind es wirklich zehn `Hello World`? Wenn es nicht geht - ist die Print-Zeile
+großschreiben und der ^-Taste, links oben). Probiere es gleich mal aus, indem du wieder auf „Run“ und dann auf
+`Run `main`gehst. Zähle die Ausgabe nach. Sind es wirklich zehn`Hello World`? Wenn es nicht geht - ist die Print-Zeile
 eingerückt? Ende die for-Zeile mit einem Doppelpunkt? Was sagt die Fehlermeldung? Wenn du das Problem nicht gefixt
 bekommst, [melde dich bei uns](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org) und wir helfen dir.
 

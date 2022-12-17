@@ -13,17 +13,17 @@ created = 2021-12-07
 > And if smells like chicken, it's the wrong side.
 
 Nachdem wir uns eine ganze Zeit mit Software beschäftigt haben, machen wir eine Runde Hardware. Am einfachsten dürfte
-das für Dich sein, wenn du Dich dafür in einen (Deinem?) lokalen Hackerspace begibst. In Berlin bietet sich der
+das für dich sein, wenn du dich dafür in einen (deinem?) lokalen Hackerspace begibst. In Berlin bietet sich der
 familienfreundliche [xHain](https://x-hain.de) an. Wir setzen wie beim Programmieren beim Löten keinerlei Vorkenntnisse
 voraus, da die Teilnehmenden unterschiedlich alt sind und dem Thema in der Schule unterschiedliches Gewicht beigemessen
-wird. Es kann also gut sein, dass du gerade am Anfang gähnst. Keine Sorge, wird steigern das Stück für Stück. Aber wir
+wird. Es kann also gut sein, dass du gerade am Anfang gähnst. Keine Sorge, auch hier steigern wir uns Stück für Stück. Aber wir
 wollen alle mitnehmen.
 
 <Figure src="/images/kyo-7/derMicha_Soldering_th.jpg" alt="derMicha bei einem Löt-Workshop"/>
 
-Zunächst solltest du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn du noch keine Erfahrung hast, lass Dir
+Zunächst solltest du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn du noch keine Erfahrung hast, lass dir
 ein kleines Stück Lochraster geben und ein paar alte Bauteile und versuche die, ein- und auszulöten. Wir können hier nur
-bedingt etwas zu erklären, da Dir am besten eine Mentorin kurz zeigt, wie es geht. Der Rest ist handwerkliche Fähigkeit,
+bedingt etwas zu erklären, da dir am besten eine Mentorin kurz zeigt, wie es geht. Der Rest ist handwerkliche Fähigkeit,
 dass muss man also einfach ein bißchen selber gemacht haben.
 
 <Figure src="/images/kyo-7/Lochraster_loeten.jpg" alt="Lötübungen am Lochraster"/>
@@ -33,7 +33,7 @@ Bauteile geben. Für die Mentoren - benötigt werden:
 
 - Lochraster,
 - Draht,
-- 5mm LED rot,
+- 5mm LED rot (für Mentoren: Prüfe bitte vorher, dass sie keinen eingebauten Vorwiderstand drin hat),
 - 220 Ω Widerstand und
 - 4,5 V-Batterieadapter.
 
@@ -51,8 +51,6 @@ Röhren entsprechen den Stromleitungen. Und ein Widerstand ist einfach eine Röh
 Wasser durchfließen, wie durch eine große Röhre. Stell Dir jetzt vor, die LED besteht aus einer dünnen Glasröhre. Drückt
 man da zuviel Wasser durch, platzt es. Das verhindern wir mit dem Widerstand. Hier eine kleine Zeichnung dazu:
 (Zeichnung ist in Arbeit)
-
-== Platzhalter Wasserkreislauf ==
 
 Solche Zeichnungen stellt man technisch mit sogenannten Schaltplänen dar. Dabei haben bestimmte Bauelemente fest
 definierte Zeichen. Die kleine Schaltung, die du Dir zurecht gelötet hast, schaut dann so aus:

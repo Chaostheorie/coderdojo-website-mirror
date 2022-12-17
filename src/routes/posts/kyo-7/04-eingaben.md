@@ -11,15 +11,14 @@ created = 2021-12-07
 ## Eingaben
 
 Jetzt wollen wir den/die Benutzer:in Einbinden. Die Eingabe einer Benutzerin weisen wir einfach einer Variable zu. Und
-wir sagen dem Benutzer noch, was er oder sie hier eingeben soll. Das schaut so aus:
+wir sagen der Benutzerin noch, was sie hier eingeben soll. Das schaut so aus:
 
 ```python:request-number.py
 userInput = input("Bitte gib eine Zahl ein: ")
 userInput = int(userInput)
 ```
 
-Die zweite Zeile nimm bitte erstmal hin, dazu kommen wir gleich. Wenn du an dieser willst, dass die Eingabe als Zahl
-behandelt wird, brauchst du das. Jetzt bist du wieder dran. Kombiniere das gelernte. Frage die Benutzer:in nach zwei
+Die zweite Zeile nimm bitte erstmal hin, dazu kommen wir gleich. Das brauchen wir, damit die Eingbae als Zahl behandelt wird. Jetzt bist du wieder dran: Kombiniere das gelernte! Frage die Benutzenden nach zwei
 Zahlen, addiere sie und gib sie aus. Wenn das funktioniert, lege um den Code eine For-Schleife herum, die dafür sorgt,
 dass der Code dreimal ausgeführt wird. Teste ihn. Kommen beim zweiten Anlauf komische Ergebnisse heraus? Versuche
 herauszubekommen, woran das liegt. Es hilft, sich bei jeder Zeile zu überlegen, was diese macht und welche Variablen

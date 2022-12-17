@@ -42,15 +42,17 @@ Wir schauen auf Dinge wie Datenschutz, Nerdkultur ebenso wie auf Hardware.
 Trainieren? Der Begriff Dōjō kommt aus dem Kampfsport und stellt dort den Trainingsraum oder -halle dar. Programmieren
 lernen hat vieles damit gemeinsam. Jeder der Lesen und Schreiben kann, kann Programmieren lernen. Aber wenn du
 Programmieren lernen willst, wird das nicht klappen, indem du nur ein Buch liest oder einen Film schaust. So lernst du
-weder Karate, Judo oder Fahrrad fahren. Da gehört immer eine ordentliche Portion Übung dazu. Man kann eine Kata, also
-die vorgeschrieben Bewegungsabläufe, alleine üben. Aber regelmäßige Partnerübungen sind genauso wichtig wie das sich
+weder Karate, Judo oder Fahrrad fahren. Da gehört immer eine ordentliche Portion Übung dazu.
+
+Man kann eine Kata, also
+die vorgeschrieben Bewegungsabläufe beim Karate, alleine üben. Aber regelmäßige Partnerübungen sind genauso wichtig wie das sich
 jemand von außen das anschaut und Dir hilft, Deine Bewegungen zu verbessern. So ist das beim Coden auch. Es hilft, sich
 gegenseitig Code vorzustellen, sich zu besprechen und sich Unterstützung zu holen, wenn es mal klemmt. Und jeder macht
 früher oder später die Erfahrung, dass es mal nicht weitergeht. Statt das Handtuch zu werfen, lernt Ihr Euch gegenseitig
 zu helfen oder von den erfahrenen Mentoren unterstützt zu werden. Dieser Teil ist mindestens so bedeutsam wie alleine zu
 frickeln. Und am meisten lernt, wer lehrt - du wirst von Problemen anderer hören, kannst ihnen helfen und eine Menge
-selbst dazu lernen. Aktuell treffen wir uns einmal wöchentlich in einer Videokonferenz. Das wollen wir ergänzen durch
-ein einmal monatliches Treffen im Berliner [Hackerspace xHain](https://x-hain.de/de/). An dieser Stelle kann das Script
+selbst dazu lernen. Wir haben es zwar aktuell ausgesetzt, aber lange Zeit haben wir uns einmal wöchentlich in einer Videokonferenz getroffen. Wenn es dafür wieder Bedarf gibt, nehmen wir das gerne erneut auf. Sag uns einfach Bescheid. Diese Treffen wollen wir ergänzen durch
+ein einmal monatliches Treffen im Berliner [Hackerspace xHain](https://x-hain.de/de/). Dabei laufen viele Workshops unter dem Dach von Jugend hackt. An dieser Stelle kann das Script
 beziehungsweise der Text nicht immer aktuell sein - also schau bitte auf unserer Homepage unter News nach. Wenn du nicht
 aus Berlin kommst, sprich uns an und wir versuchen dir zu helfen, in Deiner Stadt Ansprechpartner zu finden.
 
@@ -59,9 +61,11 @@ soll, die sogenannten Kyo-Grade oder im deutschen Schüler-Grade. Es gibt nicht 
 verschiedene Dan-Grade - im deutschen Meister-Grade. An diesem System wollen wir uns orientieren. Wir beginnen mit dem
 Weg zum weißen Gürtel. Danach hast du die wichtigsten bzw. ersten Grundbegriffe drauf. Wir haben keine „Gürtelprüfungen"
 geplant. Aus eigenen Erfahrungen von verschiedenen Budo-Sportarten finden das manche jedoch gut. Wenn euch so etwas
-ansprechen sollte, sagt uns Bescheid und wir gehen darauf ein. Ob mit oder ohne Prüfung: du solltest die Tests für den
+ansprechen sollte, sagt uns Bescheid und wir gehen darauf ein.
+
+Ob mit oder ohne Prüfung: du solltest die Tests für den
 „Gürtel" bestehen, bevor du weitermachst. Andernfalls fehlen dir Grundlagen für die nächsten Kapitel und das schafft
-mehr Frust als Lust beim Weitermachen. Wenn du merkst, dass dir was fehlt und da nicht so richtig rankommst - sprich uns
+mehr Frust als Lust beim Weitermachen. Wenn du merkst, dass dir was fehlt und aber du nicht so richtig weiterkommst - sprich uns
 an, damit wir gemeinsam daran feilen. Umgekehrt hilft es Mentoren, wenn sie wissen, was du schon gemacht hast und was
 vorausgesetzt werden darf. Wenn du bei einem solchen „Test" nicht weiterkommst, ist das nicht schlimm - wir sind hier
 nicht in der Schule. Hier geht es nicht darum, eine Prüfung zu bestehen, sondern etwas zu lernen. Wenn du also bei einem
@@ -85,7 +89,7 @@ Der Anfang ist leider oft etwas trocken, weil man erst etwas Rüstzeug lernen mu
 du tolle Würfe und Tritte lernst, steht immer erst eine Runde Fallschule und Bewegungslehre an. So ist das hier auch. Im
 Weißgurt lernst du absolute Basics. Vieles werden wir nur anreißen können und müssen dich für eine Vertiefung auf später
 vertrösten. Aber andernfalls besteht die Gefahr, sich gleich in Details zu verlieren. Auch in den folgenden Einheiten
-werden wir aus diesem Grund manche Dinge bewusst auf spätere Einheiten verschieben. Im Geldgurt wollen wir dann aber
+werden wir aus diesem Grund manche Dinge bewusst auf spätere Einheiten verschieben. Im Gelbgurt wollen wir dann aber
 gleich ein Weltraumspiel bauen und dieses Stück für Stück weiter ausbauen. Gleichzeitig wollen wir keine Dinge machen,
 die anfangs noch nicht erklärt werden können. Aus diesem Grund verzichten wir zunächst auf grafische „Spielereien". Aber
 halte durch, die kommen!
@@ -95,7 +99,7 @@ halte durch, die kommen!
 Wie oft solltest du dich damit beschäftigen müssen? Müssen wäre schon mal kein guter Start. Wir sind hier nicht in der
 Schule. Wir treffen uns, weil wir neugierig sind und Spaß an der Sache haben, nicht weil wir müssen. Insofern kann man
 selbstverständlich auch mal aussetzen, weil es vielleicht einem gerade mit Klausuren zuviel wird oder anderes anliegt.
-Aber dir sollte klar sein, dass ohne eine regelmäßige Beschäftigung du nicht voran kommen wirst und es wenig motiviert,
+Aber klar ist - ohne eine regelmäßige Beschäftigung kommst du nicht voran und es demotiviert,
 wenn man immer auf der Stelle tritt. Neben unserem wöchentlichen Treffen solltest du dir also schon mindestens einen
 Nachmittag die Woche dafür Zeit nehmen. Zwar setzt sich niemand hin und paukt wie bei einer Sprache Vokabeln. Die
 Befehle lernst du, indem du sie regelmäßig benutzt. Ohne das wird es schwierig. Wir wollen dich nicht abschrecken,
@@ -124,7 +128,7 @@ andere werfen. Daneben solltest du Git installiert habenn. Wir verzichten hier b
 sondern geben nur ein paar Links. Es gibt erhebliche Unterschiede zwischen Windows, Linux und Mac und den dortigen
 Versionen. Außerdem ist das ein Punkt, an dem viele verzweifeln und Aussteigen. Um nicht an dieser Hürde zu scheitern -
 wenn du es nicht selber hinbekommst, lass dir bitte helfen. Vielleicht hast du jemanden in Deinem Umfeld wie Deine
-Eltern oder Lehrkräfte. Ansonsten bieten wir dir gerne an, bei der Installation zu helfen. Sprich uns einfach an. Du
+Eltern oder Lehrkräfte. Ansonsten bieten wir dir gerne an, bei der Installation zu unterstützen. Sprich uns einfach an. Du
 verfügst nur über ein Handy oder Tablett und kannst auf keinen Computer / Notebook zugreifen? Wir helfen dir gerne, wie
 du für circa 100 Euro für die ersten Schritte ausreichendes Gerät erwerben kannst. Wenn Geburtstag oder Weihnachten
 gerade noch weit weg sind oder du erstmal schauen möchtest, ob das überhaupt dein Ding ist - wir haben einen kleinen
@@ -144,6 +148,8 @@ Wenn Stolperstein zu beachten sind, gibt es an der Seitenrand einen Hinweis. Hie
 die Hinweise genau befolgen beziehungsweise nochmal lesen, wenn etwas nicht funktioniert.
 
 Wenn es mathematische Zusatzaufgaben gibt, wird das extra ausgewiesen.
+
+Sprachlich stellen wir den Text sukzessive auf die weibliche Form um. Jungs und diverse Menschen sind davon natürlich auch umfasst. Wenn wir Inhalte diverser und inklusiver gestalten können, stehen wir dem offen gegenüber. Schlag uns bitte einfach an konkreten Stellen vor, wie wir besser gestalten können und wir werden uns das anschauen. Das gilt natürlich auch, wenn wir irgendwo jemanden vor den Kopf stoßen sollten. Bitte geh erstmal davon aus, dass das nicht unsere Intension ist und lass uns ins Gespräch kommen, wie es besser geht.
 
 Auf geht `s zum [Weißgurt](https://coderdojo.red/kyo-7/). Und bis wir uns beim nächsten BBB- oder Reallife-Meeting
 sehen - Stay safe and keep coding!
