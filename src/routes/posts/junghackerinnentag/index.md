@@ -16,7 +16,7 @@ description ="Programm zum Berliner Junghacker:innentage 2022!"
 
 Hintergrund: Eigentlich gibt es auf dem Congress des [CCC](https://ccc.de) zwischen den Jahren zum zweiten Congresstag einen sog. Junghackertag. Der Congress öffnet dann für einen Tag für junge Menschen seine Türen. Da der Congress coronabedingt erneut ausfällt, veranstalten wir für junge Menschen von sechs bis 18 Jahren (je nach Workshop) einen Tag! Die Workshops finden am **28. Dezember 2022** im Friedrichshainer [xHain](https://x-hain.de/de/) in der Grünberger Straße 16 statt. Weitere Veranstaltungen für den **29. Dezember 2022** sind gerade in Planung, also schau gerne bald wieder hier vorbei. Alle Veranstaltungen sind kostenfrei, Spenden natürlich gerne gesehen. Um planen zu können, müsstest Du Dich bitte **anmelden**. Klick auf den jeweiligen Titel um zur Anmeldeseite zu gelangen.
 
-Wenn da irgendwas klemmt doer Du irgendwie bei der Anmeldung nicht weiterkommst - bitte schreib uns einfach eine E-Mail unter junghackerinnentag klammeraffe cyber4edu punkt org und wir helfen Dir!
+Wenn da irgendwas klemmt oder Du irgendwie bei der Anmeldung nicht weiterkommst - bitte schreib uns einfach eine E-Mail unter junghackerinnentag klammeraffe cyber4edu punkt org und wir helfen Dir!
 
 Bitte beachte unsere unten anstehenden Coronaregeln!
 
