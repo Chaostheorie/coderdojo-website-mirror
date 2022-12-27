@@ -41,6 +41,18 @@ Bitte beachte unsere unten anstehenden Coronaregeln!
 | 16:45 - 19:45 | [Nähen - eine maschinengestützte Einführung](https://zen.coderdojo.com/dojos/de/berlin/berlin-mitte-xhain)             | ab 12 Jahren ohne Altersgrenze | [Beate](https://www.indarium.de/#four)                     | 5                 | Wir wollen einen Beutel nähen, den ihr mit zwei Kordeln oben zuziehen und auf dem Rücken tragen könnt. Die Idee ist, dass ihr den Beutel bunt benäht oder sogar mit LEDs zum Leuchten bringt. Stoffreste, Knöpfe, Bänder, Kordeln zum Gestalten könnt ihr gerne mitbringen.                                                                                                                                                                                                                             |
 | 20:00 - 22:30 | ~~Shell in the Ghost - Linux-Shell für Anfänger:innen~~                                                                |               |                                                            |                   | muss leider ausfallen. Wer Bedarf hat - bitte melden und wir organisieren eine Ersatzveranstaltung                                                                                                                                                                                                                                                                                                                                                                                                      |
 
+## Programm am 29. Dezember 2022
+
+Der 2. Tag bietet die Gelegenheit das klassische Brettspiel [GO](https://www.dgob.de/). Jede Person ist herzlich willkommen das wunderbare Spiel kennen zu lernen, oder an ihrer Spielstärke zu arbeiten.
+
+Es wird mindestens ein 1 Dan Spieler anwesend sein, der seine Unterstützung anbieten wird.
+
+Bretter und Steine sind vorhanden.
+
+Wir starten um 11:00 und planen den Workshop gegen 15:00 zu beenden.
+
+Gerne kann der Workshop auch dazu dienen sich zu regelmässigen Treffen im x-hain oder auch online zu verabreden.
+
 ## Coronaregeln
 
 Corona macht auch vor unserer Tür nicht halt. Deswegen gelten bei uns folgende Regeln:
