@@ -26,7 +26,7 @@ Mitgründer der [ubirch GmbH](https://ubirch.com). Beruflich liegen seine Schwer
 Aus der Erfahrung mit datenschutzkonformen Konzepten zur Digitalisierung von Schulen gründete er mit anderen
 Mitstreiterinnen auf dem „Chaos Communication Congress“ 2019 vorpandemisch den Verein
 [cyber4EDU](https://cyber4edu.org). Ferner engagiert sich derMicha bei [Chaos macht Schule](https://ccc.de/schule).
-derMicha ist Mitglied im [CCCB](https://ccc.de/schule) und im Friedrichshainer Hacker- und Makerspace
+derMicha ist Mitglied im [CCC](https://ccc.de/schule) und im Friedrichshainer Hacker- und Makerspace
 [xHain](https://x-hain.de/). Gemeinsam mit bengoshi gründeten beide Anfang 2019 das CoderDojo Mitte. Inspiriert von
 Jugendhackt wollten beide Jugendlichen einen Anschluss nach den phantastischen Wochenenden bei Jugend hackt schaffen.
 Aus dem gemeinsamen Engagement für Datenschutz hat derMicha gemeinsam mit bengoshi den Podcast
