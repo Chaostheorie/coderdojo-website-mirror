@@ -10,8 +10,9 @@ description ="Taxplorer Club - Evergreens der Buchhaltung"
     import Button from '$lib/components/Button.svelte';
     import Figure from '$lib/components/Figure.svelte';
     import UserRectangle from "phosphor-svelte/lib/UserRectangle";
+    import Audio from '$lib/components/Audio.svelte';
 </script>
 
-# Berliner Junghacker:innentage 2022 im xHain
+# Taxplorer Club Videodatei
 
 <Audio src="https://cloud.kobschaetzki.de/f/afc12850c14146309a7d/?dl=1" title="Video Taxplorer" />
