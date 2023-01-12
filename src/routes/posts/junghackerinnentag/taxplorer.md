@@ -14,4 +14,4 @@ description ="Taxplorer Club - Evergreens der Buchhaltung"
 
 # Berliner Junghacker:innentage 2022 im xHain
 
-<Video src="https://cloud.kobschaetzki.de/f/afc12850c14146309a7d/?dl=1" title="Video Taxplorer" />
+<Audio src="https://cloud.kobschaetzki.de/f/afc12850c14146309a7d/?dl=1" title="Video Taxplorer" />
