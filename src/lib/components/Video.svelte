@@ -1,19 +1,15 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-
-  // placeholder for video component
-  let VideoPlayer;
-
   // props for embedded audio ressource
-  export let cover: string | undefined;
+  export let title = "";
   export let source: string[] | string;
 
-  // create shikwasa instance on load
-  onMount(async () => {
-    const component = await import("svelte-video-player");
-
-    VideoPlayer = component.default;
-  });
+  const extract_ending = (url: string) => {
+    return "video/" + url.split(".").pop();
+  };
 </script>
 
-<svelte:component this={VideoPlayer} poster={cover} {source} />
+<video controls aria-title={title} width="100%">
+  {#each source as src}
+    <source {src} type={extract_ending(src)} />
+  {/each}
+</video>

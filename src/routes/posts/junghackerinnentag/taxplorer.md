@@ -15,4 +15,4 @@ description ="Taxplorer Club - Evergreens der Buchhaltung"
 
 # Taxplorer Club Videodatei
 
-<Video source={["https://dect42.de/assets/2022-12-05-Evergreens_der_Buchfuehrung.webm"]} />
+<Video source={["https://dect42.de/assets/2022-12-05-Evergreens_der_Buchfuehrung.webm"]} title="Taxplorer video" />
