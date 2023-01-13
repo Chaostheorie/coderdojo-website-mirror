@@ -10,9 +10,9 @@ description ="Taxplorer Club - Evergreens der Buchhaltung"
     import Button from '$lib/components/Button.svelte';
     import Figure from '$lib/components/Figure.svelte';
     import UserRectangle from "phosphor-svelte/lib/UserRectangle";
-    import Audio from '$lib/components/Audio.svelte';
+    import Video from '$lib/components/Video.svelte';
 </script>
 
 # Taxplorer Club Videodatei
 
-<Audio src="https://cloud.kobschaetzki.de/f/afc12850c14146309a7d/?dl=1" title="Video Taxplorer" />
+<Video source={["https://cloud.kobschaetzki.de/f/afc12850c14146309a7d/?dl=1"]}  />

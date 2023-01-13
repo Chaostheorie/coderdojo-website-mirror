@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "@iarna/toml": "^2.2.5",
-    "@sveltejs/adapter-static": "next",
-    "@sveltejs/kit": "next",
+    "@sveltejs/adapter-static": "1.0.0-next.38",
+    "@sveltejs/kit": "1.0.0-next.403",
     "@tailwindcss/typography": "^0.5.4",
     "@types/prismjs": "^1.26.0",
     "@types/unist": "^2.0.6",
@@ -78,6 +78,7 @@
     "phosphor-svelte": "^1.2.1",
     "remark-admonitions": "^1.2.1",
     "remark-parse": "^10.0.1",
-    "shikwasa": "^2.1.4"
+    "shikwasa": "^2.1.4",
+    "svelte-video-player": "^1.2.5"
   }
 }
