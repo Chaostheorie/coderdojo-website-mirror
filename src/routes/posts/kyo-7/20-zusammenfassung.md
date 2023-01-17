@@ -47,3 +47,5 @@ Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
 
 - Und nicht zuletzt kennst du die Antwort auf alle Fragen und weißt, ob du die blaue oder die rote Pille nehmen
   sollst.
+
+Eine Ansammlung von sogenannten Cheat Sheets, also Spickzetteln, findest Du in [diesem GitHub-Repository](https://github.com/afizs/python-notes/blob/main/resources/cheatsheets.md). Schau mal rein, dass kann ganz hilfreich sein.
