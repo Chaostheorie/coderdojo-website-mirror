@@ -3,8 +3,8 @@ lockfileVersion: 5.4
 specifiers:
   "@fontsource/fira-mono": ^4.5.8
   "@iarna/toml": ^2.2.5
-  "@sveltejs/adapter-static": next
-  "@sveltejs/kit": next
+  "@sveltejs/adapter-static": 1.0.0-next.38
+  "@sveltejs/kit": 1.0.0-next.403
   "@tailwindcss/typography": ^0.5.4
   "@types/prismjs": ^1.26.0
   "@types/unist": ^2.0.6
@@ -111,7 +111,7 @@ devDependencies:
   svelte: 3.49.0
   svelte-check: 2.8.0_blrkfmplrezk6jx3arz7bdc3pa
   svelte-preprocess: 4.10.7_6avtyouqcdws46kxwsvk4vhxre
-  tailwindcss: 3.1.8
+  tailwindcss: 3.1.8_postcss@8.4.14
   tslib: 2.4.0
   typescript: 4.7.4
   unified: 10.1.2
@@ -363,7 +363,7 @@ packages:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
-      tailwindcss: 3.1.8
+      tailwindcss: 3.1.8_postcss@8.4.14
     dev: true
 
   /@types/debug/4.1.7:
@@ -4890,13 +4890,15 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /tailwindcss/3.1.8:
+  /tailwindcss/3.1.8_postcss@8.4.14:
     resolution:
       {
         integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==
       }
     engines: { node: ">=12.13.0" }
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
@@ -5087,6 +5089,7 @@ packages:
         integrity: sha512-JCrmN13jI4+h9UAyKEoGcDZV+i1E7BLFuG7OsaDvTXI5P0qhHX+vZO/kOhz9jn8HGENDKbwSeB0nVOg4gVStGA==
       }
     dependencies:
+      "@types/unist": 2.0.6
       bail: 1.0.5
       extend: 3.0.2
       is-plain-obj: 2.1.0
