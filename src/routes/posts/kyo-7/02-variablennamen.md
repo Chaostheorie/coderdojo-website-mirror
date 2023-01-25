@@ -25,8 +25,7 @@ wäre es hilfreich, wenn du auf eine Variable schaust und eine Ahnung davon hast
 komplett neu reindenken zu müssen, sollte nicht der Fall sein müssen.
 
 Müsste es dann nicht besser „Schrittzähler“ statt „`i`“ heißen? Jein. Bei Schleifen und ähnlichen Konstruktionen gibt es
-die Ausnahme von der Regel, dass `i` (und bei mehreren ineinander greifenden Schleifen `j`, `k` etc.) üblich sind. Auch in anderen Programmiersprachen.
-Das gilt nicht nur für Python. Die Variablen sollten gleichzeitig möglichst kurz sein, damit man nicht so viel schreiben
+die Ausnahme von der Regel, dass `i` (für index) üblich sind. Bei mehreren ineinander greifenden Schleifen werden dann die nachfolgenden Buchstaben `j`, `k` etc. verwendet. Dies gilt für sehr viele Programmiersprachen, nicht nur für Python. Die Variablen sollten gleichzeitig möglichst kurz sein, damit man nicht so viel schreiben
 muss, aber lang genug, dass man sie versteht. Das kommt also immer auf das konkrete Problem an. Wenn du drei Koordinaten
 definieren willst, können `x`, `y` und `z` super Variablennamen sein. Wenn du aber mehrere hast, hilft `x1` und `x2`
 vielleicht nicht mehr weiter, weil du jedes Mal neu überlegen musst, wofür `x1` und `x2` stehen sollte. Das ganze sind
