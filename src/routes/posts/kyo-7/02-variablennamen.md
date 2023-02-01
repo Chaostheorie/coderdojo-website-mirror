@@ -18,7 +18,8 @@ diese von Anfang an anzugewöhnen:
 
 Variablennamen sollten immer klein anfangen, außer es handelt sich um eine Klasse. Was
 das ist, kommt ein ganzes Stück später. Merke Dir jetzt nur – sie beginnen mit einem kleinen Buchstaben. Für
-Variablennamen, die aus mehreren Wörtern bestehen, gibt es zwei Möglichkeiten: `anzahl_Autos` – das nennt man
+Variablennamen, die aus mehreren Wörtern bestehen, gibt es.
+Das gilt nicht nur zwei Möglichkeiten: `anzahl_Autos` – das nennt man
 `snake_Case` oder `anzahlAutos` – das nennt man `CamelCase`. Bei Python wird `snake_Case` bevorzugt. Und Variablen
 sollten einen zeigen, was sie beinhalten. Stell Dir vor, dass du Deinen Code nach einem Monat wieder anschaust. Dann
 wäre es hilfreich, wenn du auf eine Variable schaust und eine Ahnung davon hast, wofür sie ist. In den Code dafür

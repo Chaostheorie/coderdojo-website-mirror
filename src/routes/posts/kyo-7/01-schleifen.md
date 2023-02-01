@@ -75,8 +75,16 @@ Dabei solltest du „Hello“ und „World“ jeweils nur einmal schreiben. Wenn
 Zur For-Schleife zählt alles das, was eingerückt ist. Diese Einrückung ist eine Besonderheit der Programmiersprache
 Python. Es gibt Sprachen die solche zusammenhängenden Blöcke mit `begin` und `end` markieren, die meisten Sprachen
 verwenden dafür Klammern. Python rückt ein. Hintergrund ist, dass man dies bei den anderen Programmiersprachen auch
-machen soll, damit der Code übersichtlicher und verständlicher wird. Die Tugend ist bei Python Pflicht. Rücke zwei
-print-Zeilen unterhalb der For-Schleife ein und lass sie Dir ausgeben. Dann probierst du aus, wenn die erste nicht
+machen soll, damit der Code übersichtlicher und verständlicher wird. Die Tugend ist bei Python Pflicht.
+
+> Manchmal wirst du vielleicht hören, dass Python doch noch solche Klammern einführt. Die Antwort darauf gibt Python jedoch selbst.
+> Probiere einfach folgenden Einzeiler (zwei Unterstriche vor und nach future) aus:
+
+```
+from __future__ import braces
+```
+
+Weiter geht's: Rücke zwei print-Zeilen unterhalb der For-Schleife ein und lass sie Dir ausgeben. Dann probierst du aus, wenn die erste nicht
 eingerückt ist und wenn die erste, aber nicht die zweite eingerückt ist. Der erste Fall wirft Dir einen Fehler aus.
 Warum? Weil Python erwartet, dass es zu der Schleife einen Inhalt gibt. Rückst du nichts ein, fehlt dieser Inhalt. Spiel
 ruhig damit ein wenig rum. Mach mal was mit zwei for-Schleifen oder ändere den Wert in Range.
