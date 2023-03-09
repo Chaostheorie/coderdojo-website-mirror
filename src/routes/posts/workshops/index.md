@@ -44,6 +44,7 @@ Derzeit bieten wir Einführungs-Workshops zu den Themen:
 In Vorbereitung sind derzeit noch folgende Themen:
 
 - Docker
+- eigener Webserver
 - git
 - Robotik
 - Recht für Programmier:innen (Datenschutz, Urheberrecht, Lizenzrecht)
