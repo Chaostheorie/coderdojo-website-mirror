@@ -22,9 +22,9 @@ Gerade gelaufen sind:
 
 - 26. November 2022 von 14 bis 17 Uhr - [ Jugend hackt Lab Berlin - Python II (Einführung in pygame)](https://coderdojo.red/posts/news/2022-11-26/)
 
-- 28. Dezember 2022 ganztägig - junghackerinnentag
+- 28. Dezember 2022 ganztägig - [Junghackerinnentag](https://coderdojo.red/posts/news/2022-12-28-junghackerinnentag_2022/)
 
-- 14. Januar 2023 von 14 bis 17 Uhr - Einführung in PyGames
+- 14. Januar 2023 von 14 bis 17 Uhr - [ Jugend hackt Lab Berlin - Python II (Einführung in pygame)](https://coderdojo.red/posts/news/2023-01-14/)
 
 - 12. März 2023 von 10 bis 13 Uhr - [Chemnitzer Linux Tage - Arduino für Anfänger:innen](https://chemnitzer.linux-tage.de/2023/de/programm/junior)
 
