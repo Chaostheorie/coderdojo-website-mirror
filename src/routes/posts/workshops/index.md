@@ -22,6 +22,12 @@ Gerade gelaufen sind:
 
 - 26. November 2022 von 14 bis 17 Uhr - [ Jugend hackt Lab Berlin - Python II (Einführung in pygame)](https://coderdojo.red/posts/news/2022-11-26/)
 
+- 28. Dezember 2022 ganztägig - junghackerinnentag
+
+- 14. Januar 2023 von 14 bis 17 Uhr - Einführung in PyGames
+
+- 12. März 2023 von 10 bis 13 Uhr - [Chemnitzer Linux Tage - Arduino für Anfänger:innen](https://chemnitzer.linux-tage.de/2023/de/programm/junior)
+
 Die Materialien für die Workshops erscheinen demnächst hier.
 
 Derzeit bieten wir Einführungs-Workshops zu den Themen:
@@ -30,18 +36,18 @@ Derzeit bieten wir Einführungs-Workshops zu den Themen:
 - html/CSS
 - Linux-Shell
 - Linux
+- Arduino
 - Spuren im Netz (Datenschutz)
 - ATTiny-Löten und
 - ATTiny-Programmierung an.
 
 In Vorbereitung sind derzeit noch folgende Themen:
 
-- Arduiono
 - Docker
 - git
 - Robotik
 - Recht für Programmier:innen (Datenschutz, Urheberrecht, Lizenzrecht)
 
-Hier werden zuünftig die Materialien für die Workshops erscheinen.
+Diese Seite befindet sich gerade im Umbau, so dass hier die Workshop-Materialien erscheinen werden.
 
 Wenn du als Leiter:in einer Gruppe oder Institution wie Bibliothek oder Schule Interesse an einem Workshop hast, sprich uns gerne an. ZUmindest innerhalb Berlins bieten im Rahmen unserer ehrenamtlichen Kapazitäten auch vor Ort an. Wenn du als Einzelne:r Interesse hast, schreib uns einfach per Matrix an. Wir können dir dann sagen, ob der gefragte Workshop demnächst stattfindet oder ob wir ihn zumindest bald einplanen können.
