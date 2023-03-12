@@ -10,6 +10,9 @@ created = 2022-08-05
 
 # Workshops
 
+:::note Infor
+[Hier gibt es die Folien zum Vortrag Arduino für Anfänger:innen.](https://cloud.kobschaetzki.de/f/699350705c5b40eda6ec/?dl=1)
+
 Unsere nächsten Workshops von uns und anderen Mentor:innen sind alle auf der Seite des [Junghacker:innentages](https://junghackerinnentag.de) zu sehen.
 
 Gerade gelaufen sind:
