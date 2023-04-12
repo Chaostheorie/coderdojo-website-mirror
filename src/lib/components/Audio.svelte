@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import Shikwasa from "shikwasa";
+  import shikwasa from "../../../node_modules/shikwasa/dist/shikwasa.cjs.js";
 
   // props for embedded audio ressource
   export let title: string;
@@ -14,7 +14,7 @@
 
   // create shikwasa instance on load
   onMount(() => {
-    new Shikwasa({
+    new shikwasa.Player({
       container,
       audio: {
         artist,
