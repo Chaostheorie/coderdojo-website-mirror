@@ -1,5 +1,5 @@
 @import "./styles/duotone.css";
-@import "shikwasa/dist/shikwasa.min.css";
+@import "shikwasa/dist/style.css";
 @import "katex/dist/katex.min.css";
 @import "./styles/admonitions.css";
 @import "@fontsource/fira-mono";

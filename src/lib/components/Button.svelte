@@ -50,7 +50,7 @@
 
   /* Size variants */
   .button-small {
-    @apply py-1 px-3;
+    @apply px-3 py-1;
   }
 
   .button-small-icon {
@@ -58,7 +58,7 @@
   }
 
   .button-medium {
-    @apply py-2 px-6 text-lg;
+    @apply px-6 py-2 text-lg;
   }
 
   /* Color variants (respects the currently loaded color palette) */

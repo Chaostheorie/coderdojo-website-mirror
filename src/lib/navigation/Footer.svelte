@@ -19,7 +19,7 @@
       </a>
     </div>
     <div class="footer-section-container">
-      <div class="footer-section ">
+      <div class="footer-section">
         <span> CoderDōjō </span>
         <ul>
           <li>
