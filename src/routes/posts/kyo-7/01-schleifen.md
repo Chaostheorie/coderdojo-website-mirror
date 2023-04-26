@@ -158,6 +158,11 @@ print(3 * "*")
 Falls du jetzt denkst, pah, so einen Baum, billo, kann ich überspringen: Mach den mal mit höchstens zwei Print-Zeilen
 und du wirst sehen, da gibt es versteckte Untiefen.
 
+Falls du stecken bleibst, gibt es hier einen Tip:
+
+:::hint
+Mit Leerzeichen kannst Du die Sterne quasi verschieben. Während du mit jeder Leerzeile zwei neue Sterne brauchst, brauchst du gleichzeitig mit jeder neuen Zeile etwas weniger Leerzeichen. Der Baumstumpf bedarf einer eigenen print-Zeile und läuft unabhängig vom Nadelwerk. Wie werden es mehr Sterne? Überlege mal, wie du die Laufvariable dafür in einspannen kannst.
+
 Und weil ASCII-Art so schön ist, „zeichne“ noch eine Sanduhr (knobel auch hier, wie du mit möglichst wenig Code
 auskommst):
 
