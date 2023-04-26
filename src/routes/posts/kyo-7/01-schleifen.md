@@ -161,7 +161,7 @@ und du wirst sehen, da gibt es versteckte Untiefen.
 Falls du stecken bleibst, gibt es hier einen Tip:
 
 :::hint
-Mit Leerzeichen kannst Du die Sterne quasi verschieben. Während du mit jeder Leerzeile zwei neue Sterne brauchst, brauchst du gleichzeitig mit jeder neuen Zeile etwas weniger Leerzeichen. Der Baumstumpf bedarf einer eigenen print-Zeile und läuft unabhängig vom Nadelwerk. Wie werden es mehr Sterne? Überlege mal, wie du die Laufvariable dafür in einspannen kannst.
+Mit Leerzeichen kannst Du die Sterne quasi verschieben. Während du mit jeder Leerzeile zwei neue Sterne brauchst, brauchst du gleichzeitig mit jeder neuen Zeile etwas weniger Leerzeichen. Der Baumstumpf bedarf einer eigenen print-Zeile und läuft unabhängig vom Nadelwerk. Wie werden es mehr Sterne? Überlege mal, wie du die Laufvariable dafür in einspannen kannst. Also irgendwie wirst du Schleifen brauchen.
 
 Und weil ASCII-Art so schön ist, „zeichne“ noch eine Sanduhr (knobel auch hier, wie du mit möglichst wenig Code
 auskommst):
