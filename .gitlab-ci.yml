@@ -72,7 +72,7 @@ Lint:
     # Restart agent - Not necessary for prod only needed for debugging
     # - PID=$(eval "$(ssh-agent -s)" | sed "s/[A-Za-z ]*//") kill -9 "$PID"
     # Upload
-    - if test -f "~/.ssh/id_rsa"; then rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:"; fi
+    - if test -f "~/.ssh/id_rsa"; then rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:";  else; exit 1; fi
 
 CD:Red:
   <<: *rs-deploy
