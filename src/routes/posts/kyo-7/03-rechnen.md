@@ -12,7 +12,7 @@ created = 2021-12-07
 
 Computer heißen nicht umsonst auch Rechner. Der Begriff kommt übrigens nur scheinbar aus dem Englischen - er leitet sich
 vom lateinischen Verb computare ab, was nichts anderes als rechnen heißt. Zurück zum Rechnen: Die „üblichen“
-Rechenoperationen funktionieren hier natürlich auch. Das wollen wir uns mit ein wenig Code anschauen. Lösch Deinen
+Rechenoperationen funktionieren in Python natürlich auch. Das wollen wir uns mit ein wenig Code anschauen. Lösch Deinen
 bereits geschriebenen Code, schreib den Mustercode ab und schau Dir die Ausgabe an.
 
 ```python:addition.py
