@@ -117,7 +117,47 @@ Eine LED blinkt. Damit haben wir noch nicht viel gewonnen. Als nächstes kommt e
 
 Dafür nutzen wir jetzt gleich die Definition von Variablen. Das passiert über dem Setup-Teil. Du kannst mit 'int LED_1 = 12; ' dir eine Variable definieren, die über den GPIO 12 angesprochen wird. Sowas brauchst du auch noch für Pin 13. Alles klar? Stecke alles wie in der Grafik angezeigt und schreibe den Code dazu. Du kannst schon alles, was du dazu brauchst.
 
-Geschafft? Dann erklimmen wir gemeinsam die nächste Stufe. Schau dir diese Schaltung an:
+```c
+int LED_1 = 12;
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+
+}
+
+void loop() {
+  digitalWrite(LED_1, HIGH);
+  delay(500);
+  digitalWrite(LED_1, LOW);
+  delay(500);
+
+}
+
+```
+
+Das wäre die eine Möglichkeit. Die etwas elegantere ist \#define zu benutzen. Der Compiler ersetzt beim Compilieren den Teil, der in define angeführt wird. Du brauchst also keine Variable. Warum ist das eleganter? Weil für jede Variable Speicherplatz reserviert werden muss (üblicher ist der Begriff allokieren). Bei den handelsüblichen PCs mag das keine Rolle spielen. Wenn wir uns aber um so kleine Schätze wie den [ATTiny85](https://coderdojo.red/posts/kyo-6/60-loeten/#attiny-programmieren) kümmern - dann wird ist das wichtig. Das ganze sähe dann so aus:
+
+```c
+#define RED_PIN 12
+
+void setup() {
+  pinMode(RED_PIN, OUTPUT);
+
+}
+
+void loop() {
+  digitalWrite(RED_PIN, HIGH);
+  delay(500);
+  digitalWrite(RED_PIN, LOW);
+  delay(500);
+
+}
+
+```
+
+Bau mal den Code um für deine zwei LEDs. Geschafft?
+
+Dann auf zur nächsten Stufe. Nimm dir die Ampel-LED aus dem Kasten, verkabel diese und bau den Code so um, dass die Ampel wie eine Verkehrsampel leutet. Wenn du da mal drauf achtest - da leuchtet nicht immer nur eine Farbe. Die Schaltung geht Rot - Rot und Gelb - Grün - Gelb und von vorne. Du kannst schon alles, um das umzusetzen. Nur Mut und ran ans Werk!
 
 > War es das schon mit dem Gelbgurt? Mitnichten! Aber wir erarbeiten gerade das Programm. Es lohnt sich immer wieder
 > vorbeizukommen, da wir die Seite Stück für Stück ergänzen.
