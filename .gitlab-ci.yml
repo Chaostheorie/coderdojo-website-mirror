@@ -68,7 +68,7 @@ Lint:
   script:
     - pnpm build
     - pnpm minify
-    - bash -c 'if test -f "~/.ssh/id_rsa"; then rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:";  else; exit 1; fi'
+    - sh -c 'if test -f "~/.ssh/id_rsa"; then rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:";  else; exit 1; fi'
 
 CD:Red:
   <<: *rs-deploy
