@@ -70,7 +70,7 @@ Lint:
     - sha256sum ~/.ssh/id_rsa
     - pnpm build
     - pnpm minify
-    - if test -f "~/.ssh/id_rsa"; then rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:";  else exit 1; fi
+    - rsync -e "ssh -vv -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:"
 
 CD:Red:
   <<: *rs-deploy
