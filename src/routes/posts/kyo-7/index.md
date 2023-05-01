@@ -29,9 +29,8 @@ brauchst, um hier gleich mit PyCharm und Python durchstarten zu können.
 :::tip Notiz
 Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen beziehen sich nur auf PyCharm, um es
 übersichtlicher zu halten. Im Weißgurt sollte es auch ganz gut ohne IDE (wie PyCharm) gehen. Du kannst im Browser
-programmieren. Klick einfach mal auf den Schalter Play, wenn du ein Stück Code siehst. Da kannst du auch eigenen Code
-reinschreiben und ausführen. Also wenn du das Gefühl hast, dass PyCharm an der Stelle mehr schadet als nützt, nutzt
-erstmal die Möglichkeit des Playground, also das was du siehst, wenn du Play klickst. Spätestens ab dem Gelbgurt
+programmieren. Dazu bietet sich beispielsweise ein [Python Jupyter-Notebook](https://jupyter.org/try-jupyter/retro/notebooks/?path=Untitled.ipynb) an.
+Spätestens ab dem Gelbgurt
 solltest du mit PyCharm oder einer vergleichbaren IDE arbeiten.
 :::
 
