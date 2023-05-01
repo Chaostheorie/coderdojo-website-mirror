@@ -60,6 +60,7 @@ Lint:
     - eval $(ssh-agent -s)
     # Dump keys from CI variables to files
     - echo "$KEY" > ~/.ssh/id_rsa
+    - echo "$KEY" | sha256sum
     - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
     # SSH agent requires specific permissions
     - chmod 644 ~/.ssh/known_hosts
@@ -68,7 +69,7 @@ Lint:
   script:
     - pnpm build
     - pnpm minify
-    - sh -c 'if test -f "~/.ssh/id_rsa"; then rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:";  else exit 1; fi'
+    - if test -f "~/.ssh/id_rsa"; then rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:";  else exit 1; fi
 
 CD:Red:
   <<: *rs-deploy
