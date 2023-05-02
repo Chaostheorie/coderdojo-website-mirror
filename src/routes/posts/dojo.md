@@ -42,7 +42,7 @@ Wir schauen auf Dinge wie Datenschutz, Nerdkultur ebenso wie auf Hardware.
 Trainieren? Der Begriff Dōjō kommt aus dem Kampfsport und stellt dort den Trainingsraum oder -halle dar. Programmieren
 lernen hat vieles damit gemeinsam. Jeder der Lesen und Schreiben kann, kann Programmieren lernen. Aber wenn du
 Programmieren lernen willst, wird das nicht klappen, indem du nur ein Buch liest oder einen Film schaust. So lernst du
-weder Karate, Judo oder Fahrrad fahren. Da gehört immer eine ordentliche Portion Übung dazu.
+weder Karate, Judo noch Fahrrad fahren. Da gehört immer eine ordentliche Portion Übung dazu.
 
 Man kann eine Kata, also
 die vorgeschrieben Bewegungsabläufe beim Karate, alleine üben. Aber regelmäßige Partnerübungen sind genauso wichtig wie das sich
@@ -50,7 +50,7 @@ jemand von außen das anschaut und Dir hilft, Deine Bewegungen zu verbessern. So
 gegenseitig Code vorzustellen, sich zu besprechen und sich Unterstützung zu holen, wenn es mal klemmt. Und jeder macht
 früher oder später die Erfahrung, dass es mal nicht weitergeht. Statt das Handtuch zu werfen, lernt Ihr Euch gegenseitig
 zu helfen oder von den erfahrenen Mentoren unterstützt zu werden. Dieser Teil ist mindestens so bedeutsam wie alleine zu
-frickeln. Und am meisten lernt, wer lehrt - du wirst von Problemen anderer hören, kannst ihnen helfen und eine Menge
+frickeln. Am meisten lernt, wer lehrt: Du wirst so von Problemen anderer hören, kannst ihnen helfen und eine Menge
 selbst dazu lernen. Wir haben es zwar aktuell ausgesetzt, aber lange Zeit haben wir uns einmal wöchentlich in einer Videokonferenz getroffen. Wenn es dafür wieder Bedarf gibt, nehmen wir das gerne erneut auf. Sag uns einfach Bescheid. Diese Treffen wollen wir ergänzen durch
 ein einmal monatliches Treffen im Berliner [Hackerspace xHain](https://x-hain.de/de/). Dabei laufen viele Workshops unter dem Dach von Jugend hackt. An dieser Stelle kann das Script
 beziehungsweise der Text nicht immer aktuell sein - also schau bitte auf unserer Homepage unter News nach. Wenn du nicht
@@ -130,9 +130,7 @@ Versionen. Außerdem ist das ein Punkt, an dem viele verzweifeln und Aussteigen.
 wenn du es nicht selber hinbekommst, lass dir bitte helfen. Vielleicht hast du jemanden in Deinem Umfeld wie Deine
 Eltern oder Lehrkräfte. Ansonsten bieten wir dir gerne an, bei der Installation zu unterstützen. Sprich uns einfach an. Du
 verfügst nur über ein Handy oder Tablett und kannst auf keinen Computer / Notebook zugreifen? Wir helfen dir gerne, wie
-du für circa 100 Euro für die ersten Schritte ausreichendes Gerät erwerben kannst. Wenn Geburtstag oder Weihnachten
-gerade noch weit weg sind oder du erstmal schauen möchtest, ob das überhaupt dein Ding ist - wir haben einen kleinen
-Pool an Leihgeräten. Scheu dich nicht, uns ansprechen. Wir helfen dir gerne.
+du für circa 150 Euro für die ersten Schritte ausreichendes Gerät erwerben kannst. Für Veranstaltungen haben wir einen Pool an Leihgeräten zur Verfügung. Sag uns nur bitte rechtzeitig Bescheid.
 
 Ein paar Hinweise zum Layout. Wenn es um Code geht, sieht das so aus:
 
