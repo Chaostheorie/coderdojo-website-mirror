@@ -31,7 +31,7 @@ müsstest, um sicherzugehen, dass es nicht 99 oder 101 sind, mehrfach nachzähle
 Computer sagen könnten, dass er diese Befehlszeile n-mal wiederholen soll. Das machen wir mit einer sogenannten
 For-Schleife oder For-Loop.
 
-```python
+```python:hello_world_loop.py
 for i in range(10):
     print("Hello World")
 ```
@@ -97,14 +97,14 @@ Matheunterricht. Ihr wird mit jedem Durchlauf eine Zahl zugewiesen. `range(10)` 
 eins erhöht werden soll, bis es `10` ist. Klingt wenig verständlich? Lass Dir einfach mal ausgeben, was in `i` in jedem
 Durchlauf drin steckt.
 
-```python
+```python:i_in_loop.py
 for i in range(10):
     print("i lautet: ", i)
 ```
 
 `range` kann noch mehr. Folgender Code beziehungsweise, dessen Ausgabe sollte Dir das ganze zeigen:
 
-```python
+```python:i_in_loop_2.py
 for i in range(5, 25, 3):
     print("i lautet: ", i)
 ```
@@ -152,18 +152,16 @@ Die Herausforderung ist es jetzt, mit möglichst wenig Code auszukommen. Wir zei
 Lasst uns gemeinsam im CoderDojo darauf schauen, welche unterschiedlichen Wege Ihr so geht. Dabei lernt Ihr voneinander
 eine Menge. Es ist immer gut, auch fremden Code zu sehen. Als Tip geben wir Dir noch eine Zeile Code mit:
 
-```python
+```python:print_star.py
 print(3 * "*")
 ```
 
 Falls du jetzt denkst, pah, so einen Baum, billo, kann ich überspringen: Mach den mal mit höchstens zwei Print-Zeilen
 und du wirst sehen, da gibt es versteckte Untiefen.
 
-Falls du stecken bleibst, gibt es hier einen Tip:
+Falls du stecken bleibst, gibt es hier einen Tip (lies die aber wirklich erst, wenn du stecken bleibst!):
 
-:::hint Hinweise
 Mit Leerzeichen kannst Du die Sterne quasi verschieben. Während du mit jeder Leerzeile zwei neue Sterne brauchst, brauchst du gleichzeitig mit jeder neuen Zeile etwas weniger Leerzeichen. Der Baumstumpf bedarf einer eigenen print-Zeile und läuft unabhängig vom Nadelwerk. Wie werden es mehr Sterne? Überlege mal, wie du die Laufvariable dafür in einspannen kannst. Also irgendwie wirst du Schleifen brauchen.
-:::
 
 Und weil ASCII-Art so schön ist, „zeichne“ noch eine Sanduhr (knobel auch hier, wie du mit möglichst wenig Code
 auskommst):
