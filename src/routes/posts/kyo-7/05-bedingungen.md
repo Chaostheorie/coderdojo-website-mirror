@@ -59,7 +59,7 @@ Das Programm springt also in `if` und führt einen Vergleich durch. Ist der erfo
 dieser Bedingung. In die anderen Codeteile schaut es gar nicht mehr herein. In den `else`-Teil kommt es nur dann rein,
 wenn keiner der vorher aufgeführten Bedingungen wahr war. Alles klar soweit?
 
-Hierzu ein Beispiel: Für eine Zahl, die durch `3` teilbar ist, soll `Teiler-3`ausgegeben werden und für eine Zahl, die durch `2`teilbar ist, soll `Teiler-2`ausgegeben werden. Wenn die Zahl weder durch `3`noch durch `2`teilbar, soll "Nö" ausgegeben werden. Ein denkbarer Code wäre hierfür:
+Hierzu ein Beispiel: Für eine Zahl, die durch `3` teilbar ist, soll `Teiler-3`ausgegeben werden und für eine Zahl, die durch `2` teilbar ist, soll `Teiler-2`ausgegeben werden. Wenn die Zahl weder durch `3` noch durch `2` teilbar, soll "Nö" ausgegeben werden. Ein denkbarer Code wäre hierfür:
 
 ```python:teiler.py
 test = int(input("Bitte gib eine Zahl ein:"))
