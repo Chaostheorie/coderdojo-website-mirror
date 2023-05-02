@@ -10,9 +10,11 @@ created = 2021-12-07
 
 ## Rechnen
 
-Computer heißen nicht umsonst auch Rechner. Der Begriff kommt übrigens nur scheinbar aus dem Englischen - er leitet sich
-vom lateinischen Verb computare ab, was nichts anderes als rechnen heißt. Zurück zum Rechnen: Die „üblichen“
-Rechenoperationen funktionieren in Python natürlich auch. Das wollen wir uns mit ein wenig Code anschauen. Lösch Deinen
+Computer heißen nicht umsonst auch Rechner. Der Begriff Computer kommt übrigens nur scheinbar aus dem Englischen - er leitet sich
+vom lateinischen Verb computare ab, was nichts anderes als rechnen heißt. Zurück zum Rechnen:
+
+Die „üblichen“
+Rechenoperationen funktionieren natürlich auch in Python. Das wollen wir uns mit ein wenig Code anschauen. Lösch Deinen
 bereits geschriebenen Code, schreib den Mustercode ab und schau Dir die Ausgabe an.
 
 ```python:addition.py
@@ -38,7 +40,7 @@ Hier kurz die wichtigsten Rechenarten, die du in Python nutzen kannst:
 - \*\* für Potenzen, also 3-Quadrat ist 3\*\*2
 
 Diese Klammern `(` `)` kannst du auch verwenden. Wie beim Taschenrechner werden „Kommazahlen“ mit einem Punkt
-ausgegeben. Spiele damit ein wenig rum und probiere auch mal aus, ob die Regle Punkt-vor-Strich beachtet wird und wie
+ausgegeben. Spiele damit ein wenig rum und probiere auch mal aus, ob die Regel Punkt-vor-Strich beachtet wird, wie
 mit Klammern diese Regel „umgangen“ werden kann und wie es sich mit Potenzen verhält.
 
 Versuche bitte Folgendes auszurechnen:

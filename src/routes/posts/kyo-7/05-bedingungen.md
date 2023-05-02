@@ -14,7 +14,7 @@ Kommen wir zu einem neuen Element: Bedingungen. Es gibt recht häufig Situatione
 Das geschieht durch Vergleiche. So in der Art - ist es draußen über 25°C, öffne das Fenster. Oder auch - ist es draußen über 25°C und es regnet draußen nicht, öffne das Fenster, sonst schließe es.
 
 Da ein Gleichheitszeichen bereits mit der Zuweisung für eine Variable belegt ist, ist es für solche Vergleiche „verbraucht“. Python nimmt
-deshalb einfach zwei Gleichheitszeichen. Das folgende Beispiel ist sehr simpel, zeigt Dir aber, wie es funktioniert:
+deshalb einfach zwei Gleichheitszeichen für einen Vergleich. Das folgende Beispiel ist sehr simpel, zeigt Dir aber, wie es funktioniert:
 
 ```python:equality-check.py
 a = input("Bitte gib eine Zahl ein: ")
@@ -57,7 +57,24 @@ Programm ist also noch fehleranfällig; Mittel dagegen lernst du noch am Ende de
 
 Das Programm springt also in `if` und führt einen Vergleich durch. Ist der erfolgreich, springt es gleich an das Ende
 dieser Bedingung. In die anderen Codeteile schaut es gar nicht mehr herein. In den `else`-Teil kommt es nur dann rein,
-wenn keiner der vorher aufgeführten Bedingungen wahr war. Alles klar soweit? Dann hast du schon wirklich wesentliche
+wenn keiner der vorher aufgeführten Bedingungen wahr war. Alles klar soweit?
+
+Hierzu ein Beispiel: Für eine Zahl, die durch `3` teilbar ist, soll `Teiler-3`ausgegeben werden und für eine Zahl, die durch `2`teilbar ist, soll `Teiler-2`ausgegeben werden. Wenn die Zahl weder durch `3`noch durch `2`teilbar, soll "Nö" ausgegeben werden. Ein denkbarer Code wäre hierfür:
+
+```python:teiler.py
+test = int(input("Bitte gib eine Zahl ein:"))
+
+if test % 3 == 0:
+    print("Teiler-3")
+elif test % 2 == 0:
+    print("Teiler-2")
+else:
+    print("Nö")
+```
+
+Liefert dieser Code das erwartete Ergebnis? Probiere mal die Zahl `6` aus. Die ist durch `3` und durch `2` teilbar. Fällt dir was auf? Ändere den Code bitte so ab, dass das korrekte Ergebnis ausgegeben wird.
+
+Mit Bedingungen hast Dann hast du schon wirklich wesentliche
 Elemente gelernt, mit denen man schon eine Menge machen kannst.
 
 ## Übungen
