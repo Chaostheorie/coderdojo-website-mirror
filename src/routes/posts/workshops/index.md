@@ -32,6 +32,8 @@ Gerade gelaufen sind:
 
 - 12. März 2023 von 10 bis 13 Uhr - [Chemnitzer Linux Tage - Arduino für Anfänger:innen](https://chemnitzer.linux-tage.de/2023/de/programm/junior)
 
+- 6. Mai 2023 von 14 bis 17 Uhr - Python/Euler für Anfänger:innen 
+
 Die Materialien für die Workshops erscheinen demnächst hier.
 
 Derzeit bieten wir Einführungs-Workshops zu den Themen:
