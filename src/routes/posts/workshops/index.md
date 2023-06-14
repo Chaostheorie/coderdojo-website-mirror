@@ -14,7 +14,13 @@ created = 2022-08-05
 [Hier gibt es die Folien zum Vortrag Arduino für Anfänger:innen.](https://cloud.kobschaetzki.de/f/699350705c5b40eda6ec/?dl=1)
 :::
 
-Unsere nächsten Workshops von uns und anderen Mentor:innen sind alle auf der Seite des [Junghacker:innentages](https://junghackerinnentag.de) zu sehen.
+Anstehend:
+
+- 29. Juli 2023 von 14 bis 17 Uhr - Python für Anfänger:innen und zum Auffrischen
+
+- Workshops für das Chaos Communication Camp sind in Vorbereitung. Wir werden häkeln, Spiele programmieren, uns mit ESP8266 und MicroPython und einem Capture the Flag beschäftigen. Details folgen.
+
+- 23. September 2023 von 14 bis 17 Uhr - ATTiny löten und programmieren
 
 Gerade gelaufen sind:
 
@@ -32,7 +38,9 @@ Gerade gelaufen sind:
 
 - 12. März 2023 von 10 bis 13 Uhr - [Chemnitzer Linux Tage - Arduino für Anfänger:innen](https://chemnitzer.linux-tage.de/2023/de/programm/junior)
 
-- 6. Mai 2023 von 14 bis 17 Uhr - Python/Euler für Anfänger:innen 
+- 29. April 2023 von 14 bis 17 Uhr - Arduino für Anfänger:innen im Jugend hackt Lab Berlin
+
+- 6. Mai 2023 von 14 bis 17 Uhr - Python/Euler für Anfänger:innen
 
 Die Materialien für die Workshops erscheinen demnächst hier.
 
