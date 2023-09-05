@@ -68,7 +68,7 @@ Die LED ist für die Aufwärmübungen.
 Bring den erstmal zum Blinken, bevor du dich am Stripe versuchst. Weil wir aber gerade am Basteln sind, machen wir das
 erst noch fertig. Isoliere den Stripe am Anfang ab. Sei vorsichtig - da kann man leicht bei abrutschen...
 
-<Figure src="/images/kyo-6/attiny/9-stripe_th.jpg" alt="Strip" />
+<Figure src="/images/kyo-6/attiny/9-stripe_th.jpg" alt="Stripe" />
 
 Dann verbindest du das ganze mit dem Konnektor.
 
