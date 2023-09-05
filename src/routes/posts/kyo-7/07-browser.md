@@ -20,12 +20,11 @@ das bildlicher zu machen – stell Dir vor, Dein Eltern schauen Dir die ganze Ze
 
 <Figure src="/images/kyo-7/children-593313_s.jpg" alt="Den richtigen Browser gefunden!" />
 
-Es gibt Browser, die besonders gerne Daten sammeln und zumindest Teile dieser Daten auch nach Hause schicken. Ebenso gibt es Browser, die es anderen Seiten leichter oder schwerer machen, zu erkennen, wer du bist. Aktuell empfehlen wir Dir Brave zu
-benutzen, da er recht datensparsam ist. Firefox ist auch ganz okay. Abraten würden wir Dir klar von Edge und Google
-Chrome. Brave baut auf Chromium, der Open-Source Variante von Google Chrome, auf, ist datenschutzfreundlicher.
-Diese Empfehlung gilt jetzt – Software ändert sich. Da gilt es dranzubleiben.
+Es gibt Browser, die besonders gerne Daten sammeln und zumindest Teile dieser Daten auch nach Hause schicken. Ebenso gibt es Browser, die es anderen Seiten leichter oder schwerer machen, zu erkennen, wer du bist. Aktuell empfehlen wir Dir [LibreWolf](https://librewolf.net/) zu
+benutzen, da er recht datensparsam ist. Er baut auf Firefox auf, arbeitet aber datensparsamer. Abraten würden wir Dir klar von Edge und Google
+Chrome. Diese Empfehlung gilt jetzt – Software ändert sich. Da gilt es dranzubleiben. So haben wir hier an dieser Stelle mal Brave empfohlen. Die Gründe, warum das nicht mehr der Fall ist, [findest Du hier](https://stackdiary.com/brave-selling-copyrighted-data-for-ai-training/).
 
-<Figure src="/images/kyo-7/Brave.png" alt="Brave"/>
+<Figure src="/images/kyo-7/LibreWolf_icon.svg" alt="LibreWolf"/>
 
 E-Mail ist ein ganz großes Thema. Deutlich später wollen wir ebenfalls einmal dran zu machen zu schauen, wie das
 eigentlich so funktioniert. Das ist aber ein eigenes und größeres Kapitel. Wir gehen davon aus, dass du keinen eigenen
