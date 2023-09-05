@@ -2,7 +2,7 @@
 title = "6. Kyo"
 
 color = "#FFFF00"
-date = 2021-12-07
+date = 2023-01-25
 +++
 
 <script lang="ts">
