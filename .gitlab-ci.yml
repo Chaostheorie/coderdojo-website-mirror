@@ -31,7 +31,9 @@ Lint:
   script:
     - pnpm lint
 
-.template: &rs-deploy
+.template: &rs-deploy # NOTE: helium is the only runner allowed to access the coderdojo ssh repos
+  tags:
+    - helium
   rules:
     - changes:
         - .gitlab-ci.yml
