@@ -30,12 +30,12 @@ Jetzt kommen wir zur ersten Besonderheit: Mit ganz wenigen Ausnahmen zeichnet si
 
 ```html
 <html>
-<head>
-  <title>Titel: Hello World</title>
-</head>
-<body>
-Hello World!
-</body>
+  <head>
+    <title>Titel: Hello World</title>
+  </head>
+  <body>
+    Hello World!
+  </body>
 </html>
 ```
 
@@ -47,8 +47,8 @@ Entgegenleuchten ist vielleicht etwas zu optimistisch. So richtig knallig ist da
 
 ```html
 <body>
-<h1>Projekt html</h1>
-Hello World!
+  <h1>Projekt html</h1>
+  Hello World!
 </body>
 ```
 

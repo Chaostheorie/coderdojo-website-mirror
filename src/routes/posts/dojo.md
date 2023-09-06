@@ -23,7 +23,7 @@ Diese Seite gibt es auch zum Hören:
 
 <Audio src="https://dect42.de/audio/Uberblick.mp3" title="Überblick CoderDojo" cover="/images/brand.svg" artist="bengoshi" />
 
-Willkommen zur Kursseite des CoderDojo. Während die meisten CoderDojos auf Kinder ausgerichte sind, liegt der Fokus des 2018 von uns gegründeten Dojos bei
+Willkommen zur Kursseite des CoderDojo. Während die meisten CoderDojos auf Kinder ausgerichte sind, liegt der Fokus des Anfang 2019 von uns gegründeten Dojos bei
 Jugendlichen. Wir nehmen das nicht so genau, aber wenn du jünger als 12 Jahren bist, wirst wahrscheinlich mit dem
 [CoderDojo Berlin](https://www.coderdojo-deutschland.de/) besser beraten sein. Dort findest du Gleichaltrige und wirst
 Programmieren mit einer graphischen Oberfläche lernen. Die schauen wir uns zwar auch einmal an, aber es stellt nicht

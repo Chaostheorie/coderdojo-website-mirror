@@ -21,8 +21,7 @@ Seite der Lötkolben heiss wird und Interesse an der Arbeit mit Kindern und Juge
 
 <Avatar src="https://dect42.de/images/derMicha.jpg" alt="derMicha" float="right" />
 
-Michael Merz (/derMicha) ist seit mehr als 20 Jahren als Software-Entwickler und -Architekt tätig. Er ist unter anderem
-Mitgründer der [ubirch GmbH](https://ubirch.com). Beruflich liegen seine Schwerpunkte bei Scala, Java, IoT und Big Data.
+Michael Merz (/derMicha) studierte ursprünglich Mathematik und ist seit mehr als 20 Jahren als Software-Entwickler und -Architekt tätig. Dabei hat er vom Angestellten bis zum Entrepreneur verschiedene Positionen begleitet. Beruflich liegen seine Schwerpunkte bei Scala, Java, IoT und Big Data.
 Aus der Erfahrung mit datenschutzkonformen Konzepten zur Digitalisierung von Schulen gründete er mit anderen
 Mitstreiterinnen auf dem „Chaos Communication Congress“ 2019 vorpandemisch den Verein
 [cyber4EDU](https://cyber4edu.org). Ferner engagiert sich derMicha bei [Chaos macht Schule](https://ccc.de/schule).
@@ -31,7 +30,7 @@ derMicha ist Mitglied im [CCC](https://ccc.de/schule) und im Friedrichshainer Ha
 Jugendhackt wollten beide Jugendlichen einen Anschluss nach den phantastischen Wochenenden bei Jugend hackt schaffen.
 Aus dem gemeinsamen Engagement für Datenschutz hat derMicha gemeinsam mit bengoshi den Podcast
 [Digital Education Cyber Talks](https://dect42.de) ins Leben gerufen und sprechen dort regelmäßig über die
-Digitalisierung der Bildung.
+Digitalisierung der Bildung. Als Vater von drei Kindern kennt er die Eltern-Perspektive gut und engagiert sich seit langem im Berliner Schulumfeld, um die Digitalisierung von Schulen voran zu bringen.
 
 ## bengoshi
 
@@ -39,11 +38,11 @@ Digitalisierung der Bildung.
 
 Kai Kobschätzki (/bengoshi) war im zivilen Leben über zehn Jahre als Rechtsanwalt mit den Schwerpunkten Steuer- und
 Gesellschaftsrecht tätig, aber auch als kaufmännischer Leiter eines Unternehmens und als Ausbilder unterwegs. Deshalb triggern ihn Begriff wie ERP, Legal Tech, Legal Design und Bildung sofort. Zuletzt war er gut
-eineinhalb Jahre als juristischer Referent bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit für den Bereich Schule zuständig. Derzeit ist bengoshi in der Berliner Finanzverwaltung beschäftigt.
+eineinhalb Jahre als juristischer Referent bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit für den Bereich Schule zuständig. Derzeit ist bengoshi in der Berliner Finanzverwaltung beschäftigt. Diese Tätigkeit ruht aber derzeit, da er mit dem vierten Kind eine einjährige Elternzeit genießt.
 
 Privat war er über ein Jahrzehnt in der in der Kinderarbeit einer katholischen Gemeinde engagiert und leitete mehr als
 sieben Jahre ehrenamtlich die dortige Jugendarbeit. Er begeistert sich für Python, Django, PostgreSQL und frickelt auch
-mal gerne an Mailservern rum. Um diese Themen zu vertiefen, hat er ein Informatik-Studium an der FernUni Hagen aufgenommen. So manche Erfahrung hieraus fließt hier in das CoderDojo ein.
+mal gerne an Mailservern rum. Um diese Themen zu vertiefen, hat er ein Informatik-Studium an der FernUni Hagen aufgenommen, welches er mit Vorlesungen aus den Bildungswissenschaften garniert. So manche Erfahrung hieraus fließt hier in das CoderDojo ein.
 
 Er ist wie derMicha Mitglied im Berliner Hacker- und Makerspace [xHain](https://x-hain.de) und ebenfalls
 Gründungsmitglied bei [cyber4EDU](https://cyber4edu.org).
