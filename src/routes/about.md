@@ -22,15 +22,20 @@ Seite der Lötkolben heiss wird und Interesse an der Arbeit mit Kindern und Juge
 <Avatar src="https://dect42.de/images/derMicha.jpg" alt="derMicha" float="right" />
 
 Michael Merz (/derMicha) studierte ursprünglich Mathematik und ist seit mehr als 20 Jahren als Software-Entwickler und -Architekt tätig. Dabei hat er vom Angestellten bis zum Entrepreneur verschiedene Positionen begleitet. Beruflich liegen seine Schwerpunkte bei Scala, Java, IoT und Big Data.
+
 Aus der Erfahrung mit datenschutzkonformen Konzepten zur Digitalisierung von Schulen gründete er mit anderen
 Mitstreiterinnen auf dem „Chaos Communication Congress“ 2019 vorpandemisch den Verein
 [cyber4EDU](https://cyber4edu.org). Ferner engagiert sich derMicha bei [Chaos macht Schule](https://ccc.de/schule).
 derMicha ist Mitglied im [CCC](https://ccc.de/schule) und im Friedrichshainer Hacker- und Makerspace
-[xHain](https://x-hain.de/). Gemeinsam mit bengoshi gründeten beide Anfang 2019 das CoderDojo Mitte. Inspiriert von
+[xHain](https://x-hain.de/).
+
+Gemeinsam mit bengoshi gründeten beide Anfang 2019 das CoderDojo Mitte. Inspiriert von
 Jugendhackt wollten beide Jugendlichen einen Anschluss nach den phantastischen Wochenenden bei Jugend hackt schaffen.
 Aus dem gemeinsamen Engagement für Datenschutz hat derMicha gemeinsam mit bengoshi den Podcast
 [Digital Education Cyber Talks](https://dect42.de) ins Leben gerufen und sprechen dort regelmäßig über die
-Digitalisierung der Bildung. Als Vater von drei Kindern kennt er die Eltern-Perspektive gut und engagiert sich seit langem im Berliner Schulumfeld, um die Digitalisierung von Schulen voran zu bringen.
+Digitalisierung der Bildung.
+
+Als Vater von drei Kindern kennt er die Eltern-Perspektive gut und engagiert sich seit langem im Berliner Schulumfeld, um die Digitalisierung von Schulen voran zu bringen.
 
 ## bengoshi
 
