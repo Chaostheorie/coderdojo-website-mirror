@@ -35,13 +35,13 @@ Aus dem gemeinsamen Engagement für Datenschutz hat derMicha gemeinsam mit bengo
 [Digital Education Cyber Talks](https://dect42.de) ins Leben gerufen und sprechen dort regelmäßig über die
 Digitalisierung der Bildung.
 
-Als Vater von drei Kindern kennt er die Eltern-Perspektive gut und engagiert sich seit langem im Berliner Schulumfeld, um die Digitalisierung von Schulen voran zu bringen.
+Als Vater von drei Kindern kennt er die [Eltern-Perspektive](https://media.ccc.de/v/rc3-2021-xhain-899-spuren-im-netz) gut und engagiert sich seit langem im Berliner Schulumfeld, um die Digitalisierung von Schulen voran zu bringen.
 
 ## bengoshi
 
 <Avatar src="https://dect42.de/images/bengoshi.jpg" alt="bengoshi" float="right" />
 
-Kai Kobschätzki (/bengoshi) war im zivilen Leben über zehn Jahre als Rechtsanwalt mit den Schwerpunkten Steuer- und
+Kai Kobschätzki (/bengoshi) war im zivilen Leben über zehn Jahre als [Rechtsanwalt](https://media.ccc.de/v/camp2023-74-was_passiert_eigentlich_im_jurastudium) mit den Schwerpunkten Steuer- und
 Gesellschaftsrecht tätig, aber auch als kaufmännischer Leiter eines Unternehmens und als Ausbilder unterwegs. Deshalb triggern ihn Begriff wie ERP, Legal Tech, Legal Design und Bildung sofort. Zuletzt war er gut
 eineinhalb Jahre als juristischer Referent bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit für den Bereich Schule zuständig. Derzeit ist bengoshi in der Berliner Finanzverwaltung beschäftigt. Diese Tätigkeit ruht aber derzeit, da er mit dem vierten Kind eine einjährige Elternzeit genießt.
 
