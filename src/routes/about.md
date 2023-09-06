@@ -52,6 +52,8 @@ mal gerne an Mailservern rum. Um diese Themen zu vertiefen, hat er ein Informati
 Er ist wie derMicha Mitglied im Berliner Hacker- und Makerspace [xHain](https://x-hain.de) und ebenfalls
 Gründungsmitglied bei [cyber4EDU](https://cyber4edu.org).
 
+Beide treten gemeinsam immer wieder in [verschiedenen Formaten](https://media.ccc.de/v/ptt-234--na-und-ich-habe-doch-nichts-zu-verbergen-mit-bildern-den-datenschutz-einfach-und-zielgruppengerecht-erklren) gemeinsam auf.
+
 ## Und du?
 
 Hast du Lust, bei uns mitzumachen? Neue Konzepte und Ideen auszuprobieren? Nur zu, melde Dich dann bei uns!
