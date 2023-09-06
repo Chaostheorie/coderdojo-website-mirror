@@ -28,6 +28,7 @@ Wie auch immer du die Datei erstellt hast, öffnest du sie jetzt bitte mit PyCha
 
 Jetzt kommen wir zur ersten Besonderheit: Mit ganz wenigen Ausnahmen zeichnet sich html dadurch aus, dass es immer einen sogenannten öffnenden und einen sogenannten schließenden Tag [sprich Täg] gibt. Die Tags stehen in spitzen Klammern, schließende Tags haben zudem einen Querstrich bzw. Slash: <öffnender Tag> und </schließender Tag>. Das Grundgerüst einer html-Seite teilt sich auf in einen Kopf (engl. head) und einen Körper (engl. body). Und so schaut eine einfache Seite auch ganz schlicht aus:
 
+```html index.html
 <html>
 <head>
   <title>Titel: Hello World</title>
@@ -36,6 +37,7 @@ Jetzt kommen wir zur ersten Besonderheit: Mit ganz wenigen Ausnahmen zeichnet si
 Hello World!
 </body>
 </html>
+```
 
 Der erste Tag sagt nachher dem Browser das hier html gesprochen werden soll. head und body definieren einen Teil der Seite. Das meiste wirst du in den body-Teil schreiben. In den Kopf kommt aber title bzw. der Titel rein. Der erscheint später oben in der Zeile von deinem Browser. Und im Body erscheint der Inhalt. Im Gegensatz zu Python haben die Einrückungen keine Bedeutung. Sie dienen nur der besseren Übersichtlichkeit. „Nur“ trifft es in dem Zusammenhang nicht ganz - wenn du erstmal vor längeren Seiten sitzt, wirst du sauberes Einrücken zu schätzen wissen.
 
@@ -43,9 +45,11 @@ Wie rufst du die Seite jetzt auf? Öffne LibreWolf oder einen anderen Browser. E
 
 Entgegenleuchten ist vielleicht etwas zu optimistisch. So richtig knallig ist das nocht nicht. Macht wir noch eine Überschrift dazu. Probiere mal den body zu ergänzen:
 
+``` index.html
 <body>
 <h1>Projekt html</h1>
 Hello World!
 </body>
+```
 
 Im Browser reicht es, wenn du F5 oben bei deiner Tastatur drückst. Dann wird die Seite neu geladen. Zackbum müsste da jetzt eine Überschrift zu sehen sein. Probiere auch mal h2 bis h4 durch!
