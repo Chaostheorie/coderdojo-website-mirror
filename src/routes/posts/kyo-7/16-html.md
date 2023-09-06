@@ -28,7 +28,7 @@ Wie auch immer du die Datei erstellt hast, öffnest du sie jetzt bitte mit PyCha
 
 Jetzt kommen wir zur ersten Besonderheit: Mit ganz wenigen Ausnahmen zeichnet sich html dadurch aus, dass es immer einen sogenannten öffnenden und einen sogenannten schließenden Tag [sprich Täg] gibt. Die Tags stehen in spitzen Klammern, schließende Tags haben zudem einen Querstrich bzw. Slash: <öffnender Tag> und </schließender Tag>. Das Grundgerüst einer html-Seite teilt sich auf in einen Kopf (engl. head) und einen Körper (engl. body). Und so schaut eine einfache Seite auch ganz schlicht aus:
 
-```html index.html
+```html
 <html>
 <head>
   <title>Titel: Hello World</title>
@@ -45,7 +45,7 @@ Wie rufst du die Seite jetzt auf? Öffne LibreWolf oder einen anderen Browser. E
 
 Entgegenleuchten ist vielleicht etwas zu optimistisch. So richtig knallig ist das nocht nicht. Macht wir noch eine Überschrift dazu. Probiere mal den body zu ergänzen:
 
-``` index.html
+```html
 <body>
 <h1>Projekt html</h1>
 Hello World!
