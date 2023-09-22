@@ -17,3 +17,5 @@ Grundschaltung LED:
 ATTiny-Schaltung:
 
 <Figure src="/images/workshops/attiny/Anleitung-ATTiny.png" alt="Anleitung ATTiny löten" />
+
+<Figure src="/images/workshops/attiny/Schaltplan-ATTiny.png" alt="Anleitung ATTiny löten" />

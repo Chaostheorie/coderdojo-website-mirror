@@ -44,8 +44,6 @@ Gerade gelaufen sind:
 
 - 27. August 2022 von 14 bis 17 Uhr - [Jugend hackt - Einführung in Python (online)](https://coderdojo.red/posts/news/2022-08-27/)
 
-
-
 Derzeit bieten wir Einführungs-Workshops zu den Themen:
 
 - Python
