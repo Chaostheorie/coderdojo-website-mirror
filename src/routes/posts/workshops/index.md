@@ -16,7 +16,7 @@ Diese Seite wird gerade überarbeitet....
 
 Anstehend:
 
-- 23. September 2023 von 14 bis 17 Uhr - ATTiny löten und programmieren
+- 23. September 2023 von 14 bis 17 Uhr - [ATTiny löten und programmieren](https://coderdojo.red/posts/workshops/attiny/)
 
 Gerade gelaufen sind:
 
