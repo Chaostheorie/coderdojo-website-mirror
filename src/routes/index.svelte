@@ -22,9 +22,12 @@
       treffen wir uns nur zu zu unseren Workshops oder wenn Teilnehmende Bedarf über unseren
       Matrix-Raum anmelden. Die Donnerstags-Treffen werden zeitnah wieder <a
         href="https://bbb.cyber4edu.org/b/der-0rc-8x7-4re">reaktiviert</a
-      >. Unsere aktuelle Kommunikation findet in unserem
-      <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org"> Matrix-Raum</a> statt. Am besten
-      schaust du da mal rein. Dort verabreden wir uns, tauschen uns aus und kündigen auch an, wenn sich
+      >. Unsere <strong>aktuelle Kommunikation findet in unserem
+      <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org"> Matrix-Raum</a> statt</strong>. Falls dir Matrix nichts sagt
+       - <a href="https://coderdojo.red/posts/kyo-7/07-browser/> dazu gibt es eine kurze Erklärung im Weißgurt</a>.
+
+      Am besten
+      schaust du da mal rein. <strong>Dort verabreden wir uns</strong>, tauschen uns aus und kündigen auch an, wenn sich
       ein Termin verschiebt oder was für Themen anstehen.
     </p>
     <div class="flex flex-row justify-center btn-group">
