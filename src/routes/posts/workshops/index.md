@@ -65,5 +65,4 @@ In Vorbereitung sind derzeit noch folgende Themen:
 - Robotik
 - Recht für Programmier:innen (Datenschutz, Urheberrecht, Lizenzrecht)
 
-
 Wenn du als Leiter:in einer Gruppe oder Institution wie Bibliothek oder Schule Interesse an einem Workshop hast, sprich uns gerne an. ZUmindest innerhalb Berlins bieten im Rahmen unserer ehrenamtlichen Kapazitäten auch vor Ort an. Wenn du als Einzelne:r Interesse hast, schreib uns einfach per Matrix an. Wir können dir dann sagen, ob der gefragte Workshop demnächst stattfindet oder ob wir ihn zumindest bald einplanen können.
