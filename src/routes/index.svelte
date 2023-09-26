@@ -16,8 +16,9 @@
       </span>
     </h1>
     <p class="leading-relaxed text-lg">
-      Willkommen beim CoderDōjō für Jugendliche! Wir sitzen zwar in Berlin, aber da bei uns vieles
-      online stattfindet, kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht wohnst.
+      Willkommen beim CoderDōjō für Jugendliche! Wir sitzen zwar in Berlin, aber bei uns findet
+      manches auch online oder auf Veranstaltungen des Chaos Computer Clubs bzw. nahestehenden
+      Organisationen statt. Deshalb kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht wohnst.
       Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken. Aktuell
       treffen wir uns nur zu zu unseren Workshops oder wenn Teilnehmende Bedarf über unseren
       Matrix-Raum anmelden. Die Donnerstags-Treffen werden zeitnah wieder <a
