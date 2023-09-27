@@ -16,9 +16,13 @@ Diese Seite wird gerade überarbeitet....
 
 Anstehend:
 
-- 23. September 2023 von 14 bis 17 Uhr - [ATTiny löten und programmieren](https://coderdojo.red/posts/workshops/attiny/)
+- 3. Oktober 2023 ganztägig - [Maustüröffnertag](https://tickets.x-hain.de/xHain/mtoet/)
+
+- 22. Oktober 2023 von 14 bis 17 Uhr - [Codeweek - PyGames - erste Schritte in der Spieleprogrammierung](https://coderdojo.red/posts/news/2023-10-22/)
 
 Gerade gelaufen sind:
+
+- 23. September 2023 von 14 bis 17 Uhr - [ATTiny löten und programmieren](https://coderdojo.red/posts/workshops/attiny/)
 
 - Workshops und Vorträge auf dem Chaos Communication Camp vom 15. bis 19. August 2023 - [„Mit Häkelnadel und Lötkolben](https://coderdojo.red/posts/news/2023-08-16a/), [ATTiny - die Welt des Microcontrollers gelötet entdecken](https://coderdojo.red/posts/news/2023-08-16b/), [DIY Capture the Flag mit ESP8266](https://coderdojo.red/posts/news/2023-08-16c/), [Was passiert eigentlich im Jurastudium](https://coderdojo.red/posts/news/2023-08-16d/)
 
