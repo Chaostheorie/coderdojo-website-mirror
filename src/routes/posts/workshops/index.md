@@ -16,11 +16,11 @@ Diese Seite wird gerade überarbeitet....
 
 Anstehend:
 
-- 3. Oktober 2023 ganztägig - [Maustüröffnertag](https://tickets.x-hain.de/xHain/mtoet/)
-
 - 22. Oktober 2023 von 14 bis 17 Uhr - [Codeweek - PyGames - erste Schritte in der Spieleprogrammierung](https://coderdojo.red/posts/news/2023-10-22/)
 
 Gerade gelaufen sind:
+
+- 3. Oktober 2023 ganztägig - [Maustüröffnertag](https://tickets.x-hain.de/xHain/mtoet/)
 
 - 23. September 2023 von 14 bis 17 Uhr - [ATTiny löten und programmieren](https://coderdojo.red/posts/workshops/attiny/)
 
