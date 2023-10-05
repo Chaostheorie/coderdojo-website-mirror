@@ -21,7 +21,7 @@
       Organisationen statt. Deshalb kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht
       wohnst. Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken.
       Aktuell treffen wir uns nur zu zu unseren Workshops oder wenn Teilnehmende Bedarf über unseren
-      Matrix-Raum anmelden. Die Donnerstags-Treffen werden zeitnah wieder <a
+      Matrix-Raum anmelden. Die Donnerstags-Treffen werden demnächst wieder <a
         href="https://bbb.cyber4edu.org/b/der-0rc-8x7-4re"
       >
         reaktiviert
@@ -30,7 +30,9 @@
         aktuelle Kommunikation findet in unserem
         <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org"> Matrix-Raum</a> statt
       </strong>
-      . Falls dir Matrix nichts sagt -
+      . Da informieren wir über anstehende Veranstaltungen - nicht nur von uns - und teilen interessante
+      Podcasts, Nachrichten und ähnliches. Außerdem hast du dort jederzeit die Möglichkeit, andere anzusprechen,
+      wenn du bei deinen Problemen irgendwie feststeckst. Falls dir Matrix nichts sagt -
       <a href="https://coderdojo.red/posts/kyo-7/07-browser/">
         dazu gibt es eine kurze Erklärung im Weißgurt</a
       >. Am besten schaust du da mal rein. <strong>Dort verabreden wir uns</strong>, tauschen uns
