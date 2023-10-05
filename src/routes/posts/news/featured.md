@@ -1,6 +1,6 @@
 +++
 title = "Willkommen zum Coderdojo Red and Blue"
-date = 2021-07-03 
+date = 2021-07-03
 updated = 2021-07-03
 slug = "introduction-red-and-blue"
 lang = "de"
@@ -19,3 +19,5 @@ Gruppen: Das EulerProjekt ist stark mathezentriert. In dieser Gruppe werden math
 Und das Dōjō, bei dem der Schwerpunkt beim Coden liegt. Der Begriff ist aber weit zu verstehen. Wenn Du mehr darüber
 wissen willst, klick am besten auf Überblick. Das Projekt greift unser CoderDojo, welches wir vor der Pandemie betrieben
 mit neuen Konzepten wieder auf.
+
+Das Willkommen gilt bei der Gelegenheit auch unserer neuen Seite! Content haben wir aus unseren Vorgängern importiert oder die Gelegenheit genutzt, auszumisten - beispielsweise mit der Ankündigung von alten Veranstaltungen. Vielen Dank an Cobalt für den Bau der Seite!
