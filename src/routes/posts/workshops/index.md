@@ -16,9 +16,11 @@ Diese Seite wird gerade überarbeitet....
 
 Anstehend:
 
-- 22. Oktober 2023 von 14 bis 17 Uhr - [Codeweek - PyGames - erste Schritte in der Spieleprogrammierung](https://coderdojo.red/posts/news/2023-10-22/)
+Die Terminplanung für die kommenden Workshops sind gerade am laufen. ATTiny-Programmierung, Git, PyGame, Python-Grundlagen und Nerd-Spiele stehen auf dem Plan. Wenn Ihr noch weitere Wünsche oder Ideen habt - meldet Euch bei uns per Matrix.
 
 Gerade gelaufen sind:
+
+- 22. Oktober 2023 von 14 bis 17 Uhr - [Codeweek - PyGames - erste Schritte in der Spieleprogrammierung](https://coderdojo.red/posts/news/2023-10-22/)
 
 - 3. Oktober 2023 ganztägig - [Maustüröffnertag](https://tickets.x-hain.de/xHain/mtoet/)
 
