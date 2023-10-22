@@ -37,7 +37,7 @@ hat, dass da viele das Handtuch schmeißen, beispielsweise die Installation. Las
 setzen wir die Inanspruchnahme der Hilfe sogar ausdrücklich voraus. Und bei uns geht es mehr als nur „schnöden" Code.
 Wir schauen auf Dinge wie Datenschutz, Nerdkultur ebenso wie auf Hardware.
 
-<Figure src="/images/kyo-info/JJS_Dojo_s.jpg" alt="Gürtel" />
+<Figure src="/images/kyu-info/JJS_Dojo_s.jpg" alt="Gürtel" />
 
 Trainieren? Der Begriff Dōjō kommt aus dem Kampfsport und stellt dort den Trainingsraum oder -halle dar. Programmieren
 lernen hat vieles damit gemeinsam. Jeder der Lesen und Schreiben kann, kann Programmieren lernen. Aber wenn du
@@ -57,7 +57,7 @@ beziehungsweise der Text nicht immer aktuell sein - also schau bitte auf unserer
 aus Berlin kommst, sprich uns an und wir versuchen dir zu helfen, in Deiner Stadt Ansprechpartner zu finden.
 
 Kennst du die Gürtelfarben aus dem Kampfsport? Ein bunter Strauß an Farben, der dich am Ende zum schwarzen Gürtel führen
-soll, die sogenannten Kyo-Grade oder im deutschen Schüler-Grade. Es gibt nicht nur einen schwarzen Gürtel, sondern
+soll, die sogenannten Kyū-Grade oder im deutschen Schüler-Grade. Es gibt nicht nur einen schwarzen Gürtel, sondern
 verschiedene Dan-Grade - im deutschen Meister-Grade. An diesem System wollen wir uns orientieren. Wir beginnen mit dem
 Weg zum weißen Gürtel. Danach hast du die wichtigsten bzw. ersten Grundbegriffe drauf. Wir haben keine „Gürtelprüfungen"
 geplant. Aus eigenen Erfahrungen von verschiedenen Budo-Sportarten finden das manche jedoch gut. Wenn euch so etwas
@@ -72,7 +72,7 @@ nicht in der Schule. Hier geht es nicht darum, eine Prüfung zu bestehen, sonder
 Test stecken bleibst, nimm das zum Anlass, um dir von den Mentorinnen helfen zu lassen. Oft braucht es nur einen kleinen
 Stupser in die richtige Richtung und du kannst die Aufgabe selber richtig weiterlösen.
 
-<Figure src="/images/kyo-info/karate-2717178_1280_s.jpg" alt="Bruchtest" float="right" />
+<Figure src="/images/kyu-info/karate-2717178_1280_s.jpg" alt="Bruchtest" float="right" />
 
 Was lernen wir? Wir beginnen mit Python. Die Wahl der „richtigen" Programmiersprache kann zu regelrechten
 Glaubensstreitigkeiten führen. Es gibt Sprachen, die sich eher für Anfänger eignen und welche, die sich weniger für
@@ -94,7 +94,7 @@ gleich ein Weltraumspiel bauen und dieses Stück für Stück weiter ausbauen. Gl
 die anfangs noch nicht erklärt werden können. Aus diesem Grund verzichten wir zunächst auf grafische „Spielereien". Aber
 halte durch, die kommen!
 
-<Figure src="/images/kyo-info/martial-83009_1280_s.jpg" alt="Training" float="left" caption={false} />
+<Figure src="/images/kyu-info/martial-83009_1280_s.jpg" alt="Training" float="left" caption={false} />
 
 Wie oft solltest du dich damit beschäftigen müssen? Müssen wäre schon mal kein guter Start. Wir sind hier nicht in der
 Schule. Wir treffen uns, weil wir neugierig sind und Spaß an der Sache haben, nicht weil wir müssen. Insofern kann man
@@ -107,7 +107,7 @@ sondern motiviere, dran zu bleiben. Der Anfang stellt erfahrungsgemäß eine ers
 Höhen und Tiefen. Niemand lernt Segeln, wenn immer Flaute ist. Böen können anstrengend sein, aber mit jeder lernt man
 etwas dazu. Und wenn das Bötchen kentert - nicht schlimm, wieder aufrichten, Wasser rausschöpfen, weiterfahren.
 
-<Figure src="/images/kyo-info/capsized-31696_1280_s.png" alt="Kentern" />
+<Figure src="/images/kyu-info/capsized-31696_1280_s.png" alt="Kentern" />
 
 Wir setzen keine Kenntnisse voraus. Wenn du schon Vorkenntnisse hast und später einsteigen willst, ist das kein Problem.
 Mach die Tests am Ende eines Kapitels (nicht nur lesen, lösen!). Wenn du die hinbekommst, weiterziehen. Es gibt noch
@@ -119,7 +119,7 @@ bearbeiten, weil das überforderte. Falls du also schon Vorkenntnisse hast oder 
 Thema schon alles ist - in aller Regel nicht. Wir greifen die einzelnen Teile später wieder auf und vertiefen sie Stück
 für Stück.
 
-<Figure src="/images/kyo-info/fantasy-fractal.jpg" alt="Spirale" />
+<Figure src="/images/kyu-info/fantasy-fractal.jpg" alt="Spirale" />
 
 Was du jedoch brauchen wirst, ist eine installierte Python-Version mit virtualenv und eine Oberfläche, um einen Code zu
 schreiben. Wir empfehlen hier die Community-Version von PyCharme. Klar ginge es auch mit anderen anderen IDEs, aber du
@@ -149,7 +149,7 @@ Wenn es mathematische Zusatzaufgaben gibt, wird das extra ausgewiesen.
 
 Sprachlich stellen wir den Text sukzessive auf die weibliche Form um. Jungs und diverse Menschen sind davon natürlich auch umfasst. Wenn wir Inhalte diverser und inklusiver gestalten können, stehen wir dem offen gegenüber. Schlag uns bitte einfach an konkreten Stellen vor, wie wir besser gestalten können und wir werden uns das anschauen. Das gilt natürlich auch, wenn wir irgendwo jemanden vor den Kopf stoßen sollten. Bitte geh erstmal davon aus, dass das nicht unsere Intension ist und lass uns ins Gespräch kommen, wie es besser geht.
 
-Auf geht `s zum [Weißgurt](https://coderdojo.red/kyo-7/). Und bis wir uns beim nächsten BBB- oder Reallife-Meeting
+Auf geht `s zum [Weißgurt](https://coderdojo.red/kyu-7/). Und bis wir uns beim nächsten BBB- oder Reallife-Meeting
 sehen - Stay safe and keep coding!
 
 ## Selber installieren
@@ -166,7 +166,7 @@ Natürlich können auch andere IDEs genutzt werden, aber unsere Erklärungen bez
 
 ## Los geht 's
 
-[Hier geht es direkt zum ersten Gurt.](https://coderdojo.red/posts/kyo-7/)
+[Hier geht es direkt zum ersten Gurt.](https://coderdojo.red/posts/kyu-7/)
 
 ### Bildnachweise
 

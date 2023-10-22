@@ -7,16 +7,16 @@
   export let meta: [number, string, string, string, string][] = [
     [
       7,
-      "7. Kyo – Weißgurt",
+      "7. Kyū – Weißgurt",
       "white",
-      "/posts/kyo-7/",
+      "/posts/kyu-7/",
       "So wie du beim Kampfsport beim Weißgurt die ersten Schritte auf der Matte lernst, lernst du hier die ersten Schritte zum Coden, zum Löten und zur Hackerkultur."
     ],
     [
       6,
-      "6. Kyo – Gelbgurt",
+      "6. Kyū – Gelbgurt",
       "yellow",
-      "/posts/kyo-6/",
+      "/posts/kyu-6/",
       "Hier siehst du gerade den im Entstehen begriffenen ersten und noch nicht vollständigen Aufschlag für den Gelbgurt. Wir freuen uns über Fehlerkorrekturen! Wenn du das Gefühl hast, hier etwas nicht nachzuvollziehen zu können, schreib uns bitte oder sprich uns beim CoderDojo an, damit wir das Script verbessern können. Wenn du es nicht verstehst, liegt es nicht an Dir und anderen wird es auch so gehen. Lass es uns gemeinsam für die nächsten Leser:innen besser machen."
     ]
   ];
@@ -42,7 +42,7 @@
 
       <div class="flex flex-row justify-center flex-start">
         <Button {href}>
-          Zum {count}. Kyo <Arrow size={24} />
+          Zum {count}. Kyū <Arrow size={24} />
         </Button>
       </div>
     </div>
