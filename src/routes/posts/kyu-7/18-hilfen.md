@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -31,13 +31,13 @@ und schneller aus etwas Text ergeben.
 Als Faustformel - stell dir einfach die Frage, ob wenn du in drei Monaten auf den Code schaust, du noch ohne Kommentar
 verstehst bzw. was da stehen müsstest, damit du zumindest deinen eigenen Code wieder verstehst.
 
-<Figure src="/images/kyo-7/Code-Kommentare.jpg" alt="Da wäre ein Kommentar hilfreich gewesen..."/>
+<Figure src="/images/kyu-7/Code-Kommentare.jpg" alt="Da wäre ein Kommentar hilfreich gewesen..."/>
 
 Daneben kann man Kommentar super nutzen, um Teile des Codes kurz nicht zu verwenden, ohne sie gleich löschen zu müssen.
 PyCharm macht es Dir da einfach: Markiere den entsprechenden Code und gib Strg+\# ein und der Code wird auskommentiert.
 Machst du das mit auskommentierten Code, wird er wieder aktiv.
 
-<Figure src="/images/kyo-7/help-2444110_1280_a.png" alt="Dir wird geholfen."/>
+<Figure src="/images/kyu-7/help-2444110_1280_a.png" alt="Dir wird geholfen."/>
 
 Wo kannst du Dir Hilfe außerhalb der CoderDojo-Termine holen? Zu aller erst natürlich in unserem
 [Matrix-Kanal](https://matrix.to/#/#coderdojo:matrix.cyber4edu.org).

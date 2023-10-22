@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -20,13 +20,13 @@ Daten die von Unternehmen gesammelt werden können, bleiben im Zweifel dort und 
 verloren. Vielleicht interessiert Dich jetzt ein bestimmter Mensch. Aber später ist dir das peinlich und du möchtest damit nicht aufgezogen werden. Um
 das bildlicher zu machen – stell dir vor, Dein Eltern schauen dir die ganze Zeit über die Schultern …
 
-<Figure src="/images/kyo-7/children-593313_s.jpg" alt="Den richtigen Browser gefunden!" />
+<Figure src="/images/kyu-7/children-593313_s.jpg" alt="Den richtigen Browser gefunden!" />
 
 Es gibt Browser, die besonders gerne Daten sammeln und zumindest Teile dieser Daten auch nach Hause schicken. Ebenso gibt es Browser, die es anderen Seiten leichter oder schwerer machen, zu erkennen, wer du bist. Aktuell empfehlen wir dir [LibreWolf](https://librewolf.net/) zu
 benutzen, da er recht datensparsam ist. Er baut auf Firefox auf, arbeitet aber datensparsamer. Abraten würden wir dir klar von Edge und Google
 Chrome. Diese Empfehlung gilt jetzt – Software ändert sich. Da gilt es dranzubleiben. So haben wir hier an dieser Stelle mal Brave empfohlen. Die Gründe, warum das nicht mehr der Fall ist, [findest Du hier](https://stackdiary.com/brave-selling-copyrighted-data-for-ai-training/).
 
-<Figure src="/images/kyo-7/LibreWolf_icon.svg" alt="LibreWolf"/>
+<Figure src="/images/kyu-7/LibreWolf_icon.svg" alt="LibreWolf"/>
 
 ### E-Mail
 
@@ -76,7 +76,7 @@ oder auf dem Handy laufen. Der bekannteste nennt sich Element. Lade dir den runt
 Uns findest
 du unter [@coderdojo:matrix.cyber4edu.org](https://matrix.to/#/@coderdojo:chat.cyber4edu.org). Es gibt in deinem Client auch eine Suchfunktion. Wenn du den Link anklickst und du hast einen Client bereits installiert, sollte er dich gleich passend lotsen. Sonst gibt es da auch eine Suchfunktion.
 
-<Figure src="/images/kyo-7/Cyber4EDU_sticker.png" alt="cyber4EDU Logo"/>
+<Figure src="/images/kyu-7/Cyber4EDU_sticker.png" alt="cyber4EDU Logo"/>
 
 Okay, mit dem richtigen Browser, einer vernünftigen E-Mail-Adresse und dem passenden Messenger ausgestattet bist du von
 den Noobs erfolgreich einen ganzen Schritt hin zu den Nerds gegangen. Du fängst langsam an, Deinen Jogginganzug gegen

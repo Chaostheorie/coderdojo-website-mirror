@@ -1,5 +1,5 @@
 +++
-title = "6. Kyo"
+title = "6. Kyū"
 
 color = "#FFFF00"
 date = 2021-12-07
@@ -33,7 +33,7 @@ gibst du einen Namen ein wie „helloWorld“ und scrollst bis an das Ende der S
 die Möglichkeit, das Repository zu klonen, also lokal bei Dir abzulegen. Wir zeigen dir jetzt die Wege über PyCharm und
 über die Kommandozeile parallel. Wenn möglich, probierst du auch beide aus...
 
-<Figure src="/images/kyo-6/git-2-klonen-crop.png" alt="Git klonen" />
+<Figure src="/images/kyu-6/git-2-klonen-crop.png" alt="Git klonen" />
 
 Zunächst die ersten Schritte auf Shell:
 
@@ -58,23 +58,23 @@ ausgibt. Commite und pushe wieder.
 
 Und jetzt geht es zu Codeberg. Da findest du einmal:
 
-<Figure src="/images/kyo-6/git-2-helloWorld-crop.png" alt="main branch" />
+<Figure src="/images/kyu-6/git-2-helloWorld-crop.png" alt="main branch" />
 
 Jetzt klickst du die Datei an. Hier ist der Code aus der main-Branch. Über Branch kannst du die test-branch auswählen
 und dir dort den Code anschauen.
 
-<Figure src="/images/kyo-6/git-2-branch-test-loop-crop.png" alt="Branch wählen" />
+<Figure src="/images/kyu-6/git-2-branch-test-loop-crop.png" alt="Branch wählen" />
 
 Du erkennst also jetzt, dass du das Projekt mit zwei unterschiedlichen Codebasen fährst. Das ist cool! Und jetzt wollen
 wir noch die zwei Zweige zusammenführen.
 
-<Figure src="/images/kyo-6/git-2-klonen-crop.png" alt="Branch wählen" />
+<Figure src="/images/kyu-6/git-2-klonen-crop.png" alt="Branch wählen" />
 
 Du wechselst jetzt wieder auf die main-Branch und wirst dort das Feld „Neuer Pull-Request“ angezeigt bekommen. Das
 klickst du jetzt an. Jetzt kannst du auswählen, welche Branch du mit welcher zusammenführen willst. In unserem Fall ist
 das Ziel main und du pullst von test-loop.
 
-<Figure src="/images/kyo-6/git-2-choose-branch-crop.png" alt="Branch wählen" />
+<Figure src="/images/kyu-6/git-2-choose-branch-crop.png" alt="Branch wählen" />
 
 Jetzt siehst du, wie sich der Code unterscheidet und du kannst kontrollieren, was du machen willst. Was du dort siehst,
 ist eine sogenannte Diff-Ansicht. Die wird dir noch öfter begegnen. Wenn ein Minus dasteht, heißt das, die Zeile fällt

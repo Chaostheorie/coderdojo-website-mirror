@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -90,7 +90,7 @@ eingerückt ist und wenn die erste, aber nicht die zweite eingerückt ist. Der e
 Warum? Weil Python erwartet, dass es zu der Schleife einen Inhalt gibt. Rückst du nichts ein, fehlt dieser Inhalt. Spiel
 ruhig damit ein wenig rum. Mach mal was mit zwei for-Schleifen oder ändere den Wert in Range.
 
-<Figure src="/images/kyo-7/Tie_shoelace.png" alt="Schleifen für Schuhe..." float="left" />
+<Figure src="/images/kyu-7/Tie_shoelace.png" alt="Schleifen für Schuhe..." float="left" />
 
 Was passiert jetzt bei dieser Schleife? `i` ist eine sogenannte Variable. Das kennst du bestimmt schon aus dem
 Matheunterricht. Ihr wird mit jedem Durchlauf eine Zahl zugewiesen. `range(10)` gibt an, dass mit jedem Durchlauf `i` um
@@ -120,9 +120,9 @@ nachschauen willst, was Du schon gemacht hast. Lege Dir also für neue Übungen 
 auf den Projektordner, rechte Maustaste, New, Python. Dann gibt Du einen Dateinamen an. Vermeide bei den Dateinamen
 bitte Leerzeichen.
 
-<Figure src="/images/kyo-7/8-1-Pycharm-6.png" alt="Pycharm - new file" />
+<Figure src="/images/kyu-7/8-1-Pycharm-6.png" alt="Pycharm - new file" />
 
-<Figure src="/images/kyo-7/8-1-Pycharm-7.png" alt="Pycharm - new file" />
+<Figure src="/images/kyu-7/8-1-Pycharm-7.png" alt="Pycharm - new file" />
 
 In PyCharm gibt es jetzt eine Falle... Wenn du jetzt auf `Run` gehst, wird nicht die neue Datei ausgeführt, sondern
 weiterhin die vorherige. Du musst `Run` und dann auf das zweite `Run` in dem Menü gehen. Jetzt kannst du die neue Datei

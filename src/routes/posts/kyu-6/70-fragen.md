@@ -1,5 +1,5 @@
 +++
-title = "6. Kyo"
+title = "6. Kyu"
 
 color = "#FFFF00"
 date = 2023-01-25

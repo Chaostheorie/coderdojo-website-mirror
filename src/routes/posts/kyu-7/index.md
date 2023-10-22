@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -8,7 +8,7 @@ created = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-# 7. Kyo – Weißgurt
+# 7. Kyū – Weißgurt
 
 :::info Hinweis
 Der Text hat bestimmt noch Ecken und Kanten. Wenn du Fehler entdeckst, Teile unverständlich findest oder Ideen für bessere und mehr
@@ -36,11 +36,11 @@ solltest du mit PyCharm oder einer vergleichbaren IDE arbeiten.
 
 Wenn du PyCharm startest, sollte der Start bei Dir ungefähr so aussehen:
 
-<Figure src="/images/kyo-7/8-1-Pycharm-2.png" alt="PyCharm – Welcome screen" />
+<Figure src="/images/kyu-7/8-1-Pycharm-2.png" alt="PyCharm – Welcome screen" />
 
 Klicke auf `New Project`. Dann schaut es ungefähr so aus:
 
-<Figure src="/images/kyo-7/8-1-Pycharm-3.png" alt="PyCharm – New Project screen" />
+<Figure src="/images/kyu-7/8-1-Pycharm-3.png" alt="PyCharm – New Project screen" />
 
 Bei der obersten Zeile mit Location änderst du den Projektnamen auf „HelloWorld“. Das ist Dein Projektname. Die weiteren
 Einstellmöglichkeiten hier werden wir mit der Zeit kennenlernen. Dann klickst du auf „Create“. Unter Umständen rödelt
@@ -49,7 +49,7 @@ Das löschst du jetzt einfach – entweder du markierst es mit der Maus und drü
 lernen ist immer gut – mit Strg+A oder Control+A alles markieren und dann Entf drücken. Dann sollte das bei Dir ungefähr
 so ausschauen:
 
-<Figure src="/images/kyo-7/8-1-Pycharm-4.png" alt="PyCharm – Empty main.py" />
+<Figure src="/images/kyu-7/8-1-Pycharm-4.png" alt="PyCharm – Empty main.py" />
 
 Okay, jetzt kann es losgehen!
 
@@ -69,7 +69,7 @@ der Klammern bei Screenshots nicht verwirren.
 Jetzt führst du das Programm aus: du gehst in der Menüzeile auf „Run“ und dort auf den obersten Punkt „Run `main`“. Dann
 sollte sich unten ein Fenster aufbauen, in welchem das Ergebnis Deines Programms ausgeführt wird.
 
-<Figure src="/images/kyo-7/8-1-Pycharm-5.png" alt="PyCharm – hello world" />
+<Figure src="/images/kyu-7/8-1-Pycharm-5.png" alt="PyCharm – hello world" />
 
 Wenn da „Hello World“ steht, hast du es geschafft: Dein erstes Programm! Okay, noch ein sehr kleines, aber immerhin.
 Wenn du bis hierin nicht gekommen bist – bitte zögere nicht und lass Dir helfen! Hier können unvorhersehbare

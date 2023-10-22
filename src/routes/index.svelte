@@ -33,7 +33,7 @@
       . Da informieren wir über anstehende Veranstaltungen - nicht nur von uns - und teilen interessante
       Podcasts, Nachrichten und ähnliches. Außerdem hast du dort jederzeit die Möglichkeit, andere anzusprechen,
       wenn du bei deinen Problemen irgendwie feststeckst. Falls dir Matrix nichts sagt -
-      <a href="https://coderdojo.red/posts/kyo-7/07-browser/">
+      <a href="https://coderdojo.red/posts/kyu-7/07-browser/">
         dazu gibt es eine kurze Erklärung im Weißgurt</a
       >. Am besten schaust du da mal rein. <strong>Dort verabreden wir uns</strong>, tauschen uns
       aus und kündigen auch an, wenn sich ein Termin verschiebt oder was für Themen anstehen.

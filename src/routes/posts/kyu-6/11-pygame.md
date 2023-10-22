@@ -1,5 +1,5 @@
 +++
-title = "6. Kyo"
+title = "6. Kyū"
 
 color = "#FFFF00"
 date = 2023-01-25
@@ -11,7 +11,7 @@ date = 2023-01-25
 
 # PyGames
 
-<Figure src="/images/kyo-6/Pygame.png" alt="Das pygame-Logo von TheCorruptor/pygame developers" />
+<Figure src="/images/kyu-6/Pygame.png" alt="Das pygame-Logo von TheCorruptor/pygame developers" />
 
 Juhu, wir kommen zu pygames. Das ist eine Bibliothek, die es Dir ermöglicht, Grafik darzustellen und Tastatur- und
 Mauseingaben abzufangen, damit du sie gut verarbeiten kannst. Wenn du zockst, wollen wir gleich zugestehen, dass man mit

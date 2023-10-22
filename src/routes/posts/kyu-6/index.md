@@ -1,5 +1,5 @@
 +++
-title = "6. Kyo"
+title = "6. Kyū"
 date = 2021-12-07
 +++
 
@@ -7,7 +7,7 @@ date = 2021-12-07
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-# 6. Kyo – Gelbgurt
+# 6. Kyū – Gelbgurt
 
 > Es gibt keinen Misserfolg.
 >
@@ -68,7 +68,7 @@ Quelle: Wikipedia
 Git ist sehr mächtig. Deshalb wollen wir uns dem ganzen langsam nähern und im Gelbgurt zunächst nur die elementaren
 Befehle lernen. Im Orange-Gurt lernst du, was man wissen muss, um ein Projekt zu managen.
 
-<Figure src="/images/kyo-6/Git-logo.png" alt="Das Git-Logo von Jason Long, CC BY 3.0." />
+<Figure src="/images/kyu-6/Git-logo.png" alt="Das Git-Logo von Jason Long, CC BY 3.0." />
 
 Wir beginnen mit einem neuen Projekt. Du loggst Dich bitte in Coderberg ein. Klicke dort auf das Pluszeichen neben
 Repository. Repository ist quasi ein Softwareprojekt. Gib dem ganzen einen Namen. Wir beginnen hier mit einem kleinen
@@ -203,7 +203,7 @@ Wir kommen noch zu Linux, aber um Dir einen Vorgeschmack zu geben, besorge Dir m
 Linus Torvalds und David Diamond. Das Buch gibt es auf Deutsch und auf Englisch. Das ist nicht neu, aber lohnt sich
 immer noch. Berliner:innen können sich das leihen.
 
-<Figure src="/images/kyo-6/Tux.png" alt="Das Tux-Maskottchen von Larry Ewing, Simon Budig, Garrett LeSage" />
+<Figure src="/images/kyu-6/Tux.png" alt="Das Tux-Maskottchen von Larry Ewing, Simon Budig, Garrett LeSage" />
 
 Geh auf [VOEBB](https://voebb.de). Da liegt es im Magazin der Amerikanischen Gedenkbibliothek. Kennst du nicht? Dann ist
 das eine gute Gelegenheit, Deutschlands größte öffentliche Bibliothek kennen zu lernen. Wenn du noch keinen Ausweis

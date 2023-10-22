@@ -1,5 +1,5 @@
 +++
-title = "6. Kyo"
+title = "6. Kyū"
 
 color = "#FFFF00"
 date = 2021-12-07
@@ -14,7 +14,7 @@ date = 2021-12-07
 :::tip Info
 Dieser Teil ist Bestandteil eines unserer Präsenz-Workshops. Wir werden die Inhalte dazu aber zeitnah online stellen.
 
-Hier sind schon einmal die [Folien](https://coderdojo.red/images/kyo-6/ATTiny.pdf) des Workshops.
+Hier sind schon einmal die [Folien](https://coderdojo.red/images/kyu-6/ATTiny.pdf) des Workshops.
 :::
 
 ## ATTiny Programmieren
@@ -30,28 +30,28 @@ bringt. Das kannst du dir später auch gut zusammenlöten. Aber dann musst du f�
 Sockel ziehen müsstest und wieder reinstecken, ist das erstmal unpraktisch. Auch wenn man vorsichtig ist, geht das nicht
 lange gut. Zum Rumspielen nimmst du dir besser ein Breadboard und steckst alles zusammen.
 
-<Figure src="/images/kyo-6/attiny/1-attiny_th.jpg" alt="ATTiny auf einem Breadboard" />
+<Figure src="/images/kyu-6/attiny/1-attiny_th.jpg" alt="ATTiny auf einem Breadboard" />
 
 Als nächstes nimmst du dir sechs Headerkabel mit männlichen Steckern an beiden Enden, das sind diese kurzen Kabel zum
 Bauen von Schaltungen auf dem Breadboard. Die steckst du erstmal in den Programmer.
 
-<Figure src="/images/kyo-6/attiny/2-programmer_th.jpg" alt="ATTiny auf einem Breadboard" />
+<Figure src="/images/kyu-6/attiny/2-programmer_th.jpg" alt="ATTiny auf einem Breadboard" />
 
 Dann nimmst du dir diese Zeichnung
 
-<Figure src="/images/kyo-6/attiny/3-zeichnung_th.jpg" alt="Belegungsplan" float="right" />
+<Figure src="/images/kyu-6/attiny/3-zeichnung_th.jpg" alt="Belegungsplan" float="right" />
 
 und verbindest die Headerkabel passend mit dem Breadboard.
 
-<Figure src="/images/kyo-6/attiny/4-breadboard-verbinden_th.jpg" alt="ATTiny auf einem Breadboard" float="right" />
+<Figure src="/images/kyu-6/attiny/4-breadboard-verbinden_th.jpg" alt="ATTiny auf einem Breadboard" float="right" />
 
 Stück
 
-<Figure src="/images/kyo-6/attiny/5-breadboard-verbinden_th.jpg" alt="ATTiny auf einem Breadboard" float="right" />
+<Figure src="/images/kyu-6/attiny/5-breadboard-verbinden_th.jpg" alt="ATTiny auf einem Breadboard" float="right" />
 
 für
 
-<Figure src="/images/kyo-6/attiny/6-breadboard-verbinden_th.jpg" alt="ATTiny auf einem Breadboard" float="right" />
+<Figure src="/images/kyu-6/attiny/6-breadboard-verbinden_th.jpg" alt="ATTiny auf einem Breadboard" float="right" />
 
 Stück.
 
@@ -59,42 +59,42 @@ Und dann nimmst du dir noch eine einfache LED und verbindest sie mit mit Port 1 
 der Port dem Minuspol. Bei der LED muss die Anode zum Pluspol zeigen und die Kathode (Merkhilfe: \_K_athode / \_k_urzes
 Bein) zum Minuspol.
 
-<Figure src="/images/kyo-6/attiny/7-LED_th.jpg" alt="LED" />
+<Figure src="/images/kyu-6/attiny/7-LED_th.jpg" alt="LED" />
 
 Die LED ist für die Aufwärmübungen.
 
-<Figure src="/images/kyo-6/attiny/8-LED_th.jpg" alt="LED" />
+<Figure src="/images/kyu-6/attiny/8-LED_th.jpg" alt="LED" />
 
 Bring den erstmal zum Blinken, bevor du dich am Stripe versuchst. Weil wir aber gerade am Basteln sind, machen wir das
 erst noch fertig. Isoliere den Stripe am Anfang ab. Sei vorsichtig - da kann man leicht bei abrutschen...
 
-<Figure src="/images/kyo-6/attiny/9-stripe_th.jpg" alt="Stripe" />
+<Figure src="/images/kyu-6/attiny/9-stripe_th.jpg" alt="Stripe" />
 
 Dann verbindest du das ganze mit dem Konnektor.
 
-<Figure src="/images/kyo-6/attiny/10-konnektor_th.jpg" alt="Konnektor" />
-<Figure src="/images/kyo-6/attiny/11-konnektor_th.jpg" alt="Konnektor" />
+<Figure src="/images/kyu-6/attiny/10-konnektor_th.jpg" alt="Konnektor" />
+<Figure src="/images/kyu-6/attiny/11-konnektor_th.jpg" alt="Konnektor" />
 
 Die Enden isolierst du ab. Aber bitte nicht mit so einem Messer. Dafür gibt es Abisolierzangen.
 
-<Figure src="/images/kyo-6/attiny/12-abisolieren_th.jpg" alt="Konnektor" />
+<Figure src="/images/kyu-6/attiny/12-abisolieren_th.jpg" alt="Konnektor" />
 
 Und bei der Gelegenheit geht es gleich nochmal zum Lötkolben...
 
-<Figure src="/images/kyo-6/attiny/13-loetkolben_th.jpg" alt="Lötkolben" />
+<Figure src="/images/kyu-6/attiny/13-loetkolben_th.jpg" alt="Lötkolben" />
 
 Die Enden verzinnst du jetzt. Das sollte dann ungefähr so aussehen:
 
-<Figure src="/images/kyo-6/attiny/14-verzinnen_th.jpg" alt="Verzinnen" />
+<Figure src="/images/kyu-6/attiny/14-verzinnen_th.jpg" alt="Verzinnen" />
 
 Der Pluspol (rot) kommt auf VCC, der Minuspol (weiß) auf Ground und das Datenkabel (grün) auf Port 0.
 
-<Figure src="/images/kyo-6/attiny/15-stripe_th.jpg" alt="LED-Stripe" />
-<Figure src="/images/kyo-6/attiny/16-stripe_th.jpg" alt="LED-Stripe" />
+<Figure src="/images/kyu-6/attiny/15-stripe_th.jpg" alt="LED-Stripe" />
+<Figure src="/images/kyu-6/attiny/16-stripe_th.jpg" alt="LED-Stripe" />
 
 Jetzt kommt der Programmer in deinen USB-Port und dann kann es mit dem Coden losgehen!
 
-<Figure src="/images/kyo-6/attiny/17-programmer_th.jpg" alt="Programmer" />
+<Figure src="/images/kyu-6/attiny/17-programmer_th.jpg" alt="Programmer" />
 
 In einem Tab solltest du dir die [ATTiny-Referenz](https://cdn.sparkfun.com/assets/0/4/1/4/a/Tiny_QuickRef_v2_2_1.png)
 aufrufen.
@@ -103,7 +103,7 @@ aufrufen.
 
 Dann die Hände entspannt auf die Tastatur legen und los geht's...
 
-<Figure src="/images/kyo-6/attiny/18-haende_th.jpg" alt="Hände" />
+<Figure src="/images/kyu-6/attiny/18-haende_th.jpg" alt="Hände" />
 
 Wir fangen erstmal mit einem ganz einfachen Stück Code an.
 

@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 draft = True
@@ -52,7 +52,7 @@ Jetzt wäre es ja noch hübsch, wenn er Dir anzeigte, was das für einen Fehler 
 Stelle nur die quick-and-dirty-Variante, um es jetzt nicht zu überladen. Das ist kein guter Stil, aber kann hilfreich
 sein:
 
-Wir kommen im nächsten Kyo darauf zurück und werden das Thema vertiefen. Jetzt bist du dran: Bitte nimm Dir das Programm
+Wir kommen im nächsten Kyū darauf zurück und werden das Thema vertiefen. Jetzt bist du dran: Bitte nimm Dir das Programm
 für Kopfrechenübungen wieder vor, dass du gerade geschrieben hast. Sichere mit try-except ab, dass nur sinnvolle
 Eingaben den Benutzenden verarbeitet werden. Weise die Benutzerin darauf hin, wenn eine Eingabe keinen Sinn ergibt. Gibt
 dabei dem Benutzer unendlich viele Gelegenheiten, eine sinnvolle Eingabe (also einen Integer) zu machen. Dann mal ran an

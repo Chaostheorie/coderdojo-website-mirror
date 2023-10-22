@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -109,7 +109,7 @@ sie explizit, also mit Variablentyp. Keine Sorge, wir werden das Thema noch übe
 ist an dieser Stelle, dass du schon davon gehört hast und versucht, einen Blick dafür zu entwickeln, mit was für einem Variablentyp
 du es gerade zu tun hast. Im Code kannst du immer mit `type(Variablenname)` auswerfen lassen, wie Python ihn gerade behandelt.
 
-<Figure src="/images/kyo-7/SolarpanelBp_a.jpeg" alt="Solarzellen
+<Figure src="/images/kyu-7/SolarpanelBp_a.jpeg" alt="Solarzellen
  werden mittels Lötbändchen zu Strängen, den sogeannten Strings verbunden" />
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch Stringspielereien. Wie man zwei Strings wie `"ot"` `"to"`
@@ -126,7 +126,7 @@ Python -- nicht verarbeiten, stumpf ausgeben. Wir nennen diesen Vorgang escapen,
 damit du es gesehen hast – man kann auch mit drei `"` oder ``` arbeiten, um einen String zu definieren. Das funktioniert
 sogar über Zeilen hinweg.
 
-<Figure src="/images/kyo-7/Python_string_int.jpg" alt="Dieses Meme solltest du jetz nachvollziehen können." />
+<Figure src="/images/kyu-7/Python_string_int.jpg" alt="Dieses Meme solltest du jetz nachvollziehen können." />
 
 Die Ausgabe von Variablen hast du schon gesehen, auch die Kombination mit Text. Dafür gibt es einen einfachen und einen
 eleganten Weg. Der einfache Weg ist `print("Inhalt von a: ", a)`. Der ist aber veraltet und wenig elegant. Besser ist:

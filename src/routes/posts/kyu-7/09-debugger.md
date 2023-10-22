@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -27,7 +27,7 @@ Nimm Dir mal das obigen Programm control-while-loop.py. Statt Run startest du es
 Menüpunkt Run mit Debug. Da passiert jetzt erstmal nicht viel. Jetzt legst du dir vorher einen Stoppunkt fest, am besten
 auf Zeile 3, also die mit dem input.
 
-<Figure src="/images/kyo-7/Haltepunkt.png" alt="Um einen Halte- oder Stopppunkt zu setzen (der rote Kringel), klickst du einfach mit der Maus neben die Zeilennummer."/>
+<Figure src="/images/kyu-7/Haltepunkt.png" alt="Um einen Halte- oder Stopppunkt zu setzen (der rote Kringel), klickst du einfach mit der Maus neben die Zeilennummer."/>
 
 Jetzt startetst du nochmal mit debug. Huch - jetzt zeigt er dir an, welchen Wert i beim Auftreffen des Stopppunktes hat.
 Das kann super praktisch sein, weil du so sehen kannst, wie sich Variablen verändern. Du kannst mit F9 oder in dem du

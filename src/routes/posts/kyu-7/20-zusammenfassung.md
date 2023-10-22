@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -10,7 +10,7 @@ created = 2021-12-07
 
 ## Zusammenfassung
 
-Hier noch einmal kurz die im 7. Kyo gelernten Befehle:
+Hier noch einmal kurz die im 7. Kyū gelernten Befehle:
 
 - print("foo"): Gibt eine Zeile auf dem Bildschirm aus.
 

@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -19,14 +19,14 @@ voraus, da die Teilnehmenden unterschiedlich alt sind und dem Thema in der Schul
 wird. Es kann also gut sein, dass du gerade am Anfang gähnst. Keine Sorge, auch hier steigern wir uns Stück für Stück. Aber wir
 wollen alle mitnehmen.
 
-<Figure src="/images/kyo-7/derMicha_Soldering_th.jpg" alt="derMicha bei einem Löt-Workshop"/>
+<Figure src="/images/kyu-7/derMicha_Soldering_th.jpg" alt="derMicha bei einem Löt-Workshop"/>
 
 Zunächst solltest du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn du noch keine Erfahrung hast, lass dir
 ein kleines Stück Lochraster geben und ein paar alte Bauteile und versuche die, ein- und auszulöten. Wir können hier nur
 bedingt etwas zu erklären, da dir am besten eine Mentorin kurz zeigt, wie es geht. Der Rest ist handwerkliche Fähigkeit,
 dass muss man also einfach ein bißchen selber gemacht haben.
 
-<Figure src="/images/kyo-7/Lochraster_loeten.jpg" alt="Lötübungen am Lochraster"/>
+<Figure src="/images/kyu-7/Lochraster_loeten.jpg" alt="Lötübungen am Lochraster"/>
 
 Wenn du damit klar kommst, dann kommt als nächstes, eine LED zum Leuchten zu bringen. Lass Dir dafür bitte die passenden
 Bauteile geben. Für die Mentoren - benötigt werden:
@@ -37,7 +37,7 @@ Bauteile geben. Für die Mentoren - benötigt werden:
 - 220 Ω Widerstand und
 - 4,5 V-Batterieadapter.
 
-<Figure src="/images/kyo-7/Leiterbahnen_ziehen.jpg" alt="Leiterbahnen ziehen will geübt sein."/>
+<Figure src="/images/kyu-7/Leiterbahnen_ziehen.jpg" alt="Leiterbahnen ziehen will geübt sein."/>
 
 Strom braucht zum Fließen immer einen Stromkreis. Manche Bauelemente können Strom nur durch eine Richtung durchlassen,
 so wie die LED. Wenn die LED also mal nicht leuchtet - probiere sie mal zu drehen. Die mag es aber nicht wirklich,
@@ -55,13 +55,13 @@ man da zuviel Wasser durch, platzt es. Das verhindern wir mit dem Widerstand. Hi
 Solche Zeichnungen stellt man technisch mit sogenannten Schaltplänen dar. Dabei haben bestimmte Bauelemente fest
 definierte Zeichen. Die kleine Schaltung, die du Dir zurecht gelötet hast, schaut dann so aus:
 
-<Figure src="/images/kyo-7/LED-Schaltung.png" alt="LED-Schaltung"/>
+<Figure src="/images/kyu-7/LED-Schaltung.png" alt="LED-Schaltung"/>
 
 Vergleiche das mal mit Deiner Schaltung, wenn du fertig bist. Widerstände gibt es viele. Die Stärke wird gemessen in der
 Einheit Ω (gesprochen Ohm). Wenn man das Zeichen Ω nicht hat, kürzt man es mit R (das englische Wort für Widerstand ist
 ´resistor´) ab.
 
-<Figure src="/images/kyo-7/Widerstand.jpg" alt="typischer Widerstand"/>
+<Figure src="/images/kyu-7/Widerstand.jpg" alt="typischer Widerstand"/>
 
 Wieviel Ohm muss den unser Widerstand nun haben? Da wird es jetzt kurz einmal theoretisch, denn das kann man mit einer
 kleinen Formel selbst ausrechnen:
@@ -78,7 +78,7 @@ hoch die Spannung in der LED sein darf. Wir arbeiten hier mit einer kleinen (5mm
 bei 1,6 V bis 2 V kuschelig. Diesen Wert liefern die Hersteller in ihren Spezifikationen mit. Es gibt also zu jedem
 Bauteil so ein Datenblatt. Aus Vereinfachungsgründen sagen wir die notwendigen Werte aber an.
 
-<Figure src="/images/kyo-7/LED-falsch.jpg" alt="So sollte eine LED nicht im Lochraster festgemacht werden..."/>
+<Figure src="/images/kyu-7/LED-falsch.jpg" alt="So sollte eine LED nicht im Lochraster festgemacht werden..."/>
 
 Vereinfacht können wir jetzt sagen - 4,5 V Batteriespannung - 2 V will-die-LED-haben = 1,5 V zu vernichtende Spannung.
 Jetzt brauchen wir noch den Nennstrom der LED. Aus das stünde im Datenblattn, gehe jetzt bitte einfach von 0,025 Ampere
@@ -86,7 +86,7 @@ Jetzt brauchen wir noch den Nennstrom der LED. Aus das stünde im Datenblattn, g
 nachrechnen. Da kommen 160 Ω raus. Wenn du dann an den Materialschränken im xHain oder einem anderen Makerspace schaust,
 wirst du sehen, dass es einen 160 Ω - Widerstand nicht gibt. Man nimmt dann einfach den nächst größeren - denn mehr
 Widerstand heißt, da fließt weniger Strom. Dann ist die LED vielleicht etwas dunkler, aber sie überlebt. Der nächst
-größere Widerstand sind 220 Ω. Die bunten Ringe darauf erklären wir Dir beim nächsten Kyo. Damit du sicher bist, dass du
+größere Widerstand sind 220 Ω. Die bunten Ringe darauf erklären wir Dir beim nächsten Kyū. Damit du sicher bist, dass du
 wirklich den richtigen genommen hast - lass Dir mal ein Messgerät zeigen und wie man damit umgeht. Da werden nicht genau
 220 Ω angezeigt werden, aber so ungefähr 200 bis 240 Ω. Jetzt weißt du, wie man so einen Widerstand aussucht. Okay, also
 brauchst du zwei Daten für die LED und den Strom, den Dir jeweils die Batterie liefert. Daraus mach doch mal gleich in
@@ -94,8 +94,8 @@ ein Programm. Mit der Zeit kannst du da noch andere Werte für andere LEDs reinp
 dafür keinen Taschenrechner mehr. Alles klar soweit? Wenn nicht, nicht schlimm. Deine Mentor:innen vor Ort helfen Dir da
 gerne.
 
-<Figure src="/images/kyo-7/LED-richtig.jpg" alt="So schaut das richtig aus mit der LED"/>
+<Figure src="/images/kyu-7/LED-richtig.jpg" alt="So schaut das richtig aus mit der LED"/>
 
-Okay, wenn Deine LED leuchtet, soll es an dieser Stelle erstmal mit dem Kapitel löten gewesen sein. Beim nächsten Kyo
-wird ein Controller, quasi ein kleiner Computer, zusammengelötet. Einen Kyo später kümmern wir uns dann auch um die
+Okay, wenn Deine LED leuchtet, soll es an dieser Stelle erstmal mit dem Kapitel löten gewesen sein. Beim nächsten Kyū
+wird ein Controller, quasi ein kleiner Computer, zusammengelötet. Einen Kyū später kümmern wir uns dann auch um die
 Programmierung desselben.

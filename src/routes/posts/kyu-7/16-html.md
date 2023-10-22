@@ -1,5 +1,5 @@
 +++
-title = "7. Kyo"
+title = "7. Kyū"
 color = "#fff"
 created = 2021-12-07
 +++
@@ -16,7 +16,7 @@ Dieses Kapitel ist gerade im Entstehen... hab bitte noch einen Moment, bis es vo
 
 Dieses Python ist ja ganz hübsch, magst du dir denken. Aber eigentlich würdest du doch gerne auch mal was im Internet machen. Alle Seiten, die du im Internet siehst, basieren auf html. Die vier Buchstaben stehen für Hypertext Markup Language, was man irgendwie mit „Auszeichnungssprache für Texte mit dynamischer Struktur“ übersetzen könnte. Aber Moment - jeder Gurt eine zusätzliche Programmiersprache. Sind wir im ersten Gurt und hier kommt die zweite Sprache? Bei html handelt es sich um eine Seitenbeschreibungssprache. Hier wird also nicht im eigentlichen Sinne programmiert. Deswegen nehmen wir die ersten Elemente gleich in den Weißgurt mit rein.
 
-Damit wir den Anfang einfach halten, wollen wir uns noch nicht darum rumschlagen, wie ein Webserver Internet-Seiten ausliefert. Auch das Thema CSS, falls Du davon schön gehört hast, wird erst im nächsten Kyo ein Thema. Du legst Dir zunächst eine neue Datei an. Geh einfach mit deinem Dateimanager (Windows Explorer, Linux meist Nautilus, Apple Finder) in dein Homeverzeichnis bzw. „Eigene Dateien“.
+Damit wir den Anfang einfach halten, wollen wir uns noch nicht darum rumschlagen, wie ein Webserver Internet-Seiten ausliefert. Auch das Thema CSS, falls Du davon schön gehört hast, wird erst im nächsten Kyū ein Thema. Du legst Dir zunächst eine neue Datei an. Geh einfach mit deinem Dateimanager (Windows Explorer, Linux meist Nautilus, Apple Finder) in dein Homeverzeichnis bzw. „Eigene Dateien“.
 
 Windows: rechte Maustaste und „Neu“ und dann Textdokument. Wenn da jetzt nur „Neues Textdokument“ steht, musst du deinem Explorer noch etwas Anstand beibringen und dir auch die Dateiendung anzeigen lassen. Das geht wie folgt: Geh auf den Reiter „Datei“, dann auf „Ordner- und Suchoptionen ändern“, dann auf den Reiter „Ansicht” und dann nimmst du den Haken bei „Erweiterungen bei bekannten Datentypen ausblenden“ weg. Wenn du jetzt eine Datei anlegst, sollte da „Neues Textdokument.txt“ stehen. Daraus machst du „index.html“.
 
