@@ -10,7 +10,6 @@ cache:
     - /store
     - build
 
-
 Lint:
   stage: Testing
   rules:
