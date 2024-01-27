@@ -26,7 +26,6 @@ Hier kommt Code:
 #include <Adafruit_NeoPixel.h>
 #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
 
-
 #define LED_PIN    0
 
 #define LED_COUNT 100
@@ -49,7 +48,7 @@ void loop() {
 
 
 void rainbow(int wait) {
-  
+
   for(long firstPixelHue = 0; firstPixelHue < 5*65536; firstPixelHue += 256) {
     for(int i=0; i<strip.numPixels(); i++) { // For each pixel in strip...
 
