@@ -18,7 +18,7 @@ Anstehend:
 
 Die Terminplanung für die kommenden Workshops sind gerade am laufen. ATTiny-Programmierung, Git, PyGame, Python-Grundlagen und Nerd-Spiele stehen auf dem Plan. Wenn Ihr noch weitere Wünsche oder Ideen habt - meldet Euch bei uns per Matrix.
 
-Gerade gelaufen sind:
+Unter anderem sind gerade gelaufen:
 
 - 22. Oktober 2023 von 14 bis 17 Uhr - [Codeweek - PyGames - erste Schritte in der Spieleprogrammierung](https://coderdojo.red/posts/news/2023-10-22/)
 
