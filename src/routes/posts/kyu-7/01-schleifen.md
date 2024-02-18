@@ -44,6 +44,8 @@ bekommst, [melde dich bei uns](https://matrix.to/#/#coderdojo:matrix.cyber4edu.o
 
 Okay, jetzt bist du dran. Als Nächstes bau den Code bitte so um, dass es zu folgender Ausgabe kommt:
 
+// Aufgabe 1 Präsenzworkshop
+
 ```
 Hello
 World
