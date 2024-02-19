@@ -10,7 +10,8 @@ created = 2024-02-18
 
 # Python-Grundlagen
 
-## 7. Kyū <Figure src="/images/kyu-7/belt-white.svg" alt="weißer Gürtel" />
+## 7. Kyū
+<Figure src="/images/kyu-7/belt-white_small.svg" alt="weißer Gürtel" />
 
 
 ```python:Aufgabe_1.py
@@ -149,10 +150,10 @@ while True:
     print("Die Unendlichkeit ist groß.")
 # Endlosschleife
 
-```
-
 import random
 # Modul für Zufallszahlen einlesen.
 
 random.randint(1,10)
 # Gibt eine Zufallszahl von 1 bis 10 aus.
+
+```
