@@ -16,7 +16,7 @@ Erster Präsenzworkshop für junge Menschen ohne Vorkenntnisse - auf dem Weg zum
 ## Übungen
 
 
-#### Aufgabe 1
+### Aufgabe 1
 
 Sorge mit Hilfe einer Schleife für die nachfolgende Ausgabe.
 
@@ -186,7 +186,7 @@ Ausgabe:
 
 
 
-### Cheatsheet
+## Cheatsheet
 
 ```python:cheatsheet.py
 print("Hello World")
