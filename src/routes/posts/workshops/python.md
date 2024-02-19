@@ -17,6 +17,8 @@ created = 2024-02-18
 
 Sorge mit Hilfe einer Schleife für die nachfolgende Ausgabe.
 
+:::
+
 ```python:Aufgabe_1.py
 Hello
 World
@@ -25,7 +27,7 @@ World
 World
 World
 ```
-:::
+
 
 :::info Aufgabe 2
 
