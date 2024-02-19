@@ -13,7 +13,7 @@ created = 2024-02-18
 1. Aufgabe
 
 
-```python:Aufgabe 1.py
+```python:Aufgabe_1.py
 Hello
 World
 World
