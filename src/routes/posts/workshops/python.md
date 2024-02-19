@@ -13,7 +13,7 @@ created = 2024-02-18
 ## 7. Kyū
 <Figure src="/images/kyu-7/belt-white.svg" alt="weißer Gürtel" width: 25% height: auto />
 
-:::info Aufgabe 1
+:::note Aufgabe 1
 
 Sorge mit Hilfe einer Schleife für die nachfolgende Ausgabe.
 
@@ -27,6 +27,7 @@ World
 World
 World
 ```
+
 
 
 :::info Aufgabe 2
