@@ -11,7 +11,7 @@ created = 2024-02-18
 # Python-Grundlagen
 
 ## 7. Kyū
-<Figure src="/images/kyu-7/belt-white_small.svg" alt="weißer Gürtel" />
+<Figure src="/images/kyu-7/belt_white_small.svg" alt="weißer Gürtel" />
 
 
 ```python:Aufgabe_1.py
