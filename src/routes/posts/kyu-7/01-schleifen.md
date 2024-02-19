@@ -59,6 +59,8 @@ Geschafft? Wenn nicht, dann als Hilfe – du brauchst zwei `print`-Zeilen, je ei
 
 Gleich zur nächsten Übung. Versuche folgende Ausgabe zu erzeugen:
 
+<!-- Aufgabe 2 Präsenzworkshop -->
+
 ```
 Hello
 World
