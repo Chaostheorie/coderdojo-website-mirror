@@ -11,7 +11,7 @@ created = 2024-02-18
 # Python-Grundlagen
 
 ## 7. Kyū
-<Figure src="/images/kyu-7/belt-white.svg" alt="weißer Gürtel" width: 25% height: auto />
+<Figure src="/images/kyu-7/belt-white.svg" alt="weißer Gürtel" width=25% height=auto />
 
 :::note Aufgabe 1
 
