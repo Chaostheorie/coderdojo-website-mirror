@@ -86,7 +86,7 @@ Versuche den Baum mit möglichst wenig Zeilen Code auszugeben! Als Hilfestellung
 
 :::
 
-::: Aufgabe 5
+:::info Aufgabe 5
 
 Wenn du den Baum gut hinbekommen hast, kannst du dich ja noch an dieser
 ASCII-Grafik versuchen:
@@ -102,7 +102,7 @@ Auch hier gilt - es gilt mit möglichst wenig Zeilen Code auszukommen.
 
 :::
 
-::: Aufgabe 6
+:::info Aufgabe 6
 
 Programmiere die Spielemachanik für Schnick-Schnack-Schnuck bzw. Papier-Stein-Schere.
 Zur Vereinfachung soll Papier im Programm mit 1 dargestellt werde, Stein mit 2
@@ -121,7 +121,7 @@ Spielerin 2 hat gewonnen!
 
 :::
 
-::: Aufgabe 7
+:::info Aufgabe 7
 
 Erweitere das Programm so, dass der Spieler 2 durch den Computer ersetzt wird
 und dieser mit einer Zufallszahl von 1 bis 3 spielt.
@@ -150,7 +150,7 @@ Der Mensch hat gewonnen!
 
 :::
 
-::: Aufgabe 7
+:::info Aufgabe 7
 
 Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. Die Benutzerin gibt einen Geldbetrag von 1
 bis 99 Cent ein. Der eingegebene Betrag soll dann in den Münzen mit 1, 2, 3, 10, 20 und 50 Cent ausgegeben werden - aber
