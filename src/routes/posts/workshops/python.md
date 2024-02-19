@@ -12,13 +12,15 @@ created = 2024-02-18
 
 Erster Präsenzworkshop für junge Menschen ohne Vorkenntnisse - auf dem Weg zum 7. Kyū (Weißgurt).
 
+
 ## Übungen
 
-:::note Aufgabe 1
+
+#### Aufgabe 1
 
 Sorge mit Hilfe einer Schleife für die nachfolgende Ausgabe.
 
-:::
+
 
 ```python:Aufgabe_1.py
 Hello
