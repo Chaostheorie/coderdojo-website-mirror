@@ -23,9 +23,32 @@ World
 ```
 
 ```python:Aufgabe 2.py
+Hello
+World
+Hello
+World
+Hello
+World
+Hello
+World
+Hello
+World
+```
 
+```python:Aufgabe 3.py
+1. Aufgabe
+2. Aufgabe
+3. Aufgabe
+4. Aufgabe
+5. Aufgabe
+
+a) Die Zahlen sollen in der Printanweisung nicht ausgeschrieben werden.
+b) Die Anzahl der Aufgaben soll durch eine erste Zeile im Code festgelegt werden,
+die wie folgt ausschaut:  anzahl_aufgaben = 5
 
 ```
+
+
 
 ### Cheatsheet
 
