@@ -76,7 +76,7 @@ anzahl_aufgaben = 5
 
 ### Aufgabe 4
 
-Versuche den Baum mit möglichst wenig Zeilen Code auszugeben! Als Hilfestellung versuche mal, was folgende Zeile bewirkt: print(3 * "*"). Dabei kann die Zahl 3 auch durch eine Variable dargestellt werden.
+Versuche den Baum mit möglichst wenig Zeilen Code auszugeben! Als Hilfestellung versuche mal, was folgende Zeile bewirkt: print(3 \* "\*"). Dabei kann die Zahl 3 auch durch eine Variable dargestellt werden.
 
 
 
@@ -196,8 +196,8 @@ for i in range(10):
     print(i)
 # Gibt die Zahlen von 1 bis 10 aus
 
-print(3 * "*")
-# Gibt "***" aus.
+print(3 \* "\*")
+# Gibt "\*\*\*" aus.
 
 wert = 10
 # Weist der Variable wert den Wert 10 zu.
