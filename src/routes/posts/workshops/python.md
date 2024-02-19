@@ -10,8 +10,9 @@ created = 2024-02-18
 
 # Python-Grundlagen
 
-## 7. Kyū
-<Figure src="/images/kyu-7/belt-white.svg" alt="weißer Gürtel" width=25% height=auto />
+Erster Präsenzworkshop für junge Menschen ohne Vorkenntnisse - auf dem Weg zum 7. Kyū (Weißgurt).
+
+## Übungen
 
 :::note Aufgabe 1
 
@@ -50,6 +51,7 @@ World
 ```
 
 
+
 :::info Aufgabe 3
 
 a) Die Zahlen sollen in der Printanweisung nicht ausgeschrieben werden.
@@ -67,6 +69,7 @@ anzahl_aufgaben = 5
 4. Aufgabe
 5. Aufgabe
 ```
+
 
 
 :::info Aufgabe 4
@@ -89,6 +92,7 @@ Versuche den Baum mit möglichst wenig Zeilen Code auszugeben! Als Hilfestellung
 ```
 
 
+
 :::info Aufgabe 5
 
 Wenn du den Baum gut hinbekommen hast, kannst du dich ja noch an dieser
@@ -105,6 +109,7 @@ ASCII-Grafik versuchen:
 ```
 
 Auch hier gilt - es gilt mit möglichst wenig Zeilen Code auszukommen.
+
 
 
 :::info Aufgabe 6
@@ -125,6 +130,7 @@ Spielerin 2: 2
 Spielerin 2 hat gewonnen!
 
 ```
+
 
 
 :::info Aufgabe 7
@@ -156,6 +162,7 @@ Der Mensch hat gewonnen!
 ```
 
 
+
 :::info Aufgabe 7
 
 Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. Die Benutzerin gibt einen Geldbetrag von 1
@@ -174,6 +181,7 @@ Ausgabe:
 2 Cent: 2
 
 ```
+
 
 
 ### Cheatsheet
