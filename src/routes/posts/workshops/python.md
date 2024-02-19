@@ -8,12 +8,12 @@ created = 2024-02-18
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-# Präsenz-Einführung in Python I
+# Präsenz-Einführung in Python-Grundlagen
 
-1. Aufgabe
+## 7. Kyū
 
 
-```python:Aufgabe_1.py
+```python:"Aufgabe 1.py"
 Hello
 World
 World
@@ -23,3 +23,6 @@ World
 ```
 
 2. Aufgabe
+
+
+### Cheatsheet
