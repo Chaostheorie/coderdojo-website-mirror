@@ -11,7 +11,7 @@ created = 2024-02-18
 # Python-Grundlagen
 
 ## 7. Kyū
-<Figure src="/images/kyu-7/belt_white_small.svg" alt="weißer Gürtel" />
+<Figure src="/images/kyu-7/belt-white-small.svg" alt="weißer Gürtel" />
 
 
 ```python:Aufgabe_1.py
@@ -45,8 +45,10 @@ World
 ```
 
 a) Die Zahlen sollen in der Printanweisung nicht ausgeschrieben werden.
+
 b) Die Anzahl der Aufgaben soll durch eine erste Zeile im Code festgelegt werden,
 die wie folgt ausschaut:  anzahl_aufgaben = 5
+
 
 ```python:Aufgabe_4_Baum.py
       *
@@ -61,7 +63,7 @@ die wie folgt ausschaut:  anzahl_aufgaben = 5
      **
 ```
 
-Versuche mit möglichst wenig Zeilen Code auszukommen!
+Versuche den Baum mit möglichst wenig Zeilen Code auszugeben!
 
 Wenn du den Baum gut hinbekommen hast, kannst du dich ja noch an dieser
 ASCII-Grafik versuchen:
@@ -76,28 +78,45 @@ ASCII-Grafik versuchen:
 Auch hier gilt - es gilt mit möglichst wenig Zeilen Code auszukommen.
 
 ```python:Aufgabe_6_schnick_schnack_schnuck.py
+Spielerin 1: 1
+Spielerin 2: 2
+
+Spielerin 2 hat gewonnen!
+
+```
+
 Programmiere die Spielemachanik für Schnick-Schnack-Schnuck bzw. Papier-Stein-Schere.
 Zur Vereinfachung soll Papier im Programm mit 1 dargestellt werde, Stein mit 2
 und Schere mit 3. Der:die Spieler:in 1 gibt ein, mit was sie antritt, ebenso Spieler:in 2.
 Das Programm gibt dir aus, wer gewonnen hat.
 
-Beispiel: Spieler 1 nimmt Papier und Spieler 2 Stein. Spieler 1 gibt 1 ein,
-Spielerin 2 gibt 2 ein. Das Programmm gibt aus: Spieler:in 2 hat gewonnen.
+
+```python:Aufgabe_7_schnick_schnack_schnuck.py
+Mensch: 2
+
+Der Computer hat 1 gewählt.
+
+Der Mensch hat gewonnen!
 
 ```
 
-```python:Aufgabe_7_schnick_schnack_schnuck.py
 Erweitere das Programm so, dass der Spieler 2 durch den Computer ersetzt wird
 und dieser mit einer Zufallszahl von 1 bis 3 spielt.
 
+```python:Aufgabe_7_Muenzwechsler.py
+
+Wieviel Geld zahlst du ein? 74
+
+Ausgabe:
+50 Cent: 1
+20 Cent: 1
+2 Cent: 2
+
 ```
 
-```python:Aufgabe_7_Muenzwechsler.py
 Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. Die Benutzerin gibt einen Geldbetrag von 1
 bis 99 Cent ein. Der eingegebene Betrag soll dann in den Münzen mit 1, 2, 3, 10, 20 und 50 Cent ausgegeben werden - aber
 bitte so, dass möglichst wenig Münzen benötigt werden.
-
-```
 
 
 
