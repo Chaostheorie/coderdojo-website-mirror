@@ -97,7 +97,7 @@ Grübeln und probieren gehört dazu.
 
 
 :::info Triggerwarnung
-Bei der nachfolgenden Übung geht es um Körpergewicht. Falls dir die beschäftigung damit nicht gut tut, bitte gehe ins nächste Kapitel.
+Bei der nachfolgenden Übung geht es ums Körpergewicht. Falls dir die Beschäftigung damit nicht gut tut, gehe bitte ins nächste Kapitel.
 :::
 
 ### Grundumsatz
