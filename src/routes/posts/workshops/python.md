@@ -165,7 +165,7 @@ Der Mensch hat gewonnen!
 
 
 
-### Aufgabe 7
+### Aufgabe 8
 
 Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. Die Benutzerin gibt einen Geldbetrag von 1
 bis 99 Cent ein. Der eingegebene Betrag soll dann in den Münzen mit 1, 2, 3, 10, 20 und 50 Cent ausgegeben werden - aber
