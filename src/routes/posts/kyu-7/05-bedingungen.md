@@ -81,6 +81,25 @@ Elemente gelernt, mit denen man schon eine Menge machen kannst.
 
 Auf geht es zu ein paar Übungen, um das neu erlernte zu festigen.
 
+
+### Summen
+
+Bitte frage den Benutzer nach einer Zahl. Addiere dann alle Zahlen von 1 bis zur Zahl die die Benutzerin Dir angegeben
+hat und gib das Ergebnis aus. Bekommst du beispielsweise eine 5 übergeben, dann soll die Rechnung $1+2+3+4+5$ lauten.
+
+### Schach mit ASCII-Art
+
+Gib ein Schachbrett ($8\times8$-Feld) aus. Dabei sollen die weißen Felder mit einer 0 dargestellt werden und die
+schwarzen Felder mit einer `#`. Verwende dafür For-Schleifen. Auch hier gilt – weniger Code ist mehr. Wenn du den Code
+fertig hast und die Ausgabe stimmt – nimm Dir Zeit und überlege, ob es nicht doch noch eine Lösung gibt, mit der du das
+Ergebnis mit einer einfacheren Lösung hinbekommst. Und auch wenn Dir ein erster Lösungsansatz nicht einfällt – Geduld.
+Grübeln und probieren gehört dazu.
+
+
+:::info Triggerwarnung
+Bei der nachfolgenden Übung geht es um Körpergewicht. Falls dir die beschäftigung damit nicht gut tut, bitte gehe ins nächste Kapitel.
+:::
+
 ### Grundumsatz
 
 Mit der sogenannten Harris-Benedict-Formel lässt sich (ungefähr) berechnen, wie viel Kilokalorien ein Mensch pro Tag
@@ -101,16 +120,3 @@ auswirft. Dieser wird in Kalorien, richtigerweise in Kilokalorien ausgegeben. Da
 veraltet ist, gib das Ergebnis auch in Kilojoule aus. Eine Kalorie entspricht ungefähr 4,184 Joule. Wenn du damit ins
 Stocken kommst, versuche erstmal Testwerte (Bsp. 80 kg, 170 cm und 25 Jahre) den Variablen zuzuweisen und die Ergebnisse
 für Männer und Frauen beide ausgeben zu lassen.
-
-### Summen
-
-Bitte frage den Benutzer nach einer Zahl. Addiere dann alle Zahlen von 1 bis zur Zahl die die Benutzerin Dir angegeben
-hat und gib das Ergebnis aus. Bekommst du beispielsweise eine 5 übergeben, dann soll die Rechnung $1+2+3+4+5$ lauten.
-
-### Schach mit ASCII-Art
-
-Gib ein Schachbrett ($8\times8$-Feld) aus. Dabei sollen die weißen Felder mit einer 0 dargestellt werden und die
-schwarzen Felder mit einer `#`. Verwende dafür For-Schleifen. Auch hier gilt – weniger Code ist mehr. Wenn du den Code
-fertig hast und die Ausgabe stimmt – nimm Dir Zeit und überlege, ob es nicht doch noch eine Lösung gibt, mit der du das
-Ergebnis mit einer einfacheren Lösung hinbekommst. Und auch wenn Dir ein erster Lösungsansatz nicht einfällt – Geduld.
-Grübeln und probieren gehört dazu.
