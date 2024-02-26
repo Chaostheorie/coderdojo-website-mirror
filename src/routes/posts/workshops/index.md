@@ -10,12 +10,6 @@ created = 2022-08-05
 
 # Workshops
 
-:::note Infos
-Diese Seite wird gerade überarbeitet....
-:::
-
-Anstehend:
-
 Die Terminplanung für die kommenden Workshops sind quasi dauerhaft am Laufen. ATTiny-Programmierung, Git, PyGame, Python-Grundlagen und Nerd-Spiele stehen bei uns auf dem Zettel. Wenn Ihr noch weitere Wünsche oder Ideen habt - meldet Euch bei uns per Matrix.
 
 Wenn Du sehen willst, welche Workshops in der Vergangenheit liefen oder bereits terminiert sind, gehe oben auf News.
