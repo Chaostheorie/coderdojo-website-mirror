@@ -18,7 +18,7 @@ Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in de
 
 ### Ada Lovelace
 
-<Figure src="view-source:https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ada_Lovelace.jpg/220px-Ada_Lovelace.jpg" alt="Ada Lovelace" float="right" />
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ada_Lovelace.jpg/220px-Ada_Lovelace.jpg" alt="Ada Lovelace" float="right" />
 
 Die erste Programmierin lebte, bevor es überhaupt Computer gab: Die britische Mathematikerin Ada King-Noel, Countess of Loveloce, wurde 1815 geboren. Countess entspricht dem deutschen Titel „Gräfin“. Ihr Vater war der seinerzeit berühmte Dichter Lord Byron. Ihren Vater lernte Ada nie persönlich kennen, da sich die Eltern früh trennten. Die Trennung ging von ihrer Mutter aus, was zur damaligen Zeit ein Skandal war. Ihre Mutter gehörte dem Adel an und war dadurch vermögend. Zu Adas Zeit durften Frauen in Großbritannien noch nicht studieren (verrückt, oder?). Ihre Mutter legte jedoch großen Wert auf Bildung. Durch ihr Vermögen konnte sie Ada täglichen Privatunterricht zugute kommen lassen. An sechs Tagen in der Woche wurde Ada in Mathematik, Geografie, Astronomie, Französisch, Deutsch und Latein unterrichtet. Mathe-Unterricht erhielt sie bereits ab dem 4. Lebensjahr. Untericht in Literatur, Philosophie und Dichtkunst unterband die Mutter. Sie wollte verhindern, dass Ada nach ihrem Vater kam. Die Liebe zur Literatur und Dichtung von Ada verhinderte sie damit aber nicht. Sonntags wurde sie in der Bauen und Formen nach [Pestalozzi](https://de.wikipedia.org/wiki/Johann_Heinrich_Pestalozzi) geschult. Architektur wäre vielleicht eine passende Beschreibung für den Inhalt dieses Unterrichts.
 
