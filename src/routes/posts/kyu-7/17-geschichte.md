@@ -44,7 +44,23 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 
 <Figure src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png" alt="Alan Turing" float="right" />
 
+Der Brite Alan Turing wurde 1912 geboren und starb 1954. „Er gilt heute als einer der einflussreichsten Theoretiker der frühen Computerentwicklung und Informatik,“ schreibt die [Wikipedia](https://de.wikipedia.org/wiki/Alan_Turing). Wenn du eine großartige Darstellung seines hoch tragischen Lebens sehen willst - mach einen Moment Pause und besorge dir den etwas zweistündigen Film [„The Imitation Game“](https://www.youtube.com/watch?v=KsJH9HWhgCw). Wir gehen davon aus, dass du diesen Film genießt und geben hier nur noch ein paar Randdetails wieder.
 
+Alan fiel von klein auf an als besonders begabt auf. Während ihm Naturwissenschaften sehr zusagten, konnte er mit Geisteswissenschaften nichts anfangen. Da nicht ganz einsah, für diese Fächer genau so viel zu tun, wie für die Naturwissenschaften, musste er sogar das College wechseln. Seiner erfolgreichen Beschäftigung mit Mathematik tat dies keinen Abbruch. So entwarf er die sogenannte [Turingmaschine](https://de.wikipedia.org/wiki/Turingmaschine). Hierdurch bewies er, dass jedes mathematisches Problem gelöst werden kann, wenn es durch einen Algorithmus gelöst werden kann. Die Turingmaschine stellt bis heute in der theoretischen Informatik einen Schwerpunkt dar. Das wird zwar noch eine ganze Weile dauern, aber wir haben vor, uns diesem Thema einmal zu nähern.
+
+Die Nazis verwendeten zur Codierung ihrer Funksprüche im Zweiten Weltkrieg an beispielsweise U-Boote die sogenannte [Enigma-Maschine](https://de.wikipedia.org/wiki/Enigma_(Maschine)). Dieser Code galt aufgrund seiner Komplexität lange Zeit als unknackbar. Alan Turing war maßgeblich daran beteiligt, dass dieser Code gebrochen wurde und der Krieg eine erhebliche Wendung nahm.
+
+Alan lehrte später an der Universität Manchester. Dort beschäftigte er sich auch mit künstlicher Intelligenz. Um festzustellen, ob ein Computer eine dem Menschen ebenbürtiges Denkvermögen habe, schlug er 1950 den sogenannten [Turing-Test](https://de.wikipedia.org/wiki/Turing-Test) vor. Er selbst nannte den Test „Imitation Game“. Vereinfacht gesagt, soll dieser dann ein bestanden gelten, wenn ein Mensch mit einem Computer nur über Chat kommuniziert und nicht mehr feststellen kann, ob es sich um einen Computer oder Menschen handelt. Turing vermutete, dass im Jahr 2000 dieses Ziel erreicht sein. Bis heute ist es nicht gelungen, ein System zu programmieren, welches diesen Test besteht.
+
+Eines der ersten Schachprogramme verdanken wir ebenso Alan Turing.
+
+Homosexualität war zu Turings Zeit in Großbritannien (und auch in Deutschland) eine Straftat. Alan war schwul und deswegen 1952 strafrechtlich verurteilt. Er wurde chemisch kastriert, war zu einer Depression führte. In der Folge starb Alan Turing etwa zwei Jahre später durch Suizid. Im Jahre 2009 sprach der britische Premierminister Gordon Brown eine offizielle Entschuldigung für die „entsetzliche Behandlung“ aus und würdigte Alan Turings „außerordentliche Verdienste“ während des Krieges aus. Eine Begnadigung wurde trotzdem zunächst abgelehnt, bis Queen Elisabeth II. 2013 eine königliche Begnadigung aussprach.
+
+Alan Turing war übrigens ein großer Bewunderer von Charles Babbage, den du bei Alan Lovelace kennen gelernt hast.
+
+Auf den Film haben wir schon verwiesen. Lesenswert ist das Comic von Robert Deutsch „Turing“, welches du auch in zahlreichen Bibliotheken erhälst.
+
+Als Roman greift Neal Stephenson in seinem Werk „Cryptonomicon“ die Kryptologie der Enigma-Maschine auf und nimmt Bezüge auf Alan Turing. Neal Stephenson wird dir noch öfter über den Weg laufen. Der Roman lohnt sich auf jeden Fall.
 
 Bildnachweis: [Midjourney AI, prompted by Netha Hussain, Public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Alan_Turing_in_watercolour.png?uselang=de)
 
