@@ -18,7 +18,7 @@ Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in de
 
 ### Ada Lovelace
 
-<Avatar src="https://de.wikipedia.org/wiki/Ada_(Programmiersprache)#/media/Datei:Ada_Lovelace.jpg" alt="Ada Lovelace" float="right" />
+<Figure src="https://de.wikipedia.org/wiki/Ada_(Programmiersprache)#/media/Datei:Ada_Lovelace.jpg" alt="Ada Lovelace" float="right" />
 
 Die erste Programmierin lebte, bevor es überhaupt Computer gab: Die britische Mathematikerin Ada Loveloce wurde 1815 geboren. Zu Adas Zeit durften Frauen in Großbritannien noch nicht studieren (verrückt, oder?). Diesen genoß sie dafür üppig. Ihren Vater lernte sie nie persönlich kennen, da sich die Eltern früh trennten. Ihr Vater war der seinerzeit berühmte Dichter Lord Byron, ihre Mutter gehörte dem Adel an und war dadurch vermögend. Dadurch konnte Ada einen täglichen Privatunterricht genießen. Zwar interessierte sich Ada für Sprachen und Geisteswissenschaften. Deshalb bezog sich der Unterricht an sechs Tagen die Woche auf Mathematik, Geografie, Astronomie, Französisch, Deutsch und Latein. Untericht in Literatur, Philosophie und Dichtkunst unterband die Mutter. Sie wollte verhindern, dass Ada nach ihrem Vater kam. Die Liebe zur Literatur und Dichtung von Ada verhinderte sie damit aber nicht. Sonntags wurde sie in der Bauen und Formen geschult, Architektur wäre vielleicht eine passende Beschreibung.
 
@@ -40,7 +40,11 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 
 ### Alan Turing
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png" alt="Alan Turing" float="right" />
+
+
+
+Bildnachweis: [Midjourney AI, prompted by Netha Hussain, Public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Alan_Turing_in_watercolour.png?uselang=de)
 
 ### Grace Hopper
 
