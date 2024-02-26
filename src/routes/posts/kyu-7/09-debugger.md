@@ -35,9 +35,3 @@ diesen weiterauführen lassen. Versuche bei den Programmen, die du ab jetzt schr
 Stopppunkten zu spielen. Es lohnt sich, für den Debugger ein Gefühl zu entwickeln. Du wirst sehen, dass er ein mächtiges
 Werkzeug sein kann, um Fehler zu finden. Und wenn bei gemeinsamen Sitzungen kommt - wirf mal den Debugger an und setze
 dort mal einen Stopppunkt - weißt du jetzt schon, was gemeint ist.
-
-## Münzwechsler
-
-Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. Die Benutzerin gibt einen Geldbetrag von 1
-bis 99 Cent ein. Der eingegebene Betrag soll dann in den Münzen mit 1, 2, 3, 10, 20 und 50 Cent ausgegeben werden - aber
-bitte so, dass möglichst wenig Münzen benötigt werden.

@@ -12,4 +12,4 @@ created = 2022-08-27
 
 Unser Online-Workshop findet im [Jugend-hackt-BBB](https://meet.alpaka.live/jh-lab-berlin) statt.
 
-Der Workshop findet am 3. September 2022 von 14 bis 17 Uhr statt. Die Materialien hierzu werden hier erscheinen.
+Der Workshop fand am 3. September 2022 von 14 bis 17 Uhr statt. Eine Wiederholung ist geplant. Die Materialien werden dann hier veröffentlicht.

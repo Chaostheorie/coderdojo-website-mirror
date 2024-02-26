@@ -10,4 +10,4 @@ created = 2023-09-22
 
 # Arduino für Anfänger:innen
 
-Die Präsentation für den Workshop wird hier demnächst eingestellt.
+Hier finden sich zeitnah die begleitenden Workshop-Materialien. Der nächste Workshop findet am 17. März 2024 bei den Chemnitzer Linux-Tagen statt.

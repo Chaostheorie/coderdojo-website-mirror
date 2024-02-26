@@ -8,7 +8,7 @@ created = 2024-02-18
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-# Python-Grundlagen
+# Python-Grundlagen Teil I
 
 Erster Präsenzworkshop für junge Menschen ohne Vorkenntnisse - auf dem Weg zum 7. Kyū (Weißgurt).
 
