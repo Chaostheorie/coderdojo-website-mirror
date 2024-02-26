@@ -26,7 +26,7 @@ Trotz oder vielleicht aufgrund ihrer Ausbildung entwickelte Ada ein hohes Intere
 
 Die Rechenmaschine von Babbage wurde übrigens nie gebaut - es fehlte zum Schluss schlichtweg das Geld.
 
-Zu Ehren Ada Lovelaces wurde nach ihr die [gleichnamige Programmiersprache Ada](https://de.wikipedia.org/wiki/Ada_(Programmiersprache) benannt.
+Zu Ehren Ada Lovelaces wurde nach ihr die [gleichnamige Programmiersprache Ada](https://de.wikipedia.org/wiki/Ada_(Programmiersprache)) benannt.
 
 Ada starb 1852 als Mutter von drei Kindern mit gerade 36 Jahren an [Gebärmutterhalskrebs](https://de.wikipedia.org/wiki/Zervixkarzinom#Impfung). Die häufigste Ursache für diese Krebsform sind [Humane Papillomaviren](https://de.wikipedia.org/wiki/Humane_Papillomviren). Dagegen gibt es mittlerweile eine Impfung, die für männliche (!) und weibliche Jugendliche empfohlen wird. [Infos hierzu findest du unter anderem hier](https://www.impfen-info.de/impfempfehlungen/fuer-jugendliche-12-17-jahre/hpv-humane-papillomaviren/).
 
