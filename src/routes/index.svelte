@@ -25,9 +25,8 @@
         href="https://bbb.cyber4edu.org/b/der-0rc-8x7-4re"
       >
         per Videokonferenz
-      </a>.
-
-      Unsere       <strong>
+      </a>. Unsere
+      <strong>
         aktuelle Kommunikation findet in unserem
         <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org"> Matrix-Raum</a> statt
       </strong>

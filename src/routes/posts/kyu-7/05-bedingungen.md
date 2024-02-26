@@ -81,7 +81,6 @@ Elemente gelernt, mit denen man schon eine Menge machen kannst.
 
 Auf geht es zu ein paar Übungen, um das neu erlernte zu festigen.
 
-
 ### Summen
 
 Bitte frage den Benutzer nach einer Zahl. Addiere dann alle Zahlen von 1 bis zur Zahl die die Benutzerin Dir angegeben
@@ -94,7 +93,6 @@ schwarzen Felder mit einer `#`. Verwende dafür For-Schleifen. Auch hier gilt �
 fertig hast und die Ausgabe stimmt – nimm Dir Zeit und überlege, ob es nicht doch noch eine Lösung gibt, mit der du das
 Ergebnis mit einer einfacheren Lösung hinbekommst. Und auch wenn Dir ein erster Lösungsansatz nicht einfällt – Geduld.
 Grübeln und probieren gehört dazu.
-
 
 :::info Triggerwarnung
 Bei der nachfolgenden Übung geht es ums Körpergewicht. Falls dir die Beschäftigung damit nicht gut tut, gehe bitte ins nächste Kapitel.

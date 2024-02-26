@@ -12,15 +12,11 @@ created = 2024-02-18
 
 Erster Präsenzworkshop für junge Menschen ohne Vorkenntnisse - auf dem Weg zum 7. Kyū (Weißgurt).
 
-
 ## Übungen
-
 
 ### Aufgabe 1
 
 Sorge mit Hilfe einer Schleife für die nachfolgende Ausgabe.
-
-
 
 ```python:Aufgabe_1.py
 Hello
@@ -31,13 +27,9 @@ World
 World
 ```
 
-
-
 ### Aufgabe 2
 
 Gleich nochmal - mit einer Schleife soll nachfolgender Ergebnis rauskommen:
-
-
 
 ```python:Aufgabe_2.py
 Hello
@@ -52,8 +44,6 @@ Hello
 World
 ```
 
-
-
 ### Aufgabe 3
 
 a) Die Zahlen sollen in der Printanweisung nicht ausgeschrieben werden.
@@ -61,8 +51,6 @@ a) Die Zahlen sollen in der Printanweisung nicht ausgeschrieben werden.
 b) Die Anzahl der Aufgaben soll durch eine erste Zeile im Code festgelegt werden, die wie folgt ausschaut:
 
 anzahl_aufgaben = 5
-
-
 
 ```python:Aufgabe_3.py
 1. Aufgabe
@@ -72,13 +60,9 @@ anzahl_aufgaben = 5
 5. Aufgabe
 ```
 
-
-
 ### Aufgabe 4
 
 Versuche den Baum mit möglichst wenig Zeilen Code auszugeben! Als Hilfestellung versuche mal, was folgende Zeile bewirkt: print(3 \* "\*"). Dabei kann die Zahl 3 auch durch eine Variable dargestellt werden.
-
-
 
 ```python:Baum.py
       *
@@ -93,18 +77,14 @@ Versuche den Baum mit möglichst wenig Zeilen Code auszugeben! Als Hilfestellung
      **
 ```
 
-
 ### Aufgabe 4 Zusatz
 
 Falls dir das besonders schnell von der Hand gegangen ist, dann gestalte den Code so um, dass er ohne weitere Änderungen eine beliebige Baumhöhe ausgeben kann. Die auszugebende Baumhöhe kann entweder über ein input oder über eine Variable im Code erfolgen.
-
 
 ### Aufgabe 5
 
 Wenn du den Baum gut hinbekommen hast, kannst du dich ja noch an dieser
 ASCII-Grafik versuchen:
-
-
 
 ```python:Sanduhr.py
 *****
@@ -116,8 +96,6 @@ ASCII-Grafik versuchen:
 
 Auch hier gilt - es gilt mit möglichst wenig Zeilen Code auszukommen.
 
-
-
 ### Aufgabe 6
 
 Programmiere die Spielemachanik für Schnick-Schnack-Schnuck bzw. Papier-Stein-Schere.
@@ -127,8 +105,6 @@ Das Programm gibt dir aus, wer gewonnen hat.
 
 Das ganze sähe dann in etwa so aus:
 
-
-
 ```python:schnick_schnack_schnuck.py
 Spielerin 1: 1
 Spielerin 2: 2
@@ -136,8 +112,6 @@ Spielerin 2: 2
 Spielerin 2 hat gewonnen!
 
 ```
-
-
 
 ### Aufgabe 7
 
@@ -156,8 +130,6 @@ random.randint(1,10)
 
 Zufallszahlen von 1 bis 10 ausgeben lassen - oder einer Variable zuweisen.
 
-
-
 ```python:Aufgabe_7_schnick_schnack_schnuck.py
 Mensch: 2
 
@@ -167,15 +139,11 @@ Der Mensch hat gewonnen!
 
 ```
 
-
-
 ### Aufgabe 8
 
 Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. Die Benutzerin gibt einen Geldbetrag von 1
 bis 99 Cent ein. Der eingegebene Betrag soll dann in den Münzen mit 1, 2, 3, 10, 20 und 50 Cent ausgegeben werden - aber
 bitte so, dass möglichst wenig Münzen benötigt werden. Wenn du keinen Ansatz hast wie das geht, dann schau dir bitte mal an, welche unterschiedlichen Möglichkeiten der Division Python hat. Du kannst dividieren, wie du es aus der Schule kennst. Mit was \/\/ kannst du dir den Teil vor dem Komma ausgeben lassen, mit \%, also Modulo, den Teil hinter dem Komma. Falls dir Modulo noch nichts sagt, gibt es [hier](https://meinstein.ch/math/die-modulo-rechnung-einfach-erklaert/) eine Erklärung. Überlege dir, was du eigentlich bei der Division in diesem Fall wirklich brauchst.
-
-
 
 ```python:Aufgabe_7_Muenzwechsler.py
 
@@ -187,8 +155,6 @@ Ausgabe:
 2 Cent: 2
 
 ```
-
-
 
 ## Cheatsheet
 
