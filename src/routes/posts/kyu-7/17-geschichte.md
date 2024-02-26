@@ -26,7 +26,7 @@ Trotz oder vielleicht aufgrund ihrer Ausbildung entwickelte Ada ein hohes Intere
 
 Die Rechenmaschine von Babbage wurde übrigens nie gebaut - es fehlte zum Schluss schlichtweg das Geld.
 
-Zu Ehren Ada Lovelaces wurde nach ihr die [gleichnamige Programmiersprache Ada](https://de.wikipedia.org/wiki/Ada_(Programmiersprache)) benannt.
+Zu Ehren Ada Lovelaces wurde nach ihr die [gleichnamige Programmiersprache Ada](<https://de.wikipedia.org/wiki/Ada_(Programmiersprache)>) benannt.
 
 Ada starb 1852 als Mutter von drei Kindern mit gerade 36 Jahren an [Gebärmutterhalskrebs](https://de.wikipedia.org/wiki/Zervixkarzinom#Impfung). Die häufigste Ursache für diese Krebsform sind [Humane Papillomaviren](https://de.wikipedia.org/wiki/Humane_Papillomviren). Dagegen gibt es mittlerweile eine Impfung, die für männliche (!) und weibliche Jugendliche empfohlen wird. [Infos hierzu findest du unter anderem hier](https://www.impfen-info.de/impfempfehlungen/fuer-jugendliche-12-17-jahre/hpv-humane-papillomaviren/).
 
@@ -48,7 +48,7 @@ Der Brite Alan Turing wurde 1912 geboren und starb 1954. „Er gilt heute als ei
 
 Alan fiel von klein auf an als besonders begabt auf. Während ihm Naturwissenschaften sehr zusagten, konnte er mit Geisteswissenschaften nichts anfangen. Da nicht ganz einsah, für diese Fächer genau so viel zu tun, wie für die Naturwissenschaften, musste er sogar das College wechseln. Seiner erfolgreichen Beschäftigung mit Mathematik tat dies keinen Abbruch. So entwarf er die sogenannte [Turingmaschine](https://de.wikipedia.org/wiki/Turingmaschine). Hierdurch bewies er, dass jedes mathematisches Problem gelöst werden kann, wenn es durch einen Algorithmus gelöst werden kann. Die Turingmaschine stellt bis heute in der theoretischen Informatik einen Schwerpunkt dar. Das wird zwar noch eine ganze Weile dauern, aber wir haben vor, uns diesem Thema einmal zu nähern.
 
-Die Nazis verwendeten zur Codierung ihrer Funksprüche im Zweiten Weltkrieg an beispielsweise U-Boote die sogenannte [Enigma-Maschine](https://de.wikipedia.org/wiki/Enigma_(Maschine)). Dieser Code galt aufgrund seiner Komplexität lange Zeit als unknackbar. Alan Turing war maßgeblich daran beteiligt, dass dieser Code gebrochen wurde und der Krieg eine erhebliche Wendung nahm.
+Die Nazis verwendeten zur Codierung ihrer Funksprüche im Zweiten Weltkrieg an beispielsweise U-Boote die sogenannte [Enigma-Maschine](<https://de.wikipedia.org/wiki/Enigma_(Maschine)>). Dieser Code galt aufgrund seiner Komplexität lange Zeit als unknackbar. Alan Turing war maßgeblich daran beteiligt, dass dieser Code gebrochen wurde und der Krieg eine erhebliche Wendung nahm.
 
 Alan lehrte später an der Universität Manchester. Dort beschäftigte er sich auch mit künstlicher Intelligenz. Um festzustellen, ob ein Computer eine dem Menschen ebenbürtiges Denkvermögen habe, schlug er 1950 den sogenannten [Turing-Test](https://de.wikipedia.org/wiki/Turing-Test) vor. Er selbst nannte den Test „Imitation Game“. Vereinfacht gesagt, soll dieser dann ein bestanden gelten, wenn ein Mensch mit einem Computer nur über Chat kommuniziert und nicht mehr feststellen kann, ob es sich um einen Computer oder Menschen handelt. Turing vermutete, dass im Jahr 2000 dieses Ziel erreicht sein. Bis heute ist es nicht gelungen, ein System zu programmieren, welches diesen Test besteht.
 

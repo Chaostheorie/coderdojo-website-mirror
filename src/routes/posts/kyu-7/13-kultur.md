@@ -24,7 +24,7 @@ Bibliothek die BBC-Fernsehserie besorgen.
 
 <Figure src="/images/kyu-7/Matrix-logo.png" alt="Matrix"/>
 
-Unsere Filmempfehlung zum 8. Kyū sind die drei Teile von Matrix. Auch hier gilt – Filme sind wie Bücher eine gute
+Unsere Filmempfehlung zum 7. Kyū sind die drei Teile von Matrix. Auch hier gilt – Filme sind wie Bücher eine gute
 Gelegenheit, sein Englisch zu trainieren. Wenn Dir das bei Filmen noch schwerfällt, probiere es mit englischer Tonspur
 und englischen Untertiteln. Oder schau sie erst auf Deutsch und dann nochmal (mit englischen) Untertiteln auf Englisch.
 Wenn dir diese Teile gefalen haben - dann solltest du dir auch den vierten Teil geben. Und wer auf Comics steht, dem
