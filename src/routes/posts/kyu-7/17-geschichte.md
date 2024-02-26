@@ -36,6 +36,8 @@ Auf jeden Fall hörenswert zu Ada Lovelace ist die [18-Minuten-Folge](https://sp
 
 Und wenn du noch tiefer eintauchen willst, dann lohnt sich ein Blick in das Buch „Ada Lovelace - die Pionierin der Computertechnik und ihre Nachfolgerinnen“, welches von Sybille Krämer herausgegeben wurde. Berliner:innen können dieses Buch in der [Berliner Stadtbibliothek](https://www.zlb.de/), Nähe Alexanderplatz, unter der Signatur Inf 25/30 ausleihen.
 
+Und falls du mehr über die Rechenmaschine von Charles Babbages erfahren möchtest, findest Du [hier einen Vortrag](https://media.ccc.de/v/vcfb20_-_137_-_de_-_202010101600_-_the_programming_architecture_of_babbages_analytical_engine_-_prof_dr_raul_rojas#t=9) von Prof. Rojas, welcher auf dem Vintage Computer Festival Berlin 2020 gehalten wurde.
+
 Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ada_Lovelace.jpg?uselang=de)
 
 ### Alan Turing
