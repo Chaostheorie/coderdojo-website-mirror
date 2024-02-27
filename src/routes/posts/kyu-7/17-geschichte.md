@@ -51,7 +51,7 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 
 ### Alan Turing
 
-<Figure src="https://eo.wikipedia.org/wiki/Dosiero:Alan_Turing_in_watercolour.png" alt="Alan Turing" float="right" />
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Alan_Turing_in_watercolour.png/240px-Alan_Turing_in_watercolour.png" alt="Alan Turing" float="right" />
 
 
 > Programmieren ist eine Fähigkeit,
