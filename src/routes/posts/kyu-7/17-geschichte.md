@@ -50,6 +50,12 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 
 <Figure src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png" alt="Alan Turing" float="right" />
 
+> Programmieren ist eine Fähigkeit,
+> die am besten durch Übung und auszuprobieren
+> und nicht aus Büchern erworben wird.
+>
+> Alan Turing
+
 Der Brite Alan Turing wurde 1912 geboren und starb 1954. „Er gilt heute als einer der einflussreichsten Theoretiker der frühen Computerentwicklung und Informatik,“ schreibt die [Wikipedia](https://de.wikipedia.org/wiki/Alan_Turing). Wenn du eine großartige Darstellung seines hoch tragischen Lebens sehen willst - mach einen Moment Pause und besorge dir den etwas zweistündigen Film [„The Imitation Game“](https://www.youtube.com/watch?v=KsJH9HWhgCw). Wir gehen davon aus, dass du diesen Film genießt und geben hier nur noch ein paar Randdetails wieder.
 
 Alan fiel von klein auf an als besonders begabt auf. Während ihm Naturwissenschaften sehr zusagten, konnte er mit Geisteswissenschaften nichts anfangen. Da nicht ganz einsah, für diese Fächer genau so viel zu tun, wie für die Naturwissenschaften, musste er sogar das College wechseln. Seiner erfolgreichen Beschäftigung mit Mathematik tat dies keinen Abbruch. Alan war übrigens ein großer Bewunderer von Charles Babbage, den du bei Alan Lovelace kennen gelernt hast. Er entwarf die sogenannte [Turingmaschine](https://de.wikipedia.org/wiki/Turingmaschine). Hierdurch bewies er, dass jedes mathematisches Problem gelöst werden kann, wenn es durch einen Algorithmus gelöst werden kann. Die Turingmaschine stellt bis heute in der theoretischen Informatik einen Schwerpunkt dar. Das wird zwar noch eine ganze Weile dauern, aber wir haben vor, uns diesem Thema einmal zu nähern.
