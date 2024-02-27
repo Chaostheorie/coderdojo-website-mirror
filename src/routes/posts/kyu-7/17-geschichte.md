@@ -18,8 +18,6 @@ Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in de
 
 ### Ada Lovelace
 
-<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ada_Lovelace.jpg/220px-Ada_Lovelace.jpg" alt="Ada Lovelace" float="right" />
-
 > Ich bin als Prophetin in die Welt geboren worden
 >
 > und diese Überzeugung erfüllt mich mit
@@ -30,6 +28,8 @@ Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in de
 > Ada Lovelace
 
 Die erste Programmierin lebte, bevor es überhaupt Computer gab: Die britische Mathematikerin Ada King-Noel, Countess of Loveloce, wurde 1815 geboren. Countess entspricht dem deutschen Titel „Gräfin“. Ihr Vater war der seinerzeit berühmte Dichter Lord Byron. Ihren Vater lernte Ada nie persönlich kennen, da sich die Eltern früh trennten. Die Trennung ging von ihrer Mutter aus, was zur damaligen Zeit ein Skandal war. Ihre Mutter gehörte dem Adel an und war dadurch vermögend. Zu Adas Zeit durften Frauen in Großbritannien noch nicht studieren (verrückt, oder?). Ihre Mutter legte jedoch großen Wert auf Bildung. Durch ihr Vermögen konnte sie Ada täglichen Privatunterricht zugute kommen lassen. An sechs Tagen in der Woche wurde Ada in Mathematik, Geografie, Astronomie, Französisch, Deutsch und Latein unterrichtet. Mathe-Unterricht erhielt sie bereits ab dem 4. Lebensjahr. Untericht in Literatur, Philosophie und Dichtkunst unterband die Mutter. Sie wollte verhindern, dass Ada nach ihrem Vater kam. Die Liebe zur Literatur und Dichtung von Ada verhinderte sie damit aber nicht. Sonntags wurde sie in der Bauen und Formen nach [Pestalozzi](https://de.wikipedia.org/wiki/Johann_Heinrich_Pestalozzi) geschult. Architektur wäre vielleicht eine passende Beschreibung für den Inhalt dieses Unterrichts.
+
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ada_Lovelace.jpg/220px-Ada_Lovelace.jpg" alt="Ada Lovelace" float="right" />
 
 Trotz oder vielleicht aufgrund ihrer Ausbildung entwickelte Ada ein hohes Interesse an technischen und mathematischen Fragestellungen - ohne ihre Zuneigung zur Poesie zu verlieren. Ada lernte Charles Babbage kennen, als sie 17 und er 42 Jahre alt war. Dieser entwickelte eine mechanische Rechenmaschine. Damit wollte er die aufwändigen und fehleranfälligen Berechnungen von Tafelwerken für Astronomie und Nautik, also Seefahrt, vereinfachen. 1841 lud Charles Babbage Ada Lovelace ein, um von seiner Maschine zu berichten. Ada nutzte in der Mathematik bereits dreidimensionale Modelle und detaillierte großflächige Zeichnungen, um sich mathematische Sachverhalte zu verdeutlichen. Dies nutzte sie in ihren folgenden Entwicklungen. Anfangs sollte sie eine Übersetzung eines Artikels von Babbage erstellen. Das Original versah sie nicht nur mit zahlreichen Notizen, sondern er wurde etwa dreimal länger als das Original. Dabei entwickelte sie einen umfangreichen Algorithmus für die Berechnung der [Bernoulli-Zahlen](https://de.wikipedia.org/wiki/Bernoulli-Zahl#Reihen_mit_Bernoulli-Zahlen). Damit hat Ada 1843 den ersten Algorithmus entwickelt - noch bevor es Computer oder Programmiersprachen gab. Wie ein solcher Algorithmus entwickelt werden kann, schauen wir uns später auch einmal an.
 
@@ -51,8 +51,6 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 
 ### Alan Turing
 
-<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Alan_Turing_in_watercolour.png/240px-Alan_Turing_in_watercolour.png" alt="Alan Turing" float="right" />
-
 
 > Programmieren ist eine Fähigkeit,
 >
@@ -64,6 +62,8 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 > Alan Turing
 
 Der Brite Alan Turing wurde 1912 geboren und starb 1954. „Er gilt heute als einer der einflussreichsten Theoretiker der frühen Computerentwicklung und Informatik,“ schreibt die [Wikipedia](https://de.wikipedia.org/wiki/Alan_Turing). Wenn du eine großartige Darstellung seines hoch tragischen Lebens sehen willst - mach einen Moment Pause und besorge dir den etwas zweistündigen Film [„The Imitation Game“](https://www.youtube.com/watch?v=KsJH9HWhgCw). Wir gehen davon aus, dass du diesen Film genießt und geben hier nur noch ein paar Randdetails wieder.
+
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Alan_Turing_in_watercolour.png/240px-Alan_Turing_in_watercolour.png" alt="Alan Turing" float="right" />
 
 Alan fiel von klein auf an als besonders begabt auf. Während ihm Naturwissenschaften sehr zusagten, konnte er mit Geisteswissenschaften nichts anfangen. Da nicht ganz einsah, für diese Fächer genau so viel zu tun, wie für die Naturwissenschaften, musste er sogar das College wechseln. Seiner erfolgreichen Beschäftigung mit Mathematik tat dies keinen Abbruch. Alan war übrigens ein großer Bewunderer von Charles Babbage, den du bei Alan Lovelace kennen gelernt hast. Er entwarf die sogenannte [Turingmaschine](https://de.wikipedia.org/wiki/Turingmaschine). Hierdurch bewies er, dass jedes mathematisches Problem gelöst werden kann, wenn es durch einen Algorithmus gelöst werden kann. Die Turingmaschine stellt bis heute in der theoretischen Informatik einen Schwerpunkt dar. Das wird zwar noch eine ganze Weile dauern, aber wir haben vor, uns diesem Thema einmal zu nähern.
 
