@@ -10,9 +10,6 @@ created = 2024-02-25
 
 ## Geschichte
 
-:::tip Info
-Dieses Kapitel ist gerade im Entstehen... hab bitte noch einen Moment Geduld, bis es vollständig ist.
-:::
 
 Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in der Informatik geleistet haben. So bedeutend, dass man ihre Namen kennen sollte. Auch im Umfeld des Chaos Computer Clubs werden sie dir immer wieder begegnen. Nach ihnen werden bei Veranstaltungen Räume oder Plätze benannt oder sogar eigene Briefmarken für die [Chaospost](https://chaospost.de/) gedruckt. In jedem Gurt wollen wir dir ein paar dieser Menschen vorstellen. Und historische Hardware wird später noch hinzutreten.
 
@@ -82,6 +79,10 @@ Auf den Film haben wir schon verwiesen. Lesenswert ist das Comic von Robert Deut
 Als Roman greift Neal Stephenson in seinem Werk „Cryptonomicon“ die Kryptologie der Enigma-Maschine auf und nimmt Bezüge auf Alan Turing. Neal Stephenson wird dir noch öfter über den Weg laufen. Der Roman lohnt sich auf jeden Fall.
 
 Bildnachweis: [Midjourney AI, prompted by Netha Hussain, Public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Alan_Turing_in_watercolour.png?uselang=de)
+
+:::tip Info
+Dieses Kapitel ist gerade im Entstehen... hab bitte noch einen Moment Geduld, bis es vollständig ist.
+:::
 
 ### Grace Hopper
 
