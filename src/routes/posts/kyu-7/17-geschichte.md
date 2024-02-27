@@ -21,8 +21,11 @@ Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in de
 <Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ada_Lovelace.jpg/220px-Ada_Lovelace.jpg" alt="Ada Lovelace" float="right" />
 
 > Ich bin als Prophetin in die Welt geboren worden
+>
 > und diese Überzeugung erfüllt mich mit
+>
 > Demut, Zittern und Beben.
+>
 >
 > Ada Lovelace
 
@@ -51,8 +54,11 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 <Figure src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png" alt="Alan Turing" float="right" />
 
 > Programmieren ist eine Fähigkeit,
+>
 > die am besten durch Übung und auszuprobieren
+>
 > und nicht aus Büchern erworben wird.
+>
 >
 > Alan Turing
 
