@@ -56,7 +56,7 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 
 > Programmieren ist eine Fähigkeit,
 >
-> die am besten durch Übung und auszuprobieren
+> die am besten durch Übung und Auszuprobieren
 >
 > und nicht aus Büchern erworben wird.
 >
