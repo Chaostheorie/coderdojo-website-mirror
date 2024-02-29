@@ -42,7 +42,9 @@ Auf jeden Fall hörenswert zu Ada Lovelace ist die [18-Minuten-Folge](https://sp
 
 Und wenn du noch tiefer eintauchen willst, dann lohnt sich ein Blick in das Buch „Ada Lovelace - die Pionierin der Computertechnik und ihre Nachfolgerinnen“, welches von Sybille Krämer herausgegeben wurde. Berliner:innen können dieses Buch in der [Berliner Stadtbibliothek](https://www.zlb.de/), Nähe Alexanderplatz, unter der Signatur Inf 25/30 ausleihen.
 
-Und falls du mehr über die Rechenmaschine von Charles Babbages erfahren möchtest, findest Du [hier einen Vortrag](https://media.ccc.de/v/vcfb20_-_137_-_de_-_202010101600_-_the_programming_architecture_of_babbages_analytical_engine_-_prof_dr_raul_rojas#t=9) von Prof. Rojas, welcher auf dem Vintage Computer Festival Berlin 2020 gehalten wurde.
+Falls du mehr über die Rechenmaschine von Charles Babbages erfahren möchtest, findest Du [hier einen Vortrag](https://media.ccc.de/v/vcfb20_-_137_-_de_-_202010101600_-_the_programming_architecture_of_babbages_analytical_engine_-_prof_dr_raul_rojas#t=9) von Prof. Rojas, welcher auf dem Vintage Computer Festival Berlin 2020 gehalten wurde.
+
+Ehrungen und Projekte mit Bezug auf Ada Lovelace gibt es diverse. Erwähnt sei an dieser Stelle nur das [Promotionsprogramm der Universität Münster](https://www.uni-muenster.de/GleichstellungFB10/foerdermassnahmen/ada-lovelace-promotionsstellen/index.html).
 
 Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ada_Lovelace.jpg?uselang=de)
 
@@ -86,7 +88,13 @@ Dieses Kapitel ist gerade im Entstehen... hab bitte noch einen Moment Geduld, bi
 
 ### Grace Hopper
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+> Der gefährlichste Satz einer Sprache ist:
+>
+> „Das haben wir schon immer so gemacht“.
+>
+> Grace Hopper
+
+Die US-Amerikanerin Grace Hopper wurde 1906 in New York geboren. 
 
 ### Konrad Zuse
 
