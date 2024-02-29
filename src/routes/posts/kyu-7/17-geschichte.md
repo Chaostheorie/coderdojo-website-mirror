@@ -94,7 +94,16 @@ Dieses Kapitel ist gerade im Entstehen... hab bitte noch einen Moment Geduld, bi
 >
 > Grace Hopper
 
-Die US-Amerikanerin Grace Hopper wurde 1906 in New York geboren. 
+Die US-Amerikanerin Grace Hopper wurde 1906 in New York geboren.
+
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Grace_Hopper.jpg/205px-Grace_Hopper.jpg" alt="Grace Hopper" float="right" />
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/First_Computer_Bug%2C_1945.jpg/304px-First_Computer_Bug%2C_1945.jpg" alt="Erster Bug" float="right" />
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 ### Konrad Zuse
 
