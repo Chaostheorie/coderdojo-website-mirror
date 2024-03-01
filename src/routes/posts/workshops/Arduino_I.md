@@ -26,7 +26,7 @@ Umbau:
 
 <Figure src="/images/workshops/arduino_I/02_grundaufbau.png" alt="Grundaufbau" />
 
-Widerstand:
+
 
 <Figure src="/images/workshops/arduino_I/03_grundaufbau.png" alt="Grundaufbau" />
 
@@ -46,7 +46,7 @@ Widerstand:
 Erster Code...
 
 
-```c
+```c:ampel.c
 #define LED 1
 
 void setup() {
