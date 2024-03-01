@@ -20,7 +20,7 @@ created = 2024-03-01
 
 Schaltzeichen:
 
-<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Symbol_LED_%2B-.svg/320px-Symbol_LED_%2B-.svg.png" alt="Schaltzeichen LED">
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Symbol_LED_%2B-.svg/320px-Symbol_LED_%2B-.svg.png" alt="Schaltzeichen LED" />
 
 Umbau:
 
