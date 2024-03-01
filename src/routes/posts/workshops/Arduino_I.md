@@ -45,19 +45,6 @@ Widerstand:
 
 Erster Code...
 
-```c
-#define LED 1
-
-void setup() {
-  pinMode(LED, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(LED, HIGH);
- }
-
-```
-
 Was passiert hier jeweils?
 
 ## Bildnachweis
