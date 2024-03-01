@@ -33,7 +33,32 @@ Widerstand:
 - 3,3 Volt - Plus - rot
 - GND - Minus - schwarz
 
-<Figure src="/images/workshops/arduino_I/02_grundaufbau.png" alt="Grundaufbau" />
+## Widerstand
+
+<Figure src="/images/workshops/arduino_I/04_grundaufbau.png" alt="Grundaufbau" />
+
+## IDE
+
+<Figure src="/images/workshops/arduino_I/11_arduino_IDE.png" alt="Grundaufbau" />
+
+## Coding
+
+Erster Code...
+
+```C:ampel.c
+#define LED 1
+
+void setup() {
+  pinMode(LED, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED, HIGH);
+ }
+
+```
+
+Was passiert hier jeweils?
 
 ## Bildnachweis
 

@@ -10,7 +10,6 @@ created = 2024-02-25
 
 ## Geschichte
 
-
 Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in der Informatik geleistet haben. So bedeutend, dass man ihre Namen kennen sollte. Auch im Umfeld des Chaos Computer Clubs werden sie dir immer wieder begegnen. Nach ihnen werden bei Veranstaltungen Räume oder Plätze benannt oder sogar eigene Briefmarken für die [Chaospost](https://chaospost.de/) gedruckt. In jedem Gurt wollen wir dir ein paar dieser Menschen vorstellen. Und historische Hardware wird später noch hinzutreten.
 
 ### Ada Lovelace
@@ -20,7 +19,6 @@ Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in de
 > und diese Überzeugung erfüllt mich mit
 >
 > Demut, Zittern und Beben.
->
 >
 > Ada Lovelace
 
@@ -50,13 +48,11 @@ Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](h
 
 ### Alan Turing
 
-
 > Programmieren ist eine Fähigkeit,
 >
 > die am besten durch Übung und Auszuprobieren
 >
 > und nicht aus Büchern erworben wird.
->
 >
 > Alan Turing
 
@@ -103,7 +99,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/First_Computer_Bug%2C_1945.jpg/304px-First_Computer_Bug%2C_1945.jpg" alt="Erster Bug" float="right" />
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 
 ### Konrad Zuse
 
