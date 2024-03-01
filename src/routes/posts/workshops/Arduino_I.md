@@ -39,11 +39,26 @@ Widerstand:
 
 ## IDE
 
-<Figure src="/images/workshops/arduino_I/11_arduino_IDE.png" alt="Grundaufbau" />
+<Figure src="/images/workshops/arduino_I/11_arduinoIDE.png" alt="Grundaufbau" />
 
 ## Coding
 
 Erster Code...
+
+
+```c
+#define LED 1
+
+void setup() {
+  pinMode(LED, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED, HIGH);
+ }
+
+```
+
 
 Was passiert hier jeweils?
 
