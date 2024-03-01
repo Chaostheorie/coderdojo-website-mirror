@@ -45,7 +45,7 @@ Widerstand:
 
 Erster Code...
 
-```C:ampel.c
+```c:ampel.c
 #define LED 1
 
 void setup() {
