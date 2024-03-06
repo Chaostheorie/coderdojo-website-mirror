@@ -35,6 +35,11 @@ Umbau:
 
 <Figure src="/images/workshops/arduino_I/04_grundaufbau.png" alt="Grundaufbau" />
 
+## Aufbau für ansteuerbare LEDs
+
+<Figure src="/images/workshops/arduino_I/05_grundaufbau.png" alt="Grundaufbau" />
+
+
 ## IDE
 
 <Figure src="/images/workshops/arduino_I/11_arduinoIDE.png" alt="Grundaufbau" />
