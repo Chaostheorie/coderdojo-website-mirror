@@ -39,7 +39,6 @@ Umbau:
 
 <Figure src="/images/workshops/arduino_I/05_grundaufbau.png" alt="Grundaufbau" />
 
-
 ## IDE
 
 <Figure src="/images/workshops/arduino_I/11_arduinoIDE.png" alt="Grundaufbau" />
@@ -62,6 +61,51 @@ void loop() {
 ```
 
 Was passiert hier jeweils?
+
+Code erweitern...
+
+```c:ampel.c
+#define LED 1
+
+void setup() {
+  pinMode(LED, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED, HIGH);
+  delay(1000);
+  digitalWrite(LED, LOW);
+  delay(500);
+ }
+
+```
+
+# Umbau auf Ampel
+
+<Figure src="/images/workshops/arduino_I/22_coding.png" alt="Grundaufbau" />
+
+```c:ampel.c
+#define RED 1
+#define YELLOW 2
+
+... du bist dran
+
+```
+
+Du bist dran...
+
+Bitte verwende das Ampelelement aus dem Kasten. Verkabel es und sorge dafür, dass die Lichter wie eine Ampel leuchten. Die Reihenfolge
+ist:
+
+- Grün (lange)
+
+- Gelb (kurz)
+
+- Rot (lange)
+
+- Rot-Gelb (kurz)
+
+- Grün (lange)
 
 ## Bildnachweis
 
