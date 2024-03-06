@@ -26,8 +26,6 @@ Umbau:
 
 <Figure src="/images/workshops/arduino_I/02_grundaufbau.png" alt="Grundaufbau" />
 
-
-
 <Figure src="/images/workshops/arduino_I/03_grundaufbau.png" alt="Grundaufbau" />
 
 - 3,3 Volt - Plus - rot
@@ -45,7 +43,6 @@ Umbau:
 
 Erster Code...
 
-
 ```c:ampel.c
 #define LED 1
 
@@ -58,7 +55,6 @@ void loop() {
  }
 
 ```
-
 
 Was passiert hier jeweils?
 
