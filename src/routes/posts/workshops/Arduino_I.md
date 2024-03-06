@@ -139,6 +139,71 @@ void loop() {
 
 ## RFID
 
+Bibliothek einbinden:
+
+<Figure src="/images/workshops/arduino_I/31_rfid.png" alt="IDE Bibliotheksmanager" />
+
+<Figure src="/images/workshops/arduino_I/32_rfid.png" alt="Bibliothek auswählen" />
+
+Folgende Belegung musst du beachten:
+
+- 53: SDA (Serial Data Line)
+- 52: SCK (Serial Clock, auch SCL für Serical Clock Line)
+- 51: MOSI (Master out -> Slave in)
+- 50: MISO (Master in <- Slave out)
+- : nicht belegt
+- GND: GND (Ground)
+- 5: RST (Reset)
+- 3.3V: 3,3V
+
+Das sind die Codesnippets die du brauchst, um das RFID-Lesegerät zum Einsatz zu bringen. Es handelt sich hier nur um Ausschnitte, du musst diese also selber ergänzen. Erläuterungen erfolgen im Workshop.
+
+```c:rfid.c
+#include <SPI.h>
+#include <MFRC522.h>
+
+#define SS_PIN 53
+#define RST_PIN 5
+
+MFRC522 mfrc522(SS_PIN, RST_PIN); //Gerät benennen
+
+void setup() {
+  Serial.begin(9600); //Serielle Verbindung starten
+  while ( !Serial); //warten
+  SPI.begin(); //SPI-Verbindung aufbauen
+  mfrc522.PCD_Init(); //Initialisierung
+  delay(5);
+  mfrc522.PCD_DumpVersionToSerial();
+  Serial.println("Start");
+}
+void loop() {
+  if ( ! mfrc522.PICC_IsNewCardPresent()) {
+    return;
+  } else {
+    Serial.println("neue Karte gefunden");
+  }
+  if ( ! mfrc522.PICC_ReadCardSerial()) {
+    return;
+  } else {
+    Serial.println("RFID Leser gefunden");
+  }
+  Serial.print("Die ID des RFID-Tags lautet:");
+  // long code = 0;
+  for (byte i = 0; i < mfrc522.uid.size; i++) {
+    Serial.print(mfrc522.uid.uidByte[i], HEX);
+    // code=((code+mfrc522.uid.uidByte[i])*10);
+    Serial.print(" ");
+  }
+  Serial.println();
+}
+```
+
+### Aufgabe
+
+- Baue eine Zugangssteuerung. Wenn Deine Karte kommt, wird die Ampel grün, wenn sie rot war und rot, wenn sie grün war.
+
+- Wird eine unbekannte Karte angehalten, blinkt gelb.
+
 ### Bildnachweis
 
 LED:
