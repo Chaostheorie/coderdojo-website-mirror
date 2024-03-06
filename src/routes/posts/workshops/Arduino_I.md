@@ -24,24 +24,24 @@ Schaltzeichen:
 
 Umbau:
 
-<Figure src="/images/workshops/arduino_I/02_grundaufbau.png" alt="Grundaufbau" />
+<Figure src="/images/workshops/arduino_I/02_grundaufbau.png" alt="LED anschließen" />
 
-<Figure src="/images/workshops/arduino_I/03_grundaufbau.png" alt="Grundaufbau" />
+<Figure src="/images/workshops/arduino_I/03_grundaufbau.png" alt="LED erweitern" />
 
 - 3,3 Volt - Plus - rot
 - GND - Minus - schwarz
 
 ## Widerstand
 
-<Figure src="/images/workshops/arduino_I/04_grundaufbau.png" alt="Grundaufbau" />
+<Figure src="/images/workshops/arduino_I/04_grundaufbau.png" alt="Schaltung mit Widerstand" />
 
 ## Aufbau für ansteuerbare LEDs
 
-<Figure src="/images/workshops/arduino_I/05_grundaufbau.png" alt="Grundaufbau" />
+<Figure src="/images/workshops/arduino_I/05_grundaufbau.png" alt="LED ansteuern" />
 
 ## IDE
 
-<Figure src="/images/workshops/arduino_I/11_arduinoIDE.png" alt="Grundaufbau" />
+<Figure src="/images/workshops/arduino_I/11_arduinoIDE.png" alt="IDE" />
 
 ## Coding
 
@@ -82,7 +82,7 @@ void loop() {
 
 ## Umbau auf Ampel
 
-<Figure src="/images/workshops/arduino_I/22_coding.png" alt="Grundaufbau" />
+<Figure src="/images/workshops/arduino_I/22_coding.png" alt="Ampelschaltung" />
 
 ```c:ampel.c
 #define RED 1
