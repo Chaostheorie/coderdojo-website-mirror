@@ -80,7 +80,7 @@ void loop() {
 
 ```
 
-# Umbau auf Ampel
+## Umbau auf Ampel
 
 <Figure src="/images/workshops/arduino_I/22_coding.png" alt="Grundaufbau" />
 
@@ -107,7 +107,39 @@ ist:
 
 - Grün (lange)
 
-## Bildnachweis
+## Bedarfsampel
+
+Wir wollen die Ampel zu einer Bettelampel umbauen. Es wird also noch ein Schalter ergänzt, der die Ampel nach einer Wartezeit auf Grün schaltet und später wieder auf Rot.
+
+So sieht die Schaltung aus:
+
+<Figure src="/images/workshops/arduino_I/23_coding.png" alt="Bedarfsampel" />
+
+Du brauchst einen 1kΩ-Widerstand - der hat die Ringe Schwarz-Braun-Orange-Silber.
+
+Diese Code-Snippets brauchst du, um selbstständig die Ampel programmieren zu können. Die neuen Ausdrücke wie int oder if/else erläutern wir im Workshop selbst. Das Zeichen [...] steht für eine Auslassung. Da muss also Code von dir hin.
+
+```c:bedarfsampel.c
+[...]
+int status=0;
+
+void setup() {
+  pinMode(BUTTON, INPUT);
+  [...]
+
+void loop() {
+  status=digitalRead(BUTTON);
+  if (status == HIGH) {
+    digitalWrite(RED, HIGH);
+    [...]
+   }
+  else { [...] }
+
+```
+
+## RFID
+
+### Bildnachweis
 
 LED:
 
