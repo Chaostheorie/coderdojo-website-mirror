@@ -10,6 +10,10 @@ created = 2024-03-01
 
 # Arduino für Anfänger:innen
 
+## Windows
+
+Windows-Nutzende benötigen einen speziellen Treiber. [Dieser findet sich hier.](https://www.arduino.cc/en/Guide/DriverInstallation)
+
 ## Grundaufbau
 
 <Figure src="/images/workshops/arduino_I/01_grundaufbau.png" alt="Grundaufbau" />
