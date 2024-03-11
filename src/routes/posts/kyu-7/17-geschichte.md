@@ -12,6 +12,8 @@ created = 2024-02-25
 
 Geschichte in einem Programmierkurs? Ja, es gibt Menschen, die bedeutendes in der Informatik geleistet haben. So bedeutend, dass man ihre Namen kennen sollte. Auch im Umfeld des Chaos Computer Clubs werden sie dir immer wieder begegnen. Nach ihnen werden bei Veranstaltungen Räume oder Plätze benannt oder sogar eigene Briefmarken für die [Chaospost](https://chaospost.de/) gedruckt. In jedem Gurt wollen wir dir ein paar dieser Menschen vorstellen. Und historische Hardware wird später noch hinzutreten.
 
+Zuvorderst aber kommen wir kurz zum Begriff Computer. Der stammt nicht direkt aus dem Englischen, wie man vermuten könnte. Der Ursprung ist lateinisch und kommt von computare, was berechnen heißt. Der Begriff findet sich in gedruckter Form das erste mal 1892 in der _New York Times_. Dort wurden _Computer_ gesucht. Das war seinerzeit noch ein Beruf, bei dem Menschen Berechnungen mit Zettel und Stift durchführten. Beispielsweise haben Sternwarten händisch von _Computern_ berechnen lassen, welche Position die Planeten zu einem bestimmten Zeitpunkt haben. Diese menschlichen Computer waren oft - Frauen. Als Rechenmaschinen aufkamen wurden deren Leistungen anfangs in „Girl-Years“ gemessen und Einheit wurde der Begriff „Kilogirl“ verwendet. Die Geschichte der Informatik baut also auf Frauen auf - wie wir auch gleich bei unserem ersten Star sehen werden.
+
 ### Ada Lovelace
 
 > Ich bin als Prophetin in die Welt geboren worden
@@ -42,7 +44,7 @@ Und wenn du noch tiefer eintauchen willst, dann lohnt sich ein Blick in das Buch
 
 Falls du mehr über die Rechenmaschine von Charles Babbages erfahren möchtest, findest Du [hier einen Vortrag](https://media.ccc.de/v/vcfb20_-_137_-_de_-_202010101600_-_the_programming_architecture_of_babbages_analytical_engine_-_prof_dr_raul_rojas#t=9) von Prof. Rojas, welcher auf dem Vintage Computer Festival Berlin 2020 gehalten wurde.
 
-Ehrungen und Projekte mit Bezug auf Ada Lovelace gibt es diverse. Erwähnt sei an dieser Stelle nur das [Promotionsprogramm der Universität Münster](https://www.uni-muenster.de/GleichstellungFB10/foerdermassnahmen/ada-lovelace-promotionsstellen/index.html).
+Ehrungen und Projekte mit Bezug auf Ada Lovelace gibt es diverse. Erwähnt sei an dieser Stelle nur das [Promotionsprogramm der Universität Münster](https://www.uni-muenster.de/GleichstellungFB10/foerdermassnahmen/ada-lovelace-promotionsstellen/index.html). Vielleicht kommt dieses Programm ja für dich mal in Betracht.
 
 Bildnachweis: [Margaret Sarah Carpenter, Public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ada_Lovelace.jpg?uselang=de)
 
