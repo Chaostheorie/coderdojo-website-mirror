@@ -92,15 +92,24 @@ Dieses Kapitel ist gerade im Entstehen... hab bitte noch einen Moment Geduld, bi
 >
 > Grace Hopper
 
-Die US-Amerikanerin Grace Hopper wurde 1906 in New York geboren.
-
 <Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Grace_Hopper.jpg/205px-Grace_Hopper.jpg" alt="Grace Hopper" float="right" />
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Rückblickend kann man sich ja manchmal kaum vorstellen, dass manche Dinge jemals anders waren. Und es benötigt Menschen vom Schlag wie Grace Hopper, um sie zu ändern: Bis dahin war es üblich, in kaum verständlicher Maschinensprache zu programmieren. Hopper sorgte dafür, dass Programme in „verständlicher“ Sprache geschrieben wurden und entwickelte 1951 bis 1952 den ersten Compiler: [A-0](https://de.wikipedia.org/wiki/A-0). Mit einem Compiler werden Befehle, wie du sie schon in diesem Kurs kennen gelernt hast, in Maschienensprache übersetzt - am Ende lange Ketten aus Nullen und Einsen. Das war wirklich geheimnisvoller Code.
+
+Die US-Amerikanerin Grace Hopper wurde 1906 in New York geboren. Sie studierte Mathematik und Physik und war die elfte Frau, die an der Yale-Universität promovierte, also einen Doktortitel erwarb. Später hat sie maßgebliche Vorarbeiten zur Programmiersprache COBOL geleistet. Dadurch erwarb sie sich den Spitznamen „Grandma COBOL“. COBOL hat sich auf die Fahnen geschrieben, möglichst nah an die natürliche, menschlichen Sprache angelehnt. COBOL wurde insbesondere im kaufmännischen Bereich eingesetzt und findet sich heute noch auf den Systemen von Banken und Versicherungsen.
+
+Grace Hopper war für die Harvard-Universität tätig, bevor sie zum US-Militär wechselte. Dort diente sie bis zu ihrem 60. Lebensjahr. Nur ein Jahr später, 1967, wurde sie wieder in den aktiven Dienst versetzt und verblieb bis zu ihrem 80. Lebensjahr. Sie verließ die US-Marine als Admiral der US Navy Reserve. Das entspricht einem Generalsrang. Ihre Mitarbeiter nannten sie „Amazing Grace“ (engl. unglaubliche Grace). Das lag sicherlich nicht nur an den Computerproblemen, für deren Lösung sie weiterbeschäftigt wurde. So demonstrierte Grace beispielsweise gerne ihre Beidhändigkeit bei Vorträgen - sie begann einen Satz mit der linken Hand auf Deutsch, um ihn in der Mitte der Tafel mit der linken Hand auf Französisch fortzusetzen. Mit ihrem Ausscheiden aus dem militärischen Dienst war ihre aktive Tätigkeit nicht vorbei, sondern sie arbeite weiterhin als Beraterin für ein privates Unternehmen.
 
 <Figure src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/First_Computer_Bug%2C_1945.jpg/304px-First_Computer_Bug%2C_1945.jpg" alt="Erster Bug" float="right" />
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Der Begriff Bug für einen Fehler stammt zwar wohl nicht von Grace Hopper, aber ihr Debugging, also der Begriff für die Suche nach Fehlern und deren Beseitigung gerne zugeschrieben. 1947 verirrte sich eine Motte in ein Relais des von ihr betreuten Computers. Aus Relais bestanden die seinerzeit die Rechner, bevor diese durch Chips ersetzt wurden. Die Motte sorgte für den Ausfall des Relais und entsprechendes Unheil. Es handelt sich also nicht um einen Software-, sondern einen Hardwarefehler. Trotzdem passte es ganz gut. Die Motte klebte Grace in ihr Logbuch ein und verfasste dazu den Satz:
+
+> „First actual case of bug being found.“
+>
+> (engl. „Das erste Mal,
+> dass tatsächlich ein Käfer/Bug gefunden wurde.“
+
+Grace Hopper starb 1992 im Bundesstaat Virginia. Ihr Werk wurde verschiedentlich gewürdigt: Nach Hopper ist inzwischen ein Komet benannt, in der brandenburgischen Stadt Teltow wurde eine Gesamtschule nach ihr benannt, Präsident Obama verlieh ihr 2016 posthum die [„Presidential Medal of Freedom”](https://de.wikipedia.org/wiki/Presidential_Medal_of_Freedom), eine der höchsten zivilen Auszeichnungen der Vereinigten Staaten. Nach ihr wurde auch der [Grace Murray Hopper Award](https://de.wikipedia.org/wiki/Grace_Murray_Hopper_Award) benannt. Dieser mit 35.000 Dollar dotierte Preis wird an Computerexperten verliehen, die zum Zeitpunkt der Verleihung nicht älter als 35 Jahre als sind. Einigen der Preisträger wie Donald Knuth werden dir in den folgenden hier noch begegnet.
 
 ### Konrad Zuse
 
