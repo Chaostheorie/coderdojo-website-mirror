@@ -26,7 +26,9 @@ Alternativ: Nimm PyCharm, rechte Maustaste in einem Projekt, „New“ und „ht
 
 Wie auch immer du die Datei erstellt hast, öffnest du sie jetzt bitte mit PyCharm. Das ist jetzt nicht der ideale Editor für html. Aber wir wollen uns jetzt nicht noch um eine weitere Software kümmern. An sich kannst du zum Editieren alles nehmen, was nicht irgendwelche Sonderzeichen reinwirft. Also sowas wie Word ist in vielerlei Hinsicht gar keine gute Idee. Aber vim, Notepad, nano oder so geht gut.
 
-Jetzt kommen wir zur ersten Besonderheit: Mit ganz wenigen Ausnahmen zeichnet sich html dadurch aus, dass es immer einen sogenannten öffnenden und einen sogenannten schließenden Tag [sprich Täg] gibt. Die Tags stehen in spitzen Klammern, schließende Tags haben zudem einen Querstrich bzw. Slash: <öffnender Tag> und </schließender Tag>. Das Grundgerüst einer html-Seite teilt sich auf in einen Kopf (engl. head) und einen Körper (engl. body). Und so schaut eine einfache Seite auch ganz schlicht aus:
+Jetzt kommen wir zur ersten Besonderheit: Mit ganz wenigen Ausnahmen zeichnet sich html dadurch aus, dass es immer einen sogenannten öffnenden und einen sogenannten schließenden Tag [sprich Täg] gibt. Die Tags stehen in spitzen Klammern, schließende Tags haben zudem einen Querstrich bzw. Slash: <öffnender Tag> und </schließender Tag>. Im öffnenden Tag steht, was jetzt eigentlich gemacht werden soll, beispielsweise die Schrift fett drucken. Zwischen den Tags befindet sich der Bereich, für den das gelten soll.
+
+Das Grundgerüst einer html-Seite teilt sich auf in einen Kopf (engl. head) und einen Körper (engl. body). Und so schaut eine einfache Seite auch ganz schlicht aus:
 
 ```html
 <html>
