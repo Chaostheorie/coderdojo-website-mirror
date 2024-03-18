@@ -13,7 +13,11 @@ created = 2021-12-07
 Inzwischen hast du schon recht viel mit Variablen gearbeitet. Ist Dir dabei aufgefallen, dass bei einem
 `a = input("Gib was ein: ")` und `a = 1` das erste `a` für einen Text steht und das zweite für eine Zahl? In vielen
 Programmiersprachen musst du bevor du eine Variable das erste Mal nutzen kann, dem Rechner sagen, wie du diese Variable
-verwenden willst. Im nächsten Gurt fängst du beispielsweise an, die Sprache C zu lernen. Da wird das genau so gemacht. Das brauchst du in Python aber nicht. Das hat so seine Vor- und Nachteile. Steht eine Variable für einen
+verwenden willst. Im nächsten Gurt fängst du beispielsweise an, die Sprache C zu lernen. Da wird das genau so gemacht. Das brauchst du in Python aber nicht. Das hat so seine Vor- und Nachteile.
+
+### String und Integer
+
+Steht eine Variable für einen
 Text, verwendet man sie als sogenannten String, abgekürzt `str`. Bei ganzen Zahlen nennt man sie Integer (engl. für
 ganze Zahl), abgekürzt `int`. Ganze Zahl heißt - es gehen sowohl positive als auch negative Zahlen. Mit `type(a)` kannst
 du Dir ausgeben lassen, wie die Variable verwendet wird. Probiere mal folgenden Code aus:
@@ -59,12 +63,18 @@ text2 = " Quatsch"
 print(text1 + text2)
 ```
 
-Jetzt füge vor dem `print` noch ein `text1 = int(text1)` ein und führe den Code aus. Da wird es „knallen“, will sagen,
+Jetzt füge vor dem `print` noch ein `text1 = int(text1)` ein und führe den Code aus.
+
+### Es knallt
+
+Da wird es „knallen“, will sagen,
 es gibt eine Fehlermeldung. Warum ist das so? Weil du Text nicht als Integer behandeln kannst. Dein Taschenrechner ist
 insoweit abhängig davon, dass kein Nutzender auf die Idee kommt, einen Buchstaben einzugeben. Es ist nie gut, darauf zu
 vertrauen, dass Nutzende sinnvolle Dinge tun. Das ist ein Sicherheitsrisiko (und schön ist es auch nicht, wenn ein
 Programm sich aufhängt). Wie man solche Möglichkeiten abfängt, zeigen wir dir weiter unten. Das müssen wir hier gerade
 noch offen lassen. Was du aber aus Gründen der Sicherheit immer im Hinterkopf haben musst - Eingaben von Benutzenden darf niemals nicht vertraut werden. Entweder, weil dort ein Mensch sitzt, der schlichtweg mal Fehler macht oder weil dort ein Mensch vor deinem Code sitzt, welche:r böswillig Fehleingaben vornimmt.
+
+### Float und Bool
 
 Wir wollen uns ein paar weitere Variablentypen anschauen:
 
@@ -93,6 +103,8 @@ er sehr praktisch ist und häufig Verwendung findet.
 
 Python kennt noch mehr Variablentypen. Aber an dieser Stelle sollen uns die erst einmal genügen.
 
+### Explizite Typenumwandlung
+
 Python versucht den Typ der Variable passend für Dich umzuwandeln. Wenn du also einen String mit einem Integer addierst,
 würde in vielen Sprachen ein Fehler ausgeworfen werden. Python wandelt automatisch den Integer in einen String um – und wenn
 zwei Strings „addiert“ werden, dann hängt Python sie einfach hintereinander. Die andere Richtung geht nicht unbedingt. Denn
@@ -111,6 +123,8 @@ du es gerade zu tun hast. Im Code kannst du immer mit `type(Variablenname)` ausw
 
 <Figure src="/images/kyu-7/SolarpanelBp_a.jpeg" alt="Solarzellen
  werden mittels Lötbändchen zu Strängen, den sogeannten Strings verbunden" />
+
+### Stringspielereien
 
 Die Überschrift hieß nicht nur Variablentypen, sondern auch Stringspielereien. Wie man zwei Strings wie `"ot"` `"to"`
 kombiniert, hast du schon gesehen: aus `"ot" + "to"` wird `"otto"`. Das ein String in zwei `""` eingefasst werden muss,
