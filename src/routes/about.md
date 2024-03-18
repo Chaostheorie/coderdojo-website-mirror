@@ -17,6 +17,8 @@ Das wichtigste vorab: Mentor:innen gesucht! Wenn du gleich welche Sprache progra
 Seite der Lötkolben heiss wird und Interesse an der Arbeit mit Kindern und Jugendlichen hast - melde dich bei uns. Dies gilt insbesondere, wenn du Interesse daran hättest, diese Seite weiter auf- und auszubauen!
 :::
 
+Neue Mentor:innen haben gerade den Weg zu uns gefunden. Wir treffen uns voraussichtlich im April 2024. Hiernach werden sicherlich weitere Gesichter auf dieser Seite auftauchen. Es lohnt sich also, auch hier demnächst vorbei zu schauen.
+
 ## derMicha
 
 <Avatar src="https://dect42.de/images/derMicha.jpg" alt="derMicha" float="right" />
