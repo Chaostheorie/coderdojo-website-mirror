@@ -14,12 +14,14 @@ created = 2021-12-07
 
 Nachdem wir uns eine ganze Zeit mit Software beschäftigt haben, machen wir eine Runde Hardware. Am einfachsten dürfte
 das für dich sein, wenn du dich dafür in einen (deinem?) lokalen Hackerspace begibst. In Berlin bietet sich der
-familienfreundliche [xHain](https://x-hain.de) an. Wir setzen wie beim Programmieren beim Löten keinerlei Vorkenntnisse
+familienfreundliche [xHain](https://x-hain.de) an. Da gibt es immer wieder Veranstaltungen zum Löten. Sonst sprich uns einfach auf unserem Matrix-Kanal an. Wir setzen wie beim Programmieren beim Löten keinerlei Vorkenntnisse
 voraus, da die Teilnehmenden unterschiedlich alt sind und dem Thema in der Schule unterschiedliches Gewicht beigemessen
 wird. Es kann also gut sein, dass du gerade am Anfang gähnst. Keine Sorge, auch hier steigern wir uns Stück für Stück. Aber wir
 wollen alle mitnehmen.
 
 <Figure src="/images/kyu-7/derMicha_Soldering_th.jpg" alt="derMicha bei einem Löt-Workshop"/>
+
+### Grundlagen
 
 Zunächst solltest du grundlegend üben, wie man mit einem Lötkolben umgeht. Wenn du noch keine Erfahrung hast, lass dir
 ein kleines Stück Lochraster geben und ein paar alte Bauteile und versuche die, ein- und auszulöten. Wir können hier nur
@@ -27,6 +29,14 @@ bedingt etwas zu erklären, da dir am besten eine Mentorin kurz zeigt, wie es ge
 dass muss man also einfach ein bißchen selber gemacht haben.
 
 <Figure src="/images/kyu-7/Lochraster_loeten.jpg" alt="Lötübungen am Lochraster"/>
+
+### Lötfigur
+
+Am Anfang nimm dir einfach ein paar (Schrott-) Teile und versuche dich an einer Lötfigur. Das Foto soll dir nur als Idee dienen. Du kannst da deiner Kreativität freien Lauf lassen.
+
+<Figure src="/images/kyu-7/Loetfigur.jpg" alt="Lötfigur"/>
+
+### Erleuchtung
 
 Wenn du damit klar kommst, dann kommt als nächstes, eine LED zum Leuchten zu bringen. Lass Dir dafür bitte die passenden
 Bauteile geben. Für die Mentoren - benötigt werden:
@@ -45,7 +55,11 @@ falsch herum angeschlossen zu werden. Deshalb haben die ein langes und ein kurze
 und kommt in Richtung Pluspol (die kurze Seite heißt Kathode; Eselsbrücke _k_ wie _K_ athode). LEDs sind empfindlich.
 Wir arbeiten gerne mit einem Batterieadapter, der drei 1,5 Volt-Batterien zu 4,5 Volt (V) verbindet. Bei 4,5 V geht den
 meisten LEDs nur kurz ein Licht auf. Danach sind sie durchgebrannt. Das ist schade um das Bauteil, denn danach kann es
-nur noch in den Müll. Mit Hilfe eines Widerstandes kann man diese Spannung reduzieren. Mit dem Vergleich zu einem
+nur noch in den Müll.
+
+### Widerstand ist (nicht) zwecklos
+
+Mit Hilfe eines Widerstandes kann man diese Spannung reduzieren. Mit dem Vergleich zu einem
 Wasserkreislauf kann man gut verstehen, was da passiert. Die Batterie ist dort ein Motor, der das Wasser antreibt. Die
 Röhren entsprechen den Stromleitungen. Und ein Widerstand ist einfach eine Röhre, die dünner wird. Da kann nicht so viel
 Wasser durchfließen, wie durch eine große Röhre. Stell Dir jetzt vor, die LED besteht aus einer dünnen Glasröhre. Drückt
@@ -71,8 +85,9 @@ Vorwiderstand\  R {_v} = \frac{Spannung\ am\ Vorwiderstand\ U{_R}}{Strom\ I}
 $$
 
 Äh - wie meinen? Das hört sich erstmal kompliziert an. Wer es mit Zettel und Stift mal selbst nachrechnet wird
-feststellen, dass das kein Hexenwerk ist. Und am Ende kannst du daraus ein kleines Programm machen. Dann geht das beim
-nächsten mal ganz fix. Wir wollen den Widerstand vor der LED rauskriegen. Das ist der Vorwiderstand. Zunächst müssen wir
+feststellen, dass das kein Hexenwerk ist. Und am Ende kannst du daraus ein kleines Programm machen. Das solltest du schon quasi als Fingerübung runterschreiben können.
+
+Beim nächsten mal geht es dann fix. Wir wollen den Widerstand vor der LED rauskriegen. Das ist der Vorwiderstand. Zunächst müssen wir
 wissen, wieviel Strom wir da eigentlich vernichten wollen. Unsere Batterie liefert 4,5 V. Jetzt müssen wir wissen, wie
 hoch die Spannung in der LED sein darf. Wir arbeiten hier mit einer kleinen (5mmm), roten LED und die haben es meist so
 bei 1,6 V bis 2 V kuschelig. Diesen Wert liefern die Hersteller in ihren Spezifikationen mit. Es gibt also zu jedem
