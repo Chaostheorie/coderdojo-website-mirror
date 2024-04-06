@@ -143,7 +143,7 @@ Derzeit kann der Sprite noch vom Spielfeld fallen. Das verhindere bitte.
 
 ### Aufgabe 8
 
-Füge einen zweiten Sprite ein. Den kannst du [hier](https://coderdojo.red/images/workshops/pygame/meeple2.png) herunterladen. Sorge dafür, dass dieser sich mit A, S, D und W bewegen lässt und dass dieser nicht vom Spielfeld fallen kann.
+Füge einen zweiten Sprite ein. Den kannst du [hier](https://coderdojo.red/images/workshops/pygame/meeple2.png) herunterladen. Sorge dafür, dass dieser sich mit A, S, D und W bewegen lässt und dass dieser nicht vom Spielfeld fallen kann. 
 
 ### Aufgabe 9
 
