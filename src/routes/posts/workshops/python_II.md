@@ -103,7 +103,7 @@ player_x = 100
 player_y = 100
 ```
 
-Den Hintergrund kannst du dir [hier](Link) und den Sprite [hier](Link) herunter laden.
+Den Hintergrund kannst du dir [hier](https://coderdojo.red/images/workshops/pygame/canvas.png) und den Sprite [hier](https://coderdojo.red/images/workshops/pygame/meeple1.png) herunter laden.
 
 ### Snippet 2
 
