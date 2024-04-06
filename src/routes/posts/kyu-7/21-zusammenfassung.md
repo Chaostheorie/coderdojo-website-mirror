@@ -76,7 +76,6 @@ for number in list_of_Numbers:
 
 ```
 
-
 - def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst du Werte zurückgeben.
 
 - try / except hat Dir eine erste Einführung im Abfangen von Fehlern gegeben.
