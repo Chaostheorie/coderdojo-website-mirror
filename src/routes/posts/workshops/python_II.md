@@ -20,7 +20,7 @@ Das nächste Programm soll eine Grundlage für einen Münzwechsler darstellen. D
 bis 99 Cent ein. Der eingegebene Betrag soll dann in den Münzen mit 1, 2, 3, 10, 20 und 50 Cent ausgegeben werden - aber
 bitte so, dass möglichst wenig Münzen benötigt werden. Wenn du keinen Ansatz hast wie das geht, dann schau dir bitte mal an, welche unterschiedlichen Möglichkeiten der Division Python hat. Du kannst dividieren, wie du es aus der Schule kennst. Mit was \/\/ kannst du dir den Teil vor dem Komma ausgeben lassen, mit \%, also Modulo, den Teil hinter dem Komma. Falls dir Modulo noch nichts sagt, gibt es [hier](https://meinstein.ch/math/die-modulo-rechnung-einfach-erklaert/) eine Erklärung. Überlege dir, was du eigentlich bei der Division in diesem Fall wirklich brauchst.
 
-```python:Aufgabe_7_Muenzwechsler.py
+```python:Aufgabe_1_Muenzwechsler.py
 
 Wieviel Geld zahlst du ein? 74
 
@@ -143,7 +143,7 @@ Derzeit kann der Sprite noch vom Spielfeld fallen. Das verhindere bitte.
 
 ### Aufgabe 8
 
-Füge einen zweiten Sprite ein. Den kannst du [hier](Link) herunterladen. Sorge dafür, dass dieser sich mit A, S, D und W bewegen lässt und dass dieser nicht vom Spielfeld fallen kann.
+Füge einen zweiten Sprite ein. Den kannst du [hier](https://coderdojo.red/images/workshops/pygame/meeple2.pn) herunterladen. Sorge dafür, dass dieser sich mit A, S, D und W bewegen lässt und dass dieser nicht vom Spielfeld fallen kann.
 
 ### Aufgabe 9
 
