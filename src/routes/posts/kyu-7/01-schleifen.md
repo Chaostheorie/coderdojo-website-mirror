@@ -160,7 +160,7 @@ eine Menge. Es ist immer gut, auch fremden Code zu sehen. Als Tip geben wir Dir 
 print(3 * "*")
 ```
 
-Die drei kann dabei auch durch eine Variable ersetzt werden.
+Die drei kann dabei auch durch eine Variable ersetzt werden!
 
 Falls du jetzt denkst, pah, so einen Baum, billo, kann ich überspringen: Mach den mal mit höchstens zwei Print-Zeilen
 und du wirst sehen, da gibt es versteckte Untiefen.
