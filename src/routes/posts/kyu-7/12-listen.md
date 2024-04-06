@@ -158,3 +158,41 @@ addierst, kommt 23 raus. Wie ist die Summe aller Vielfachen bis 1000?
 Wenn du das Ergebnis hast, kannst du im [Eulerprojekt](https://projecteuler.net/problem=1) prüfen, ob es richtig ist.
 Falls du dich dort nicht registrieren magst, kannst du uns auch fragen. Wie immer - wenn du auf der Stelle trittst, lass
 uns drüber sprechen, damit wir dich unterstüzen können, die Richtung zu finden.
+
+## weitere Listenbefehle
+
+Mit Listen kann man eine Menge Spielereien anstellen. Ein paar weitere Möglichkeiten wollen wir Dir hier zeigen. Es gibt noch deutlich mehr, aber damit dürftest Du die wichtigsten kennen gelernt haben:
+
+```python:listen.py
+
+liste.append('bar')
+# ergänzt die Liste um den String 'bar'
+
+liste[3] = 'bahr'
+# verändert das 4. Element der Liste von 'bar' zu 'bahr'
+
+liste.sort()
+liste.sort(reverse=True)
+# sortiert eine Liste vorwärts und rückwärts (geht aber nicht bei gemisten Listen)
+
+liste.insert(0, 5)
+# fügt an Stelle 0 den Integer 5 ein
+
+liste.remove('bahr')
+# entfernt das Element 'bahr' aus der List
+
+liste.pop[0]
+# entfernt das 0. Element aus der Liste
+
+len(list_of_Numbers)
+# gibt die Anzahl der Elemente einer Liste ausgibt
+
+for number in list_of_Numbers:
+  print(number)
+# iteriert über eine Liste
+
+[print(number) for number in list_of_Numbers]
+# iteriert über eine Liste
+
+
+```

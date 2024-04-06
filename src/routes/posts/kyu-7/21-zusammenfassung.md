@@ -34,7 +34,48 @@ Hier noch einmal kurz die im 7. Kyū gelernten Befehle:
 - Du hast die Datentypen String (str) für Zeichen, Integer (int) für ganze Zahlen und Float (float) für
   Gleitkommazahlen und kennengelernt.
 
-- Mit [foo] kannst du schon Listen erzeugen. Und mit list.append hast du Elemente einer Liste hinzugefügt.
+- Mit [foo] kannst du schon Listen erzeugen. Dabei hast Du folgendes zu Listen gelernt:
+
+```python:listent.py
+
+list_of_Numbers = [52, 'foo', 93.25]
+# Legt eine Liste mit dem Integer 52, dem String 'foo' und der Gleitkommazahl 93,25 an
+
+list_of_Numbers[1]
+# gibt 'foo' aus
+
+liste.append('bar')
+# ergänzt die Liste um den String 'bar'
+
+liste[3] = 'bahr'
+# verändert das 4. Element der Liste von 'bar' zu 'bahr'
+
+liste.sort()
+liste.sort(reverse=True)
+# sortiert eine Liste vorwärts und rückwärts (geht aber nicht bei gemisten Listen)
+
+liste.insert(0, 5)
+# fügt an Stelle 0 den Integer 5 ein
+
+liste.remove('bahr')
+# entfernt das Element 'bahr' aus der List
+
+liste.pop[0]
+# entfernt das 0. Element aus der Liste
+
+len(list_of_Numbers)
+# gibt die Anzahl der Elemente einer Liste ausgibt
+
+for number in list_of_Numbers:
+  print(number)
+# iteriert über eine Liste
+
+[print(number) for number in list_of_Numbers]
+# iteriert über eine Liste
+
+
+```
+
 
 - def hat Dir ermöglicht, eigene Funktionen zu schreiben. Mit return kannst du Werte zurückgeben.
 
