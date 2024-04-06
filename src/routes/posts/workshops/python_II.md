@@ -12,10 +12,6 @@ created = 2024-02-26
 
 Zweiter Präsenzworkshop für junge Menschen ohne Vorkenntnisse - auf dem Weg zum 7. Kyū (Weißgurt).
 
-:::tip Info
-Wie unschwer zu sehen ist - dieses Kapitel ist gerade im Entstehen... hab bitte noch einen Moment Geduld, bis es vollständig ist.
-:::
-
 ## Übungen
 
 ### Aufgabe 1 - Wiederholung
@@ -52,13 +48,83 @@ Paris, Tokyo, Berlin
 
 ### Aufgabe 3
 
-Fortsetzung zu Aufgabe 2 - die Liste soll mit Zahlen von 1 bis n ausgegeben werden. Frage die Benutzende, welchen Eintrag sie verändern möchte, beispielsweise Eintrag 3, also im Beispiel Paris. Erfolgt ein Eintrag, wird dieser geändert, wird ein leeres Feld übergeben, so soll der Eintrag gelöscht werden. Danach wird die Liste erneut entsprechend angepasst ausgegeben.
+Fortsetzung zu Aufgabe 2 - die Liste soll mit Zahlen von 1 bis n ausgegeben werden. Frage die Benutzende, welchen Eintrag sie verändern möchte, beispielsweise Eintrag 3, also im Beispiel Paris. Erfolgt ein Eintrag, wird dieser geändert, wird ein leeres Feld übergeben, so soll der Eintrag gelöscht werden. Danach wird die Liste erneut entsprechend angepasst ausgegeben. Sorge mit einem try-except dafür, dass die Möglichkeit abgefangen wird, dass die Benutzende keine oder eine ungültige Zahl eingibt. Das sollte die Benutzende natürlich auch gesagt bekommen.
 
 ### Aufgabe 4
 
 Packe die einzelnen Funktionen des Programms in Funktionen. Es sollte also die Funktion geben print_list, change_list, remove_list.
 
+### Snippet 1
 
+Lege ein neues Projekt und benenne es so, wie dein Spiel heißen soll. Lege eine „requirements.txt“ an und trage dort „pygame“ ein. Lege dann eine „main.py“ mit folgendem Inhalt an:
+
+```python:game.py
+import pygame, os, sys
+from pygame.locals import *
+
+pygame.init()
+fpsClock = pygame.time.Clock()
+surface = pygame.display.set_mode((800, 600))
+background = pygame.Color(100, 149, 237)
+image = pygame.image.load(`canvas.png`)
+meeple = pygame.image.load(`meeple1g.png`)
+player_x = 100
+player_y = 100
+```
+
+Den Hintergrund kannst du dir [hier](Link) und den Sprite [hier](Link) herunter laden.
+
+### Snippet 2
+
+```python:game.py
+while True:
+    surface.fill(background)
+    surface.blit(image, (0,0))
+
+    pygame.display.update()
+    fpsClock.tick(30)
+```
+
+### Snippet 3 - Vorbei
+
+```python:game.py
+for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+```
+
+#### Snippet 4 - Bewegung
+
+```python:game.py
+if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
+                ...
+```
+
+### Aufgabe 5
+
+Sorge dafür, dass deine Figur sich mit den Cursor-Tasten bewegen lässt.
+
+### Aufgabe 6
+
+Derzeit kann der Sprite noch vom Spielfeld fallen. Das verhindere bitte.
+
+### Aufgabe 7
+
+Füge einen zweiten Sprite ein. Den kannst du [hier](Link) herunterladen. Sorge dafür, dass dieser sich mit A, S, D und W bewegen lässt und dass dieser nicht vom Spielfeld fallen kann.
+
+### Aufgabe 8
+
+Gibt über ein print „Treffer“ aus, wenn sich die beiden Spielfiguren berühren.
+
+### Aufgabe 9
+
+Überlege dir, wie du Teile gut in Funktionen packen kannst, so dass der Code übersichtlicher wird und im Idealfall Wiederholungen vermieden werden.
+
+### Aufgabe 10
+
+Verändere den zweiten Sprite so, dass er zufällig über das Spielfeld läuft - natürlich ohne herunterzufallen. Mit deiner Ausgangsfigur sollst du versuchen, vor ihm zu fliehen. Wenn es zu einem Kontakt kommt, dann soll nicht nur Treffer ausgegeben werden, sondern auch, der wievielte.
 
 ## Cheatsheet
 
@@ -124,9 +190,12 @@ print(calc(5, 4))
 
 # Rückgabe von mehr als einem Wert, Ergebnis ist ein sog. Tupel
 
+try:
+    print("Läuft!")
+except Exception:
+    print("Fehler!")
 
-
-```
+# Kann Fehler im try-Teil abfangen. Falls es zu einem Fehler kommt, wird der try-Teil ausgeführt.
 
 
 
