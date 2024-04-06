@@ -50,7 +50,39 @@ Paris, Tokyo, Berlin
 
 Fortsetzung zu Aufgabe 2 - die Liste soll mit Zahlen von 1 bis n ausgegeben werden. Frage die Benutzende, welchen Eintrag sie verändern möchte, beispielsweise Eintrag 3, also im Beispiel Paris. Erfolgt ein Eintrag, wird dieser geändert, wird ein leeres Feld übergeben, so soll der Eintrag gelöscht werden. Danach wird die Liste erneut entsprechend angepasst ausgegeben. Sorge mit einem try-except dafür, dass die Möglichkeit abgefangen wird, dass die Benutzende keine oder eine ungültige Zahl eingibt. Das sollte die Benutzende natürlich auch gesagt bekommen.
 
-### Aufgabe 4
+### Aufgabe 4 - Zusatz
+
+Baue eine vereinfachte Version des Spiels Galgenmännchens (engl. hangman). Aus einer Liste von Wörtern wird zufällig ein Wort ausgewählt. Für die jeweiligen Buchstaben werden Unterstriche angezeigt. Die Benutzerin kann einen Buchstaben raten. Rät sie richtig, wird dieser statt des leeren Unterstrichs dargestellt. Andernfalls wird stückchenweise ein Galgenmännchens mit Sternchen aufgebaut.
+
+Ob ein Buchstabe in einem Wort enthalten ist, prüfst du mit dem Befehl „in“. Die Groß- und Kleinschreibung findet dabei Beachtung.
+
+
+```python:galgenmaennchen.py
+
+a = "Wort"
+b = "o"
+c = "O"
+
+b in a
+True
+
+c in a
+False
+
+Grafikvorschlag:
+
+_______
+ |/      |
+ |      (_)
+ |      \|/
+ |       |
+ |      / \
+ |
+_|___
+
+```
+
+### Aufgabe 5
 
 Packe die einzelnen Funktionen des Programms in Funktionen. Es sollte also die Funktion geben print_list, change_list, remove_list.
 
@@ -102,33 +134,41 @@ if event.type == pygame.KEYDOWN:
                 ...
 ```
 
-### Aufgabe 5
+### Aufgabe 6
 
 Sorge dafür, dass deine Figur sich mit den Cursor-Tasten bewegen lässt.
 
-### Aufgabe 6
+### Aufgabe 7
 
 Derzeit kann der Sprite noch vom Spielfeld fallen. Das verhindere bitte.
 
-### Aufgabe 7
+### Aufgabe 8
 
 Füge einen zweiten Sprite ein. Den kannst du [hier](Link) herunterladen. Sorge dafür, dass dieser sich mit A, S, D und W bewegen lässt und dass dieser nicht vom Spielfeld fallen kann.
 
-### Aufgabe 8
+### Aufgabe 9
 
 Gibt über ein print „Treffer“ aus, wenn sich die beiden Spielfiguren berühren.
 
-### Aufgabe 9
+### Aufgabe 10
 
 Überlege dir, wie du Teile gut in Funktionen packen kannst, so dass der Code übersichtlicher wird und im Idealfall Wiederholungen vermieden werden.
 
-### Aufgabe 10
+### Aufgabe 11
 
 Verändere den zweiten Sprite so, dass er zufällig über das Spielfeld läuft - natürlich ohne herunterzufallen. Mit deiner Ausgangsfigur sollst du versuchen, vor ihm zu fliehen. Wenn es zu einem Kontakt kommt, dann soll nicht nur Treffer ausgegeben werden, sondern auch, der wievielte.
 
 ## Cheatsheet
 
 ```python:cheatsheet.py
+
+while test != 10:
+   print("Tue Dinge")
+# While-Schleife - läuft solange, wie test ungleich 10 ist
+
+while True:
+# Endlosschleife
+
 from random import randrange
 # Importiert das Modul bzw. die Bibliothek für Zufallszahlen innerhalb eines bestimmten Rahmens
 
