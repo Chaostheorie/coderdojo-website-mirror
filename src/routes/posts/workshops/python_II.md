@@ -56,7 +56,6 @@ Baue eine vereinfachte Version des Spiels Galgenmännchens (engl. hangman). Aus 
 
 Ob ein Buchstabe in einem Wort enthalten ist, prüfst du mit dem Befehl „in“. Die Groß- und Kleinschreibung findet dabei Beachtung.
 
-
 ```python:galgenmaennchen.py
 
 a = "Wort"
@@ -236,7 +235,6 @@ except Exception:
     print("Fehler!")
 
 # Kann Fehler im try-Teil abfangen. Falls es zu einem Fehler kommt, wird der try-Teil ausgeführt.
-
 
 
 ```
