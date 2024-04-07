@@ -38,12 +38,17 @@ Also Vorbereitung für einen Highscore: Der oder die Benutzende soll Namen oder 
 Beispiel:
 
 Gib eine Stadt ein: >Berlin
+
 Gib eine Stadt ein: >Tokyo
+
 Gib eine Stadt ein: >Paris
+
 Gib eine Stadt ein: >fertig
 
 Ausgabe:
+
 Berlin, Tokyo, Paris
+
 Paris, Tokyo, Berlin
 
 ### Aufgabe 3
