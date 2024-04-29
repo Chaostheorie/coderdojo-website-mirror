@@ -1,9 +1,9 @@
 +++
-title = "Python I-II-III in der Königsstadt!"
+title = "Python I-II-III in der Königstadt!"
 date = 2024-06-02
 updated = 2024-06-02
 showToc = false
-description ="Dreiteiliger Pythonkurs im Jugendkulturzentrum Königsstadt im Prenzlauer Berg für Anfänger:innen"
+description ="Dreiteiliger Pythonkurs im Jugendkulturzentrum Königstadt im Prenzlauer Berg für Anfänger:innen"
 +++
 
 <script lang="ts">
@@ -12,7 +12,7 @@ description ="Dreiteiliger Pythonkurs im Jugendkulturzentrum Königsstadt im Pre
 
 # Python für Anfänger:innen
 
-Du hast noch **keine** oder sehr geringe **Vorkenntnisse im Programmieren**? Du bist mindestens 12 Jahre und höchstens 18 Jahre alt? Du willst auch **andere Jugendliche kennen lernen**, die sich dafür interessieren? Dann kommt zu unserem dreiteiligen Einführungsworkshop im **Jugendkulturzentrum Königsstadt im Prenzlauer Berg** vorbei!
+Du hast noch **keine** oder sehr geringe **Vorkenntnisse im Programmieren**? Du bist mindestens 12 Jahre und höchstens 18 Jahre alt? Du willst auch **andere Jugendliche kennen lernen**, die sich dafür interessieren? Dann kommt zu unserem dreiteiligen Einführungsworkshop im **[Jugendkulturzentrum Königstadt](http://www.jugendhaus-koenigstadt.de/) im Prenzlauer Berg** vorbei!
 
 An drei Nachmittagen vermitteln wir dir erste, aber **solide Grundkenntnisse** in der Programmierung. Dabei tauchen wir ab dem zweiten Workshop in die **Spieleprogrammierung** ein. Ziel ist es, am Ende ein kleines Weltraumspiel zu haben. Die Termine:
 
@@ -22,7 +22,7 @@ An drei Nachmittagen vermitteln wir dir erste, aber **solide Grundkenntnisse** i
 
 * Python III - Sonntag, **16. Juni 2024 von 17 bis 20 Uhr**
 
-Das Jugendkulturzentrum Königstadt befindet sich in der Saarbrücker Straße 23 in 10405 Berlin. Fußläufig dazu ist der U-Bahnhof Senefelder Platz.
+Das [Jugendkulturzentrum Königstadt](http://www.jugendhaus-koenigstadt.de/) befindet sich in der Saarbrücker Straße 23 in 10405 Berlin. Fußläufig dazu ist der U-Bahnhof Senefelder Platz.
 
 Du brauchst **kein eigenes Notebook**. Wir können dir während des Workshops gerne ein Leihgerät zur Verfügung stellen.
 
