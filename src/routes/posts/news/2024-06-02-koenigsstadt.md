@@ -10,7 +10,7 @@ description ="Dreiteiliger Pythonkurs im Jugendclub Königsstadt im Prenzlauer B
     import Figure from "$lib/components/Figure.svelte";
 </script>
 
-# Python I-II-III für Anfänger:innen
+# Python für Anfänger:innen
 
 Du hast noch **keine** oder sehr geringe **Vorkenntnisse im Programmieren**? Du bist mindestens 12 Jahre und höchstens 18 Jahre alt? Du willst auch **andere Jugendliche kennen lernen**, die sich dafür interessieren? Dann kommt zu unserem dreiteiligen Einführungsworkshop im **Jugendclub Königsstadt im Prenzlauer Berg** vorbei!
 
