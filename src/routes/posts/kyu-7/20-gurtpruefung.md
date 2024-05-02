@@ -39,6 +39,16 @@ Formel hin anzunähern. Vergleiche das Ergebnis beispielsweise mit dem Ergebnis 
 
 - Erweitere Deine LED-Schaltung um einen kleinen Schalter.
 
+- Was kommt bei folgendem Code raus?
+
+```python:int_and_string.py
+var_1 = 1
+var_2 = 2
+var_3 = "3"
+
+print(var_1 + var_2 + var_3)
+```
+
 - Was ist die halbe Wahrheit?
 
 Falls du an einer Aufgabe festhängst – hei, kein Problem. Lass uns gemeinsam drauf schauen, woran es hakt. Du schaffst
