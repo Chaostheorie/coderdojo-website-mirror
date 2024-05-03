@@ -28,9 +28,7 @@ Du brauchst **kein eigenes Notebook**. Wir können dir während des Workshops ge
 
 Du kannst aber auch dein **eigenes Notebook** (kein Tablet!) mitbringen. Darauf sollte ein aktuelles Python (mindestens 3.10) mit virtualenv und PyCharm in der Community Edition. Falls du Unterstützung bei der Installation brauchst, kein Ding, komm einfach beim ersten Termin eine halbe Stunde vorher vorbei und wir helfen dir.
 
-[Melde dich jetzt hier an!](https://pretix.eu/junghackerinnentag/koenigstadt/)
-
-_Anmerkung:_ Die Anmeldung wird bis zum 6. Mai 2024 freigeschaltet.
+**[Melde dich jetzt hier an!](https://pretix.eu/junghackerinnentag/koenigstadt/)**
 
 ### Details zu den einzelnen Terminen
 
