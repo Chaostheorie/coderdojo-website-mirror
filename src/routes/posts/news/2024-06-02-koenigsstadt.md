@@ -30,7 +30,7 @@ Du kannst aber auch dein **eigenes Notebook** (kein Tablet!) mitbringen. Darauf 
 
 [Melde dich jetzt hier an!](https://pretix.eu/junghackerinnentag/koenigstadt/)
 
-_Anmerkung:_ Die Anmeldung wird in den nächsten Tagen freigeschaltet.
+_Anmerkung:_ Die Anmeldung wird bis zum 6. Mai 2024 freigeschaltet.
 
 ### Details zu den einzelnen Terminen
 
