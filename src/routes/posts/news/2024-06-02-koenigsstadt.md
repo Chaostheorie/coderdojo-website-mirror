@@ -16,11 +16,11 @@ Du hast noch **keine** oder sehr geringe **Vorkenntnisse im Programmieren**? Du 
 
 An drei Nachmittagen vermitteln wir dir erste, aber **solide Grundkenntnisse** in der Programmierung. Dabei tauchen wir ab dem zweiten Workshop in die **Spieleprogrammierung** ein. Ziel ist es, am Ende ein kleines Weltraumspiel zu haben. Die Termine:
 
-* Python I - Sonntag, **2. Juni 2024 von 17 bis 20 Uhr**
+- Python I - Sonntag, **2. Juni 2024 von 17 bis 20 Uhr**
 
-* Python II - Sonntag, **9. Juni 2024 von 17 bis 20 Uhr**
+- Python II - Sonntag, **9. Juni 2024 von 17 bis 20 Uhr**
 
-* Python III - Sonntag, **16. Juni 2024 von 17 bis 20 Uhr**
+- Python III - Sonntag, **16. Juni 2024 von 17 bis 20 Uhr**
 
 Das [Jugendkulturzentrum Königstadt](http://www.jugendhaus-koenigstadt.de/) befindet sich in der Saarbrücker Straße 23 in 10405 Berlin. Fußläufig dazu ist der U-Bahnhof Senefelder Platz.
 
@@ -34,12 +34,16 @@ Du kannst aber auch dein **eigenes Notebook** (kein Tablet!) mitbringen. Darauf 
 
 Wenn du schon genauer wissen willst, was wir an den jeweiligen Nachmittagen ungefähr machen:
 
-* **Python I: Am Sonntag, 2. Juni 2024**: Du lernst die ersten Befehle, was Variablen, Strings und Integers sind, wie wir Schleifen binden und Bedingungen stellen und wirst selber erste Aufgaben mit eigenem Code lösen. Am Ende wirst du eine kleine Grafik aus Buchstaben zaubern können.
+- **Python I: Am Sonntag, 2. Juni 2024**: Du lernst die ersten Befehle, was Variablen, Strings und Integers sind, wie wir Schleifen binden und Bedingungen stellen und wirst selber erste Aufgaben mit eigenem Code lösen. Am Ende wirst du eine kleine Grafik aus Buchstaben zaubern können.
 
-* **Python II: Am Sonntag, 9. Juni 2024** wiederholen und vertiefen wir das Gelernte. Wir fahren fort mit Funktionen, sehen wie Programme knallen und wie wir das einfangen, schreiben Listen für einen Highscore, bewegen Spielfiguren über den Bildschirm und stellen fest, wann sie sich berühren, also es zu Kollissionen kommt. Ganz nebenbei werfen wir einen Blick auf Git, mit dem du deinen Code sichern kannst, ihn mit anderen teilen oder mit anderen zusammen coden kannst.
+- **Python II: Am Sonntag, 9. Juni 2024** wiederholen und vertiefen wir das Gelernte. Wir fahren fort mit Funktionen, sehen wie Programme knallen und wie wir das einfangen, schreiben Listen für einen Highscore, bewegen Spielfiguren über den Bildschirm und stellen fest, wann sie sich berühren, also es zu Kollissionen kommt. Ganz nebenbei werfen wir einen Blick auf Git, mit dem du deinen Code sichern kannst, ihn mit anderen teilen oder mit anderen zusammen coden kannst.
 
+<<<<<<< HEAD
 * **Python III: Am Sonntag, 16. Juni 2024** greifen wir das Spiel auf und fangen an, sich bewegende Hindernisse aufzubauen. Von dort aus werfen wir einen Blick auf die objektorientierte Programmierung, um das Spiel komplexer zu gestalten. Und wir schauen uns an, wie wir dafür sorgen, dass die Kollissionsdetektion besser wird, in dem dein Programm lernt, die Spielfiguren zu sehen.
 
 <Figure src="/images/news/Flyer_1_A4.jpg" alt="Flyer für den Workshop" />
 
 <Figure src="/images/news/Flyer_1_A4.pdf" alt="Flyer für den Workshop" />
+=======
+- **Python III: Am Sonntag, 16. Juni 2024** greifen wir das Spiel auf und fangen an, sich bewegende Hindernisse aufzubauen. Von dort aus werfen wir einen Blick auf die objektorientierte Programmierung, um das Spiel komplexer zu gestalten. Und wir schauen uns an, wie wir dafür sorgen, dass die Kollissionsdetektion besser wird, in dem dein Programm lernt, die Spielfiguren zu sehen.
+>>>>>>> e5db8af711a6f48fe4dc8a8ec1bb2bff18f8658b
