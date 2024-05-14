@@ -41,5 +41,3 @@ Wenn du schon genauer wissen willst, was wir an den jeweiligen Nachmittagen unge
 - **Python III: Am Sonntag, 16. Juni 2024** greifen wir das Spiel auf und fangen an, sich bewegende Hindernisse aufzubauen. Von dort aus werfen wir einen Blick auf die objektorientierte Programmierung, um das Spiel komplexer zu gestalten. Und wir schauen uns an, wie wir dafür sorgen, dass die Kollissionsdetektion besser wird, in dem dein Programm lernt, die Spielfiguren zu sehen.
 
 <Figure src="/images/news/Flyer_1_A4.jpg" alt="Flyer für den Workshop" />
-
-<Figure src="/images/news/Flyer_1_A4.pdf" alt="Flyer für den Workshop" />
