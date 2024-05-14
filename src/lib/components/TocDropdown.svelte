@@ -24,7 +24,7 @@
         collapsed = !collapsed;
       }}
     >
-      {firstHeading[0]}
+      <a href={targetUrl} class="no-underline">{firstHeading[0]}</a>
       <span class="transition-transform duration-300 ease-in-out" class:rotate-180={collapsed}>
         <CaretDown />
       </span>
