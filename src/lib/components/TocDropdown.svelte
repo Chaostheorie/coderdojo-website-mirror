@@ -33,7 +33,9 @@
     <ol class="toc-list" class:toc-list-collapsed={collapsed}>
       {#each headings as [heading, id]}
         <li>
-          <a href="{targetUrl}#{id}">{heading}</a>
+          <a href="{targetUrl}#{id}" class="no-underline hover:underline focus:underline"
+            >{heading}</a
+          >
         </li>
       {/each}
     </ol>
