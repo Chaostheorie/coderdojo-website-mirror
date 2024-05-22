@@ -41,6 +41,11 @@
       >. Am besten schaust du da mal rein. <strong>Dort verabreden wir uns</strong>, tauschen uns
       aus und kündigen auch an, wenn sich ein Termin verschiebt oder was für Themen anstehen.
     </p>
+    <p class="leading-relaxed text-lg">
+    Daneben bauen wir gerade einen circa monatlich erscheinenden Newsletter auf. Schreibe eine E-Mail an<br>
+    coderdojo-newsletter-subscribe@cyber4edu.org<br>
+    bestätige dort deine Adresse und du bist im Verteiler drin.
+    </p>
     <div class="flex flex-row justify-center btn-group">
       <Button href="/posts/news/">
         News zum Dojo <Info size={24} />
