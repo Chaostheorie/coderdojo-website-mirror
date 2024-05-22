@@ -46,13 +46,13 @@ else {
 
   - x != y (x ist nicht gleich y)
 
-  -  x <  y (x ist kleiner als y)
+  - x < y (x ist kleiner als y)
 
-  -  x >  y (x ist größer als y)
+  - x > y (x ist größer als y)
 
-  -  x <= y (x ist kleiner als oder gleich zu y)
+  - x <= y (x ist kleiner als oder gleich zu y)
 
-  -  x >= y (x ist größer als oder gleich zu y)
+  - x >= y (x ist größer als oder gleich zu y)
 
 - Boolsche Operatoren:
 
@@ -85,9 +85,6 @@ void loop() {
 }
 
 ```
-
-
-
 
 ### Bildnachweis
 
