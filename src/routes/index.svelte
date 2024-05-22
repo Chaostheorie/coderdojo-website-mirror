@@ -42,7 +42,10 @@
       aus und kündigen auch an, wenn sich ein Termin verschiebt oder was für Themen anstehen.
     </p>
     <p class="leading-relaxed text-lg">
-    Daneben bauen wir gerade einen circa monatlich erscheinenden Newsletter auf. Schreibe eine E-Mail an<br>
+    Daneben bauen wir gerade einen circa
+      <strong>monatlich erscheinenden Newsletter
+      </strong>
+    auf. Schreibe eine E-Mail an<br>
     coderdojo-newsletter-subscribe@cyber4edu.org<br>
     bestätige dort deine Adresse und du bist im Verteiler drin.
     </p>
