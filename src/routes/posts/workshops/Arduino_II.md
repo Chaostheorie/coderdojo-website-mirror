@@ -153,7 +153,7 @@ void loop() {
 
 ## LCD
 
-<Figure src="/images/workshops/arduino_II/Arduino_LCD_I2C.png" alt="LCD-Display" />
+<Figure src="/images/workshops/arduino_II/Arduino_LCD_I2C.jpg" alt="LCD-Display" />
 
 - Verkabelung:
 
