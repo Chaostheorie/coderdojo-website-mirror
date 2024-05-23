@@ -45,7 +45,7 @@
       Daneben bauen wir gerade einen circa
       <strong>monatlich erscheinenden Newsletter </strong>
       auf. Schreibe eine E-Mail an
-      <strong> coderdojo-newsletter-subscribe ätcyber4edu.org, </strong>
+      <strong> coderdojo-newsletter-subscribe ät cyber4edu.org, </strong>
       bestätige deine Adresse über die E-Mail die du dann erhältst und du bist im Verteiler drin.
     </p>
     <div class="flex flex-row justify-center btn-group">
