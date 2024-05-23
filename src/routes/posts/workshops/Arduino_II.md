@@ -62,9 +62,9 @@ else {
 
 ## Neigungssensor
 
-<Figure src="/images/workshops/ardunino_II/Grundaufbau_Steckplatine.png" alt="Grundaufbau Neigungssensor" />
+<Figure src="/images/workshops/arduino_II/Grundaufbau_Steckplatine.png" alt="Grundaufbau Neigungssensor" />
 
-<Figure src="/images/workshops/ardunino_II/Grundaufbau_mit_Code_Steckplatine.png" alt="Grundaufbau Neigungssensor mit Code" />
+<Figure src="/images/workshops/arduino_II/Grundaufbau_mit_Code_Steckplatine.png" alt="Grundaufbau Neigungssensor mit Code" />
 
 ```c:Neigungssensor.c
 
@@ -89,7 +89,7 @@ void loop() {
 
 ## Piezo
 
-<Figure src="/images/workshops/ardunino_II/Buzzer_Steckplatine.png" alt="Piezo" />
+<Figure src="/images/workshops/arduino_II/Buzzer_Steckplatine.png" alt="Piezo" />
 
 ```c:PiezoSimple.c
 int piezo = 5;
@@ -125,7 +125,7 @@ void loop() {
 
 ## Bewegungssensor
 
-<Figure src="/images/workshops/ardunino_II/Bewegung_mit_Buzzer_Steckplatine.png" alt="Bewegungssensor" />
+<Figure src="/images/workshops/arduino_II/Bewegung_mit_Buzzer_Steckplatine.png" alt="Bewegungssensor" />
 
 ```c:MotionSensor.c
 int piezo = 5;
@@ -153,7 +153,7 @@ void loop() {
 
 ## LCD
 
-<Figure src="/images/workshops/ardunino_II/Arduino_LCD_I2C.png" alt="LCD-Display" />
+<Figure src="/images/workshops/arduino_II/Arduino_LCD_I2C.png" alt="LCD-Display" />
 
 - Verkabelung:
 
@@ -193,7 +193,7 @@ Wenn 30 Sekunden um sind, wird auf dem Display „Tee fertig“ angezeigt.
 
 ## Ultraschallsensor
 
-<Figure src="/images/workshops/ardunino_II/Ultraschall_Steckplatine.png" alt="Ultraschallsensor" />
+<Figure src="/images/workshops/arduino_II/Ultraschall_Steckplatine.png" alt="Ultraschallsensor" />
 
 ```c:Ultrasonic.c
 
