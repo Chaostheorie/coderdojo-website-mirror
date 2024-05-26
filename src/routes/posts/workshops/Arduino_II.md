@@ -11,7 +11,7 @@ created = 2024-03-01
 # Arduino II
 
 :::tip Info
-Wie unschwer zu sehen ist - dieses Kapitel ist gerade im Entstehen... hab bitte noch einen Moment Geduld, bis es vollständig ist.
+Der Workshop lief erst einmal zur Probe - hier steht noch die Einarbeitung der gefundenen Fehler aus.
 :::
 
 ## Wiederholung und Vertiefung
