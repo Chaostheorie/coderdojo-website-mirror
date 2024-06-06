@@ -23,7 +23,7 @@ Mit Andreas und Biri haben dankenswerterweise neue Mentoren den Weg zu uns gefun
 
 <Avatar src="https://dect42.de/images/derMicha.jpg" alt="derMicha" float="right" />
 
-Michael Merz (/derMicha) studierte ursprünglich Mathematik und ist seit mehr als 20 Jahren als Software-Entwickler und -Architekt tätig. Dabei hat er vom Angestellten bis zum Entrepreneur verschiedene Positionen begleitet. Beruflich liegen seine Schwerpunkte bei Scala, Java, IoT und Big Data.
+Michael Merz (/derMicha) studierte ursprünglich Mathematik und ist seit mehr als 30 Jahren als Software-Entwickler und -Architekt tätig. Dabei hat er vom Angestellten bis zum Entrepreneur verschiedene Positionen begleitet. Beruflich liegen seine Schwerpunkte bei Scala, Java, IoT und Big Data.
 
 Aus der Erfahrung mit datenschutzkonformen Konzepten zur Digitalisierung von Schulen gründete er mit anderen
 Mitstreiterinnen auf dem „Chaos Communication Congress“ 2019 vorpandemisch den Verein
@@ -43,13 +43,13 @@ Als Vater von drei Kindern kennt er die [Eltern-Perspektive](https://media.ccc.d
 
 <Avatar src="https://dect42.de/images/bengoshi.jpg" alt="bengoshi" float="right" />
 
-Kai Kobschätzki (/bengoshi) war im zivilen Leben über zehn Jahre als [Rechtsanwalt](https://media.ccc.de/v/camp2023-74-was_passiert_eigentlich_im_jurastudium) mit den Schwerpunkten Steuer- und
+[Kai Kobschätzki](https://de.linkedin.com/in/kai-bengoshi-kobsch%C3%A4tzki-3b1a98170) (/bengoshi) war im zivilen Leben über zehn Jahre als [Rechtsanwalt](https://media.ccc.de/v/camp2023-74-was_passiert_eigentlich_im_jurastudium) mit den Schwerpunkten Steuer- und
 Gesellschaftsrecht tätig, aber auch als kaufmännischer Leiter eines Unternehmens und als Ausbilder unterwegs. Deshalb triggern ihn Begriff wie ERP, Legal Tech, Legal Design und Bildung sofort. Zuletzt war er gut
 eineinhalb Jahre als juristischer Referent bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit für den Bereich Schule zuständig. Derzeit ist bengoshi in der Berliner Finanzverwaltung beschäftigt. Diese Tätigkeit ruht aber aktuell, da er mit dem vierten Kind eine einjährige Elternzeit genießt.
 
 Privat war er über ein Jahrzehnt in der in der Kinderarbeit einer katholischen Gemeinde engagiert und leitete mehr als
-sieben Jahre ehrenamtlich die dortige Jugendarbeit. Er begeistert sich für Python, Django, PostgreSQL und frickelt auch
-mal gerne an Mailservern rum. Um diese Themen zu vertiefen, hat er ein Informatik-Studium an der FernUni Hagen aufgenommen, welches er mit Vorlesungen aus den Bildungswissenschaften garniert. So manche Erfahrung hieraus fließt hier in das CoderDojo ein.
+sieben Jahre ehrenamtlich die dortige Jugendarbeit. Er begeistert sich für [Python](https://www.python.org/), [Django](https://www.djangoproject.com/), [PostgreSQL](https://www.postgresql.org/) und frickelt auch
+mal gerne an [Mailservern](https://www.postfix.org/) rum. Um diese Themen zu vertiefen, hat er ein Informatik-Studium an der [FernUni Hagen](https://www.fernuni-hagen.de/) aufgenommen, welches er mit Vorlesungen aus den Bildungswissenschaften garniert. So manche Erfahrung hieraus fließt hier in das CoderDojo ein.
 
 Er ist wie derMicha Mitglied im Berliner Hacker- und Makerspace [xHain](https://x-hain.de) und ebenfalls
 Gründungsmitglied bei [cyber4EDU](https://cyber4edu.org).
