@@ -119,6 +119,8 @@ Es ist erschreckend zu sehen, wie man mit Frauen lange Zeit umgegangen ist und w
 
 Wir schreiben über Menschen und wir werden an dieser Stelle sehen, dass das nicht immer einfach ist. Und das nicht, weil unklar ist, ob ihm zurecht zugeschrieben wird, den Computer erfunden zu haben. Das Eingangs erwähnte Buch von Walter Isaacson schildert das wunderbar. Hier erfolgt nur die Kurzfassung.
 
+<Figure src="https://upload.wikimedia.org/wikipedia/commons/d/da/Konrad_Zuse_%281992%29.jpg?20060308214127=&download=" alt="Konrad Zuse" float="right" />
+
 Um sagen zu können, wer den Computer erfunden hat, wäre zunächst die Frage zu beantworten, was denn ein Computer überhaupt ist. Wikipedia sagt, dass es ein Gerät ist, „das mittels programmierbarer Rechenvorschriften Daten verarbeitet. [...] synonym gebrauchte Begriffe [...] eleketronische Datenverarbeitungsanlage“.
 
 Georg Stibitz hat ein sogenanntes K-Modell 1937 auf seinem Küchentisch angefangen zu bauen, welches er 1940 im Labor des amerikanischen Telefonunternehmens Bell Labs Januar 1940 fertig stellte. Der war zwar binär, aber noch mit elektromechanischen Relais ausgestattet. Stellt man darauf ab, dass das Gerät komplett elektronisch arbeiten muss, reicht das noch nicht.
