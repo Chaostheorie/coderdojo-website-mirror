@@ -8,7 +8,6 @@ cache:
   key: "${CI_COMMIT_REF_SLUG}"
   paths:
     - /store
-    - build
 
 Lint:
   stage: Testing
