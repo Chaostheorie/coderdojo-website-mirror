@@ -21,11 +21,7 @@
       Organisationen statt. Deshalb kannst Du bei uns an vielem auch teilnehmen, wenn Du hier nicht
       wohnst. Wir wollen gemeinsam mit Dir die rote Pille nehmen und das Wunderland entdecken.
       Aktuell treffen wir uns nur zu zu unseren Workshops oder wenn Teilnehmende Bedarf über unseren
-      Matrix-Raum anmelden. Bei Bedarf treffen wir uns auch donnerstags <a
-        href="https://bbb.cyber4edu.org/b/der-0rc-8x7-4re"
-      >
-        per Videokonferenz
-      </a>.
+      Matrix-Raum anmelden.
     </p>
     <p class="leading-relaxed text-lg">
       Unsere
@@ -34,12 +30,22 @@
         <a href="https://matrix.to/#/#coderdojo:matrix.cyber4edu.org"> Matrix-Raum</a> statt
       </strong>
       . Da informieren wir über anstehende Veranstaltungen - nicht nur von uns - und teilen interessante
-      Podcasts, Nachrichten und ähnliches. Außerdem hast du dort jederzeit die Möglichkeit, andere anzusprechen,
-      wenn du bei deinen Problemen irgendwie feststeckst. Falls dir Matrix nichts sagt -
+      Podcasts, Nachrichten,<strong> verabreden uns </strong>oder teilen mit, wenn sich ein Termin
+      verschieben sollte oder ähnliches. Außerdem hast du dort jederzeit die Möglichkeit, andere
+      anzusprechen, wenn du bei deinen Problemen irgendwie feststeckst. Falls dir Matrix nichts sagt
+      -
       <a href="https://coderdojo.red/posts/kyu-7/07-browser/">
         dazu gibt es eine kurze Erklärung im Weißgurt</a
-      >. Am besten schaust du da mal rein. <strong>Dort verabreden wir uns</strong>, tauschen uns
-      aus und kündigen auch an, wenn sich ein Termin verschiebt oder was für Themen anstehen.
+      >.
+    </p>
+    <p class="leading-relaxed text-lg">
+      Daneben bauen wir gerade einen circa
+      <strong>monatlich erscheinenden Newsletter </strong>
+      auf. Schreibe eine E-Mail an
+      <strong> coderdojo-newsletter-subscribe ät cyber4edu.org, </strong>
+      bestätige deine Adresse über die E-Mail die du dann erhältst und du bist im Verteiler drin. Und
+      falls du dich für Veranstaltungen im xHain-Umfeld für Kinder interessierst, dann empfehlen wir
+      kindernachmittag-subscribe ät cyber4edu.org.
     </p>
     <div class="flex flex-row justify-center btn-group">
       <Button href="/posts/news/">
