@@ -45,7 +45,7 @@ Als Vater von drei Kindern kennt er die [Eltern-Perspektive](https://media.ccc.d
 
 [Kai Kobschätzki](https://de.linkedin.com/in/kai-bengoshi-kobsch%C3%A4tzki-3b1a98170) (/bengoshi) war im zivilen Leben über zehn Jahre als [Rechtsanwalt](https://media.ccc.de/v/camp2023-74-was_passiert_eigentlich_im_jurastudium) mit den Schwerpunkten Steuer- und
 Gesellschaftsrecht tätig, aber auch als kaufmännischer Leiter eines Unternehmens und als Ausbilder unterwegs. Deshalb triggern ihn Begriff wie ERP, Legal Tech, Legal Design und Bildung sofort. Zuletzt war er gut
-eineinhalb Jahre als juristischer Referent bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit für den Bereich Schule zuständig. Derzeit ist bengoshi in der Berliner Finanzverwaltung beschäftigt. Diese Tätigkeit ruht aber aktuell, da er mit dem vierten Kind eine einjährige Elternzeit genießt.
+eineinhalb Jahre als juristischer Referent bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit für den Bereich Schule zuständig. Derzeit ist bengoshi in der Berliner Finanzverwaltung im Bereich der Betriebsprüfung beschäftigt.
 
 Privat war er über ein Jahrzehnt in der in der Kinderarbeit einer katholischen Gemeinde engagiert und leitete mehr als
 sieben Jahre ehrenamtlich die dortige Jugendarbeit. Er begeistert sich für [Python](https://www.python.org/), [Django](https://www.djangoproject.com/), [PostgreSQL](https://www.postgresql.org/) und frickelt auch
