@@ -52,7 +52,7 @@ sieben Jahre ehrenamtlich die dortige Jugendarbeit. Er begeistert sich für [Pyt
 mal gerne an [Mailservern](https://www.postfix.org/) rum. Um diese Themen zu vertiefen, hat er ein Informatik-Studium an der [FernUni Hagen](https://www.fernuni-hagen.de/) aufgenommen, welches er mit Vorlesungen aus den Bildungswissenschaften garniert. So manche Erfahrung hieraus fließt hier in das CoderDojo ein.
 
 Er ist wie derMicha Mitglied im Berliner Hacker- und Makerspace [xHain](https://x-hain.de) und ebenfalls
-Gründungsmitglied bei [cyber4EDU](https://cyber4edu.org), da er als Vater von vier Kindern im Kita- bis Unialter stets an Bildungsthemen interessiert ist.
+Gründungsmitglied bei [cyber4EDU](https://cyber4edu.org) - als Vater von vier Kindern im Kita- bis Unialter ist er stets an Bildungsthemen interessiert.
 
 Beide treten gemeinsam immer wieder in [verschiedenen Formaten](https://media.ccc.de/v/ptt-234--na-und-ich-habe-doch-nichts-zu-verbergen-mit-bildern-den-datenschutz-einfach-und-zielgruppengerecht-erklren) gemeinsam auf.
 
