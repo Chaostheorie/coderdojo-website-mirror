@@ -255,13 +255,13 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
             event_key = event.key
-            if event.key == pygame.K_RIGHT or meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+            if event.key == pygame.K_RIGHT and meeple_in(surface_x, surface_y, player_x, player_y, event_key):
                 player_x += step_size
-            if event.key == pygame.K_LEFT or meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+            if event.key == pygame.K_LEFT and meeple_in(surface_x, surface_y, player_x, player_y, event_key):
                 player_x -= step_size
-            if event.key == pygame.K_DOWN or meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+            if event.key == pygame.K_DOWN and meeple_in(surface_x, surface_y, player_x, player_y, event_key):
                 player_y += step_size
-            if event.key == pygame.K_UP or meeple_in(surface_x, surface_y, player_x, player_y, event_key):
+            if event.key == pygame.K_UP and meeple_in(surface_x, surface_y, player_x, player_y, event_key):
                 player_y -= step_size
         if event.type == QUIT:
             pygame.quit()
