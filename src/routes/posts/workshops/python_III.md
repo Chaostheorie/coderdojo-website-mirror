@@ -37,10 +37,6 @@ math.sqrt(2)
 
 Schreib bitte ein Programm, bei der das Gewicht der Person abgefragt wird. Bau bitte eine Endlosschleife, in der die Geschwindkeit in km/h abgefragt wird. Dieses soll eine Funktion aufrufen, welche angibt, wieviel Prozent der Lichtgeschwindigkeit das entspricht und eine zweite Funktion, die berechnet, wie schwer die Person jetzt ist. Überlege Dir, welche Fehleingaben durch die Benutzerin möglich sind und wie du die abfangen kannst.
 
-
-
-
-
 ## Cheatsheet
 
 ```python:cheatsheet.py
