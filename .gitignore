@@ -10,3 +10,13 @@ node_modules
 !.env.example
 .output
 .idea/
+
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml

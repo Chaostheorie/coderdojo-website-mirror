@@ -1,4 +1,4 @@
-image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/coderdojo-koneko-builder:latest
+image: ghcr.io/nix-community/docker-nixpkgs/nix-flakes
 
 stages:
   - Testing
@@ -25,10 +25,8 @@ Lint:
         - svelte.config.js
         - tailwind.config.cjs
         - tsconfig.json
-  before_script:
-    - pnpm i --frozen-lockfile
   script:
-    - pnpm lint
+    - devenv shell -- pnpm lint
 
 .template: &rs-deploy # NOTE: helium is the only runner allowed to access the coderdojo ssh repos
   tags:
@@ -53,12 +51,10 @@ Lint:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
   before_script:
-    # Install all yarn dependencies (normally cached but clover#2 currently has (since 2 years) problems with space)
-    - pnpm i --frozen-lockfile
     # Add shh folder
     - mkdir -p ~/.ssh
     # Start ssh agent
-    - eval $(ssh-agent -s)
+    - eval $(devenv shell -- ssh-agent -s)
     # Dump keys from CI variables to files
     - echo "$KEY" > ~/.ssh/id_rsa
     - echo "$KEY" | sha256sum
@@ -68,10 +64,10 @@ Lint:
     - chmod 700 ~/.ssh
     - chmod 600 ~/.ssh/id_rsa
   script:
-    - sha256sum ~/.ssh/id_rsa
-    - pnpm build
-    - pnpm minify
-    - rsync -e "ssh -vv -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:"
+    - devenv shell -- sha256sum ~/.ssh/id_rsa
+    - devenv shell -- pnpm build
+    - devenv shell -- pnpm minify
+    - devenv shell -- rsync -e "ssh -vv -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:"
 
 CD:Red:
   <<: *rs-deploy
