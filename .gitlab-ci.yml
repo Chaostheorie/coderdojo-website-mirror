@@ -1,4 +1,6 @@
-image: ghcr.io/nix-community/docker-nixpkgs/nix-flakes
+image:
+  name: ghcr.io/nix-community/docker-nixpkgs/nix-flakes
+  pull_policy: if-not-present
 
 stages:
   - Testing
