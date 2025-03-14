@@ -11,6 +11,8 @@ cache:
 
 Lint:
   stage: Testing
+  tags:
+    - nix
   rules:
     - changes:
         - vite.config.js
@@ -32,7 +34,7 @@ Lint:
 
 .template: &rs-deploy # NOTE: helium is the only runner allowed to access the coderdojo ssh repos
   tags:
-    - helium
+    - nix
   rules:
     - changes:
         - .gitlab-ci.yml
@@ -56,7 +58,7 @@ Lint:
     # Add shh folder
     - mkdir -p ~/.ssh
     # Start ssh agent
-    - eval $(devenv shell -- ssh-agent -s)
+    - devenv shell -- bash -c '$(eval ssh-agent -s)'
     # Dump keys from CI variables to files
     - echo "$KEY" > ~/.ssh/id_rsa
     - echo "$KEY" | sha256sum
