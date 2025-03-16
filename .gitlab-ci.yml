@@ -5,9 +5,10 @@ stages:
   - Deploy
 
 cache:
-  key: "${CI_COMMIT_REF_SLUG}"
+  key: "${CI_COMMIT_REF_SLUG}-${CI_PIPELINE_ID}"
   paths:
-    - /store
+    - .devenv
+    - node_modules/
 
 Lint:
   stage: Testing
