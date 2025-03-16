@@ -57,18 +57,14 @@ Lint:
     - nix profile install --accept-flake-config nixpkgs#devenv
     # Add shh folder
     - mkdir -p ~/.ssh
-    # Start ssh agent
-    - devenv shell -- bash -c '$(eval ssh-agent -s)'
     # Dump keys from CI variables to files
     - echo "$KEY" > ~/.ssh/id_rsa
-    - echo "$KEY" | sha256sum
     - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
     # SSH agent requires specific permissions
     - chmod 644 ~/.ssh/known_hosts
     - chmod 700 ~/.ssh
     - chmod 600 ~/.ssh/id_rsa
   script:
-    - devenv shell -- sha256sum ~/.ssh/id_rsa
     - devenv shell -- pnpm build
     - devenv shell -- pnpm minify
     - devenv shell -- rsync -e "ssh -vv -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete  ./build/*  "$CD_DIST_USER@$CD_DIST_HOST:"
