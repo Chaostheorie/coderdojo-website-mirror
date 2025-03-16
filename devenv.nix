@@ -3,9 +3,14 @@
   # https://devenv.sh/packages/
   packages = [
     pkgs.git
+    # tools for deployment
     pkgs.coreutils
     pkgs.openssh
     pkgs.rsync
+    # tools for minify
+    pkgs.mozjpeg # jpegtran
+    pkgs.nodePackages.svgo
+    pkgs.pngquant
   ];
 
   # https://devenv.sh/languages/
