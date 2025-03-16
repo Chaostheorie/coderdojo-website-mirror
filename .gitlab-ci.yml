@@ -5,7 +5,7 @@ stages:
   - Deploy
 
 cache:
-  key: "${CI_COMMIT_REF_SLUG}-${CI_PIPELINE_ID}"
+  key: "${CI_COMMIT_REF_SLUG}"
   paths:
     - .devenv
     - node_modules/
