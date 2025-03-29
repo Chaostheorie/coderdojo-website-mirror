@@ -13,22 +13,6 @@ Lint:
   stage: Testing
   tags:
     - nix
-  rules:
-    - changes:
-        - vite.config.js
-        - .gitlab-ci.yml
-        - prettier.config.js
-        - "src/*"
-        - "src/*/*"
-        - "src/*/*/*"
-        - mdsvex.config.js
-        - package.json
-        - postcss.config.cjs
-        - svelte.config.js
-        - tailwind.config.cjs
-        - tsconfig.json
-        - flake.nix
-        - flake.lock
   script:
     - nix develop -c pre-commit run
 
@@ -36,22 +20,6 @@ Lint:
   tags:
     - nix
   rules:
-    - changes:
-        - .gitlab-ci.yml
-        - "src/*"
-        - "src/*/*"
-        - "src/*/*/*"
-        - "static/*"
-        - "static/*/*"
-        - "static/*/*/*"
-        - mdsvex.config.js
-        - package.json
-        - pnpm-lock.yaml
-        - postcss.config.cjs
-        - svelte.config.js
-        - tailwind.config.cjs
-        - tsconfig.json
-        - vite.config.js
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   before_script:
     # Add shh folder
