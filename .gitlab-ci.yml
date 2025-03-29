@@ -33,7 +33,7 @@ Lint:
     - chmod 600 ~/.ssh/id_rsa
   script:
     - nix build .#$PACKAGE
-    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -v -rzc --info=progress2 --delete ./result/  "$CD_DIST_USER@$CD_DIST_HOST:"
+    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -v -rzc --info=progress2 --delete ./result/  "$CD_DIST_USER@$CD_DIST_HOST:$CD_DIST_DIR"
 
 # CD:Red:exp:
 #   <<: *rs-deploy
@@ -74,6 +74,7 @@ CD:Red:
     CD_DIST_USER: coderdojo-red
     CD_HOST_KEY: "$CD_DIST_HOST_BORON"
     KEY: "$CD_RED_PRIVATE_KEY"
+    CD_DIST_DIR: /var/www/coderdojo/coderdojo.red
 
 CD:Blue:
   <<: *rs-deploy
@@ -86,3 +87,4 @@ CD:Blue:
     CD_DIST_USER: coderdojo-blue
     CD_HOST_KEY: "$CD_DIST_HOST_BORON"
     KEY: "$CD_BLUE_PRIVATE_KEY"
+    CD_DIST_DIR: /var/www/coderdojo/coderdojo.blue
