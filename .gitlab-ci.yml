@@ -75,6 +75,7 @@ CD:Red:exp:
     url: https://coderdojo.red
   variables:
     PACKAGE: red
+    CD_HOST_KEY: "$CD_DIST_HOST_BORON"
     CD_DIST_PORT: 2077
     CD_DIST_HOST: boron.arasaka.io
     CD_DIST_USER: coderdojo-red
@@ -88,6 +89,7 @@ CD:Blue:exp:
     url: https://coderdojo.blue
   variables:
     PACKAGE: blue
+    CD_HOST_KEY: "$CD_DIST_HOST_BORON"
     CD_DIST_PORT: 2077
     CD_DIST_HOST: boron.arasaka.io
     CD_DIST_USER: coderdojo-blue
