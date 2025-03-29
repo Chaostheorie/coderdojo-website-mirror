@@ -32,36 +32,36 @@ Lint:
     - chmod 700 ~/.ssh
     - chmod 600 ~/.ssh/id_rsa
   script:
-    - nix build ".#$PACKAGE"
-    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rzuc --info=progress2 --delete ./result/  "$CD_DIST_USER@$CD_DIST_HOST:"
+    - nix build .#$PACKAGE
+    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -v -rzc --info=progress2 --delete ./result/  "$CD_DIST_USER@$CD_DIST_HOST:"
 
-CD:Red:exp:
-  <<: *rs-deploy
-  stage: Deploy
-  environment:
-    name: production-1b
-    url: https://coderdojo.red
-  variables:
-    PACKAGE: red
-    CD_HOST_KEY: "$CD_DIST_HOST_BORON"
-    CD_DIST_PORT: 2077
-    CD_DIST_HOST: boron.arasaka.io
-    CD_DIST_USER: coderdojo-red
-    KEY: "$CD_RED_PRIVATE_KEY"
+# CD:Red:exp:
+#   <<: *rs-deploy
+#   stage: Deploy
+#   environment:
+#     name: production-1b
+#     url: https://coderdojo.red
+#   variables:
+#     PACKAGE: red
+#     CD_HOST_KEY: "$CD_DIST_HOST_BORON"
+#     CD_DIST_PORT: 2077
+#     CD_DIST_HOST: boron.arasaka.io
+#     CD_DIST_USER: coderdojo-red
+#     KEY: "$CD_RED_PRIVATE_KEY"
 
-CD:Blue:exp:
-  <<: *rs-deploy
-  stage: Deploy
-  environment:
-    name: production-2b
-    url: https://coderdojo.blue
-  variables:
-    PACKAGE: blue
-    CD_HOST_KEY: "$CD_DIST_HOST_BORON"
-    CD_DIST_PORT: 2077
-    CD_DIST_HOST: boron.arasaka.io
-    CD_DIST_USER: coderdojo-blue
-    KEY: "$CD_BLUE_PRIVATE_KEY"
+# CD:Blue:exp:
+#   <<: *rs-deploy
+#   stage: Deploy
+#   environment:
+#     name: production-2b
+#     url: https://coderdojo.blue
+#   variables:
+#     PACKAGE: blue
+#     CD_HOST_KEY: "$CD_DIST_HOST_BORON"
+#     CD_DIST_PORT: 2077
+#     CD_DIST_HOST: boron.arasaka.io
+#     CD_DIST_USER: coderdojo-blue
+#     KEY: "$CD_BLUE_PRIVATE_KEY"
 
 CD:Red:
   <<: *rs-deploy
@@ -71,6 +71,8 @@ CD:Red:
     url: https://coderdojo.red
   variables:
     PACKAGE: red
+    CD_DIST_USER: coderdojo-red
+    CD_HOST_KEY: "$CD_DIST_HOST_BORON"
     KEY: "$CD_RED_PRIVATE_KEY"
 
 CD:Blue:
@@ -81,4 +83,6 @@ CD:Blue:
     url: https://coderdojo.blue
   variables:
     PACKAGE: blue
+    CD_DIST_USER: coderdojo-blue
+    CD_HOST_KEY: "$CD_DIST_HOST_BORON"
     KEY: "$CD_BLUE_PRIVATE_KEY"
