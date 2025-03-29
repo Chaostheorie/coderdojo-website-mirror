@@ -65,7 +65,7 @@ Lint:
     - chmod 600 ~/.ssh/id_rsa
   script:
     - nix build ".#$PACKAGE"
-    - nix develop .#ci -c rsync -e "ssh -vv -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rvzuc --delete ./result/*  "$CD_DIST_USER@$CD_DIST_HOST:"
+    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -rzuc --info=progress2 --delete ./result/  "$CD_DIST_USER@$CD_DIST_HOST:"
 
 CD:Red:exp:
   <<: *rs-deploy
