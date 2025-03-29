@@ -39,16 +39,15 @@
               html-minifier,
               domain ? "coderdojo.red",
             }:
-            let
-              src = lib.fileset.toSource {
-                root = ./.;
-                fileset = lib.fileset.intersection (lib.fileset.fileFilter (
-                  file: !file.hasExt "nix" && file.name != ".gitlab-ci.yml"
-                ) ./.) (lib.fileset.fromSource (lib.cleanSource ./.));
-              };
-            in
-            buildNpmPackage {
-              inherit src;
+            buildNpmPackage rec {
+              src = toString (
+                lib.fileset.toSource {
+                  root = ./.;
+                  fileset = lib.fileset.intersection (lib.fileset.fileFilter (
+                    file: !file.hasExt "nix" && file.name != ".gitlab-ci.yml"
+                  ) ./.) (lib.fileset.fromSource (lib.cleanSource ./.));
+                }
+              );
 
               pname = "${domain}-pages";
               version = "unstable-${

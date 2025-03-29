@@ -102,7 +102,8 @@ CD:Red:
     name: production-1
     url: https://coderdojo.red
   variables:
-    PACKAGE: red
+    PRODUCTION: 1
+    DOMAIN: coderdojo.red
     KEY: "$CD_RED_PRIVATE_KEY"
 
 CD:Blue:
@@ -112,5 +113,6 @@ CD:Blue:
     name: production-2
     url: https://coderdojo.blue
   variables:
-    PACKAGE: blue
+    PRODUCTION: 1
+    DOMAIN: coderdojo.blue
     KEY: "$CD_BLUE_PRIVATE_KEY"
