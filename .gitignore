@@ -11,9 +11,9 @@ node_modules
 .output
 .idea/
 
-# Devenv
-.devenv*
-devenv.local.nix
+# outputs from nix build
+result
+result/
 
 # direnv
 .direnv
