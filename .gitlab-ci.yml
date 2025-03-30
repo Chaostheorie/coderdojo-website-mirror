@@ -25,15 +25,15 @@ Lint:
     # Add shh folder
     - mkdir -p ~/.ssh
     # Dump keys from CI variables to files
-    - echo "$KEY" > ~/.ssh/id_rsa
-    - echo "$CD_HOST_KEY" >> ~/.ssh/known_hosts
+    - echo "$KEY" > ~/.ssh/id
+    - echo "$CD_DIST_HOST_BORON" >> ~/.ssh/known_hosts
     # SSH agent requires specific permissions
     - chmod 644 ~/.ssh/known_hosts
     - chmod 700 ~/.ssh
     - chmod 600 ~/.ssh/id_rsa
   script:
     - nix build .#$PACKAGE
-    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id_rsa" -PL -v -rzc --info=progress2 --delete ./result/  "$CD_DIST_USER@$CD_DIST_HOST:$CD_DIST_DIR"
+    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id" -Przv --checksum --info=progress2 --delete ./result/ "coderdojo-$PACKAGE@$CD_DIST_HOST:/"
 
 # CD:Red:exp:
 #   <<: *rs-deploy
@@ -71,10 +71,9 @@ CD:Red:
     url: https://coderdojo.red
   variables:
     PACKAGE: red
-    CD_DIST_USER: coderdojo-red
-    CD_HOST_KEY: "$CD_DIST_HOST_BORON"
     KEY: "$CD_RED_PRIVATE_KEY"
-    CD_DIST_DIR: /var/www/coderdojo/coderdojo.red
+    CD_DIST_PORT: 2077
+    CD_DIST_HOST: boron.arasaka.io
 
 CD:Blue:
   <<: *rs-deploy
@@ -84,7 +83,6 @@ CD:Blue:
     url: https://coderdojo.blue
   variables:
     PACKAGE: blue
-    CD_DIST_USER: coderdojo-blue
-    CD_HOST_KEY: "$CD_DIST_HOST_BORON"
     KEY: "$CD_BLUE_PRIVATE_KEY"
-    CD_DIST_DIR: /var/www/coderdojo/coderdojo.blue
+    CD_DIST_PORT: 2077
+    CD_DIST_HOST: boron.arasaka.io
