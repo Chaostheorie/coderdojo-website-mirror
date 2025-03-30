@@ -14,7 +14,7 @@ Lint:
   tags:
     - nix
   script:
-    - nix develop -c pre-commit run
+    - nix develop -c pre-commit run --all-files
 
 .template: &rs-deploy # NOTE: helium is the only runner allowed to access the coderdojo ssh repos
   tags:
@@ -30,7 +30,7 @@ Lint:
     # SSH agent requires specific permissions
     - chmod 644 ~/.ssh/known_hosts
     - chmod 700 ~/.ssh
-    - chmod 600 ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id
   script:
     - nix build .#$PACKAGE
     - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id" -Przv --checksum --info=progress2 --delete ./result/ "coderdojo-$PACKAGE@$CD_DIST_HOST:/"

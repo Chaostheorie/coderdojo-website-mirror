@@ -113,14 +113,6 @@
                 ];
               };
             };
-            eslint = {
-              enable = true;
-              excludes = [ "./.gitignore" ];
-              settings = {
-                binPath = "./node_modules/.bin/eslint";
-                extensions = "\.(js|svelte|ts)$";
-              };
-            };
             nixfmt-rfc-style.enable = true;
           };
         };
