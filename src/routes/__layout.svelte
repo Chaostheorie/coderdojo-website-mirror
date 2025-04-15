@@ -57,7 +57,7 @@
       }
 
       // create new element
-      const shadowInput = document.createElement("textarea", {}) as HTMLTextAreaElement;
+      const shadowInput = document.createElement("textarea", {});
 
       // make invisible and usable for text operations
       shadowInput.style.opacity = "0";

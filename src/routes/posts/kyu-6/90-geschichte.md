@@ -14,15 +14,10 @@ description ="Geschichte der Informatik"
 
 ## Geschichte
 
-
 ### Hamilton
-
-
 
 ### Johnson
 
-
 ### Goldberg
-
 
 #### Bildnachweise
