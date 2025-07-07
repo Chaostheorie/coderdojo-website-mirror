@@ -4,6 +4,11 @@ stages:
   - Testing
   - Deploy
 
+default:
+  image: nixpkgs/nix-flakes:nixos-25.05-x86_64-linux
+  tags:
+    - nix
+
 cache:
   key: "${CI_COMMIT_REF_SLUG}"
   paths:
@@ -13,8 +18,6 @@ cache:
 Lint:
   stage: Testing
   allow_failure: true
-  tags:
-    - nix
   before_script:
     # setup attic cache
     - nix develop -c attic login upstream https://cache.nebula.arasaka.io "$ATTIC_TOKEN"
@@ -26,8 +29,6 @@ Lint:
     - nix develop -c attic push upstream:central ./result
 
 .template: &rs-deploy # NOTE: helium is the only runner allowed to access the coderdojo ssh repos
-  tags:
-    - nix
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   before_script:
