@@ -1,5 +1,3 @@
-image: ghcr.io/nix-community/docker-nixpkgs/nix-flakes
-
 stages:
   - Testing
   - Deploy
