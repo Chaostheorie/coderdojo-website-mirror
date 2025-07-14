@@ -6,6 +6,8 @@ default:
   image: nixpkgs/nix-flakes:nixos-25.05-x86_64-linux
   tags:
     - nix
+    - x86_64-linux
+    - nixos
 
 cache:
   key: "${CI_COMMIT_REF_SLUG}"
