@@ -3,7 +3,7 @@ stages:
   - Deploy
 
 default:
-  image: nixpkgs/nix-flakes:nixos-25.05-x86_64-linux
+  image: ctr.cobalt.rocks/cobalt/nix-container-builder/niks3-cached:latest
   tags:
     - nix
     - x86_64-linux
@@ -18,23 +18,13 @@ cache:
 Lint:
   stage: Testing
   allow_failure: true
-  before_script:
-    # setup attic cache
-    - nix develop -c attic login upstream https://cache.nebula.arasaka.io "$ATTIC_TOKEN"
-    - nix develop -c attic use upstream:central
   script:
     - nix develop -c pre-commit run --all-files
-  after_script:
-    - nix build .#devShells.x86_64-linux.default
-    - nix develop -c attic push upstream:central ./result
 
 .template: &rs-deploy # NOTE: helium is the only runner allowed to access the coderdojo ssh repos
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   before_script:
-    # setup attic cache
-    - nix develop -c attic login upstream https://cache.nebula.arasaka.io "$ATTIC_TOKEN"
-    - nix develop -c attic use upstream:central
     # Add ssh folder
     - mkdir -p ~/.ssh
     # Dump keys from CI variables to files
@@ -49,9 +39,7 @@ Lint:
     - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id" -Przv --checksum --info=progress2 --delete ./result/ "coderdojo-$PACKAGE@$CD_DIST_HOST:/"
   after_script:
     # push final result to cache and devshell
-    - nix develop -c attic push upstream:central ./result
     - nix build .#devShells.x86_64-linux.default
-    - nix develop -c attic push upstream:central ./result
 
 # CD:Red:exp:
 #   <<: *rs-deploy
