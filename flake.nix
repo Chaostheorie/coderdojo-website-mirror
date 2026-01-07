@@ -138,10 +138,12 @@
             ] ++ self.checks.${system}.pre-commit-check.enabledPackages;
 
             shellHook = ''
-              echo "Configuring devshell: Updating NPM deps" | clolcat
-              npm i --frozen-lockfile &> /dev/null
-              echo "Configuring devshell: Setting up pre-commit hooks" | clolcat
-              ${self.checks.${system}.pre-commit-check.shellHook}
+              if [ -z "$CI" ]; then
+                  echo "Configuring devshell: Updating NPM deps" | clolcat
+                  npm i --frozen-lockfile &> /dev/null
+                  echo "Configuring devshell: Setting up pre-commit hooks" | clolcat
+                  ${self.checks.${system}.pre-commit-check.shellHook}
+              fi
             '';
           };
         };
