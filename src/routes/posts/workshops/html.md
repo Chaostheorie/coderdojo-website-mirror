@@ -23,9 +23,9 @@ Linux-Cheats:
 VIM-Cheats:
 
 - i - E*i*nfügen
-- ESC - : w  -  write, Datei schreiben
-- ESC - : wq oder x  -  schreiben und verlassen
-- ESC - : dd  -  Zeile löschen
+- ESC - : w - write, Datei schreiben
+- ESC - : wq oder x - schreiben und verlassen
+- ESC - : dd - Zeile löschen
 
 Grundaufbau einer html-Seite:
 
