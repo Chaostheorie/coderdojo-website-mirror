@@ -8,8 +8,36 @@ created = 2022-08-27
   import Figure from '$lib/components/Figure.svelte';
 </script>
 
-# Online-Einführung in html/CSS
+# Einführung in html/CSS
 
-Unser Online-Workshop findet im [Jugend-hackt-BBB](https://meet.alpaka.live/jh-lab-berlin) statt.
+Den Zugang zum Webserver erhälst Du auf den Veranstaltungen.
 
-Der Workshop fand am 3. September 2022 von 14 bis 17 Uhr statt. Eine Wiederholung ist geplant. Die Materialien werden dann hier veröffentlicht.
+Wichtig: Wenn Du den Zugang erhalten hast, ändere bitte gleich Dein Passwort mit _passwd_.
+
+Linux-Cheats:
+
+- Inhaltsverzeichnis mit ls (list), ausführlicher mit ls -lah
+- Verzeichniswechsel mit cd (change directory), bsp. cd html oder cd .. um wieder ein Verzeichnis hochzugehen
+- leere Datei anlegen mit touch + Dateiname
+
+VIM-Cheats:
+
+- i - E*i*nfügen
+- ESC - : w  -  write, Datei schreiben
+- ESC - : wq oder x  -  schreiben und verlassen
+- ESC - : dd  -  Zeile löschen
+
+Grundaufbau einer html-Seite:
+
+```c:basic.html
+
+<html>
+<head>
+  <title>Grundaufbau</title>
+</head>
+<body>
+  Hello World
+</body>
+</html>
+
+```
