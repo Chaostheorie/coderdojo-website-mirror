@@ -35,11 +35,8 @@ Lint:
     - chmod 700 ~/.ssh
     - chmod 600 ~/.ssh/id
   script:
-    - nix build .#$PACKAGE
+    - nix build -L .#$PACKAGE
     - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id" -Przv --checksum --info=progress2 --delete ./result/ "coderdojo-$PACKAGE@$CD_DIST_HOST:/"
-  after_script:
-    # push final result to cache and devshell
-    - nix build .#devShells.x86_64-linux.default
 
 # CD:Red:exp:
 #   <<: *rs-deploy
