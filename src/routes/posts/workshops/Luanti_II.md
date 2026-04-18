@@ -173,18 +173,18 @@ Die den beiden Befhlen stellt man die Uhr auf ewig auf 12:00
 ```Bash
 ip addr
 
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
        valid_lft forever preferred_lft forever
     inet6 ::1/128 scope host noprefixroute
        valid_lft forever preferred_lft forever
-2: enp4s0f0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+2: enp4s0f0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
     link/ether e8:80:88:53:da:d0 brd ff:ff:ff:ff:ff:ff
     altname enxe8808853dad0
-3: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+3: wlan0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc noqueue state DOWN group default qlen 1000
     link/ether 22:51:9a:86:44:66 brd ff:ff:ff:ff:ff:ff permaddr 04:7b:cb:29:fa:02
-6: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+6: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether a0:ce:c8:e4:c2:9f brd ff:ff:ff:ff:ff:ff
     altname enp232s0f3u1u4u1
     altname enxa0cec8e4c29f
@@ -213,20 +213,20 @@ und unter inet6 (IPV6):
 Nun hat der PC eine WLAN Verbindung:
 
 ```
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
        valid_lft forever preferred_lft forever
     inet6 ::1/128 scope host noprefixroute
        valid_lft forever preferred_lft forever
-2: enp4s0f0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+2: enp4s0f0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
     link/ether e8:80:88:53:da:d0 brd ff:ff:ff:ff:ff:ff
     altname enxe8808853dad0
-3: eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+3: eth0: &lt;BROADCAST,MULTICAST&gt; mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
     link/ether a0:ce:c8:e4:c2:9f brd ff:ff:ff:ff:ff:ff
     altname enp232s0f3u1u4u1
     altname enxa0cec8e4c29f
-4: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+4: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP group default qlen 1000
     link/ether 04:7b:cb:29:fa:02 brd ff:ff:ff:ff:ff:ff
     inet 192.168.178.78/24 brd 192.168.178.255 scope global dynamic noprefixroute wlan0
        valid_lft 863943sec preferred_lft 863943sec

@@ -1,7 +1,7 @@
 {
   inputs = {
     # nixpkgs and system wrapper
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     pre-commit-hooks = {
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +20,7 @@
     utils.lib.eachDefaultSystem (
       system:
       let
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = nixpkgs.legacyPackages.${system};
       in
       {
         packages = rec {
@@ -135,7 +135,8 @@
               pkgs.nixfmt-rfc-style
               pkgs.npm-lockfile-fix
               pkgs.attic-client
-            ] ++ self.checks.${system}.pre-commit-check.enabledPackages;
+            ]
+            ++ self.checks.${system}.pre-commit-check.enabledPackages;
 
             shellHook = ''
               if [ -z "$CI" ]; then
