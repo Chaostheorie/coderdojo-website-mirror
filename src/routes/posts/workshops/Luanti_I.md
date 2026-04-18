@@ -10,4 +10,4 @@ created = 2022-08-27
 
 # Luanti I
 
-Die Inhalte des Workshops erscheinen hier demnächst.
+Die Inhalte des Workshops Luanti I erscheinen hier demnächst.
