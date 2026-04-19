@@ -36,7 +36,7 @@
     "katex": "^0.16.4",
     "license-checker": "^25.0.1",
     "mdast-util-to-string": "^3.2.0",
-    "mdsvex": "^0.10.6",
+    "mdsvex": "^0.12.6",
     "postcss": "^8.4.21",
     "postcss-import": "^14.1.0",
     "postcss-load-config": "^4.0.1",

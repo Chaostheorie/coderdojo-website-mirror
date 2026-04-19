@@ -1,4 +1,5 @@
 import { defineMDSveXConfig as defineConfig } from "mdsvex";
+import { resolve } from "node:path";
 import { parse as load } from "@iarna/toml";
 import { escapePlugin } from "./src/lib/escape.js";
 import { tocPlugin } from "./src/lib/toc.js";
@@ -13,7 +14,7 @@ import { highlight } from "./src/lib/codetitle.js";
 const config = defineConfig({
   extensions: [".svelte.md", ".md"],
   layout: {
-    _: "./src/lib/mdsvex.layout.svelte"
+    _: resolve("src/lib/mdsvex.layout.svelte")
   },
   smartypants: {
     dashes: "oldschool",
