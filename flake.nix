@@ -93,7 +93,7 @@
                 runHook postInstall
               '';
             }
-          ) { inherit (pkgs.nodePackages) svgo; };
+          ) { inherit (pkgs) svgo; };
         };
 
         checks.pre-commit-check = pre-commit-hooks.lib.${system}.run {
