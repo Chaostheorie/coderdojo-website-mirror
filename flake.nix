@@ -1,7 +1,7 @@
 {
   inputs = {
     # nixpkgs and system wrapper
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     pre-commit-hooks = {
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -113,7 +113,7 @@
                 ];
               };
             };
-            nixfmt-rfc-style.enable = true;
+            nixfmt.enable = true;
           };
         };
 
@@ -132,9 +132,9 @@
               pkgs.nodejs
               pkgs.nix
               pkgs.clolcat
-              pkgs.nixfmt-rfc-style
+              pkgs.nixfmt
               pkgs.npm-lockfile-fix
-              pkgs.attic-client
+              pkgs.prettier
             ]
             ++ self.checks.${system}.pre-commit-check.enabledPackages;
 
