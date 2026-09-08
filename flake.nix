@@ -135,11 +135,15 @@
               pkgs.nixfmt
               pkgs.npm-lockfile-fix
               pkgs.prettier
+              self.checks.${system}.pre-commit-check.config.package
             ]
             ++ self.checks.${system}.pre-commit-check.enabledPackages;
 
             shellHook = ''
-              if [ -z "$CI" ]; then
+              if [ -n "$CI" ]; then
+                  # Generate the config without installing Git hooks in CI.
+                  ln -sfn ${self.checks.${system}.pre-commit-check.config.configFile} .pre-commit-config.yaml
+              else
                   echo "Configuring devshell: Updating NPM deps" | clolcat
                   npm i --frozen-lockfile &> /dev/null
                   echo "Configuring devshell: Setting up pre-commit hooks" | clolcat
