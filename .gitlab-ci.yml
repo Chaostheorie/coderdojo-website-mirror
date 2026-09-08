@@ -21,7 +21,7 @@ Lint:
     - nix develop -c npm ci --no-audit --no-fund
     - nix develop -c pre-commit run --all-files
 
-.template: &rs-deploy # NOTE: helium is the only runner allowed to access the coderdojo ssh repos
+.template: &rs-deploy
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   before_script:
@@ -36,7 +36,7 @@ Lint:
     - chmod 600 ~/.ssh/id
   script:
     - nix build -L .#$PACKAGE
-    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id" -Przv --checksum --info=progress2 --delete ./result/ "coderdojo-$PACKAGE@$CD_DIST_HOST:/"
+    - nix develop .#ci -c rsync -e "ssh -p $CD_DIST_PORT -i ~/.ssh/id" -Przv --checksum --info=progress2 --delete ./result/ "coderdojo-$PACKAGE@$CD_DIST_HOST:."
 
 # CD:Red:exp:
 #   <<: *rs-deploy
